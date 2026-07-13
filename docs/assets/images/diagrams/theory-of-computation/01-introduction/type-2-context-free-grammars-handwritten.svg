@@ -27,13 +27,11 @@
   <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">Grammars</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Productions are of the form A ? ?</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">where ? is any string of...</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Context-free grammars generate</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">languages recognized by...</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">S ? aSb | e // {a^n b^n | n = 0}</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Context-free grammars generate</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">languages recognized by...</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">S ? aSb | e // {a^n b^n | n = 0}</text>
   <!-- Footer note -->
-  <text x="60" y="352" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — Productions are of the form A ? ? where ? is any...
+  <text x="60" y="296" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+    — Context-free grammars generate languages recognized by...
   </text>
 </svg>

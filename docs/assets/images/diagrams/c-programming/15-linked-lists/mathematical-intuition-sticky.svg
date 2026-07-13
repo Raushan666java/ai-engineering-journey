@@ -15,19 +15,19 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Mathematical Intuition</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Floyd&apos;s algorithm works</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    because of modular</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    arithmetic</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In a list with a cycle of</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    length L, the slow pointer</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    moves 1 step at...</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The fast pointer gains on</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    the slow by 1 step per</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    iteration</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In a list with a cycle of</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    length L, the slow pointer</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    moves 1 step at...</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The fast pointer gains on</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    the slow by 1 step per</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    iteration</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  After k steps, the distance</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    between them modulo L</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    decreases by 1 each...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Floyd&apos;s algorithm</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">works because of modular</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">arithmetic</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">In a list with a cycle of</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">length L, the slow pointer</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">moves 1...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

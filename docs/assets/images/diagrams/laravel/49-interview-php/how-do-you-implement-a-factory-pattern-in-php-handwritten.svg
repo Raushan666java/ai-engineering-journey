@@ -28,10 +28,10 @@
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Answer:</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Answer:** A Factory centralizes</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">object creation,...</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Parameterized factories switch on</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">input to return different...</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Parameterized factories switch on</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">input to return different...</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">*/ } class SmsSender implements</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">NotificationSender { /* ..</text>
   <!-- Footer note -->
   <text x="60" y="352" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Answer:

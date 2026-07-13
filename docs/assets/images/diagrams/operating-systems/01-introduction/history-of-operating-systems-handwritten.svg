@@ -26,14 +26,14 @@
     <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">History of Operating Systems</text>
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">#### Phase 1: Batch Systems</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(1940s-1950s) Early computers...</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Programmers interacted directly</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">with the hardware using...</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">The first OS appeared in the 1950s</text>
-    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">with the GM-NAA I/O...</text>
+      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Programmers interacted directly</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">with the hardware using...</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">The first OS appeared in the 1950s</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">with the GM-NAA I/O...</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Batch systems collected jobs</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(programs + data) into batches</text>
   <!-- Footer note -->
   <text x="60" y="344" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — #### Phase 1: Batch Systems (1940s-1950s) Early...
+    — Programmers interacted directly with the hardware...
   </text>
 </svg>

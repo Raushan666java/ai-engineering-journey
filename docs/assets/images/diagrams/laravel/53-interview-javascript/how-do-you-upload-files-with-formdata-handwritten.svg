@@ -28,12 +28,13 @@
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Answer:</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Answer:** Use `FormData` to</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">construct a...</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Do not set `Content-Type` manually</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">→ the browser sets the...</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Do not set `Content-Type` manually</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">→ the browser sets the...</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Append files from `&lt;input</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">type=&quot;file&quot;&gt;` or a</text>
+    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`File` object</text>
   <!-- Footer note -->
-  <text x="60" y="352" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Answer:
   </text>
 </svg>

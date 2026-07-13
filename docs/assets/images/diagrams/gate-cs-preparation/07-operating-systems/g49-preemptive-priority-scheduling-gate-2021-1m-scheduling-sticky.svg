@@ -19,12 +19,10 @@
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Answer: 8.5 ms (approx Ã¢â€</text>
     <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    â€™ needs careful Gantt</text>
     <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    chart)</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In preemptive priority</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    scheduling, a lower number</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    indicates higher...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  P1(7), P3(9) P3 priority 2</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    &gt; P1 priority 3 Ã¢â€ â€™</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    P3 runs t=14: P3...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  P1(7), P3(9) P3 priority 2</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    &gt; P1 priority 3 Ã¢â€ â€™</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    P3 runs t=14: P3...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  t=21: P1 complete</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Answer: 8.5 ms (approx</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Ã¢â€ â€™ needs careful</text>

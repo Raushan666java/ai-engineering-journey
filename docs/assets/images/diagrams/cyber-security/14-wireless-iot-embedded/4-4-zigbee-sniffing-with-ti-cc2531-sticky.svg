@@ -16,18 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">4.4 Zigbee Sniffing</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">with TI CC2531</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The CC2531 is a USB dongle</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    based on TI&apos;s CC2531</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    SoC</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  To use it for Zigbee</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    security analysis: 1</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Connect the dongle and</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    launch: sudo wireshark -k -i</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    /dev/ttyACM0 3</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  To use it for Zigbee</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    security analysis: 1</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Connect the dongle and</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    launch: sudo wireshark -k -i</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    /dev/ttyACM0 3</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Set the Zigbee channel</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    (typically 11-26, default</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    11): ./SnifferAgent...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The CC2531 is a USB dongle</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">based on TI&apos;s CC2531</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">SoC</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">To use it for Zigbee</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">security analysis: 1</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

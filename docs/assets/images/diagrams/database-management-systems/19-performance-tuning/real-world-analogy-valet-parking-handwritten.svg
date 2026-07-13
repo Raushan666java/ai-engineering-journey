@@ -27,14 +27,14 @@
   <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">Parking</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Connection pooling is like a valet</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">parking service</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">With a pool, valets (pooler) keep</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">10-50 cars ready at the...</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">When you arrive (query request),</text>
-    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">you get a car instantly</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">With a pool, valets (pooler) keep</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">10-50 cars ready at the...</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">When you arrive (query request),</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">you get a car instantly</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">When done, the valet parks it for</text>
+    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">the next person.</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — Connection pooling is like a valet parking service
+    — With a pool, valets (pooler) keep 10-50 cars ready at...
   </text>
 </svg>

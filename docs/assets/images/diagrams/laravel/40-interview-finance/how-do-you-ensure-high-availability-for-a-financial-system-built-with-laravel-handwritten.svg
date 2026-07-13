@@ -27,14 +27,14 @@
   <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">availability for a...</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Financial systems require</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">multi-layer redundancy</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Use Laravel Octane with</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Swoole/RoadRunner for...</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Deploy behind a load balancer</text>
-    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">across multiple availability...</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Use Laravel Octane with</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Swoole/RoadRunner for...</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Deploy behind a load balancer</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">across multiple availability...</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Use database read replicas with a</text>
+    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">robust failover strategy...</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — Financial systems require multi-layer redundancy
+    — Use Laravel Octane with Swoole/RoadRunner for...
   </text>
 </svg>

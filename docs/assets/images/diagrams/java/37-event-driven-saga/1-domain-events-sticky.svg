@@ -17,12 +17,10 @@
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Characteristics of good</text>
     <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    domain events:</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A domain event is an</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    immutable record of</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    something that happened</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    in...</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It represents a fact</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    Ã¢â‚¬â€ not a command</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It represents a fact</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    Ã¢â‚¬â€ not a command</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Domain events are named in</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    the past tense</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Characteristics of good</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">domain events:</text>

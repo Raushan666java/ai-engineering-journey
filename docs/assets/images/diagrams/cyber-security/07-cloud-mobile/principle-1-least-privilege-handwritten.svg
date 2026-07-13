@@ -29,10 +29,10 @@
   <!-- Bullet points -->
       <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Numbered Steps — Implementing Least</text>
     <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Privilege:</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Numbered Steps — Implementing</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Least Privilege:** 1</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Start with a deny-all policy</text>
-    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(implicit deny)</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Start with a deny-all policy</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(implicit deny)</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Identify the minimum permissions</text>
+    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">required for each role</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Numbered Steps — Implementing Least Privilege:

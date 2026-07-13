@@ -27,12 +27,13 @@
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Result:</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`str = &quot;Hello, World!&quot;`</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(indices 0..13, null at 14)</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`memmove(str + 7, str, 6)` — copy 6</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">bytes from index 0 to...</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`memmove(str + 7, str, 6)` — copy 6</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">bytes from index 0 to...</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Result:** `&quot;Hello,</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Hello!&quot;` — memmove detects</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">overlap and...</text>
   <!-- Footer note -->
-  <text x="60" y="316" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="344" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Result:
   </text>
 </svg>

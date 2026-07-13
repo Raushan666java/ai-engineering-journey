@@ -16,17 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">16.13.3 CPU Scheduling</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">(Round...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The OS maintains a ready</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    queue of processes</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Each process gets a fixed</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    time slice, then returns to</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    the rear of the...</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Ready Queue: [P1] → [P2] →</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    [P3] → [P4] (each gets 10ms)</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    ↓ P1 runs...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Each process gets a fixed</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    time slice, then returns to</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    the rear of the...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Ready Queue: [P1] → [P2] →</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    [P3] → [P4] (each gets 10ms)</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    ↓ P1 runs...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The OS maintains a ready</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">queue of processes</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Each process gets a fixed</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">time slice, then returns</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">to the rear...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -27,15 +27,14 @@
   <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">Shell/Terminal Emulator</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">A Unix shell uses: -</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`&lt;stdio.h&gt;` for reading</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">commands,...</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">- `&lt;string.h&gt;` for parsing</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">command lines with `strtok`</text>
-    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">- `&lt;stdlib.h&gt;` for `getenv`,</text>
-    <text x="60" y="350" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`system`, `exit`, `setenv`</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">- `&lt;string.h&gt;` for parsing</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">command lines with `strtok`</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">- `&lt;stdlib.h&gt;` for `getenv`,</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`system`, `exit`, `setenv`</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">- `&lt;signal.h&gt;` for handling</text>
+    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">SIGINT (Ctrl+C), SIGTSTP...</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — A Unix shell uses: - `&lt;stdio.h&gt;` for reading commands,...
+    — - `&lt;string.h&gt;` for parsing command lines with `strtok`
   </text>
 </svg>

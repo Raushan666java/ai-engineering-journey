@@ -27,10 +27,10 @@
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Key Decision: VARCHAR vs CHAR</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Choosing the right data type is</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">critical: it affects...</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Key Decision: VARCHAR vs CHAR** -</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">VARCHAR(n): Stores only...</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Key Decision: VARCHAR vs CHAR** -</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">VARCHAR(n): Stores only...</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Efficient for variable-length data</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">like names, titles</text>
   <!-- Footer note -->
   <text x="60" y="316" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Key Decision: VARCHAR vs CHAR

@@ -27,15 +27,12 @@
   <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">Nickname</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">When you always call your friend</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;Robert&quot; you have to</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">say...</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">When you call him &quot;Bob&quot;</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">it&apos;s shorter</text>
-    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">That&apos;s what `typedef` does: it</text>
-    <text x="60" y="350" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">gives a shorter alias to...</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">When you call him &quot;Bob&quot;</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">it&apos;s shorter</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">That&apos;s what `typedef` does: it</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">gives a shorter alias to...</text>
   <!-- Footer note -->
-  <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — When you always call your friend &quot;Robert&quot; you have to...
+  <text x="60" y="324" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+    — When you call him &quot;Bob&quot; it&apos;s shorter
   </text>
 </svg>

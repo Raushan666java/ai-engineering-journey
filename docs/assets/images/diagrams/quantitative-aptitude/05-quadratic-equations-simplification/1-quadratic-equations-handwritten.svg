@@ -29,8 +29,11 @@
       <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Standard Form:</text>
     <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Methods to Solve Quadratic</text>
     <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Equations:</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Quadratic Equations&quot;</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">width=&quot;30%&quot;&gt;</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&lt;/a&gt; &lt;a href=&quot;</text>
   <!-- Footer note -->
-  <text x="60" y="260" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="344" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Standard Form:
   </text>
 </svg>

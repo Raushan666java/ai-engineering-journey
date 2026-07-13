@@ -26,14 +26,14 @@
     <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">Page Size</text>
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Choosing the page size involves</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">trade-offs that impact...</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Small pages = many small boxes</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(lots of labels to manage,...</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Large pages = fewer big boxes</text>
-    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(fewer labels, but wasted...</text>
+      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Small pages = many small boxes</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(lots of labels to manage,...</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Large pages = fewer big boxes</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">(fewer labels, but wasted...</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">For a trip (process), you pack</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">items you need</text>
   <!-- Footer note -->
   <text x="60" y="344" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — Choosing the page size involves trade-offs that impact...
+    — Small pages = many small boxes (lots of labels to...
   </text>
 </svg>

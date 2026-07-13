@@ -27,12 +27,13 @@
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Answer:</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Answer:** ES6 modules use</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`export` and `import` to share...</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">They are strict by default, support</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">named and default...</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">They are strict by default, support</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">named and default...</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Browsers load modules with</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`&lt;script</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">type=&quot;module&quot;&gt;`</text>
   <!-- Footer note -->
-  <text x="60" y="316" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="344" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Answer:
   </text>
 </svg>

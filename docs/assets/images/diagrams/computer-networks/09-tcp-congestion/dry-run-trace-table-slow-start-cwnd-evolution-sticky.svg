@@ -16,16 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Dry Run Trace Table —</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Slow Start...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  MSS = 1460 bytes, initial</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    cwnd = 10 MSS, ssthresh = 64</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    KB (≈ 44 MSS),...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  At RTT 3, cwnd (80 MSS)</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    exceeds ssthresh (~44 MSS),</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    so TCP...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  At RTT 3, cwnd (80 MSS)</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    exceeds ssthresh (~44 MSS),</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    so TCP...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">MSS = 1460 bytes, initial</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">cwnd = 10 MSS, ssthresh =</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">64 KB (≈ 44...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">At RTT 3, cwnd (80 MSS)</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">exceeds ssthresh (~44</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">MSS), so TCP...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

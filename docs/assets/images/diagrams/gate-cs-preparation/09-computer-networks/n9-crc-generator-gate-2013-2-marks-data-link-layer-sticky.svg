@@ -16,16 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">N9: CRC Generator</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">[GATE 2013, 2...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Q:** Which generator</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    polynomial can detect all</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    odd number of...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Because `(x+1)` ensures that</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    the parity of the codeword</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    is even,...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Because `(x+1)` ensures that</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    the parity of the codeword</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    is even,...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">**Q:** Which generator</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">polynomial can detect all</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">odd number of...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Because `(x+1)` ensures</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">that the parity of the</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">codeword is even,...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

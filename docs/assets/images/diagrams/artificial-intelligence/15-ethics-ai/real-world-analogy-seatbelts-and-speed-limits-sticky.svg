@@ -16,18 +16,14 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Real-World Analogy:</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Seatbelts and...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When cars were first</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    invented, there were no</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    seatbelts, no traffic...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  AI regulation is following</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    the same trajectory</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The technology is developing</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    faster than the rules</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    governing it</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  AI regulation is following</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    the same trajectory</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The technology is developing</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    faster than the rules</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    governing it</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">When cars were first</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">invented, there were no</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">seatbelts, no...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">AI regulation is following</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">the same trajectory</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -17,11 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Circular Queue...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Key insight:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `capacity = 5`, `front = 0`,</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    `rear = -1`, `size = 0`</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Key insight:** At step 8,</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    `rear` wraps from 4 to 0 via</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    `(4 + 1) % 5...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Key insight:** At step 8,</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    `rear` wraps from 4 to 0 via</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `(4 + 1) % 5...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  At step 13, `front` wraps</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    from 4 to 0 via `(4 + 1) % 5</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    = 0`</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Key insight:</text>
   </g>

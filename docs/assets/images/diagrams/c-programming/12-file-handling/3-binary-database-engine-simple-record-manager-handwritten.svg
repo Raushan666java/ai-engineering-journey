@@ -30,8 +30,10 @@
       <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Output:</text>
     <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">After deletion: 2 Bob Smith</text>
     <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">$33800.00 3 Carol Williams...</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Binary Database Engine (Simple</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Record Manager)&quot;...</text>
   <!-- Footer note -->
-  <text x="60" y="296" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="352" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Output:
   </text>
 </svg>

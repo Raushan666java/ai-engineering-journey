@@ -15,17 +15,15 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">अभ्यास ६: समूह चर्चा</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  निम्नलिखित प्रश्नों पर समूह</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    में ओशो के दृष्टिकोण से</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    चर्चा करें: १</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  क्या कोई तकनीक के बिना भी</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    ध्यान कर सकता है? २</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  प्रयास और सहजता में संतुलन</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    कैसे बनाएँ? ३</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  क्या कोई तकनीक के बिना भी</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    ध्यान कर सकता है? २</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  प्रयास और सहजता में संतुलन</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    कैसे बनाएँ? ३</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  क्या होता है जब कोई तकनीक से</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    चिपक जाता है? ४</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">निम्नलिखित प्रश्नों पर</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">समूह में ओशो के दृष्टिकोण</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">से चर्चा करें: १</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">क्या कोई तकनीक के बिना भी</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">ध्यान कर सकता है? २</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

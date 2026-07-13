@@ -16,12 +16,12 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Complexity Analysis</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Why O(log n) matters</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Why O(log n) matters**:</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    For a system with 1000</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    runnable processes,...</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The O(1) scheduler was also</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    O(1) but used heuristics</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    that hurt...</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The O(1) scheduler was also</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    O(1) but used heuristics</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    that hurt...</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  CFS trades slightly higher</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    theoretical bound for</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    guaranteed fairness.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Why O(log n) matters</text>
   </g>

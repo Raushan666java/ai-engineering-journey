@@ -16,18 +16,21 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">11.5 Anonymous Class</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">vs. Lambda</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Functional interfaces can be</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    implemented with either</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    anonymous...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Lambdas are more concise and</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    are not compiled to separate</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    `.class`...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - Lambdas cannot declare new</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    fields or instance variables</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Functional interfaces can</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">be implemented with either</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">anonymous...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Lambda&quot;</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Functional</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    interfaces can be</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    implemented...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Lambdas are more concise and</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    are not compiled to separate</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    `.class`...</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - Lambdas cannot declare new</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    fields or instance variables</text>
+    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Lambda&quot;</text>
+    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;/a&gt; Functional</text>
+    <text x="56" y="412" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">interfaces can be...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

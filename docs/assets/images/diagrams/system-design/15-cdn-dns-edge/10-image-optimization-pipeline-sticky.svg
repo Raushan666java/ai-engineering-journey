@@ -17,12 +17,14 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Pipeline</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Format negotiation</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Modern CDNs perform</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    on-the-fly image</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    transformations: 1</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Origin produces</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    full-resolution source</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    images (PNG/TIFF/RAW) 2</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Image Optimization</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Pipeline&quot;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Modern CDNs</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    perform...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Origin produces</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    full-resolution source</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    images (PNG/TIFF/RAW) 2</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Format negotiation</text>
   </g>

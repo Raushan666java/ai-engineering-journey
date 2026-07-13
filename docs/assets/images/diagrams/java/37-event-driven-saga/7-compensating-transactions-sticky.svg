@@ -16,15 +16,20 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">7. Compensating</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Transactions</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Compensating transactions</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    undo the effects of a</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    previous step when a...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They must be idempotent and</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    handle partial failures</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Compensating transactions</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">undo the effects of a</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">previous step...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They must be idempotent and</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    handle partial failures</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Compensating</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Transactions&quot;</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Compensating</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Transactions&quot;</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">They must be idempotent</text>
+    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">and handle partial</text>
+    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">failures</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

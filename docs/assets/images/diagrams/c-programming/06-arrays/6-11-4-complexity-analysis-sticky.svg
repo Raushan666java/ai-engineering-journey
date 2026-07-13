@@ -17,12 +17,13 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Analysis</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Real-world analogy:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## 6.12 Array Decay to</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Pointer **Real-world</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    analogy:** A full...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When you hand the menu to</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    the chef saying &quot;I want</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    this,&quot; you&apos;re...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When you hand the menu to</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    the chef saying &quot;I want</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    this,&quot; you&apos;re...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  But the chef sees it as</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    &quot;the address of page</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    0&quot; — they need to</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    know...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Real-world analogy:</text>
   </g>

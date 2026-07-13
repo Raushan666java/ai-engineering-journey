@@ -16,14 +16,22 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">12. File Type</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Validation by Magic...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Relying solely on file</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    extensions is insecure</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Validate the file&apos;s</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    magic bytes (the first few</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    bytes that identify...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Relying solely on file</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">extensions is insecure</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  File Type Validation by</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Magic Bytes&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Relying solely...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Validate the file&apos;s</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    magic bytes (the first few</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    bytes that identify...</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  File Type Validation by</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    Magic Bytes&quot;</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <line x1="56" y1="364" x2="544" y2="364" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="384" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">File Type Validation by</text>
+    <text x="56" y="400" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Magic Bytes&quot;</text>
+    <text x="56" y="416" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="432" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;/a&gt; Relying...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

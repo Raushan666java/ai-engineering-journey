@@ -17,12 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Algorithms</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Strategy</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Strategy**: Start with</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Karumanchi for quick concept</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    coverage and...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use CLRS for deep</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    understanding of complex</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    topics (DP, Graph...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use CLRS for deep</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    understanding of complex</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    topics (DP, Graph...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Focus on Chapters 2-6,</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    10-12, 15-16, 22-25 from</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    CLRS for GATE</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Strategy</text>
   </g>

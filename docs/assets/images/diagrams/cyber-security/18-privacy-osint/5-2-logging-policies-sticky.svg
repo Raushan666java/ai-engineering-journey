@@ -16,12 +16,12 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">5.2 Logging Policies</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Audited no-logs providers:</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A VPN&apos;s privacy</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    guarantee depends entirely</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    on its logging policy</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The three categories:</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    **Audited no-logs</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    providers:** Mullvad,...</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The three categories:</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    **Audited no-logs</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    providers:** Mullvad,...</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  These providers have</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    submitted to independent</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    audits and, in some...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Audited no-logs providers:</text>
   </g>

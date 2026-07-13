@@ -16,17 +16,23 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">1. The Synchronous</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Problem</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Most Spring beans execute</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    synchronously by default</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When a method does I/O,</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    calls a remote API, or</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    performs a...</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In a web application, this</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    means one of the</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    container&apos;s...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Most Spring beans execute</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">synchronously by default</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The Synchronous</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Problem&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Most Spring beans</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    execute...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When a method does I/O,</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    calls a remote API, or</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    performs a...</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In a web application, this</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    means one of the</text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    container&apos;s...</text>
+    <line x1="56" y1="364" x2="544" y2="364" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="384" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The Synchronous</text>
+    <text x="56" y="400" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Problem&quot;</text>
+    <text x="56" y="416" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="432" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;/a&gt; Most Spring</text>
+    <text x="56" y="448" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">beans...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

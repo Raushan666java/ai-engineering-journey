@@ -17,11 +17,11 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Analysis</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Why O(R × C):</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Why O(R × C):** Each match</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    cycle must evaluate every</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    condition of...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With R=500 and C=5, that is</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    2500 comparisons</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With R=500 and C=5, that is</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    2500 comparisons</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The Rete algorithm improves</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    this to O(C × M) where M ≪ R</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    by...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Why O(R × C):</text>
   </g>

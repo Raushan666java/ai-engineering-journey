@@ -17,12 +17,12 @@
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  pre-fabricating building</text>
     <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    components</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Using constexpr lambdas is</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    like **pre-fabricating</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    building...</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Factory production (compile</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    time) is faster, more</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    precise, and costs...</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Factory production (compile</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    time) is faster, more</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    precise, and costs...</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  On-site assembly (runtime)</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    is flexible but slow and</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    expensive.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">pre-fabricating building</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">components</text>

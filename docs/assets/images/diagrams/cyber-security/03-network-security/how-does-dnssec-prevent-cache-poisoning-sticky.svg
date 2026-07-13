@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">How does DNSSEC</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">prevent cache...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **A7:** DNSSEC adds</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    cryptographic digital</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    signatures to DNS records</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Each DNS record has an</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    associated RRSIG (Resource</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Record Signature)...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This creates a chain of</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    trust from the root zone</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    down to the domain</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Each DNS record has an</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    associated RRSIG (Resource</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Record Signature)...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This creates a chain of</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    trust from the root zone</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    down to the domain</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  If an attacker injects a</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    fake DNS record, the</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    resolver detects the...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">**A7:** DNSSEC adds</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">cryptographic digital</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">signatures to DNS...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Each DNS record has an</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">associated RRSIG (Resource</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Record...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

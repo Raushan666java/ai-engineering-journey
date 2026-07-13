@@ -22,10 +22,14 @@
     <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With systematic practice,</text>
     <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    these questions can be</text>
     <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    solved in 30–60...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">They are considered</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">scoring topics because</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">they follow...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Importance in IBPS SO IT</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Officer Prelims&quot;</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">They are considered</text>
+    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">scoring topics because</text>
+    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">they follow...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

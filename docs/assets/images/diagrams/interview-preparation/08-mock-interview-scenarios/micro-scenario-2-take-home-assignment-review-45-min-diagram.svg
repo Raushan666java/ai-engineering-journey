@@ -18,13 +18,13 @@
     <rect x="210" y="38" width="180" height="44" rx="8" fill="#2563eb" opacity="0.9"/>
     <text x="300" y="65" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Micro-Scenario  2: Take-Home...</text>
     <rect x="10" y="158" width="180" height="44" rx="8" fill="#059669" opacity="0.9"/>
-    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">We&apos;ve rev iewed your...</text>
+    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Walk me thro ugh your...</text>
     <rect x="210" y="198" width="180" height="44" rx="8" fill="#d97706" opacity="0.9"/>
-    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Walk me thro ugh your...</text>
+    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Why you chose  SQL over...</text>
     <rect x="410" y="158" width="180" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
-    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Why you chose  SQL over...</text>
+    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Why you used  optimistic...</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
-    We&apos;ve reviewed your take-home assignment — an event booking...
+    Walk me through your architecture decisions
   </text>
 </svg>

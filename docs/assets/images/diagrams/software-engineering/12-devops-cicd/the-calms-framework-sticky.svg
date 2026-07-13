@@ -17,9 +17,6 @@
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  DORA Metrics (key DevOps</text>
     <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    measurements):</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  CALMS is a framework for</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    assessing DevOps adoption</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    across five...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">DORA Metrics (key DevOps</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">measurements):</text>

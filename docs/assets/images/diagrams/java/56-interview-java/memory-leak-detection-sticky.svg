@@ -16,12 +16,12 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Memory leak detection.</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Answer:</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Answer:** Memory leaks</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    occur when objects are</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    unintentionally...</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Common causes: static</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    collections, ThreadLocal,</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    unclosed resources,...</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Common causes: static</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    collections, ThreadLocal,</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    unclosed resources,...</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  import java.util.*; import</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    java.lang.ref.*; public</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    class...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Answer:</text>
   </g>

@@ -26,16 +26,16 @@
     <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">Naive single-stage</text>
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">FROM python:3.12-slim WORKDIR /app</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">COPY requirements.txt</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">RUN pip install -r requirements.txt</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">COPY</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">CMD [&quot;uvicorn&quot;,</text>
-    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;app.main:app&quot;,</text>
-    <text x="60" y="314" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;--host&quot;,</text>
-    <text x="60" y="342" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;0.0.0.0&quot;] Size:...</text>
+      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">RUN pip install -r requirements.txt</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">COPY</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">CMD [&quot;uvicorn&quot;,</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;app.main:app&quot;,</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;--host&quot;,</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;0.0.0.0&quot;] Size:...</text>
+    <text x="60" y="314" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Includes build tools, cache files,</text>
+    <text x="60" y="342" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">unnecessary packages.</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — FROM python:3.12-slim WORKDIR /app COPY...
+    — RUN pip install -r requirements.txt COPY
   </text>
 </svg>

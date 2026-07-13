@@ -16,11 +16,9 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Kernel Threads</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  no user-space address space</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Kernel threads are processes</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    that run only in kernel mode</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They have **no user-space</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    address space** (`mm =</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    NULL`)</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They have **no user-space</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    address space** (`mm =</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    NULL`)</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">no user-space address</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">space</text>

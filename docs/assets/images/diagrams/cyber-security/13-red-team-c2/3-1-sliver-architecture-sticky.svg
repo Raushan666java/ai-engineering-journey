@@ -18,12 +18,12 @@
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Key Differentiators from</text>
     <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Cobalt Strike:</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Sliver is an open-source,</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Go-based C2 framework</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    developed by BishopFox</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It supports mTLS, HTTP(S),</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    DNS, and WireGuard-based C2</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    channels</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It supports mTLS, HTTP(S),</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    DNS, and WireGuard-based C2</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    channels</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Sliver uses a server-client</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    model where operators</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    connect to the...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Key Differentiators from</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Cobalt Strike:</text>

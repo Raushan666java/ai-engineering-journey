@@ -15,19 +15,20 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">15. Hiding Endpoints</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Three mechanisms for</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    excluding endpoints from the</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    spec</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Path-based exclusion via</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    GroupedOpenApi // See...</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  @Hidden on the method</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    @Hidden</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    @GetMapping(&quot;/internal/cleanup&quot;)</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    public...</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Hiding Endpoints&quot;</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Three mechanisms</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    for excluding...</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Path-based exclusion via</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    GroupedOpenApi // See...</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Hiding Endpoints&quot;</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Three mechanisms for</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">excluding endpoints from</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">the spec</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Hiding Endpoints&quot;</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;/a&gt; Three</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">mechanisms for...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -26,15 +26,15 @@
     <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">अभ्यास ६: समूह चर्चा</text>
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">निम्नलिखित प्रश्नों पर समूह में ओशो</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">के दृष्टिकोण से चर्चा...</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;तुरीय पहले से है&quot; — यदि</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">ऐसा है, तो हम इसे क्यों नहीं</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">पहचान...</text>
-    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">क्या साक्षी भाव बिना किसी तकनीक के</text>
-    <text x="60" y="314" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">आ सकता है? ३</text>
+      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&quot;तुरीय पहले से है&quot; — यदि</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">ऐसा है, तो हम इसे क्यों नहीं</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">पहचान...</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">क्या साक्षी भाव बिना किसी तकनीक के</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">आ सकता है? ३</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">ओशो कहते हैं कि जाग्रत भी एक सपना</text>
+    <text x="60" y="314" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">है — क्या आप इससे सहमत...</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — निम्नलिखित प्रश्नों पर समूह में ओशो के दृष्टिकोण से...
+    — &quot;तुरीय पहले से है&quot; — यदि ऐसा है, तो हम इसे क्यों नहीं...
   </text>
 </svg>

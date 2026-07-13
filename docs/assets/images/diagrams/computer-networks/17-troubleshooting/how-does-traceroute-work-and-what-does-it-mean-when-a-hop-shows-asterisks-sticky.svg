@@ -16,16 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">How does traceroute</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">work, and what...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Traceroute sends packets</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    with increasing TTL values</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Hop 1 gets TTL=1, Hop 2 gets</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    TTL=2, etc</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Each router decrements TTL;</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    when TTL reaches 0, the</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    router sends an...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Hop 1 gets TTL=1, Hop 2 gets</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    TTL=2, etc</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Each router decrements TTL;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    when TTL reaches 0, the</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    router sends an...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Three asterisks in a row</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    mean the hop is not</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    responding, but packets...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Traceroute sends packets</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">with increasing TTL values</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Hop 1 gets TTL=1, Hop 2</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">gets TTL=2, etc</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

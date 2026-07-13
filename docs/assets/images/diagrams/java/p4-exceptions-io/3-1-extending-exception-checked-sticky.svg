@@ -16,17 +16,14 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">3.1 Extending</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Exception (Checked)</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  package chapter4; /** *</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Checked custom exception for</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    user-related...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  */ public class</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    UserNotFoundException</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    extends Exception { //</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    Unique...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  */ public class</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    UserNotFoundException</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    extends Exception { //</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Unique...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">package chapter4; /** *</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Checked custom exception</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">for...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">*/ public class</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">UserNotFoundException</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">extends Exception { //...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

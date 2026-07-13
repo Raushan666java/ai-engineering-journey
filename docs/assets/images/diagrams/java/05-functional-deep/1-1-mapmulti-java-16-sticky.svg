@@ -16,19 +16,20 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">1.1 `mapMulti` (Java</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">16+)</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `mapMulti` is a hybrid</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    between `map` and `flatMap`</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This avoids creating</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    intermediate `Stream`</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    objects and can improve...</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  mapMulti replacing flatMap</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    for one-to-many ----</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    List&lt;String&gt; words</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    =...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`mapMulti` is a hybrid</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">between `map` and</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`flatMap`</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This avoids creating</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    intermediate `Stream`</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    objects and can improve...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  mapMulti replacing flatMap</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    for one-to-many ----</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    List&lt;String&gt; words</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    =...</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Filter + map in one pass</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    ---- List&lt;String&gt; raw</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    = List</text>
+    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">This avoids creating</text>
+    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">intermediate `Stream`</text>
+    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">objects and can...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

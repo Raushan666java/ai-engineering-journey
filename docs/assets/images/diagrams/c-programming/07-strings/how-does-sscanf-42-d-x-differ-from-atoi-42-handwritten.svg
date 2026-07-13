@@ -30,10 +30,10 @@
   <line x1="55" y1="239" x2="570" y2="239" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="254" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Answer:</text>
-    <text x="60" y="282" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Answer:** `sscanf` returns the</text>
-    <text x="60" y="310" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">number of successful...</text>
-    <text x="60" y="338" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`atoi` returns the integer value (0</text>
-    <text x="60" y="366" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">on error — ambiguous)</text>
+    <text x="60" y="282" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`atoi` returns the integer value (0</text>
+    <text x="60" y="310" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">on error — ambiguous)</text>
+    <text x="60" y="338" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`sscanf` can also parse multiple</text>
+    <text x="60" y="366" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">fields simultaneously</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Answer:

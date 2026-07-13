@@ -16,10 +16,7 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Complexity Analysis</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Why O(1) per ACK</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Why O(1) per ACK**: TCP</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    congestion control is</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    designed to run...</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## 9.4 Slow Start</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## 9.4 Slow Start</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Why O(1) per ACK</text>
   </g>

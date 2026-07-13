@@ -27,15 +27,17 @@
   <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">(NIST SP 800-61)</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">flowchart TD Prep[&quot;1</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Preparation&lt;br/&gt;&lt;i&gt;• IR</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">plan &amp; team&lt;br/&gt;• Tools</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&amp;...</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Detection &amp;</text>
-    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Analysis&lt;br/&gt;&lt;i&gt;• SIEM</text>
-    <text x="60" y="350" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">alerts&lt;br/&gt;• Threat...</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Preparation&lt;br/&gt;&lt;i&gt;• IR</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">plan &amp; team&lt;br/&gt;• Tools</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&amp;...</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Detection &amp;</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Analysis&lt;br/&gt;&lt;i&gt;• SIEM</text>
+    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">alerts&lt;br/&gt;• Threat...</text>
+    <text x="60" y="350" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Containment&lt;br/&gt;&lt;i&gt;•</text>
+    <text x="60" y="378" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Short-term: isolate</text>
+    <text x="60" y="406" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">host&lt;br/&gt;•...</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — flowchart TD Prep[&quot;1
+    — Preparation&lt;br/&gt;&lt;i&gt;• IR plan &amp; team&lt;br/&gt;• Tools &amp;...
   </text>
 </svg>

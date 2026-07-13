@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">How would you detect a</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">rootkit on...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **A:** Detection techniques</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    in order of increasing</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    reliability: # 1</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Known rootkit scanners</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    chkrootkit rkhunter --check</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    # 4</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Userland checks (unreliable</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    → rootkit hooks these) lsmod</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    # may be...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Known rootkit scanners</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    chkrootkit rkhunter --check</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    # 4</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Userland checks (unreliable</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    → rootkit hooks these) lsmod</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    # may be...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Cross-view detection</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    (compare /proc with syscall</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    results) cat...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">**A:** Detection</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">techniques in order of</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">increasing reliability:...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Known rootkit scanners</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">chkrootkit rkhunter</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">--check # 4</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

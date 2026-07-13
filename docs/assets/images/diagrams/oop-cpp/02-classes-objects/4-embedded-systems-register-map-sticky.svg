@@ -19,10 +19,18 @@
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## 2.12 Summary — Key</text>
     <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Takeaways ## 2.13 Chapter</text>
     <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Exercises</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">## 2.12 Summary — Key</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Takeaways ## 2.13 Chapter</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Exercises</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Embedded Systems Register</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    Map&quot;</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Embedded Systems Register</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    Map&quot;</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <line x1="56" y1="364" x2="544" y2="364" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="384" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">## 2.12 Summary — Key</text>
+    <text x="56" y="400" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Takeaways ## 2.13 Chapter</text>
+    <text x="56" y="416" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Exercises</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

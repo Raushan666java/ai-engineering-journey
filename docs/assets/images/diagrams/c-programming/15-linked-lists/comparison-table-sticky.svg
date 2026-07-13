@@ -16,12 +16,10 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Comparison Table</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Rule of thumb</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Rule of thumb**: Use</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    iterative for any list that</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    might have more...</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use recursive for elegant</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    code when you know the list</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    is small</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use recursive for elegant</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    code when you know the list</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    is small</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## 15.10 Interview Corner</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Rule of thumb</text>
   </g>

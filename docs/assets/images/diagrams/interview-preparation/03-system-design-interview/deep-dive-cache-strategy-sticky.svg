@@ -16,12 +16,15 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Deep Dive: Cache</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Strategy</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Cache-aside</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  On URL creation, write to DB</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    and set cache (TTL: 24h)</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Check Redis cache first</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  On URL creation, write to DB</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    and set cache (TTL: 24h)</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Check Redis cache first</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  On miss, fetch from DB and</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    populate cache</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Cache-aside</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">On URL creation, write to</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">DB and set cache (TTL:</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">24h)</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

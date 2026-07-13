@@ -17,12 +17,11 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Allocation?</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  automatic</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Local variables (declared</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    inside a function without</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `static`) are...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Memory is allocated on the</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    stack when the function is</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    entered and...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Memory is allocated on the</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    stack when the function is</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    entered and...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The size must be known at</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    compile time</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">automatic</text>
   </g>

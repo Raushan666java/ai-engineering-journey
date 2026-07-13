@@ -21,6 +21,10 @@
     <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  SpringDoc bridges Spring</text>
     <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Boot and OpenAPI 3.0 without</text>
     <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    requiring the...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  OpenAPI and Swagger</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Picture&quot;</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Swagger UI renders that</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">spec as interactive</text>

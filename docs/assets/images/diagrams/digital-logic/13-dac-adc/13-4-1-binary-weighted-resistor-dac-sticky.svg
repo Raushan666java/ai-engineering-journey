@@ -16,15 +16,11 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">13.4.1 Binary-Weighted</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Resistor DAC</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Uses resistors with</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    binary-weighted values (R,</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    2R, 4R, ..., 2???R)</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  V_out = -V_ref ? (b0/2 +</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    b1/4 + ..</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  V_out = -V_ref ? (b0/2 +</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    b1/4 + ..</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Uses resistors with</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">binary-weighted values (R,</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">2R, 4R, ...,...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">V_out = -V_ref ? (b0/2 +</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">b1/4 + ..</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

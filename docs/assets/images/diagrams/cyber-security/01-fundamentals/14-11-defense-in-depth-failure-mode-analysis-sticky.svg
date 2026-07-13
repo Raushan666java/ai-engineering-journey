@@ -18,10 +18,10 @@
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Web Application → Layer</text>
     <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Failure Cascade:</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For each layer in a</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    defense-in-depth strategy,</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    define: 1</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  How can this layer fail? 2</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  How can this layer fail? 2</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  What does the next layer do</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    when this one fails? **Web</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Application →...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Web Application → Layer</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Failure Cascade:</text>

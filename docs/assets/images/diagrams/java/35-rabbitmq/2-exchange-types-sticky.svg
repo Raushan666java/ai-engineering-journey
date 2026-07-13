@@ -15,19 +15,19 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">2. Exchange Types</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  #### 2.1 DirectExchange A</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    message goes to the queues</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    whose...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Messages with</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    `&quot;shipping&quot;` go to</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    `order.shipping.queue`</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  #### 2.4 HeadersExchange</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    Routes based on message</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    header attributes...</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Messages with</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    `&quot;shipping&quot;` go to</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    `order.shipping.queue`</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  #### 2.4 HeadersExchange</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    Routes based on message</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    header attributes...</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Supports `x-match` Ã¢â‚¬â€</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    `all` means all headers must</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    match, `any`...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">#### 2.1 DirectExchange A</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">message goes to the queues</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">whose...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Messages with</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`&quot;shipping&quot;` go</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">to `order.shipping.queue`</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

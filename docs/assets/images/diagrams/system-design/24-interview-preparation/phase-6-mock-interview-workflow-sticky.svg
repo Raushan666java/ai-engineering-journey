@@ -16,14 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Phase 6: Mock</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Interview Workflow</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Practice with a timer</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The candidate scores 9/10</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    and receives an E6 offer</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The incident illustrates</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    every system design</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    antipattern from this...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The candidate scores 9/10</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    and receives an E6 offer</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The incident illustrates</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    every system design</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    antipattern from this...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Knight deployed new retail</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    order routing code to 8</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    servers, but a...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Practice with a timer</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The candidate scores 9/10</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">and receives an E6 offer</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

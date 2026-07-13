@@ -18,13 +18,13 @@
     <rect x="210" y="38" width="180" height="44" rx="8" fill="#2563eb" opacity="0.9"/>
     <text x="300" y="65" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">2.4 Testing Res ource Server...</text>
     <rect x="10" y="158" width="180" height="44" rx="8" fill="#059669" opacity="0.9"/>
-    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Combining `@Wi thMockJwt`...</text>
+    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">But if the con troller //...</text>
     <rect x="210" y="198" width="180" height="44" rx="8" fill="#d97706" opacity="0.9"/>
-    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">But if the con troller //...</text>
+    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Performance Te sting with...</text>
     <rect x="410" y="158" width="180" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
-    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Performance Te sting with...</text>
+    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">It tests appli cations by...</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
-    Combining `@WithMockJwt` and a mocked `JwtDecoder` for full...
+    But if the controller // or a filter calls JwtDecoder, we...
   </text>
 </svg>

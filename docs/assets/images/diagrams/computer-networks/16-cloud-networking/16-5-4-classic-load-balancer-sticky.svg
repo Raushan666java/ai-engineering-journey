@@ -16,16 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">16.5.4 Classic Load</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Balancer</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  CLB is the legacy load</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    balancer supporting both</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Layer 4 and basic...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It is less flexible than</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    ALB/NLB and is not</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    recommended for new...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It is less flexible than</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    ALB/NLB and is not</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    recommended for new...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">CLB is the legacy load</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">balancer supporting both</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Layer 4 and...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">It is less flexible than</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">ALB/NLB and is not</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">recommended for new...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

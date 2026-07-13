@@ -16,15 +16,9 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Guideline 9 ---</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Provide...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Even with C++20&apos;s</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    `&lt;=&gt;`, it&apos;s good</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    practice to ensure `!=`</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    is...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Even with C++20&apos;s</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`&lt;=&gt;`, it&apos;s</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">good practice to ensure</text>
-    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`!=` is...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Important concept</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Key learning objective</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Practical application</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

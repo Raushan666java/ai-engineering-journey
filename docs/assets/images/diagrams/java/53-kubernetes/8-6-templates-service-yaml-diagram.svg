@@ -18,13 +18,13 @@
     <rect x="210" y="38" width="180" height="44" rx="8" fill="#2563eb" opacity="0.9"/>
     <text x="300" y="65" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">8.6 templates /service.yaml</text>
     <rect x="10" y="158" width="180" height="44" rx="8" fill="#059669" opacity="0.9"/>
-    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">apiVersion:  v1 kind:...</text>
+    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">}} labels: {{ - include...</text>
     <rect x="210" y="198" width="180" height="44" rx="8" fill="#d97706" opacity="0.9"/>
-    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">}} labels: {{ - include...</text>
+    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">| nindent 4 } } {{- with...</text>
     <rect x="410" y="158" width="180" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
-    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">| nindent 4 } } {{- with...</text>
+    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">| nindent 4 }}</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
-    apiVersion: v1 kind: Service metadata: name: {{ include...
+    }} labels: {{- include &quot;myapp.labels&quot;
   </text>
 </svg>

@@ -20,9 +20,9 @@
     <rect x="10" y="158" width="180" height="44" rx="8" fill="#059669" opacity="0.9"/>
     <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Characteristi cs of good...</text>
     <rect x="210" y="198" width="180" height="44" rx="8" fill="#d97706" opacity="0.9"/>
-    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">A domain eve nt is an...</text>
+    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">It represent s a fact...</text>
     <rect x="410" y="158" width="180" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
-    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">It represent s a fact...</text>
+    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Domain events  are named...</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
     Characteristics of good domain events:

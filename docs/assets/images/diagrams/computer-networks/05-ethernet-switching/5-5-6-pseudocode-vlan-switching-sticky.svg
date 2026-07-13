@@ -16,17 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">5.5.6 Pseudocode: VLAN</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Switching</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  GLOBAL mac_table:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    MAP&lt;(VLAN_ID, MAC),</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    PortEntry&gt; FUNCTION...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Learn (MAC, VLAN, port)</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    tuple key = (vlan_id, frame</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Handle broadcast within VLAN</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    IF frame</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Learn (MAC, VLAN, port)</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    tuple key = (vlan_id, frame</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Handle broadcast within VLAN</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    IF frame</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  VLAN-scoped destination</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    lookup dst_key = (vlan_id,</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    frame</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">GLOBAL mac_table:</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">MAP&lt;(VLAN_ID, MAC),</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">PortEntry&gt; FUNCTION...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Learn (MAC, VLAN, port)</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">tuple key = (vlan_id,</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">frame</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

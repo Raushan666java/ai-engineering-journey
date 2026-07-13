@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">How do you design a</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">PCI-DSS...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The architecture follows the</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    tokenization pattern:</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    cardholder data...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use Laravel Cashier (Stripe)</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    to tokenize payment details</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    at the...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Store only the payment</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    gateway token and last-four</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    digits</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use Laravel Cashier (Stripe)</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    to tokenize payment details</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    at the...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Store only the payment</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    gateway token and last-four</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    digits</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Encrypt any stored PAN data</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    with Laravel&apos;s</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    `encrypt()` at the field...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The architecture follows</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">the tokenization pattern:</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">cardholder...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Use Laravel Cashier</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(Stripe) to tokenize</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">payment details at the...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

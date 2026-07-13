@@ -15,16 +15,15 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Your choice</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For the RAG demo: ChromaDB</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    is correct</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  You can spin it up with `pip</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    install chromadb` and a...</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Later, if the demo takes</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    off, Qdrant or pgvector are</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    natural upgrades.</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  You can spin it up with `pip</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    install chromadb` and a...</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Later, if the demo takes</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    off, Qdrant or pgvector are</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    natural upgrades.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">For the RAG demo: ChromaDB</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">is correct</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">You can spin it up with</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`pip install chromadb` and</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">a...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

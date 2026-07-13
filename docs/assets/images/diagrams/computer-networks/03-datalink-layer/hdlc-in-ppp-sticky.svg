@@ -15,19 +15,16 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">HDLC in PPP</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  PPP&apos;s framing (flag</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    byte 0x7E, bit stuffing,</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    FCS) is directly derived...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  HDLC&apos;s REJ and SREJ</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    supervisory frames map to</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    Go-Back-N and Selective...</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Many PPP implementations</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    support both via LCP</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    negotiation.</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  HDLC&apos;s REJ and SREJ</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    supervisory frames map to</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    Go-Back-N and Selective...</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Many PPP implementations</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    support both via LCP</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    negotiation.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">PPP&apos;s framing (flag</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">byte 0x7E, bit stuffing,</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">FCS) is directly...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">HDLC&apos;s REJ and SREJ</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">supervisory frames map to</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Go-Back-N and...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

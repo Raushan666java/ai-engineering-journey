@@ -16,20 +16,21 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Practical Generator</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Applications</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Generators shine in</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    real-world scenarios where</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    memory efficiency and...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Streaming log file reader</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    (memory-safe for GB-sized</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    files) def...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Infinite paginated API</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    consumer def</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    fetch_all_pages(api_base:</text>
-    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    str,...</text>
-    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Generators shine in</text>
-    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">real-world scenarios where</text>
-    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">memory efficiency...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Streaming log file reader</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    (memory-safe for GB-sized</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    files) def...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Infinite paginated API</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    consumer def</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    fetch_all_pages(api_base:</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    str,...</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Sliding window over a</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    sequence def</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    sliding_window(iterable, n:</text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    int):...</text>
+    <line x1="56" y1="364" x2="544" y2="364" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="384" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Streaming log file reader</text>
+    <text x="56" y="400" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(memory-safe for GB-sized</text>
+    <text x="56" y="416" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">files) def...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

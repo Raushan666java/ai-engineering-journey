@@ -16,16 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Why 2Â³Â¹ - 1 maximum</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">window for...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For Go-Back-N with 31-bit</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    sequence numbers ($2^{31} -</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    1$), the...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For Selective Repeat, both</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    sender and receiver windows</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    are...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For Selective Repeat, both</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    sender and receiver windows</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    are...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">For Go-Back-N with 31-bit</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">sequence numbers ($2^{31}</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">- 1$), the...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">For Selective Repeat, both</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">sender and receiver</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">windows are...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

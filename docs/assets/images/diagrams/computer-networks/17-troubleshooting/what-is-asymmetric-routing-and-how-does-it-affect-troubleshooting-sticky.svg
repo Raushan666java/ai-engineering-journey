@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">What is asymmetric</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">routing and how...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Asymmetric routing occurs</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    when packets take a</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    different path from A...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This is common in networks</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    with ECMP or multiple</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    connections</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Traceroute only shows the</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    forward path → packet loss</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    on the return...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This is common in networks</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    with ECMP or multiple</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    connections</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Traceroute only shows the</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    forward path → packet loss</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    on the return...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This means a high-loss</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    traceroute may not show</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    where loss is actually...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Asymmetric routing occurs</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">when packets take a</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">different path...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">This is common in networks</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">with ECMP or multiple</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">connections</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

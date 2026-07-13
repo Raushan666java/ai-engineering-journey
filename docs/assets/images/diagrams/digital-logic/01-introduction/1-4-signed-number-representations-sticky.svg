@@ -18,11 +18,11 @@
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Algorithm to compute</text>
     <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    two&apos;s complement</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Digital systems require</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    methods for representing</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    negative integers</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Four principal</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    representations exist</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Four principal</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    representations exist</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  #### 1.4.1 Sign-Magnitude</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    The most significant bit</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    (MSB) indicates...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Algorithm to compute</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">two&apos;s complement</text>

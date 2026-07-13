@@ -16,17 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Real-World Analogy:</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Valet Parking</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Connection pooling is like a</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    valet parking service</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With a pool, valets (pooler)</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    keep 10-50 cars ready at the</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    entrance</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When you arrive (query</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    request), you get a car</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    instantly</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With a pool, valets (pooler)</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    keep 10-50 cars ready at the</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    entrance</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When you arrive (query</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    request), you get a car</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    instantly</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When done, the valet parks</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    it for the next person.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Connection pooling is like</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">a valet parking service</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">With a pool, valets</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(pooler) keep 10-50 cars</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">ready at the...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

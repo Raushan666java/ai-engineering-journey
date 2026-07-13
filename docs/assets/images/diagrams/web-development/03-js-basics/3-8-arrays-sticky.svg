@@ -16,11 +16,11 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">3.8 Arrays</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Object destructuring:</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Arrays are ordered,</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    zero-indexed collections</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &gt; [!WARNING] &gt; `typeof</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    null === &apos;object&apos;`</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    is a long-standing...</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &gt; [!WARNING] &gt; `typeof</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    null === &apos;object&apos;`</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    is a long-standing...</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use `value === null` to</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    check for null</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Object destructuring:</text>
   </g>

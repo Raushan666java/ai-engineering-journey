@@ -18,13 +18,13 @@
     <rect x="210" y="38" width="180" height="44" rx="8" fill="#2563eb" opacity="0.9"/>
     <text x="300" y="65" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">8.4.1 Decodin g Johnson...</text>
     <rect x="10" y="158" width="180" height="44" rx="8" fill="#059669" opacity="0.9"/>
-    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Each Johnson  counter...</text>
+    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">N-input for  a ring...</text>
     <rect x="210" y="198" width="180" height="44" rx="8" fill="#d97706" opacity="0.9"/>
-    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">N-input for  a ring...</text>
+    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">## 8.5 Frequency...</text>
     <rect x="410" y="158" width="180" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
-    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">## 8.5 Frequency...</text>
+    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">A modulo-N  counter...</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
-    Each Johnson counter state requires a 2-input AND gate to...
+    N-input for a ring counter), saving significant logic
   </text>
 </svg>

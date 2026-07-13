@@ -17,12 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">`equals`/`hashCode`...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  must</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The contract defined by</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    `java.lang.Object`: - If</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `a.equals(b)` then...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - If `a.hashCode() ==</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    b.hashCode()`, `a.equals(b)`</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    may be true or...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - If `a.hashCode() ==</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    b.hashCode()`, `a.equals(b)`</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    may be true or...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - `hashCode` must return the</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    same value across multiple</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    invocations...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">must</text>
   </g>

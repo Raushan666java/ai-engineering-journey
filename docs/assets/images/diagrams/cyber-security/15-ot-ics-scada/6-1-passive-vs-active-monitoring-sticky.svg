@@ -17,12 +17,13 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Monitoring</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Safety rule:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Safety rule:** Never scan</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    a running PLC with</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    aggressive timing...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use `-T2` with retry 0 and</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    avoid all write function</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    codes.</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Active Monitoring&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; **Safety rule:**</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    Never scan a...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use `-T2` with retry 0 and</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    avoid all write function</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    codes.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Safety rule:</text>
   </g>

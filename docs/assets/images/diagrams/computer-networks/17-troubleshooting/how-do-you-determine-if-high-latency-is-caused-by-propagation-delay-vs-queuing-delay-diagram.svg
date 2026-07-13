@@ -18,13 +18,13 @@
     <rect x="210" y="38" width="180" height="44" rx="8" fill="#2563eb" opacity="0.9"/>
     <text x="300" y="65" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">How do you deter mine if high...</text>
     <rect x="10" y="158" width="180" height="44" rx="8" fill="#059669" opacity="0.9"/>
-    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Propagation d elay is a...</text>
+    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">A transatla ntic hop...</text>
     <rect x="210" y="198" width="180" height="44" rx="8" fill="#d97706" opacity="0.9"/>
-    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">A transatla ntic hop...</text>
+    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">If measured RTT...</text>
     <rect x="410" y="158" width="180" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
-    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">If measured RTT...</text>
+    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Check by running...</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
-    Propagation delay is a function of distance (speed of light...
+    A transatlantic hop (6000 km) adds ~30ms one-way = 60ms RTT...
   </text>
 </svg>

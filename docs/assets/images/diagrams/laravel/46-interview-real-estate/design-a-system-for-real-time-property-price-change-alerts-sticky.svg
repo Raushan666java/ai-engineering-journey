@@ -16,20 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Design a system for</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">real-time...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Users want to know</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    immediately when a property</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    they&apos;re watching...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Implement notification</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    preferences per user // -</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Immediate (email +...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use Laravel&apos;s</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    `Notification::send()` which</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    handles bulk sending...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Implement notification</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    preferences per user // -</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Immediate (email +...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use Laravel&apos;s</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    `Notification::send()` which</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    handles bulk sending...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For real-time delivery, use</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Laravel Reverb to push</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    notifications to...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Users want to know</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">immediately when a</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">property they&apos;re</text>
-    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">watching...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Implement notification</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">preferences per user // -</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Immediate...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -17,11 +17,13 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Conditions</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Example:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Output values that never</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    occur or we don&apos;t care</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    about</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Marked as X (don&apos;t</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    care)</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Don&apos;t Care</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Conditions&quot;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Output values</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    that never...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Marked as X (don&apos;t</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    care)</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Example:</text>
   </g>

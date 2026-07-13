@@ -16,16 +16,9 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">13.2.5 Overload</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Resolution with...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The compiler prefers</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    int&amp;&amp; for rvalues</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    over const int&amp;,</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    enabling move...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## 13.3 Move Constructor</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## 13.3 Move Constructor</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The compiler prefers</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">int&amp;&amp; for rvalues</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">over const int&amp;,</text>
-    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">enabling...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">## 13.3 Move Constructor</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

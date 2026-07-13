@@ -16,19 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Why does fgetc return</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">int instead...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  To distinguish EOF (-1,</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    typically) from the 256</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    possible byte values...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  If `fgetc` returned</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    `unsigned char`, it could</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    never signal EOF</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  If it returned `char`, byte</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    0xFF (255) would be</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    indistinguishable...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  If `fgetc` returned</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    `unsigned char`, it could</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    never signal EOF</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  If it returned `char`, byte</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    0xFF (255) would be</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    indistinguishable...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">To distinguish EOF (-1,</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">typically) from the 256</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">possible byte...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">If `fgetc` returned</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`unsigned char`, it could</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">never signal EOF</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -15,18 +15,17 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">3.3.2 Checksum</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  #### Real-World Analogy An</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    invoice lists line items and</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    a &quot;sum total&quot;...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The recipient adds up all</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    line items independently</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  If the total doesn&apos;t</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    match the stated sum,</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    someone made an error</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The recipient adds up all</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    line items independently</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  If the total doesn&apos;t</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    match the stated sum,</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    someone made an error</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  #### Internet Checksum (Used</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    in TCP/UDP/IP) #### How It</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    Works...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">#### Real-World Analogy An</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">invoice lists line items</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">and a &quot;sum...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The recipient adds up all</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">line items independently</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

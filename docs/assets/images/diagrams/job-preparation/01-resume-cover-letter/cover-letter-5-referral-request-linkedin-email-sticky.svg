@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Cover Letter 5:</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Referral Request...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Referral for [Position] at</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    [Company] Hi [Name], I hope</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    this message...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I came across your profile</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    on LinkedIn and noticed you</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    work at...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I am a [Current Role /</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Background] with experience</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    in [Skill Area 1]...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I came across your profile</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    on LinkedIn and noticed you</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    work at...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I am a [Current Role /</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    Background] with experience</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    in [Skill Area 1]...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I would also be happy to</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    answer any questions about</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    my background</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Referral for [Position] at</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">[Company] Hi [Name], I</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">hope this...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">I came across your profile</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">on LinkedIn and noticed</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">you work at...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

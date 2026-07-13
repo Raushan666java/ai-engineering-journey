@@ -16,15 +16,9 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">12.16.6 Using</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">shared_ptr with...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  int x = 42; //</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    std::shared_ptr&lt;int&gt;</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    sp(&amp;x); // UB: delete</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    called on...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">int x = 42; //</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">std::shared_ptr&lt;int&gt;</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">sp(&amp;x); // UB: delete</text>
-    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">called...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Important concept</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Key learning objective</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Practical application</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

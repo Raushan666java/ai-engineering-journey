@@ -16,15 +16,15 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Real-World Analogy —</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Friends...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Alice, Bob, and Charlie want</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    to have dinner</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Alice can come Monday or</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Tuesday</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Bob can come Tuesday or</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Wednesday</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Alice can come Monday or</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Tuesday</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Bob can come Tuesday or</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Wednesday</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Charlie can come Monday,</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Tuesday, or Wednesday</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Alice, Bob, and Charlie</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">want to have dinner</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Alice can come Monday or</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Tuesday</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

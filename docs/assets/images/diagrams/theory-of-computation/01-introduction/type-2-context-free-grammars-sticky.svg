@@ -16,18 +16,15 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Type 2: Context-Free</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Grammars</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Productions are of the form</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    A ? ? where ? is any string</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    of terminals...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Context-free grammars</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    generate languages</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    recognized by pushdown...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  S ? aSb | e // {a^n b^n | n</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    = 0}</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Context-free grammars</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    generate languages</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    recognized by pushdown...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  S ? aSb | e // {a^n b^n | n</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    = 0}</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Productions are of the</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">form A ? ? where ? is any</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">string of...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Context-free grammars</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">generate languages</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">recognized by pushdown...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

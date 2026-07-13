@@ -16,14 +16,24 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">4. CPU Cache Line</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Optimization</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Modern CPUs load memory in</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    64-byte cache lines</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Column-major traversal jumps</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    by stride = row count →</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    cache misses on...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Modern CPUs load memory in</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">64-byte cache lines</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  CPU Cache Line</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Optimization&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Modern CPUs</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    load...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Column-major traversal jumps</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    by stride = row count →</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    cache misses on...</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  CPU Cache Line</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    Optimization&quot;</text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="378" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <line x1="56" y1="384" x2="544" y2="384" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="404" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">CPU Cache Line</text>
+    <text x="56" y="420" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Optimization&quot;</text>
+    <text x="56" y="436" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="452" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;/a&gt; Modern CPUs</text>
+    <text x="56" y="468" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">load...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

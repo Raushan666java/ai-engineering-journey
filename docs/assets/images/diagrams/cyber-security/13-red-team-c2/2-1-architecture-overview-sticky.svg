@@ -17,12 +17,11 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Overview</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Key Components:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Cobalt Strike is the</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    industry-standard red team</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    C2 framework</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Operators connect over TCP;</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    beacons over</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    HTTP/HTTPS/DNS/SMB</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Operators connect over TCP;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    beacons over</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    HTTP/HTTPS/DNS/SMB</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - Beacon: Lightweight</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    payload on victim</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Key Components:</text>
   </g>

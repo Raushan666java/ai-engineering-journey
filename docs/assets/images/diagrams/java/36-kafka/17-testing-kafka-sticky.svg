@@ -21,6 +21,9 @@
     <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Set `session.timeout.ms`</text>
     <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    appropriately to avoid</text>
     <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    unnecessary rebalances</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Testing Kafka&quot;</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&gt; [!WARNING] &gt;</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Consumer rebalancing stops</text>

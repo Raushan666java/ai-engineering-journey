@@ -17,10 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">improved a...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Strategy:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Strategy:** Quantify</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    everything</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &quot;I improved performance</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    by 50%&quot; is good</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  (Impact)&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; **Strategy:**</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    Quantify everything</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &quot;I improved performance</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    by 50%&quot; is good</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Strategy:</text>
   </g>

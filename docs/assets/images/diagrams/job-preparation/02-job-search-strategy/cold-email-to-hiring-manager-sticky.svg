@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Cold Email to Hiring</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Manager</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  [Role] Application - [Your</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Name] - [X] years experience</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Dear [Hiring...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I am writing to express my</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    interest in the [Role]</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    position at...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With [X] years of experience</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    in [Domain], I believe I can</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    contribute...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I am writing to express my</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    interest in the [Role]</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    position at...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With [X] years of experience</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    in [Domain], I believe I can</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    contribute...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I would love the opportunity</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    to bring my expertise in</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    [Skill Area] to...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">[Role] Application - [Your</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Name] - [X] years</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">experience Dear...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">I am writing to express my</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">interest in the [Role]</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">position at...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

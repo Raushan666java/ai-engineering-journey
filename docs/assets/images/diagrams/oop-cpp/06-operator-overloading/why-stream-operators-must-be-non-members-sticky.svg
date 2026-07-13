@@ -17,12 +17,8 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Must Be...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  One-Sentence Takeaway:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The left operand of</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    `&lt;&lt;` is</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `std::ostream&amp;`, not</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    your class type</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Non-member form fixes the</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    operand order</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Non-member form fixes the</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    operand order</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">One-Sentence Takeaway:</text>
   </g>

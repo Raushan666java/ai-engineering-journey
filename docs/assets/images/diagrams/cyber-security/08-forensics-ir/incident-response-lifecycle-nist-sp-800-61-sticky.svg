@@ -16,18 +16,26 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Incident Response</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Lifecycle (NIST...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  flowchart TD Prep[&quot;1</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  </text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Preparation&lt;br/&gt;&lt;i&gt;•</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    IR plan &amp;</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    team&lt;br/&gt;• Tools &amp;</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    playbooks&lt;br/&gt;•...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Detection &amp;</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Analysis&lt;br/&gt;&lt;i&gt;•</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    SIEM alerts&lt;br/&gt;•</text>
-    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    Threat intel&lt;br/&gt;•...</text>
-    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">flowchart TD Prep[&quot;1</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  </text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Preparation&lt;br/&gt;&lt;i&gt;•</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    IR plan &amp;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    team&lt;br/&gt;• Tools &amp;</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    playbooks&lt;br/&gt;•...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Detection &amp;</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    Analysis&lt;br/&gt;&lt;i&gt;•</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    SIEM alerts&lt;br/&gt;•</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    Threat intel&lt;br/&gt;•...</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  </text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    Containment&lt;br/&gt;&lt;i&gt;•</text>
+    <text x="56" y="378" font-size="13" fill="#333" font-family="Arial, sans-serif">    Short-term: isolate</text>
+    <text x="56" y="398" font-size="13" fill="#333" font-family="Arial, sans-serif">    host&lt;br/&gt;• Long-term:</text>
+    <text x="56" y="418" font-size="13" fill="#333" font-family="Arial, sans-serif">    patch...</text>
+    <line x1="56" y1="424" x2="544" y2="424" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="444" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic"></text>
+    <text x="56" y="460" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Preparation&lt;br/&gt;&lt;i&gt;•</text>
+    <text x="56" y="476" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">IR plan &amp;</text>
+    <text x="56" y="492" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">team&lt;br/&gt;• Tools</text>
+    <text x="56" y="508" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&amp;...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

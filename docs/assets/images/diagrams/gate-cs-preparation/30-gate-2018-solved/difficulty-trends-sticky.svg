@@ -15,19 +15,19 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Difficulty Trends</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  GATE 2018 had a difficulty</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    distribution of</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    approximately 32% Easy,...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The paper was considered</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    moderately difficult,</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    comparable to 2017 but...</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Operating Systems had a</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    tough question on buddy</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    system memory...</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The paper was considered</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    moderately difficult,</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    comparable to 2017 but...</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Operating Systems had a</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    tough question on buddy</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    system memory...</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Computer Networks introduced</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    a question on SMTP protocol</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    details that...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">GATE 2018 had a difficulty</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">distribution of</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">approximately 32%...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The paper was considered</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">moderately difficult,</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">comparable to...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

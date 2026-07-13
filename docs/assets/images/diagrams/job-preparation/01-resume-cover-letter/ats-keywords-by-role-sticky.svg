@@ -15,19 +15,19 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">ATS Keywords by Role</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ## Summary Your resume and</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    cover letter are your first</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    impression in...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For private sector roles,</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    focus on ATS optimization,</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    quantified...</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For government and PSU</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    applications, emphasize</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    qualifications,...</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For private sector roles,</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    focus on ATS optimization,</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    quantified...</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For government and PSU</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    applications, emphasize</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    qualifications,...</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use the 5 templates provided</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    as starting points and</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    customize for...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">## Summary Your resume and</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">cover letter are your</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">first...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">For private sector roles,</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">focus on ATS optimization,</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">quantified...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

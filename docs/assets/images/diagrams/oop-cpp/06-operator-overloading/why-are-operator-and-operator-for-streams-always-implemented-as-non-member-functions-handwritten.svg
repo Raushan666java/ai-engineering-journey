@@ -29,10 +29,10 @@
   <line x1="55" y1="203" x2="570" y2="203" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="218" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Answer:</text>
-    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Answer:** Because the left</text>
-    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">operand is `std::ostream&amp;`,...</text>
-    <text x="60" y="302" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">As a non-member, both operands are</text>
-    <text x="60" y="330" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">explicit parameters, so...</text>
+    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">As a non-member, both operands are</text>
+    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">explicit parameters, so...</text>
+    <text x="60" y="302" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">They typically need `friend` status</text>
+    <text x="60" y="330" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">to access private...</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Answer:

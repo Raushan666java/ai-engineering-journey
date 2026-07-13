@@ -16,17 +16,15 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">16.7.0 Analogy → Round</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Robin...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Think of a circular sushi</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    bar or a round carousel with</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    N numbered...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A chef places new dishes at</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    the next empty plate</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Customers take from the</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    current serving plate</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A chef places new dishes at</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    the next empty plate</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Customers take from the</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    current serving plate</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When you reach plate N, you</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    wrap back to plate 0</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Think of a circular sushi</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">bar or a round carousel</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">with N...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">A chef places new dishes</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">at the next empty plate</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

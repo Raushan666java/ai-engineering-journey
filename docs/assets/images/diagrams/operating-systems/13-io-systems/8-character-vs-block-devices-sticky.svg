@@ -16,9 +16,25 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">8. Character vs Block</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Devices</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Important concept</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Key learning objective</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Practical application</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Character vs Block</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Devices&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Character vs Block</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Devices&quot;</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Character vs Block</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    Devices&quot;</text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="378" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; #### Character</text>
+    <text x="56" y="398" font-size="13" fill="#333" font-family="Arial, sans-serif">    Device...</text>
+    <line x1="56" y1="404" x2="544" y2="404" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="424" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Character vs Block</text>
+    <text x="56" y="440" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Devices&quot;</text>
+    <text x="56" y="456" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="472" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;/a&gt; &lt;a</text>
+    <text x="56" y="488" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">href=&quot;</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

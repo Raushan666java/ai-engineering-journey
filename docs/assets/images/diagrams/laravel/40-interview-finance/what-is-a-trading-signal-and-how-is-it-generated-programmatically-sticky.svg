@@ -16,15 +16,12 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">What is a trading</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">signal and how...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A trading signal is an</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    indicator that suggests</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    buying or selling an...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A signal typically includes</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    the instrument, direction...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A signal typically includes</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    the instrument, direction...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">A trading signal is an</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">indicator that suggests</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">buying or selling...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">A signal typically</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">includes the instrument,</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">direction...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

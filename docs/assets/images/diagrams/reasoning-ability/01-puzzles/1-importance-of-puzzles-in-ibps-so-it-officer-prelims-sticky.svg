@@ -22,10 +22,14 @@
     <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A well-practiced candidate</text>
     <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    can reduce solving time by</text>
     <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    40–50%</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Puzzles alone account for</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">approximately 10–15</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">questions, making...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Importance of Puzzles in</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    IBPS SO IT Officer</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    Prelims&quot;</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;...</text>
+    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Puzzles alone account for</text>
+    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">approximately 10–15</text>
+    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">questions, making...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

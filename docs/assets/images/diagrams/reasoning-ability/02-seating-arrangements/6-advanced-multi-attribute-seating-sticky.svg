@@ -22,13 +22,14 @@
     <text x="56" y="220" font-size="13" fill="#333" font-family="Arial, sans-serif">    persons):</text>
     <text x="56" y="240" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Handling Multiple</text>
     <text x="56" y="260" font-size="13" fill="#333" font-family="Arial, sans-serif">    Attributes:</text>
-    <text x="56" y="280" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  First solve the seating</text>
-    <text x="56" y="300" font-size="13" fill="#333" font-family="Arial, sans-serif">    arrangement (positions and</text>
-    <text x="56" y="320" font-size="13" fill="#333" font-family="Arial, sans-serif">    persons) 2</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Framework for</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Multi-Attribute Circular</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(6 persons):</text>
+    <text x="56" y="280" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Advanced Multi-Attribute</text>
+    <text x="56" y="300" font-size="13" fill="#333" font-family="Arial, sans-serif">    Seating&quot;</text>
+    <text x="56" y="320" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="340" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <line x1="56" y1="346" x2="544" y2="346" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Framework for</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Multi-Attribute Circular</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(6 persons):</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

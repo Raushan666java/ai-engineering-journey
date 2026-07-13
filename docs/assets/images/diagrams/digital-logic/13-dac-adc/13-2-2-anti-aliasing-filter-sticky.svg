@@ -16,19 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">13.2.2 Anti-Aliasing</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Filter</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  An anti-aliasing filter is a</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    low-pass filter with cutoff</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    at f_s/2</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Practical filters have a</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    transition band that limits</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    the usable...</text>
     <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Practical filters have a</text>
     <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    transition band that limits</text>
     <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    the usable...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Practical filters have a</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    transition band that limits</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    the usable...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">An anti-aliasing filter is</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">a low-pass filter with</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">cutoff at f_s/2</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Practical filters have a</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">transition band that</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">limits the usable...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

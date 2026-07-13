@@ -13,15 +13,18 @@
   <!-- Edges -->
     <path d="M300,82 C300,120 100,120 100,158" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
     <path d="M300,82 C300,140 300,140 300,198" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <path d="M300,82 C300,120 500,120 500,158" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
   <!-- Nodes -->
     <rect x="210" y="38" width="180" height="44" rx="8" fill="#2563eb" opacity="0.9"/>
     <text x="300" y="65" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">6.7.2 Synchron ous Binary...</text>
     <rect x="10" y="158" width="180" height="44" rx="8" fill="#059669" opacity="0.9"/>
-    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">All flip-flop s share a...</text>
+    <text x="100" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Core concept</text>
     <rect x="210" y="198" width="180" height="44" rx="8" fill="#d97706" opacity="0.9"/>
-    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">The T input  of each...</text>
+    <text x="300" y="225" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Key principle</text>
+    <rect x="410" y="158" width="180" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
+    <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Important aspect</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
-    All flip-flops share a common clock
+    The T input of each stage is the AND of all lower-order bits
   </text>
 </svg>

@@ -16,18 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">How does path MTU</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">discovery work...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  PMTUD works by setting the</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    DF (Don&apos;t Fragment) bit</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    on packets</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The sender then reduces its</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    packet size and retries</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  PMTUD fails when firewalls</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    block the ICMP Fragmentation</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Needed...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The sender then reduces its</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    packet size and retries</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  PMTUD fails when firewalls</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    block the ICMP Fragmentation</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    Needed...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The sender never learns</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    about the MTU restriction</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    and keeps...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">PMTUD works by setting the</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">DF (Don&apos;t Fragment)</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">bit on packets</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The sender then reduces</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">its packet size and</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">retries</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

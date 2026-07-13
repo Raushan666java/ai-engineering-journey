@@ -16,16 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">2.3 try-with-resources</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">(Java 7+)</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Resources that implement</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    `AutoCloseable` are closed</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    automatically at...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  */ public class</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    TryWithResourcesExample {</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    public static void...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  */ public class</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    TryWithResourcesExample {</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    public static void...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Resources that implement</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`AutoCloseable` are</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">closed...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">*/ public class</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">TryWithResourcesExample {</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">public static void...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

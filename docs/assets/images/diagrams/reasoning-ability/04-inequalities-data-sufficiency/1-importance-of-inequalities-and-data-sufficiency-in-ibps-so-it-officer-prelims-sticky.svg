@@ -16,18 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">1. Importance of</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Inequalities and...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Inequalities contribute</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    approximately 4–5 questions</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    in the IBPS SO...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Data sufficiency contributes</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    another 4–5 questions</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Together, they account for</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    about 8–10 questions out of</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    25</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Data sufficiency contributes</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    another 4–5 questions</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Together, they account for</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    about 8–10 questions out of</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    25</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Importance of Inequalities</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    and Data Sufficiency in IBPS</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    SO IT Officer...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Inequalities contribute</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">approximately 4–5</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">questions in the IBPS...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Data sufficiency</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">contributes another 4–5</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">questions</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

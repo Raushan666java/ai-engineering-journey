@@ -16,18 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">34.7 Market Analysis</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Agents</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The MarketAnalysisAgent</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    ingests listing and</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    transaction data to...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Write a professional market</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    narrative for {$city}&quot;</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ($neighborhood ? &quot;</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    {$neighborhood}&quot; :</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    &apos;&apos;)</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Write a professional market</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    narrative for {$city}&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  ($neighborhood ? &quot;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    {$neighborhood}&quot; :</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    &apos;&apos;)</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &quot; based on these data</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    points.\n\n&quot;</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The MarketAnalysisAgent</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">ingests listing and</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">transaction data to...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Write a professional</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">market narrative for</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">{$city}&quot;</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

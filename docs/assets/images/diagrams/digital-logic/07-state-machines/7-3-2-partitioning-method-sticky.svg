@@ -16,18 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">7.3.2 Partitioning</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Method</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  An alternative approach that</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    partitions states into</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    equivalence...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  P0 = partition by output</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    values 2</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  P1 = partition by 1-step</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    next-state behaviour (states</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    that transition...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  P0 = partition by output</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    values 2</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  P1 = partition by 1-step</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    next-state behaviour (states</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    that transition...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  P??1 = partition by k+1-step</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    behaviour 4</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">An alternative approach</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">that partitions states</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">into equivalence...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">P0 = partition by output</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">values 2</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

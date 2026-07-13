@@ -17,12 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">differ from...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Answer:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Answer:** Arrow functions</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    have no own `this`,</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `arguments`, `super`,...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They inherit `this` from the</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    enclosing scope (lexical</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    binding)</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They inherit `this` from the</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    enclosing scope (lexical</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    binding)</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They cannot be used as</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    constructors and lack the</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    `prototype` property</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Answer:</text>
   </g>

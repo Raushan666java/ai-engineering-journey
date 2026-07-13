@@ -16,18 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">SmartLifecycle</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `SmartLifecycle` extends</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    `Lifecycle` and `Phased` to</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    give ordered,...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Beans that need to start in</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    a specific order or</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    participate in...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  a database migration runner)</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    implement this interface</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Beans that need to start in</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    a specific order or</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    participate in...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  a database migration runner)</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    implement this interface</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `isAutoStartup() = false`</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    allows manual control via</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    `ctx.start()`</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`SmartLifecycle` extends</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`Lifecycle` and `Phased`</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">to give...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Beans that need to start</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">in a specific order or</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">participate in...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

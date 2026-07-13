@@ -16,20 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">SMO Algorithm</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">(High-Level)</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The Sequential Minimal</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Optimization (SMO) algorithm</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    solves the SVM...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Choose two Lagrange</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    multipliers $\alpha_i,</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    \alpha_j$ that violate</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    KKT...</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Optimize $\alpha_i,</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    \alpha_j$ analytically while</text>
-    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    keeping others fixed...</text>
-    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The Sequential Minimal</text>
-    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Optimization (SMO)</text>
-    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">algorithm solves the...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Choose two Lagrange</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    multipliers $\alpha_i,</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    \alpha_j$ that violate</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    KKT...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Optimize $\alpha_i,</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    \alpha_j$ analytically while</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    keeping others fixed...</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Update the bias term $b$ 4</text>
+    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Choose two Lagrange</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">multipliers $\alpha_i,</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">\alpha_j$ that...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

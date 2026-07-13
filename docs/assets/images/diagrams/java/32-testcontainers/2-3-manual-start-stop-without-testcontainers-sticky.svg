@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">2.3 Manual Start/Stop</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Without...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  You can control the</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    lifecycle manually Ã¢â‚¬â€</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    useful when...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Database Containers</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    Testcontainers provides</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    specialized subclasses...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They pre-configure the</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    driver class, default</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    credentials, and the...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Database Containers</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Testcontainers provides</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    specialized subclasses...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  They pre-configure the</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    driver class, default</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    credentials, and the...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Database Containers</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    Testcontainers provides</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    specialized subclasses...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">You can control the</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">lifecycle manually</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Ã¢â‚¬â€ useful when...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Database Containers</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Testcontainers provides</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">specialized...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

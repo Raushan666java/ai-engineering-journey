@@ -16,18 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Database Management</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Systems...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  #### Q65 (GATE 2015) Ã¢â€</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    â€™ Candidate Keys R(A, B,</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    C, D, E) with...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  How many candidate keys does</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    R have? (A) 1 (B) 2 (C) 3</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    (D) 4...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - A+ = {A}, B+ = {B}, C+ =</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    {C,D,E}, D+ = {D,E}</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  How many candidate keys does</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    R have? (A) 1 (B) 2 (C) 3</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    (D) 4...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - A+ = {A}, B+ = {B}, C+ =</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    {C,D,E}, D+ = {D,E}</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - No other attribute set</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    determines all attributes</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">#### Q65 (GATE 2015) Ã¢â€</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">â€™ Candidate Keys R(A, B,</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">C, D, E)...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">How many candidate keys</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">does R have? (A) 1 (B) 2</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(C) 3 (D) 4...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

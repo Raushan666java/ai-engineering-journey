@@ -17,11 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">you took a...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Format for every LP answer:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &lt;details&gt;</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;summary&gt;&lt;b&gt;Strategy&lt;/b&gt;&lt;/summary&gt;</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Amazon values bold ideas</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A vision that extended</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    beyond your immediate role 2</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  (Think Big)&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt;</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;details&gt;...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A vision that extended</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    beyond your immediate role 2</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Format for every LP</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">answer:</text>

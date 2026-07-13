@@ -16,19 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Type 3: Regular</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Grammars</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Productions are of the form</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    A ? aB or A ? a where A, B</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    are...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  These generate exactly the</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    regular languages recognized</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    by finite...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  S ? aS | bS | e // all</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    strings over {a, b} S ? aA |</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    bA, A ? a | b //...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  These generate exactly the</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    regular languages recognized</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    by finite...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  S ? aS | bS | e // all</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    strings over {a, b} S ? aA |</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    bA, A ? a | b //...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Productions are of the</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">form A ? aB or A ? a where</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">A, B are...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">These generate exactly the</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">regular languages</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">recognized by...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -15,18 +15,19 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">8.5 Shenandoah GC</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Shenandoah (JDK 12+,</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    OpenJDK; Oracle JDK 21+) is</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    another low-pause...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Init Mark (STW,</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    short)&quot;);</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 2</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Concurrent Mark&quot;);</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 3</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Init Mark (STW,</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    short)&quot;);</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 2</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Concurrent Mark&quot;);</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 3</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Final Mark (STW,</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    short)&quot;);</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 4</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Shenandoah (JDK 12+,</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">OpenJDK; Oracle JDK 21+)</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">is another...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Init Mark (STW,</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">short)&quot;);</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">System.out.println(&quot;</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">2</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

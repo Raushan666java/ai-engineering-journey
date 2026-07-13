@@ -15,19 +15,19 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Structure</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  How I Built a Production RAG</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    API in 2 Weeks (and Why</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    ChromaDB Won) 1</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The problem: &quot;I needed</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    a long-term memory system</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    for LLM agents...&quot; 2</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The architecture: (1-2</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    sentence description +</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    diagram) 3</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The problem: &quot;I needed</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    a long-term memory system</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    for LLM agents...&quot; 2</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The architecture: (1-2</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    sentence description +</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    diagram) 3</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &quot;Live on Hetzner,</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    serving queries at ~2s with</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    cited sources.&quot; 5</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">How I Built a Production</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">RAG API in 2 Weeks (and</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Why ChromaDB...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The problem: &quot;I</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">needed a long-term memory</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">system for LLM...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

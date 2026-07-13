@@ -16,15 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">21.5.2 Automatic</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Batching</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  joblib automatically batches</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    tasks for efficiency</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The batch_size parameter</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    controls how many tasks are</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    sent to each...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The batch_size parameter</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    controls how many tasks are</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    sent to each...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">joblib automatically</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">batches tasks for</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">efficiency</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The batch_size parameter</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">controls how many tasks</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">are sent to...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

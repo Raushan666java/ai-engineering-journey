@@ -17,12 +17,11 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Automation</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  event subscribers</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Laravel&apos;s event system</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    is the backbone of decoupled</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    automation</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  An event is a simple data</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    class that describes</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    something that happened</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  An event is a simple data</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    class that describes</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    something that happened</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A listener reacts to that</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    event</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">event subscribers</text>
   </g>

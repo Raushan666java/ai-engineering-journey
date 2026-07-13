@@ -16,15 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">7.10.1 STL Containers</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">→ Template...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Every STL container is a</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    class template</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  */ }; template &lt;typename</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    T, typename Alloc =</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    allocator&lt;T&gt;&gt; class</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    list...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  */ }; template &lt;typename</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    T, typename Alloc =</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    allocator&lt;T&gt;&gt; class</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    list...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Every STL container is a</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">class template</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">*/ }; template</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;typename T, typename</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Alloc =</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">allocator&lt;T&gt;&gt;</text>
+    <text x="56" y="414" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">class...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

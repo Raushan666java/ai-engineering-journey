@@ -16,17 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Trap 7: Asymptotic</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Growth...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - n^{log n} vs 2^{ÃƒÂ¢Ã‹â€</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Ã…Â¡n}: Take log of both:</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    (log n)Ãƒâ€šÃ‚Â²...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  First = ÃƒÅ½Ã‹Å“(log</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    nÃƒâ€šÃ‚Â·log log n), second</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    = ÃƒÅ½Ã‹Å“(log n)</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Complexity Cheat Sheet</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  First = ÃƒÅ½Ã‹Å“(log</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    nÃƒâ€šÃ‚Â·log log n), second</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    = ÃƒÅ½Ã‹Å“(log n)</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Complexity Cheat Sheet</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Since (log n)Ãƒâ€šÃ‚Â² =</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    o(ÃƒÂ¢Ã‹â€ Ã…Â¡n), we get</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    n^{log n} =...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">- n^{log n} vs 2^{ÃƒÂ¢Ã‹â€</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Ã…Â¡n}: Take log of both:</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(log...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">First = ÃƒÅ½Ã‹Å“(log</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">nÃƒâ€šÃ‚Â·log log n),</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">second = ÃƒÅ½Ã‹Å“(log...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -17,13 +17,11 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">proper...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Answer:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Answer:** Headings</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    (`&lt;h1&gt;` through</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `&lt;h6&gt;`) create a</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    document outline</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use exactly one `&lt;h1&gt;`</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    per page representing the</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    primary topic</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Use exactly one `&lt;h1&gt;`</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    per page representing the</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    primary topic</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Nest headings sequentially</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    without skipping levels</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Answer:</text>
   </g>

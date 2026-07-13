@@ -16,12 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">2. Code Review Loops</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Feedback granularity.</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In a code review loop, the</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    AI authors code and a human</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    plays the role...</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This mirrors real</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    engineering workflows and is</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    one of the most...</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Code Review Loops&quot;</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; In a code review</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    loop, the AI...</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This mirrors real</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    engineering workflows and is</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    one of the most...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Feedback granularity.</text>
   </g>

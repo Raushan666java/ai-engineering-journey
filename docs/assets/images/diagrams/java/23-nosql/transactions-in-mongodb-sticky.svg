@@ -16,19 +16,15 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Transactions in</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">MongoDB</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  MongoDB supports</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    multi-document ACID</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    transactions since version</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    4.0...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Spring Data MongoDB</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    integrates with</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    Spring&apos;s</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    `@Transactional`</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Spring Data MongoDB</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    integrates with</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Spring&apos;s</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `@Transactional`</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">MongoDB supports</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">multi-document ACID</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">transactions since</text>
-    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">version...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Spring Data MongoDB</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">integrates with</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Spring&apos;s</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`@Transactional`</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -17,11 +17,9 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Single Error...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Error at position 7</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Q:** The codeword</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    `0110010` (7-bit Hamming) is</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    received</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Which bit is in error?</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Parity at positions 1, 2, 4</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Which bit is in error?</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Parity at positions 1, 2, 4</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Corrected bit: `0Ã¢â€ â€™1`</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Error at position 7</text>
   </g>

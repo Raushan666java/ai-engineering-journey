@@ -16,19 +16,19 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">1.6 Binary-Coded</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Decimal (BCD)</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  BCD encodes each decimal</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    digit as a 4-bit binary</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    sequence</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The weighted codes use bits</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    with weights 8, 4, 2, 1</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    (natural BCD)</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Only the ten codes 0000</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    through 1001 are valid;</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    codes 1010 through...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The weighted codes use bits</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    with weights 8, 4, 2, 1</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    (natural BCD)</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Only the ten codes 0000</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    through 1001 are valid;</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    codes 1010 through...</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  BCD addition requires</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    correction when the sum</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    exceeds 9: add 6 (0110)...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">BCD encodes each decimal</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">digit as a 4-bit binary</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">sequence</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The weighted codes use</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">bits with weights 8, 4, 2,</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">1 (natural BCD)</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

@@ -29,11 +29,9 @@
   <line x1="55" y1="203" x2="570" y2="203" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="218" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Answer:</text>
-    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Answer:** `information_schema`</text>
-    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">provides metadata about...</text>
-    <text x="60" y="302" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Use it for introspective queries</text>
+    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Use it for introspective queries</text>
   <!-- Footer note -->
-  <text x="60" y="360" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="304" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Answer:
   </text>
 </svg>

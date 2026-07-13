@@ -16,20 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">3.1 The Virtual</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Machine Model in...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Cloud compute services</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    provide resizable, on-demand</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    virtual machine...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  These services form the</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    fundamental</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    &quot;Infrastructure as a</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    Service&quot;...</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The primary advantage of</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    cloud compute is the shift</text>
-    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    from physical...</text>
-    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Cloud compute services</text>
-    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">provide resizable,</text>
-    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">on-demand virtual...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  These services form the</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    fundamental</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    &quot;Infrastructure as a</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    Service&quot;...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The primary advantage of</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    cloud compute is the shift</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    from physical...</text>
+    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">These services form the</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">fundamental</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&quot;Infrastructure as</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">a...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

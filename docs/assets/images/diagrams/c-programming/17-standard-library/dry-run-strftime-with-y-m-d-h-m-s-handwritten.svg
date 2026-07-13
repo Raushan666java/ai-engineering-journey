@@ -29,12 +29,10 @@
   <line x1="55" y1="203" x2="570" y2="203" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
       <text x="60" y="218" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Result:</text>
-    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`now = 1838500000` (approx June 9,</text>
-    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">2026, 16:20:00 UTC)</text>
-    <text x="60" y="302" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Result:** `&quot;2026-06-09</text>
-    <text x="60" y="330" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">16:20:00 (Tuesday)&quot;`</text>
+    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">**Result:** `&quot;2026-06-09</text>
+    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">16:20:00 (Tuesday)&quot;`</text>
   <!-- Footer note -->
-  <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="332" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
     — Result:
   </text>
 </svg>

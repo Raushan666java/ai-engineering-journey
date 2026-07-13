@@ -15,16 +15,14 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Leaderless Replication</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Dynamo-style replication</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    (from Amazon&apos;s DynamoDB</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    paper, 2007)</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  There is no leader</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Any replica can accept</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    writes from any client</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  There is no leader</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Any replica can accept</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    writes from any client</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  - **W:** Write quorum — the</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    minimum number of replicas</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    that must...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Dynamo-style replication</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(from Amazon&apos;s</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">DynamoDB paper, 2007)</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">There is no leader</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

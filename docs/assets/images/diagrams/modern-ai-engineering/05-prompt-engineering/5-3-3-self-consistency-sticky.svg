@@ -16,10 +16,10 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">5.3.3 Self-Consistency</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Process:</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Self-consistency improves</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    CoT by sampling multiple</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    reasoning paths...</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Process:** 1</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Process:** 1</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Generate k reasoning paths</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    using CoT (with temperature</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    &gt; 0 for...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Process:</text>
   </g>

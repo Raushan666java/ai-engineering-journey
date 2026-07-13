@@ -17,11 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">TCP</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Why O(n) for send/recv?</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Why O(n) for send/recv?**</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Data must be copied between</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    user space...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This copy is the dominant</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    cost for large transfers</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This copy is the dominant</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    cost for large transfers</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Zero-copy techniques</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    (sendfile, splice,</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    msg_zerocopy) bypass this</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    for...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Why O(n) for send/recv?</text>
   </g>

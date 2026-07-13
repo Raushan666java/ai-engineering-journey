@@ -18,11 +18,12 @@
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  train station announcement</text>
     <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    board</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `errno` is like a **train</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    station announcement board**</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The board only shows the</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    *last* error — it resets</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    before each...</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The board only shows the</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    *last* error — it resets</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    before each...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  You must check it after each</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    operation before it gets</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    overwritten.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">train station announcement</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">board</text>

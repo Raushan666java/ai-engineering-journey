@@ -16,18 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Multi-Store</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Transaction Pattern</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A service that spans</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    multiple stores must handle</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    partial failures...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The saga pattern (covered</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    further in the transactions</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    chapter) or...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Save to MongoDB (source of</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    truth) Product saved =...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The saga pattern (covered</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    further in the transactions</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    chapter) or...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Save to MongoDB (source of</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    truth) Product saved =...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Save to MongoDB (source of</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    truth) Product saved =</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    productRepository</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">A service that spans</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">multiple stores must</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">handle partial...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The saga pattern (covered</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">further in the</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">transactions chapter)...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

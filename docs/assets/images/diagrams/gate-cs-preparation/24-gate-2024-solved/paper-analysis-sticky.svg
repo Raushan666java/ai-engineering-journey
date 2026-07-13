@@ -15,19 +15,18 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Paper Analysis</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  GATE 2024 Computer Science</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    paper was notable for a</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    shift toward...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The paper had 65 questions</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    (10 GA + 55 Technical),</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    carrying a total...</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The Technical section was</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    divided across 8 core</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    subjects with...</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The paper had 65 questions</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    (10 GA + 55 Technical),</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    carrying a total...</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The Technical section was</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    divided across 8 core</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    subjects with...</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Approximately 8 MSQs tested</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    multi-correct understanding</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">GATE 2024 Computer Science</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">paper was notable for a</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">shift toward...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The paper had 65 questions</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(10 GA + 55 Technical),</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">carrying a...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

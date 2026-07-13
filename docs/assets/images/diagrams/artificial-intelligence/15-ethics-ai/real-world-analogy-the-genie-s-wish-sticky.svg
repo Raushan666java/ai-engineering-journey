@@ -17,12 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">The...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  alignment problem</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In every story about a</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    wish-granting genie, the</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    wisher gets exactly...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &quot;I wish to be</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    rich&quot; → the wisher</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    turns to gold</text>
     <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  &quot;I wish to be</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    rich&quot; → the wisher</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    turns to gold</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    powerful&quot; → the wisher</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    becomes a tyrant everyone...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">alignment problem</text>
   </g>

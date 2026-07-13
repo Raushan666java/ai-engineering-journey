@@ -16,16 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Real-World Analogy ---</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Odometer vs...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Prefix `++` is like a car</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    odometer --- it advances and</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    you see the...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Postfix `++` is like taking</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    a photograph first, then</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    advancing the...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Postfix `++` is like taking</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    a photograph first, then</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    advancing the...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Prefix `++` is like a car</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">odometer --- it advances</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">and you see...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Postfix `++` is like</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">taking a photograph first,</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">then advancing...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

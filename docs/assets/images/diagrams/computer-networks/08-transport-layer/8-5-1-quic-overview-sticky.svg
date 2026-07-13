@@ -15,16 +15,11 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">8.5.1 QUIC Overview</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  QUIC (RFC 9000) is a</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    transport protocol developed</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    by Google, now...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It runs over UDP and</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    provides:</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It runs over UDP and</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    provides:</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">QUIC (RFC 9000) is a</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">transport protocol</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">developed by Google,</text>
-    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">now...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">It runs over UDP and</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">provides:</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

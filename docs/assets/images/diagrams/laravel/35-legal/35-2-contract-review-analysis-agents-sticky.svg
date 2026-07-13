@@ -16,18 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">35.2 Contract Review</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">&amp;...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Contract review is a</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    high-volume, high-stakes</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    legal task</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The agent combines</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    clause-detection patterns</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    with LLM-powered...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Review the following</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    contract text</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The agent combines</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    clause-detection patterns</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    with LLM-powered...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Review the following</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    contract text</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Detected clauses:</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    {$presentClauses} For each</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    clause, provide: 1</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Contract review is a</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">high-volume, high-stakes</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">legal task</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The agent combines</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">clause-detection patterns</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">with LLM-powered...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

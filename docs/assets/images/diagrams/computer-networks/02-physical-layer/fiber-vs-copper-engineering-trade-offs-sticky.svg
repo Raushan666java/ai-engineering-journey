@@ -17,12 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Engineering...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Interview Tip:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Interview Tip:** Always</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    frame fiber vs copper as</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    a...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For under 100 meters at</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    under 10 Gbps, copper is</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    cheaper and easier</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For under 100 meters at</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    under 10 Gbps, copper is</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    cheaper and easier</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For anything beyond, fiber</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    wins on every metric except</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    installation...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Interview Tip:</text>
   </g>

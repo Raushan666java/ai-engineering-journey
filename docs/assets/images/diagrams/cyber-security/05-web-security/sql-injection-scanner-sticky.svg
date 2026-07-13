@@ -15,20 +15,19 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">SQL Injection Scanner</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  This TypeScript class</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    implements a multi-strategy</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    SQL Injection...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The scanner also generates</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    tailored test payloads for</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    different...</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  * Uses DB-specific syntax</text>
-    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    markers (comment styles,</text>
-    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    functions,...</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The scanner also generates</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    tailored test payloads for</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    different...</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  * Uses DB-specific syntax</text>
+    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    markers (comment styles,</text>
+    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    functions,...</text>
+    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  * Each payload targets a</text>
+    <text x="56" y="276" font-size="13" fill="#333" font-family="Arial, sans-serif">    different SQLi technique and</text>
+    <text x="56" y="296" font-size="13" fill="#333" font-family="Arial, sans-serif">    DBMS</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">This TypeScript class</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">implements a</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">multi-strategy SQL</text>
-    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Injection...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The scanner also generates</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">tailored test payloads for</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">different...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

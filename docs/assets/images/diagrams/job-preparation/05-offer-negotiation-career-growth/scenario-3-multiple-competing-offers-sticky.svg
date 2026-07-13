@@ -16,15 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Scenario 3: Multiple</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Competing...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Company A offered 20 LPA,</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Company B offered 22 LPA</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Target Company C at 18 LPA</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Very High Strategy: Use</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    offers A and B as leverage</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    with C Script: I...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Target Company C at 18 LPA</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Very High Strategy: Use</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    offers A and B as leverage</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    with C Script: I...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  I prefer your company</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Company A offered 20 LPA,</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Company B offered 22 LPA</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Target Company C at 18 LPA</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

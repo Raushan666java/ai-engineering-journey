@@ -32,6 +32,6 @@
     <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Apply in practice</text>
   <!-- Footer note -->
   <text x="60" y="296" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — Assume addresses: x at `0x1000`, p at `0x2000`, pp at...
+    — Key concept in this chapter
   </text>
 </svg>

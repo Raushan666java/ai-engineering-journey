@@ -16,19 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">5.6.7 Dry Run Trace</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Table: VLAN...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Switch with 4 ports:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    P1=access(VLAN10),</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    P2=access(VLAN10),...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Step 5 demonstrates VLAN</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    isolation: A in VLAN10</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    cannot reach D in...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A router with an interface</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    in both VLANs (or an SVI) is</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    required for...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Step 5 demonstrates VLAN</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    isolation: A in VLAN10</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    cannot reach D in...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A router with an interface</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    in both VLANs (or an SVI) is</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    required for...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Switch with 4 ports:</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">P1=access(VLAN10),</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">P2=access(VLAN10),...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Step 5 demonstrates VLAN</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">isolation: A in VLAN10</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">cannot reach D...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

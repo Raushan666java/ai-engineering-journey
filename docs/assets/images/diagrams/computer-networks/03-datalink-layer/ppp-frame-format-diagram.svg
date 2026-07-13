@@ -25,6 +25,6 @@
     <text x="500" y="185" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial, sans-serif">Important aspect</text>
   <!-- Insight footer -->
   <text x="300" y="380" fill="#64748b" font-size="11" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic">
-    Byte stuffing is used: 0x7E → 0x7D 0x5E, 0x7D → 0x7D 0x5D.
+    Concept diagram
   </text>
 </svg>

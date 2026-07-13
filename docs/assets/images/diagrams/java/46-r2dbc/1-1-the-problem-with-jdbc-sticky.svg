@@ -16,19 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">1.1 The Problem with</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">JDBC</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  JDBC (Java Database</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Connectivity) is inherently</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    blocking</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In a reactive application,</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    blocking an event-loop</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    thread defeats the...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It was created by the Spring</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    team led by Mark Paluch and</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    became an...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  In a reactive application,</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    blocking an event-loop</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    thread defeats the...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  It was created by the Spring</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    team led by Mark Paluch and</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    became an...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">JDBC (Java Database</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Connectivity) is</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">inherently blocking</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">In a reactive application,</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">blocking an event-loop</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">thread defeats...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

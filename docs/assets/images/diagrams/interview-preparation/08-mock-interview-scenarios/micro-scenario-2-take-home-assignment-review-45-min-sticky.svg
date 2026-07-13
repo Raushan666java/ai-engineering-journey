@@ -16,17 +16,16 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Micro-Scenario 2:</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Take-Home...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  We&apos;ve reviewed your</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    take-home assignment — an</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    event booking API</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Walk me through your</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    architecture decisions</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Why you chose SQL over NoSQL</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    (ACID for bookings) 2</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Walk me through your</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    architecture decisions</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Why you chose SQL over NoSQL</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    (ACID for bookings) 2</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Why you used optimistic</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    locking (prevent double</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    booking) 3</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">We&apos;ve reviewed your</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">take-home assignment — an</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">event booking API</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Walk me through your</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">architecture decisions</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

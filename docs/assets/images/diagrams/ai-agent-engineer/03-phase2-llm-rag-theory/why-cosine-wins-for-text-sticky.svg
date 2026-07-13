@@ -16,16 +16,13 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Why cosine wins for</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">text</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Text embedding models are</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    trained to normalize</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    embeddings</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Cosine similarity is</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    equivalent to dot product on</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    normalized vectors</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Cosine similarity is</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    equivalent to dot product on</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    normalized vectors</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Text embedding models are</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">trained to normalize</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">embeddings</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Cosine similarity is</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">equivalent to dot product</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">on normalized...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

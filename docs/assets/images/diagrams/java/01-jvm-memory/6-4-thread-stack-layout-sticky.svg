@@ -16,20 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">6.4 Thread Stack</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Layout</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Each thread&apos;s stack</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    contains frames, each frame</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    holding local...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Local Variable Array</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    (parameters +</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    locals)&quot;);</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 2</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Operand Stack (intermediate</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    values)&quot;);</text>
-    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 3</text>
-    <line x1="56" y1="344" x2="544" y2="344" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="364" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Each thread&apos;s stack</text>
-    <text x="56" y="380" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">contains frames, each</text>
-    <text x="56" y="396" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">frame holding local...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Local Variable Array</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    (parameters +</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    locals)&quot;);</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 2</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Operand Stack (intermediate</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    values)&quot;);</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    System.out.println(&quot; 3</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Garbage Collection</text>
+    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Local Variable Array</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(parameters +</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">locals)&quot;);...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

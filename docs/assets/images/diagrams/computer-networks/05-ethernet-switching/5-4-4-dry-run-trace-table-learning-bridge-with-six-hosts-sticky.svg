@@ -16,18 +16,14 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">5.4.4 Dry Run Trace</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Table:...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Four-port bridge, hosts</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Aâ€“F on ports 1â€“4 (A and</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    B on port 1 via...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  After T=7, all six hosts are</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    learned</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  From T=8 onward, all frames</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    are forwarded precisely → no</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    flooding...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  After T=7, all six hosts are</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    learned</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  From T=8 onward, all frames</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    are forwarded precisely → no</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    flooding...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Four-port bridge, hosts</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Aâ€“F on ports 1â€“4 (A</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">and B on port 1...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">After T=7, all six hosts</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">are learned</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

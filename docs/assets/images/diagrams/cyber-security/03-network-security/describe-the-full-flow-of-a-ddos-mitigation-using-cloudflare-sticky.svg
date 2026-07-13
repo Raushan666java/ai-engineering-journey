@@ -17,12 +17,13 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">of a DDoS...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A21:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **A21:** (1) Traffic arrives</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    at Cloudflare&apos;s nearest</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    data center...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  (5) Analytics provide</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    real-time visibility into</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    dropped vs passed...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  (5) Analytics provide</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    real-time visibility into</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    dropped vs passed...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  (6) Under extreme attack</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    (&gt;1 Tbps),</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    Cloudflare&apos;s global</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    network...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">A21:</text>
   </g>

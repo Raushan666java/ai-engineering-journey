@@ -17,12 +17,12 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">`switch` with...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Records</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  When you switch over a</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    sealed type, the compiler</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    can check that all...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Records **Records** (Java</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    16, finalized) are</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    transparent, immutable...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Records **Records** (Java</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    16, finalized) are</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    transparent, immutable...</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  A record automatically</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    generates the constructor,</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    getters, `equals`,...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Records</text>
   </g>

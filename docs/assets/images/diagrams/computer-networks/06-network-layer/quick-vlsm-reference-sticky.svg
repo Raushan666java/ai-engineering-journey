@@ -15,17 +15,12 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Quick VLSM Reference</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Given a base /24, to fit N</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    hosts: find smallest S where</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    2^S - 2 &gt;= N...</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  New mask = 32 - S</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  need 100 hosts → 2^7 - 2 =</text>
-    <text x="56" y="236" font-size="13" fill="#333" font-family="Arial, sans-serif">    126 &gt;= 100 → /25 (128</text>
-    <text x="56" y="256" font-size="13" fill="#333" font-family="Arial, sans-serif">    addresses).</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  New mask = 32 - S</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  need 100 hosts → 2^7 - 2 =</text>
+    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    126 &gt;= 100 → /25 (128</text>
+    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">    addresses).</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Given a base /24, to fit N</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">hosts: find smallest S</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">where 2^S - 2...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">New mask = 32 - S</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

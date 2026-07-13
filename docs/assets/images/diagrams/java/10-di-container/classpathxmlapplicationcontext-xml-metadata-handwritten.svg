@@ -28,13 +28,11 @@
   <text x="60" y="162" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 162)">(XML Metadata)</text>
   <line x1="55" y1="203" x2="570" y2="203" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="218" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Before annotation-driven</text>
-    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">configuration became dominant,</text>
-    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">all...</text>
-    <text x="60" y="302" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`ClassPathXmlApplicationContext`</text>
-    <text x="60" y="330" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">loads XML configuration...</text>
+      <text x="60" y="218" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Learn the core concepts</text>
+    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Understand the principles</text>
+    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Apply in practice</text>
   <!-- Footer note -->
-  <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — Before annotation-driven configuration became...
+  <text x="60" y="332" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+    — `ClassPathXmlApplicationContext` loads XML...
   </text>
 </svg>

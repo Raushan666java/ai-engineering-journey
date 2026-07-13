@@ -18,11 +18,10 @@
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  attempt), max_delay))</text>
     <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    time.sleep(delay)</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Transient failures should be</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    retried; permanent failures</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    (4xx) should...</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Equal jitter: `cap/2 +</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    random(0, cap/2)`</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Equal jitter: `cap/2 +</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    random(0, cap/2)`</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `min(cap, random(base, prev</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    * 3))`</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">attempt), max_delay))</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">time.sleep(delay)</text>

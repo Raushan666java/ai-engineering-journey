@@ -17,12 +17,11 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Cache Traffic...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Answer:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Q:** A write-through cache</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    handles 30% write</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    instructions</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For each write miss, a block</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    is fetched (no</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    write-allocate)</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  For each write miss, a block</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    is fetched (no</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    write-allocate)</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The miss rate for reads is</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    5%</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Answer:</text>
   </g>

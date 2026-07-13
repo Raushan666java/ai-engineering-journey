@@ -15,15 +15,12 @@
     <rect x="40" y="60" width="520" height="310" rx="2" fill="none" stroke="#FFF3B0" stroke-width="1"/>
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Complexity Analysis</text>
     <line x1="56" y1="116" x2="544" y2="116" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Haar processes ~300,000</text>
-    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    window positions at 30+ FPS</text>
-    <text x="56" y="176" font-size="13" fill="#333" font-family="Arial, sans-serif">    on CPU</text>
-    <text x="56" y="196" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  DNN processes 1 blob at 3–50</text>
-    <text x="56" y="216" font-size="13" fill="#333" font-family="Arial, sans-serif">    FPS depending on hardware.</text>
+    <text x="56" y="136" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  DNN processes 1 blob at 3–50</text>
+    <text x="56" y="156" font-size="13" fill="#333" font-family="Arial, sans-serif">    FPS depending on hardware.</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Haar processes ~300,000</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">window positions at 30+</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">FPS on CPU</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">DNN processes 1 blob at</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">3–50 FPS depending on</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">hardware.</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

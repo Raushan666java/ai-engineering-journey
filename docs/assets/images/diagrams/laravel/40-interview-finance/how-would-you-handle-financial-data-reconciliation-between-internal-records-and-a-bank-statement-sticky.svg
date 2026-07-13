@@ -16,18 +16,18 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">How would you handle</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">financial...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  First, I&apos;d fetch the</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    bank statement via an API</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    feed or CSV import and...</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Pass 2 allows small date</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    windows and fuzzy reference</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    matching...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Pass 3 flags unmatched items</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    from both sides</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Pass 2 allows small date</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    windows and fuzzy reference</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    matching...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Pass 3 flags unmatched items</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    from both sides</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Result goes to a</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    reconciliation dashboard</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    where a finance operator...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">First, I&apos;d fetch the</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">bank statement via an API</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">feed or CSV...</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Pass 2 allows small date</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">windows and fuzzy</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">reference matching...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

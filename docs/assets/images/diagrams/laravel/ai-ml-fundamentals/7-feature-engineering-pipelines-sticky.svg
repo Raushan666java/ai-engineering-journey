@@ -16,15 +16,23 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">7. Feature Engineering</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Pipelines</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Features are the raw</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    material of machine learning</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Well-engineered features</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    often matter more than the</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    choice of...</text>
-    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Features are the raw</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">material of machine</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">learning</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Feature Engineering</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    Pipelines&quot;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; Features are the</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    raw...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Well-engineered features</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    often matter more than the</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    choice of...</text>
+    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Feature Engineering</text>
+    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    Pipelines&quot;</text>
+    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="378" font-size="13" fill="#333" font-family="Arial, sans-serif">    &lt;/a&gt; &lt;a href=&quot;</text>
+    <line x1="56" y1="384" x2="544" y2="384" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="404" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Feature Engineering</text>
+    <text x="56" y="420" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Pipelines&quot;</text>
+    <text x="56" y="436" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">width=&quot;30%&quot;&gt;</text>
+    <text x="56" y="452" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">&lt;/a&gt; Features are...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

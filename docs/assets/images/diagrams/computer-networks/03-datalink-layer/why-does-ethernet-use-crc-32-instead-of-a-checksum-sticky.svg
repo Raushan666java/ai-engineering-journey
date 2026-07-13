@@ -16,19 +16,17 @@
     <text x="56" y="88" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Why does Ethernet use</text>
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">CRC-32...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Ethernet operates over noisy</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    copper cables (originally</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    coaxial)</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The Internet checksum&apos;s</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    stronger correlation with</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    data patterns makes...</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Additionally, CRC-32 is</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    trivially implemented in</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">    hardware (32...</text>
+    <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  The Internet checksum&apos;s</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    stronger correlation with</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    data patterns makes...</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Additionally, CRC-32 is</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    trivially implemented in</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    hardware (32...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Ethernet operates over</text>
-    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">noisy copper cables</text>
-    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">(originally coaxial)</text>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">The Internet</text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">checksum&apos;s stronger</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">correlation with data</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">patterns...</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

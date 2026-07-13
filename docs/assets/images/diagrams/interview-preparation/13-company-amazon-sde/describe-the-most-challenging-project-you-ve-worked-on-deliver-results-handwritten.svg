@@ -28,15 +28,13 @@
   <text x="60" y="162" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 162)">you&apos;ve...</text>
   <line x1="55" y1="203" x2="570" y2="203" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="218" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&lt;details&gt;</text>
-    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">&lt;summary&gt;&lt;b&gt;Strategy&lt;/b&gt;&lt;/summary&gt;</text>
-    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Pick a project...</text>
-    <text x="60" y="302" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">What made it challenging (specific,</text>
-    <text x="60" y="330" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">quantified) 2</text>
-    <text x="60" y="358" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">How you broke it down into</text>
-    <text x="60" y="386" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">manageable pieces 3</text>
+      <text x="60" y="218" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">What made it challenging (specific,</text>
+    <text x="60" y="246" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">quantified) 2</text>
+    <text x="60" y="274" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">How you broke it down into</text>
+    <text x="60" y="302" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">manageable pieces 3</text>
+    <text x="60" y="330" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">The measurable outcome 4</text>
   <!-- Footer note -->
   <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
-    — &lt;details&gt; &lt;summary&gt;&lt;b&gt;Strategy&lt;/b&gt;&lt;/summary&gt; Pick a...
+    — What made it challenging (specific, quantified) 2
   </text>
 </svg>

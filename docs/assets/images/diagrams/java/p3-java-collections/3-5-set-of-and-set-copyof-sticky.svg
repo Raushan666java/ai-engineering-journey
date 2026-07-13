@@ -17,9 +17,9 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Set.copyOf</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  key-value pairs</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Like `List`, Java 9+</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    provides immutable set</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    factories</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Map Interface &amp;</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    Implementations `Map&lt;K,</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    V&gt;` stores **key-value...</text>
     <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Map Interface &amp;</text>
     <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    Implementations `Map&lt;K,</text>
     <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    V&gt;` stores **key-value...</text>

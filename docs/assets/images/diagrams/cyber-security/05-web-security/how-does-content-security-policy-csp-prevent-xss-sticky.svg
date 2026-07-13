@@ -17,13 +17,13 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">Security Policy...</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Answer:</text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  **Answer:** CSP is an HTTP</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    header that tells the</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    browser which...</text>
-    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `script-src</text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    &apos;self&apos;` blocks all</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    inline scripts and external</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    scripts...</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  `script-src</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    &apos;self&apos;` blocks all</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    inline scripts and external</text>
+    <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">    scripts...</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  With a nonce-based CSP, only</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    script tags with the</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    matching nonce...</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">Answer:</text>
   </g>

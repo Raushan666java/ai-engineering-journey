@@ -43,10 +43,19 @@ export function injectImages(
   let awaitingAnswer = false;
   const qa = isQaFormat(markdown);
 
-  for (const line of lines) {
-    out.push(line);
+  function alreadyHasImages(idx: number): boolean {
+    for (let i = idx + 1; i < Math.min(idx + 6, lines.length); i++) {
+      const t = lines[i].trim();
+      if (t.startsWith('</a>')) return true;
+      if (t.startsWith('### ') || t.startsWith('## ') || t.startsWith('```')) return false;
+    }
+    return false;
+  }
 
-    const trimmed = line.trim();
+  for (let i = 0; i < lines.length; i++) {
+    out.push(lines[i]);
+
+    const trimmed = lines[i].trim();
 
     if (!awaitingAnswer && trimmed.startsWith('### ')) {
       const rawHeading = trimmed.replace(/^###\s+/, '');
@@ -56,10 +65,12 @@ export function injectImages(
       if (topicMap.has(key)) {
         currentTopic = topicMap.get(key)!;
         if (!qa) {
-          out.push('');
-          out.push(generateImageBlock(currentTopic, course, chapterSlug));
-          out.push('');
-          insertedCount++;
+          if (!alreadyHasImages(i)) {
+            out.push('');
+            out.push(generateImageBlock(currentTopic, course, chapterSlug));
+            out.push('');
+            insertedCount++;
+          }
           currentTopic = null;
         } else {
           awaitingAnswer = true;
@@ -68,10 +79,12 @@ export function injectImages(
     }
 
     if (awaitingAnswer && trimmed.startsWith('#### Answer')) {
-      out.push('');
-      out.push(generateImageBlock(currentTopic!, course, chapterSlug));
-      out.push('');
-      insertedCount++;
+      if (!alreadyHasImages(i)) {
+        out.push('');
+        out.push(generateImageBlock(currentTopic!, course, chapterSlug));
+        out.push('');
+        insertedCount++;
+      }
       awaitingAnswer = false;
       currentTopic = null;
     }

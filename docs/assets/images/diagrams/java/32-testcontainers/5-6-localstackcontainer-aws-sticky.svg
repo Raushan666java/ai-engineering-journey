@@ -20,10 +20,8 @@
     <text x="56" y="180" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  LocalStack with</text>
     <text x="56" y="200" font-size="13" fill="#333" font-family="Arial, sans-serif">    @DynamicPropertySource for</text>
     <text x="56" y="220" font-size="13" fill="#333" font-family="Arial, sans-serif">    Spring Cloud AWS:</text>
-    <text x="56" y="240" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  LocalStack emulates AWS</text>
-    <text x="56" y="260" font-size="13" fill="#333" font-family="Arial, sans-serif">    services locally Ã¢â‚¬â€</text>
-    <text x="56" y="280" font-size="13" fill="#333" font-family="Arial, sans-serif">    S3, SQS, SNS,...</text>
-    <text x="56" y="300" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Container Customization</text>
+    <text x="56" y="240" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Container Customization</text>
+    <text x="56" y="260" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  Container Customization</text>
     <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">LocalStack with</text>
     <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">@DynamicPropertySource for</text>

@@ -17,22 +17,18 @@
     <text x="56" y="110" font-size="16" font-weight="bold" fill="#1a1a2e" font-family="Arial, sans-serif">hasAuthority</text>
     <line x1="56" y1="138" x2="544" y2="138" stroke="#E8C840" stroke-width="1"/>
     <text x="56" y="158" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  </text>
-    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    `hasRole(&apos;ADMIN&apos;)`</text>
-    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    internally checks for</text>
-    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    `ROLE_ADMIN`</text>
+    <text x="56" y="178" font-size="13" fill="#333" font-family="Arial, sans-serif">    `hasAuthority(&apos;ROLE_ADMIN&apos;)`</text>
+    <text x="56" y="198" font-size="13" fill="#333" font-family="Arial, sans-serif">    does the same check</text>
+    <text x="56" y="218" font-size="13" fill="#333" font-family="Arial, sans-serif">    explicitly</text>
     <text x="56" y="238" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  </text>
-    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    `hasAuthority(&apos;ROLE_ADMIN&apos;)`</text>
-    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    does the same check</text>
-    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    explicitly</text>
-    <text x="56" y="318" font-size="13" fill="#333" font-family="Arial, sans-serif">✓  </text>
-    <text x="56" y="338" font-size="13" fill="#333" font-family="Arial, sans-serif">    `hasAuthority(&apos;WRITE_ARTICLES&apos;)`</text>
-    <text x="56" y="358" font-size="13" fill="#333" font-family="Arial, sans-serif">    checks for a custom</text>
-    <text x="56" y="378" font-size="13" fill="#333" font-family="Arial, sans-serif">    authority...</text>
-    <line x1="56" y1="384" x2="544" y2="384" stroke="#E8C840" stroke-width="1"/>
-    <text x="56" y="404" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic"></text>
-    <text x="56" y="420" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`hasRole(&apos;ADMIN&apos;)`</text>
-    <text x="56" y="436" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">internally checks for</text>
-    <text x="56" y="452" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`ROLE_ADMIN`</text>
+    <text x="56" y="258" font-size="13" fill="#333" font-family="Arial, sans-serif">    `hasAuthority(&apos;WRITE_ARTICLES&apos;)`</text>
+    <text x="56" y="278" font-size="13" fill="#333" font-family="Arial, sans-serif">    checks for a custom</text>
+    <text x="56" y="298" font-size="13" fill="#333" font-family="Arial, sans-serif">    authority...</text>
+    <line x1="56" y1="330" x2="544" y2="330" stroke="#E8C840" stroke-width="1"/>
+    <text x="56" y="350" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic"></text>
+    <text x="56" y="366" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">`hasAuthority(&apos;ROLE_ADMIN&apos;)`</text>
+    <text x="56" y="382" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">does the same check</text>
+    <text x="56" y="398" font-size="11" fill="#666" font-family="Arial, sans-serif" font-style="italic">explicitly</text>
   </g>
   <!-- Push pin -->
   <g transform="translate(300, 18)">

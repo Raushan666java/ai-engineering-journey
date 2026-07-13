@@ -13,14 +13,14 @@
 
 ### SQL Execution Order
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-handwritten.svg" alt="Handwritten: SQL Execution Order" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-handwritten.svg" alt="Handwritten: SQL Execution Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-diagram.svg" alt="Diagram: SQL Execution Order" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-diagram.svg" alt="Diagram: SQL Execution Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-sticky.svg" alt="Sticky Note: SQL Execution Order" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-execution-order-sticky.svg" alt="Sticky Note: SQL Execution Order" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@ LIMIT / OFFSET                  -- 8. Paginate
 
 ### Sample Tables Used Across Problems
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-handwritten.svg" alt="Handwritten: Sample Tables Used Across Problems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-handwritten.svg" alt="Handwritten: Sample Tables Used Across Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-diagram.svg" alt="Diagram: Sample Tables Used Across Problems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-diagram.svg" alt="Diagram: Sample Tables Used Across Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-sticky.svg" alt="Sticky Note: Sample Tables Used Across Problems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sample-tables-used-across-problems-sticky.svg" alt="Sticky Note: Sample Tables Used Across Problems" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ CREATE TABLE employee_projects (
 
 ### Q1: Retrieve all employees earning more than 50000.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-handwritten.svg" alt="Handwritten: Retrieve all employees earning more than 50000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-handwritten.svg" alt="Handwritten: Retrieve all employees earning more than 50000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-diagram.svg" alt="Diagram: Retrieve all employees earning more than 50000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-diagram.svg" alt="Diagram: Retrieve all employees earning more than 50000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-sticky.svg" alt="Sticky Note: Retrieve all employees earning more than 50000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/retrieve-all-employees-earning-more-than-50000-sticky.svg" alt="Sticky Note: Retrieve all employees earning more than 50000." width="30%">
 </a>
 
 
@@ -118,14 +118,14 @@ ORDER BY salary DESC;
 
 ### Q2: Find employees hired in 2023.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-handwritten.svg" alt="Handwritten: Find employees hired in 2023." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-handwritten.svg" alt="Handwritten: Find employees hired in 2023." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-diagram.svg" alt="Diagram: Find employees hired in 2023." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-diagram.svg" alt="Diagram: Find employees hired in 2023." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-sticky.svg" alt="Sticky Note: Find employees hired in 2023." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-hired-in-2023-sticky.svg" alt="Sticky Note: Find employees hired in 2023." width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ WHERE hire_date BETWEEN '2023-01-01' AND '2023-12-31';
 
 ### Q3: List departments without employees (using NOT EXISTS).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-handwritten.svg" alt="Handwritten: List departments without employees (using NOT EXISTS)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-handwritten.svg" alt="Handwritten: List departments without employees (using NOT EXISTS)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-diagram.svg" alt="Diagram: List departments without employees (using NOT EXISTS)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-diagram.svg" alt="Diagram: List departments without employees (using NOT EXISTS)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-sticky.svg" alt="Sticky Note: List departments without employees (using NOT EXISTS)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-departments-without-employees-using-not-exists-sticky.svg" alt="Sticky Note: List departments without employees (using NOT EXISTS)." width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ WHERE e.emp_id IS NULL;
 
 ### Q4: Find employees whose names start with 'S' and end with 'n'.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-handwritten.svg" alt="Handwritten: Find employees whose names start with 'S' and end with 'n'." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-handwritten.svg" alt="Handwritten: Find employees whose names start with 'S' and end with 'n'." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-diagram.svg" alt="Diagram: Find employees whose names start with 'S' and end with 'n'." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-diagram.svg" alt="Diagram: Find employees whose names start with 'S' and end with 'n'." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-sticky.svg" alt="Sticky Note: Find employees whose names start with 'S' and end with 'n'." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-names-start-with-s-and-end-with-n-sticky.svg" alt="Sticky Note: Find employees whose names start with 'S' and end with 'n'." width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@ WHERE emp_name LIKE 'S%n';
 
 ### Q5: Show top 5 highest paid employees.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-handwritten.svg" alt="Handwritten: Show top 5 highest paid employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-handwritten.svg" alt="Handwritten: Show top 5 highest paid employees." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-diagram.svg" alt="Diagram: Show top 5 highest paid employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-diagram.svg" alt="Diagram: Show top 5 highest paid employees." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-sticky.svg" alt="Sticky Note: Show top 5 highest paid employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-top-5-highest-paid-employees-sticky.svg" alt="Sticky Note: Show top 5 highest paid employees." width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ LIMIT 5;
 
 ### Q6: Find the oldest employee in each department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-handwritten.svg" alt="Handwritten: Find the oldest employee in each department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-handwritten.svg" alt="Handwritten: Find the oldest employee in each department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-diagram.svg" alt="Diagram: Find the oldest employee in each department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-diagram.svg" alt="Diagram: Find the oldest employee in each department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-sticky.svg" alt="Sticky Note: Find the oldest employee in each department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-oldest-employee-in-each-department-sticky.svg" alt="Sticky Note: Find the oldest employee in each department." width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@ WHERE e.hire_date = (
 
 ### Q7: Count employees per department, showing only departments with more than 5 employees.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-handwritten.svg" alt="Handwritten: Count employees per department, showing only departments with more than 5 employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-handwritten.svg" alt="Handwritten: Count employees per department, showing only departments with more than 5 employees." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-diagram.svg" alt="Diagram: Count employees per department, showing only departments with more than 5 employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-diagram.svg" alt="Diagram: Count employees per department, showing only departments with more than 5 employees." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-sticky.svg" alt="Sticky Note: Count employees per department, showing only departments with more than 5 employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-per-department-showing-only-departments-with-more-than-5-employees-sticky.svg" alt="Sticky Note: Count employees per department, showing only departments with more than 5 employees." width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ ORDER BY emp_count DESC;
 
 ### Q8: Find employees who have no manager assigned.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-handwritten.svg" alt="Handwritten: Find employees who have no manager assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-handwritten.svg" alt="Handwritten: Find employees who have no manager assigned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-diagram.svg" alt="Diagram: Find employees who have no manager assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-diagram.svg" alt="Diagram: Find employees who have no manager assigned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-sticky.svg" alt="Sticky Note: Find employees who have no manager assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-have-no-manager-assigned-sticky.svg" alt="Sticky Note: Find employees who have no manager assigned." width="30%">
 </a>
 
 
@@ -300,14 +300,14 @@ WHERE manager_id IS NULL;
 
 ### Q9: Calculate salary statistics per department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-handwritten.svg" alt="Handwritten: Calculate salary statistics per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-handwritten.svg" alt="Handwritten: Calculate salary statistics per department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-diagram.svg" alt="Diagram: Calculate salary statistics per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-diagram.svg" alt="Diagram: Calculate salary statistics per department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-sticky.svg" alt="Sticky Note: Calculate salary statistics per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-salary-statistics-per-department-sticky.svg" alt="Sticky Note: Calculate salary statistics per department." width="30%">
 </a>
 
 
@@ -330,14 +330,14 @@ GROUP BY d.dept_id, d.dept_name;
 
 ### Q10: Find employees whose salary is within 10% of the department average.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-handwritten.svg" alt="Handwritten: Find employees whose salary is within 10% of the department average." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-handwritten.svg" alt="Handwritten: Find employees whose salary is within 10% of the department average." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-diagram.svg" alt="Diagram: Find employees whose salary is within 10% of the department average." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-diagram.svg" alt="Diagram: Find employees whose salary is within 10% of the department average." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-sticky.svg" alt="Sticky Note: Find employees whose salary is within 10% of the department average." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-within-10-of-the-department-average-sticky.svg" alt="Sticky Note: Find employees whose salary is within 10% of the department average." width="30%">
 </a>
 
 
@@ -363,14 +363,14 @@ WHERE e.salary BETWEEN da.avg_salary * 0.9 AND da.avg_salary * 1.1;
 
 ### Q11: List employees with their department names (INNER JOIN).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-handwritten.svg" alt="Handwritten: List employees with their department names (INNER JOIN)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-handwritten.svg" alt="Handwritten: List employees with their department names (INNER JOIN)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-diagram.svg" alt="Diagram: List employees with their department names (INNER JOIN)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-diagram.svg" alt="Diagram: List employees with their department names (INNER JOIN)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-sticky.svg" alt="Sticky Note: List employees with their department names (INNER JOIN)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/list-employees-with-their-department-names-inner-join-sticky.svg" alt="Sticky Note: List employees with their department names (INNER JOIN)." width="30%">
 </a>
 
 
@@ -386,14 +386,14 @@ INNER JOIN departments d ON e.dept_id = d.dept_id;
 
 ### Q12: Show all employees including those in departments that don't exist (LEFT JOIN).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-handwritten.svg" alt="Handwritten: Show all employees including those in departments that don't exist (LEFT JOIN)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-handwritten.svg" alt="Handwritten: Show all employees including those in departments that don't exist (LEFT JOIN)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-diagram.svg" alt="Diagram: Show all employees including those in departments that don't exist (LEFT JOIN)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-diagram.svg" alt="Diagram: Show all employees including those in departments that don't exist (LEFT JOIN)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-sticky.svg" alt="Sticky Note: Show all employees including those in departments that don't exist (LEFT JOIN)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-all-employees-including-those-in-departments-that-don-t-exist-left-join-sticky.svg" alt="Sticky Note: Show all employees including those in departments that don't exist (LEFT JOIN)." width="30%">
 </a>
 
 
@@ -409,14 +409,14 @@ LEFT JOIN departments d ON e.dept_id = d.dept_id;
 
 ### Q13: Find employees who work on projects with budgets over 100000.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-handwritten.svg" alt="Handwritten: Find employees who work on projects with budgets over 100000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-handwritten.svg" alt="Handwritten: Find employees who work on projects with budgets over 100000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-diagram.svg" alt="Diagram: Find employees who work on projects with budgets over 100000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-diagram.svg" alt="Diagram: Find employees who work on projects with budgets over 100000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-sticky.svg" alt="Sticky Note: Find employees who work on projects with budgets over 100000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-projects-with-budgets-over-100000-sticky.svg" alt="Sticky Note: Find employees who work on projects with budgets over 100000." width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ WHERE p.budget > 100000;
 
 ### Q14: Self-join: Find employees and their managers' names.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-handwritten.svg" alt="Handwritten: Self-join: Find employees and their managers' names." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-handwritten.svg" alt="Handwritten: Self-join: Find employees and their managers' names." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-diagram.svg" alt="Diagram: Self-join: Find employees and their managers' names." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-diagram.svg" alt="Diagram: Self-join: Find employees and their managers' names." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-sticky.svg" alt="Sticky Note: Self-join: Find employees and their managers' names." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/self-join-find-employees-and-their-managers-names-sticky.svg" alt="Sticky Note: Self-join: Find employees and their managers' names." width="30%">
 </a>
 
 
@@ -459,14 +459,14 @@ LEFT JOIN employees m ON e.manager_id = m.emp_id;
 
 ### Q15: Find employees who work on MORE THAN one project.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-handwritten.svg" alt="Handwritten: Find employees who work on MORE THAN one project." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-handwritten.svg" alt="Handwritten: Find employees who work on MORE THAN one project." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-diagram.svg" alt="Diagram: Find employees who work on MORE THAN one project." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-diagram.svg" alt="Diagram: Find employees who work on MORE THAN one project." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-sticky.svg" alt="Sticky Note: Find employees who work on MORE THAN one project." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-work-on-more-than-one-project-sticky.svg" alt="Sticky Note: Find employees who work on MORE THAN one project." width="30%">
 </a>
 
 
@@ -484,14 +484,14 @@ HAVING COUNT(ep.project_id) > 1;
 
 ### Q16: Cross join to generate all possible employee-project combinations.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-handwritten.svg" alt="Handwritten: Cross join to generate all possible employee-project combinations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-handwritten.svg" alt="Handwritten: Cross join to generate all possible employee-project combinations." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-diagram.svg" alt="Diagram: Cross join to generate all possible employee-project combinations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-diagram.svg" alt="Diagram: Cross join to generate all possible employee-project combinations." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-sticky.svg" alt="Sticky Note: Cross join to generate all possible employee-project combinations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cross-join-to-generate-all-possible-employee-project-combinations-sticky.svg" alt="Sticky Note: Cross join to generate all possible employee-project combinations." width="30%">
 </a>
 
 
@@ -507,14 +507,14 @@ CROSS JOIN projects p;
 
 ### Q17: Find departments that have NO projects assigned.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-handwritten.svg" alt="Handwritten: Find departments that have NO projects assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-handwritten.svg" alt="Handwritten: Find departments that have NO projects assigned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-diagram.svg" alt="Diagram: Find departments that have NO projects assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-diagram.svg" alt="Diagram: Find departments that have NO projects assigned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-sticky.svg" alt="Sticky Note: Find departments that have NO projects assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-departments-that-have-no-projects-assigned-sticky.svg" alt="Sticky Note: Find departments that have NO projects assigned." width="30%">
 </a>
 
 
@@ -531,14 +531,14 @@ WHERE ep.project_id IS NULL;
 
 ### Q18: Complex JOIN: Find employees who earn more than their managers.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-handwritten.svg" alt="Handwritten: Complex JOIN: Find employees who earn more than their managers." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-handwritten.svg" alt="Handwritten: Complex JOIN: Find employees who earn more than their managers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-diagram.svg" alt="Diagram: Complex JOIN: Find employees who earn more than their managers." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-diagram.svg" alt="Diagram: Complex JOIN: Find employees who earn more than their managers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-sticky.svg" alt="Sticky Note: Complex JOIN: Find employees who earn more than their managers." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-join-find-employees-who-earn-more-than-their-managers-sticky.svg" alt="Sticky Note: Complex JOIN: Find employees who earn more than their managers." width="30%">
 </a>
 
 
@@ -556,14 +556,14 @@ WHERE e.salary > m.salary;
 
 ### Q19: Find employees assigned to ALL projects in the company (Division operation).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-handwritten.svg" alt="Handwritten: Find employees assigned to ALL projects in the company (Division operation)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-handwritten.svg" alt="Handwritten: Find employees assigned to ALL projects in the company (Division operation)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-diagram.svg" alt="Diagram: Find employees assigned to ALL projects in the company (Division operation)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-diagram.svg" alt="Diagram: Find employees assigned to ALL projects in the company (Division operation)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-sticky.svg" alt="Sticky Note: Find employees assigned to ALL projects in the company (Division operation)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-assigned-to-all-projects-in-the-company-division-operation-sticky.svg" alt="Sticky Note: Find employees assigned to ALL projects in the company (Division operation)." width="30%">
 </a>
 
 
@@ -588,14 +588,14 @@ WHERE NOT EXISTS (
 
 ### Q20: Find projects with NO employee assigned.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-handwritten.svg" alt="Handwritten: Find projects with NO employee assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-handwritten.svg" alt="Handwritten: Find projects with NO employee assigned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-diagram.svg" alt="Diagram: Find projects with NO employee assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-diagram.svg" alt="Diagram: Find projects with NO employee assigned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-sticky.svg" alt="Sticky Note: Find projects with NO employee assigned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-with-no-employee-assigned-sticky.svg" alt="Sticky Note: Find projects with NO employee assigned." width="30%">
 </a>
 
 
@@ -616,14 +616,14 @@ WHERE ep.emp_id IS NULL;
 
 ### Q21: Find the department with the highest average salary.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-handwritten.svg" alt="Handwritten: Find the department with the highest average salary." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-handwritten.svg" alt="Handwritten: Find the department with the highest average salary." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-diagram.svg" alt="Diagram: Find the department with the highest average salary." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-diagram.svg" alt="Diagram: Find the department with the highest average salary." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-sticky.svg" alt="Sticky Note: Find the department with the highest average salary." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-highest-average-salary-sticky.svg" alt="Sticky Note: Find the department with the highest average salary." width="30%">
 </a>
 
 
@@ -642,14 +642,14 @@ LIMIT 1;
 
 ### Q22: Calculate the total hours worked per employee across all projects.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-handwritten.svg" alt="Handwritten: Calculate the total hours worked per employee across all projects." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-handwritten.svg" alt="Handwritten: Calculate the total hours worked per employee across all projects." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-diagram.svg" alt="Diagram: Calculate the total hours worked per employee across all projects." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-diagram.svg" alt="Diagram: Calculate the total hours worked per employee across all projects." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-sticky.svg" alt="Sticky Note: Calculate the total hours worked per employee across all projects." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-total-hours-worked-per-employee-across-all-projects-sticky.svg" alt="Sticky Note: Calculate the total hours worked per employee across all projects." width="30%">
 </a>
 
 
@@ -667,14 +667,14 @@ ORDER BY total_hours DESC;
 
 ### Q23: Find the second highest salary without using LIMIT/OFFSET.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-handwritten.svg" alt="Handwritten: Find the second highest salary without using LIMIT/OFFSET." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-handwritten.svg" alt="Handwritten: Find the second highest salary without using LIMIT/OFFSET." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-diagram.svg" alt="Diagram: Find the second highest salary without using LIMIT/OFFSET." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-diagram.svg" alt="Diagram: Find the second highest salary without using LIMIT/OFFSET." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-sticky.svg" alt="Sticky Note: Find the second highest salary without using LIMIT/OFFSET." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-second-highest-salary-without-using-limit-offset-sticky.svg" alt="Sticky Note: Find the second highest salary without using LIMIT/OFFSET." width="30%">
 </a>
 
 
@@ -698,14 +698,14 @@ WHERE rnk = 2;
 
 ### Q24: Count employees hired in each year.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-handwritten.svg" alt="Handwritten: Count employees hired in each year." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-handwritten.svg" alt="Handwritten: Count employees hired in each year." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-diagram.svg" alt="Diagram: Count employees hired in each year." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-diagram.svg" alt="Diagram: Count employees hired in each year." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-sticky.svg" alt="Sticky Note: Count employees hired in each year." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/count-employees-hired-in-each-year-sticky.svg" alt="Sticky Note: Count employees hired in each year." width="30%">
 </a>
 
 
@@ -724,14 +724,14 @@ ORDER BY hire_year;
 
 ### Q25: Find the month with the highest number of hires.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-handwritten.svg" alt="Handwritten: Find the month with the highest number of hires." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-handwritten.svg" alt="Handwritten: Find the month with the highest number of hires." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-diagram.svg" alt="Diagram: Find the month with the highest number of hires." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-diagram.svg" alt="Diagram: Find the month with the highest number of hires." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-sticky.svg" alt="Sticky Note: Find the month with the highest number of hires." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-month-with-the-highest-number-of-hires-sticky.svg" alt="Sticky Note: Find the month with the highest number of hires." width="30%">
 </a>
 
 
@@ -751,14 +751,14 @@ LIMIT 1;
 
 ### Q26: Calculate the cumulative salary expense by department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-handwritten.svg" alt="Handwritten: Calculate the cumulative salary expense by department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-handwritten.svg" alt="Handwritten: Calculate the cumulative salary expense by department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-diagram.svg" alt="Diagram: Calculate the cumulative salary expense by department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-diagram.svg" alt="Diagram: Calculate the cumulative salary expense by department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-sticky.svg" alt="Sticky Note: Calculate the cumulative salary expense by department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-cumulative-salary-expense-by-department-sticky.svg" alt="Sticky Note: Calculate the cumulative salary expense by department." width="30%">
 </a>
 
 
@@ -780,14 +780,14 @@ ORDER BY total_salary_expense DESC;
 
 ### Q27: Find employees whose salary is above the average for their department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-handwritten.svg" alt="Handwritten: Find employees whose salary is above the average for their department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-handwritten.svg" alt="Handwritten: Find employees whose salary is above the average for their department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-diagram.svg" alt="Diagram: Find employees whose salary is above the average for their department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-diagram.svg" alt="Diagram: Find employees whose salary is above the average for their department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-sticky.svg" alt="Sticky Note: Find employees whose salary is above the average for their department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-whose-salary-is-above-the-average-for-their-department-sticky.svg" alt="Sticky Note: Find employees whose salary is above the average for their department." width="30%">
 </a>
 
 
@@ -808,14 +808,14 @@ WHERE e.salary > (
 
 ### Q28: Minimum, maximum, and range of salaries across the company.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-handwritten.svg" alt="Handwritten: Minimum, maximum, and range of salaries across the company." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-handwritten.svg" alt="Handwritten: Minimum, maximum, and range of salaries across the company." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-diagram.svg" alt="Diagram: Minimum, maximum, and range of salaries across the company." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-diagram.svg" alt="Diagram: Minimum, maximum, and range of salaries across the company." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-sticky.svg" alt="Sticky Note: Minimum, maximum, and range of salaries across the company." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/minimum-maximum-and-range-of-salaries-across-the-company-sticky.svg" alt="Sticky Note: Minimum, maximum, and range of salaries across the company." width="30%">
 </a>
 
 
@@ -839,14 +839,14 @@ FROM employees;
 
 ### Q29: Find employees who earn more than the average salary of the IT department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-handwritten.svg" alt="Handwritten: Find employees who earn more than the average salary of the IT department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-handwritten.svg" alt="Handwritten: Find employees who earn more than the average salary of the IT department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-diagram.svg" alt="Diagram: Find employees who earn more than the average salary of the IT department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-diagram.svg" alt="Diagram: Find employees who earn more than the average salary of the IT department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-sticky.svg" alt="Sticky Note: Find employees who earn more than the average salary of the IT department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-the-average-salary-of-the-it-department-sticky.svg" alt="Sticky Note: Find employees who earn more than the average salary of the IT department." width="30%">
 </a>
 
 
@@ -867,14 +867,14 @@ WHERE salary > (
 
 ### Q30: Find the department with the most employees (correlated subquery).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-handwritten.svg" alt="Handwritten: Find the department with the most employees (correlated subquery)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-handwritten.svg" alt="Handwritten: Find the department with the most employees (correlated subquery)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-diagram.svg" alt="Diagram: Find the department with the most employees (correlated subquery)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-diagram.svg" alt="Diagram: Find the department with the most employees (correlated subquery)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-sticky.svg" alt="Sticky Note: Find the department with the most employees (correlated subquery)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-department-with-the-most-employees-correlated-subquery-sticky.svg" alt="Sticky Note: Find the department with the most employees (correlated subquery)." width="30%">
 </a>
 
 
@@ -901,14 +901,14 @@ WHERE (
 
 ### Q31: Find employees who do NOT work on any project.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-handwritten.svg" alt="Handwritten: Find employees who do NOT work on any project." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-handwritten.svg" alt="Handwritten: Find employees who do NOT work on any project." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-diagram.svg" alt="Diagram: Find employees who do NOT work on any project." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-diagram.svg" alt="Diagram: Find employees who do NOT work on any project." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-sticky.svg" alt="Sticky Note: Find employees who do NOT work on any project." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-do-not-work-on-any-project-sticky.svg" alt="Sticky Note: Find employees who do NOT work on any project." width="30%">
 </a>
 
 
@@ -928,14 +928,14 @@ WHERE NOT EXISTS (
 
 ### Q32: Find projects where the total hours worked exceed the average total hours.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-handwritten.svg" alt="Handwritten: Find projects where the total hours worked exceed the average total hours." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-handwritten.svg" alt="Handwritten: Find projects where the total hours worked exceed the average total hours." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-diagram.svg" alt="Diagram: Find projects where the total hours worked exceed the average total hours." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-diagram.svg" alt="Diagram: Find projects where the total hours worked exceed the average total hours." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-sticky.svg" alt="Sticky Note: Find projects where the total hours worked exceed the average total hours." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-projects-where-the-total-hours-worked-exceed-the-average-total-hours-sticky.svg" alt="Sticky Note: Find projects where the total hours worked exceed the average total hours." width="30%">
 </a>
 
 
@@ -961,14 +961,14 @@ WHERE ph.total_hours > (
 
 ### Q33: Find the third highest salary using a subquery.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-handwritten.svg" alt="Handwritten: Find the third highest salary using a subquery." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-handwritten.svg" alt="Handwritten: Find the third highest salary using a subquery." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-diagram.svg" alt="Diagram: Find the third highest salary using a subquery." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-diagram.svg" alt="Diagram: Find the third highest salary using a subquery." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-sticky.svg" alt="Sticky Note: Find the third highest salary using a subquery." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-third-highest-salary-using-a-subquery-sticky.svg" alt="Sticky Note: Find the third highest salary using a subquery." width="30%">
 </a>
 
 
@@ -988,14 +988,14 @@ WHERE 3 = (
 
 ### Q34: Update salaries: give 10% raise to employees in departments with average salary below 50000.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-handwritten.svg" alt="Handwritten: Update salaries: give 10% raise to employees in departments with average salary below 50000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-handwritten.svg" alt="Handwritten: Update salaries: give 10% raise to employees in departments with average salary below 50000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-diagram.svg" alt="Diagram: Update salaries: give 10% raise to employees in departments with average salary below 50000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-diagram.svg" alt="Diagram: Update salaries: give 10% raise to employees in departments with average salary below 50000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-sticky.svg" alt="Sticky Note: Update salaries: give 10% raise to employees in departments with average salary below 50000." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-salaries-give-10-raise-to-employees-in-departments-with-average-salary-below-50000-sticky.svg" alt="Sticky Note: Update salaries: give 10% raise to employees in departments with average salary below 50000." width="30%">
 </a>
 
 
@@ -1016,14 +1016,14 @@ WHERE e.dept_id IN (
 
 ### Q35: Delete employees who haven't worked on any project in the last year.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-handwritten.svg" alt="Handwritten: Delete employees who haven't worked on any project in the last year." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-handwritten.svg" alt="Handwritten: Delete employees who haven't worked on any project in the last year." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-diagram.svg" alt="Diagram: Delete employees who haven't worked on any project in the last year." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-diagram.svg" alt="Diagram: Delete employees who haven't worked on any project in the last year." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-sticky.svg" alt="Sticky Note: Delete employees who haven't worked on any project in the last year." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/delete-employees-who-haven-t-worked-on-any-project-in-the-last-year-sticky.svg" alt="Sticky Note: Delete employees who haven't worked on any project in the last year." width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ WHERE emp_id NOT IN (
 
 ### Q36: Find employees who earn more than ALL employees in the Sales department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-handwritten.svg" alt="Handwritten: Find employees who earn more than ALL employees in the Sales department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-handwritten.svg" alt="Handwritten: Find employees who earn more than ALL employees in the Sales department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-diagram.svg" alt="Diagram: Find employees who earn more than ALL employees in the Sales department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-diagram.svg" alt="Diagram: Find employees who earn more than ALL employees in the Sales department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-sticky.svg" alt="Sticky Note: Find employees who earn more than ALL employees in the Sales department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-employees-who-earn-more-than-all-employees-in-the-sales-department-sticky.svg" alt="Sticky Note: Find employees who earn more than ALL employees in the Sales department." width="30%">
 </a>
 
 
@@ -1076,14 +1076,14 @@ WHERE salary > ALL (
 
 ### Q37: Rank employees by salary within each department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-handwritten.svg" alt="Handwritten: Rank employees by salary within each department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-handwritten.svg" alt="Handwritten: Rank employees by salary within each department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-diagram.svg" alt="Diagram: Rank employees by salary within each department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-diagram.svg" alt="Diagram: Rank employees by salary within each department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-sticky.svg" alt="Sticky Note: Rank employees by salary within each department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/rank-employees-by-salary-within-each-department-sticky.svg" alt="Sticky Note: Rank employees by salary within each department." width="30%">
 </a>
 
 
@@ -1104,14 +1104,14 @@ FROM employees;
 
 ### Q38: Running total of salary expense ordered by hire date.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-handwritten.svg" alt="Handwritten: Running total of salary expense ordered by hire date." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-handwritten.svg" alt="Handwritten: Running total of salary expense ordered by hire date." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-diagram.svg" alt="Diagram: Running total of salary expense ordered by hire date." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-diagram.svg" alt="Diagram: Running total of salary expense ordered by hire date." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-sticky.svg" alt="Sticky Note: Running total of salary expense ordered by hire date." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-total-of-salary-expense-ordered-by-hire-date-sticky.svg" alt="Sticky Note: Running total of salary expense ordered by hire date." width="30%">
 </a>
 
 
@@ -1132,14 +1132,14 @@ ORDER BY hire_date;
 
 ### Q39: Calculate the salary difference from the previous employee (ordered by salary).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-handwritten.svg" alt="Handwritten: Calculate the salary difference from the previous employee (ordered by salary)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-handwritten.svg" alt="Handwritten: Calculate the salary difference from the previous employee (ordered by salary)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-diagram.svg" alt="Diagram: Calculate the salary difference from the previous employee (ordered by salary)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-diagram.svg" alt="Diagram: Calculate the salary difference from the previous employee (ordered by salary)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-sticky.svg" alt="Sticky Note: Calculate the salary difference from the previous employee (ordered by salary)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/calculate-the-salary-difference-from-the-previous-employee-ordered-by-salary-sticky.svg" alt="Sticky Note: Calculate the salary difference from the previous employee (ordered by salary)." width="30%">
 </a>
 
 
@@ -1160,14 +1160,14 @@ FROM employees;
 
 ### Q40: First and last employees hired per department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-handwritten.svg" alt="Handwritten: First and last employees hired per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-handwritten.svg" alt="Handwritten: First and last employees hired per department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-diagram.svg" alt="Diagram: First and last employees hired per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-diagram.svg" alt="Diagram: First and last employees hired per department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-sticky.svg" alt="Sticky Note: First and last employees hired per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/first-and-last-employees-hired-per-department-sticky.svg" alt="Sticky Note: First and last employees hired per department." width="30%">
 </a>
 
 
@@ -1189,14 +1189,14 @@ FROM employees;
 
 ### Q41: Moving average of salary over 3 employees (ordered by hire date).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-handwritten.svg" alt="Handwritten: Moving average of salary over 3 employees (ordered by hire date)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-handwritten.svg" alt="Handwritten: Moving average of salary over 3 employees (ordered by hire date)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-diagram.svg" alt="Diagram: Moving average of salary over 3 employees (ordered by hire date)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-diagram.svg" alt="Diagram: Moving average of salary over 3 employees (ordered by hire date)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-sticky.svg" alt="Sticky Note: Moving average of salary over 3 employees (ordered by hire date)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/moving-average-of-salary-over-3-employees-ordered-by-hire-date-sticky.svg" alt="Sticky Note: Moving average of salary over 3 employees (ordered by hire date)." width="30%">
 </a>
 
 
@@ -1218,14 +1218,14 @@ FROM employees;
 
 ### Q42: Find the top 3 highest-paid employees per department.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-handwritten.svg" alt="Handwritten: Find the top 3 highest-paid employees per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-handwritten.svg" alt="Handwritten: Find the top 3 highest-paid employees per department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-diagram.svg" alt="Diagram: Find the top 3 highest-paid employees per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-diagram.svg" alt="Diagram: Find the top 3 highest-paid employees per department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-sticky.svg" alt="Sticky Note: Find the top 3 highest-paid employees per department." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/find-the-top-3-highest-paid-employees-per-department-sticky.svg" alt="Sticky Note: Find the top 3 highest-paid employees per department." width="30%">
 </a>
 
 
@@ -1249,14 +1249,14 @@ WHERE rnk <= 3;
 
 ### Q43: Cumulative distribution of salaries.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-handwritten.svg" alt="Handwritten: Cumulative distribution of salaries." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-handwritten.svg" alt="Handwritten: Cumulative distribution of salaries." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-diagram.svg" alt="Diagram: Cumulative distribution of salaries." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-diagram.svg" alt="Diagram: Cumulative distribution of salaries." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-sticky.svg" alt="Sticky Note: Cumulative distribution of salaries." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cumulative-distribution-of-salaries-sticky.svg" alt="Sticky Note: Cumulative distribution of salaries." width="30%">
 </a>
 
 
@@ -1277,14 +1277,14 @@ ORDER BY salary;
 
 ### Q44: For each employee, show the total hours worked and the percentage of total project hours.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-handwritten.svg" alt="Handwritten: For each employee, show the total hours worked and the percentage of total project hours." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-handwritten.svg" alt="Handwritten: For each employee, show the total hours worked and the percentage of total project hours." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-diagram.svg" alt="Diagram: For each employee, show the total hours worked and the percentage of total project hours." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-diagram.svg" alt="Diagram: For each employee, show the total hours worked and the percentage of total project hours." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-sticky.svg" alt="Sticky Note: For each employee, show the total hours worked and the percentage of total project hours." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/for-each-employee-show-the-total-hours-worked-and-the-percentage-of-total-project-hours-sticky.svg" alt="Sticky Note: For each employee, show the total hours worked and the percentage of total project hours." width="30%">
 </a>
 
 
@@ -1308,14 +1308,14 @@ ORDER BY total_hours DESC;
 
 ### Q45: Compare each employee's salary with the department average using window functions.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-handwritten.svg" alt="Handwritten: Compare each employee's salary with the department average using window functions." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-handwritten.svg" alt="Handwritten: Compare each employee's salary with the department average using window functions." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-diagram.svg" alt="Diagram: Compare each employee's salary with the department average using window functions." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-diagram.svg" alt="Diagram: Compare each employee's salary with the department average using window functions." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-sticky.svg" alt="Sticky Note: Compare each employee's salary with the department average using window functions." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/compare-each-employee-s-salary-with-the-department-average-using-window-functions-sticky.svg" alt="Sticky Note: Compare each employee's salary with the department average using window functions." width="30%">
 </a>
 
 
@@ -1340,14 +1340,14 @@ FROM employees;
 
 ### Q46: Show the salary gap between consecutive employees in ranking.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-handwritten.svg" alt="Handwritten: Show the salary gap between consecutive employees in ranking." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-handwritten.svg" alt="Handwritten: Show the salary gap between consecutive employees in ranking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-diagram.svg" alt="Diagram: Show the salary gap between consecutive employees in ranking." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-diagram.svg" alt="Diagram: Show the salary gap between consecutive employees in ranking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-sticky.svg" alt="Sticky Note: Show the salary gap between consecutive employees in ranking." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/show-the-salary-gap-between-consecutive-employees-in-ranking-sticky.svg" alt="Sticky Note: Show the salary gap between consecutive employees in ranking." width="30%">
 </a>
 
 
@@ -1374,14 +1374,14 @@ ORDER BY salary DESC;
 
 ### Q47: Recursive CTE — Generate employee hierarchy (org chart).
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-handwritten.svg" alt="Handwritten: Recursive CTE — Generate employee hierarchy (org chart)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-handwritten.svg" alt="Handwritten: Recursive CTE — Generate employee hierarchy (org chart)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-diagram.svg" alt="Diagram: Recursive CTE — Generate employee hierarchy (org chart)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-diagram.svg" alt="Diagram: Recursive CTE — Generate employee hierarchy (org chart)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-sticky.svg" alt="Sticky Note: Recursive CTE — Generate employee hierarchy (org chart)." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-employee-hierarchy-org-chart-sticky.svg" alt="Sticky Note: Recursive CTE — Generate employee hierarchy (org chart)." width="30%">
 </a>
 
 
@@ -1420,14 +1420,14 @@ ORDER BY path;
 
 ### Q48: Recursive CTE — Generate date series for reporting.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-handwritten.svg" alt="Handwritten: Recursive CTE — Generate date series for reporting." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-handwritten.svg" alt="Handwritten: Recursive CTE — Generate date series for reporting." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-diagram.svg" alt="Diagram: Recursive CTE — Generate date series for reporting." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-diagram.svg" alt="Diagram: Recursive CTE — Generate date series for reporting." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-sticky.svg" alt="Sticky Note: Recursive CTE — Generate date series for reporting." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/recursive-cte-generate-date-series-for-reporting-sticky.svg" alt="Sticky Note: Recursive CTE — Generate date series for reporting." width="30%">
 </a>
 
 
@@ -1450,14 +1450,14 @@ WHERE DAYOFWEEK(dt) IN (1, 7); -- Weekends only
 
 ### Q49: CTE — Find employee projects with budget utilization.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-handwritten.svg" alt="Handwritten: CTE — Find employee projects with budget utilization." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-handwritten.svg" alt="Handwritten: CTE — Find employee projects with budget utilization." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-diagram.svg" alt="Diagram: CTE — Find employee projects with budget utilization." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-diagram.svg" alt="Diagram: CTE — Find employee projects with budget utilization." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-sticky.svg" alt="Sticky Note: CTE — Find employee projects with budget utilization." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-find-employee-projects-with-budget-utilization-sticky.svg" alt="Sticky Note: CTE — Find employee projects with budget utilization." width="30%">
 </a>
 
 
@@ -1497,14 +1497,14 @@ ORDER BY budget DESC;
 
 ### Q50: CTE — Complex filtering: Projects with all senior employees.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-handwritten.svg" alt="Handwritten: CTE — Complex filtering: Projects with all senior employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-handwritten.svg" alt="Handwritten: CTE — Complex filtering: Projects with all senior employees." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-diagram.svg" alt="Diagram: CTE — Complex filtering: Projects with all senior employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-diagram.svg" alt="Diagram: CTE — Complex filtering: Projects with all senior employees." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-sticky.svg" alt="Sticky Note: CTE — Complex filtering: Projects with all senior employees." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-complex-filtering-projects-with-all-senior-employees-sticky.svg" alt="Sticky Note: CTE — Complex filtering: Projects with all senior employees." width="30%">
 </a>
 
 
@@ -1535,14 +1535,14 @@ WHERE ps.total_emp = ps.senior_emp;
 
 ### Q51: CTE — Department salary statistics with global comparison.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-handwritten.svg" alt="Handwritten: CTE — Department salary statistics with global comparison." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-handwritten.svg" alt="Handwritten: CTE — Department salary statistics with global comparison." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-diagram.svg" alt="Diagram: CTE — Department salary statistics with global comparison." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-diagram.svg" alt="Diagram: CTE — Department salary statistics with global comparison." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-sticky.svg" alt="Sticky Note: CTE — Department salary statistics with global comparison." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/cte-department-salary-statistics-with-global-comparison-sticky.svg" alt="Sticky Note: CTE — Department salary statistics with global comparison." width="30%">
 </a>
 
 
@@ -1579,14 +1579,14 @@ ORDER BY z_score DESC;
 
 ### Q52: Multiple CTEs — Full management chain analysis.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-handwritten.svg" alt="Handwritten: Multiple CTEs — Full management chain analysis." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-handwritten.svg" alt="Handwritten: Multiple CTEs — Full management chain analysis." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-diagram.svg" alt="Diagram: Multiple CTEs — Full management chain analysis." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-diagram.svg" alt="Diagram: Multiple CTEs — Full management chain analysis." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-sticky.svg" alt="Sticky Note: Multiple CTEs — Full management chain analysis." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/multiple-ctes-full-management-chain-analysis-sticky.svg" alt="Sticky Note: Multiple CTEs — Full management chain analysis." width="30%">
 </a>
 
 
@@ -1637,14 +1637,14 @@ ORDER BY cs.total_reports DESC;
 
 ### Q53: Create indexes for common query patterns.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-handwritten.svg" alt="Handwritten: Create indexes for common query patterns." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-handwritten.svg" alt="Handwritten: Create indexes for common query patterns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-diagram.svg" alt="Diagram: Create indexes for common query patterns." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-diagram.svg" alt="Diagram: Create indexes for common query patterns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-sticky.svg" alt="Sticky Note: Create indexes for common query patterns." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/create-indexes-for-common-query-patterns-sticky.svg" alt="Sticky Note: Create indexes for common query patterns." width="30%">
 </a>
 
 
@@ -1674,14 +1674,14 @@ CREATE INDEX idx_emp_dept_cover ON employees(dept_id, emp_name, salary) INCLUDE 
 
 ### Q54: Analyze a slow query and propose optimizations.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-handwritten.svg" alt="Handwritten: Analyze a slow query and propose optimizations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-handwritten.svg" alt="Handwritten: Analyze a slow query and propose optimizations." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-diagram.svg" alt="Diagram: Analyze a slow query and propose optimizations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-diagram.svg" alt="Diagram: Analyze a slow query and propose optimizations." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-sticky.svg" alt="Sticky Note: Analyze a slow query and propose optimizations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/analyze-a-slow-query-and-propose-optimizations-sticky.svg" alt="Sticky Note: Analyze a slow query and propose optimizations." width="30%">
 </a>
 
 
@@ -1725,14 +1725,14 @@ WHERE d.location = 'Mumbai'
 
 ### Q55: Detect and remove duplicate rows.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-handwritten.svg" alt="Handwritten: Detect and remove duplicate rows." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-handwritten.svg" alt="Handwritten: Detect and remove duplicate rows." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-diagram.svg" alt="Diagram: Detect and remove duplicate rows." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-diagram.svg" alt="Diagram: Detect and remove duplicate rows." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-sticky.svg" alt="Sticky Note: Detect and remove duplicate rows." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/detect-and-remove-duplicate-rows-sticky.svg" alt="Sticky Note: Detect and remove duplicate rows." width="30%">
 </a>
 
 
@@ -1771,14 +1771,14 @@ WHERE emp_id IN (
 
 ### Q56: Query performance comparison: JOIN vs IN vs EXISTS.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-handwritten.svg" alt="Handwritten: Query performance comparison: JOIN vs IN vs EXISTS." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-handwritten.svg" alt="Handwritten: Query performance comparison: JOIN vs IN vs EXISTS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-diagram.svg" alt="Diagram: Query performance comparison: JOIN vs IN vs EXISTS." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-diagram.svg" alt="Diagram: Query performance comparison: JOIN vs IN vs EXISTS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-sticky.svg" alt="Sticky Note: Query performance comparison: JOIN vs IN vs EXISTS." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-performance-comparison-join-vs-in-vs-exists-sticky.svg" alt="Sticky Note: Query performance comparison: JOIN vs IN vs EXISTS." width="30%">
 </a>
 
 
@@ -1816,14 +1816,14 @@ WHERE EXISTS (
 
 ### Q57: Partition table for better query performance.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-handwritten.svg" alt="Handwritten: Partition table for better query performance." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-handwritten.svg" alt="Handwritten: Partition table for better query performance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-diagram.svg" alt="Diagram: Partition table for better query performance." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-diagram.svg" alt="Diagram: Partition table for better query performance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-sticky.svg" alt="Sticky Note: Partition table for better query performance." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/partition-table-for-better-query-performance-sticky.svg" alt="Sticky Note: Partition table for better query performance." width="30%">
 </a>
 
 
@@ -1864,14 +1864,14 @@ GROUP BY YEAR(hire_date);
 
 ### Q58: Use EXPLAIN to understand query execution.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-handwritten.svg" alt="Handwritten: Use EXPLAIN to understand query execution." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-handwritten.svg" alt="Handwritten: Use EXPLAIN to understand query execution." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-diagram.svg" alt="Diagram: Use EXPLAIN to understand query execution." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-diagram.svg" alt="Diagram: Use EXPLAIN to understand query execution." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-sticky.svg" alt="Sticky Note: Use EXPLAIN to understand query execution." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/use-explain-to-understand-query-execution-sticky.svg" alt="Sticky Note: Use EXPLAIN to understand query execution." width="30%">
 </a>
 
 
@@ -1905,14 +1905,14 @@ WHERE e.salary > 100000;
 
 ### Q59: Database connection pool with TypeScript.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-handwritten.svg" alt="Handwritten: Database connection pool with TypeScript." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-handwritten.svg" alt="Handwritten: Database connection pool with TypeScript." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-diagram.svg" alt="Diagram: Database connection pool with TypeScript." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-diagram.svg" alt="Diagram: Database connection pool with TypeScript." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-sticky.svg" alt="Sticky Note: Database connection pool with TypeScript." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-connection-pool-with-typescript-sticky.svg" alt="Sticky Note: Database connection pool with TypeScript." width="30%">
 </a>
 
 
@@ -1998,14 +1998,14 @@ const db = DatabasePool.getInstance({
 
 ### Q60: TypeORM Repository pattern for cleaner data access.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-handwritten.svg" alt="Handwritten: TypeORM Repository pattern for cleaner data access." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-handwritten.svg" alt="Handwritten: TypeORM Repository pattern for cleaner data access." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-diagram.svg" alt="Diagram: TypeORM Repository pattern for cleaner data access." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-diagram.svg" alt="Diagram: TypeORM Repository pattern for cleaner data access." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-sticky.svg" alt="Sticky Note: TypeORM Repository pattern for cleaner data access." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/typeorm-repository-pattern-for-cleaner-data-access-sticky.svg" alt="Sticky Note: TypeORM Repository pattern for cleaner data access." width="30%">
 </a>
 
 
@@ -2097,14 +2097,14 @@ class EmployeeRepository {
 
 ### Q61: Query builder pattern with pagination and filtering.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-handwritten.svg" alt="Handwritten: Query builder pattern with pagination and filtering." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-handwritten.svg" alt="Handwritten: Query builder pattern with pagination and filtering." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-diagram.svg" alt="Diagram: Query builder pattern with pagination and filtering." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-diagram.svg" alt="Diagram: Query builder pattern with pagination and filtering." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-sticky.svg" alt="Sticky Note: Query builder pattern with pagination and filtering." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/query-builder-pattern-with-pagination-and-filtering-sticky.svg" alt="Sticky Note: Query builder pattern with pagination and filtering." width="30%">
 </a>
 
 
@@ -2194,14 +2194,14 @@ async function searchEmployees(options: QueryOptions) {
 
 ### Q62: Normalization vs Denormalization — Practical scenario.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-handwritten.svg" alt="Handwritten: Normalization vs Denormalization — Practical scenario." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-handwritten.svg" alt="Handwritten: Normalization vs Denormalization — Practical scenario." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-diagram.svg" alt="Diagram: Normalization vs Denormalization — Practical scenario." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-diagram.svg" alt="Diagram: Normalization vs Denormalization — Practical scenario." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-sticky.svg" alt="Sticky Note: Normalization vs Denormalization — Practical scenario." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/normalization-vs-denormalization-practical-scenario-sticky.svg" alt="Sticky Note: Normalization vs Denormalization — Practical scenario." width="30%">
 </a>
 
 
@@ -2294,14 +2294,14 @@ class OrderService {
 
 ### Q63: Pagination strategies for large datasets.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-handwritten.svg" alt="Handwritten: Pagination strategies for large datasets." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-handwritten.svg" alt="Handwritten: Pagination strategies for large datasets." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-diagram.svg" alt="Diagram: Pagination strategies for large datasets." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-diagram.svg" alt="Diagram: Pagination strategies for large datasets." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-sticky.svg" alt="Sticky Note: Pagination strategies for large datasets." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pagination-strategies-for-large-datasets-sticky.svg" alt="Sticky Note: Pagination strategies for large datasets." width="30%">
 </a>
 
 
@@ -2362,14 +2362,14 @@ async function getEmployeesSeek(
 
 ### Q64: Implementing full-text search.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-handwritten.svg" alt="Handwritten: Implementing full-text search." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-handwritten.svg" alt="Handwritten: Implementing full-text search." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-diagram.svg" alt="Diagram: Implementing full-text search." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-diagram.svg" alt="Diagram: Implementing full-text search." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-sticky.svg" alt="Sticky Note: Implementing full-text search." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/implementing-full-text-search-sticky.svg" alt="Sticky Note: Implementing full-text search." width="30%">
 </a>
 
 
@@ -2438,14 +2438,14 @@ class FullTextSearch {
 
 ### Q65: Gaps and Islands — Find employees whose IDs have gaps.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-handwritten.svg" alt="Handwritten: Gaps and Islands — Find employees whose IDs have gaps." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-handwritten.svg" alt="Handwritten: Gaps and Islands — Find employees whose IDs have gaps." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-diagram.svg" alt="Diagram: Gaps and Islands — Find employees whose IDs have gaps." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-diagram.svg" alt="Diagram: Gaps and Islands — Find employees whose IDs have gaps." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-sticky.svg" alt="Sticky Note: Gaps and Islands — Find employees whose IDs have gaps." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/gaps-and-islands-find-employees-whose-ids-have-gaps-sticky.svg" alt="Sticky Note: Gaps and Islands — Find employees whose IDs have gaps." width="30%">
 </a>
 
 
@@ -2488,14 +2488,14 @@ HAVING COUNT(*) > 1;
 
 ### Q66: Pivot data — Convert rows to columns.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-handwritten.svg" alt="Handwritten: Pivot data — Convert rows to columns." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-handwritten.svg" alt="Handwritten: Pivot data — Convert rows to columns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-diagram.svg" alt="Diagram: Pivot data — Convert rows to columns." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-diagram.svg" alt="Diagram: Pivot data — Convert rows to columns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-sticky.svg" alt="Sticky Note: Pivot data — Convert rows to columns." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/pivot-data-convert-rows-to-columns-sticky.svg" alt="Sticky Note: Pivot data — Convert rows to columns." width="30%">
 </a>
 
 
@@ -2534,14 +2534,14 @@ DEALLOCATE PREPARE stmt;
 
 ### Q67: Running totals and moving calculations.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-handwritten.svg" alt="Handwritten: Running totals and moving calculations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-handwritten.svg" alt="Handwritten: Running totals and moving calculations." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-diagram.svg" alt="Diagram: Running totals and moving calculations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-diagram.svg" alt="Diagram: Running totals and moving calculations." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-sticky.svg" alt="Sticky Note: Running totals and moving calculations." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/running-totals-and-moving-calculations-sticky.svg" alt="Sticky Note: Running totals and moving calculations." width="30%">
 </a>
 
 
@@ -2578,14 +2578,14 @@ ORDER BY year;
 
 ### Q68: Update with complex subquery logic.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-handwritten.svg" alt="Handwritten: Update with complex subquery logic." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-handwritten.svg" alt="Handwritten: Update with complex subquery logic." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-diagram.svg" alt="Diagram: Update with complex subquery logic." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-diagram.svg" alt="Diagram: Update with complex subquery logic." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-sticky.svg" alt="Sticky Note: Update with complex subquery logic." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/update-with-complex-subquery-logic-sticky.svg" alt="Sticky Note: Update with complex subquery logic." width="30%">
 </a>
 
 
@@ -2620,14 +2620,14 @@ ON DUPLICATE KEY UPDATE
 
 ### Q69: Complex reporting query with multiple window functions.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-handwritten.svg" alt="Handwritten: Complex reporting query with multiple window functions." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-handwritten.svg" alt="Handwritten: Complex reporting query with multiple window functions." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-diagram.svg" alt="Diagram: Complex reporting query with multiple window functions." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-diagram.svg" alt="Diagram: Complex reporting query with multiple window functions." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-sticky.svg" alt="Sticky Note: Complex reporting query with multiple window functions." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/complex-reporting-query-with-multiple-window-functions-sticky.svg" alt="Sticky Note: Complex reporting query with multiple window functions." width="30%">
 </a>
 
 
@@ -2670,14 +2670,14 @@ ORDER BY dept_name, salary_rank;
 
 ### Q70: Database deadlock diagnosis and prevention.
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-handwritten.svg" alt="Handwritten: Database deadlock diagnosis and prevention." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-handwritten.svg" alt="Handwritten: Database deadlock diagnosis and prevention." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-diagram.svg" alt="Diagram: Database deadlock diagnosis and prevention." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-diagram.svg" alt="Diagram: Database deadlock diagnosis and prevention." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-sticky.svg" alt="Sticky Note: Database deadlock diagnosis and prevention." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/database-deadlock-diagnosis-and-prevention-sticky.svg" alt="Sticky Note: Database deadlock diagnosis and prevention." width="30%">
 </a>
 
 
@@ -2729,14 +2729,14 @@ async function transferFunds(fromAccount: number, toAccount: number, amount: num
 
 ### SQL Keyword Reference
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-handwritten.svg" alt="Handwritten: SQL Keyword Reference" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-handwritten.svg" alt="Handwritten: SQL Keyword Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-diagram.svg" alt="Diagram: SQL Keyword Reference" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-diagram.svg" alt="Diagram: SQL Keyword Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-sticky.svg" alt="Sticky Note: SQL Keyword Reference" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/sql-keyword-reference-sticky.svg" alt="Sticky Note: SQL Keyword Reference" width="30%">
 </a>
 
 
@@ -2763,14 +2763,14 @@ async function transferFunds(fromAccount: number, toAccount: number, amount: num
 
 ### Window Functions Summary
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-handwritten.svg" alt="Handwritten: Window Functions Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-handwritten.svg" alt="Handwritten: Window Functions Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-diagram.svg" alt="Diagram: Window Functions Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-diagram.svg" alt="Diagram: Window Functions Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-sticky.svg" alt="Sticky Note: Window Functions Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/window-functions-summary-sticky.svg" alt="Sticky Note: Window Functions Summary" width="30%">
 </a>
 
 
@@ -2790,14 +2790,14 @@ async function transferFunds(fromAccount: number, toAccount: number, amount: num
 
 ### Index Types and Use Cases
 
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-handwritten.svg" alt="Handwritten: Index Types and Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-handwritten.svg" alt="Handwritten: Index Types and Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-diagram.svg" alt="Diagram: Index Types and Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-diagram.svg" alt="Diagram: Index Types and Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-sticky.svg" alt="Sticky Note: Index Types and Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/04-database-sql-interview/index-types-and-use-cases-sticky.svg" alt="Sticky Note: Index Types and Use Cases" width="30%">
 </a>
 
 

@@ -80,14 +80,14 @@ xychart-beta
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ console.log(trainSpeed(300, 200, 25)); // 72
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Logical Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ console.log(codeWord("HEAT")); // 36
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Verbal Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ Choose the word most similar in meaning to "PERFIDIOUS":
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 
@@ -233,14 +233,14 @@ console.log(neitherCount(200, 120, 90, 40)); // 30
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Logical Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
 
 
@@ -268,14 +268,14 @@ Since all squares are quadrilaterals, there exists at least one quadrilateral th
 
 ### Q6 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ console.log(workDays(12, 15, 20)); // 30
 
 ### Q7 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 
@@ -358,14 +358,14 @@ console.log(gpMiddle(39, 81)); // 9
 
 ### Q8 [2 Marks] Ã¢â‚¬â€� Data Interpretation
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
 </a>
 
 
@@ -402,14 +402,14 @@ console.log(prob); // 0.09523... = 2/21
 
 ### Q9 [2 Marks] Ã¢â‚¬â€� Logical Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ console.log(menNeeded(12, 8, 6)); // 16
 
 ### Q10 [2 Marks] Ã¢â‚¬â€� Spatial Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Spatial Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Spatial Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Spatial Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Spatial Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Spatial Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-spatial-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Spatial Reasoning" width="30%">
 </a>
 
 
@@ -489,14 +489,14 @@ console.log(clockAngle(4, 30)); // 45
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -526,14 +526,14 @@ console.log(determinantTriangular([3, 1, 2])); // 6
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -556,14 +556,14 @@ For any tree: |V| = |E| + 1 = 15 + 1 = 16.
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ This is a standard limit. Using L'HÃƒÂ´pital's rule or the squeeze theorem: 
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -625,14 +625,14 @@ console.log(unionProb(0.3, 0.5)); // 0.65
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -655,14 +655,14 @@ De Morgan's laws: Ã‚Â¬(P Ã¢Ë†Â¨ Q) Ã¢â€°Â¡ Ã‚Â¬P Ã¢Ë
 
 ### Q6 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -685,14 +685,14 @@ Heap provides O(log n) insertion and O(log n) extraction of max/min, optimal for
 
 ### Q7 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -727,14 +727,14 @@ stateDiagram-v2
 
 ### Q8 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -757,14 +757,14 @@ A switch operates at Layer 2 (Data Link) using MAC addresses for forwarding fram
 
 ### Q9 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -787,14 +787,14 @@ PROJECT (Ã�â‚¬) removes duplicate rows by default, returning unique combi
 
 ### Q10 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -817,14 +817,14 @@ Which of the following is a context-free language?
 
 ### Q11 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -847,14 +847,14 @@ The parser (syntax analyzer) builds the AST from the token stream produced by th
 
 ### Q12 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -877,14 +877,14 @@ A half adder has 2 inputs (A, B) and produces Sum and Carry outputs.
 
 ### Q13 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -907,14 +907,14 @@ The Program Counter (PC) contains the address of the next instruction to be fetc
 
 ### Q14 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -944,14 +944,14 @@ console.log(maxNodesCompleteBinary(3)); // 2^4 - 1 = 15
 
 ### Q15 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-operating-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -974,14 +974,14 @@ In paging, logical memory is divided into fixed-size pages, and physical memory 
 
 ### Q16 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-networks-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1004,14 +1004,14 @@ The FIN flag is used to gracefully terminate a TCP connection. The sender signal
 
 ### Q17 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-database-management-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ The NOT NULL constraint ensures that the column cannot store NULL values.
 
 ### Q18 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1064,14 +1064,14 @@ Which of the following languages is regular?
 
 ### Q19 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-compiler-design-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1094,14 +1094,14 @@ A + AB = A(1 + B) = AÃ‚Â·1 = A. This is the absorption law.
 
 ### Q20 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/1-mark-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1124,14 +1124,14 @@ Direct mapped cache causes thrashing when multiple frequently-used blocks map to
 
 ### Q21 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -1175,14 +1175,14 @@ console.log(complexityCount(16)); // 16 * 4 = 64
 
 ### Q22 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1205,14 +1205,14 @@ Maximum need per process: R1=2, R2=1. Total max R1 needed = 3Ãƒâ€”2=6, ex
 
 ### Q23 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1242,14 +1242,14 @@ console.log(goBackNRetransmit(3, 4)); // 4
 
 ### Q24 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1290,14 +1290,14 @@ graph TD
 
 ### Q25 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1320,14 +1320,14 @@ CFG emptiness (whether a CFG generates any strings) is decidable. The halting pr
 
 ### Q26 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1350,14 +1350,14 @@ LALR(1) parsers merge states of LR(1) items that have the same core (same LR(0) 
 
 ### Q27 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1380,14 +1380,14 @@ Number of select lines = logÃ¢â€šâ€š(4) = 2. With 2 select lines, we c
 
 ### Q28 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1410,14 +1410,14 @@ Data hazards (RAW hazards) occur when an instruction requires the result of a pr
 
 ### Q29 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1448,14 +1448,14 @@ console.log("QuickSort is not stable; MergeSort is stable");
 
 ### Q30 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1478,14 +1478,14 @@ Banker's algorithm checks for safe states by simulating resource allocation, mak
 
 ### Q31 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -1518,14 +1518,14 @@ console.log(shannonCapacity(4000, 1023)); // 40000 bps = 40 kbps
 
 ### Q32 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -1590,14 +1590,14 @@ class ScheduleConflict {
 
 ### Q33 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -1620,14 +1620,14 @@ CFLs are closed under union, concatenation, and Kleene star. They are NOT closed
 
 ### Q34 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -1658,14 +1658,14 @@ console.log(fullBinaryLeaves(11)); // 12
 
 ### Q35 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -1711,14 +1711,14 @@ console.log(scanHeadMovement(50, [20,10,60,85,90,120,150,180], 'down')); // 210
 
 ### Q36 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1750,14 +1750,14 @@ console.log(detOfCube([1, -1, 2])); // -8
 
 ### Q37 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1793,14 +1793,14 @@ console.log(divisibleBy2or5(1000)); // 600
 
 ### Q38 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1833,14 +1833,14 @@ console.log(eigenvalues(5, 6)); // [3, 2]
 
 ### Q39 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 
@@ -1875,14 +1875,14 @@ console.log(binomialProb(10, 5, 0.5)); // 0.24609375 = 63/256
 
 ### Q40 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1915,14 +1915,14 @@ console.log(t(16)); // demonstrates O(n log n)
 
 ### Q41 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -1953,14 +1953,14 @@ console.log(minNodesCompleteTree(3)); // 8
 
 ### Q42 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -2006,14 +2006,14 @@ gantt
 
 ### Q43 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2047,14 +2047,14 @@ console.log(minFrameSize(25, 100)); // 625 bytes
 
 ### Q44 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2077,14 +2077,14 @@ Which normal form requires that every non-prime attribute be fully functionally 
 
 ### Q45 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2115,14 +2115,14 @@ console.log(quicksortWorstCase(10)); // 55 steps
 
 ### Q46 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2167,14 +2167,14 @@ Actually, wait - the original question text I wrote doesn't have A/B/C/D labels.
 
 ### Q47 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -2197,14 +2197,14 @@ A shift-reduce parser identifies handles (substrings matching production RHS) an
 
 ### Q48 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 
@@ -2242,14 +2242,14 @@ console.log(evaluateF(0,0,0), evaluateF(0,1,0)); // 1, 1
 
 ### Q49 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2288,14 +2288,14 @@ console.log(floatToHex(-13.75)); // 0xC15C0000
 
 ### Q50 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2351,14 +2351,14 @@ console.log(g.hasCycle()); // true
 
 ### Q51 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2410,14 +2410,14 @@ console.log(fifoPageFaults([1,2,3,4,1,2,5,1,2,3,4,5], 3)); // 9
 
 ### Q52 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2453,14 +2453,14 @@ console.log(networkAddress('192.168.10.130', '255.255.255.128')); // 192.168.10.
 
 ### Q53 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2483,14 +2483,14 @@ Candidate keys must be unique, minimal, and can determine all attributes. They C
 
 ### Q54 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2517,14 +2517,14 @@ Let me rephrase: A DFA where the start state is the only final state. If all tra
 
 ### Q55 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2572,14 +2572,14 @@ console.log(ds.find(0) === ds.find(3)); // true (connected)
 
 ### Q56 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2602,14 +2602,14 @@ Token stream is produced by the lexical analyzer before syntax analysis. TAC, SS
 
 ### Q57 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-digital-logic-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2636,14 +2636,14 @@ Total = 4 + 1 = 5 MUXes.
 
 ### Q58 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2677,14 +2677,14 @@ console.log(cacheSets(16 * 1024, 32, 4)); // 128
 
 ### Q59 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2718,14 +2718,14 @@ console.log(nCr(7, 3)); // 35
 
 ### Q60 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2768,14 +2768,14 @@ console.log(recurrenceSum(10, 'linear')); // 55 = O(nÃ‚Â²)
 
 ### Q61 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2811,14 +2811,14 @@ console.log(sjfWaitingTime([6, 8, 7, 3])); // Average waiting time
 
 ### Q62 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2850,14 +2850,14 @@ graph LR
 
 ### Q63 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2888,14 +2888,14 @@ console.log(bplusMinKeys(5)); // 2
 
 ### Q64 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -2918,14 +2918,14 @@ Chomsky hierarchy: Type-3 (Regular) Ã¢Å â€š Type-2 (CFL) Ã¢Å â€š
 
 ### Q65 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 
@@ -3048,14 +3048,14 @@ pie title "Difficulty Distribution - GATE CS 2025"
 
 ### Paper Analysis
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
 </a>
 
 
@@ -3063,14 +3063,14 @@ GATE 2025 Computer Science paper maintained the established pattern of balanced 
 
 ### Difficulty Trends
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
 </a>
 
 
@@ -3078,14 +3078,14 @@ Compared to GATE 2024, the 2025 paper was marginally more difficult. Data Struct
 
 ### Key Concepts Tested
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
 </a>
 
 
@@ -3283,14 +3283,14 @@ Test your understanding of GATE 2025 concepts with these 5 multiple-choice quest
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/23-gate-2025-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 

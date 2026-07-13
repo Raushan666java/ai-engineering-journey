@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 History of the Reserve Bank of India
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-handwritten.svg" alt="Handwritten: 1.1 History of the Reserve Bank of India" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-handwritten.svg" alt="Handwritten: 1.1 History of the Reserve Bank of India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-diagram.svg" alt="Diagram: 1.1 History of the Reserve Bank of India" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-diagram.svg" alt="Diagram: 1.1 History of the Reserve Bank of India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-sticky.svg" alt="Sticky Note: 1.1 History of the Reserve Bank of India" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-1-history-of-the-reserve-bank-of-india-sticky.svg" alt="Sticky Note: 1.1 History of the Reserve Bank of India" width="30%">
 </a>
 
 
@@ -43,14 +43,14 @@ The Reserve Bank of India (RBI) was established on **April 1, 1935**, under the 
 
 ### 1.2 Organisational Structure
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-handwritten.svg" alt="Handwritten: 1.2 Organisational Structure" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-handwritten.svg" alt="Handwritten: 1.2 Organisational Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-diagram.svg" alt="Diagram: 1.2 Organisational Structure" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-diagram.svg" alt="Diagram: 1.2 Organisational Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-sticky.svg" alt="Sticky Note: 1.2 Organisational Structure" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-2-organisational-structure-sticky.svg" alt="Sticky Note: 1.2 Organisational Structure" width="30%">
 </a>
 
 
@@ -89,14 +89,14 @@ flowchart TD
 
 ### 1.3 Core Functions of RBI
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-handwritten.svg" alt="Handwritten: 1.3 Core Functions of RBI" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-handwritten.svg" alt="Handwritten: 1.3 Core Functions of RBI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-diagram.svg" alt="Diagram: 1.3 Core Functions of RBI" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-diagram.svg" alt="Diagram: 1.3 Core Functions of RBI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-sticky.svg" alt="Sticky Note: 1.3 Core Functions of RBI" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-3-core-functions-of-rbi-sticky.svg" alt="Sticky Note: 1.3 Core Functions of RBI" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ flowchart TD
 
 ### 1.4 Monetary Policy Tools
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-handwritten.svg" alt="Handwritten: 1.4 Monetary Policy Tools" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-handwritten.svg" alt="Handwritten: 1.4 Monetary Policy Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-diagram.svg" alt="Diagram: 1.4 Monetary Policy Tools" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-diagram.svg" alt="Diagram: 1.4 Monetary Policy Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-sticky.svg" alt="Sticky Note: 1.4 Monetary Policy Tools" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-4-monetary-policy-tools-sticky.svg" alt="Sticky Note: 1.4 Monetary Policy Tools" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ Introduced in April 2016 to replace the Base Rate system. MCLR is the **minimum 
 
 ### 1.5 Monetary Policy Committee (MPC)
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-handwritten.svg" alt="Handwritten: 1.5 Monetary Policy Committee (MPC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-handwritten.svg" alt="Handwritten: 1.5 Monetary Policy Committee (MPC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-diagram.svg" alt="Diagram: 1.5 Monetary Policy Committee (MPC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-diagram.svg" alt="Diagram: 1.5 Monetary Policy Committee (MPC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-sticky.svg" alt="Sticky Note: 1.5 Monetary Policy Committee (MPC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-5-monetary-policy-committee-mpc-sticky.svg" alt="Sticky Note: 1.5 Monetary Policy Committee (MPC)" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ Established under the **RBI Act, 1934** (as amended in 2016), the MPC is a **6-m
 
 ### 1.6 Open Market Operations (OMO)
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-handwritten.svg" alt="Handwritten: 1.6 Open Market Operations (OMO)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-handwritten.svg" alt="Handwritten: 1.6 Open Market Operations (OMO)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-diagram.svg" alt="Diagram: 1.6 Open Market Operations (OMO)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-diagram.svg" alt="Diagram: 1.6 Open Market Operations (OMO)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-sticky.svg" alt="Sticky Note: 1.6 Open Market Operations (OMO)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-6-open-market-operations-omo-sticky.svg" alt="Sticky Note: 1.6 Open Market Operations (OMO)" width="30%">
 </a>
 
 
@@ -313,14 +313,14 @@ OMO refers to the **buying and selling of government securities** by the RBI in 
 
 ### 1.7 Transmission Mechanism
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-handwritten.svg" alt="Handwritten: 1.7 Transmission Mechanism" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-handwritten.svg" alt="Handwritten: 1.7 Transmission Mechanism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-diagram.svg" alt="Diagram: 1.7 Transmission Mechanism" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-diagram.svg" alt="Diagram: 1.7 Transmission Mechanism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-sticky.svg" alt="Sticky Note: 1.7 Transmission Mechanism" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-7-transmission-mechanism-sticky.svg" alt="Sticky Note: 1.7 Transmission Mechanism" width="30%">
 </a>
 
 
@@ -352,14 +352,14 @@ The transmission of monetary policy operates through multiple channels:
 
 ### 1.8 Monetary Policy Stances
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-handwritten.svg" alt="Handwritten: 1.8 Monetary Policy Stances" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-handwritten.svg" alt="Handwritten: 1.8 Monetary Policy Stances" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-diagram.svg" alt="Diagram: 1.8 Monetary Policy Stances" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-diagram.svg" alt="Diagram: 1.8 Monetary Policy Stances" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-sticky.svg" alt="Sticky Note: 1.8 Monetary Policy Stances" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-8-monetary-policy-stances-sticky.svg" alt="Sticky Note: 1.8 Monetary Policy Stances" width="30%">
 </a>
 
 
@@ -373,14 +373,14 @@ The transmission of monetary policy operates through multiple channels:
 
 ### 1.9 Inflation Measurement
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-handwritten.svg" alt="Handwritten: 1.9 Inflation Measurement" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-handwritten.svg" alt="Handwritten: 1.9 Inflation Measurement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-diagram.svg" alt="Diagram: 1.9 Inflation Measurement" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-diagram.svg" alt="Diagram: 1.9 Inflation Measurement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-sticky.svg" alt="Sticky Note: 1.9 Inflation Measurement" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/01-rbi-monetary-policy/1-9-inflation-measurement-sticky.svg" alt="Sticky Note: 1.9 Inflation Measurement" width="30%">
 </a>
 
 

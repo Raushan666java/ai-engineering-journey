@@ -33,14 +33,14 @@
 
 ### Banking & Economy (15 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-handwritten.svg" alt="Handwritten: Banking & Economy (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-handwritten.svg" alt="Handwritten: Banking & Economy (15 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-diagram.svg" alt="Diagram: Banking & Economy (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-diagram.svg" alt="Diagram: Banking & Economy (15 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-sticky.svg" alt="Sticky Note: Banking & Economy (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/banking-economy-15-qs-sticky.svg" alt="Sticky Note: Banking & Economy (15 Qs)" width="30%">
 </a>
 
 
@@ -328,14 +328,14 @@ D) 6.75%
 
 ### Current Affairs (15 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-handwritten.svg" alt="Handwritten: Current Affairs (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-handwritten.svg" alt="Handwritten: Current Affairs (15 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-diagram.svg" alt="Diagram: Current Affairs (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-diagram.svg" alt="Diagram: Current Affairs (15 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-sticky.svg" alt="Sticky Note: Current Affairs (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-15-qs-sticky.svg" alt="Sticky Note: Current Affairs (15 Qs)" width="30%">
 </a>
 
 
@@ -611,14 +611,14 @@ D) Nanaji Deshmukh
 
 ### Static GK (10 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-handwritten.svg" alt="Handwritten: Static GK (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-handwritten.svg" alt="Handwritten: Static GK (10 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-diagram.svg" alt="Diagram: Static GK (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-diagram.svg" alt="Diagram: Static GK (10 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-sticky.svg" alt="Sticky Note: Static GK (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/static-gk-10-qs-sticky.svg" alt="Sticky Note: Static GK (10 Qs)" width="30%">
 </a>
 
 
@@ -808,14 +808,14 @@ D) Saudi Arabia
 
 ### Puzzles & Seating (15 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-handwritten.svg" alt="Handwritten: Puzzles & Seating (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-handwritten.svg" alt="Handwritten: Puzzles & Seating (15 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-diagram.svg" alt="Diagram: Puzzles & Seating (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-diagram.svg" alt="Diagram: Puzzles & Seating (15 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-sticky.svg" alt="Sticky Note: Puzzles & Seating (15 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/puzzles-seating-15-qs-sticky.svg" alt="Sticky Note: Puzzles & Seating (15 Qs)" width="30%">
 </a>
 
 
@@ -940,14 +940,14 @@ D) Cannot be determined
 
 ### Syllogism (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-handwritten.svg" alt="Handwritten: Syllogism (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-handwritten.svg" alt="Handwritten: Syllogism (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-diagram.svg" alt="Diagram: Syllogism (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-diagram.svg" alt="Diagram: Syllogism (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-sticky.svg" alt="Sticky Note: Syllogism (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/syllogism-5-qs-sticky.svg" alt="Sticky Note: Syllogism (5 Qs)" width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ D) Neither
 
 ### Inequality (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-handwritten.svg" alt="Handwritten: Inequality (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-handwritten.svg" alt="Handwritten: Inequality (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-diagram.svg" alt="Diagram: Inequality (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-diagram.svg" alt="Diagram: Inequality (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-sticky.svg" alt="Sticky Note: Inequality (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/inequality-5-qs-sticky.svg" alt="Sticky Note: Inequality (5 Qs)" width="30%">
 </a>
 
 
@@ -1146,14 +1146,14 @@ D) M > O
 
 ### Coding-Decoding (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-handwritten.svg" alt="Handwritten: Coding-Decoding (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-handwritten.svg" alt="Handwritten: Coding-Decoding (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-diagram.svg" alt="Diagram: Coding-Decoding (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-diagram.svg" alt="Diagram: Coding-Decoding (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-sticky.svg" alt="Sticky Note: Coding-Decoding (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/coding-decoding-5-qs-sticky.svg" alt="Sticky Note: Coding-Decoding (5 Qs)" width="30%">
 </a>
 
 
@@ -1376,14 +1376,14 @@ D) 13
 
 ### Blood Relations & Directions (10 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-handwritten.svg" alt="Handwritten: Blood Relations & Directions (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-handwritten.svg" alt="Handwritten: Blood Relations & Directions (10 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-diagram.svg" alt="Diagram: Blood Relations & Directions (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-diagram.svg" alt="Diagram: Blood Relations & Directions (10 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-sticky.svg" alt="Sticky Note: Blood Relations & Directions (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/blood-relations-directions-10-qs-sticky.svg" alt="Sticky Note: Blood Relations & Directions (10 Qs)" width="30%">
 </a>
 
 
@@ -1552,14 +1552,14 @@ This is complex. The standard answer in such relations is B) Brother-in-law.
 
 ### Data Sufficiency (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-handwritten.svg" alt="Handwritten: Data Sufficiency (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-handwritten.svg" alt="Handwritten: Data Sufficiency (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-diagram.svg" alt="Diagram: Data Sufficiency (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-diagram.svg" alt="Diagram: Data Sufficiency (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-sticky.svg" alt="Sticky Note: Data Sufficiency (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-sufficiency-5-qs-sticky.svg" alt="Sticky Note: Data Sufficiency (5 Qs)" width="30%">
 </a>
 
 
@@ -1667,14 +1667,14 @@ D) Neither
 
 ### Number Series (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-handwritten.svg" alt="Handwritten: Number Series (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-handwritten.svg" alt="Handwritten: Number Series (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-diagram.svg" alt="Diagram: Number Series (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-diagram.svg" alt="Diagram: Number Series (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-sticky.svg" alt="Sticky Note: Number Series (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/number-series-5-qs-sticky.svg" alt="Sticky Note: Number Series (5 Qs)" width="30%">
 </a>
 
 
@@ -1778,14 +1778,14 @@ D) 136
 
 ### Simplification & Approximation (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-handwritten.svg" alt="Handwritten: Simplification & Approximation (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-handwritten.svg" alt="Handwritten: Simplification & Approximation (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-diagram.svg" alt="Diagram: Simplification & Approximation (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-diagram.svg" alt="Diagram: Simplification & Approximation (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-sticky.svg" alt="Sticky Note: Simplification & Approximation (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/simplification-approximation-5-qs-sticky.svg" alt="Sticky Note: Simplification & Approximation (5 Qs)" width="30%">
 </a>
 
 
@@ -1881,14 +1881,14 @@ D) 108
 
 ### Data Interpretation (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-handwritten.svg" alt="Handwritten: Data Interpretation (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-handwritten.svg" alt="Handwritten: Data Interpretation (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-diagram.svg" alt="Diagram: Data Interpretation (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-diagram.svg" alt="Diagram: Data Interpretation (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-sticky.svg" alt="Sticky Note: Data Interpretation (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/data-interpretation-5-qs-sticky.svg" alt="Sticky Note: Data Interpretation (5 Qs)" width="30%">
 </a>
 
 
@@ -1994,14 +1994,14 @@ D) ₹35 Cr
 
 ### Quadratic Equations (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-handwritten.svg" alt="Handwritten: Quadratic Equations (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-handwritten.svg" alt="Handwritten: Quadratic Equations (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-diagram.svg" alt="Diagram: Quadratic Equations (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-diagram.svg" alt="Diagram: Quadratic Equations (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-sticky.svg" alt="Sticky Note: Quadratic Equations (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/quadratic-equations-5-qs-sticky.svg" alt="Sticky Note: Quadratic Equations (5 Qs)" width="30%">
 </a>
 
 
@@ -2097,14 +2097,14 @@ D) 6
 
 ### Arithmetic Word Problems (20 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-handwritten.svg" alt="Handwritten: Arithmetic Word Problems (20 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-handwritten.svg" alt="Handwritten: Arithmetic Word Problems (20 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-diagram.svg" alt="Diagram: Arithmetic Word Problems (20 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-diagram.svg" alt="Diagram: Arithmetic Word Problems (20 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-sticky.svg" alt="Sticky Note: Arithmetic Word Problems (20 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/arithmetic-word-problems-20-qs-sticky.svg" alt="Sticky Note: Arithmetic Word Problems (20 Qs)" width="30%">
 </a>
 
 
@@ -2504,14 +2504,14 @@ Same result. I'll go with 24 not being in options, so maybe A) 42 is the intende
 
 ### Current Affairs Focus Areas for 2025 Prep
 
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-handwritten.svg" alt="Handwritten: Current Affairs Focus Areas for 2025 Prep" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-handwritten.svg" alt="Handwritten: Current Affairs Focus Areas for 2025 Prep" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-diagram.svg" alt="Diagram: Current Affairs Focus Areas for 2025 Prep" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-diagram.svg" alt="Diagram: Current Affairs Focus Areas for 2025 Prep" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-sticky.svg" alt="Sticky Note: Current Affairs Focus Areas for 2025 Prep" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/13-rbi-grade-b-2024/current-affairs-focus-areas-for-2025-prep-sticky.svg" alt="Sticky Note: Current Affairs Focus Areas for 2025 Prep" width="30%">
 </a>
 
 1. **RBI Policies**: Repo rate changes, MPC decisions, inflation targeting

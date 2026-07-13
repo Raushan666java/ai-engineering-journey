@@ -38,14 +38,14 @@ flowchart LR
 
 ### Q1: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-handwritten.svg" alt="Handwritten: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-handwritten.svg" alt="Handwritten: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-diagram.svg" alt="Diagram: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-diagram.svg" alt="Diagram: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-sticky.svg" alt="Sticky Note: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-hipaa-and-what-are-its-three-core-safeguards-how-do-they-map-to-laravel-architecture-sticky.svg" alt="Sticky Note: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ class Patient extends Model
 
 ### Q2: What are the five core data models in a healthcare Laravel application?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-handwritten.svg" alt="Handwritten: What are the five core data models in a healthcare Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-handwritten.svg" alt="Handwritten: What are the five core data models in a healthcare Laravel application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-diagram.svg" alt="Diagram: What are the five core data models in a healthcare Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-diagram.svg" alt="Diagram: What are the five core data models in a healthcare Laravel application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-sticky.svg" alt="Sticky Note: What are the five core data models in a healthcare Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-are-the-five-core-data-models-in-a-healthcare-laravel-application-sticky.svg" alt="Sticky Note: What are the five core data models in a healthcare Laravel application?" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ class FhirIntegrationService
 
 ### Q4: What is PHI under HIPAA, and what are the key rules for handling it in a Laravel app?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-handwritten.svg" alt="Handwritten: What is PHI under HIPAA, and what are the key rules for handling it in a Laravel app?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-handwritten.svg" alt="Handwritten: What is PHI under HIPAA, and what are the key rules for handling it in a Laravel app?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-diagram.svg" alt="Diagram: What is PHI under HIPAA, and what are the key rules for handling it in a Laravel app?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-diagram.svg" alt="Diagram: What is PHI under HIPAA, and what are the key rules for handling it in a Laravel app?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-sticky.svg" alt="Sticky Note: What is PHI under HIPAA, and what are the key rules for handling it in a Laravel app?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-is-phi-under-hipaa-and-what-are-the-key-rules-for-handling-it-in-a-laravel-app-sticky.svg" alt="Sticky Note: What is PHI under HIPAA, and what are the key rules for handling it in a Laravel app?" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ Rules for Laravel:
 
 ### Q5: What common healthcare integrations would a Laravel platform typically need?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-handwritten.svg" alt="Handwritten: What common healthcare integrations would a Laravel platform typically need?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-handwritten.svg" alt="Handwritten: What common healthcare integrations would a Laravel platform typically need?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-diagram.svg" alt="Diagram: What common healthcare integrations would a Laravel platform typically need?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-diagram.svg" alt="Diagram: What common healthcare integrations would a Laravel platform typically need?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-sticky.svg" alt="Sticky Note: What common healthcare integrations would a Laravel platform typically need?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/what-common-healthcare-integrations-would-a-laravel-platform-typically-need-sticky.svg" alt="Sticky Note: What common healthcare integrations would a Laravel platform typically need?" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ Each integration should be wrapped in a dedicated service class with queue-backe
 
 ### Q6: How would you structure a Laravel patient management system with HIPAA-compliant encryption?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-handwritten.svg" alt="Handwritten: How would you structure a Laravel patient management system with HIPAA-compliant encryption?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-handwritten.svg" alt="Handwritten: How would you structure a Laravel patient management system with HIPAA-compliant encryption?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-diagram.svg" alt="Diagram: How would you structure a Laravel patient management system with HIPAA-compliant encryption?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-diagram.svg" alt="Diagram: How would you structure a Laravel patient management system with HIPAA-compliant encryption?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-sticky.svg" alt="Sticky Note: How would you structure a Laravel patient management system with HIPAA-compliant encryption?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-structure-a-laravel-patient-management-system-with-hipaa-compliant-encryption-sticky.svg" alt="Sticky Note: How would you structure a Laravel patient management system with HIPAA-compliant encryption?" width="30%">
 </a>
 
 
@@ -228,14 +228,14 @@ The controller logs every view as an audit event. Query scopes restrict patients
 
 ### Q7: How would you implement an appointment scheduling agent with AI in Laravel 13?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-handwritten.svg" alt="Handwritten: How would you implement an appointment scheduling agent with AI in Laravel 13?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-handwritten.svg" alt="Handwritten: How would you implement an appointment scheduling agent with AI in Laravel 13?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-diagram.svg" alt="Diagram: How would you implement an appointment scheduling agent with AI in Laravel 13?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-diagram.svg" alt="Diagram: How would you implement an appointment scheduling agent with AI in Laravel 13?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-sticky.svg" alt="Sticky Note: How would you implement an appointment scheduling agent with AI in Laravel 13?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-an-appointment-scheduling-agent-with-ai-in-laravel-13-sticky.svg" alt="Sticky Note: How would you implement an appointment scheduling agent with AI in Laravel 13?" width="30%">
 </a>
 
 
@@ -276,14 +276,14 @@ The agent exposes `checkAvailability`, `book`, `reschedule`, `cancel`, and `sugg
 
 ### Q8: How would you implement medical record RAG using pgvector and the Laravel AI SDK?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-handwritten.svg" alt="Handwritten: How would you implement medical record RAG using pgvector and the Laravel AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-handwritten.svg" alt="Handwritten: How would you implement medical record RAG using pgvector and the Laravel AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-diagram.svg" alt="Diagram: How would you implement medical record RAG using pgvector and the Laravel AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-diagram.svg" alt="Diagram: How would you implement medical record RAG using pgvector and the Laravel AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-sticky.svg" alt="Sticky Note: How would you implement medical record RAG using pgvector and the Laravel AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-medical-record-rag-using-pgvector-and-the-laravel-ai-sdk-sticky.svg" alt="Sticky Note: How would you implement medical record RAG using pgvector and the Laravel AI SDK?" width="30%">
 </a>
 
 
@@ -342,14 +342,14 @@ A scheduled command runs nightly to embed any records missing vectors, and an HN
 
 ### Q9: How would you build a clinical decision support agent that uses RAG over medical literature?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-handwritten.svg" alt="Handwritten: How would you build a clinical decision support agent that uses RAG over medical literature?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-handwritten.svg" alt="Handwritten: How would you build a clinical decision support agent that uses RAG over medical literature?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-diagram.svg" alt="Diagram: How would you build a clinical decision support agent that uses RAG over medical literature?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-diagram.svg" alt="Diagram: How would you build a clinical decision support agent that uses RAG over medical literature?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-sticky.svg" alt="Sticky Note: How would you build a clinical decision support agent that uses RAG over medical literature?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-clinical-decision-support-agent-that-uses-rag-over-medical-literature-sticky.svg" alt="Sticky Note: How would you build a clinical decision support agent that uses RAG over medical literature?" width="30%">
 </a>
 
 
@@ -411,14 +411,14 @@ The agent includes a disclaimer in every response that it is decision-support on
 
 ### Q10: How would you automate insurance claims processing with a multi-stage Laravel agent?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-handwritten.svg" alt="Handwritten: How would you automate insurance claims processing with a multi-stage Laravel agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-handwritten.svg" alt="Handwritten: How would you automate insurance claims processing with a multi-stage Laravel agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-diagram.svg" alt="Diagram: How would you automate insurance claims processing with a multi-stage Laravel agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-diagram.svg" alt="Diagram: How would you automate insurance claims processing with a multi-stage Laravel agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-sticky.svg" alt="Sticky Note: How would you automate insurance claims processing with a multi-stage Laravel agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-automate-insurance-claims-processing-with-a-multi-stage-laravel-agent-sticky.svg" alt="Sticky Note: How would you automate insurance claims processing with a multi-stage Laravel agent?" width="30%">
 </a>
 
 
@@ -460,14 +460,14 @@ A scheduled command `healthcare:process-claims` processes pending claims. The ag
 
 ### Q11: How would you implement a medication management agent that checks drug interactions?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-handwritten.svg" alt="Handwritten: How would you implement a medication management agent that checks drug interactions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-handwritten.svg" alt="Handwritten: How would you implement a medication management agent that checks drug interactions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-diagram.svg" alt="Diagram: How would you implement a medication management agent that checks drug interactions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-diagram.svg" alt="Diagram: How would you implement a medication management agent that checks drug interactions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-sticky.svg" alt="Sticky Note: How would you implement a medication management agent that checks drug interactions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-medication-management-agent-that-checks-drug-interactions-sticky.svg" alt="Sticky Note: How would you implement a medication management agent that checks drug interactions?" width="30%">
 </a>
 
 
@@ -526,14 +526,14 @@ The agent schedules refill reminders 5 days before the prescription runs out, us
 
 ### Q12: How would you build a healthcare analytics and reporting agent in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-handwritten.svg" alt="Handwritten: How would you build a healthcare analytics and reporting agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-handwritten.svg" alt="Handwritten: How would you build a healthcare analytics and reporting agent in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-diagram.svg" alt="Diagram: How would you build a healthcare analytics and reporting agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-diagram.svg" alt="Diagram: How would you build a healthcare analytics and reporting agent in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-sticky.svg" alt="Sticky Note: How would you build a healthcare analytics and reporting agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-build-a-healthcare-analytics-and-reporting-agent-in-laravel-sticky.svg" alt="Sticky Note: How would you build a healthcare analytics and reporting agent in Laravel?" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ Reports are generated on schedule via the console kernel → weekly on Monday an
 
 ### Q13: How would you implement a diagnostic assistance agent that flags abnormal lab results?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-handwritten.svg" alt="Handwritten: How would you implement a diagnostic assistance agent that flags abnormal lab results?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-handwritten.svg" alt="Handwritten: How would you implement a diagnostic assistance agent that flags abnormal lab results?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-diagram.svg" alt="Diagram: How would you implement a diagnostic assistance agent that flags abnormal lab results?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-diagram.svg" alt="Diagram: How would you implement a diagnostic assistance agent that flags abnormal lab results?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-sticky.svg" alt="Sticky Note: How would you implement a diagnostic assistance agent that flags abnormal lab results?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-a-diagnostic-assistance-agent-that-flags-abnormal-lab-results-sticky.svg" alt="Sticky Note: How would you implement a diagnostic assistance agent that flags abnormal lab results?" width="30%">
 </a>
 
 
@@ -653,14 +653,14 @@ A scheduled command `healthcare:review-labs` processes unreviewed results in bat
 
 ### Q14: How would you design a HIPAA-compliant Laravel application from the ground up?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-handwritten.svg" alt="Handwritten: How would you design a HIPAA-compliant Laravel application from the ground up?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-handwritten.svg" alt="Handwritten: How would you design a HIPAA-compliant Laravel application from the ground up?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-diagram.svg" alt="Diagram: How would you design a HIPAA-compliant Laravel application from the ground up?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-diagram.svg" alt="Diagram: How would you design a HIPAA-compliant Laravel application from the ground up?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-sticky.svg" alt="Sticky Note: How would you design a HIPAA-compliant Laravel application from the ground up?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-hipaa-compliant-laravel-application-from-the-ground-up-sticky.svg" alt="Sticky Note: How would you design a HIPAA-compliant Laravel application from the ground up?" width="30%">
 </a>
 
 
@@ -689,14 +689,14 @@ HIPAA audits are supported by querying the `audit_logs` table for any model: who
 
 ### Q15: How would you implement multi-tenancy in a healthcare SaaS platform?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-handwritten.svg" alt="Handwritten: How would you implement multi-tenancy in a healthcare SaaS platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-handwritten.svg" alt="Handwritten: How would you implement multi-tenancy in a healthcare SaaS platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-diagram.svg" alt="Diagram: How would you implement multi-tenancy in a healthcare SaaS platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-diagram.svg" alt="Diagram: How would you implement multi-tenancy in a healthcare SaaS platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-sticky.svg" alt="Sticky Note: How would you implement multi-tenancy in a healthcare SaaS platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-implement-multi-tenancy-in-a-healthcare-saas-platform-sticky.svg" alt="Sticky Note: How would you implement multi-tenancy in a healthcare SaaS platform?" width="30%">
 </a>
 
 
@@ -724,14 +724,14 @@ Healthcare-specific considerations: audit logs must include the tenant ID for cr
 
 ### Q16: How would you design the data model for a multi-provider clinic management system?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-handwritten.svg" alt="Handwritten: How would you design the data model for a multi-provider clinic management system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-handwritten.svg" alt="Handwritten: How would you design the data model for a multi-provider clinic management system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-diagram.svg" alt="Diagram: How would you design the data model for a multi-provider clinic management system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-diagram.svg" alt="Diagram: How would you design the data model for a multi-provider clinic management system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-sticky.svg" alt="Sticky Note: How would you design the data model for a multi-provider clinic management system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-the-data-model-for-a-multi-provider-clinic-management-system-sticky.svg" alt="Sticky Note: How would you design the data model for a multi-provider clinic management system?" width="30%">
 </a>
 
 
@@ -767,14 +767,14 @@ Schema::create('medical_records', function (Blueprint $table) {
 
 ### Q17: How would you scale a Laravel healthcare application to handle millions of patients?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-handwritten.svg" alt="Handwritten: How would you scale a Laravel healthcare application to handle millions of patients?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-handwritten.svg" alt="Handwritten: How would you scale a Laravel healthcare application to handle millions of patients?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-diagram.svg" alt="Diagram: How would you scale a Laravel healthcare application to handle millions of patients?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-diagram.svg" alt="Diagram: How would you scale a Laravel healthcare application to handle millions of patients?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-sticky.svg" alt="Sticky Note: How would you scale a Laravel healthcare application to handle millions of patients?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-scale-a-laravel-healthcare-application-to-handle-millions-of-patients-sticky.svg" alt="Sticky Note: How would you scale a Laravel healthcare application to handle millions of patients?" width="30%">
 </a>
 
 
@@ -790,14 +790,14 @@ For PHI compliance at scale: never cache raw decrypted PHI in shared Redis. Use 
 
 ### Q18: How would you design a telemedicine platform's real-time video architecture in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-handwritten.svg" alt="Handwritten: How would you design a telemedicine platform's real-time video architecture in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-handwritten.svg" alt="Handwritten: How would you design a telemedicine platform's real-time video architecture in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-diagram.svg" alt="Diagram: How would you design a telemedicine platform's real-time video architecture in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-diagram.svg" alt="Diagram: How would you design a telemedicine platform's real-time video architecture in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-sticky.svg" alt="Sticky Note: How would you design a telemedicine platform's real-time video architecture in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-s-real-time-video-architecture-in-laravel-sticky.svg" alt="Sticky Note: How would you design a telemedicine platform's real-time video architecture in Laravel?" width="30%">
 </a>
 
 
@@ -837,14 +837,14 @@ For fallback (when P2P fails), integrate a video SDK like Twilio or Agora. The a
 
 ### Q19: Describe a healthcare SaaS platform you'd build with Laravel. Walk through the architecture.
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-handwritten.svg" alt="Handwritten: Describe a healthcare SaaS platform you'd build with Laravel. Walk through the architecture." width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-handwritten.svg" alt="Handwritten: Describe a healthcare SaaS platform you'd build with Laravel. Walk through the architecture." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-diagram.svg" alt="Diagram: Describe a healthcare SaaS platform you'd build with Laravel. Walk through the architecture." width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-diagram.svg" alt="Diagram: Describe a healthcare SaaS platform you'd build with Laravel. Walk through the architecture." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-sticky.svg" alt="Sticky Note: Describe a healthcare SaaS platform you'd build with Laravel. Walk through the architecture." width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/describe-a-healthcare-saas-platform-you-d-build-with-laravel-walk-through-the-architecture-sticky.svg" alt="Sticky Note: Describe a healthcare SaaS platform you'd build with Laravel. Walk through the architecture." width="30%">
 </a>
 
 
@@ -860,14 +860,14 @@ The platform uses database-per-tenant multi-tenancy for strict PHI isolation. Al
 
 ### Q20: How would you handle patient data encryption and access control across a multi-region deployment?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-handwritten.svg" alt="Handwritten: How would you handle patient data encryption and access control across a multi-region deployment?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-handwritten.svg" alt="Handwritten: How would you handle patient data encryption and access control across a multi-region deployment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-diagram.svg" alt="Diagram: How would you handle patient data encryption and access control across a multi-region deployment?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-diagram.svg" alt="Diagram: How would you handle patient data encryption and access control across a multi-region deployment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-sticky.svg" alt="Sticky Note: How would you handle patient data encryption and access control across a multi-region deployment?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-handle-patient-data-encryption-and-access-control-across-a-multi-region-deployment-sticky.svg" alt="Sticky Note: How would you handle patient data encryption and access control across a multi-region deployment?" width="30%">
 </a>
 
 
@@ -892,14 +892,14 @@ All access denials are logged to the audit trail with the user, timestamp, IP, a
 
 ### Q21: How would you design a telemedicine platform with Laravel? What are the key considerations?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-handwritten.svg" alt="Handwritten: How would you design a telemedicine platform with Laravel? What are the key considerations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-handwritten.svg" alt="Handwritten: How would you design a telemedicine platform with Laravel? What are the key considerations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-diagram.svg" alt="Diagram: How would you design a telemedicine platform with Laravel? What are the key considerations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-diagram.svg" alt="Diagram: How would you design a telemedicine platform with Laravel? What are the key considerations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-sticky.svg" alt="Sticky Note: How would you design a telemedicine platform with Laravel? What are the key considerations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-design-a-telemedicine-platform-with-laravel-what-are-the-key-considerations-sticky.svg" alt="Sticky Note: How would you design a telemedicine platform with Laravel? What are the key considerations?" width="30%">
 </a>
 
 
@@ -921,14 +921,14 @@ Key considerations:
 
 ### Q22: You discover a PHI data leak in your Laravel application. Walk through your response.
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-handwritten.svg" alt="Handwritten: You discover a PHI data leak in your Laravel application. Walk through your response." width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-handwritten.svg" alt="Handwritten: You discover a PHI data leak in your Laravel application. Walk through your response." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-diagram.svg" alt="Diagram: You discover a PHI data leak in your Laravel application. Walk through your response." width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-diagram.svg" alt="Diagram: You discover a PHI data leak in your Laravel application. Walk through your response." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-sticky.svg" alt="Sticky Note: You discover a PHI data leak in your Laravel application. Walk through your response." width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/you-discover-a-phi-data-leak-in-your-laravel-application-walk-through-your-response-sticky.svg" alt="Sticky Note: You discover a PHI data leak in your Laravel application. Walk through your response." width="30%">
 </a>
 
 
@@ -948,14 +948,14 @@ Follow the HIPAA Breach Notification Rule protocol:
 
 ### Q23: How would you approach migrating a legacy on-premise EHR to a Laravel cloud platform?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-handwritten.svg" alt="Handwritten: How would you approach migrating a legacy on-premise EHR to a Laravel cloud platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-handwritten.svg" alt="Handwritten: How would you approach migrating a legacy on-premise EHR to a Laravel cloud platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-diagram.svg" alt="Diagram: How would you approach migrating a legacy on-premise EHR to a Laravel cloud platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-diagram.svg" alt="Diagram: How would you approach migrating a legacy on-premise EHR to a Laravel cloud platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-sticky.svg" alt="Sticky Note: How would you approach migrating a legacy on-premise EHR to a Laravel cloud platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/how-would-you-approach-migrating-a-legacy-on-premise-ehr-to-a-laravel-cloud-platform-sticky.svg" alt="Sticky Note: How would you approach migrating a legacy on-premise EHR to a Laravel cloud platform?" width="30%">
 </a>
 
 
@@ -973,14 +973,14 @@ Use a **strangler fig pattern** running in parallel with the legacy system for 6
 
 ### Q24: Your patient intake agent is hallucinating patient data. How do you handle it?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-handwritten.svg" alt="Handwritten: Your patient intake agent is hallucinating patient data. How do you handle it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-handwritten.svg" alt="Handwritten: Your patient intake agent is hallucinating patient data. How do you handle it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-diagram.svg" alt="Diagram: Your patient intake agent is hallucinating patient data. How do you handle it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-diagram.svg" alt="Diagram: Your patient intake agent is hallucinating patient data. How do you handle it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-sticky.svg" alt="Sticky Note: Your patient intake agent is hallucinating patient data. How do you handle it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-patient-intake-agent-is-hallucinating-patient-data-how-do-you-handle-it-sticky.svg" alt="Sticky Note: Your patient intake agent is hallucinating patient data. How do you handle it?" width="30%">
 </a>
 
 
@@ -1013,14 +1013,14 @@ The system also logs all agent outputs for audit. If the same hallucination patt
 
 ### Q25: Your claims processing agent is running too slowly. How do you diagnose and fix it?
 
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-handwritten.svg" alt="Handwritten: Your claims processing agent is running too slowly. How do you diagnose and fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-handwritten.svg" alt="Handwritten: Your claims processing agent is running too slowly. How do you diagnose and fix it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-diagram.svg" alt="Diagram: Your claims processing agent is running too slowly. How do you diagnose and fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-diagram.svg" alt="Diagram: Your claims processing agent is running too slowly. How do you diagnose and fix it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-sticky.svg" alt="Sticky Note: Your claims processing agent is running too slowly. How do you diagnose and fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/39-interview-healthcare/your-claims-processing-agent-is-running-too-slowly-how-do-you-diagnose-and-fix-it-sticky.svg" alt="Sticky Note: Your claims processing agent is running too slowly. How do you diagnose and fix it?" width="30%">
 </a>
 
 

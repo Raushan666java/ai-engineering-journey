@@ -58,14 +58,14 @@ Randomized algorithms are not a niche curiosity — they power:
 
 ### 17.1 Classification
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-handwritten.svg" alt="Handwritten: 17.1 Classification" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-handwritten.svg" alt="Handwritten: 17.1 Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-diagram.svg" alt="Diagram: 17.1 Classification" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-diagram.svg" alt="Diagram: 17.1 Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-sticky.svg" alt="Sticky Note: 17.1 Classification" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-1-classification-sticky.svg" alt="Sticky Note: 17.1 Classification" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ Randomized algorithms are classified into two types:
 
 ### 17.2 Las Vegas vs Monte Carlo: Detailed Comparison
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-handwritten.svg" alt="Handwritten: 17.2 Las Vegas vs Monte Carlo: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-handwritten.svg" alt="Handwritten: 17.2 Las Vegas vs Monte Carlo: Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-diagram.svg" alt="Diagram: 17.2 Las Vegas vs Monte Carlo: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-diagram.svg" alt="Diagram: 17.2 Las Vegas vs Monte Carlo: Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-sticky.svg" alt="Sticky Note: 17.2 Las Vegas vs Monte Carlo: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-2-las-vegas-vs-monte-carlo-detailed-comparison-sticky.svg" alt="Sticky Note: 17.2 Las Vegas vs Monte Carlo: Detailed Comparison" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ Randomized algorithms are classified into two types:
 
 ### 17.3 Randomized Quickselect (Las Vegas)
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-handwritten.svg" alt="Handwritten: 17.3 Randomized Quickselect (Las Vegas)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-handwritten.svg" alt="Handwritten: 17.3 Randomized Quickselect (Las Vegas)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-diagram.svg" alt="Diagram: 17.3 Randomized Quickselect (Las Vegas)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-diagram.svg" alt="Diagram: 17.3 Randomized Quickselect (Las Vegas)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-sticky.svg" alt="Sticky Note: 17.3 Randomized Quickselect (Las Vegas)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-3-randomized-quickselect-las-vegas-sticky.svg" alt="Sticky Note: 17.3 Randomized Quickselect (Las Vegas)" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ public class QuickSelect {
 
 ### 17.4 Randomized Quicksort (Las Vegas)
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-handwritten.svg" alt="Handwritten: 17.4 Randomized Quicksort (Las Vegas)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-handwritten.svg" alt="Handwritten: 17.4 Randomized Quicksort (Las Vegas)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-diagram.svg" alt="Diagram: 17.4 Randomized Quicksort (Las Vegas)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-diagram.svg" alt="Diagram: 17.4 Randomized Quicksort (Las Vegas)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-sticky.svg" alt="Sticky Note: 17.4 Randomized Quicksort (Las Vegas)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-4-randomized-quicksort-las-vegas-sticky.svg" alt="Sticky Note: 17.4 Randomized Quicksort (Las Vegas)" width="30%">
 </a>
 
 
@@ -405,14 +405,14 @@ public static void quickSort(int[] A, int low, int high) {
 
 ### 17.5 Miller-Rabin Primality Test (Monte Carlo)
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-handwritten.svg" alt="Handwritten: 17.5 Miller-Rabin Primality Test (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-handwritten.svg" alt="Handwritten: 17.5 Miller-Rabin Primality Test (Monte Carlo)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-diagram.svg" alt="Diagram: 17.5 Miller-Rabin Primality Test (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-diagram.svg" alt="Diagram: 17.5 Miller-Rabin Primality Test (Monte Carlo)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-sticky.svg" alt="Sticky Note: 17.5 Miller-Rabin Primality Test (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-5-miller-rabin-primality-test-monte-carlo-sticky.svg" alt="Sticky Note: 17.5 Miller-Rabin Primality Test (Monte Carlo)" width="30%">
 </a>
 
 
@@ -603,14 +603,14 @@ public class MillerRabin {
 
 ### 17.6 Karger's Minimum Cut Algorithm (Monte Carlo)
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-handwritten.svg" alt="Handwritten: 17.6 Karger's Minimum Cut Algorithm (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-handwritten.svg" alt="Handwritten: 17.6 Karger's Minimum Cut Algorithm (Monte Carlo)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-diagram.svg" alt="Diagram: 17.6 Karger's Minimum Cut Algorithm (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-diagram.svg" alt="Diagram: 17.6 Karger's Minimum Cut Algorithm (Monte Carlo)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-sticky.svg" alt="Sticky Note: 17.6 Karger's Minimum Cut Algorithm (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-6-karger-s-minimum-cut-algorithm-monte-carlo-sticky.svg" alt="Sticky Note: 17.6 Karger's Minimum Cut Algorithm (Monte Carlo)" width="30%">
 </a>
 
 
@@ -673,14 +673,14 @@ Graph: A-B, A-C, A-D, B-C, C-D (5 edges). The min cut is {B, D} with 2 edges.
 
 ### 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-handwritten.svg" alt="Handwritten: 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-handwritten.svg" alt="Handwritten: 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-diagram.svg" alt="Diagram: 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-diagram.svg" alt="Diagram: 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-sticky.svg" alt="Sticky Note: 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-7-freivalds-algorithm-for-matrix-verification-monte-carlo-sticky.svg" alt="Sticky Note: 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)" width="30%">
 </a>
 
 
@@ -727,14 +727,14 @@ Freivalds(A, B, C, n):
 
 ### 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-handwritten.svg" alt="Handwritten: 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-handwritten.svg" alt="Handwritten: 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-diagram.svg" alt="Diagram: 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-diagram.svg" alt="Diagram: 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-sticky.svg" alt="Sticky Note: 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-8-reservoir-sampling-las-vegas-monte-carlo-variant-sticky.svg" alt="Sticky Note: 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)" width="30%">
 </a>
 
 
@@ -839,14 +839,14 @@ public class ReservoirSampling {
 
 ### 17.9 Birthday Problem Analysis
 
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-handwritten.svg" alt="Handwritten: 17.9 Birthday Problem Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-handwritten.svg" alt="Handwritten: 17.9 Birthday Problem Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-diagram.svg" alt="Diagram: 17.9 Birthday Problem Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-diagram.svg" alt="Diagram: 17.9 Birthday Problem Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-sticky.svg" alt="Sticky Note: 17.9 Birthday Problem Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/17-randomized/17-9-birthday-problem-analysis-sticky.svg" alt="Sticky Note: 17.9 Birthday Problem Analysis" width="30%">
 </a>
 
 

@@ -73,14 +73,14 @@ flowchart LR
 
 ### Thread Concept
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-concept-handwritten.svg" alt="Handwritten: Thread Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-concept-handwritten.svg" alt="Handwritten: Thread Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-concept-diagram.svg" alt="Diagram: Thread Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-concept-diagram.svg" alt="Diagram: Thread Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-concept-sticky.svg" alt="Sticky Note: Thread Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-concept-sticky.svg" alt="Sticky Note: Thread Concept" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ print("Main: All threads done.")
 
 ### Thread vs Process Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-handwritten.svg" alt="Handwritten: Thread vs Process Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-handwritten.svg" alt="Handwritten: Thread vs Process Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-diagram.svg" alt="Diagram: Thread vs Process Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-diagram.svg" alt="Diagram: Thread vs Process Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-sticky.svg" alt="Sticky Note: Thread vs Process Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-vs-process-comparison-sticky.svg" alt="Sticky Note: Thread vs Process Comparison" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ print("Main: All threads done.")
 
 ### User-Level Threads
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-handwritten.svg" alt="Handwritten: User-Level Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-handwritten.svg" alt="Handwritten: User-Level Threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-diagram.svg" alt="Diagram: User-Level Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-diagram.svg" alt="Diagram: User-Level Threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-sticky.svg" alt="Sticky Note: User-Level Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/user-level-threads-sticky.svg" alt="Sticky Note: User-Level Threads" width="30%">
 </a>
 
 
@@ -512,14 +512,14 @@ for line in result:
 
 ### Kernel-Level Threads
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-handwritten.svg" alt="Handwritten: Kernel-Level Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-handwritten.svg" alt="Handwritten: Kernel-Level Threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-diagram.svg" alt="Diagram: Kernel-Level Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-diagram.svg" alt="Diagram: Kernel-Level Threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-sticky.svg" alt="Sticky Note: Kernel-Level Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/kernel-level-threads-sticky.svg" alt="Sticky Note: Kernel-Level Threads" width="30%">
 </a>
 
 
@@ -731,14 +731,14 @@ print("Main: All threads done.")
 
 ### User-Level vs Kernel-Level Threads — Full Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-handwritten.svg" alt="Handwritten: User-Level vs Kernel-Level Threads — Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-handwritten.svg" alt="Handwritten: User-Level vs Kernel-Level Threads — Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-diagram.svg" alt="Diagram: User-Level vs Kernel-Level Threads — Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-diagram.svg" alt="Diagram: User-Level vs Kernel-Level Threads — Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-sticky.svg" alt="Sticky Note: User-Level vs Kernel-Level Threads — Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/user-level-vs-kernel-level-threads-full-comparison-sticky.svg" alt="Sticky Note: User-Level vs Kernel-Level Threads — Full Comparison" width="30%">
 </a>
 
 
@@ -767,14 +767,14 @@ print("Main: All threads done.")
 
 ### Multithreading Models
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-handwritten.svg" alt="Handwritten: Multithreading Models" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-handwritten.svg" alt="Handwritten: Multithreading Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-diagram.svg" alt="Diagram: Multithreading Models" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-diagram.svg" alt="Diagram: Multithreading Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-sticky.svg" alt="Sticky Note: Multithreading Models" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/multithreading-models-sticky.svg" alt="Sticky Note: Multithreading Models" width="30%">
 </a>
 
 
@@ -1293,14 +1293,14 @@ print("Many-to-Many: Complete")
 
 ### Thread Libraries
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-handwritten.svg" alt="Handwritten: Thread Libraries" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-handwritten.svg" alt="Handwritten: Thread Libraries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-diagram.svg" alt="Diagram: Thread Libraries" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-diagram.svg" alt="Diagram: Thread Libraries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-sticky.svg" alt="Sticky Note: Thread Libraries" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-libraries-sticky.svg" alt="Sticky Note: Thread Libraries" width="30%">
 </a>
 
 
@@ -1618,14 +1618,14 @@ print(f"Final counter: {counter} (expected: 50000)")
 
 ### Thread Pools
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-pools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-pools-handwritten.svg" alt="Handwritten: Thread Pools" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-pools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-pools-handwritten.svg" alt="Handwritten: Thread Pools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-pools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-pools-diagram.svg" alt="Diagram: Thread Pools" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-pools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-pools-diagram.svg" alt="Diagram: Thread Pools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/thread-pools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/thread-pools-sticky.svg" alt="Sticky Note: Thread Pools" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/thread-pools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/thread-pools-sticky.svg" alt="Sticky Note: Thread Pools" width="30%">
 </a>
 
 
@@ -1831,14 +1831,14 @@ print(f"Results: {results}")
 
 ### Threading Issues
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/threading-issues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/threading-issues-handwritten.svg" alt="Handwritten: Threading Issues" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/threading-issues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/threading-issues-handwritten.svg" alt="Handwritten: Threading Issues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/threading-issues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/threading-issues-diagram.svg" alt="Diagram: Threading Issues" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/threading-issues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/threading-issues-diagram.svg" alt="Diagram: Threading Issues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/threading-issues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/threading-issues-sticky.svg" alt="Sticky Note: Threading Issues" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/threading-issues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/threading-issues-sticky.svg" alt="Sticky Note: Threading Issues" width="30%">
 </a>
 
 
@@ -1903,14 +1903,14 @@ Thread B: store counter (= 6)            ← LOST UPDATE!
 
 ### Threading Models Comparison (All Four Models)
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-handwritten.svg" alt="Handwritten: Threading Models Comparison (All Four Models)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-handwritten.svg" alt="Handwritten: Threading Models Comparison (All Four Models)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-diagram.svg" alt="Diagram: Threading Models Comparison (All Four Models)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-diagram.svg" alt="Diagram: Threading Models Comparison (All Four Models)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-sticky.svg" alt="Sticky Note: Threading Models Comparison (All Four Models)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/threading-models-comparison-all-four-models-sticky.svg" alt="Sticky Note: Threading Models Comparison (All Four Models)" width="30%">
 </a>
 
 
@@ -1934,14 +1934,14 @@ Thread B: store counter (= 6)            ← LOST UPDATE!
 
 ### Interview Corner
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/interview-corner-handwritten.svg" alt="Handwritten: Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/interview-corner-handwritten.svg" alt="Handwritten: Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/interview-corner-diagram.svg" alt="Diagram: Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/interview-corner-diagram.svg" alt="Diagram: Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/interview-corner-sticky.svg" alt="Sticky Note: Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/interview-corner-sticky.svg" alt="Sticky Note: Interview Corner" width="30%">
 </a>
 
 
@@ -2026,14 +2026,14 @@ With 8 cores and 10% serial code: `Speedup = 1 / (0.1 + 0.9/8) = 4.7x`. Even wit
 
 ### Applications in Real Systems
 
-<a href="../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-handwritten.svg" alt="Handwritten: Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-handwritten.svg" alt="Handwritten: Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-diagram.svg" alt="Diagram: Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-diagram.svg" alt="Diagram: Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-sticky.svg" alt="Sticky Note: Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/04-threads/applications-in-real-systems-sticky.svg" alt="Sticky Note: Applications in Real Systems" width="30%">
 </a>
 
 

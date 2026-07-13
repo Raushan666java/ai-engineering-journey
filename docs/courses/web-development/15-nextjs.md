@@ -381,14 +381,14 @@ export default function NotFound() {
 
 ### Route Groups and Parallel Routes
 
-<a href="../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-handwritten.svg" alt="Handwritten: Route Groups and Parallel Routes" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-handwritten.svg" alt="Handwritten: Route Groups and Parallel Routes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-diagram.svg" alt="Diagram: Route Groups and Parallel Routes" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-diagram.svg" alt="Diagram: Route Groups and Parallel Routes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-sticky.svg" alt="Sticky Note: Route Groups and Parallel Routes" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/route-groups-and-parallel-routes-sticky.svg" alt="Sticky Note: Route Groups and Parallel Routes" width="30%">
 </a>
 
 
@@ -812,14 +812,14 @@ Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The 
 
 ### Server Actions Deep Dive
 
-<a href="../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-handwritten.svg" alt="Handwritten: Server Actions Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-handwritten.svg" alt="Handwritten: Server Actions Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-diagram.svg" alt="Diagram: Server Actions Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-diagram.svg" alt="Diagram: Server Actions Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-sticky.svg" alt="Sticky Note: Server Actions Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/server-actions-deep-dive-sticky.svg" alt="Sticky Note: Server Actions Deep Dive" width="30%">
 </a>
 
 
@@ -860,14 +860,14 @@ export default function TodoPage() {
 
 ### Caching Deep Dive
 
-<a href="../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-handwritten.svg" alt="Handwritten: Caching Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-handwritten.svg" alt="Handwritten: Caching Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-diagram.svg" alt="Diagram: Caching Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-diagram.svg" alt="Diagram: Caching Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-sticky.svg" alt="Sticky Note: Caching Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/caching-deep-dive-sticky.svg" alt="Sticky Note: Caching Deep Dive" width="30%">
 </a>
 
 
@@ -900,14 +900,14 @@ graph TD
 
 ### Application Projects
 
-<a href="../../assets/images/diagrams/web-development/15-nextjs/application-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/application-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/application-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
 </a>
 
 
@@ -920,14 +920,14 @@ graph TD
 
 ### Challenge Project
 
-<a href="../../assets/images/diagrams/web-development/15-nextjs/challenge-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/challenge-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/challenge-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
 </a>
 
 
@@ -935,14 +935,14 @@ Build a multi-tenant SaaS application in Next.js with dynamic routing by tenant 
 
 ### Practical Takeaways
 
-<a href="../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/15-nextjs/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
 </a>
 
 

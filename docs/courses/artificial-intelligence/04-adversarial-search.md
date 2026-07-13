@@ -57,14 +57,14 @@ flowchart LR
 
 ### 1. Game Theory Fundamentals
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-handwritten.svg" alt="Handwritten: 1. Game Theory Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-handwritten.svg" alt="Handwritten: 1. Game Theory Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-diagram.svg" alt="Diagram: 1. Game Theory Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-diagram.svg" alt="Diagram: 1. Game Theory Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-sticky.svg" alt="Sticky Note: 1. Game Theory Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-sticky.svg" alt="Sticky Note: 1. Game Theory Fundamentals" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ flowchart LR
 
 ### 2. Minimax Algorithm
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-handwritten.svg" alt="Handwritten: 2. Minimax Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-handwritten.svg" alt="Handwritten: 2. Minimax Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-diagram.svg" alt="Diagram: 2. Minimax Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-diagram.svg" alt="Diagram: 2. Minimax Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-sticky.svg" alt="Sticky Note: 2. Minimax Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-sticky.svg" alt="Sticky Note: 2. Minimax Algorithm" width="30%">
 </a>
 
 
@@ -254,14 +254,14 @@ def find_best_move(board, depth):
 
 ### 3. Alpha-Beta Pruning
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-handwritten.svg" alt="Handwritten: 3. Alpha-Beta Pruning" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-handwritten.svg" alt="Handwritten: 3. Alpha-Beta Pruning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-diagram.svg" alt="Diagram: 3. Alpha-Beta Pruning" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-diagram.svg" alt="Diagram: 3. Alpha-Beta Pruning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-sticky.svg" alt="Sticky Note: 3. Alpha-Beta Pruning" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-sticky.svg" alt="Sticky Note: 3. Alpha-Beta Pruning" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ def find_best_move_alpha_beta(board, depth):
 
 ### 4. Minimax vs Alpha-Beta — Comparison Table
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-handwritten.svg" alt="Handwritten: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-handwritten.svg" alt="Handwritten: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-diagram.svg" alt="Diagram: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-diagram.svg" alt="Diagram: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-sticky.svg" alt="Sticky Note: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-sticky.svg" alt="Sticky Note: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
 </a>
 
 
@@ -482,14 +482,14 @@ def find_best_move_alpha_beta(board, depth):
 
 ### 5. Evaluation Functions and Cutoff Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-handwritten.svg" alt="Handwritten: 5. Evaluation Functions and Cutoff Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-handwritten.svg" alt="Handwritten: 5. Evaluation Functions and Cutoff Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-diagram.svg" alt="Diagram: 5. Evaluation Functions and Cutoff Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-diagram.svg" alt="Diagram: 5. Evaluation Functions and Cutoff Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-sticky.svg" alt="Sticky Note: 5. Evaluation Functions and Cutoff Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-sticky.svg" alt="Sticky Note: 5. Evaluation Functions and Cutoff Search" width="30%">
 </a>
 
 
@@ -536,14 +536,14 @@ A critical failure mode of cutoff search: a catastrophic consequence (e.g., losi
 
 ### 6. Games with Imperfect Information and Stochastic Elements
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-handwritten.svg" alt="Handwritten: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-handwritten.svg" alt="Handwritten: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-diagram.svg" alt="Diagram: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-diagram.svg" alt="Diagram: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-sticky.svg" alt="Sticky Note: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-sticky.svg" alt="Sticky Note: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
 </a>
 
 

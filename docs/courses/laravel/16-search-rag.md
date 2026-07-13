@@ -42,14 +42,14 @@ flowchart LR
 
 ### 16.1 Full-Text Search
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-handwritten.svg" alt="Handwritten: 16.1 Full-Text Search" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-handwritten.svg" alt="Handwritten: 16.1 Full-Text Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-diagram.svg" alt="Diagram: 16.1 Full-Text Search" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-diagram.svg" alt="Diagram: 16.1 Full-Text Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-sticky.svg" alt="Sticky Note: 16.1 Full-Text Search" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-sticky.svg" alt="Sticky Note: 16.1 Full-Text Search" width="30%">
 </a>
 
 
@@ -165,14 +165,14 @@ $articles = Article::select('*')
 
 ### 16.2 Semantic Search Concept
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-handwritten.svg" alt="Handwritten: 16.2 Semantic Search Concept" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-handwritten.svg" alt="Handwritten: 16.2 Semantic Search Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-diagram.svg" alt="Diagram: 16.2 Semantic Search Concept" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-diagram.svg" alt="Diagram: 16.2 Semantic Search Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-sticky.svg" alt="Sticky Note: 16.2 Semantic Search Concept" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-sticky.svg" alt="Sticky Note: 16.2 Semantic Search Concept" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ Values range from -1 (opposite meaning) to 1 (identical meaning). A threshold of
 
 ### 16.3 pgvector Installation
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-handwritten.svg" alt="Handwritten: 16.3 pgvector Installation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-handwritten.svg" alt="Handwritten: 16.3 pgvector Installation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-diagram.svg" alt="Diagram: 16.3 pgvector Installation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-diagram.svg" alt="Diagram: 16.3 pgvector Installation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-sticky.svg" alt="Sticky Note: 16.3 pgvector Installation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-sticky.svg" alt="Sticky Note: 16.3 pgvector Installation" width="30%">
 </a>
 
 
@@ -317,14 +317,14 @@ The HNSW index parameters balance build time against query accuracy:
 
 ### 16.4 Generating Embeddings
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-handwritten.svg" alt="Handwritten: 16.4 Generating Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-handwritten.svg" alt="Handwritten: 16.4 Generating Embeddings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-diagram.svg" alt="Diagram: 16.4 Generating Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-diagram.svg" alt="Diagram: 16.4 Generating Embeddings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-sticky.svg" alt="Sticky Note: 16.4 Generating Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-sticky.svg" alt="Sticky Note: 16.4 Generating Embeddings" width="30%">
 </a>
 
 
@@ -417,14 +417,14 @@ return [
 
 ### 16.5 Storing Vectors
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-handwritten.svg" alt="Handwritten: 16.5 Storing Vectors" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-handwritten.svg" alt="Handwritten: 16.5 Storing Vectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-diagram.svg" alt="Diagram: 16.5 Storing Vectors" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-diagram.svg" alt="Diagram: 16.5 Storing Vectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-sticky.svg" alt="Sticky Note: 16.5 Storing Vectors" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-sticky.svg" alt="Sticky Note: 16.5 Storing Vectors" width="30%">
 </a>
 
 
@@ -486,14 +486,14 @@ class DocumentController extends Controller
 
 ### 16.6 Complete Search Pipeline
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-handwritten.svg" alt="Handwritten: 16.6 Complete Search Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-handwritten.svg" alt="Handwritten: 16.6 Complete Search Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-diagram.svg" alt="Diagram: 16.6 Complete Search Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-diagram.svg" alt="Diagram: 16.6 Complete Search Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-sticky.svg" alt="Sticky Note: 16.6 Complete Search Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-sticky.svg" alt="Sticky Note: 16.6 Complete Search Pipeline" width="30%">
 </a>
 
 
@@ -574,14 +574,14 @@ LIMIT 10
 
 ### 16.7 Reranking
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-handwritten.svg" alt="Handwritten: 16.7 Reranking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-handwritten.svg" alt="Handwritten: 16.7 Reranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-diagram.svg" alt="Diagram: 16.7 Reranking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-diagram.svg" alt="Diagram: 16.7 Reranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-sticky.svg" alt="Sticky Note: 16.7 Reranking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-sticky.svg" alt="Sticky Note: 16.7 Reranking" width="30%">
 </a>
 
 
@@ -655,14 +655,14 @@ This pattern is computationally efficient: the vector search runs in O(log n) wi
 
 ### 16.8 Laravel Scout
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-handwritten.svg" alt="Handwritten: 16.8 Laravel Scout" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-handwritten.svg" alt="Handwritten: 16.8 Laravel Scout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-diagram.svg" alt="Diagram: 16.8 Laravel Scout" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-diagram.svg" alt="Diagram: 16.8 Laravel Scout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-sticky.svg" alt="Sticky Note: 16.8 Laravel Scout" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-sticky.svg" alt="Sticky Note: 16.8 Laravel Scout" width="30%">
 </a>
 
 
@@ -739,14 +739,14 @@ class Product extends Model
 
 ### 16.9 RAG Patterns
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-handwritten.svg" alt="Handwritten: 16.9 RAG Patterns" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-handwritten.svg" alt="Handwritten: 16.9 RAG Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-diagram.svg" alt="Diagram: 16.9 RAG Patterns" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-diagram.svg" alt="Diagram: 16.9 RAG Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-sticky.svg" alt="Sticky Note: 16.9 RAG Patterns" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-sticky.svg" alt="Sticky Note: 16.9 RAG Patterns" width="30%">
 </a>
 
 
@@ -872,14 +872,14 @@ class RagHybridController extends Controller
 
 ### 16.10 Complete Example: RAG Documentation Search
 
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-handwritten.svg" alt="Handwritten: 16.10 Complete Example: RAG Documentation Search" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-handwritten.svg" alt="Handwritten: 16.10 Complete Example: RAG Documentation Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-diagram.svg" alt="Diagram: 16.10 Complete Example: RAG Documentation Search" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-diagram.svg" alt="Diagram: 16.10 Complete Example: RAG Documentation Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-sticky.svg" alt="Sticky Note: 16.10 Complete Example: RAG Documentation Search" width="30%">
+<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-sticky.svg" alt="Sticky Note: 16.10 Complete Example: RAG Documentation Search" width="30%">
 </a>
 
 

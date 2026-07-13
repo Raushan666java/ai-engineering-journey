@@ -27,14 +27,14 @@ The controller provides a global view of the network topology, enabling network-
 
 ### Real-World Analogy: Air Traffic Control
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-handwritten.svg" alt="Handwritten: Real-World Analogy: Air Traffic Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-handwritten.svg" alt="Handwritten: Real-World Analogy: Air Traffic Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-diagram.svg" alt="Diagram: Real-World Analogy: Air Traffic Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-diagram.svg" alt="Diagram: Real-World Analogy: Air Traffic Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-sticky.svg" alt="Sticky Note: Real-World Analogy: Air Traffic Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/real-world-analogy-air-traffic-control-sticky.svg" alt="Sticky Note: Real-World Analogy: Air Traffic Control" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@ The SDN control plane is analogous to air traffic control (ATC). The data plane 
 
 ### Numbered Steps: How SDN Handles a New Flow
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-handwritten.svg" alt="Handwritten: Numbered Steps: How SDN Handles a New Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-handwritten.svg" alt="Handwritten: Numbered Steps: How SDN Handles a New Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-diagram.svg" alt="Diagram: Numbered Steps: How SDN Handles a New Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-diagram.svg" alt="Diagram: Numbered Steps: How SDN Handles a New Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-sticky.svg" alt="Sticky Note: Numbered Steps: How SDN Handles a New Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-how-sdn-handles-a-new-flow-sticky.svg" alt="Sticky Note: Numbered Steps: How SDN Handles a New Flow" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ The SDN control plane is analogous to air traffic control (ATC). The data plane 
 
 ### Dry Run: OpenFlow Flow Table Match
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-handwritten.svg" alt="Handwritten: Dry Run: OpenFlow Flow Table Match" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-handwritten.svg" alt="Handwritten: Dry Run: OpenFlow Flow Table Match" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-diagram.svg" alt="Diagram: Dry Run: OpenFlow Flow Table Match" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-diagram.svg" alt="Diagram: Dry Run: OpenFlow Flow Table Match" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-sticky.svg" alt="Sticky Note: Dry Run: OpenFlow Flow Table Match" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-flow-table-match-sticky.svg" alt="Sticky Note: Dry Run: OpenFlow Flow Table Match" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ The SDN control plane is analogous to air traffic control (ATC). The data plane 
 
 ### Traditional vs SDN Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-handwritten.svg" alt="Handwritten: Traditional vs SDN Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-handwritten.svg" alt="Handwritten: Traditional vs SDN Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-diagram.svg" alt="Diagram: Traditional vs SDN Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-diagram.svg" alt="Diagram: Traditional vs SDN Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-sticky.svg" alt="Sticky Note: Traditional vs SDN Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/traditional-vs-sdn-comparison-sticky.svg" alt="Sticky Note: Traditional vs SDN Comparison" width="30%">
 </a>
 
 
@@ -150,14 +150,14 @@ The SDN control plane is analogous to air traffic control (ATC). The data plane 
 
 ### Control Plane vs Data Plane Separation
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-handwritten.svg" alt="Handwritten: Control Plane vs Data Plane Separation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-handwritten.svg" alt="Handwritten: Control Plane vs Data Plane Separation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-diagram.svg" alt="Diagram: Control Plane vs Data Plane Separation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-diagram.svg" alt="Diagram: Control Plane vs Data Plane Separation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-sticky.svg" alt="Sticky Note: Control Plane vs Data Plane Separation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/control-plane-vs-data-plane-separation-sticky.svg" alt="Sticky Note: Control Plane vs Data Plane Separation" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ The SDN control plane is analogous to air traffic control (ATC). The data plane 
 
 ### Pseudocode: SDN Controller Flow Processing
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-handwritten.svg" alt="Handwritten: Pseudocode: SDN Controller Flow Processing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-handwritten.svg" alt="Handwritten: Pseudocode: SDN Controller Flow Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-diagram.svg" alt="Diagram: Pseudocode: SDN Controller Flow Processing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-diagram.svg" alt="Diagram: Pseudocode: SDN Controller Flow Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-sticky.svg" alt="Sticky Note: Pseudocode: SDN Controller Flow Processing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-sdn-controller-flow-processing-sticky.svg" alt="Sticky Note: Pseudocode: SDN Controller Flow Processing" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ CONTROLLER_FLOW_PROCESSING(packet_in_msg, topology_db, policy_db):
 
 ### C++ Implementation: OpenFlow Switch Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: OpenFlow Switch Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: OpenFlow Switch Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-diagram.svg" alt="Diagram: C++ Implementation: OpenFlow Switch Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-diagram.svg" alt="Diagram: C++ Implementation: OpenFlow Switch Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: OpenFlow Switch Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/c-implementation-openflow-switch-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: OpenFlow Switch Simulator" width="30%">
 </a>
 
 
@@ -543,14 +543,14 @@ int main() {
 
 ### Python Implementation: OpenFlow Message Parser and Switch
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-handwritten.svg" alt="Handwritten: Python Implementation: OpenFlow Message Parser and Switch" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-handwritten.svg" alt="Handwritten: Python Implementation: OpenFlow Message Parser and Switch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-diagram.svg" alt="Diagram: Python Implementation: OpenFlow Message Parser and Switch" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-diagram.svg" alt="Diagram: Python Implementation: OpenFlow Message Parser and Switch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-sticky.svg" alt="Sticky Note: Python Implementation: OpenFlow Message Parser and Switch" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/python-implementation-openflow-message-parser-and-switch-sticky.svg" alt="Sticky Note: Python Implementation: OpenFlow Message Parser and Switch" width="30%">
 </a>
 
 
@@ -868,14 +868,14 @@ if __name__ == "__main__":
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -898,14 +898,14 @@ if __name__ == "__main__":
 
 ### Advantages and Disadvantages of SDN
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of SDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of SDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-diagram.svg" alt="Diagram: Advantages and Disadvantages of SDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-diagram.svg" alt="Diagram: Advantages and Disadvantages of SDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of SDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/advantages-and-disadvantages-of-sdn-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of SDN" width="30%">
 </a>
 
 
@@ -922,14 +922,14 @@ if __name__ == "__main__":
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -983,14 +983,14 @@ OpenFlow (ONF specification) is the standard protocol for communication between 
 
 ### 14.2.1 Flow Table Entry
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-handwritten.svg" alt="Handwritten: 14.2.1 Flow Table Entry" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-handwritten.svg" alt="Handwritten: 14.2.1 Flow Table Entry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-diagram.svg" alt="Diagram: 14.2.1 Flow Table Entry" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-diagram.svg" alt="Diagram: 14.2.1 Flow Table Entry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-sticky.svg" alt="Sticky Note: 14.2.1 Flow Table Entry" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-1-flow-table-entry-sticky.svg" alt="Sticky Note: 14.2.1 Flow Table Entry" width="30%">
 </a>
 
 
@@ -1005,14 +1005,14 @@ An OpenFlow flow table entry consists of:
 
 ### 14.2.2 OpenFlow Pipeline
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-handwritten.svg" alt="Handwritten: 14.2.2 OpenFlow Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-handwritten.svg" alt="Handwritten: 14.2.2 OpenFlow Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-diagram.svg" alt="Diagram: 14.2.2 OpenFlow Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-diagram.svg" alt="Diagram: 14.2.2 OpenFlow Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-sticky.svg" alt="Sticky Note: 14.2.2 OpenFlow Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-2-openflow-pipeline-sticky.svg" alt="Sticky Note: 14.2.2 OpenFlow Pipeline" width="30%">
 </a>
 
 
@@ -1048,14 +1048,14 @@ The OpenFlow 1.3+ pipeline processes packets through multiple sequential tables:
 
 ### 14.2.3 Actions
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-handwritten.svg" alt="Handwritten: 14.2.3 Actions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-handwritten.svg" alt="Handwritten: 14.2.3 Actions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-diagram.svg" alt="Diagram: 14.2.3 Actions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-diagram.svg" alt="Diagram: 14.2.3 Actions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-sticky.svg" alt="Sticky Note: 14.2.3 Actions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-3-actions-sticky.svg" alt="Sticky Note: 14.2.3 Actions" width="30%">
 </a>
 
 
@@ -1071,14 +1071,14 @@ Actions specify how the switch processes matching packets:
 
 ### 14.2.4 OpenFlow Messages
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-handwritten.svg" alt="Handwritten: 14.2.4 OpenFlow Messages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-handwritten.svg" alt="Handwritten: 14.2.4 OpenFlow Messages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-diagram.svg" alt="Diagram: 14.2.4 OpenFlow Messages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-diagram.svg" alt="Diagram: 14.2.4 OpenFlow Messages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-sticky.svg" alt="Sticky Note: 14.2.4 OpenFlow Messages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-2-4-openflow-messages-sticky.svg" alt="Sticky Note: 14.2.4 OpenFlow Messages" width="30%">
 </a>
 
 
@@ -1098,14 +1098,14 @@ Actions specify how the switch processes matching packets:
 
 ### Dry Run: OpenFlow PACKET_IN / FLOW_MOD Cycle
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-handwritten.svg" alt="Handwritten: Dry Run: OpenFlow PACKET_IN / FLOW_MOD Cycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-handwritten.svg" alt="Handwritten: Dry Run: OpenFlow PACKET_IN / FLOW_MOD Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-diagram.svg" alt="Diagram: Dry Run: OpenFlow PACKET_IN / FLOW_MOD Cycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-diagram.svg" alt="Diagram: Dry Run: OpenFlow PACKET_IN / FLOW_MOD Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-sticky.svg" alt="Sticky Note: Dry Run: OpenFlow PACKET_IN / FLOW_MOD Cycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-openflow-packet-in-flow-mod-cycle-sticky.svg" alt="Sticky Note: Dry Run: OpenFlow PACKET_IN / FLOW_MOD Cycle" width="30%">
 </a>
 
 
@@ -1126,14 +1126,14 @@ Actions specify how the switch processes matching packets:
 
 ### Pseudocode: OpenFlow Message Handler
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-handwritten.svg" alt="Handwritten: Pseudocode: OpenFlow Message Handler" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-handwritten.svg" alt="Handwritten: Pseudocode: OpenFlow Message Handler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-diagram.svg" alt="Diagram: Pseudocode: OpenFlow Message Handler" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-diagram.svg" alt="Diagram: Pseudocode: OpenFlow Message Handler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-sticky.svg" alt="Sticky Note: Pseudocode: OpenFlow Message Handler" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/pseudocode-openflow-message-handler-sticky.svg" alt="Sticky Note: Pseudocode: OpenFlow Message Handler" width="30%">
 </a>
 
 
@@ -1310,14 +1310,14 @@ An SDN controller is a software platform that provides:
 
 ### 14.3.1 Controller Architectures
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-handwritten.svg" alt="Handwritten: 14.3.1 Controller Architectures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-handwritten.svg" alt="Handwritten: 14.3.1 Controller Architectures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-diagram.svg" alt="Diagram: 14.3.1 Controller Architectures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-diagram.svg" alt="Diagram: 14.3.1 Controller Architectures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-sticky.svg" alt="Sticky Note: 14.3.1 Controller Architectures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-1-controller-architectures-sticky.svg" alt="Sticky Note: 14.3.1 Controller Architectures" width="30%">
 </a>
 
 
@@ -1329,14 +1329,14 @@ An SDN controller is a software platform that provides:
 
 ### 14.3.2 SDN Controller Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-handwritten.svg" alt="Handwritten: 14.3.2 SDN Controller Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-handwritten.svg" alt="Handwritten: 14.3.2 SDN Controller Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-diagram.svg" alt="Diagram: 14.3.2 SDN Controller Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-diagram.svg" alt="Diagram: 14.3.2 SDN Controller Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-sticky.svg" alt="Sticky Note: 14.3.2 SDN Controller Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-2-sdn-controller-comparison-sticky.svg" alt="Sticky Note: 14.3.2 SDN Controller Comparison" width="30%">
 </a>
 
 
@@ -1355,14 +1355,14 @@ An SDN controller is a software platform that provides:
 
 ### 14.3.3 Controller State Machine
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-handwritten.svg" alt="Handwritten: 14.3.3 Controller State Machine" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-handwritten.svg" alt="Handwritten: 14.3.3 Controller State Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-diagram.svg" alt="Diagram: 14.3.3 Controller State Machine" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-diagram.svg" alt="Diagram: 14.3.3 Controller State Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-sticky.svg" alt="Sticky Note: 14.3.3 Controller State Machine" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-3-3-controller-state-machine-sticky.svg" alt="Sticky Note: 14.3.3 Controller State Machine" width="30%">
 </a>
 
 
@@ -1554,14 +1554,14 @@ NFV benefits: reduced capital expenditure (commodity hardware), operational flex
 
 ### Dry Run: Service Function Chaining
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-handwritten.svg" alt="Handwritten: Dry Run: Service Function Chaining" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-handwritten.svg" alt="Handwritten: Dry Run: Service Function Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-diagram.svg" alt="Diagram: Dry Run: Service Function Chaining" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-diagram.svg" alt="Diagram: Dry Run: Service Function Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-sticky.svg" alt="Sticky Note: Dry Run: Service Function Chaining" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/dry-run-service-function-chaining-sticky.svg" alt="Sticky Note: Dry Run: Service Function Chaining" width="30%">
 </a>
 
 
@@ -1583,14 +1583,14 @@ Network virtualization abstracts the physical network to create multiple logical
 
 ### 14.5.1 VXLAN
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-handwritten.svg" alt="Handwritten: 14.5.1 VXLAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-handwritten.svg" alt="Handwritten: 14.5.1 VXLAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-diagram.svg" alt="Diagram: 14.5.1 VXLAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-diagram.svg" alt="Diagram: 14.5.1 VXLAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-sticky.svg" alt="Sticky Note: 14.5.1 VXLAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-1-vxlan-sticky.svg" alt="Sticky Note: 14.5.1 VXLAN" width="30%">
 </a>
 
 
@@ -1604,14 +1604,14 @@ VTEPs (VXLAN Tunnel Endpoints) perform encapsulation and decapsulation. VXLAN en
 
 ### 14.5.2 Geneve
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-handwritten.svg" alt="Handwritten: 14.5.2 Geneve" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-handwritten.svg" alt="Handwritten: 14.5.2 Geneve" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-diagram.svg" alt="Diagram: 14.5.2 Geneve" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-diagram.svg" alt="Diagram: 14.5.2 Geneve" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-sticky.svg" alt="Sticky Note: 14.5.2 Geneve" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-2-geneve-sticky.svg" alt="Sticky Note: 14.5.2 Geneve" width="30%">
 </a>
 
 
@@ -1619,14 +1619,14 @@ Geneve (Generic Network Virtualization Encapsulation, RFC 8926) provides a flexi
 
 ### 14.5.3 NVGRE
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-handwritten.svg" alt="Handwritten: 14.5.3 NVGRE" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-handwritten.svg" alt="Handwritten: 14.5.3 NVGRE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-diagram.svg" alt="Diagram: 14.5.3 NVGRE" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-diagram.svg" alt="Diagram: 14.5.3 NVGRE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-sticky.svg" alt="Sticky Note: 14.5.3 NVGRE" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/14-5-3-nvgre-sticky.svg" alt="Sticky Note: 14.5.3 NVGRE" width="30%">
 </a>
 
 
@@ -1763,14 +1763,14 @@ console.log(nvm.getStats());
 
 ### Numbered Steps: Deploying a VNF Chain with SDN Steering
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-handwritten.svg" alt="Handwritten: Numbered Steps: Deploying a VNF Chain with SDN Steering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-handwritten.svg" alt="Handwritten: Numbered Steps: Deploying a VNF Chain with SDN Steering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-diagram.svg" alt="Diagram: Numbered Steps: Deploying a VNF Chain with SDN Steering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-diagram.svg" alt="Diagram: Numbered Steps: Deploying a VNF Chain with SDN Steering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-sticky.svg" alt="Sticky Note: Numbered Steps: Deploying a VNF Chain with SDN Steering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/numbered-steps-deploying-a-vnf-chain-with-sdn-steering-sticky.svg" alt="Sticky Note: Numbered Steps: Deploying a VNF Chain with SDN Steering" width="30%">
 </a>
 
 
@@ -1794,14 +1794,14 @@ console.log(nvm.getStats());
 
 ### Intent-Based Networking: Deep Dive
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-handwritten.svg" alt="Handwritten: Intent-Based Networking: Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-handwritten.svg" alt="Handwritten: Intent-Based Networking: Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-diagram.svg" alt="Diagram: Intent-Based Networking: Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-diagram.svg" alt="Diagram: Intent-Based Networking: Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-sticky.svg" alt="Sticky Note: Intent-Based Networking: Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/intent-based-networking-deep-dive-sticky.svg" alt="Sticky Note: Intent-Based Networking: Deep Dive" width="30%">
 </a>
 
 
@@ -1862,14 +1862,14 @@ COMPILE_INTENT(intent, topology_db):
 
 ### SD-WAN
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-handwritten.svg" alt="Handwritten: SD-WAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-handwritten.svg" alt="Handwritten: SD-WAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-diagram.svg" alt="Diagram: SD-WAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-diagram.svg" alt="Diagram: SD-WAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-sticky.svg" alt="Sticky Note: SD-WAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sd-wan-sticky.svg" alt="Sticky Note: SD-WAN" width="30%">
 </a>
 
 
@@ -1912,14 +1912,14 @@ SD-WAN is like a smart highway system that dynamically assigns lanes based on tr
 
 ### Google B4 (SDN WAN)
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-handwritten.svg" alt="Handwritten: Google B4 (SDN WAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-handwritten.svg" alt="Handwritten: Google B4 (SDN WAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-diagram.svg" alt="Diagram: Google B4 (SDN WAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-diagram.svg" alt="Diagram: Google B4 (SDN WAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-sticky.svg" alt="Sticky Note: Google B4 (SDN WAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/google-b4-sdn-wan-sticky.svg" alt="Sticky Note: Google B4 (SDN WAN)" width="30%">
 </a>
 
 
@@ -1943,14 +1943,14 @@ How it works:
 
 ### VMware NSX (SDN for Data Center)
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-handwritten.svg" alt="Handwritten: VMware NSX (SDN for Data Center)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-handwritten.svg" alt="Handwritten: VMware NSX (SDN for Data Center)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-diagram.svg" alt="Diagram: VMware NSX (SDN for Data Center)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-diagram.svg" alt="Diagram: VMware NSX (SDN for Data Center)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-sticky.svg" alt="Sticky Note: VMware NSX (SDN for Data Center)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/vmware-nsx-sdn-for-data-center-sticky.svg" alt="Sticky Note: VMware NSX (SDN for Data Center)" width="30%">
 </a>
 
 
@@ -1966,14 +1966,14 @@ VMware NSX provides network virtualization entirely in software at the hyperviso
 
 ### Cisco ACI (Application Centric Infrastructure)
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-handwritten.svg" alt="Handwritten: Cisco ACI (Application Centric Infrastructure)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-handwritten.svg" alt="Handwritten: Cisco ACI (Application Centric Infrastructure)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-diagram.svg" alt="Diagram: Cisco ACI (Application Centric Infrastructure)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-diagram.svg" alt="Diagram: Cisco ACI (Application Centric Infrastructure)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-sticky.svg" alt="Sticky Note: Cisco ACI (Application Centric Infrastructure)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/cisco-aci-application-centric-infrastructure-sticky.svg" alt="Sticky Note: Cisco ACI (Application Centric Infrastructure)" width="30%">
 </a>
 
 
@@ -1989,14 +1989,14 @@ Cisco ACI is a policy-driven SDN solution for data centers.
 
 ### Open vSwitch (OVS)
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-handwritten.svg" alt="Handwritten: Open vSwitch (OVS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-handwritten.svg" alt="Handwritten: Open vSwitch (OVS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-diagram.svg" alt="Diagram: Open vSwitch (OVS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-diagram.svg" alt="Diagram: Open vSwitch (OVS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-sticky.svg" alt="Sticky Note: Open vSwitch (OVS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/open-vswitch-ovs-sticky.svg" alt="Sticky Note: Open vSwitch (OVS)" width="30%">
 </a>
 
 
@@ -2014,14 +2014,14 @@ Open vSwitch is a production-quality open-source virtual switch supporting OpenF
 
 ### Q1: SDN vs Traditional Routing — What's the fundamental difference?
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-handwritten.svg" alt="Handwritten: SDN vs Traditional Routing — What's the fundamental difference?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-handwritten.svg" alt="Handwritten: SDN vs Traditional Routing — What's the fundamental difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-diagram.svg" alt="Diagram: SDN vs Traditional Routing — What's the fundamental difference?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-diagram.svg" alt="Diagram: SDN vs Traditional Routing — What's the fundamental difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-sticky.svg" alt="Sticky Note: SDN vs Traditional Routing — What's the fundamental difference?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-vs-traditional-routing-what-s-the-fundamental-difference-sticky.svg" alt="Sticky Note: SDN vs Traditional Routing — What's the fundamental difference?" width="30%">
 </a>
 
 
@@ -2034,14 +2034,14 @@ Open vSwitch is a production-quality open-source virtual switch supporting OpenF
 
 ### Q2: OpenFlow vs NETCONF — Which one to use?
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-handwritten.svg" alt="Handwritten: OpenFlow vs NETCONF — Which one to use?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-handwritten.svg" alt="Handwritten: OpenFlow vs NETCONF — Which one to use?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-diagram.svg" alt="Diagram: OpenFlow vs NETCONF — Which one to use?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-diagram.svg" alt="Diagram: OpenFlow vs NETCONF — Which one to use?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-sticky.svg" alt="Sticky Note: OpenFlow vs NETCONF — Which one to use?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/openflow-vs-netconf-which-one-to-use-sticky.svg" alt="Sticky Note: OpenFlow vs NETCONF — Which one to use?" width="30%">
 </a>
 
 
@@ -2059,14 +2059,14 @@ Choose NETCONF when you need to configure routing protocols, interfaces, or ACLs
 
 ### Q3: Controller Placement Problem
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-handwritten.svg" alt="Handwritten: Controller Placement Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-handwritten.svg" alt="Handwritten: Controller Placement Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-diagram.svg" alt="Diagram: Controller Placement Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-diagram.svg" alt="Diagram: Controller Placement Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-sticky.svg" alt="Sticky Note: Controller Placement Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/controller-placement-problem-sticky.svg" alt="Sticky Note: Controller Placement Problem" width="30%">
 </a>
 
 
@@ -2084,14 +2084,14 @@ The controller placement problem (CPP) asks: given N switches, where should we p
 
 ### Q4: SDN Security Considerations
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-handwritten.svg" alt="Handwritten: SDN Security Considerations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-handwritten.svg" alt="Handwritten: SDN Security Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-diagram.svg" alt="Diagram: SDN Security Considerations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-diagram.svg" alt="Diagram: SDN Security Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-sticky.svg" alt="Sticky Note: SDN Security Considerations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/sdn-security-considerations-sticky.svg" alt="Sticky Note: SDN Security Considerations" width="30%">
 </a>
 
 
@@ -2109,14 +2109,14 @@ The controller placement problem (CPP) asks: given N switches, where should we p
 
 ### Q5: CAP Theorem in SDN Controllers
 
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-handwritten.svg" alt="Handwritten: CAP Theorem in SDN Controllers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-handwritten.svg" alt="Handwritten: CAP Theorem in SDN Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-diagram.svg" alt="Diagram: CAP Theorem in SDN Controllers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-diagram.svg" alt="Diagram: CAP Theorem in SDN Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-sticky.svg" alt="Sticky Note: CAP Theorem in SDN Controllers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/14-sdn/cap-theorem-in-sdn-controllers-sticky.svg" alt="Sticky Note: CAP Theorem in SDN Controllers" width="30%">
 </a>
 
 

@@ -27,14 +27,14 @@
 
 ### गलती १: प्रयास और तनाव (Effort & Tension)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-handwritten.svg" alt="Handwritten: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-handwritten.svg" alt="Handwritten: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-diagram.svg" alt="Diagram: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-diagram.svg" alt="Diagram: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-sticky.svg" alt="Sticky Note: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/effort-tension-sticky.svg" alt="Sticky Note: गलती १: प्रयास और तनाव (Effort & Tension)" width="30%">
 </a>
 
 
@@ -49,14 +49,14 @@
 
 ### गलती २: परिणाम की अपेक्षा (Expectation of Results)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-handwritten.svg" alt="Handwritten: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-handwritten.svg" alt="Handwritten: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-diagram.svg" alt="Diagram: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-diagram.svg" alt="Diagram: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-sticky.svg" alt="Sticky Note: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/expectation-of-results-sticky.svg" alt="Sticky Note: गलती २: परिणाम की अपेक्षा (Expectation of Results)" width="30%">
 </a>
 
 
@@ -71,14 +71,14 @@
 
 ### गलती ३: विचारों से लड़ना (Fighting Thoughts)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-handwritten.svg" alt="Handwritten: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-handwritten.svg" alt="Handwritten: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-diagram.svg" alt="Diagram: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-diagram.svg" alt="Diagram: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-sticky.svg" alt="Sticky Note: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/fighting-thoughts-sticky.svg" alt="Sticky Note: गलती ३: विचारों से लड़ना (Fighting Thoughts)" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@
 
 ### गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-handwritten.svg" alt="Handwritten: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-handwritten.svg" alt="Handwritten: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-diagram.svg" alt="Diagram: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-diagram.svg" alt="Diagram: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-sticky.svg" alt="Sticky Note: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/quitting-too-soon-sticky.svg" alt="Sticky Note: गलती ४: एक तकनीक को जल्दी छोड़ देना (Quitting Too Soon)" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@
 
 ### गलती ५: यांत्रिक दोहराव (Mechanical Repetition)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-handwritten.svg" alt="Handwritten: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-handwritten.svg" alt="Handwritten: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-diagram.svg" alt="Diagram: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-diagram.svg" alt="Diagram: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-sticky.svg" alt="Sticky Note: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/mechanical-repetition-sticky.svg" alt="Sticky Note: गलती ५: यांत्रिक दोहराव (Mechanical Repetition)" width="30%">
 </a>
 
 
@@ -137,14 +137,14 @@
 
 ### गलती ६: संसार से भागना (Escaping from the World)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-handwritten.svg" alt="Handwritten: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-handwritten.svg" alt="Handwritten: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-diagram.svg" alt="Diagram: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-diagram.svg" alt="Diagram: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-sticky.svg" alt="Sticky Note: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/escaping-from-the-world-sticky.svg" alt="Sticky Note: गलती ६: संसार से भागना (Escaping from the World)" width="30%">
 </a>
 
 
@@ -159,14 +159,14 @@
 
 ### गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-handwritten.svg" alt="Handwritten: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-handwritten.svg" alt="Handwritten: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-diagram.svg" alt="Diagram: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-diagram.svg" alt="Diagram: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-sticky.svg" alt="Sticky Note: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/blind-faith-in-guru-sticky.svg" alt="Sticky Note: गलती ७: गुरु पर अंधविश्वास (Blind Faith in Guru)" width="30%">
 </a>
 
 
@@ -181,14 +181,14 @@
 
 ### गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-handwritten.svg" alt="Handwritten: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-handwritten.svg" alt="Handwritten: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-diagram.svg" alt="Diagram: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-diagram.svg" alt="Diagram: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-sticky.svg" alt="Sticky Note: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/only-reading-theory-sticky.svg" alt="Sticky Note: गलती ८: केवल सिद्धांत पढ़ना (Only Reading Theory)" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@
 
 ### गलती ९: दूसरों से तुलना (Comparing with Others)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-handwritten.svg" alt="Handwritten: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-handwritten.svg" alt="Handwritten: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-diagram.svg" alt="Diagram: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-diagram.svg" alt="Diagram: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-sticky.svg" alt="Sticky Note: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/comparing-with-others-sticky.svg" alt="Sticky Note: गलती ९: दूसरों से तुलना (Comparing with Others)" width="30%">
 </a>
 
 
@@ -225,14 +225,14 @@
 
 ### गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-handwritten.svg" alt="Handwritten: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-handwritten.svg" alt="Handwritten: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-diagram.svg" alt="Diagram: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-diagram.svg" alt="Diagram: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-sticky.svg" alt="Sticky Note: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/making-meditation-a-goal-sticky.svg" alt="Sticky Note: गलती १०: ध्यान को लक्ष्य बना लेना (Making Meditation a Goal)" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@
 
 ### प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १: ध्यान के लिए सबसे अच्छा समय कौन सा है?" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@
 
 ### प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २: ध्यान करते समय नींद आती है — क्या करूँ?" width="30%">
 </a>
 
 
@@ -287,14 +287,14 @@
 
 ### प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३: क्या मैं ध्यान करते समय मंत्र का उपयोग कर सकता हूँ?" width="30%">
 </a>
 
 
@@ -305,14 +305,14 @@
 
 ### प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ४: क्या ध्यान करने से मेरी रोज़मर्रा की ज़िंदगी में कोई फ़र्क पड़ेगा?" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@
 
 ### प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ५: मुझे कितनी देर ध्यान करना चाहिए?" width="30%">
 </a>
 
 
@@ -341,14 +341,14 @@
 
 ### प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ६: क्या ध्यान करने के लिए किसी विशेष आसन की ज़रूरत है?" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@
 
 ### प्रश्न ७: विचारों को कैसे रोकूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ७: विचारों को कैसे रोकूँ?" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@
 
 ### प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ८: क्या ध्यान करने के लिए ब्रह्मचर्य ज़रूरी है?" width="30%">
 </a>
 
 
@@ -395,14 +395,14 @@
 
 ### प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ९: मैं अकेला ध्यान करता हूँ — क्या कोई साथी चाहिए?" width="30%">
 </a>
 
 
@@ -413,14 +413,14 @@
 
 ### प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १०: क्या मैं ध्यान करते समय आँखें बंद रखूँ या खुली?" width="30%">
 </a>
 
 
@@ -431,14 +431,14 @@
 
 ### प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ११: क्या ध्यान करते समय संगीत सुन सकता हूँ?" width="30%">
 </a>
 
 
@@ -449,14 +449,14 @@
 
 ### प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १२: ध्यान में 'साक्षी' कैसे बनूँ?" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@
 
 ### प्रश्न १३: क्या ध्यान करने से कोई खतरा है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १३: क्या ध्यान करने से कोई खतरा है?" width="30%">
 </a>
 
 
@@ -485,14 +485,14 @@
 
 ### प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १४: ध्यान और एकाग्रता में क्या अंतर है?" width="30%">
 </a>
 
 
@@ -503,14 +503,14 @@
 
 ### प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १५: क्या मैं सोने से पहले ध्यान कर सकता हूँ?" width="30%">
 </a>
 
 
@@ -521,14 +521,14 @@
 
 ### प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १६: क्या मैं खाना खाकर तुरंत ध्यान कर सकता हूँ?" width="30%">
 </a>
 
 
@@ -539,14 +539,14 @@
 
 ### प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १७: क्या ध्यान करने से मेरी नींद कम हो सकती है?" width="30%">
 </a>
 
 
@@ -557,14 +557,14 @@
 
 ### प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १८: क्या मैं ध्यान के दौरान हिल सकता हूँ?" width="30%">
 </a>
 
 
@@ -575,14 +575,14 @@
 
 ### प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न १९: क्या मुझे रोज़ एक ही तकनीक करनी चाहिए?" width="30%">
 </a>
 
 
@@ -593,14 +593,14 @@
 
 ### प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २०: क्या ध्यान करने से मेरी याददाश्त बढ़ेगी?" width="30%">
 </a>
 
 
@@ -611,14 +611,14 @@
 
 ### प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २१: क्या मैं ध्यान करते समय लेट सकता हूँ?" width="30%">
 </a>
 
 
@@ -629,14 +629,14 @@
 
 ### प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २२: ११२ तकनीकों में से मुझे कौन सी चुननी चाहिए?" width="30%">
 </a>
 
 
@@ -647,14 +647,14 @@
 
 ### प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २३: ध्यान में बैठने पर पैर सुन्न हो जाते हैं — क्या करूँ?" width="30%">
 </a>
 
 
@@ -665,14 +665,14 @@
 
 ### प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २४: क्या मैं ध्यान करते समय रो सकता हूँ या हँस सकता हूँ?" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@
 
 ### प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २५: ध्यान करने से मुझे डर लगता है — क्यों?" width="30%">
 </a>
 
 
@@ -701,14 +701,14 @@
 
 ### प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २६: क्या मुझे ध्यान के लिए अलग कमरा चाहिए?" width="30%">
 </a>
 
 
@@ -719,14 +719,14 @@
 
 ### प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २७: मैं ध्यान में कुछ अनुभव नहीं करता — क्या मैं कुछ गलत कर रहा हूँ?" width="30%">
 </a>
 
 
@@ -737,14 +737,14 @@
 
 ### प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २८: ओशो, आप कहते हैं 'कोई प्रयास नहीं' — लेकिन प्रयास किए बिना कैसे होगा?" width="30%">
 </a>
 
 
@@ -755,14 +755,14 @@
 
 ### प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न २९: क्या मैं अपने बच्चों को ध्यान सिखा सकता हूँ?" width="30%">
 </a>
 
 
@@ -773,14 +773,14 @@
 
 ### प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३०: मैं सिर्फ़ दस मिनट ही ध्यान कर पाता हूँ — क्या यह काफ़ी है?" width="30%">
 </a>
 
 
@@ -791,14 +791,14 @@
 
 ### प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३१: मैं बहुत व्यस्त हूँ — ध्यान के लिए समय नहीं है — क्या करूँ?" width="30%">
 </a>
 
 
@@ -809,14 +809,14 @@
 
 ### प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३२: क्या ध्यान और प्रार्थना में अंतर है?" width="30%">
 </a>
 
 
@@ -827,14 +827,14 @@
 
 ### प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३३: ध्यान करने से मेरा स्वभाव बदल जाएगा?" width="30%">
 </a>
 
 
@@ -845,14 +845,14 @@
 
 ### प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३४: मुझे ध्यान में बहुत गुस्सा आता है — क्यों?" width="30%">
 </a>
 
 
@@ -863,14 +863,14 @@
 
 ### प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३६: ध्यान करते समय मेरी आँखों में आँसू आ जाते हैं — क्या यह सही है?" width="30%">
 </a>
 
 
@@ -881,14 +881,14 @@
 
 ### प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३७: क्या मैं ध्यान करते समय कल्पना का उपयोग कर सकता हूँ?" width="30%">
 </a>
 
 
@@ -899,14 +899,14 @@
 
 ### प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३८: मैं कार्यालय में ध्यान कैसे करूँ?" width="30%">
 </a>
 
 
@@ -917,14 +917,14 @@
 
 ### प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३९: क्या ध्यान करने से मेरा रिश्तों पर असर पड़ेगा?" width="30%">
 </a>
 
 
@@ -935,14 +935,14 @@
 
 ### प्रश्न ४०: ध्यान और नींद में क्या अंतर है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ४०: ध्यान और नींद में क्या अंतर है?" width="30%">
 </a>
 
 
@@ -953,14 +953,14 @@
 
 ### प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: प्रश्न ३५: क्या ध्यान से आध्यात्मिक शक्तियाँ प्राप्त होती हैं?" width="30%">
 </a>
 
 
@@ -997,14 +997,14 @@
 
 ### सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र १: साक्षी बनो — विचारों से पहचान मत बनाओ" width="30%">
 </a>
 
 
@@ -1015,14 +1015,14 @@
 
 ### सूत्र २: कोमल रहो — जबरदस्ती मत करो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र २: कोमल रहो — जबरदस्ती मत करो" width="30%">
 </a>
 
 
@@ -1033,14 +1033,14 @@
 
 ### सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ३: नियमित रहो — एक तकनीक को ४० दिन दो" width="30%">
 </a>
 
 
@@ -1051,14 +1051,14 @@
 
 ### सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ४: श्वास को मत भूलो — यह तुम्हारा सबसे अच्छा मित्र है" width="30%">
 </a>
 
 
@@ -1069,14 +1069,14 @@
 
 ### सूत्र ५: धैर्य रखो — जल्दबाजी मत करो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ५: धैर्य रखो — जल्दबाजी मत करो" width="30%">
 </a>
 
 
@@ -1087,14 +1087,14 @@
 
 ### सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ६: अनुभवों से मत चिपको — उन्हें जाने दो" width="30%">
 </a>
 
 
@@ -1105,14 +1105,14 @@
 
 ### सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ७: प्रतिदिन थोड़ा समय निकालो — नियमितता महत्वपूर्ण है" width="30%">
 </a>
 
 
@@ -1123,14 +1123,14 @@
 
 ### सूत्र ८: संदेह करो — अंधविश्वास मत करो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ८: संदेह करो — अंधविश्वास मत करो" width="30%">
 </a>
 
 
@@ -1141,14 +1141,14 @@
 
 ### सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र ९: जीवन को ध्यान बनाओ — सिर्फ बैठकर नहीं" width="30%">
 </a>
 
 
@@ -1159,14 +1159,14 @@
 
 ### सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-handwritten.svg" alt="Handwritten: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-diagram.svg" alt="Diagram: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/common-mistakes-faq/-sticky.svg" alt="Sticky Note: सूत्र १०: स्वयं पर दया रखो — कठोर मत बनो" width="30%">
 </a>
 
 

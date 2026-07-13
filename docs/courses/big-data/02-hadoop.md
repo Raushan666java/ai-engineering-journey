@@ -41,14 +41,14 @@ HDFS (Hadoop Distributed File System) is a fault-tolerant, high-throughput distr
 
 ### 2.1.1 Core Components
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-handwritten.svg" alt="Handwritten: 2.1.1 Core Components" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-handwritten.svg" alt="Handwritten: 2.1.1 Core Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-diagram.svg" alt="Diagram: 2.1.1 Core Components" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-diagram.svg" alt="Diagram: 2.1.1 Core Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-sticky.svg" alt="Sticky Note: 2.1.1 Core Components" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-1-core-components-sticky.svg" alt="Sticky Note: 2.1.1 Core Components" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ print(f"Blocks per datanode (avg): {blocks_per_node}")
 
 ### 2.1.2 Block Replication
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-handwritten.svg" alt="Handwritten: 2.1.2 Block Replication" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-handwritten.svg" alt="Handwritten: 2.1.2 Block Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-diagram.svg" alt="Diagram: 2.1.2 Block Replication" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-diagram.svg" alt="Diagram: 2.1.2 Block Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-sticky.svg" alt="Sticky Note: 2.1.2 Block Replication" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-2-block-replication-sticky.svg" alt="Sticky Note: 2.1.2 Block Replication" width="30%">
 </a>
 
 
@@ -100,14 +100,14 @@ This rack-aware placement ensures that a full rack failure or a single node fail
 
 ### 2.1.3 Heartbeats & Block Reports
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-handwritten.svg" alt="Handwritten: 2.1.3 Heartbeats & Block Reports" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-handwritten.svg" alt="Handwritten: 2.1.3 Heartbeats & Block Reports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-diagram.svg" alt="Diagram: 2.1.3 Heartbeats & Block Reports" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-diagram.svg" alt="Diagram: 2.1.3 Heartbeats & Block Reports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-sticky.svg" alt="Sticky Note: 2.1.3 Heartbeats & Block Reports" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-3-heartbeats-block-reports-sticky.svg" alt="Sticky Note: 2.1.3 Heartbeats & Block Reports" width="30%">
 </a>
 
 
@@ -125,14 +125,14 @@ print(f"Namenode waits {timeout}s ({max_missed} heartbeats) before declaring DN 
 
 ### 2.1.4 HDFS CLI
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-handwritten.svg" alt="Handwritten: 2.1.4 HDFS CLI" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-handwritten.svg" alt="Handwritten: 2.1.4 HDFS CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-diagram.svg" alt="Diagram: 2.1.4 HDFS CLI" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-diagram.svg" alt="Diagram: 2.1.4 HDFS CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-sticky.svg" alt="Sticky Note: 2.1.4 HDFS CLI" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-1-4-hdfs-cli-sticky.svg" alt="Sticky Note: 2.1.4 HDFS CLI" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ MapReduce is a programming model for distributed data processing. It consists of
 
 ### 2.2.1 How MapReduce Works
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-handwritten.svg" alt="Handwritten: 2.2.1 How MapReduce Works" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-handwritten.svg" alt="Handwritten: 2.2.1 How MapReduce Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-diagram.svg" alt="Diagram: 2.2.1 How MapReduce Works" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-diagram.svg" alt="Diagram: 2.2.1 How MapReduce Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-sticky.svg" alt="Sticky Note: 2.2.1 How MapReduce Works" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-1-how-mapreduce-works-sticky.svg" alt="Sticky Note: 2.2.1 How MapReduce Works" width="30%">
 </a>
 
 
@@ -171,14 +171,14 @@ MapReduce is a programming model for distributed data processing. It consists of
 
 ### 2.2.2 Word Count in MapReduce (Python)
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-handwritten.svg" alt="Handwritten: 2.2.2 Word Count in MapReduce (Python)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-handwritten.svg" alt="Handwritten: 2.2.2 Word Count in MapReduce (Python)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-diagram.svg" alt="Diagram: 2.2.2 Word Count in MapReduce (Python)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-diagram.svg" alt="Diagram: 2.2.2 Word Count in MapReduce (Python)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-sticky.svg" alt="Sticky Note: 2.2.2 Word Count in MapReduce (Python)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-2-word-count-in-mapreduce-python-sticky.svg" alt="Sticky Note: 2.2.2 Word Count in MapReduce (Python)" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ if current_word == current_word:
 
 ### 2.2.3 Running a MapReduce Job
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-handwritten.svg" alt="Handwritten: 2.2.3 Running a MapReduce Job" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-handwritten.svg" alt="Handwritten: 2.2.3 Running a MapReduce Job" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-diagram.svg" alt="Diagram: 2.2.3 Running a MapReduce Job" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-diagram.svg" alt="Diagram: 2.2.3 Running a MapReduce Job" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-sticky.svg" alt="Sticky Note: 2.2.3 Running a MapReduce Job" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-3-running-a-mapreduce-job-sticky.svg" alt="Sticky Note: 2.2.3 Running a MapReduce Job" width="30%">
 </a>
 
 
@@ -245,14 +245,14 @@ Hadoop Streaming allows any executable (Python, Perl, Ruby) to serve as mapper a
 
 ### 2.2.4 MapReduce Optimizations
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-handwritten.svg" alt="Handwritten: 2.2.4 MapReduce Optimizations" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-handwritten.svg" alt="Handwritten: 2.2.4 MapReduce Optimizations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-diagram.svg" alt="Diagram: 2.2.4 MapReduce Optimizations" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-diagram.svg" alt="Diagram: 2.2.4 MapReduce Optimizations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-sticky.svg" alt="Sticky Note: 2.2.4 MapReduce Optimizations" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-2-4-mapreduce-optimizations-sticky.svg" alt="Sticky Note: 2.2.4 MapReduce Optimizations" width="30%">
 </a>
 
 
@@ -278,14 +278,14 @@ YARN separates cluster resource management from the processing framework. This a
 
 ### 2.3.1 YARN Components
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-handwritten.svg" alt="Handwritten: 2.3.1 YARN Components" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-handwritten.svg" alt="Handwritten: 2.3.1 YARN Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-diagram.svg" alt="Diagram: 2.3.1 YARN Components" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-diagram.svg" alt="Diagram: 2.3.1 YARN Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-sticky.svg" alt="Sticky Note: 2.3.1 YARN Components" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-1-yarn-components-sticky.svg" alt="Sticky Note: 2.3.1 YARN Components" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ YARN separates cluster resource management from the processing framework. This a
 
 ### 2.3.2 YARN Scheduling Flow
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-handwritten.svg" alt="Handwritten: 2.3.2 YARN Scheduling Flow" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-handwritten.svg" alt="Handwritten: 2.3.2 YARN Scheduling Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-diagram.svg" alt="Diagram: 2.3.2 YARN Scheduling Flow" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-diagram.svg" alt="Diagram: 2.3.2 YARN Scheduling Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-sticky.svg" alt="Sticky Note: 2.3.2 YARN Scheduling Flow" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-2-yarn-scheduling-flow-sticky.svg" alt="Sticky Note: 2.3.2 YARN Scheduling Flow" width="30%">
 </a>
 
 
@@ -339,14 +339,14 @@ def yarn_job_submission():
 
 ### 2.3.3 YARN Schedulers
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-handwritten.svg" alt="Handwritten: 2.3.3 YARN Schedulers" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-handwritten.svg" alt="Handwritten: 2.3.3 YARN Schedulers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-diagram.svg" alt="Diagram: 2.3.3 YARN Schedulers" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-diagram.svg" alt="Diagram: 2.3.3 YARN Schedulers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-sticky.svg" alt="Sticky Note: 2.3.3 YARN Schedulers" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/2-3-3-yarn-schedulers-sticky.svg" alt="Sticky Note: 2.3.3 YARN Schedulers" width="30%">
 </a>
 
 
@@ -504,14 +504,14 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
 
 ### Hadoop Troubleshooting Quick Reference
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-handwritten.svg" alt="Handwritten: Hadoop Troubleshooting Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-handwritten.svg" alt="Handwritten: Hadoop Troubleshooting Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-diagram.svg" alt="Diagram: Hadoop Troubleshooting Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-diagram.svg" alt="Diagram: Hadoop Troubleshooting Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-sticky.svg" alt="Sticky Note: Hadoop Troubleshooting Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/hadoop-troubleshooting-quick-reference-sticky.svg" alt="Sticky Note: Hadoop Troubleshooting Quick Reference" width="30%">
 </a>
 
 
@@ -681,14 +681,14 @@ hdfs.getClusterStatus();
 
 ### Mermaid: HDFS Block Replication Flow
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-handwritten.svg" alt="Handwritten: Mermaid: HDFS Block Replication Flow" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-handwritten.svg" alt="Handwritten: Mermaid: HDFS Block Replication Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-diagram.svg" alt="Diagram: Mermaid: HDFS Block Replication Flow" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-diagram.svg" alt="Diagram: Mermaid: HDFS Block Replication Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-sticky.svg" alt="Sticky Note: Mermaid: HDFS Block Replication Flow" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-hdfs-block-replication-flow-sticky.svg" alt="Sticky Note: Mermaid: HDFS Block Replication Flow" width="30%">
 </a>
 
 
@@ -708,14 +708,14 @@ flowchart TD
 
 ### Mermaid: MapReduce Execution Pipeline
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-handwritten.svg" alt="Handwritten: Mermaid: MapReduce Execution Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-handwritten.svg" alt="Handwritten: Mermaid: MapReduce Execution Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-diagram.svg" alt="Diagram: Mermaid: MapReduce Execution Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-diagram.svg" alt="Diagram: Mermaid: MapReduce Execution Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-sticky.svg" alt="Sticky Note: Mermaid: MapReduce Execution Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/mermaid-mapreduce-execution-pipeline-sticky.svg" alt="Sticky Note: Mermaid: MapReduce Execution Pipeline" width="30%">
 </a>
 
 
@@ -751,14 +751,14 @@ flowchart LR
 
 ### Case Study: Migrating a Hadoop Pipeline to Cloud
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-handwritten.svg" alt="Handwritten: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-handwritten.svg" alt="Handwritten: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-diagram.svg" alt="Diagram: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-diagram.svg" alt="Diagram: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-sticky.svg" alt="Sticky Note: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/case-study-migrating-a-hadoop-pipeline-to-cloud-sticky.svg" alt="Sticky Note: Case Study: Migrating a Hadoop Pipeline to Cloud" width="30%">
 </a>
 
 
@@ -788,14 +788,14 @@ console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCo
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 
@@ -807,14 +807,14 @@ console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCo
 
 ### Answer Key (Additional)
 
-<a href="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-handwritten.svg" alt="Handwritten: Answer Key (Additional)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-handwritten.svg" alt="Handwritten: Answer Key (Additional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-diagram.svg" alt="Diagram: Answer Key (Additional)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-diagram.svg" alt="Diagram: Answer Key (Additional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-sticky.svg" alt="Sticky Note: Answer Key (Additional)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/02-hadoop/answer-key-additional-sticky.svg" alt="Sticky Note: Answer Key (Additional)" width="30%">
 </a>
 
 

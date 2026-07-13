@@ -68,14 +68,14 @@ flowchart LR
 
 ### Real-World Analogy: Car Engine Tuning
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-handwritten.svg" alt="Handwritten: Real-World Analogy: Car Engine Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-handwritten.svg" alt="Handwritten: Real-World Analogy: Car Engine Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-diagram.svg" alt="Diagram: Real-World Analogy: Car Engine Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-diagram.svg" alt="Diagram: Real-World Analogy: Car Engine Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-sticky.svg" alt="Sticky Note: Real-World Analogy: Car Engine Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-car-engine-tuning-sticky.svg" alt="Sticky Note: Real-World Analogy: Car Engine Tuning" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ A bad query plan is like firing pistons out of order â†’ the engine misfire
 
 ### Steps for Systematic Performance Tuning
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-handwritten.svg" alt="Handwritten: Steps for Systematic Performance Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-handwritten.svg" alt="Handwritten: Steps for Systematic Performance Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-diagram.svg" alt="Diagram: Steps for Systematic Performance Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-diagram.svg" alt="Diagram: Steps for Systematic Performance Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-sticky.svg" alt="Sticky Note: Steps for Systematic Performance Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/steps-for-systematic-performance-tuning-sticky.svg" alt="Sticky Note: Steps for Systematic Performance Tuning" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ Step 7: ITERATE â†’ Repeat until SLA is met or diminishing returns
 
 ### Pseudocode: Performance Tuning Loop
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-handwritten.svg" alt="Handwritten: Pseudocode: Performance Tuning Loop" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-handwritten.svg" alt="Handwritten: Pseudocode: Performance Tuning Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-diagram.svg" alt="Diagram: Pseudocode: Performance Tuning Loop" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-diagram.svg" alt="Diagram: Pseudocode: Performance Tuning Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-sticky.svg" alt="Sticky Note: Pseudocode: Performance Tuning Loop" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-performance-tuning-loop-sticky.svg" alt="Sticky Note: Pseudocode: Performance Tuning Loop" width="30%">
 </a>
 
 
@@ -163,14 +163,14 @@ END PROCEDURE
 
 ### Real-World Analogy: Diagnostic Scanner
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-handwritten.svg" alt="Handwritten: Real-World Analogy: Diagnostic Scanner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-handwritten.svg" alt="Handwritten: Real-World Analogy: Diagnostic Scanner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-diagram.svg" alt="Diagram: Real-World Analogy: Diagnostic Scanner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-diagram.svg" alt="Diagram: Real-World Analogy: Diagnostic Scanner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-sticky.svg" alt="Sticky Note: Real-World Analogy: Diagnostic Scanner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-diagnostic-scanner-sticky.svg" alt="Sticky Note: Real-World Analogy: Diagnostic Scanner" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ EXPLAIN is like a car's OBD-II diagnostic scanner. The mechanic connects the sca
 
 ### EXPLAIN Output Anatomy
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-handwritten.svg" alt="Handwritten: EXPLAIN Output Anatomy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-handwritten.svg" alt="Handwritten: EXPLAIN Output Anatomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-diagram.svg" alt="Diagram: EXPLAIN Output Anatomy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-diagram.svg" alt="Diagram: EXPLAIN Output Anatomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-sticky.svg" alt="Sticky Note: EXPLAIN Output Anatomy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-output-anatomy-sticky.svg" alt="Sticky Note: EXPLAIN Output Anatomy" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ EXPLAIN is like a car's OBD-II diagnostic scanner. The mechanic connects the sca
 
 ### Dry Run Trace: EXPLAIN Output Analysis
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-handwritten.svg" alt="Handwritten: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-handwritten.svg" alt="Handwritten: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-diagram.svg" alt="Diagram: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-diagram.svg" alt="Diagram: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-sticky.svg" alt="Sticky Note: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/dry-run-trace-explain-output-analysis-sticky.svg" alt="Sticky Note: Dry Run Trace: EXPLAIN Output Analysis" width="30%">
 </a>
 
 
@@ -270,14 +270,14 @@ Execution Time: 0.134 ms
 
 ### EXPLAIN ANALYZE Key Metrics Table
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-handwritten.svg" alt="Handwritten: EXPLAIN ANALYZE Key Metrics Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-handwritten.svg" alt="Handwritten: EXPLAIN ANALYZE Key Metrics Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-diagram.svg" alt="Diagram: EXPLAIN ANALYZE Key Metrics Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-diagram.svg" alt="Diagram: EXPLAIN ANALYZE Key Metrics Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-sticky.svg" alt="Sticky Note: EXPLAIN ANALYZE Key Metrics Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/explain-analyze-key-metrics-table-sticky.svg" alt="Sticky Note: EXPLAIN ANALYZE Key Metrics Table" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ Execution Time: 0.134 ms
 
 ### C++ Implementation: Query Plan Analyzer
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-handwritten.svg" alt="Handwritten: C++ Implementation: Query Plan Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-handwritten.svg" alt="Handwritten: C++ Implementation: Query Plan Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-diagram.svg" alt="Diagram: C++ Implementation: Query Plan Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-diagram.svg" alt="Diagram: C++ Implementation: Query Plan Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-sticky.svg" alt="Sticky Note: C++ Implementation: Query Plan Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-query-plan-analyzer-sticky.svg" alt="Sticky Note: C++ Implementation: Query Plan Analyzer" width="30%">
 </a>
 
 
@@ -393,14 +393,14 @@ int main() {
 
 ### Python Implementation: Slow Query Debugger
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-handwritten.svg" alt="Handwritten: Python Implementation: Slow Query Debugger" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-handwritten.svg" alt="Handwritten: Python Implementation: Slow Query Debugger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-diagram.svg" alt="Diagram: Python Implementation: Slow Query Debugger" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-diagram.svg" alt="Diagram: Python Implementation: Slow Query Debugger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-sticky.svg" alt="Sticky Note: Python Implementation: Slow Query Debugger" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-slow-query-debugger-sticky.svg" alt="Sticky Note: Python Implementation: Slow Query Debugger" width="30%">
 </a>
 
 
@@ -514,14 +514,14 @@ print(logger.generate_report())
 
 ### Real-World Analogy: Library Catalog System
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Catalog System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Catalog System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-diagram.svg" alt="Diagram: Real-World Analogy: Library Catalog System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-diagram.svg" alt="Diagram: Real-World Analogy: Library Catalog System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Catalog System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-library-catalog-system-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Catalog System" width="30%">
 </a>
 
 
@@ -529,14 +529,14 @@ Indexes are like a library's catalog system. Without a catalog (full scan), you 
 
 ### Covering Index
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-handwritten.svg" alt="Handwritten: Covering Index" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-handwritten.svg" alt="Handwritten: Covering Index" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-diagram.svg" alt="Diagram: Covering Index" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-diagram.svg" alt="Diagram: Covering Index" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-sticky.svg" alt="Sticky Note: Covering Index" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/covering-index-sticky.svg" alt="Sticky Note: Covering Index" width="30%">
 </a>
 
 
@@ -567,14 +567,14 @@ EXPLAIN ANALYZE SELECT email, name FROM users WHERE email = 'a@b.com';
 
 ### Index Hints
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-handwritten.svg" alt="Handwritten: Index Hints" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-handwritten.svg" alt="Handwritten: Index Hints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-diagram.svg" alt="Diagram: Index Hints" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-diagram.svg" alt="Diagram: Index Hints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-sticky.svg" alt="Sticky Note: Index Hints" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/index-hints-sticky.svg" alt="Sticky Note: Index Hints" width="30%">
 </a>
 
 
@@ -610,14 +610,14 @@ WHERE customer_id = 42;
 
 ### C++ Implementation: Index Selectivity Calculator
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Index Selectivity Calculator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Index Selectivity Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-diagram.svg" alt="Diagram: C++ Implementation: Index Selectivity Calculator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-diagram.svg" alt="Diagram: C++ Implementation: Index Selectivity Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Index Selectivity Calculator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-index-selectivity-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Index Selectivity Calculator" width="30%">
 </a>
 
 
@@ -745,14 +745,14 @@ int main() {
 
 ### Python Implementation: Over-Indexing Detector
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-handwritten.svg" alt="Handwritten: Python Implementation: Over-Indexing Detector" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-handwritten.svg" alt="Handwritten: Python Implementation: Over-Indexing Detector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-diagram.svg" alt="Diagram: Python Implementation: Over-Indexing Detector" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-diagram.svg" alt="Diagram: Python Implementation: Over-Indexing Detector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-sticky.svg" alt="Sticky Note: Python Implementation: Over-Indexing Detector" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-over-indexing-detector-sticky.svg" alt="Sticky Note: Python Implementation: Over-Indexing Detector" width="30%">
 </a>
 
 
@@ -871,14 +871,14 @@ for issue in issues:
 
 ### Edge Cases in Index Optimization
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-handwritten.svg" alt="Handwritten: Edge Cases in Index Optimization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-handwritten.svg" alt="Handwritten: Edge Cases in Index Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-diagram.svg" alt="Diagram: Edge Cases in Index Optimization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-diagram.svg" alt="Diagram: Edge Cases in Index Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-sticky.svg" alt="Sticky Note: Edge Cases in Index Optimization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-index-optimization-sticky.svg" alt="Sticky Note: Edge Cases in Index Optimization" width="30%">
 </a>
 
 
@@ -896,14 +896,14 @@ for issue in issues:
 
 ### Real-World Analogy: GPS Route Planning
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-handwritten.svg" alt="Handwritten: Real-World Analogy: GPS Route Planning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-handwritten.svg" alt="Handwritten: Real-World Analogy: GPS Route Planning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-diagram.svg" alt="Diagram: Real-World Analogy: GPS Route Planning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-diagram.svg" alt="Diagram: Real-World Analogy: GPS Route Planning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-sticky.svg" alt="Sticky Note: Real-World Analogy: GPS Route Planning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-gps-route-planning-sticky.svg" alt="Sticky Note: Real-World Analogy: GPS Route Planning" width="30%">
 </a>
 
 
@@ -911,14 +911,14 @@ Query optimization is like GPS route planning. A naive query is a GPS that recal
 
 ### Numbered Steps: Query Rewrite Methodology
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-handwritten.svg" alt="Handwritten: Numbered Steps: Query Rewrite Methodology" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-handwritten.svg" alt="Handwritten: Numbered Steps: Query Rewrite Methodology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-diagram.svg" alt="Diagram: Numbered Steps: Query Rewrite Methodology" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-diagram.svg" alt="Diagram: Numbered Steps: Query Rewrite Methodology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-sticky.svg" alt="Sticky Note: Numbered Steps: Query Rewrite Methodology" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/numbered-steps-query-rewrite-methodology-sticky.svg" alt="Sticky Note: Numbered Steps: Query Rewrite Methodology" width="30%">
 </a>
 
 
@@ -941,14 +941,14 @@ Query optimization is like GPS route planning. A naive query is a GPS that recal
 
 ### Query Rewrite Techniques with Before/After
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-handwritten.svg" alt="Handwritten: Query Rewrite Techniques with Before/After" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-handwritten.svg" alt="Handwritten: Query Rewrite Techniques with Before/After" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-diagram.svg" alt="Diagram: Query Rewrite Techniques with Before/After" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-diagram.svg" alt="Diagram: Query Rewrite Techniques with Before/After" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-sticky.svg" alt="Sticky Note: Query Rewrite Techniques with Before/After" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-rewrite-techniques-with-before-after-sticky.svg" alt="Sticky Note: Query Rewrite Techniques with Before/After" width="30%">
 </a>
 
 
@@ -1038,14 +1038,14 @@ Step 4 â†’ Verify with ANALYZE:
 
 ### A&D Table: Query Rewrite Approaches
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-handwritten.svg" alt="Handwritten: A&D Table: Query Rewrite Approaches" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-handwritten.svg" alt="Handwritten: A&D Table: Query Rewrite Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-diagram.svg" alt="Diagram: A&D Table: Query Rewrite Approaches" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-diagram.svg" alt="Diagram: A&D Table: Query Rewrite Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-sticky.svg" alt="Sticky Note: A&D Table: Query Rewrite Approaches" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/a-d-table-query-rewrite-approaches-sticky.svg" alt="Sticky Note: A&D Table: Query Rewrite Approaches" width="30%">
 </a>
 
 
@@ -1061,14 +1061,14 @@ Step 4 â†’ Verify with ANALYZE:
 
 ### Pseudocode: Query Rewrite Engine
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-handwritten.svg" alt="Handwritten: Pseudocode: Query Rewrite Engine" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-handwritten.svg" alt="Handwritten: Pseudocode: Query Rewrite Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-diagram.svg" alt="Diagram: Pseudocode: Query Rewrite Engine" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-diagram.svg" alt="Diagram: Pseudocode: Query Rewrite Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-sticky.svg" alt="Sticky Note: Pseudocode: Query Rewrite Engine" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/pseudocode-query-rewrite-engine-sticky.svg" alt="Sticky Note: Pseudocode: Query Rewrite Engine" width="30%">
 </a>
 
 
@@ -1113,14 +1113,14 @@ END FUNCTION
 
 ### Real-World Analogy: Warehouse Organization
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-handwritten.svg" alt="Handwritten: Real-World Analogy: Warehouse Organization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-handwritten.svg" alt="Handwritten: Real-World Analogy: Warehouse Organization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-diagram.svg" alt="Diagram: Real-World Analogy: Warehouse Organization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-diagram.svg" alt="Diagram: Real-World Analogy: Warehouse Organization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-sticky.svg" alt="Sticky Note: Real-World Analogy: Warehouse Organization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-warehouse-organization-sticky.svg" alt="Sticky Note: Real-World Analogy: Warehouse Organization" width="30%">
 </a>
 
 
@@ -1128,14 +1128,14 @@ Schema optimization is like organizing a warehouse. **Normalization** is like st
 
 ### Normalization vs Denormalization Decision Table
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-handwritten.svg" alt="Handwritten: Normalization vs Denormalization Decision Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-handwritten.svg" alt="Handwritten: Normalization vs Denormalization Decision Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-diagram.svg" alt="Diagram: Normalization vs Denormalization Decision Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-diagram.svg" alt="Diagram: Normalization vs Denormalization Decision Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-sticky.svg" alt="Sticky Note: Normalization vs Denormalization Decision Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/normalization-vs-denormalization-decision-table-sticky.svg" alt="Sticky Note: Normalization vs Denormalization Decision Table" width="30%">
 </a>
 
 
@@ -1151,14 +1151,14 @@ Schema optimization is like organizing a warehouse. **Normalization** is like st
 
 ### Anti-Pattern: The Over-Normalized Schema
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-handwritten.svg" alt="Handwritten: Anti-Pattern: The Over-Normalized Schema" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-handwritten.svg" alt="Handwritten: Anti-Pattern: The Over-Normalized Schema" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-diagram.svg" alt="Diagram: Anti-Pattern: The Over-Normalized Schema" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-diagram.svg" alt="Diagram: Anti-Pattern: The Over-Normalized Schema" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-sticky.svg" alt="Sticky Note: Anti-Pattern: The Over-Normalized Schema" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/anti-pattern-the-over-normalized-schema-sticky.svg" alt="Sticky Note: Anti-Pattern: The Over-Normalized Schema" width="30%">
 </a>
 
 
@@ -1207,14 +1207,14 @@ FROM product_display WHERE id = 42;
 
 ### Schema Optimization Patterns
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-handwritten.svg" alt="Handwritten: Schema Optimization Patterns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-handwritten.svg" alt="Handwritten: Schema Optimization Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-diagram.svg" alt="Diagram: Schema Optimization Patterns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-diagram.svg" alt="Diagram: Schema Optimization Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-sticky.svg" alt="Sticky Note: Schema Optimization Patterns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/schema-optimization-patterns-sticky.svg" alt="Sticky Note: Schema Optimization Patterns" width="30%">
 </a>
 
 
@@ -1240,14 +1240,14 @@ CLUSTER orders USING idx_orders_created;
 
 ### Real-World Analogy: Engine Control Unit
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-handwritten.svg" alt="Handwritten: Real-World Analogy: Engine Control Unit" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-handwritten.svg" alt="Handwritten: Real-World Analogy: Engine Control Unit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-diagram.svg" alt="Diagram: Real-World Analogy: Engine Control Unit" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-diagram.svg" alt="Diagram: Real-World Analogy: Engine Control Unit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-sticky.svg" alt="Sticky Note: Real-World Analogy: Engine Control Unit" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-engine-control-unit-sticky.svg" alt="Sticky Note: Real-World Analogy: Engine Control Unit" width="30%">
 </a>
 
 
@@ -1255,14 +1255,14 @@ Database configuration is like tuning a car's ECU (Engine Control Unit). The fac
 
 ### Key Configuration Parameters
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-handwritten.svg" alt="Handwritten: Key Configuration Parameters" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-handwritten.svg" alt="Handwritten: Key Configuration Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-diagram.svg" alt="Diagram: Key Configuration Parameters" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-diagram.svg" alt="Diagram: Key Configuration Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-sticky.svg" alt="Sticky Note: Key Configuration Parameters" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/key-configuration-parameters-sticky.svg" alt="Sticky Note: Key Configuration Parameters" width="30%">
 </a>
 
 
@@ -1299,14 +1299,14 @@ min_wal_size = '1GB'
 
 ### Buffer Pool Hit Ratio Analysis
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-handwritten.svg" alt="Handwritten: Buffer Pool Hit Ratio Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-handwritten.svg" alt="Handwritten: Buffer Pool Hit Ratio Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-diagram.svg" alt="Diagram: Buffer Pool Hit Ratio Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-diagram.svg" alt="Diagram: Buffer Pool Hit Ratio Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-sticky.svg" alt="Sticky Note: Buffer Pool Hit Ratio Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/buffer-pool-hit-ratio-analysis-sticky.svg" alt="Sticky Note: Buffer Pool Hit Ratio Analysis" width="30%">
 </a>
 
 
@@ -1343,14 +1343,14 @@ LIMIT 10;
 
 ### Configuration Tuning Steps
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-handwritten.svg" alt="Handwritten: Configuration Tuning Steps" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-handwritten.svg" alt="Handwritten: Configuration Tuning Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-diagram.svg" alt="Diagram: Configuration Tuning Steps" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-diagram.svg" alt="Diagram: Configuration Tuning Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-sticky.svg" alt="Sticky Note: Configuration Tuning Steps" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/configuration-tuning-steps-sticky.svg" alt="Sticky Note: Configuration Tuning Steps" width="30%">
 </a>
 
 
@@ -1369,14 +1369,14 @@ Step 9: ITERATE â†’ check pg_stat_statements for top wait events
 
 ### Python Implementation: Configuration Tuner
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-handwritten.svg" alt="Handwritten: Python Implementation: Configuration Tuner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-handwritten.svg" alt="Handwritten: Python Implementation: Configuration Tuner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-diagram.svg" alt="Diagram: Python Implementation: Configuration Tuner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-diagram.svg" alt="Diagram: Python Implementation: Configuration Tuner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-sticky.svg" alt="Sticky Note: Python Implementation: Configuration Tuner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-configuration-tuner-sticky.svg" alt="Sticky Note: Python Implementation: Configuration Tuner" width="30%">
 </a>
 
 
@@ -1500,14 +1500,14 @@ print(tuner_small.generate_report())
 
 ### Real-World Analogy: Valet Parking
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-handwritten.svg" alt="Handwritten: Real-World Analogy: Valet Parking" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-handwritten.svg" alt="Handwritten: Real-World Analogy: Valet Parking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-diagram.svg" alt="Diagram: Real-World Analogy: Valet Parking" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-diagram.svg" alt="Diagram: Real-World Analogy: Valet Parking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-sticky.svg" alt="Sticky Note: Real-World Analogy: Valet Parking" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-valet-parking-sticky.svg" alt="Sticky Note: Real-World Analogy: Valet Parking" width="30%">
 </a>
 
 
@@ -1515,14 +1515,14 @@ Connection pooling is like a valet parking service. Without a pool, every applic
 
 ### Connection Pool vs Direct Connection
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-handwritten.svg" alt="Handwritten: Connection Pool vs Direct Connection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-handwritten.svg" alt="Handwritten: Connection Pool vs Direct Connection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-diagram.svg" alt="Diagram: Connection Pool vs Direct Connection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-diagram.svg" alt="Diagram: Connection Pool vs Direct Connection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-sticky.svg" alt="Sticky Note: Connection Pool vs Direct Connection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/connection-pool-vs-direct-connection-sticky.svg" alt="Sticky Note: Connection Pool vs Direct Connection" width="30%">
 </a>
 
 
@@ -1538,14 +1538,14 @@ Connection pooling is like a valet parking service. Without a pool, every applic
 
 ### C++ Implementation: Thread-Safe Connection Pool
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-handwritten.svg" alt="Handwritten: C++ Implementation: Thread-Safe Connection Pool" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-handwritten.svg" alt="Handwritten: C++ Implementation: Thread-Safe Connection Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-diagram.svg" alt="Diagram: C++ Implementation: Thread-Safe Connection Pool" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-diagram.svg" alt="Diagram: C++ Implementation: Thread-Safe Connection Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-sticky.svg" alt="Sticky Note: C++ Implementation: Thread-Safe Connection Pool" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-thread-safe-connection-pool-sticky.svg" alt="Sticky Note: C++ Implementation: Thread-Safe Connection Pool" width="30%">
 </a>
 
 
@@ -1734,14 +1734,14 @@ int main() {
 
 ### Python Implementation: Async Connection Pool
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-handwritten.svg" alt="Handwritten: Python Implementation: Async Connection Pool" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-handwritten.svg" alt="Handwritten: Python Implementation: Async Connection Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-diagram.svg" alt="Diagram: Python Implementation: Async Connection Pool" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-diagram.svg" alt="Diagram: Python Implementation: Async Connection Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-sticky.svg" alt="Sticky Note: Python Implementation: Async Connection Pool" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-async-connection-pool-sticky.svg" alt="Sticky Note: Python Implementation: Async Connection Pool" width="30%">
 </a>
 
 
@@ -1875,14 +1875,14 @@ asyncio.run(simulate_workload())
 
 ### Edge Cases in Connection Pooling
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-handwritten.svg" alt="Handwritten: Edge Cases in Connection Pooling" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-handwritten.svg" alt="Handwritten: Edge Cases in Connection Pooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-diagram.svg" alt="Diagram: Edge Cases in Connection Pooling" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-diagram.svg" alt="Diagram: Edge Cases in Connection Pooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-sticky.svg" alt="Sticky Note: Edge Cases in Connection Pooling" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-connection-pooling-sticky.svg" alt="Sticky Note: Edge Cases in Connection Pooling" width="30%">
 </a>
 
 
@@ -1900,14 +1900,14 @@ asyncio.run(simulate_workload())
 
 ### Real-World Analogy: Filing Cabinet System
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-handwritten.svg" alt="Handwritten: Real-World Analogy: Filing Cabinet System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-handwritten.svg" alt="Handwritten: Real-World Analogy: Filing Cabinet System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-diagram.svg" alt="Diagram: Real-World Analogy: Filing Cabinet System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-diagram.svg" alt="Diagram: Real-World Analogy: Filing Cabinet System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-sticky.svg" alt="Sticky Note: Real-World Analogy: Filing Cabinet System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-filing-cabinet-system-sticky.svg" alt="Sticky Note: Real-World Analogy: Filing Cabinet System" width="30%">
 </a>
 
 
@@ -1915,14 +1915,14 @@ Partitioning is like organizing documents into separate filing cabinets by year.
 
 ### Partitioning Types Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-handwritten.svg" alt="Handwritten: Partitioning Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-handwritten.svg" alt="Handwritten: Partitioning Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-diagram.svg" alt="Diagram: Partitioning Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-diagram.svg" alt="Diagram: Partitioning Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-sticky.svg" alt="Sticky Note: Partitioning Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partitioning-types-comparison-sticky.svg" alt="Sticky Note: Partitioning Types Comparison" width="30%">
 </a>
 
 
@@ -1935,14 +1935,14 @@ Partitioning is like organizing documents into separate filing cabinets by year.
 
 ### Partition Pruning Dry Run Trace
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-handwritten.svg" alt="Handwritten: Partition Pruning Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-handwritten.svg" alt="Handwritten: Partition Pruning Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-diagram.svg" alt="Diagram: Partition Pruning Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-diagram.svg" alt="Diagram: Partition Pruning Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-sticky.svg" alt="Sticky Note: Partition Pruning Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/partition-pruning-dry-run-trace-sticky.svg" alt="Sticky Note: Partition Pruning Dry Run Trace" width="30%">
 </a>
 
 
@@ -1977,14 +1977,14 @@ WHERE ts >= '2026-01-01' AND ts < '2026-04-01';
 
 ### C++ Implementation: Partition Pruning Simulator
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Partition Pruning Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Partition Pruning Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-diagram.svg" alt="Diagram: C++ Implementation: Partition Pruning Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-diagram.svg" alt="Diagram: C++ Implementation: Partition Pruning Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Partition Pruning Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-partition-pruning-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Partition Pruning Simulator" width="30%">
 </a>
 
 
@@ -2098,14 +2098,14 @@ int main() {
 
 ### Python Implementation: Partition Manager
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-handwritten.svg" alt="Handwritten: Python Implementation: Partition Manager" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-handwritten.svg" alt="Handwritten: Python Implementation: Partition Manager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-diagram.svg" alt="Diagram: Python Implementation: Partition Manager" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-diagram.svg" alt="Diagram: Python Implementation: Partition Manager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-sticky.svg" alt="Sticky Note: Python Implementation: Partition Manager" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-partition-manager-sticky.svg" alt="Sticky Note: Python Implementation: Partition Manager" width="30%">
 </a>
 
 
@@ -2249,14 +2249,14 @@ if found:
 
 ### Real-World Analogy: Weekly Meal Prep
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-handwritten.svg" alt="Handwritten: Real-World Analogy: Weekly Meal Prep" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-handwritten.svg" alt="Handwritten: Real-World Analogy: Weekly Meal Prep" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-diagram.svg" alt="Diagram: Real-World Analogy: Weekly Meal Prep" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-diagram.svg" alt="Diagram: Real-World Analogy: Weekly Meal Prep" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-sticky.svg" alt="Sticky Note: Real-World Analogy: Weekly Meal Prep" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-weekly-meal-prep-sticky.svg" alt="Sticky Note: Real-World Analogy: Weekly Meal Prep" width="30%">
 </a>
 
 
@@ -2264,14 +2264,14 @@ A materialized view is like meal prepping for the week. On Sunday, you cook 20 m
 
 ### Materialized View vs View vs Temp Table
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-handwritten.svg" alt="Handwritten: Materialized View vs View vs Temp Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-handwritten.svg" alt="Handwritten: Materialized View vs View vs Temp Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-diagram.svg" alt="Diagram: Materialized View vs View vs Temp Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-diagram.svg" alt="Diagram: Materialized View vs View vs Temp Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-sticky.svg" alt="Sticky Note: Materialized View vs View vs Temp Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/materialized-view-vs-view-vs-temp-table-sticky.svg" alt="Sticky Note: Materialized View vs View vs Temp Table" width="30%">
 </a>
 
 
@@ -2288,14 +2288,14 @@ A materialized view is like meal prepping for the week. On Sunday, you cook 20 m
 
 ### C++ Implementation: Materialized View Refresh Scheduler
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-handwritten.svg" alt="Handwritten: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-handwritten.svg" alt="Handwritten: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-diagram.svg" alt="Diagram: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-diagram.svg" alt="Diagram: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-sticky.svg" alt="Sticky Note: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/c-implementation-materialized-view-refresh-scheduler-sticky.svg" alt="Sticky Note: C++ Implementation: Materialized View Refresh Scheduler" width="30%">
 </a>
 
 
@@ -2484,14 +2484,14 @@ int main() {
 
 ### Real-World Analogy: Coffee Thermoses
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-handwritten.svg" alt="Handwritten: Real-World Analogy: Coffee Thermoses" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-handwritten.svg" alt="Handwritten: Real-World Analogy: Coffee Thermoses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-diagram.svg" alt="Diagram: Real-World Analogy: Coffee Thermoses" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-diagram.svg" alt="Diagram: Real-World Analogy: Coffee Thermoses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-sticky.svg" alt="Sticky Note: Real-World Analogy: Coffee Thermoses" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-analogy-coffee-thermoses-sticky.svg" alt="Sticky Note: Real-World Analogy: Coffee Thermoses" width="30%">
 </a>
 
 
@@ -2499,14 +2499,14 @@ Query caching is like having coffee thermoses vs brewing fresh coffee each time.
 
 ### Query Cache vs Application Cache
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-handwritten.svg" alt="Handwritten: Query Cache vs Application Cache" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-handwritten.svg" alt="Handwritten: Query Cache vs Application Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-diagram.svg" alt="Diagram: Query Cache vs Application Cache" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-diagram.svg" alt="Diagram: Query Cache vs Application Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-sticky.svg" alt="Sticky Note: Query Cache vs Application Cache" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/query-cache-vs-application-cache-sticky.svg" alt="Sticky Note: Query Cache vs Application Cache" width="30%">
 </a>
 
 
@@ -2523,14 +2523,14 @@ Query caching is like having coffee thermoses vs brewing fresh coffee each time.
 
 ### PostgreSQL Buffer Cache Inspection
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-handwritten.svg" alt="Handwritten: PostgreSQL Buffer Cache Inspection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-handwritten.svg" alt="Handwritten: PostgreSQL Buffer Cache Inspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-diagram.svg" alt="Diagram: PostgreSQL Buffer Cache Inspection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-diagram.svg" alt="Diagram: PostgreSQL Buffer Cache Inspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-sticky.svg" alt="Sticky Note: PostgreSQL Buffer Cache Inspection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-buffer-cache-inspection-sticky.svg" alt="Sticky Note: PostgreSQL Buffer Cache Inspection" width="30%">
 </a>
 
 
@@ -2557,14 +2557,14 @@ WHERE relname = 'orders';
 
 ### Python Implementation: Query Cache Simulator
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Query Cache Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Query Cache Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-diagram.svg" alt="Diagram: Python Implementation: Query Cache Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-diagram.svg" alt="Diagram: Python Implementation: Query Cache Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Query Cache Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/python-implementation-query-cache-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Query Cache Simulator" width="30%">
 </a>
 
 
@@ -2709,14 +2709,14 @@ print(f"Hit rate: {cache.stats['hit_rate']:.1f}%")
 
 ### Edge Cases in Caching
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-handwritten.svg" alt="Handwritten: Edge Cases in Caching" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-handwritten.svg" alt="Handwritten: Edge Cases in Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-diagram.svg" alt="Diagram: Edge Cases in Caching" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-diagram.svg" alt="Diagram: Edge Cases in Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-sticky.svg" alt="Sticky Note: Edge Cases in Caching" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/edge-cases-in-caching-sticky.svg" alt="Sticky Note: Edge Cases in Caching" width="30%">
 </a>
 
 
@@ -2756,14 +2756,14 @@ Else â†’ Sequential Scan
 
 ### 1. How to Read an EXPLAIN Plan
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-handwritten.svg" alt="Handwritten: 1. How to Read an EXPLAIN Plan" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-handwritten.svg" alt="Handwritten: 1. How to Read an EXPLAIN Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-diagram.svg" alt="Diagram: 1. How to Read an EXPLAIN Plan" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-diagram.svg" alt="Diagram: 1. How to Read an EXPLAIN Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-sticky.svg" alt="Sticky Note: 1. How to Read an EXPLAIN Plan" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/1-how-to-read-an-explain-plan-sticky.svg" alt="Sticky Note: 1. How to Read an EXPLAIN Plan" width="30%">
 </a>
 
 
@@ -2790,14 +2790,14 @@ Step 5: Check for problem patterns:
 
 ### 2. Slow Query Debugging Process
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-handwritten.svg" alt="Handwritten: 2. Slow Query Debugging Process" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-handwritten.svg" alt="Handwritten: 2. Slow Query Debugging Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-diagram.svg" alt="Diagram: 2. Slow Query Debugging Process" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-diagram.svg" alt="Diagram: 2. Slow Query Debugging Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-sticky.svg" alt="Sticky Note: 2. Slow Query Debugging Process" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/2-slow-query-debugging-process-sticky.svg" alt="Sticky Note: 2. Slow Query Debugging Process" width="30%">
 </a>
 
 
@@ -2836,14 +2836,14 @@ Step 5: Check for problem patterns:
 
 ### 3. Index Maintenance Strategy
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-handwritten.svg" alt="Handwritten: 3. Index Maintenance Strategy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-handwritten.svg" alt="Handwritten: 3. Index Maintenance Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-diagram.svg" alt="Diagram: 3. Index Maintenance Strategy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-diagram.svg" alt="Diagram: 3. Index Maintenance Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-sticky.svg" alt="Sticky Note: 3. Index Maintenance Strategy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/3-index-maintenance-strategy-sticky.svg" alt="Sticky Note: 3. Index Maintenance Strategy" width="30%">
 </a>
 
 
@@ -2881,14 +2881,14 @@ RULES:
 
 ### 4. N+1 Query Problem
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-handwritten.svg" alt="Handwritten: 4. N+1 Query Problem" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-handwritten.svg" alt="Handwritten: 4. N+1 Query Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-diagram.svg" alt="Diagram: 4. N+1 Query Problem" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-diagram.svg" alt="Diagram: 4. N+1 Query Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-sticky.svg" alt="Sticky Note: 4. N+1 Query Problem" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/4-n-1-query-problem-sticky.svg" alt="Sticky Note: 4. N+1 Query Problem" width="30%">
 </a>
 
 
@@ -2932,14 +2932,14 @@ LIMIT 10;
 
 ### MySQL Slow Query Log Analysis
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-handwritten.svg" alt="Handwritten: MySQL Slow Query Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-handwritten.svg" alt="Handwritten: MySQL Slow Query Log Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-diagram.svg" alt="Diagram: MySQL Slow Query Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-diagram.svg" alt="Diagram: MySQL Slow Query Log Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-sticky.svg" alt="Sticky Note: MySQL Slow Query Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/mysql-slow-query-log-analysis-sticky.svg" alt="Sticky Note: MySQL Slow Query Log Analysis" width="30%">
 </a>
 
 
@@ -2972,14 +2972,14 @@ pt-query-digest --since "2026-06-01 00:00:00" \
 
 ### PostgreSQL pg_stat_statements
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-handwritten.svg" alt="Handwritten: PostgreSQL pg_stat_statements" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-handwritten.svg" alt="Handwritten: PostgreSQL pg_stat_statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-diagram.svg" alt="Diagram: PostgreSQL pg_stat_statements" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-diagram.svg" alt="Diagram: PostgreSQL pg_stat_statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-sticky.svg" alt="Sticky Note: PostgreSQL pg_stat_statements" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/postgresql-pg-stat-statements-sticky.svg" alt="Sticky Note: PostgreSQL pg_stat_statements" width="30%">
 </a>
 
 
@@ -3009,14 +3009,14 @@ LIMIT 10;
 
 ### AWS Performance Insights (RDS)
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-handwritten.svg" alt="Handwritten: AWS Performance Insights (RDS)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-handwritten.svg" alt="Handwritten: AWS Performance Insights (RDS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-diagram.svg" alt="Diagram: AWS Performance Insights (RDS)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-diagram.svg" alt="Diagram: AWS Performance Insights (RDS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-sticky.svg" alt="Sticky Note: AWS Performance Insights (RDS)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/aws-performance-insights-rds-sticky.svg" alt="Sticky Note: AWS Performance Insights (RDS)" width="30%">
 </a>
 
 
@@ -3045,14 +3045,14 @@ WHERE datname = current_database();
 
 ### Real-World Monitoring Dashboard Query
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-handwritten.svg" alt="Handwritten: Real-World Monitoring Dashboard Query" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-handwritten.svg" alt="Handwritten: Real-World Monitoring Dashboard Query" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-diagram.svg" alt="Diagram: Real-World Monitoring Dashboard Query" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-diagram.svg" alt="Diagram: Real-World Monitoring Dashboard Query" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-sticky.svg" alt="Sticky Note: Real-World Monitoring Dashboard Query" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/real-world-monitoring-dashboard-query-sticky.svg" alt="Sticky Note: Real-World Monitoring Dashboard Query" width="30%">
 </a>
 
 
@@ -3085,14 +3085,14 @@ SELECT
 
 ### 19.11 Specialized Index Types
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-handwritten.svg" alt="Handwritten: 19.11 Specialized Index Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-handwritten.svg" alt="Handwritten: 19.11 Specialized Index Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-diagram.svg" alt="Diagram: 19.11 Specialized Index Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-diagram.svg" alt="Diagram: 19.11 Specialized Index Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-sticky.svg" alt="Sticky Note: 19.11 Specialized Index Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-specialized-index-types-sticky.svg" alt="Sticky Note: 19.11 Specialized Index Types" width="30%">
 </a>
 
 
@@ -3102,14 +3102,14 @@ Chapter 12 covered B+ trees and hash indexes. Production databases demand more.
 
 ### 19.11.1 BRIN (Block Range INdex)
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-handwritten.svg" alt="Handwritten: 19.11.1 BRIN (Block Range INdex)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-handwritten.svg" alt="Handwritten: 19.11.1 BRIN (Block Range INdex)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-diagram.svg" alt="Diagram: 19.11.1 BRIN (Block Range INdex)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-diagram.svg" alt="Diagram: 19.11.1 BRIN (Block Range INdex)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-sticky.svg" alt="Sticky Note: 19.11.1 BRIN (Block Range INdex)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-1-brin-block-range-index-sticky.svg" alt="Sticky Note: 19.11.1 BRIN (Block Range INdex)" width="30%">
 </a>
 
 
@@ -3144,14 +3144,14 @@ BRIN indexes are 100-1000x smaller than B-tree equivalents. For a 100 GB table, 
 
 ### 19.11.2 GiST (Generalized Search Tree)
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-handwritten.svg" alt="Handwritten: 19.11.2 GiST (Generalized Search Tree)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-handwritten.svg" alt="Handwritten: 19.11.2 GiST (Generalized Search Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-diagram.svg" alt="Diagram: 19.11.2 GiST (Generalized Search Tree)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-diagram.svg" alt="Diagram: 19.11.2 GiST (Generalized Search Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-sticky.svg" alt="Sticky Note: 19.11.2 GiST (Generalized Search Tree)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-2-gist-generalized-search-tree-sticky.svg" alt="Sticky Note: 19.11.2 GiST (Generalized Search Tree)" width="30%">
 </a>
 
 
@@ -3186,14 +3186,14 @@ LIMIT 20;
 
 ### 19.11.3 GIN (Generalized Inverted Index)
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-handwritten.svg" alt="Handwritten: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-handwritten.svg" alt="Handwritten: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-diagram.svg" alt="Diagram: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-diagram.svg" alt="Diagram: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-sticky.svg" alt="Sticky Note: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-3-gin-generalized-inverted-index-sticky.svg" alt="Sticky Note: 19.11.3 GIN (Generalized Inverted Index)" width="30%">
 </a>
 
 
@@ -3223,14 +3223,14 @@ CREATE INDEX idx_article_fts
 
 ### 19.11.4 SP-GiST (Space-Partitioned GiST)
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-handwritten.svg" alt="Handwritten: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-handwritten.svg" alt="Handwritten: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-diagram.svg" alt="Diagram: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-diagram.svg" alt="Diagram: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-sticky.svg" alt="Sticky Note: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-11-4-sp-gist-space-partitioned-gist-sticky.svg" alt="Sticky Note: 19.11.4 SP-GiST (Space-Partitioned GiST)" width="30%">
 </a>
 
 
@@ -3254,14 +3254,14 @@ Indexes degrade over time. B-tree pages fragment, dead tuples accumulate, and st
 
 ### 19.12.1 Detecting Index Bloat
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-handwritten.svg" alt="Handwritten: 19.12.1 Detecting Index Bloat" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-handwritten.svg" alt="Handwritten: 19.12.1 Detecting Index Bloat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-diagram.svg" alt="Diagram: 19.12.1 Detecting Index Bloat" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-diagram.svg" alt="Diagram: 19.12.1 Detecting Index Bloat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-sticky.svg" alt="Sticky Note: 19.12.1 Detecting Index Bloat" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-1-detecting-index-bloat-sticky.svg" alt="Sticky Note: 19.12.1 Detecting Index Bloat" width="30%">
 </a>
 
 
@@ -3284,14 +3284,14 @@ This query identifies indexes with low leaf density (high bloat). Indexes with >
 
 ### 19.12.2 Finding Unused Indexes
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-handwritten.svg" alt="Handwritten: 19.12.2 Finding Unused Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-handwritten.svg" alt="Handwritten: 19.12.2 Finding Unused Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-diagram.svg" alt="Diagram: 19.12.2 Finding Unused Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-diagram.svg" alt="Diagram: 19.12.2 Finding Unused Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-sticky.svg" alt="Sticky Note: 19.12.2 Finding Unused Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-2-finding-unused-indexes-sticky.svg" alt="Sticky Note: 19.12.2 Finding Unused Indexes" width="30%">
 </a>
 
 
@@ -3315,14 +3315,14 @@ Unused indexes waste write overhead and cache space. Each index on a table adds 
 
 ### 19.12.3 Rebuilding Indexes
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-handwritten.svg" alt="Handwritten: 19.12.3 Rebuilding Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-handwritten.svg" alt="Handwritten: 19.12.3 Rebuilding Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-diagram.svg" alt="Diagram: 19.12.3 Rebuilding Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-diagram.svg" alt="Diagram: 19.12.3 Rebuilding Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-sticky.svg" alt="Sticky Note: 19.12.3 Rebuilding Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-3-rebuilding-indexes-sticky.svg" alt="Sticky Note: 19.12.3 Rebuilding Indexes" width="30%">
 </a>
 
 
@@ -3347,14 +3347,14 @@ Use CONCURRENTLY in production â†’ it allows reads and writes during the re
 
 ### 19.12.4 Zero-Downtime Index Creation
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-handwritten.svg" alt="Handwritten: 19.12.4 Zero-Downtime Index Creation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-handwritten.svg" alt="Handwritten: 19.12.4 Zero-Downtime Index Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-diagram.svg" alt="Diagram: 19.12.4 Zero-Downtime Index Creation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-diagram.svg" alt="Diagram: 19.12.4 Zero-Downtime Index Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-sticky.svg" alt="Sticky Note: 19.12.4 Zero-Downtime Index Creation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-4-zero-downtime-index-creation-sticky.svg" alt="Sticky Note: 19.12.4 Zero-Downtime Index Creation" width="30%">
 </a>
 
 
@@ -3377,14 +3377,14 @@ The query planner relies on statistics to estimate row counts. Wrong estimates p
 
 ### 19.13.1 ANALYZE Deep Dive
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-handwritten.svg" alt="Handwritten: 19.13.1 ANALYZE Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-handwritten.svg" alt="Handwritten: 19.13.1 ANALYZE Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-diagram.svg" alt="Diagram: 19.13.1 ANALYZE Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-diagram.svg" alt="Diagram: 19.13.1 ANALYZE Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-sticky.svg" alt="Sticky Note: 19.13.1 ANALYZE Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-1-analyze-deep-dive-sticky.svg" alt="Sticky Note: 19.13.1 ANALYZE Deep Dive" width="30%">
 </a>
 
 
@@ -3408,14 +3408,14 @@ PostgreSQL auto-analyzes when a table's pg_class.reltuples differs from actual c
 
 ### 19.13.2 Extended Statistics for Correlated Columns
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-handwritten.svg" alt="Handwritten: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-handwritten.svg" alt="Handwritten: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-diagram.svg" alt="Diagram: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-diagram.svg" alt="Diagram: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-sticky.svg" alt="Sticky Note: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-2-extended-statistics-for-correlated-columns-sticky.svg" alt="Sticky Note: 19.13.2 Extended Statistics for Correlated Columns" width="30%">
 </a>
 
 
@@ -3447,14 +3447,14 @@ CREATE STATISTICS orders_region_mcv (mcv)
 
 ### 19.13.3 Manual Statistics Tuning
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-handwritten.svg" alt="Handwritten: 19.13.3 Manual Statistics Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-handwritten.svg" alt="Handwritten: 19.13.3 Manual Statistics Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-diagram.svg" alt="Diagram: 19.13.3 Manual Statistics Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-diagram.svg" alt="Diagram: 19.13.3 Manual Statistics Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-sticky.svg" alt="Sticky Note: 19.13.3 Manual Statistics Tuning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-13-3-manual-statistics-tuning-sticky.svg" alt="Sticky Note: 19.13.3 Manual Statistics Tuning" width="30%">
 </a>
 
 
@@ -3477,14 +3477,14 @@ Partitioning splits a large table into smaller physical segments while maintaini
 
 ### 19.14.1 Partition Types
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-handwritten.svg" alt="Handwritten: 19.14.1 Partition Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-handwritten.svg" alt="Handwritten: 19.14.1 Partition Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-diagram.svg" alt="Diagram: 19.14.1 Partition Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-diagram.svg" alt="Diagram: 19.14.1 Partition Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-sticky.svg" alt="Sticky Note: 19.14.1 Partition Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-1-partition-types-sticky.svg" alt="Sticky Note: 19.14.1 Partition Types" width="30%">
 </a>
 
 
@@ -3530,14 +3530,14 @@ CREATE TABLE sessions_1 PARTITION OF sessions
 
 ### 19.14.2 Partition Pruning
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-handwritten.svg" alt="Handwritten: 19.14.2 Partition Pruning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-handwritten.svg" alt="Handwritten: 19.14.2 Partition Pruning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-diagram.svg" alt="Diagram: 19.14.2 Partition Pruning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-diagram.svg" alt="Diagram: 19.14.2 Partition Pruning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-sticky.svg" alt="Sticky Note: 19.14.2 Partition Pruning" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-2-partition-pruning-sticky.svg" alt="Sticky Note: 19.14.2 Partition Pruning" width="30%">
 </a>
 
 
@@ -3560,14 +3560,14 @@ Partition pruning works only when the partition key is used in the WHERE clause 
 
 ### 19.14.3 Managing Partitions
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-handwritten.svg" alt="Handwritten: 19.14.3 Managing Partitions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-handwritten.svg" alt="Handwritten: 19.14.3 Managing Partitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-diagram.svg" alt="Diagram: 19.14.3 Managing Partitions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-diagram.svg" alt="Diagram: 19.14.3 Managing Partitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-sticky.svg" alt="Sticky Note: 19.14.3 Managing Partitions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-14-3-managing-partitions-sticky.svg" alt="Sticky Note: 19.14.3 Managing Partitions" width="30%">
 </a>
 
 
@@ -3608,14 +3608,14 @@ Materialized views cache query results as physical tables. They are refreshed on
 
 ### 19.15.1 Basic Usage
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-handwritten.svg" alt="Handwritten: 19.15.1 Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-handwritten.svg" alt="Handwritten: 19.15.1 Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-diagram.svg" alt="Diagram: 19.15.1 Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-diagram.svg" alt="Diagram: 19.15.1 Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-sticky.svg" alt="Sticky Note: 19.15.1 Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-1-basic-usage-sticky.svg" alt="Sticky Note: 19.15.1 Basic Usage" width="30%">
 </a>
 
 
@@ -3644,14 +3644,14 @@ REFRESH MATERIALIZED VIEW CONCURRENTLY mv_monthly_sales;
 
 ### 19.15.2 Real-World Pattern: Reporting Aggregates
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-handwritten.svg" alt="Handwritten: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-handwritten.svg" alt="Handwritten: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-diagram.svg" alt="Diagram: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-diagram.svg" alt="Diagram: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-sticky.svg" alt="Sticky Note: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-15-2-real-world-pattern-reporting-aggregates-sticky.svg" alt="Sticky Note: 19.15.2 Real-World Pattern: Reporting Aggregates" width="30%">
 </a>
 
 
@@ -3752,14 +3752,14 @@ Parallel query does NOT help with:
 
 ### 19.18.1 auto_explain (PostgreSQL)
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-handwritten.svg" alt="Handwritten: 19.18.1 auto_explain (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-handwritten.svg" alt="Handwritten: 19.18.1 auto_explain (PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-diagram.svg" alt="Diagram: 19.18.1 auto_explain (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-diagram.svg" alt="Diagram: 19.18.1 auto_explain (PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-sticky.svg" alt="Sticky Note: 19.18.1 auto_explain (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-1-auto-explain-postgresql-sticky.svg" alt="Sticky Note: 19.18.1 auto_explain (PostgreSQL)" width="30%">
 </a>
 
 
@@ -3775,14 +3775,14 @@ SET auto_explain.log_nested_statements = on;
 
 ### 19.18.2 PostgreSQL Log Analysis with pgBadger
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-handwritten.svg" alt="Handwritten: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-handwritten.svg" alt="Handwritten: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-diagram.svg" alt="Diagram: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-diagram.svg" alt="Diagram: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-sticky.svg" alt="Sticky Note: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-2-postgresql-log-analysis-with-pgbadger-sticky.svg" alt="Sticky Note: 19.18.2 PostgreSQL Log Analysis with pgBadger" width="30%">
 </a>
 
 
@@ -3795,14 +3795,14 @@ pgbadger --follow /var/log/postgresql/postgresql.log
 
 ### 19.18.3 MySQL Slow Query Log
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-handwritten.svg" alt="Handwritten: 19.18.3 MySQL Slow Query Log" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-handwritten.svg" alt="Handwritten: 19.18.3 MySQL Slow Query Log" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-diagram.svg" alt="Diagram: 19.18.3 MySQL Slow Query Log" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-diagram.svg" alt="Diagram: 19.18.3 MySQL Slow Query Log" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-sticky.svg" alt="Sticky Note: 19.18.3 MySQL Slow Query Log" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-3-mysql-slow-query-log-sticky.svg" alt="Sticky Note: 19.18.3 MySQL Slow Query Log" width="30%">
 </a>
 
 
@@ -3822,14 +3822,14 @@ pt-query-digest /var/log/mysql/mysql-slow.log > slow_report.txt
 
 ### 19.18.4 Index Usage Metrics
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-handwritten.svg" alt="Handwritten: 19.18.4 Index Usage Metrics" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-handwritten.svg" alt="Handwritten: 19.18.4 Index Usage Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-diagram.svg" alt="Diagram: 19.18.4 Index Usage Metrics" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-diagram.svg" alt="Diagram: 19.18.4 Index Usage Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-sticky.svg" alt="Sticky Note: 19.18.4 Index Usage Metrics" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-18-4-index-usage-metrics-sticky.svg" alt="Sticky Note: 19.18.4 Index Usage Metrics" width="30%">
 </a>
 
 
@@ -3855,14 +3855,14 @@ Tables with high sequential scans and low index usage are performance tuning tar
 
 ### Case Study A: E-Commerce Catalog
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-handwritten.svg" alt="Handwritten: Case Study A: E-Commerce Catalog" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-handwritten.svg" alt="Handwritten: Case Study A: E-Commerce Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-diagram.svg" alt="Diagram: Case Study A: E-Commerce Catalog" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-diagram.svg" alt="Diagram: Case Study A: E-Commerce Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-sticky.svg" alt="Sticky Note: Case Study A: E-Commerce Catalog" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-a-e-commerce-catalog-sticky.svg" alt="Sticky Note: Case Study A: E-Commerce Catalog" width="30%">
 </a>
 
 
@@ -3884,14 +3884,14 @@ CREATE INDEX idx_products_catalog
 
 ### Case Study B: SaaS Multi-Tenant Analytics
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-handwritten.svg" alt="Handwritten: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-handwritten.svg" alt="Handwritten: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-diagram.svg" alt="Diagram: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-diagram.svg" alt="Diagram: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-sticky.svg" alt="Sticky Note: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-b-saas-multi-tenant-analytics-sticky.svg" alt="Sticky Note: Case Study B: SaaS Multi-Tenant Analytics" width="30%">
 </a>
 
 
@@ -3920,14 +3920,14 @@ CREATE TABLE analytics_events_42_2026_q1 PARTITION OF analytics_events_tenant_42
 
 ### Case Study C: High-Write Logging System
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-handwritten.svg" alt="Handwritten: Case Study C: High-Write Logging System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-handwritten.svg" alt="Handwritten: Case Study C: High-Write Logging System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-diagram.svg" alt="Diagram: Case Study C: High-Write Logging System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-diagram.svg" alt="Diagram: Case Study C: High-Write Logging System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-sticky.svg" alt="Sticky Note: Case Study C: High-Write Logging System" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/case-study-c-high-write-logging-system-sticky.svg" alt="Sticky Note: Case Study C: High-Write Logging System" width="30%">
 </a>
 
 
@@ -3956,14 +3956,14 @@ COMMIT;
 
 ### 19.12 TypeSQL Index & Query Performance Advisor
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-handwritten.svg" alt="Handwritten: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-handwritten.svg" alt="Handwritten: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-diagram.svg" alt="Diagram: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-diagram.svg" alt="Diagram: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-sticky.svg" alt="Sticky Note: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/19-12-typesql-index-query-performance-advisor-sticky.svg" alt="Sticky Note: 19.12 TypeSQL Index & Query Performance Advisor" width="30%">
 </a>
 
 
@@ -4141,14 +4141,14 @@ flowchart TD
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 
@@ -4267,14 +4267,14 @@ flowchart TD
 
 ### Basic
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -4284,14 +4284,14 @@ flowchart TD
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -4301,14 +4301,14 @@ flowchart TD
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/19-performance-tuning/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 

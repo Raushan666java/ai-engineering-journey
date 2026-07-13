@@ -52,14 +52,14 @@ flowchart LR
 
 ### 29.1 Education Data Models
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-handwritten.svg" alt="Handwritten: 29.1 Education Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-handwritten.svg" alt="Handwritten: 29.1 Education Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-diagram.svg" alt="Diagram: 29.1 Education Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-diagram.svg" alt="Diagram: 29.1 Education Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-sticky.svg" alt="Sticky Note: 29.1 Education Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-1-education-data-models-sticky.svg" alt="Sticky Note: 29.1 Education Data Models" width="30%">
 </a>
 
 
@@ -518,14 +518,14 @@ class Grade extends Model
 
 ### 29.2 Personalized Learning Path Agents
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-handwritten.svg" alt="Handwritten: 29.2 Personalized Learning Path Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-handwritten.svg" alt="Handwritten: 29.2 Personalized Learning Path Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-diagram.svg" alt="Diagram: 29.2 Personalized Learning Path Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-diagram.svg" alt="Diagram: 29.2 Personalized Learning Path Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-sticky.svg" alt="Sticky Note: 29.2 Personalized Learning Path Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-2-personalized-learning-path-agents-sticky.svg" alt="Sticky Note: 29.2 Personalized Learning Path Agents" width="30%">
 </a>
 
 
@@ -722,14 +722,14 @@ class LearningPathController extends Controller
 
 ### 29.3 Assessment & Grading Automation
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-handwritten.svg" alt="Handwritten: 29.3 Assessment & Grading Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-handwritten.svg" alt="Handwritten: 29.3 Assessment & Grading Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-diagram.svg" alt="Diagram: 29.3 Assessment & Grading Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-diagram.svg" alt="Diagram: 29.3 Assessment & Grading Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-sticky.svg" alt="Sticky Note: 29.3 Assessment & Grading Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-3-assessment-grading-automation-sticky.svg" alt="Sticky Note: 29.3 Assessment & Grading Automation" width="30%">
 </a>
 
 
@@ -980,14 +980,14 @@ class GradingController extends Controller
 
 ### 29.4 Content Generation for Courses
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-handwritten.svg" alt="Handwritten: 29.4 Content Generation for Courses" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-handwritten.svg" alt="Handwritten: 29.4 Content Generation for Courses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-diagram.svg" alt="Diagram: 29.4 Content Generation for Courses" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-diagram.svg" alt="Diagram: 29.4 Content Generation for Courses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-sticky.svg" alt="Sticky Note: 29.4 Content Generation for Courses" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-4-content-generation-for-courses-sticky.svg" alt="Sticky Note: 29.4 Content Generation for Courses" width="30%">
 </a>
 
 
@@ -1209,14 +1209,14 @@ class ContentGenerationController extends Controller
 
 ### 29.5 Adaptive Quiz Engines
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-handwritten.svg" alt="Handwritten: 29.5 Adaptive Quiz Engines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-handwritten.svg" alt="Handwritten: 29.5 Adaptive Quiz Engines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-diagram.svg" alt="Diagram: 29.5 Adaptive Quiz Engines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-diagram.svg" alt="Diagram: 29.5 Adaptive Quiz Engines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-sticky.svg" alt="Sticky Note: 29.5 Adaptive Quiz Engines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-5-adaptive-quiz-engines-sticky.svg" alt="Sticky Note: 29.5 Adaptive Quiz Engines" width="30%">
 </a>
 
 
@@ -1559,14 +1559,14 @@ class AdaptiveQuizController extends Controller
 
 ### 29.6 Student Progress Tracking Agents
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-handwritten.svg" alt="Handwritten: 29.6 Student Progress Tracking Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-handwritten.svg" alt="Handwritten: 29.6 Student Progress Tracking Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-diagram.svg" alt="Diagram: 29.6 Student Progress Tracking Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-diagram.svg" alt="Diagram: 29.6 Student Progress Tracking Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-sticky.svg" alt="Sticky Note: 29.6 Student Progress Tracking Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-6-student-progress-tracking-agents-sticky.svg" alt="Sticky Note: 29.6 Student Progress Tracking Agents" width="30%">
 </a>
 
 
@@ -1892,14 +1892,14 @@ class MonitorStudentProgress extends Command
 
 ### 29.7 Enrollment Workflow Automation
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-handwritten.svg" alt="Handwritten: 29.7 Enrollment Workflow Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-handwritten.svg" alt="Handwritten: 29.7 Enrollment Workflow Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-diagram.svg" alt="Diagram: 29.7 Enrollment Workflow Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-diagram.svg" alt="Diagram: 29.7 Enrollment Workflow Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-sticky.svg" alt="Sticky Note: 29.7 Enrollment Workflow Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-7-enrollment-workflow-automation-sticky.svg" alt="Sticky Note: 29.7 Enrollment Workflow Automation" width="30%">
 </a>
 
 
@@ -2196,14 +2196,14 @@ class EnrollmentController extends Controller
 
 ### 29.8 Recommendation Systems for Curricula
 
-<a href="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-handwritten.svg" alt="Handwritten: 29.8 Recommendation Systems for Curricula" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-handwritten.svg" alt="Handwritten: 29.8 Recommendation Systems for Curricula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-diagram.svg" alt="Diagram: 29.8 Recommendation Systems for Curricula" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-diagram.svg" alt="Diagram: 29.8 Recommendation Systems for Curricula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-sticky.svg" alt="Sticky Note: 29.8 Recommendation Systems for Curricula" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/29-8-recommendation-systems-for-curricula-sticky.svg" alt="Sticky Note: 29.8 Recommendation Systems for Curricula" width="30%">
 </a>
 
 
@@ -2486,14 +2486,14 @@ class CurriculumRecommendationController extends Controller
 
 ### Summary
 
-<a href="../../assets/images/diagrams/laravel/29-education/summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/summary-diagram.svg" alt="Diagram: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/29-education/summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/29-education/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+<a href="../../../assets/images/diagrams/laravel/29-education/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/29-education/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
 </a>
 
 

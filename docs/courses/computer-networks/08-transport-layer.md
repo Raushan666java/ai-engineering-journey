@@ -16,14 +16,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -75,14 +75,14 @@ flowchart LR
 
 ### TCP State Diagram with Color-Coded Transitions
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-handwritten.svg" alt="Handwritten: TCP State Diagram with Color-Coded Transitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-handwritten.svg" alt="Handwritten: TCP State Diagram with Color-Coded Transitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-diagram.svg" alt="Diagram: TCP State Diagram with Color-Coded Transitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-diagram.svg" alt="Diagram: TCP State Diagram with Color-Coded Transitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-sticky.svg" alt="Sticky Note: TCP State Diagram with Color-Coded Transitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-diagram-with-color-coded-transitions-sticky.svg" alt="Sticky Note: TCP State Diagram with Color-Coded Transitions" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ stateDiagram-v2
 
 ### 8.1.1 Logical Communication Between Processes
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-handwritten.svg" alt="Handwritten: 8.1.1 Logical Communication Between Processes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-handwritten.svg" alt="Handwritten: 8.1.1 Logical Communication Between Processes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-diagram.svg" alt="Diagram: 8.1.1 Logical Communication Between Processes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-diagram.svg" alt="Diagram: 8.1.1 Logical Communication Between Processes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-sticky.svg" alt="Sticky Note: 8.1.1 Logical Communication Between Processes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-1-logical-communication-between-processes-sticky.svg" alt="Sticky Note: 8.1.1 Logical Communication Between Processes" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ The transport layer provides **logical communication** between application proce
 
 ### 8.1.2 Multiplexing and Demultiplexing
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-handwritten.svg" alt="Handwritten: 8.1.2 Multiplexing and Demultiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-handwritten.svg" alt="Handwritten: 8.1.2 Multiplexing and Demultiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-diagram.svg" alt="Diagram: 8.1.2 Multiplexing and Demultiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-diagram.svg" alt="Diagram: 8.1.2 Multiplexing and Demultiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-sticky.svg" alt="Sticky Note: 8.1.2 Multiplexing and Demultiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-2-multiplexing-and-demultiplexing-sticky.svg" alt="Sticky Note: 8.1.2 Multiplexing and Demultiplexing" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ function demultiplex(segment, ip_header):
 
 ### 8.1.3 Transport Protocol Service Models
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-handwritten.svg" alt="Handwritten: 8.1.3 Transport Protocol Service Models" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-handwritten.svg" alt="Handwritten: 8.1.3 Transport Protocol Service Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-diagram.svg" alt="Diagram: 8.1.3 Transport Protocol Service Models" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-diagram.svg" alt="Diagram: 8.1.3 Transport Protocol Service Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-sticky.svg" alt="Sticky Note: 8.1.3 Transport Protocol Service Models" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-3-transport-protocol-service-models-sticky.svg" alt="Sticky Note: 8.1.3 Transport Protocol Service Models" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ Transport protocols offer two service models:
 
 ### 8.1.4 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 8.1.4 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 8.1.4 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-diagram.svg" alt="Diagram: 8.1.4 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-diagram.svg" alt="Diagram: 8.1.4 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 8.1.4 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-1-4-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 8.1.4 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ Transport protocols offer two service models:
 
 ### 8.2.1 UDP Segment Format
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-handwritten.svg" alt="Handwritten: 8.2.1 UDP Segment Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-handwritten.svg" alt="Handwritten: 8.2.1 UDP Segment Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-diagram.svg" alt="Diagram: 8.2.1 UDP Segment Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-diagram.svg" alt="Diagram: 8.2.1 UDP Segment Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-sticky.svg" alt="Sticky Note: 8.2.1 UDP Segment Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-1-udp-segment-format-sticky.svg" alt="Sticky Note: 8.2.1 UDP Segment Format" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ The maximum UDP payload = 65,535 - 20 (IP header) - 8 (UDP header) = 65,507 byte
 
 ### 8.2.2 UDP Checksum (Detailed)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-handwritten.svg" alt="Handwritten: 8.2.2 UDP Checksum (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-handwritten.svg" alt="Handwritten: 8.2.2 UDP Checksum (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-diagram.svg" alt="Diagram: 8.2.2 UDP Checksum (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-diagram.svg" alt="Diagram: 8.2.2 UDP Checksum (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-sticky.svg" alt="Sticky Note: 8.2.2 UDP Checksum (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-2-udp-checksum-detailed-sticky.svg" alt="Sticky Note: 8.2.2 UDP Checksum (Detailed)" width="30%">
 </a>
 
 
@@ -361,14 +361,14 @@ function udp_checksum(udp_segment, src_ip, dest_ip):
 
 ### 8.2.3 UDP Applications (Expanded)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-handwritten.svg" alt="Handwritten: 8.2.3 UDP Applications (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-handwritten.svg" alt="Handwritten: 8.2.3 UDP Applications (Expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-diagram.svg" alt="Diagram: 8.2.3 UDP Applications (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-diagram.svg" alt="Diagram: 8.2.3 UDP Applications (Expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-sticky.svg" alt="Sticky Note: 8.2.3 UDP Applications (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-3-udp-applications-expanded-sticky.svg" alt="Sticky Note: 8.2.3 UDP Applications (Expanded)" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ UDP is suitable for:
 
 ### 8.2.4 UDP Echo Server (Python Implementation)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-handwritten.svg" alt="Handwritten: 8.2.4 UDP Echo Server (Python Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-handwritten.svg" alt="Handwritten: 8.2.4 UDP Echo Server (Python Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-diagram.svg" alt="Diagram: 8.2.4 UDP Echo Server (Python Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-diagram.svg" alt="Diagram: 8.2.4 UDP Echo Server (Python Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-sticky.svg" alt="Sticky Note: 8.2.4 UDP Echo Server (Python Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-4-udp-echo-server-python-implementation-sticky.svg" alt="Sticky Note: 8.2.4 UDP Echo Server (Python Implementation)" width="30%">
 </a>
 
 
@@ -421,14 +421,14 @@ def udp_echo_server(host='0.0.0.0', port=8080):
 
 ### 8.2.5 UDP Echo Client (Python Implementation)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-handwritten.svg" alt="Handwritten: 8.2.5 UDP Echo Client (Python Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-handwritten.svg" alt="Handwritten: 8.2.5 UDP Echo Client (Python Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-diagram.svg" alt="Diagram: 8.2.5 UDP Echo Client (Python Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-diagram.svg" alt="Diagram: 8.2.5 UDP Echo Client (Python Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-sticky.svg" alt="Sticky Note: 8.2.5 UDP Echo Client (Python Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-5-udp-echo-client-python-implementation-sticky.svg" alt="Sticky Note: 8.2.5 UDP Echo Client (Python Implementation)" width="30%">
 </a>
 
 
@@ -460,14 +460,14 @@ def udp_echo_client(message=b"Hello UDP", host='127.0.0.1', port=8080):
 
 ### 8.2.6 UDP Echo Server (C++ Implementation)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-handwritten.svg" alt="Handwritten: 8.2.6 UDP Echo Server (C++ Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-handwritten.svg" alt="Handwritten: 8.2.6 UDP Echo Server (C++ Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-diagram.svg" alt="Diagram: 8.2.6 UDP Echo Server (C++ Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-diagram.svg" alt="Diagram: 8.2.6 UDP Echo Server (C++ Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-sticky.svg" alt="Sticky Note: 8.2.6 UDP Echo Server (C++ Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-6-udp-echo-server-c-implementation-sticky.svg" alt="Sticky Note: 8.2.6 UDP Echo Server (C++ Implementation)" width="30%">
 </a>
 
 
@@ -536,14 +536,14 @@ public:
 
 ### 8.2.7 UDP Edge Cases (Expanded)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-handwritten.svg" alt="Handwritten: 8.2.7 UDP Edge Cases (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-handwritten.svg" alt="Handwritten: 8.2.7 UDP Edge Cases (Expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-diagram.svg" alt="Diagram: 8.2.7 UDP Edge Cases (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-diagram.svg" alt="Diagram: 8.2.7 UDP Edge Cases (Expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-sticky.svg" alt="Sticky Note: 8.2.7 UDP Edge Cases (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-2-7-udp-edge-cases-expanded-sticky.svg" alt="Sticky Note: 8.2.7 UDP Edge Cases (Expanded)" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ class UDPDatagramHandler {
 
 ### 8.3.1 TCP Segment Format (Bit-Level Layout)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-handwritten.svg" alt="Handwritten: 8.3.1 TCP Segment Format (Bit-Level Layout)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-handwritten.svg" alt="Handwritten: 8.3.1 TCP Segment Format (Bit-Level Layout)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-diagram.svg" alt="Diagram: 8.3.1 TCP Segment Format (Bit-Level Layout)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-diagram.svg" alt="Diagram: 8.3.1 TCP Segment Format (Bit-Level Layout)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-sticky.svg" alt="Sticky Note: 8.3.1 TCP Segment Format (Bit-Level Layout)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-1-tcp-segment-format-bit-level-layout-sticky.svg" alt="Sticky Note: 8.3.1 TCP Segment Format (Bit-Level Layout)" width="30%">
 </a>
 
 
@@ -703,14 +703,14 @@ The TCP header is **20 bytes minimum**, up to **60 bytes** with options. Here is
 
 ### 8.3.2 TCP Connection Establishment — Three-Way Handshake
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-handwritten.svg" alt="Handwritten: 8.3.2 TCP Connection Establishment — Three-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-handwritten.svg" alt="Handwritten: 8.3.2 TCP Connection Establishment — Three-Way Handshake" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-diagram.svg" alt="Diagram: 8.3.2 TCP Connection Establishment — Three-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-diagram.svg" alt="Diagram: 8.3.2 TCP Connection Establishment — Three-Way Handshake" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-sticky.svg" alt="Sticky Note: 8.3.2 TCP Connection Establishment — Three-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-2-tcp-connection-establishment-three-way-handshake-sticky.svg" alt="Sticky Note: 8.3.2 TCP Connection Establishment — Three-Way Handshake" width="30%">
 </a>
 
 
@@ -797,14 +797,14 @@ function tcp_listen(port):
 
 ### 8.3.3 TCP Connection Teardown — Four-Way Handshake
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-handwritten.svg" alt="Handwritten: 8.3.3 TCP Connection Teardown — Four-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-handwritten.svg" alt="Handwritten: 8.3.3 TCP Connection Teardown — Four-Way Handshake" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-diagram.svg" alt="Diagram: 8.3.3 TCP Connection Teardown — Four-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-diagram.svg" alt="Diagram: 8.3.3 TCP Connection Teardown — Four-Way Handshake" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-sticky.svg" alt="Sticky Note: 8.3.3 TCP Connection Teardown — Four-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-3-tcp-connection-teardown-four-way-handshake-sticky.svg" alt="Sticky Note: 8.3.3 TCP Connection Teardown — Four-Way Handshake" width="30%">
 </a>
 
 
@@ -890,14 +890,14 @@ function tcp_close():
 
 ### 8.3.4 TCP State Diagram (11 States)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-handwritten.svg" alt="Handwritten: 8.3.4 TCP State Diagram (11 States)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-handwritten.svg" alt="Handwritten: 8.3.4 TCP State Diagram (11 States)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-diagram.svg" alt="Diagram: 8.3.4 TCP State Diagram (11 States)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-diagram.svg" alt="Diagram: 8.3.4 TCP State Diagram (11 States)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-sticky.svg" alt="Sticky Note: 8.3.4 TCP State Diagram (11 States)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-4-tcp-state-diagram-11-states-sticky.svg" alt="Sticky Note: 8.3.4 TCP State Diagram (11 States)" width="30%">
 </a>
 
 
@@ -1253,14 +1253,14 @@ class TCPConnectionStateMachine {
 
 ### 8.3.5 TCP Flow Control — Sliding Window
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-handwritten.svg" alt="Handwritten: 8.3.5 TCP Flow Control — Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-handwritten.svg" alt="Handwritten: 8.3.5 TCP Flow Control — Sliding Window" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-diagram.svg" alt="Diagram: 8.3.5 TCP Flow Control — Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-diagram.svg" alt="Diagram: 8.3.5 TCP Flow Control — Sliding Window" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-sticky.svg" alt="Sticky Note: 8.3.5 TCP Flow Control — Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-5-tcp-flow-control-sliding-window-sticky.svg" alt="Sticky Note: 8.3.5 TCP Flow Control — Sliding Window" width="30%">
 </a>
 
 
@@ -1445,14 +1445,14 @@ public:
 
 ### 8.3.6 Flow Control vs Congestion Control
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-handwritten.svg" alt="Handwritten: 8.3.6 Flow Control vs Congestion Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-handwritten.svg" alt="Handwritten: 8.3.6 Flow Control vs Congestion Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-diagram.svg" alt="Diagram: 8.3.6 Flow Control vs Congestion Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-diagram.svg" alt="Diagram: 8.3.6 Flow Control vs Congestion Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-sticky.svg" alt="Sticky Note: 8.3.6 Flow Control vs Congestion Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-6-flow-control-vs-congestion-control-sticky.svg" alt="Sticky Note: 8.3.6 Flow Control vs Congestion Control" width="30%">
 </a>
 
 
@@ -1473,14 +1473,14 @@ public:
 
 ### 8.3.7 TCP Timers
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-handwritten.svg" alt="Handwritten: 8.3.7 TCP Timers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-handwritten.svg" alt="Handwritten: 8.3.7 TCP Timers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-diagram.svg" alt="Diagram: 8.3.7 TCP Timers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-diagram.svg" alt="Diagram: 8.3.7 TCP Timers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-sticky.svg" alt="Sticky Note: 8.3.7 TCP Timers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-7-tcp-timers-sticky.svg" alt="Sticky Note: 8.3.7 TCP Timers" width="30%">
 </a>
 
 
@@ -1522,14 +1522,14 @@ function retransmission_timeout():
 
 ### 8.3.8 TCP Options (Expanded)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-handwritten.svg" alt="Handwritten: 8.3.8 TCP Options (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-handwritten.svg" alt="Handwritten: 8.3.8 TCP Options (Expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-diagram.svg" alt="Diagram: 8.3.8 TCP Options (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-diagram.svg" alt="Diagram: 8.3.8 TCP Options (Expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-sticky.svg" alt="Sticky Note: 8.3.8 TCP Options (Expanded)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-8-tcp-options-expanded-sticky.svg" alt="Sticky Note: 8.3.8 TCP Options (Expanded)" width="30%">
 </a>
 
 
@@ -1551,14 +1551,14 @@ function retransmission_timeout():
 
 ### 8.3.9 TCP Reliability Mechanisms — Detailed
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-handwritten.svg" alt="Handwritten: 8.3.9 TCP Reliability Mechanisms — Detailed" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-handwritten.svg" alt="Handwritten: 8.3.9 TCP Reliability Mechanisms — Detailed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-diagram.svg" alt="Diagram: 8.3.9 TCP Reliability Mechanisms — Detailed" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-diagram.svg" alt="Diagram: 8.3.9 TCP Reliability Mechanisms — Detailed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-sticky.svg" alt="Sticky Note: 8.3.9 TCP Reliability Mechanisms — Detailed" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-9-tcp-reliability-mechanisms-detailed-sticky.svg" alt="Sticky Note: 8.3.9 TCP Reliability Mechanisms — Detailed" width="30%">
 </a>
 
 
@@ -1594,14 +1594,14 @@ Receiver:|ACK2000|ACK2000|ACK2000|ACK2000|  <-- 3 duplicate ACKs
 
 ### 8.3.10 TCP Performance Overhead Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-handwritten.svg" alt="Handwritten: 8.3.10 TCP Performance Overhead Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-handwritten.svg" alt="Handwritten: 8.3.10 TCP Performance Overhead Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-diagram.svg" alt="Diagram: 8.3.10 TCP Performance Overhead Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-diagram.svg" alt="Diagram: 8.3.10 TCP Performance Overhead Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-sticky.svg" alt="Sticky Note: 8.3.10 TCP Performance Overhead Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-10-tcp-performance-overhead-analysis-sticky.svg" alt="Sticky Note: 8.3.10 TCP Performance Overhead Analysis" width="30%">
 </a>
 
 
@@ -1629,14 +1629,14 @@ Receiver:|ACK2000|ACK2000|ACK2000|ACK2000|  <-- 3 duplicate ACKs
 
 ### 8.3.11 TCP Timestamp Options and RTT Measurement
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-handwritten.svg" alt="Handwritten: 8.3.11 TCP Timestamp Options and RTT Measurement" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-handwritten.svg" alt="Handwritten: 8.3.11 TCP Timestamp Options and RTT Measurement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-diagram.svg" alt="Diagram: 8.3.11 TCP Timestamp Options and RTT Measurement" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-diagram.svg" alt="Diagram: 8.3.11 TCP Timestamp Options and RTT Measurement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-sticky.svg" alt="Sticky Note: 8.3.11 TCP Timestamp Options and RTT Measurement" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-3-11-tcp-timestamp-options-and-rtt-measurement-sticky.svg" alt="Sticky Note: 8.3.11 TCP Timestamp Options and RTT Measurement" width="30%">
 </a>
 
 
@@ -1678,14 +1678,14 @@ Added to TCP Options, making base header 20+10=30 bytes minimum
 
 ### 8.4.1 SCTP Overview
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-handwritten.svg" alt="Handwritten: 8.4.1 SCTP Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-handwritten.svg" alt="Handwritten: 8.4.1 SCTP Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-diagram.svg" alt="Diagram: 8.4.1 SCTP Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-diagram.svg" alt="Diagram: 8.4.1 SCTP Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-sticky.svg" alt="Sticky Note: 8.4.1 SCTP Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-1-sctp-overview-sticky.svg" alt="Sticky Note: 8.4.1 SCTP Overview" width="30%">
 </a>
 
 
@@ -1704,14 +1704,14 @@ SCTP (RFC 4960) is a transport protocol designed for telecommunication signaling
 
 ### 8.4.2 SCTP Association Setup (4-Way Handshake)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-handwritten.svg" alt="Handwritten: 8.4.2 SCTP Association Setup (4-Way Handshake)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-handwritten.svg" alt="Handwritten: 8.4.2 SCTP Association Setup (4-Way Handshake)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-diagram.svg" alt="Diagram: 8.4.2 SCTP Association Setup (4-Way Handshake)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-diagram.svg" alt="Diagram: 8.4.2 SCTP Association Setup (4-Way Handshake)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-sticky.svg" alt="Sticky Note: 8.4.2 SCTP Association Setup (4-Way Handshake)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-2-sctp-association-setup-4-way-handshake-sticky.svg" alt="Sticky Note: 8.4.2 SCTP Association Setup (4-Way Handshake)" width="30%">
 </a>
 
 
@@ -1728,14 +1728,14 @@ The SCTP 4-way handshake protects against SYN flood attacks by using a **state c
 
 ### 8.4.3 SCTP Multi-Homing
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-handwritten.svg" alt="Handwritten: 8.4.3 SCTP Multi-Homing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-handwritten.svg" alt="Handwritten: 8.4.3 SCTP Multi-Homing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-diagram.svg" alt="Diagram: 8.4.3 SCTP Multi-Homing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-diagram.svg" alt="Diagram: 8.4.3 SCTP Multi-Homing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-sticky.svg" alt="Sticky Note: 8.4.3 SCTP Multi-Homing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-3-sctp-multi-homing-sticky.svg" alt="Sticky Note: 8.4.3 SCTP Multi-Homing" width="30%">
 </a>
 
 
@@ -1751,14 +1751,14 @@ SCTP endpoints can be associated with multiple IP addresses. If the primary path
 
 ### 8.4.4 SCTP vs TCP vs UDP Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-handwritten.svg" alt="Handwritten: 8.4.4 SCTP vs TCP vs UDP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-handwritten.svg" alt="Handwritten: 8.4.4 SCTP vs TCP vs UDP Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-diagram.svg" alt="Diagram: 8.4.4 SCTP vs TCP vs UDP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-diagram.svg" alt="Diagram: 8.4.4 SCTP vs TCP vs UDP Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-sticky.svg" alt="Sticky Note: 8.4.4 SCTP vs TCP vs UDP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-4-4-sctp-vs-tcp-vs-udp-comparison-sticky.svg" alt="Sticky Note: 8.4.4 SCTP vs TCP vs UDP Comparison" width="30%">
 </a>
 
 
@@ -1784,14 +1784,14 @@ SCTP endpoints can be associated with multiple IP addresses. If the primary path
 
 ### 8.5.1 QUIC Overview
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-handwritten.svg" alt="Handwritten: 8.5.1 QUIC Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-handwritten.svg" alt="Handwritten: 8.5.1 QUIC Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-diagram.svg" alt="Diagram: 8.5.1 QUIC Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-diagram.svg" alt="Diagram: 8.5.1 QUIC Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-sticky.svg" alt="Sticky Note: 8.5.1 QUIC Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-1-quic-overview-sticky.svg" alt="Sticky Note: 8.5.1 QUIC Overview" width="30%">
 </a>
 
 
@@ -1808,14 +1808,14 @@ QUIC (RFC 9000) is a transport protocol developed by Google, now standardized by
 
 ### 8.5.2 QUIC vs TCP Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-handwritten.svg" alt="Handwritten: 8.5.2 QUIC vs TCP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-handwritten.svg" alt="Handwritten: 8.5.2 QUIC vs TCP Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-diagram.svg" alt="Diagram: 8.5.2 QUIC vs TCP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-diagram.svg" alt="Diagram: 8.5.2 QUIC vs TCP Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-sticky.svg" alt="Sticky Note: 8.5.2 QUIC vs TCP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-2-quic-vs-tcp-comparison-sticky.svg" alt="Sticky Note: 8.5.2 QUIC vs TCP Comparison" width="30%">
 </a>
 
 
@@ -1833,14 +1833,14 @@ QUIC (RFC 9000) is a transport protocol developed by Google, now standardized by
 
 ### 8.5.3 QUIC Connection Establishment
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-handwritten.svg" alt="Handwritten: 8.5.3 QUIC Connection Establishment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-handwritten.svg" alt="Handwritten: 8.5.3 QUIC Connection Establishment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-diagram.svg" alt="Diagram: 8.5.3 QUIC Connection Establishment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-diagram.svg" alt="Diagram: 8.5.3 QUIC Connection Establishment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-sticky.svg" alt="Sticky Note: 8.5.3 QUIC Connection Establishment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-3-quic-connection-establishment-sticky.svg" alt="Sticky Note: 8.5.3 QUIC Connection Establishment" width="30%">
 </a>
 
 
@@ -1859,14 +1859,14 @@ QUIC Client (1-RTT — first connection):
 
 ### 8.5.4 QUIC Connection Migration
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-handwritten.svg" alt="Handwritten: 8.5.4 QUIC Connection Migration" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-handwritten.svg" alt="Handwritten: 8.5.4 QUIC Connection Migration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-diagram.svg" alt="Diagram: 8.5.4 QUIC Connection Migration" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-diagram.svg" alt="Diagram: 8.5.4 QUIC Connection Migration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-sticky.svg" alt="Sticky Note: 8.5.4 QUIC Connection Migration" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-4-quic-connection-migration-sticky.svg" alt="Sticky Note: 8.5.4 QUIC Connection Migration" width="30%">
 </a>
 
 
@@ -1889,14 +1889,14 @@ QUIC: Connection ID = 0xABCD1234, any IP any port
 
 ### 8.5.5 QUIC Packet Format
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-handwritten.svg" alt="Handwritten: 8.5.5 QUIC Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-handwritten.svg" alt="Handwritten: 8.5.5 QUIC Packet Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-diagram.svg" alt="Diagram: 8.5.5 QUIC Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-diagram.svg" alt="Diagram: 8.5.5 QUIC Packet Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-sticky.svg" alt="Sticky Note: 8.5.5 QUIC Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-5-quic-packet-format-sticky.svg" alt="Sticky Note: 8.5.5 QUIC Packet Format" width="30%">
 </a>
 
 
@@ -1940,14 +1940,14 @@ QUIC packets have a variable-length header. The **Long Header** is used during h
 
 ### 8.5.6 QUIC Applications
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-handwritten.svg" alt="Handwritten: 8.5.6 QUIC Applications" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-handwritten.svg" alt="Handwritten: 8.5.6 QUIC Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-diagram.svg" alt="Diagram: 8.5.6 QUIC Applications" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-diagram.svg" alt="Diagram: 8.5.6 QUIC Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-sticky.svg" alt="Sticky Note: 8.5.6 QUIC Applications" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-5-6-quic-applications-sticky.svg" alt="Sticky Note: 8.5.6 QUIC Applications" width="30%">
 </a>
 
 
@@ -1986,14 +1986,14 @@ QUIC packets have a variable-length header. The **Long Header** is used during h
 
 ### 8.7.1 Port Number Ranges
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-handwritten.svg" alt="Handwritten: 8.7.1 Port Number Ranges" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-handwritten.svg" alt="Handwritten: 8.7.1 Port Number Ranges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-diagram.svg" alt="Diagram: 8.7.1 Port Number Ranges" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-diagram.svg" alt="Diagram: 8.7.1 Port Number Ranges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-sticky.svg" alt="Sticky Note: 8.7.1 Port Number Ranges" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-1-port-number-ranges-sticky.svg" alt="Sticky Note: 8.7.1 Port Number Ranges" width="30%">
 </a>
 
 
@@ -2007,14 +2007,14 @@ TCP and UDP use 16-bit port numbers (0-65535) to identify application processes:
 
 ### 8.7.2 Common Port Numbers
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-handwritten.svg" alt="Handwritten: 8.7.2 Common Port Numbers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-handwritten.svg" alt="Handwritten: 8.7.2 Common Port Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-diagram.svg" alt="Diagram: 8.7.2 Common Port Numbers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-diagram.svg" alt="Diagram: 8.7.2 Common Port Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-sticky.svg" alt="Sticky Note: 8.7.2 Common Port Numbers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-2-common-port-numbers-sticky.svg" alt="Sticky Note: 8.7.2 Common Port Numbers" width="30%">
 </a>
 
 
@@ -2037,14 +2037,14 @@ TCP and UDP use 16-bit port numbers (0-65535) to identify application processes:
 
 ### 8.7.3 Connection Table Internals
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-handwritten.svg" alt="Handwritten: 8.7.3 Connection Table Internals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-handwritten.svg" alt="Handwritten: 8.7.3 Connection Table Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-diagram.svg" alt="Diagram: 8.7.3 Connection Table Internals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-diagram.svg" alt="Diagram: 8.7.3 Connection Table Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-sticky.svg" alt="Sticky Note: 8.7.3 Connection Table Internals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-3-connection-table-internals-sticky.svg" alt="Sticky Note: 8.7.3 Connection Table Internals" width="30%">
 </a>
 
 
@@ -2069,14 +2069,14 @@ The OS maintains a connection table (or hash table) for active TCP connections. 
 
 ### 8.7.4 Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-handwritten.svg" alt="Handwritten: 8.7.4 Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-handwritten.svg" alt="Handwritten: 8.7.4 Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-diagram.svg" alt="Diagram: 8.7.4 Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-diagram.svg" alt="Diagram: 8.7.4 Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-sticky.svg" alt="Sticky Note: 8.7.4 Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-7-4-sockets-sticky.svg" alt="Sticky Note: 8.7.4 Sockets" width="30%">
 </a>
 
 
@@ -2168,14 +2168,14 @@ class PortManager {
 
 ### Q1: How does a server mitigate SYN flood attacks?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-handwritten.svg" alt="Handwritten: How does a server mitigate SYN flood attacks?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-handwritten.svg" alt="Handwritten: How does a server mitigate SYN flood attacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-diagram.svg" alt="Diagram: How does a server mitigate SYN flood attacks?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-diagram.svg" alt="Diagram: How does a server mitigate SYN flood attacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-sticky.svg" alt="Sticky Note: How does a server mitigate SYN flood attacks?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-a-server-mitigate-syn-flood-attacks-sticky.svg" alt="Sticky Note: How does a server mitigate SYN flood attacks?" width="30%">
 </a>
 
 
@@ -2210,14 +2210,14 @@ function syn_cookie_verify(iss, src_ip, src_port, dst_ip, dst_port, server_secre
 
 ### Q2: Why does TCP use port numbers? Why 16 bits?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-handwritten.svg" alt="Handwritten: Why does TCP use port numbers? Why 16 bits?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-handwritten.svg" alt="Handwritten: Why does TCP use port numbers? Why 16 bits?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-diagram.svg" alt="Diagram: Why does TCP use port numbers? Why 16 bits?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-diagram.svg" alt="Diagram: Why does TCP use port numbers? Why 16 bits?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-sticky.svg" alt="Sticky Note: Why does TCP use port numbers? Why 16 bits?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/why-does-tcp-use-port-numbers-why-16-bits-sticky.svg" alt="Sticky Note: Why does TCP use port numbers? Why 16 bits?" width="30%">
 </a>
 
 
@@ -2227,14 +2227,14 @@ Port numbers enable process-to-process communication (demultiplexing). The netwo
 
 ### Q3: What is the purpose of TIME_WAIT?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-handwritten.svg" alt="Handwritten: What is the purpose of TIME_WAIT?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-handwritten.svg" alt="Handwritten: What is the purpose of TIME_WAIT?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-diagram.svg" alt="Diagram: What is the purpose of TIME_WAIT?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-diagram.svg" alt="Diagram: What is the purpose of TIME_WAIT?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-sticky.svg" alt="Sticky Note: What is the purpose of TIME_WAIT?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-purpose-of-time-wait-sticky.svg" alt="Sticky Note: What is the purpose of TIME_WAIT?" width="30%">
 </a>
 
 
@@ -2249,14 +2249,14 @@ TIME_WAIT serves two critical purposes:
 
 ### Q4: Explain Nagle's algorithm.
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-handwritten.svg" alt="Handwritten: Explain Nagle's algorithm." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-handwritten.svg" alt="Handwritten: Explain Nagle's algorithm." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-diagram.svg" alt="Diagram: Explain Nagle's algorithm." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-diagram.svg" alt="Diagram: Explain Nagle's algorithm." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-sticky.svg" alt="Sticky Note: Explain Nagle's algorithm." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-nagle-s-algorithm-sticky.svg" alt="Sticky Note: Explain Nagle's algorithm." width="30%">
 </a>
 
 
@@ -2283,14 +2283,14 @@ else:
 
 ### Q5: What happens during a zero-window condition? How is it resolved?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-handwritten.svg" alt="Handwritten: What happens during a zero-window condition? How is it resolved?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-handwritten.svg" alt="Handwritten: What happens during a zero-window condition? How is it resolved?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-diagram.svg" alt="Diagram: What happens during a zero-window condition? How is it resolved?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-diagram.svg" alt="Diagram: What happens during a zero-window condition? How is it resolved?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-sticky.svg" alt="Sticky Note: What happens during a zero-window condition? How is it resolved?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-happens-during-a-zero-window-condition-how-is-it-resolved-sticky.svg" alt="Sticky Note: What happens during a zero-window condition? How is it resolved?" width="30%">
 </a>
 
 
@@ -2308,14 +2308,14 @@ else:
 
 ### Q6: Can TCP and UDP use the same port number?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-handwritten.svg" alt="Handwritten: Can TCP and UDP use the same port number?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-handwritten.svg" alt="Handwritten: Can TCP and UDP use the same port number?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-diagram.svg" alt="Diagram: Can TCP and UDP use the same port number?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-diagram.svg" alt="Diagram: Can TCP and UDP use the same port number?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-sticky.svg" alt="Sticky Note: Can TCP and UDP use the same port number?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/can-tcp-and-udp-use-the-same-port-number-sticky.svg" alt="Sticky Note: Can TCP and UDP use the same port number?" width="30%">
 </a>
 
 
@@ -2323,14 +2323,14 @@ Yes. TCP port 53 and UDP port 53 are **different namespaces**. DNS uses both: TC
 
 ### Q7: What is the TCP Silly Window Syndrome (SWS)?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-handwritten.svg" alt="Handwritten: What is the TCP Silly Window Syndrome (SWS)?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-handwritten.svg" alt="Handwritten: What is the TCP Silly Window Syndrome (SWS)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-diagram.svg" alt="Diagram: What is the TCP Silly Window Syndrome (SWS)?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-diagram.svg" alt="Diagram: What is the TCP Silly Window Syndrome (SWS)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-sticky.svg" alt="Sticky Note: What is the TCP Silly Window Syndrome (SWS)?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-is-the-tcp-silly-window-syndrome-sws-sticky.svg" alt="Sticky Note: What is the TCP Silly Window Syndrome (SWS)?" width="30%">
 </a>
 
 
@@ -2361,14 +2361,14 @@ function update_window(application_bytes_read, current_buffer):
 
 ### Q8: How does TCP handle out-of-order delivery?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-handwritten.svg" alt="Handwritten: How does TCP handle out-of-order delivery?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-handwritten.svg" alt="Handwritten: How does TCP handle out-of-order delivery?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-diagram.svg" alt="Diagram: How does TCP handle out-of-order delivery?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-diagram.svg" alt="Diagram: How does TCP handle out-of-order delivery?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-sticky.svg" alt="Sticky Note: How does TCP handle out-of-order delivery?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/how-does-tcp-handle-out-of-order-delivery-sticky.svg" alt="Sticky Note: How does TCP handle out-of-order delivery?" width="30%">
 </a>
 
 
@@ -2413,14 +2413,14 @@ function receive_segment(segment):
 
 ### Q9: Explain TCP Fast Open (TFO).
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-handwritten.svg" alt="Handwritten: Explain TCP Fast Open (TFO)." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-handwritten.svg" alt="Handwritten: Explain TCP Fast Open (TFO)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-diagram.svg" alt="Diagram: Explain TCP Fast Open (TFO)." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-diagram.svg" alt="Diagram: Explain TCP Fast Open (TFO)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-sticky.svg" alt="Sticky Note: Explain TCP Fast Open (TFO)." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/explain-tcp-fast-open-tfo-sticky.svg" alt="Sticky Note: Explain TCP Fast Open (TFO)." width="30%">
 </a>
 
 
@@ -2447,14 +2447,14 @@ With TFO:
 
 ### Q10: What causes the TCP melting point problem?
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-handwritten.svg" alt="Handwritten: What causes the TCP melting point problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-handwritten.svg" alt="Handwritten: What causes the TCP melting point problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-diagram.svg" alt="Diagram: What causes the TCP melting point problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-diagram.svg" alt="Diagram: What causes the TCP melting point problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-sticky.svg" alt="Sticky Note: What causes the TCP melting point problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/what-causes-the-tcp-melting-point-problem-sticky.svg" alt="Sticky Note: What causes the TCP melting point problem?" width="30%">
 </a>
 
 
@@ -2477,14 +2477,14 @@ The **TCP melting point** occurs when TCP tunnels through another TCP connection
 
 ### TCP State Transition Reference
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-handwritten.svg" alt="Handwritten: TCP State Transition Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-handwritten.svg" alt="Handwritten: TCP State Transition Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-diagram.svg" alt="Diagram: TCP State Transition Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-diagram.svg" alt="Diagram: TCP State Transition Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-sticky.svg" alt="Sticky Note: TCP State Transition Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-state-transition-reference-sticky.svg" alt="Sticky Note: TCP State Transition Reference" width="30%">
 </a>
 
 
@@ -2517,14 +2517,14 @@ Complete transition table from RFC 793:
 
 ### TCP Segment Retransmission Trace
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-handwritten.svg" alt="Handwritten: TCP Segment Retransmission Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-handwritten.svg" alt="Handwritten: TCP Segment Retransmission Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-diagram.svg" alt="Diagram: TCP Segment Retransmission Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-diagram.svg" alt="Diagram: TCP Segment Retransmission Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-sticky.svg" alt="Sticky Note: TCP Segment Retransmission Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-segment-retransmission-trace-sticky.svg" alt="Sticky Note: TCP Segment Retransmission Trace" width="30%">
 </a>
 
 
@@ -2547,14 +2547,14 @@ Scenario: 4 segments sent, segment 2 is lost.
 
 ### TCP Half-Close Trace
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-handwritten.svg" alt="Handwritten: TCP Half-Close Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-handwritten.svg" alt="Handwritten: TCP Half-Close Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-diagram.svg" alt="Diagram: TCP Half-Close Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-diagram.svg" alt="Diagram: TCP Half-Close Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-sticky.svg" alt="Sticky Note: TCP Half-Close Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/tcp-half-close-trace-sticky.svg" alt="Sticky Note: TCP Half-Close Trace" width="30%">
 </a>
 
 
@@ -2586,14 +2586,14 @@ CLIENT                                SERVER
 
 ### 8.9.1 Linux TCP Stack
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-handwritten.svg" alt="Handwritten: 8.9.1 Linux TCP Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-handwritten.svg" alt="Handwritten: 8.9.1 Linux TCP Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-diagram.svg" alt="Diagram: 8.9.1 Linux TCP Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-diagram.svg" alt="Diagram: 8.9.1 Linux TCP Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-sticky.svg" alt="Sticky Note: 8.9.1 Linux TCP Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-1-linux-tcp-stack-sticky.svg" alt="Sticky Note: 8.9.1 Linux TCP Stack" width="30%">
 </a>
 
 
@@ -2624,14 +2624,14 @@ net.ipv4.tcp_wmem = 4096 65536 4194304   # min, default, max send buffer
 
 ### 8.9.2 Windows TCP Auto-Tuning
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-handwritten.svg" alt="Handwritten: 8.9.2 Windows TCP Auto-Tuning" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-handwritten.svg" alt="Handwritten: 8.9.2 Windows TCP Auto-Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-diagram.svg" alt="Diagram: 8.9.2 Windows TCP Auto-Tuning" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-diagram.svg" alt="Diagram: 8.9.2 Windows TCP Auto-Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-sticky.svg" alt="Sticky Note: 8.9.2 Windows TCP Auto-Tuning" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-2-windows-tcp-auto-tuning-sticky.svg" alt="Sticky Note: 8.9.2 Windows TCP Auto-Tuning" width="30%">
 </a>
 
 
@@ -2656,14 +2656,14 @@ netsh interface tcp set global autotuninglevel=normal
 
 ### 8.9.3 HTTP/3 and QUIC Deployment
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-handwritten.svg" alt="Handwritten: 8.9.3 HTTP/3 and QUIC Deployment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-handwritten.svg" alt="Handwritten: 8.9.3 HTTP/3 and QUIC Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-diagram.svg" alt="Diagram: 8.9.3 HTTP/3 and QUIC Deployment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-diagram.svg" alt="Diagram: 8.9.3 HTTP/3 and QUIC Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-sticky.svg" alt="Sticky Note: 8.9.3 HTTP/3 and QUIC Deployment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-3-http-3-and-quic-deployment-sticky.svg" alt="Sticky Note: 8.9.3 HTTP/3 and QUIC Deployment" width="30%">
 </a>
 
 
@@ -2695,14 +2695,14 @@ netsh interface tcp set global autotuninglevel=normal
 
 ### 8.9.4 TCP Tuning for High Performance
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-handwritten.svg" alt="Handwritten: 8.9.4 TCP Tuning for High Performance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-handwritten.svg" alt="Handwritten: 8.9.4 TCP Tuning for High Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-diagram.svg" alt="Diagram: 8.9.4 TCP Tuning for High Performance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-diagram.svg" alt="Diagram: 8.9.4 TCP Tuning for High Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-sticky.svg" alt="Sticky Note: 8.9.4 TCP Tuning for High Performance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-4-tcp-tuning-for-high-performance-sticky.svg" alt="Sticky Note: 8.9.4 TCP Tuning for High Performance" width="30%">
 </a>
 
 
@@ -2718,14 +2718,14 @@ netsh interface tcp set global autotuninglevel=normal
 
 ### 8.9.5 TCP in Wireshark — Packet Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-handwritten.svg" alt="Handwritten: 8.9.5 TCP in Wireshark — Packet Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-handwritten.svg" alt="Handwritten: 8.9.5 TCP in Wireshark — Packet Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-diagram.svg" alt="Diagram: 8.9.5 TCP in Wireshark — Packet Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-diagram.svg" alt="Diagram: 8.9.5 TCP in Wireshark — Packet Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-sticky.svg" alt="Sticky Note: 8.9.5 TCP in Wireshark — Packet Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-5-tcp-in-wireshark-packet-analysis-sticky.svg" alt="Sticky Note: 8.9.5 TCP in Wireshark — Packet Analysis" width="30%">
 </a>
 
 
@@ -2767,14 +2767,14 @@ No.  Time        Source          Destination     Protocol Info
 
 ### 8.9.6 Transport Layer Security (TLS) over TCP
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-handwritten.svg" alt="Handwritten: 8.9.6 Transport Layer Security (TLS) over TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-handwritten.svg" alt="Handwritten: 8.9.6 Transport Layer Security (TLS) over TCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-diagram.svg" alt="Diagram: 8.9.6 Transport Layer Security (TLS) over TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-diagram.svg" alt="Diagram: 8.9.6 Transport Layer Security (TLS) over TCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-sticky.svg" alt="Sticky Note: 8.9.6 Transport Layer Security (TLS) over TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-6-transport-layer-security-tls-over-tcp-sticky.svg" alt="Sticky Note: 8.9.6 Transport Layer Security (TLS) over TCP" width="30%">
 </a>
 
 
@@ -2801,14 +2801,14 @@ QUIC eliminates this layering by integrating TLS into the transport handshake, a
 
 ### 8.9.7 Socket Programming with TCP (C++)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-handwritten.svg" alt="Handwritten: 8.9.7 Socket Programming with TCP (C++)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-handwritten.svg" alt="Handwritten: 8.9.7 Socket Programming with TCP (C++)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-diagram.svg" alt="Diagram: 8.9.7 Socket Programming with TCP (C++)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-diagram.svg" alt="Diagram: 8.9.7 Socket Programming with TCP (C++)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-sticky.svg" alt="Sticky Note: 8.9.7 Socket Programming with TCP (C++)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-7-socket-programming-with-tcp-c-sticky.svg" alt="Sticky Note: 8.9.7 Socket Programming with TCP (C++)" width="30%">
 </a>
 
 
@@ -2879,14 +2879,14 @@ public:
 
 ### 8.9.8 Socket Programming with TCP (Python)
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-handwritten.svg" alt="Handwritten: 8.9.8 Socket Programming with TCP (Python)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-handwritten.svg" alt="Handwritten: 8.9.8 Socket Programming with TCP (Python)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-diagram.svg" alt="Diagram: 8.9.8 Socket Programming with TCP (Python)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-diagram.svg" alt="Diagram: 8.9.8 Socket Programming with TCP (Python)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-sticky.svg" alt="Sticky Note: 8.9.8 Socket Programming with TCP (Python)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-8-socket-programming-with-tcp-python-sticky.svg" alt="Sticky Note: 8.9.8 Socket Programming with TCP (Python)" width="30%">
 </a>
 
 
@@ -2953,14 +2953,14 @@ class TCPEchoClient:
 
 ### 8.9.9 Netfilter/iptables and Transport Layer
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-handwritten.svg" alt="Handwritten: 8.9.9 Netfilter/iptables and Transport Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-handwritten.svg" alt="Handwritten: 8.9.9 Netfilter/iptables and Transport Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-diagram.svg" alt="Diagram: 8.9.9 Netfilter/iptables and Transport Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-diagram.svg" alt="Diagram: 8.9.9 Netfilter/iptables and Transport Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-sticky.svg" alt="Sticky Note: 8.9.9 Netfilter/iptables and Transport Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-9-netfilter-iptables-and-transport-layer-sticky.svg" alt="Sticky Note: 8.9.9 Netfilter/iptables and Transport Layer" width="30%">
 </a>
 
 
@@ -2983,14 +2983,14 @@ iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-port 5353
 
 ### 8.9.10 Common TCP Sequence Number Scenarios
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-handwritten.svg" alt="Handwritten: 8.9.10 Common TCP Sequence Number Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-handwritten.svg" alt="Handwritten: 8.9.10 Common TCP Sequence Number Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-diagram.svg" alt="Diagram: 8.9.10 Common TCP Sequence Number Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-diagram.svg" alt="Diagram: 8.9.10 Common TCP Sequence Number Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-sticky.svg" alt="Sticky Note: 8.9.10 Common TCP Sequence Number Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-10-common-tcp-sequence-number-scenarios-sticky.svg" alt="Sticky Note: 8.9.10 Common TCP Sequence Number Scenarios" width="30%">
 </a>
 
 
@@ -3020,14 +3020,14 @@ function paws_check(segment_timestamp, last_timestamp):
 
 ### 8.9.11 BSD Socket API — Transport Layer Interface
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-handwritten.svg" alt="Handwritten: 8.9.11 BSD Socket API — Transport Layer Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-handwritten.svg" alt="Handwritten: 8.9.11 BSD Socket API — Transport Layer Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-diagram.svg" alt="Diagram: 8.9.11 BSD Socket API — Transport Layer Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-diagram.svg" alt="Diagram: 8.9.11 BSD Socket API — Transport Layer Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-sticky.svg" alt="Sticky Note: 8.9.11 BSD Socket API — Transport Layer Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-11-bsd-socket-api-transport-layer-interface-sticky.svg" alt="Sticky Note: 8.9.11 BSD Socket API — Transport Layer Interface" width="30%">
 </a>
 
 
@@ -3076,14 +3076,14 @@ while (true) {
 
 ### 8.9.12 SO_LINGER and Connection Teardown
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-handwritten.svg" alt="Handwritten: 8.9.12 SO_LINGER and Connection Teardown" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-handwritten.svg" alt="Handwritten: 8.9.12 SO_LINGER and Connection Teardown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-diagram.svg" alt="Diagram: 8.9.12 SO_LINGER and Connection Teardown" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-diagram.svg" alt="Diagram: 8.9.12 SO_LINGER and Connection Teardown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-sticky.svg" alt="Sticky Note: 8.9.12 SO_LINGER and Connection Teardown" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/8-9-12-so-linger-and-connection-teardown-sticky.svg" alt="Sticky Note: 8.9.12 SO_LINGER and Connection Teardown" width="30%">
 </a>
 
 
@@ -3232,14 +3232,14 @@ Initially: rwnd = 24000, can send 24 segments (24000/1000). Sends 20 segments, w
 
 ### Coding Problems
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-handwritten.svg" alt="Handwritten: Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-handwritten.svg" alt="Handwritten: Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-diagram.svg" alt="Diagram: Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-diagram.svg" alt="Diagram: Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-sticky.svg" alt="Sticky Note: Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/coding-problems-sticky.svg" alt="Sticky Note: Coding Problems" width="30%">
 </a>
 
 
@@ -3335,14 +3335,14 @@ while True:
 
 ### Projects
 
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/projects-handwritten.svg" alt="Handwritten: Projects" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/projects-handwritten.svg" alt="Handwritten: Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/projects-diagram.svg" alt="Diagram: Projects" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/projects-diagram.svg" alt="Diagram: Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/08-transport-layer/projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/08-transport-layer/projects-sticky.svg" alt="Sticky Note: Projects" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/08-transport-layer/projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/08-transport-layer/projects-sticky.svg" alt="Sticky Note: Projects" width="30%">
 </a>
 
 

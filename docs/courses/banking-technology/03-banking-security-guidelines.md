@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Introduction to Banking Security
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-handwritten.svg" alt="Handwritten: 1. Introduction to Banking Security" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-handwritten.svg" alt="Handwritten: 1. Introduction to Banking Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-diagram.svg" alt="Diagram: 1. Introduction to Banking Security" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-diagram.svg" alt="Diagram: 1. Introduction to Banking Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-sticky.svg" alt="Sticky Note: 1. Introduction to Banking Security" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/1-introduction-to-banking-security-sticky.svg" alt="Sticky Note: 1. Introduction to Banking Security" width="30%">
 </a>
 
 
@@ -68,14 +68,14 @@ The banking IT security architecture follows the **Defense-in-Depth** model with
 
 ### 2. RBI Cybersecurity Framework
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-handwritten.svg" alt="Handwritten: 2. RBI Cybersecurity Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-handwritten.svg" alt="Handwritten: 2. RBI Cybersecurity Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-diagram.svg" alt="Diagram: 2. RBI Cybersecurity Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-diagram.svg" alt="Diagram: 2. RBI Cybersecurity Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-sticky.svg" alt="Sticky Note: 2. RBI Cybersecurity Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/2-rbi-cybersecurity-framework-sticky.svg" alt="Sticky Note: 2. RBI Cybersecurity Framework" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ Cyber Crisis Lifecycle:
 
 ### 3. IT Act 2000 and Amendments
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-handwritten.svg" alt="Handwritten: 3. IT Act 2000 and Amendments" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-handwritten.svg" alt="Handwritten: 3. IT Act 2000 and Amendments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-diagram.svg" alt="Diagram: 3. IT Act 2000 and Amendments" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-diagram.svg" alt="Diagram: 3. IT Act 2000 and Amendments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-sticky.svg" alt="Sticky Note: 3. IT Act 2000 and Amendments" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/3-it-act-2000-and-amendments-sticky.svg" alt="Sticky Note: 3. IT Act 2000 and Amendments" width="30%">
 </a>
 
 
@@ -211,14 +211,14 @@ c) The intermediary removes/takes down upon receiving actual knowledge or govern
 
 ### 4. Data Protection in Banking
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-handwritten.svg" alt="Handwritten: 4. Data Protection in Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-handwritten.svg" alt="Handwritten: 4. Data Protection in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-diagram.svg" alt="Diagram: 4. Data Protection in Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-diagram.svg" alt="Diagram: 4. Data Protection in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-sticky.svg" alt="Sticky Note: 4. Data Protection in Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/4-data-protection-in-banking-sticky.svg" alt="Sticky Note: 4. Data Protection in Banking" width="30%">
 </a>
 
 
@@ -276,14 +276,14 @@ ISMS Policy -> Scope Definition -> Risk Assessment
 
 ### 5. Basel III Technology Implications
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-handwritten.svg" alt="Handwritten: 5. Basel III Technology Implications" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-handwritten.svg" alt="Handwritten: 5. Basel III Technology Implications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-diagram.svg" alt="Diagram: 5. Basel III Technology Implications" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-diagram.svg" alt="Diagram: 5. Basel III Technology Implications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-sticky.svg" alt="Sticky Note: 5. Basel III Technology Implications" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/5-basel-iii-technology-implications-sticky.svg" alt="Sticky Note: 5. Basel III Technology Implications" width="30%">
 </a>
 
 
@@ -361,14 +361,14 @@ Principle 11: Distribution — Reports must reach the right stakeholders
 
 ### 6. SWIFT Security (CSP Program)
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-handwritten.svg" alt="Handwritten: 6. SWIFT Security (CSP Program)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-handwritten.svg" alt="Handwritten: 6. SWIFT Security (CSP Program)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-diagram.svg" alt="Diagram: 6. SWIFT Security (CSP Program)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-diagram.svg" alt="Diagram: 6. SWIFT Security (CSP Program)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-sticky.svg" alt="Sticky Note: 6. SWIFT Security (CSP Program)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/6-swift-security-csp-program-sticky.svg" alt="Sticky Note: 6. SWIFT Security (CSP Program)" width="30%">
 </a>
 
 
@@ -433,14 +433,14 @@ As of 2023, SWIFT CSP has 21 mandatory controls and 12 advisory controls.
 
 ### 7. BCP/DR for Banks
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-handwritten.svg" alt="Handwritten: 7. BCP/DR for Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-handwritten.svg" alt="Handwritten: 7. BCP/DR for Banks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-diagram.svg" alt="Diagram: 7. BCP/DR for Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-diagram.svg" alt="Diagram: 7. BCP/DR for Banks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-sticky.svg" alt="Sticky Note: 7. BCP/DR for Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/7-bcp-dr-for-banks-sticky.svg" alt="Sticky Note: 7. BCP/DR for Banks" width="30%">
 </a>
 
 
@@ -509,14 +509,14 @@ DR Test Phases (as per RBI):
 
 ### 8. PCI DSS for Card Data
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-handwritten.svg" alt="Handwritten: 8. PCI DSS for Card Data" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-handwritten.svg" alt="Handwritten: 8. PCI DSS for Card Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-diagram.svg" alt="Diagram: 8. PCI DSS for Card Data" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-diagram.svg" alt="Diagram: 8. PCI DSS for Card Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-sticky.svg" alt="Sticky Note: 8. PCI DSS for Card Data" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/8-pci-dss-for-card-data-sticky.svg" alt="Sticky Note: 8. PCI DSS for Card Data" width="30%">
 </a>
 
 
@@ -587,14 +587,14 @@ Tokenization Reduces PCI DSS Scope:
 
 ### 9. 2FA in Internet Banking
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-handwritten.svg" alt="Handwritten: 9. 2FA in Internet Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-handwritten.svg" alt="Handwritten: 9. 2FA in Internet Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-diagram.svg" alt="Diagram: 9. 2FA in Internet Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-diagram.svg" alt="Diagram: 9. 2FA in Internet Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-sticky.svg" alt="Sticky Note: 9. 2FA in Internet Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/9-2fa-in-internet-banking-sticky.svg" alt="Sticky Note: 9. 2FA in Internet Banking" width="30%">
 </a>
 
 
@@ -687,14 +687,14 @@ TOTP (Time-based OTP):
 
 ### 10. CMS (Cash Management System) Security
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-handwritten.svg" alt="Handwritten: 10. CMS (Cash Management System) Security" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-handwritten.svg" alt="Handwritten: 10. CMS (Cash Management System) Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-diagram.svg" alt="Diagram: 10. CMS (Cash Management System) Security" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-diagram.svg" alt="Diagram: 10. CMS (Cash Management System) Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-sticky.svg" alt="Sticky Note: 10. CMS (Cash Management System) Security" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/10-cms-cash-management-system-security-sticky.svg" alt="Sticky Note: 10. CMS (Cash Management System) Security" width="30%">
 </a>
 
 
@@ -738,14 +738,14 @@ Cash Management System (CMS) handles cash logistics for banks — CIT (Cash-In-T
 
 ### 11. e-KYC and Aadhaar Authentication
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-handwritten.svg" alt="Handwritten: 11. e-KYC and Aadhaar Authentication" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-handwritten.svg" alt="Handwritten: 11. e-KYC and Aadhaar Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-diagram.svg" alt="Diagram: 11. e-KYC and Aadhaar Authentication" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-diagram.svg" alt="Diagram: 11. e-KYC and Aadhaar Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-sticky.svg" alt="Sticky Note: 11. e-KYC and Aadhaar Authentication" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/11-e-kyc-and-aadhaar-authentication-sticky.svg" alt="Sticky Note: 11. e-KYC and Aadhaar Authentication" width="30%">
 </a>
 
 
@@ -844,14 +844,14 @@ Security Architecture:
 
 ### 12. Architecture Diagrams
 
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-handwritten.svg" alt="Handwritten: 12. Architecture Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-handwritten.svg" alt="Handwritten: 12. Architecture Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-diagram.svg" alt="Diagram: 12. Architecture Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-diagram.svg" alt="Diagram: 12. Architecture Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-sticky.svg" alt="Sticky Note: 12. Architecture Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/03-banking-security-guidelines/12-architecture-diagrams-sticky.svg" alt="Sticky Note: 12. Architecture Diagrams" width="30%">
 </a>
 
 

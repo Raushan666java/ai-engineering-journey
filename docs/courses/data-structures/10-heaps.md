@@ -57,14 +57,14 @@ flowchart LR
 
 ### Complete Binary Tree Property
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-handwritten.svg" alt="Handwritten: Complete Binary Tree Property" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-handwritten.svg" alt="Handwritten: Complete Binary Tree Property" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-diagram.svg" alt="Diagram: Complete Binary Tree Property" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-diagram.svg" alt="Diagram: Complete Binary Tree Property" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-sticky.svg" alt="Sticky Note: Complete Binary Tree Property" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/complete-binary-tree-property-sticky.svg" alt="Sticky Note: Complete Binary Tree Property" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ Tree:                    [A]  [B]  [C]  [D]  [E]  [F]  [G]
 
 ### Max-Heap / Min-Heap
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-handwritten.svg" alt="Handwritten: Max-Heap / Min-Heap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-handwritten.svg" alt="Handwritten: Max-Heap / Min-Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-diagram.svg" alt="Diagram: Max-Heap / Min-Heap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-diagram.svg" alt="Diagram: Max-Heap / Min-Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-sticky.svg" alt="Sticky Note: Max-Heap / Min-Heap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/max-heap-min-heap-sticky.svg" alt="Sticky Note: Max-Heap / Min-Heap" width="30%">
 </a>
 
 
@@ -142,14 +142,14 @@ Array: [10, 20, 15, 30, 40, 25]
 
 ### Heapify (Sift Down) → Restoring Order at One Node
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-handwritten.svg" alt="Handwritten: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-handwritten.svg" alt="Handwritten: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-diagram.svg" alt="Diagram: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-diagram.svg" alt="Diagram: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-sticky.svg" alt="Sticky Note: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heapify-sift-down-restoring-order-at-one-node-sticky.svg" alt="Sticky Note: Heapify (Sift Down) → Restoring Order at One Node" width="30%">
 </a>
 
 
@@ -283,14 +283,14 @@ public static void maxHeapify(int[] arr, int n, int i) {
 
 ### Build Heap → Transform Array into Heap in O(n)
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-handwritten.svg" alt="Handwritten: Build Heap → Transform Array into Heap in O(n)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-handwritten.svg" alt="Handwritten: Build Heap → Transform Array into Heap in O(n)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-diagram.svg" alt="Diagram: Build Heap → Transform Array into Heap in O(n)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-diagram.svg" alt="Diagram: Build Heap → Transform Array into Heap in O(n)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-sticky.svg" alt="Sticky Note: Build Heap → Transform Array into Heap in O(n)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/build-heap-transform-array-into-heap-in-o-n-sticky.svg" alt="Sticky Note: Build Heap → Transform Array into Heap in O(n)" width="30%">
 </a>
 
 
@@ -416,14 +416,14 @@ public static void buildMaxHeap(int[] arr) {
 
 ### Insert (Bubble Up / Sift Up)
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-handwritten.svg" alt="Handwritten: Insert (Bubble Up / Sift Up)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-handwritten.svg" alt="Handwritten: Insert (Bubble Up / Sift Up)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-diagram.svg" alt="Diagram: Insert (Bubble Up / Sift Up)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-diagram.svg" alt="Diagram: Insert (Bubble Up / Sift Up)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-sticky.svg" alt="Sticky Note: Insert (Bubble Up / Sift Up)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/insert-bubble-up-sift-up-sticky.svg" alt="Sticky Note: Insert (Bubble Up / Sift Up)" width="30%">
 </a>
 
 
@@ -533,14 +533,14 @@ public void insert(int value) {
 
 ### Extract Max (Extract Min) → Remove and Return Root
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-handwritten.svg" alt="Handwritten: Extract Max (Extract Min) → Remove and Return Root" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-handwritten.svg" alt="Handwritten: Extract Max (Extract Min) → Remove and Return Root" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-diagram.svg" alt="Diagram: Extract Max (Extract Min) → Remove and Return Root" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-diagram.svg" alt="Diagram: Extract Max (Extract Min) → Remove and Return Root" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-sticky.svg" alt="Sticky Note: Extract Max (Extract Min) → Remove and Return Root" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/extract-max-extract-min-remove-and-return-root-sticky.svg" alt="Sticky Note: Extract Max (Extract Min) → Remove and Return Root" width="30%">
 </a>
 
 
@@ -643,14 +643,14 @@ public int extractMax() {
 
 ### Decrease Key → Change Priority of Arbitrary Element
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-handwritten.svg" alt="Handwritten: Decrease Key → Change Priority of Arbitrary Element" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-handwritten.svg" alt="Handwritten: Decrease Key → Change Priority of Arbitrary Element" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-diagram.svg" alt="Diagram: Decrease Key → Change Priority of Arbitrary Element" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-diagram.svg" alt="Diagram: Decrease Key → Change Priority of Arbitrary Element" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-sticky.svg" alt="Sticky Note: Decrease Key → Change Priority of Arbitrary Element" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/decrease-key-change-priority-of-arbitrary-element-sticky.svg" alt="Sticky Note: Decrease Key → Change Priority of Arbitrary Element" width="30%">
 </a>
 
 
@@ -763,14 +763,14 @@ public void decreaseKey(int i, int newVal) {
 
 ### Heap Sort → Sorting with a Binary Heap
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-handwritten.svg" alt="Handwritten: Heap Sort → Sorting with a Binary Heap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-handwritten.svg" alt="Handwritten: Heap Sort → Sorting with a Binary Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-diagram.svg" alt="Diagram: Heap Sort → Sorting with a Binary Heap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-diagram.svg" alt="Diagram: Heap Sort → Sorting with a Binary Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-sticky.svg" alt="Sticky Note: Heap Sort → Sorting with a Binary Heap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heap-sort-sorting-with-a-binary-heap-sticky.svg" alt="Sticky Note: Heap Sort → Sorting with a Binary Heap" width="30%">
 </a>
 
 
@@ -888,14 +888,14 @@ public static void heapSort(int[] arr) {
 
 ### Heap as a Priority Queue
 
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-handwritten.svg" alt="Handwritten: Heap as a Priority Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-handwritten.svg" alt="Handwritten: Heap as a Priority Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-diagram.svg" alt="Diagram: Heap as a Priority Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-diagram.svg" alt="Diagram: Heap as a Priority Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-sticky.svg" alt="Sticky Note: Heap as a Priority Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/10-heaps/heap-as-a-priority-queue-sticky.svg" alt="Sticky Note: Heap as a Priority Queue" width="30%">
 </a>
 
 

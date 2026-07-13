@@ -53,14 +53,14 @@ flowchart TD
 
 ### The Maximum Margin Hyperplane
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-handwritten.svg" alt="Handwritten: The Maximum Margin Hyperplane" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-handwritten.svg" alt="Handwritten: The Maximum Margin Hyperplane" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-diagram.svg" alt="Diagram: The Maximum Margin Hyperplane" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-diagram.svg" alt="Diagram: The Maximum Margin Hyperplane" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-sticky.svg" alt="Sticky Note: The Maximum Margin Hyperplane" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-maximum-margin-hyperplane-sticky.svg" alt="Sticky Note: The Maximum Margin Hyperplane" width="30%">
 </a>
 
 
@@ -73,14 +73,14 @@ A Support Vector Machine (SVM) is a discriminative classifier that finds an opti
 
 ### Functional Margin and Geometric Margin
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-handwritten.svg" alt="Handwritten: Functional Margin and Geometric Margin" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-handwritten.svg" alt="Handwritten: Functional Margin and Geometric Margin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-diagram.svg" alt="Diagram: Functional Margin and Geometric Margin" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-diagram.svg" alt="Diagram: Functional Margin and Geometric Margin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-sticky.svg" alt="Sticky Note: Functional Margin and Geometric Margin" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/functional-margin-and-geometric-margin-sticky.svg" alt="Sticky Note: Functional Margin and Geometric Margin" width="30%">
 </a>
 
 
@@ -100,14 +100,14 @@ The margin of the hyperplane is the minimum geometric margin over all training e
 
 ### Hard-Margin SVM (Primal Form)
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-handwritten.svg" alt="Handwritten: Hard-Margin SVM (Primal Form)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-handwritten.svg" alt="Handwritten: Hard-Margin SVM (Primal Form)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-diagram.svg" alt="Diagram: Hard-Margin SVM (Primal Form)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-diagram.svg" alt="Diagram: Hard-Margin SVM (Primal Form)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-sticky.svg" alt="Sticky Note: Hard-Margin SVM (Primal Form)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hard-margin-svm-primal-form-sticky.svg" alt="Sticky Note: Hard-Margin SVM (Primal Form)" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ The constraints ensure all points are on the correct side of the margin boundary
 
 ### Lagrange Duality
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-handwritten.svg" alt="Handwritten: Lagrange Duality" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-handwritten.svg" alt="Handwritten: Lagrange Duality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-diagram.svg" alt="Diagram: Lagrange Duality" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-diagram.svg" alt="Diagram: Lagrange Duality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-sticky.svg" alt="Sticky Note: Lagrange Duality" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/lagrange-duality-sticky.svg" alt="Sticky Note: Lagrange Duality" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ Subject to $\alpha_i \geq 0$ and $\sum \alpha_i y^{(i)} = 0$.
 
 ### Support Vectors
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-handwritten.svg" alt="Handwritten: Support Vectors" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-handwritten.svg" alt="Handwritten: Support Vectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-diagram.svg" alt="Diagram: Support Vectors" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-diagram.svg" alt="Diagram: Support Vectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-sticky.svg" alt="Sticky Note: Support Vectors" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/support-vectors-sticky.svg" alt="Sticky Note: Support Vectors" width="30%">
 </a>
 
 
@@ -179,14 +179,14 @@ Only the support vectors determine the decision boundary. Removing any non-suppo
 
 ### Soft-Margin SVM
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-handwritten.svg" alt="Handwritten: Soft-Margin SVM" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-handwritten.svg" alt="Handwritten: Soft-Margin SVM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-diagram.svg" alt="Diagram: Soft-Margin SVM" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-diagram.svg" alt="Diagram: Soft-Margin SVM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-sticky.svg" alt="Sticky Note: Soft-Margin SVM" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/soft-margin-svm-sticky.svg" alt="Sticky Note: Soft-Margin SVM" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ The only difference from hard-margin is the upper bound $C$ on $\alpha_i$.
 
 ### The Kernel Trick
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-handwritten.svg" alt="Handwritten: The Kernel Trick" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-handwritten.svg" alt="Handwritten: The Kernel Trick" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-diagram.svg" alt="Diagram: The Kernel Trick" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-diagram.svg" alt="Diagram: The Kernel Trick" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-sticky.svg" alt="Sticky Note: The Kernel Trick" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/the-kernel-trick-sticky.svg" alt="Sticky Note: The Kernel Trick" width="30%">
 </a>
 
 
@@ -237,14 +237,14 @@ $$f(\mathbf{x}) = \sum_{i=1}^{n} \alpha_i y^{(i)} K(\mathbf{x}^{(i)}, \mathbf{x}
 
 ### Common Kernel Functions
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-handwritten.svg" alt="Handwritten: Common Kernel Functions" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-handwritten.svg" alt="Handwritten: Common Kernel Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-diagram.svg" alt="Diagram: Common Kernel Functions" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-diagram.svg" alt="Diagram: Common Kernel Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-sticky.svg" alt="Sticky Note: Common Kernel Functions" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/common-kernel-functions-sticky.svg" alt="Sticky Note: Common Kernel Functions" width="30%">
 </a>
 
 
@@ -282,14 +282,14 @@ flowchart TD
 
 ### Multi-Class SVM
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-handwritten.svg" alt="Handwritten: Multi-Class SVM" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-handwritten.svg" alt="Handwritten: Multi-Class SVM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-diagram.svg" alt="Diagram: Multi-Class SVM" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-diagram.svg" alt="Diagram: Multi-Class SVM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-sticky.svg" alt="Sticky Note: Multi-Class SVM" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/multi-class-svm-sticky.svg" alt="Sticky Note: Multi-Class SVM" width="30%">
 </a>
 
 
@@ -301,14 +301,14 @@ SVMs are inherently binary classifiers. For multi-class problems:
 
 ### SMO Algorithm (High-Level)
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-handwritten.svg" alt="Handwritten: SMO Algorithm (High-Level)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-handwritten.svg" alt="Handwritten: SMO Algorithm (High-Level)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-diagram.svg" alt="Diagram: SMO Algorithm (High-Level)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-diagram.svg" alt="Diagram: SMO Algorithm (High-Level)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-sticky.svg" alt="Sticky Note: SMO Algorithm (High-Level)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/smo-algorithm-high-level-sticky.svg" alt="Sticky Note: SMO Algorithm (High-Level)" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ SMO avoids general-purpose QP solvers and can scale to hundreds of thousands of 
 
 ### Hinge Loss Interpretation
 
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-handwritten.svg" alt="Handwritten: Hinge Loss Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-handwritten.svg" alt="Handwritten: Hinge Loss Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-diagram.svg" alt="Diagram: Hinge Loss Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-diagram.svg" alt="Diagram: Hinge Loss Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-sticky.svg" alt="Sticky Note: Hinge Loss Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/06-support-vector-machines/hinge-loss-interpretation-sticky.svg" alt="Sticky Note: Hinge Loss Interpretation" width="30%">
 </a>
 
 

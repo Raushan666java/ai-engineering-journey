@@ -17,14 +17,14 @@ This chapter teaches you how to use AI as a learning accelerator — not a crutc
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -51,14 +51,14 @@ flowchart LR
 
 ### Q1: How can AI serve as a Socratic tutor for active learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-handwritten.svg" alt="Handwritten: How can AI serve as a Socratic tutor for active learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-handwritten.svg" alt="Handwritten: How can AI serve as a Socratic tutor for active learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-diagram.svg" alt="Diagram: How can AI serve as a Socratic tutor for active learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-diagram.svg" alt="Diagram: How can AI serve as a Socratic tutor for active learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-sticky.svg" alt="Sticky Note: How can AI serve as a Socratic tutor for active learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-serve-as-a-socratic-tutor-for-active-learning-sticky.svg" alt="Sticky Note: How can AI serve as a Socratic tutor for active learning?" width="30%">
 </a>
 
 
@@ -149,14 +149,14 @@ class SocraticTutor {
 
 ### Q2: What prompt patterns work best for learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-handwritten.svg" alt="Handwritten: What prompt patterns work best for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-handwritten.svg" alt="Handwritten: What prompt patterns work best for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-diagram.svg" alt="Diagram: What prompt patterns work best for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-diagram.svg" alt="Diagram: What prompt patterns work best for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-sticky.svg" alt="Sticky Note: What prompt patterns work best for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-prompt-patterns-work-best-for-learning-sticky.svg" alt="Sticky Note: What prompt patterns work best for learning?" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ function buildLearningPrompt(config: LearningPrompt): string {
 
 ### Q3: How can you build an AI-powered spaced repetition system?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-handwritten.svg" alt="Handwritten: How can you build an AI-powered spaced repetition system?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-handwritten.svg" alt="Handwritten: How can you build an AI-powered spaced repetition system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-diagram.svg" alt="Diagram: How can you build an AI-powered spaced repetition system?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-diagram.svg" alt="Diagram: How can you build an AI-powered spaced repetition system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-sticky.svg" alt="Sticky Note: How can you build an AI-powered spaced repetition system?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-spaced-repetition-system-sticky.svg" alt="Sticky Note: How can you build an AI-powered spaced repetition system?" width="30%">
 </a>
 
 
@@ -316,14 +316,14 @@ Generate a DIFFERENT angle than previous reviews.`;
 
 ### Q4: How can AI improve your code review and debugging skills?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-handwritten.svg" alt="Handwritten: How can AI improve your code review and debugging skills?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-handwritten.svg" alt="Handwritten: How can AI improve your code review and debugging skills?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-diagram.svg" alt="Diagram: How can AI improve your code review and debugging skills?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-diagram.svg" alt="Diagram: How can AI improve your code review and debugging skills?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-sticky.svg" alt="Sticky Note: How can AI improve your code review and debugging skills?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-improve-your-code-review-and-debugging-skills-sticky.svg" alt="Sticky Note: How can AI improve your code review and debugging skills?" width="30%">
 </a>
 
 
@@ -425,14 +425,14 @@ class AIAssistedCodeReview {
 
 ### Q5: How can AI generate effective practice problems?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-handwritten.svg" alt="Handwritten: How can AI generate effective practice problems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-handwritten.svg" alt="Handwritten: How can AI generate effective practice problems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-diagram.svg" alt="Diagram: How can AI generate effective practice problems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-diagram.svg" alt="Diagram: How can AI generate effective practice problems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-sticky.svg" alt="Sticky Note: How can AI generate effective practice problems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-generate-effective-practice-problems-sticky.svg" alt="Sticky Note: How can AI generate effective practice problems?" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ The solution must be correct and complete.`;
 
 ### Q6: How can AI detect your knowledge gaps automatically?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-handwritten.svg" alt="Handwritten: How can AI detect your knowledge gaps automatically?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-handwritten.svg" alt="Handwritten: How can AI detect your knowledge gaps automatically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-diagram.svg" alt="Diagram: How can AI detect your knowledge gaps automatically?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-diagram.svg" alt="Diagram: How can AI detect your knowledge gaps automatically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-sticky.svg" alt="Sticky Note: How can AI detect your knowledge gaps automatically?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-detect-your-knowledge-gaps-automatically-sticky.svg" alt="Sticky Note: How can AI detect your knowledge gaps automatically?" width="30%">
 </a>
 
 
@@ -684,14 +684,14 @@ function generateLearningPlan(currentState: KnowledgeNode[], target: string): Ga
 
 ### Q7: How can AI help with summarization that reinforces learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-handwritten.svg" alt="Handwritten: How can AI help with summarization that reinforces learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-handwritten.svg" alt="Handwritten: How can AI help with summarization that reinforces learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-diagram.svg" alt="Diagram: How can AI help with summarization that reinforces learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-diagram.svg" alt="Diagram: How can AI help with summarization that reinforces learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-sticky.svg" alt="Sticky Note: How can AI help with summarization that reinforces learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-summarization-that-reinforces-learning-sticky.svg" alt="Sticky Note: How can AI help with summarization that reinforces learning?" width="30%">
 </a>
 
 
@@ -792,14 +792,14 @@ class ActiveRecallSummarizer {
 
 ### Q8: How can AI help design personalized learning paths?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-handwritten.svg" alt="Handwritten: How can AI help design personalized learning paths?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-handwritten.svg" alt="Handwritten: How can AI help design personalized learning paths?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-diagram.svg" alt="Diagram: How can AI help design personalized learning paths?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-diagram.svg" alt="Diagram: How can AI help design personalized learning paths?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-sticky.svg" alt="Sticky Note: How can AI help design personalized learning paths?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-design-personalized-learning-paths-sticky.svg" alt="Sticky Note: How can AI help design personalized learning paths?" width="30%">
 </a>
 
 
@@ -897,14 +897,14 @@ class LearningPathDesigner {
 
 ### Q9: How can AI assist with interview preparation?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-handwritten.svg" alt="Handwritten: How can AI assist with interview preparation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-handwritten.svg" alt="Handwritten: How can AI assist with interview preparation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-diagram.svg" alt="Diagram: How can AI assist with interview preparation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-diagram.svg" alt="Diagram: How can AI assist with interview preparation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-sticky.svg" alt="Sticky Note: How can AI assist with interview preparation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-assist-with-interview-preparation-sticky.svg" alt="Sticky Note: How can AI assist with interview preparation?" width="30%">
 </a>
 
 
@@ -1000,14 +1000,14 @@ class MockInterviewer {
 
 ### Q10: What are the five biggest pitfalls of AI-assisted learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-handwritten.svg" alt="Handwritten: What are the five biggest pitfalls of AI-assisted learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-handwritten.svg" alt="Handwritten: What are the five biggest pitfalls of AI-assisted learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-diagram.svg" alt="Diagram: What are the five biggest pitfalls of AI-assisted learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-diagram.svg" alt="Diagram: What are the five biggest pitfalls of AI-assisted learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-sticky.svg" alt="Sticky Note: What are the five biggest pitfalls of AI-assisted learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/what-are-the-five-biggest-pitfalls-of-ai-assisted-learning-sticky.svg" alt="Sticky Note: What are the five biggest pitfalls of AI-assisted learning?" width="30%">
 </a>
 
 
@@ -1113,14 +1113,14 @@ class PitfallGuard {
 
 ### Q11: How can you build an AI-powered learning dashboard?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-handwritten.svg" alt="Handwritten: How can you build an AI-powered learning dashboard?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-handwritten.svg" alt="Handwritten: How can you build an AI-powered learning dashboard?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-diagram.svg" alt="Diagram: How can you build an AI-powered learning dashboard?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-diagram.svg" alt="Diagram: How can you build an AI-powered learning dashboard?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-sticky.svg" alt="Sticky Note: How can you build an AI-powered learning dashboard?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-build-an-ai-powered-learning-dashboard-sticky.svg" alt="Sticky Note: How can you build an AI-powered learning dashboard?" width="30%">
 </a>
 
 
@@ -1271,14 +1271,14 @@ Projected Mastery: ${this.metrics.projectedMasteryDate.toDateString()}
 
 ### Q12: How can you use AI for multi-modal learning (diagrams, code, text)?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-handwritten.svg" alt="Handwritten: How can you use AI for multi-modal learning (diagrams, code, text)?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-handwritten.svg" alt="Handwritten: How can you use AI for multi-modal learning (diagrams, code, text)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-diagram.svg" alt="Diagram: How can you use AI for multi-modal learning (diagrams, code, text)?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-diagram.svg" alt="Diagram: How can you use AI for multi-modal learning (diagrams, code, text)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-sticky.svg" alt="Sticky Note: How can you use AI for multi-modal learning (diagrams, code, text)?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-use-ai-for-multi-modal-learning-diagrams-code-text-sticky.svg" alt="Sticky Note: How can you use AI for multi-modal learning (diagrams, code, text)?" width="30%">
 </a>
 
 
@@ -1368,14 +1368,14 @@ ${concept}[specific characteristic] maps to ${domain}[analogous characteristic].
 
 ### Q13: How can AI help with documentation comprehension?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-handwritten.svg" alt="Handwritten: How can AI help with documentation comprehension?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-handwritten.svg" alt="Handwritten: How can AI help with documentation comprehension?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-diagram.svg" alt="Diagram: How can AI help with documentation comprehension?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-diagram.svg" alt="Diagram: How can AI help with documentation comprehension?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-sticky.svg" alt="Sticky Note: How can AI help with documentation comprehension?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-ai-help-with-documentation-comprehension-sticky.svg" alt="Sticky Note: How can AI help with documentation comprehension?" width="30%">
 </a>
 
 
@@ -1493,14 +1493,14 @@ Not suitable for: [situations where it's overkill].`;
 
 ### Q14: How can you combine AI with traditional learning techniques?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-handwritten.svg" alt="Handwritten: How can you combine AI with traditional learning techniques?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-handwritten.svg" alt="Handwritten: How can you combine AI with traditional learning techniques?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-diagram.svg" alt="Diagram: How can you combine AI with traditional learning techniques?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-diagram.svg" alt="Diagram: How can you combine AI with traditional learning techniques?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-sticky.svg" alt="Sticky Note: How can you combine AI with traditional learning techniques?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-can-you-combine-ai-with-traditional-learning-techniques-sticky.svg" alt="Sticky Note: How can you combine AI with traditional learning techniques?" width="30%">
 </a>
 
 
@@ -1612,14 +1612,14 @@ class TechniqueAugmenter {
 
 ### Q15: How do you build a lifelong AI-assisted learning system?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-handwritten.svg" alt="Handwritten: How do you build a lifelong AI-assisted learning system?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-handwritten.svg" alt="Handwritten: How do you build a lifelong AI-assisted learning system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-diagram.svg" alt="Diagram: How do you build a lifelong AI-assisted learning system?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-diagram.svg" alt="Diagram: How do you build a lifelong AI-assisted learning system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-sticky.svg" alt="Sticky Note: How do you build a lifelong AI-assisted learning system?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/how-do-you-build-a-lifelong-ai-assisted-learning-system-sticky.svg" alt="Sticky Note: How do you build a lifelong AI-assisted learning system?" width="30%">
 </a>
 
 
@@ -1732,14 +1732,14 @@ Adjustments for next month:
 
 ### Self-Assessment Quiz
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
 </a>
 
 

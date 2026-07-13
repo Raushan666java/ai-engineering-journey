@@ -55,14 +55,14 @@ flowchart TB
 
 ### The Data-Flow Analysis Problem
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-handwritten.svg" alt="Handwritten: The Data-Flow Analysis Problem" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-handwritten.svg" alt="Handwritten: The Data-Flow Analysis Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-diagram.svg" alt="Diagram: The Data-Flow Analysis Problem" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-diagram.svg" alt="Diagram: The Data-Flow Analysis Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-sticky.svg" alt="Sticky Note: The Data-Flow Analysis Problem" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-sticky.svg" alt="Sticky Note: The Data-Flow Analysis Problem" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ The compiler iterates these equations until they stabilize ? a **fixed point** ?
 
 ### Reaching Definitions
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-handwritten.svg" alt="Handwritten: Reaching Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-handwritten.svg" alt="Handwritten: Reaching Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-diagram.svg" alt="Diagram: Reaching Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-diagram.svg" alt="Diagram: Reaching Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-sticky.svg" alt="Sticky Note: Reaching Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-sticky.svg" alt="Sticky Note: Reaching Definitions" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ Reaching definitions enable:
 
 ### Live-Variable Analysis
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-handwritten.svg" alt="Handwritten: Live-Variable Analysis" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-handwritten.svg" alt="Handwritten: Live-Variable Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-diagram.svg" alt="Diagram: Live-Variable Analysis" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-diagram.svg" alt="Diagram: Live-Variable Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-sticky.svg" alt="Sticky Note: Live-Variable Analysis" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-sticky.svg" alt="Sticky Note: Live-Variable Analysis" width="30%">
 </a>
 
 
@@ -159,14 +159,14 @@ Live-variable analysis is essential for:
 
 ### Available Expressions
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-handwritten.svg" alt="Handwritten: Available Expressions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-handwritten.svg" alt="Handwritten: Available Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-diagram.svg" alt="Diagram: Available Expressions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-diagram.svg" alt="Diagram: Available Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-sticky.svg" alt="Sticky Note: Available Expressions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-sticky.svg" alt="Sticky Note: Available Expressions" width="30%">
 </a>
 
 
@@ -193,14 +193,14 @@ If expression `e` is available at point `p` (computed on all paths, and no opera
 
 ### Constant Propagation
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-handwritten.svg" alt="Handwritten: Constant Propagation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-handwritten.svg" alt="Handwritten: Constant Propagation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-diagram.svg" alt="Diagram: Constant Propagation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-diagram.svg" alt="Diagram: Constant Propagation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-sticky.svg" alt="Sticky Note: Constant Propagation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-sticky.svg" alt="Sticky Note: Constant Propagation" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ SCCP (Wegman-Zadeck 1991) performs simultaneous constant propagation and dead-co
 
 ### The Iterative Algorithm
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-handwritten.svg" alt="Handwritten: The Iterative Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-handwritten.svg" alt="Handwritten: The Iterative Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-diagram.svg" alt="Diagram: The Iterative Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-diagram.svg" alt="Diagram: The Iterative Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-sticky.svg" alt="Sticky Note: The Iterative Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-sticky.svg" alt="Sticky Note: The Iterative Algorithm" width="30%">
 </a>
 
 
@@ -307,14 +307,14 @@ In practice, the algorithm converges in 2?5 passes for most programs when blocks
 
 ### Monotone Data-Flow Frameworks
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-handwritten.svg" alt="Handwritten: Monotone Data-Flow Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-handwritten.svg" alt="Handwritten: Monotone Data-Flow Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-diagram.svg" alt="Diagram: Monotone Data-Flow Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-diagram.svg" alt="Diagram: Monotone Data-Flow Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-sticky.svg" alt="Sticky Note: Monotone Data-Flow Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-sticky.svg" alt="Sticky Note: Monotone Data-Flow Frameworks" width="30%">
 </a>
 
 
@@ -352,14 +352,14 @@ Constant propagation is **not** distributive because the meet of constant values
 
 ### Partial Redundancy Elimination (PRE)
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-handwritten.svg" alt="Handwritten: Partial Redundancy Elimination (PRE)" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-handwritten.svg" alt="Handwritten: Partial Redundancy Elimination (PRE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-diagram.svg" alt="Diagram: Partial Redundancy Elimination (PRE)" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-diagram.svg" alt="Diagram: Partial Redundancy Elimination (PRE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-sticky.svg" alt="Sticky Note: Partial Redundancy Elimination (PRE)" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-sticky.svg" alt="Sticky Note: Partial Redundancy Elimination (PRE)" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ The insertion decision is made where an expression is partially anticipated but 
 
 ### Putting It All Together ? TypeScript Implementation
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
 
 
@@ -691,14 +691,14 @@ Block 4: IN=[2:a, 1:d, 3:c] OUT=[2:a, 1:d, 3:c]
 
 ### Mermaid: Data-Flow Equation Structure
 
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-handwritten.svg" alt="Handwritten: Mermaid: Data-Flow Equation Structure" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-handwritten.svg" alt="Handwritten: Mermaid: Data-Flow Equation Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-diagram.svg" alt="Diagram: Mermaid: Data-Flow Equation Structure" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-diagram.svg" alt="Diagram: Mermaid: Data-Flow Equation Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-sticky.svg" alt="Sticky Note: Mermaid: Data-Flow Equation Structure" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-sticky.svg" alt="Sticky Note: Mermaid: Data-Flow Equation Structure" width="30%">
 </a>
 
 

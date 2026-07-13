@@ -41,14 +41,14 @@ flowchart LR
 
 ### Syntax-Directed Definitions
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-handwritten.svg" alt="Handwritten: Syntax-Directed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-handwritten.svg" alt="Handwritten: Syntax-Directed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-diagram.svg" alt="Diagram: Syntax-Directed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-diagram.svg" alt="Diagram: Syntax-Directed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-sticky.svg" alt="Sticky Note: Syntax-Directed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-sticky.svg" alt="Sticky Note: Syntax-Directed Definitions" width="30%">
 </a>
 
 
@@ -68,14 +68,14 @@ A **syntax-directed definition** (SDD) is a context-free grammar augmented with 
 
 ### Attribute Classification
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-handwritten.svg" alt="Handwritten: Attribute Classification" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-handwritten.svg" alt="Handwritten: Attribute Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-diagram.svg" alt="Diagram: Attribute Classification" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-diagram.svg" alt="Diagram: Attribute Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-sticky.svg" alt="Sticky Note: Attribute Classification" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-sticky.svg" alt="Sticky Note: Attribute Classification" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ An inherited attribute is computed from the attributes of the parent, siblings, 
 
 ### Dependency Graphs
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-handwritten.svg" alt="Handwritten: Dependency Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-handwritten.svg" alt="Handwritten: Dependency Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-diagram.svg" alt="Diagram: Dependency Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-diagram.svg" alt="Diagram: Dependency Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-sticky.svg" alt="Sticky Note: Dependency Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-sticky.svg" alt="Sticky Note: Dependency Graphs" width="30%">
 </a>
 
 
@@ -135,14 +135,14 @@ A correct evaluation order is any topological sort of the dependency graph. For 
 
 ### S-Attributed Definitions
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-handwritten.svg" alt="Handwritten: S-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-handwritten.svg" alt="Handwritten: S-Attributed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-diagram.svg" alt="Diagram: S-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-diagram.svg" alt="Diagram: S-Attributed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-sticky.svg" alt="Sticky Note: S-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-sticky.svg" alt="Sticky Note: S-Attributed Definitions" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ S-attributed grammars correspond to the class of context-free grammars that can 
 
 ### L-Attributed Definitions
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-handwritten.svg" alt="Handwritten: L-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-handwritten.svg" alt="Handwritten: L-Attributed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-diagram.svg" alt="Diagram: L-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-diagram.svg" alt="Diagram: L-Attributed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-sticky.svg" alt="Sticky Note: L-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-sticky.svg" alt="Sticky Note: L-Attributed Definitions" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ This **left-to-right restriction** ensures evaluation can proceed during a depth
 
 ### Syntax-Directed Translation Schemes
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-handwritten.svg" alt="Handwritten: Syntax-Directed Translation Schemes" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-handwritten.svg" alt="Handwritten: Syntax-Directed Translation Schemes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-diagram.svg" alt="Diagram: Syntax-Directed Translation Schemes" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-diagram.svg" alt="Diagram: Syntax-Directed Translation Schemes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-sticky.svg" alt="Sticky Note: Syntax-Directed Translation Schemes" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-sticky.svg" alt="Sticky Note: Syntax-Directed Translation Schemes" width="30%">
 </a>
 
 
@@ -198,14 +198,14 @@ An SDT can always be derived from an SDD by placing each semantic rule at the po
 
 ### Evaluation Order
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-handwritten.svg" alt="Handwritten: Evaluation Order" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-handwritten.svg" alt="Handwritten: Evaluation Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-diagram.svg" alt="Diagram: Evaluation Order" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-diagram.svg" alt="Diagram: Evaluation Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-sticky.svg" alt="Sticky Note: Evaluation Order" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-sticky.svg" alt="Sticky Note: Evaluation Order" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ Evaluate attributes in depth-first left-to-right:
 
 ### Complete TypeScript SDT Evaluator
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-handwritten.svg" alt="Handwritten: Complete TypeScript SDT Evaluator" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-handwritten.svg" alt="Handwritten: Complete TypeScript SDT Evaluator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-diagram.svg" alt="Diagram: Complete TypeScript SDT Evaluator" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-diagram.svg" alt="Diagram: Complete TypeScript SDT Evaluator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-sticky.svg" alt="Sticky Note: Complete TypeScript SDT Evaluator" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-sticky.svg" alt="Sticky Note: Complete TypeScript SDT Evaluator" width="30%">
 </a>
 
 
@@ -593,14 +593,14 @@ whileCode.forEach(line => console.log(`  ${line}`));
 
 ### Implementing S-Attributed Definitions in Yacc/Bison
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-handwritten.svg" alt="Handwritten: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-handwritten.svg" alt="Handwritten: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-diagram.svg" alt="Diagram: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-diagram.svg" alt="Diagram: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-sticky.svg" alt="Sticky Note: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-sticky.svg" alt="Sticky Note: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
 </a>
 
 
@@ -616,14 +616,14 @@ The parser's value stack manages these attributes. During reduction of `expr ? e
 
 ### Implementing L-Attributed Definitions
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-handwritten.svg" alt="Handwritten: Implementing L-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-handwritten.svg" alt="Handwritten: Implementing L-Attributed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-diagram.svg" alt="Diagram: Implementing L-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-diagram.svg" alt="Diagram: Implementing L-Attributed Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-sticky.svg" alt="Sticky Note: Implementing L-Attributed Definitions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-sticky.svg" alt="Sticky Note: Implementing L-Attributed Definitions" width="30%">
 </a>
 
 
@@ -722,14 +722,14 @@ class TypeCheckingParser {
 
 ### Applications of SDDs
 
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-handwritten.svg" alt="Handwritten: Applications of SDDs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-handwritten.svg" alt="Handwritten: Applications of SDDs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-diagram.svg" alt="Diagram: Applications of SDDs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-diagram.svg" alt="Diagram: Applications of SDDs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-sticky.svg" alt="Sticky Note: Applications of SDDs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-sticky.svg" alt="Sticky Note: Applications of SDDs" width="30%">
 </a>
 
 

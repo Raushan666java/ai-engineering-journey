@@ -24,14 +24,14 @@
 
 ### Algorithm Details
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-handwritten.svg" alt="Handwritten: Algorithm Details" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-handwritten.svg" alt="Handwritten: Algorithm Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-diagram.svg" alt="Diagram: Algorithm Details" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-diagram.svg" alt="Diagram: Algorithm Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-sticky.svg" alt="Sticky Note: Algorithm Details" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/algorithm-details-sticky.svg" alt="Sticky Note: Algorithm Details" width="30%">
 </a>
 
 
@@ -47,14 +47,14 @@
 
 ### Key Size Equivalence
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-handwritten.svg" alt="Handwritten: Key Size Equivalence" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-handwritten.svg" alt="Handwritten: Key Size Equivalence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-diagram.svg" alt="Diagram: Key Size Equivalence" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-diagram.svg" alt="Diagram: Key Size Equivalence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-sticky.svg" alt="Sticky Note: Key Size Equivalence" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-size-equivalence-sticky.svg" alt="Sticky Note: Key Size Equivalence" width="30%">
 </a>
 
 ```
@@ -69,14 +69,14 @@ ECC-521 ≈ RSA-15360 ≈ AES-256
 
 ### Properties
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" alt="Handwritten: Properties" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" alt="Handwritten: Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" alt="Diagram: Properties" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" alt="Diagram: Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" alt="Sticky Note: Properties" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" alt="Sticky Note: Properties" width="30%">
 </a>
 
 1. **Preimage Resistance (One-way):** Given hash H, infeasible to find M such that hash(M) = H
@@ -87,14 +87,14 @@ ECC-521 ≈ RSA-15360 ≈ AES-256
 
 ### Hash Algorithm Comparison
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-handwritten.svg" alt="Handwritten: Hash Algorithm Comparison" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-handwritten.svg" alt="Handwritten: Hash Algorithm Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-diagram.svg" alt="Diagram: Hash Algorithm Comparison" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-diagram.svg" alt="Diagram: Hash Algorithm Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-sticky.svg" alt="Sticky Note: Hash Algorithm Comparison" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-algorithm-comparison-sticky.svg" alt="Sticky Note: Hash Algorithm Comparison" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ Receiver Side:
 
 ### Properties
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" alt="Handwritten: Properties" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-handwritten.svg" alt="Handwritten: Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" alt="Diagram: Properties" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-diagram.svg" alt="Diagram: Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" alt="Sticky Note: Properties" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/properties-sticky.svg" alt="Sticky Note: Properties" width="30%">
 </a>
 
 - **Authentication:** Proves sender's identity (only sender has private key)
@@ -163,14 +163,14 @@ Client                                        Server
 
 ### TLS 1.3 Improvements
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-handwritten.svg" alt="Handwritten: TLS 1.3 Improvements" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-handwritten.svg" alt="Handwritten: TLS 1.3 Improvements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-diagram.svg" alt="Diagram: TLS 1.3 Improvements" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-diagram.svg" alt="Diagram: TLS 1.3 Improvements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-sticky.svg" alt="Sticky Note: TLS 1.3 Improvements" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/tls-1-3-improvements-sticky.svg" alt="Sticky Note: TLS 1.3 Improvements" width="30%">
 </a>
 
 - Reduced handshake: 1-RTT (normal), 0-RTT (resumed)
@@ -192,14 +192,14 @@ Client                                        Server
 
 ### Firewall Rules Example
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-handwritten.svg" alt="Handwritten: Firewall Rules Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-handwritten.svg" alt="Handwritten: Firewall Rules Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-diagram.svg" alt="Diagram: Firewall Rules Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-diagram.svg" alt="Diagram: Firewall Rules Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-sticky.svg" alt="Sticky Note: Firewall Rules Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/firewall-rules-example-sticky.svg" alt="Sticky Note: Firewall Rules Example" width="30%">
 </a>
 
 ```
@@ -222,14 +222,14 @@ Rule 3: DENY all FROM any TO any
 
 ### Detection Methods
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-handwritten.svg" alt="Handwritten: Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-handwritten.svg" alt="Handwritten: Detection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-diagram.svg" alt="Diagram: Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-diagram.svg" alt="Diagram: Detection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-sticky.svg" alt="Sticky Note: Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/detection-methods-sticky.svg" alt="Sticky Note: Detection Methods" width="30%">
 </a>
 
 | Method | Description | Strength | Weakness |
@@ -257,14 +257,14 @@ Rule 3: DENY all FROM any TO any
 
 ### XSS Types
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-handwritten.svg" alt="Handwritten: XSS Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-handwritten.svg" alt="Handwritten: XSS Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-diagram.svg" alt="Diagram: XSS Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-diagram.svg" alt="Diagram: XSS Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-sticky.svg" alt="Sticky Note: XSS Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/xss-types-sticky.svg" alt="Sticky Note: XSS Types" width="30%">
 </a>
 
 | Type | Description | Example |
@@ -292,14 +292,14 @@ graph TD
 
 ### Parkerian Hexad (Extended CIA + 3 more)
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-handwritten.svg" alt="Handwritten: Parkerian Hexad (Extended CIA + 3 more)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-handwritten.svg" alt="Handwritten: Parkerian Hexad (Extended CIA + 3 more)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-diagram.svg" alt="Diagram: Parkerian Hexad (Extended CIA + 3 more)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-diagram.svg" alt="Diagram: Parkerian Hexad (Extended CIA + 3 more)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-sticky.svg" alt="Sticky Note: Parkerian Hexad (Extended CIA + 3 more)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/parkerian-hexad-extended-cia-3-more-sticky.svg" alt="Sticky Note: Parkerian Hexad (Extended CIA + 3 more)" width="30%">
 </a>
 
 1. **Confidentiality** — privacy
@@ -321,14 +321,14 @@ graph TD
 
 ### Authentication Factors
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-handwritten.svg" alt="Handwritten: Authentication Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-handwritten.svg" alt="Handwritten: Authentication Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-diagram.svg" alt="Diagram: Authentication Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-diagram.svg" alt="Diagram: Authentication Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-sticky.svg" alt="Sticky Note: Authentication Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/authentication-factors-sticky.svg" alt="Sticky Note: Authentication Factors" width="30%">
 </a>
 
 | Factor | Type | Examples |
@@ -341,14 +341,14 @@ graph TD
 
 ### MFA (Multi-Factor Authentication)
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-handwritten.svg" alt="Handwritten: MFA (Multi-Factor Authentication)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-handwritten.svg" alt="Handwritten: MFA (Multi-Factor Authentication)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-diagram.svg" alt="Diagram: MFA (Multi-Factor Authentication)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-diagram.svg" alt="Diagram: MFA (Multi-Factor Authentication)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-sticky.svg" alt="Sticky Note: MFA (Multi-Factor Authentication)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/mfa-multi-factor-authentication-sticky.svg" alt="Sticky Note: MFA (Multi-Factor Authentication)" width="30%">
 </a>
 
 Requires **two or more** factors from different categories (not just two passwords).
@@ -385,14 +385,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### Biometric System Metrics
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-handwritten.svg" alt="Handwritten: Biometric System Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-handwritten.svg" alt="Handwritten: Biometric System Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-diagram.svg" alt="Diagram: Biometric System Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-diagram.svg" alt="Diagram: Biometric System Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-sticky.svg" alt="Sticky Note: Biometric System Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/biometric-system-metrics-sticky.svg" alt="Sticky Note: Biometric System Metrics" width="30%">
 </a>
 
 - **FAR (False Acceptance Rate):** Imposter accepted (Type II error)
@@ -457,14 +457,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### IPsec Modes
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-handwritten.svg" alt="Handwritten: IPsec Modes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-handwritten.svg" alt="Handwritten: IPsec Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-diagram.svg" alt="Diagram: IPsec Modes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-diagram.svg" alt="Diagram: IPsec Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-sticky.svg" alt="Sticky Note: IPsec Modes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-modes-sticky.svg" alt="Sticky Note: IPsec Modes" width="30%">
 </a>
 
 | Mode | What is Encrypted | Use Case |
@@ -474,14 +474,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### IPsec Protocols
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-handwritten.svg" alt="Handwritten: IPsec Protocols" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-handwritten.svg" alt="Handwritten: IPsec Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-diagram.svg" alt="Diagram: IPsec Protocols" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-diagram.svg" alt="Diagram: IPsec Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-sticky.svg" alt="Sticky Note: IPsec Protocols" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/ipsec-protocols-sticky.svg" alt="Sticky Note: IPsec Protocols" width="30%">
 </a>
 
 - **AH (Authentication Header):** Integrity + authentication only (no encryption)
@@ -499,14 +499,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### WPA2 vs WPA3
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: WPA2 vs WPA3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-diagram.svg" alt="Diagram: WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-diagram.svg" alt="Diagram: WPA2 vs WPA3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: WPA2 vs WPA3" width="30%">
 </a>
 
 | Feature | WPA2 | WPA3 |
@@ -520,14 +520,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### Key Documents
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-handwritten.svg" alt="Handwritten: Key Documents" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-handwritten.svg" alt="Handwritten: Key Documents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-diagram.svg" alt="Diagram: Key Documents" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-diagram.svg" alt="Diagram: Key Documents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-sticky.svg" alt="Sticky Note: Key Documents" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/key-documents-sticky.svg" alt="Sticky Note: Key Documents" width="30%">
 </a>
 
 | Document | Purpose | Key Elements |
@@ -539,14 +539,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### Security Controls Classification
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-handwritten.svg" alt="Handwritten: Security Controls Classification" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-handwritten.svg" alt="Handwritten: Security Controls Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-diagram.svg" alt="Diagram: Security Controls Classification" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-diagram.svg" alt="Diagram: Security Controls Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-sticky.svg" alt="Sticky Note: Security Controls Classification" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-controls-classification-sticky.svg" alt="Sticky Note: Security Controls Classification" width="30%">
 </a>
 
 | Category | Subtype | Examples |
@@ -557,14 +557,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### Control Functions
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-handwritten.svg" alt="Handwritten: Control Functions" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-handwritten.svg" alt="Handwritten: Control Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-diagram.svg" alt="Diagram: Control Functions" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-diagram.svg" alt="Diagram: Control Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-sticky.svg" alt="Sticky Note: Control Functions" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/control-functions-sticky.svg" alt="Sticky Note: Control Functions" width="30%">
 </a>
 
 - **Preventive:** Stop attacks before they happen (firewall, encryption)
@@ -577,14 +577,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### Phases
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/phases-handwritten.svg" alt="Handwritten: Phases" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/phases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/phases-handwritten.svg" alt="Handwritten: Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/phases-diagram.svg" alt="Diagram: Phases" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/phases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/phases-diagram.svg" alt="Diagram: Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/phases-sticky.svg" alt="Sticky Note: Phases" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/phases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/phases-sticky.svg" alt="Sticky Note: Phases" width="30%">
 </a>
 
 1. **Reconnaissance:** Gather information (passive: Google, social media; active: DNS, port scanning)
@@ -596,14 +596,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### Black Box vs White Box vs Gray Box
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-handwritten.svg" alt="Handwritten: Black Box vs White Box vs Gray Box" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-handwritten.svg" alt="Handwritten: Black Box vs White Box vs Gray Box" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-diagram.svg" alt="Diagram: Black Box vs White Box vs Gray Box" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-diagram.svg" alt="Diagram: Black Box vs White Box vs Gray Box" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-sticky.svg" alt="Sticky Note: Black Box vs White Box vs Gray Box" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/black-box-vs-white-box-vs-gray-box-sticky.svg" alt="Sticky Note: Black Box vs White Box vs Gray Box" width="30%">
 </a>
 
 | Type | Knowledge of Target | Realism | Cost |
@@ -631,14 +631,14 @@ Requires **two or more** factors from different categories (not just two passwor
 
 ### Encryption/Decryption — TypeScript Implementations
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-handwritten.svg" alt="Handwritten: Encryption/Decryption — TypeScript Implementations" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-handwritten.svg" alt="Handwritten: Encryption/Decryption — TypeScript Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-diagram.svg" alt="Diagram: Encryption/Decryption — TypeScript Implementations" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-diagram.svg" alt="Diagram: Encryption/Decryption — TypeScript Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-sticky.svg" alt="Sticky Note: Encryption/Decryption — TypeScript Implementations" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/encryption-decryption-typescript-implementations-sticky.svg" alt="Sticky Note: Encryption/Decryption — TypeScript Implementations" width="30%">
 </a>
 
 
@@ -747,14 +747,14 @@ class RSABasic {
 
 ### Hash Function Demonstration — TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-handwritten.svg" alt="Handwritten: Hash Function Demonstration — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-handwritten.svg" alt="Handwritten: Hash Function Demonstration — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-diagram.svg" alt="Diagram: Hash Function Demonstration — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-diagram.svg" alt="Diagram: Hash Function Demonstration — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-sticky.svg" alt="Sticky Note: Hash Function Demonstration — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/hash-function-demonstration-typescript-sticky.svg" alt="Sticky Note: Hash Function Demonstration — TypeScript" width="30%">
 </a>
 
 
@@ -791,14 +791,14 @@ class SimpleHash {
 
 ### Security Protocol Flows — Detailed Diagrams
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-handwritten.svg" alt="Handwritten: Security Protocol Flows — Detailed Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-handwritten.svg" alt="Handwritten: Security Protocol Flows — Detailed Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-diagram.svg" alt="Diagram: Security Protocol Flows — Detailed Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-diagram.svg" alt="Diagram: Security Protocol Flows — Detailed Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-sticky.svg" alt="Sticky Note: Security Protocol Flows — Detailed Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-protocol-flows-detailed-diagrams-sticky.svg" alt="Sticky Note: Security Protocol Flows — Detailed Diagrams" width="30%">
 </a>
 
 
@@ -841,14 +841,14 @@ graph LR
 
 ### Security Threat — TypeScript Detection Examples
 
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-handwritten.svg" alt="Handwritten: Security Threat — TypeScript Detection Examples" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-handwritten.svg" alt="Handwritten: Security Threat — TypeScript Detection Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-diagram.svg" alt="Diagram: Security Threat — TypeScript Detection Examples" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-diagram.svg" alt="Diagram: Security Threat — TypeScript Detection Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-sticky.svg" alt="Sticky Note: Security Threat — TypeScript Detection Examples" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/09-information-security/security-threat-typescript-detection-examples-sticky.svg" alt="Sticky Note: Security Threat — TypeScript Detection Examples" width="30%">
 </a>
 
 

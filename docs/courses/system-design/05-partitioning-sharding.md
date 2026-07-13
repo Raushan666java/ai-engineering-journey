@@ -38,14 +38,14 @@ flowchart LR
 
 ### Partitioning Fundamentals
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-handwritten.svg" alt="Handwritten: Partitioning Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-handwritten.svg" alt="Handwritten: Partitioning Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-diagram.svg" alt="Diagram: Partitioning Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-diagram.svg" alt="Diagram: Partitioning Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-sticky.svg" alt="Sticky Note: Partitioning Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/partitioning-fundamentals-sticky.svg" alt="Sticky Note: Partitioning Fundamentals" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ Shard 2:    user_id 2000001..3000000
 
 ### Sharding Strategies
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-handwritten.svg" alt="Handwritten: Sharding Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-handwritten.svg" alt="Handwritten: Sharding Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-diagram.svg" alt="Diagram: Sharding Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-diagram.svg" alt="Diagram: Sharding Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-sticky.svg" alt="Sticky Note: Sharding Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/sharding-strategies-sticky.svg" alt="Sticky Note: Sharding Strategies" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ To find a row, the system queries the directory first, then routes to the approp
 
 ### Consistent Hashing
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-handwritten.svg" alt="Handwritten: Consistent Hashing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-handwritten.svg" alt="Handwritten: Consistent Hashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-diagram.svg" alt="Diagram: Consistent Hashing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-diagram.svg" alt="Diagram: Consistent Hashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-sticky.svg" alt="Sticky Note: Consistent Hashing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/consistent-hashing-sticky.svg" alt="Sticky Note: Consistent Hashing" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ Each physical node maintains approximately `v * K / N` keys where `v` is the num
 
 ### Rebalancing
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-handwritten.svg" alt="Handwritten: Rebalancing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-handwritten.svg" alt="Handwritten: Rebalancing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-diagram.svg" alt="Diagram: Rebalancing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-diagram.svg" alt="Diagram: Rebalancing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-sticky.svg" alt="Sticky Note: Rebalancing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/rebalancing-sticky.svg" alt="Sticky Note: Rebalancing" width="30%">
 </a>
 
 
@@ -235,14 +235,14 @@ Consistent hashing reduces this to `1/N` of total data. Directory-based sharding
 
 ### Hotspot Mitigation
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-handwritten.svg" alt="Handwritten: Hotspot Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-handwritten.svg" alt="Handwritten: Hotspot Mitigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-diagram.svg" alt="Diagram: Hotspot Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-diagram.svg" alt="Diagram: Hotspot Mitigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-sticky.svg" alt="Sticky Note: Hotspot Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/hotspot-mitigation-sticky.svg" alt="Sticky Note: Hotspot Mitigation" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ With Fan-out:
 
 ### Cross-Shard Queries
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-handwritten.svg" alt="Handwritten: Cross-Shard Queries" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-handwritten.svg" alt="Handwritten: Cross-Shard Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-diagram.svg" alt="Diagram: Cross-Shard Queries" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-diagram.svg" alt="Diagram: Cross-Shard Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-sticky.svg" alt="Sticky Note: Cross-Shard Queries" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/cross-shard-queries-sticky.svg" alt="Sticky Note: Cross-Shard Queries" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ Cross-shard join (expensive):
 
 ### Secondary Indexes
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-handwritten.svg" alt="Handwritten: Secondary Indexes" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-handwritten.svg" alt="Handwritten: Secondary Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-diagram.svg" alt="Diagram: Secondary Indexes" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-diagram.svg" alt="Diagram: Secondary Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-sticky.svg" alt="Sticky Note: Secondary Indexes" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/secondary-indexes-sticky.svg" alt="Sticky Note: Secondary Indexes" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ Query:
 
 ### Compound Shard Keys
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-handwritten.svg" alt="Handwritten: Compound Shard Keys" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-handwritten.svg" alt="Handwritten: Compound Shard Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-diagram.svg" alt="Diagram: Compound Shard Keys" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-diagram.svg" alt="Diagram: Compound Shard Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-sticky.svg" alt="Sticky Note: Compound Shard Keys" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/compound-shard-keys-sticky.svg" alt="Sticky Note: Compound Shard Keys" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ The order of columns in the compound key matters. The leftmost column is the pri
 
 ### Database per Service Pattern
 
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-handwritten.svg" alt="Handwritten: Database per Service Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-handwritten.svg" alt="Handwritten: Database per Service Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-diagram.svg" alt="Diagram: Database per Service Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-diagram.svg" alt="Diagram: Database per Service Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-sticky.svg" alt="Sticky Note: Database per Service Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/05-partitioning-sharding/database-per-service-pattern-sticky.svg" alt="Sticky Note: Database per Service Pattern" width="30%">
 </a>
 
 

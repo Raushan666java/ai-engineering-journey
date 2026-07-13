@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. I/O Interface Types
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-handwritten.svg" alt="Handwritten: 1. I/O Interface Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-handwritten.svg" alt="Handwritten: 1. I/O Interface Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-diagram.svg" alt="Diagram: 1. I/O Interface Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-diagram.svg" alt="Diagram: 1. I/O Interface Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-sticky.svg" alt="Sticky Note: 1. I/O Interface Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/1-i-o-interface-types-sticky.svg" alt="Sticky Note: 1. I/O Interface Types" width="30%">
 </a>
 
 
@@ -58,14 +58,14 @@ An I/O interface connects the CPU/memory subsystem to peripheral devices.
 
 ### 2. Programmed I/O
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-handwritten.svg" alt="Handwritten: 2. Programmed I/O" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-handwritten.svg" alt="Handwritten: 2. Programmed I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-diagram.svg" alt="Diagram: 2. Programmed I/O" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-diagram.svg" alt="Diagram: 2. Programmed I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-sticky.svg" alt="Sticky Note: 2. Programmed I/O" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/2-programmed-i-o-sticky.svg" alt="Sticky Note: 2. Programmed I/O" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ High-speed devices with programmed I/O consume significant CPU time.
 
 ### 3. Interrupt-Driven I/O
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-handwritten.svg" alt="Handwritten: 3. Interrupt-Driven I/O" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-handwritten.svg" alt="Handwritten: 3. Interrupt-Driven I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-diagram.svg" alt="Diagram: 3. Interrupt-Driven I/O" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-diagram.svg" alt="Diagram: 3. Interrupt-Driven I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-sticky.svg" alt="Sticky Note: 3. Interrupt-Driven I/O" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/3-interrupt-driven-i-o-sticky.svg" alt="Sticky Note: 3. Interrupt-Driven I/O" width="30%">
 </a>
 
 
@@ -172,14 +172,14 @@ CPU time = 195,400 / 500e6 ≈ 0.04%
 
 ### 4. Interrupt Types and Priority
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-handwritten.svg" alt="Handwritten: 4. Interrupt Types and Priority" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-handwritten.svg" alt="Handwritten: 4. Interrupt Types and Priority" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-diagram.svg" alt="Diagram: 4. Interrupt Types and Priority" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-diagram.svg" alt="Diagram: 4. Interrupt Types and Priority" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-sticky.svg" alt="Sticky Note: 4. Interrupt Types and Priority" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/4-interrupt-types-and-priority-sticky.svg" alt="Sticky Note: 4. Interrupt Types and Priority" width="30%">
 </a>
 
 
@@ -229,14 +229,14 @@ When multiple interrupts occur simultaneously, the priority scheme determines wh
 
 ### 5. Interrupt Handler Flow
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-handwritten.svg" alt="Handwritten: 5. Interrupt Handler Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-handwritten.svg" alt="Handwritten: 5. Interrupt Handler Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-diagram.svg" alt="Diagram: 5. Interrupt Handler Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-diagram.svg" alt="Diagram: 5. Interrupt Handler Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-sticky.svg" alt="Sticky Note: 5. Interrupt Handler Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/5-interrupt-handler-flow-sticky.svg" alt="Sticky Note: 5. Interrupt Handler Flow" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ Step 14: CPU resumes interrupted program
 
 ### 6. Polling vs Interrupts — Comparison
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-handwritten.svg" alt="Handwritten: 6. Polling vs Interrupts — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-handwritten.svg" alt="Handwritten: 6. Polling vs Interrupts — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-diagram.svg" alt="Diagram: 6. Polling vs Interrupts — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-diagram.svg" alt="Diagram: 6. Polling vs Interrupts — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-sticky.svg" alt="Sticky Note: 6. Polling vs Interrupts — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/6-polling-vs-interrupts-comparison-sticky.svg" alt="Sticky Note: 6. Polling vs Interrupts — Comparison" width="30%">
 </a>
 
 
@@ -284,14 +284,14 @@ Step 14: CPU resumes interrupted program
 
 ### 7. Direct Memory Access (DMA)
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-handwritten.svg" alt="Handwritten: 7. Direct Memory Access (DMA)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-handwritten.svg" alt="Handwritten: 7. Direct Memory Access (DMA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-diagram.svg" alt="Diagram: 7. Direct Memory Access (DMA)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-diagram.svg" alt="Diagram: 7. Direct Memory Access (DMA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-sticky.svg" alt="Sticky Note: 7. Direct Memory Access (DMA)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/7-direct-memory-access-dma-sticky.svg" alt="Sticky Note: 7. Direct Memory Access (DMA)" width="30%">
 </a>
 
 
@@ -357,14 +357,14 @@ Effective data rate per lane = 8 × (128/130) = 7.877 Gbps
 
 ### 8. I/O Processor and I/O Channel
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-handwritten.svg" alt="Handwritten: 8. I/O Processor and I/O Channel" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-handwritten.svg" alt="Handwritten: 8. I/O Processor and I/O Channel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-diagram.svg" alt="Diagram: 8. I/O Processor and I/O Channel" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-diagram.svg" alt="Diagram: 8. I/O Processor and I/O Channel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-sticky.svg" alt="Sticky Note: 8. I/O Processor and I/O Channel" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/8-i-o-processor-and-i-o-channel-sticky.svg" alt="Sticky Note: 8. I/O Processor and I/O Channel" width="30%">
 </a>
 
 
@@ -393,14 +393,14 @@ Effective data rate per lane = 8 × (128/130) = 7.877 Gbps
 
 ### 9. Common I/O Buses
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-handwritten.svg" alt="Handwritten: 9. Common I/O Buses" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-handwritten.svg" alt="Handwritten: 9. Common I/O Buses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-diagram.svg" alt="Diagram: 9. Common I/O Buses" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-diagram.svg" alt="Diagram: 9. Common I/O Buses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-sticky.svg" alt="Sticky Note: 9. Common I/O Buses" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/9-common-i-o-buses-sticky.svg" alt="Sticky Note: 9. Common I/O Buses" width="30%">
 </a>
 
 
@@ -450,14 +450,14 @@ Effective data rate per lane = 8 × (128/130) = 7.877 Gbps
 
 ### 10. RAID Levels
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-handwritten.svg" alt="Handwritten: 10. RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-handwritten.svg" alt="Handwritten: 10. RAID Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-diagram.svg" alt="Diagram: 10. RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-diagram.svg" alt="Diagram: 10. RAID Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-sticky.svg" alt="Sticky Note: 10. RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/10-raid-levels-sticky.svg" alt="Sticky Note: 10. RAID Levels" width="30%">
 </a>
 
 
@@ -504,14 +504,14 @@ Striped across pairs.
 
 ### 11. Important Exam Formulae
 
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-handwritten.svg" alt="Handwritten: 11. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-handwritten.svg" alt="Handwritten: 11. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-diagram.svg" alt="Diagram: 11. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-diagram.svg" alt="Diagram: 11. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-sticky.svg" alt="Sticky Note: 11. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/05-io-organization/11-important-exam-formulae-sticky.svg" alt="Sticky Note: 11. Important Exam Formulae" width="30%">
 </a>
 
 

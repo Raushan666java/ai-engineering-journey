@@ -48,14 +48,14 @@ flowchart LR
 
 ### 3.1 Fundamental Logic Gates
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-handwritten.svg" alt="Handwritten: 3.1 Fundamental Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-handwritten.svg" alt="Handwritten: 3.1 Fundamental Logic Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-diagram.svg" alt="Diagram: 3.1 Fundamental Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-diagram.svg" alt="Diagram: 3.1 Fundamental Logic Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-sticky.svg" alt="Sticky Note: 3.1 Fundamental Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-sticky.svg" alt="Sticky Note: 3.1 Fundamental Logic Gates" width="30%">
 </a>
 
 
@@ -169,14 +169,14 @@ graph TD
 
 ### 3.2 Universal Gates
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-handwritten.svg" alt="Handwritten: 3.2 Universal Gates" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-handwritten.svg" alt="Handwritten: 3.2 Universal Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-diagram.svg" alt="Diagram: 3.2 Universal Gates" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-diagram.svg" alt="Diagram: 3.2 Universal Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-sticky.svg" alt="Sticky Note: 3.2 Universal Gates" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-sticky.svg" alt="Sticky Note: 3.2 Universal Gates" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ NAND and NOR are termed universal gates because either alone suffices to impleme
 
 ### 3.3 Gate-Level Minimisation
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-handwritten.svg" alt="Handwritten: 3.3 Gate-Level Minimisation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-handwritten.svg" alt="Handwritten: 3.3 Gate-Level Minimisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-diagram.svg" alt="Diagram: 3.3 Gate-Level Minimisation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-diagram.svg" alt="Diagram: 3.3 Gate-Level Minimisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-sticky.svg" alt="Sticky Note: 3.3 Gate-Level Minimisation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-sticky.svg" alt="Sticky Note: 3.3 Gate-Level Minimisation" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@ class GateNetwork {
 
 ### 3.4 Electrical Characteristics
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-handwritten.svg" alt="Handwritten: 3.4 Electrical Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-handwritten.svg" alt="Handwritten: 3.4 Electrical Characteristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-diagram.svg" alt="Diagram: 3.4 Electrical Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-diagram.svg" alt="Diagram: 3.4 Electrical Characteristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-sticky.svg" alt="Sticky Note: 3.4 Electrical Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-sticky.svg" alt="Sticky Note: 3.4 Electrical Characteristics" width="30%">
 </a>
 
 
@@ -327,14 +327,14 @@ Power dissipation comprises static and dynamic components:
 
 ### 3.5 Logic Families
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-handwritten.svg" alt="Handwritten: 3.5 Logic Families" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-handwritten.svg" alt="Handwritten: 3.5 Logic Families" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-diagram.svg" alt="Diagram: 3.5 Logic Families" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-diagram.svg" alt="Diagram: 3.5 Logic Families" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-sticky.svg" alt="Sticky Note: 3.5 Logic Families" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-sticky.svg" alt="Sticky Note: 3.5 Logic Families" width="30%">
 </a>
 
 
@@ -390,14 +390,14 @@ CMOS subfamilies:
 
 ### 3.6 Tri-State Logic
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-handwritten.svg" alt="Handwritten: 3.6 Tri-State Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-handwritten.svg" alt="Handwritten: 3.6 Tri-State Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-diagram.svg" alt="Diagram: 3.6 Tri-State Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-diagram.svg" alt="Diagram: 3.6 Tri-State Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-sticky.svg" alt="Sticky Note: 3.6 Tri-State Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-sticky.svg" alt="Sticky Note: 3.6 Tri-State Logic" width="30%">
 </a>
 
 
@@ -423,14 +423,14 @@ graph LR
 
 ### 3.7 Open-Drain and Open-Collector Outputs
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-handwritten.svg" alt="Handwritten: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-handwritten.svg" alt="Handwritten: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-diagram.svg" alt="Diagram: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-diagram.svg" alt="Diagram: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-sticky.svg" alt="Sticky Note: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-sticky.svg" alt="Sticky Note: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
 </a>
 
 
@@ -445,14 +445,14 @@ Applications:
 
 ### 3.8 Schmitt Trigger Inputs
 
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-handwritten.svg" alt="Handwritten: 3.8 Schmitt Trigger Inputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-handwritten.svg" alt="Handwritten: 3.8 Schmitt Trigger Inputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-diagram.svg" alt="Diagram: 3.8 Schmitt Trigger Inputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-diagram.svg" alt="Diagram: 3.8 Schmitt Trigger Inputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-sticky.svg" alt="Sticky Note: 3.8 Schmitt Trigger Inputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-sticky.svg" alt="Sticky Note: 3.8 Schmitt Trigger Inputs" width="30%">
 </a>
 
 

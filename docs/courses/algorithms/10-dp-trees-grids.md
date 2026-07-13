@@ -30,14 +30,14 @@ Trees and grids together form the backbone of **90% of DSA interview problems** 
 
 ### What is a Tree?
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-handwritten.svg" alt="Handwritten: What is a Tree?" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-handwritten.svg" alt="Handwritten: What is a Tree?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-diagram.svg" alt="Diagram: What is a Tree?" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-diagram.svg" alt="Diagram: What is a Tree?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-sticky.svg" alt="Sticky Note: What is a Tree?" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-tree-sticky.svg" alt="Sticky Note: What is a Tree?" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ A **tree** is a hierarchical data structure consisting of nodes connected by edg
 
 ### Tree Terminology
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-handwritten.svg" alt="Handwritten: Tree Terminology" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-handwritten.svg" alt="Handwritten: Tree Terminology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-diagram.svg" alt="Diagram: Tree Terminology" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-diagram.svg" alt="Diagram: Tree Terminology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-sticky.svg" alt="Sticky Note: Tree Terminology" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/tree-terminology-sticky.svg" alt="Sticky Note: Tree Terminology" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ A **tree** is a hierarchical data structure consisting of nodes connected by edg
 
 ### Binary Tree Traversals
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-handwritten.svg" alt="Handwritten: Binary Tree Traversals" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-handwritten.svg" alt="Handwritten: Binary Tree Traversals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-diagram.svg" alt="Diagram: Binary Tree Traversals" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-diagram.svg" alt="Diagram: Binary Tree Traversals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-sticky.svg" alt="Sticky Note: Binary Tree Traversals" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-tree-traversals-sticky.svg" alt="Sticky Note: Binary Tree Traversals" width="30%">
 </a>
 
 
@@ -432,14 +432,14 @@ void levelOrder(Node root) {
 
 ### Binary Search Tree (BST) Operations
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-handwritten.svg" alt="Handwritten: Binary Search Tree (BST) Operations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-handwritten.svg" alt="Handwritten: Binary Search Tree (BST) Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-diagram.svg" alt="Diagram: Binary Search Tree (BST) Operations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-diagram.svg" alt="Diagram: Binary Search Tree (BST) Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-sticky.svg" alt="Sticky Note: Binary Search Tree (BST) Operations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/binary-search-tree-bst-operations-sticky.svg" alt="Sticky Note: Binary Search Tree (BST) Operations" width="30%">
 </a>
 
 
@@ -715,14 +715,14 @@ Node deleteBST(Node root, int key) {
 
 ### Segment Tree
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-handwritten.svg" alt="Handwritten: Segment Tree" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-handwritten.svg" alt="Handwritten: Segment Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-diagram.svg" alt="Diagram: Segment Tree" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-diagram.svg" alt="Diagram: Segment Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-sticky.svg" alt="Sticky Note: Segment Tree" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/segment-tree-sticky.svg" alt="Sticky Note: Segment Tree" width="30%">
 </a>
 
 
@@ -936,14 +936,14 @@ class SegmentTree {
 
 ### Fenwick Tree (Binary Indexed Tree)
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-handwritten.svg" alt="Handwritten: Fenwick Tree (Binary Indexed Tree)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-handwritten.svg" alt="Handwritten: Fenwick Tree (Binary Indexed Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-diagram.svg" alt="Diagram: Fenwick Tree (Binary Indexed Tree)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-diagram.svg" alt="Diagram: Fenwick Tree (Binary Indexed Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-sticky.svg" alt="Sticky Note: Fenwick Tree (Binary Indexed Tree)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/fenwick-tree-binary-indexed-tree-sticky.svg" alt="Sticky Note: Fenwick Tree (Binary Indexed Tree)" width="30%">
 </a>
 
 
@@ -1113,14 +1113,14 @@ class FenwickTree {
 
 ### What is a Grid?
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-handwritten.svg" alt="Handwritten: What is a Grid?" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-handwritten.svg" alt="Handwritten: What is a Grid?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-diagram.svg" alt="Diagram: What is a Grid?" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-diagram.svg" alt="Diagram: What is a Grid?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-sticky.svg" alt="Sticky Note: What is a Grid?" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/what-is-a-grid-sticky.svg" alt="Sticky Note: What is a Grid?" width="30%">
 </a>
 
 
@@ -1136,14 +1136,14 @@ A **grid** is a 2D matrix of cells, where each cell has coordinates (row, column
 
 ### Grid Traversal: DFS and BFS on a Matrix
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-handwritten.svg" alt="Handwritten: Grid Traversal: DFS and BFS on a Matrix" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-handwritten.svg" alt="Handwritten: Grid Traversal: DFS and BFS on a Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-diagram.svg" alt="Diagram: Grid Traversal: DFS and BFS on a Matrix" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-diagram.svg" alt="Diagram: Grid Traversal: DFS and BFS on a Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-sticky.svg" alt="Sticky Note: Grid Traversal: DFS and BFS on a Matrix" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/grid-traversal-dfs-and-bfs-on-a-matrix-sticky.svg" alt="Sticky Note: Grid Traversal: DFS and BFS on a Matrix" width="30%">
 </a>
 
 
@@ -1364,14 +1364,14 @@ void bfsGrid(int[][] grid, int sr, int sc) {
 
 ### 10.1 DP on Trees
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-handwritten.svg" alt="Handwritten: 10.1 DP on Trees" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-handwritten.svg" alt="Handwritten: 10.1 DP on Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-diagram.svg" alt="Diagram: 10.1 DP on Trees" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-diagram.svg" alt="Diagram: 10.1 DP on Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-sticky.svg" alt="Sticky Note: 10.1 DP on Trees" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-1-dp-on-trees-sticky.svg" alt="Sticky Note: 10.1 DP on Trees" width="30%">
 </a>
 
 
@@ -1764,14 +1764,14 @@ int rob(TreeNode root) {
 
 ### 10.2 DP on Grids
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-handwritten.svg" alt="Handwritten: 10.2 DP on Grids" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-handwritten.svg" alt="Handwritten: 10.2 DP on Grids" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-diagram.svg" alt="Diagram: 10.2 DP on Grids" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-diagram.svg" alt="Diagram: 10.2 DP on Grids" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-sticky.svg" alt="Sticky Note: 10.2 DP on Grids" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-2-dp-on-grids-sticky.svg" alt="Sticky Note: 10.2 DP on Grids" width="30%">
 </a>
 
 
@@ -2130,14 +2130,14 @@ int uniquePathsWithObstacles(int[][] grid) {
 
 ### 10.3 DP with Bitmasking
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-handwritten.svg" alt="Handwritten: 10.3 DP with Bitmasking" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-handwritten.svg" alt="Handwritten: 10.3 DP with Bitmasking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-diagram.svg" alt="Diagram: 10.3 DP with Bitmasking" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-diagram.svg" alt="Diagram: 10.3 DP with Bitmasking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-sticky.svg" alt="Sticky Note: 10.3 DP with Bitmasking" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/10-3-dp-with-bitmasking-sticky.svg" alt="Sticky Note: 10.3 DP with Bitmasking" width="30%">
 </a>
 
 
@@ -2324,14 +2324,14 @@ These problems are among the most frequently asked in FAANG/MAANG interviews.
 
 ### 1. Lowest Common Ancestor (LCA)
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-handwritten.svg" alt="Handwritten: 1. Lowest Common Ancestor (LCA)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-handwritten.svg" alt="Handwritten: 1. Lowest Common Ancestor (LCA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-diagram.svg" alt="Diagram: 1. Lowest Common Ancestor (LCA)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-diagram.svg" alt="Diagram: 1. Lowest Common Ancestor (LCA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-sticky.svg" alt="Sticky Note: 1. Lowest Common Ancestor (LCA)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/1-lowest-common-ancestor-lca-sticky.svg" alt="Sticky Note: 1. Lowest Common Ancestor (LCA)" width="30%">
 </a>
 
 
@@ -2359,14 +2359,14 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 
 ### 2. Diameter of Binary Tree
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-handwritten.svg" alt="Handwritten: 2. Diameter of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-handwritten.svg" alt="Handwritten: 2. Diameter of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-diagram.svg" alt="Diagram: 2. Diameter of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-diagram.svg" alt="Diagram: 2. Diameter of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-sticky.svg" alt="Sticky Note: 2. Diameter of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/2-diameter-of-binary-tree-sticky.svg" alt="Sticky Note: 2. Diameter of Binary Tree" width="30%">
 </a>
 
 
@@ -2376,14 +2376,14 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 
 ### 3. Grid Unique Paths with Obstacles
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-handwritten.svg" alt="Handwritten: 3. Grid Unique Paths with Obstacles" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-handwritten.svg" alt="Handwritten: 3. Grid Unique Paths with Obstacles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-diagram.svg" alt="Diagram: 3. Grid Unique Paths with Obstacles" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-diagram.svg" alt="Diagram: 3. Grid Unique Paths with Obstacles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-sticky.svg" alt="Sticky Note: 3. Grid Unique Paths with Obstacles" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/3-grid-unique-paths-with-obstacles-sticky.svg" alt="Sticky Note: 3. Grid Unique Paths with Obstacles" width="30%">
 </a>
 
 
@@ -2393,14 +2393,14 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 
 ### 4. Number of Islands
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-handwritten.svg" alt="Handwritten: 4. Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-handwritten.svg" alt="Handwritten: 4. Number of Islands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-diagram.svg" alt="Diagram: 4. Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-diagram.svg" alt="Diagram: 4. Number of Islands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-sticky.svg" alt="Sticky Note: 4. Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/4-number-of-islands-sticky.svg" alt="Sticky Note: 4. Number of Islands" width="30%">
 </a>
 
 
@@ -2433,14 +2433,14 @@ int numIslands(vector<vector<char>>& grid) {
 
 ### File System Indexing (Trees)
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-handwritten.svg" alt="Handwritten: File System Indexing (Trees)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-handwritten.svg" alt="Handwritten: File System Indexing (Trees)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-diagram.svg" alt="Diagram: File System Indexing (Trees)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-diagram.svg" alt="Diagram: File System Indexing (Trees)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-sticky.svg" alt="Sticky Note: File System Indexing (Trees)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/file-system-indexing-trees-sticky.svg" alt="Sticky Note: File System Indexing (Trees)" width="30%">
 </a>
 
 
@@ -2448,14 +2448,14 @@ Every OS uses a tree-based file system. `find / -name "*.txt"` performs a tree t
 
 ### Game Maps (Grid Pathfinding)
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-handwritten.svg" alt="Handwritten: Game Maps (Grid Pathfinding)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-handwritten.svg" alt="Handwritten: Game Maps (Grid Pathfinding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-diagram.svg" alt="Diagram: Game Maps (Grid Pathfinding)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-diagram.svg" alt="Diagram: Game Maps (Grid Pathfinding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-sticky.svg" alt="Sticky Note: Game Maps (Grid Pathfinding)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/game-maps-grid-pathfinding-sticky.svg" alt="Sticky Note: Game Maps (Grid Pathfinding)" width="30%">
 </a>
 
 
@@ -2467,14 +2467,14 @@ In game development, the game world is divided into a grid (tile map). Pathfindi
 
 ### Compiler AST (Trees)
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-handwritten.svg" alt="Handwritten: Compiler AST (Trees)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-handwritten.svg" alt="Handwritten: Compiler AST (Trees)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-diagram.svg" alt="Diagram: Compiler AST (Trees)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-diagram.svg" alt="Diagram: Compiler AST (Trees)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-sticky.svg" alt="Sticky Note: Compiler AST (Trees)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/compiler-ast-trees-sticky.svg" alt="Sticky Note: Compiler AST (Trees)" width="30%">
 </a>
 
 
@@ -2502,14 +2502,14 @@ Linting tools (ESLint, PyLint) and formatters (Prettier) also work on ASTs.
 
 ### Image Processing (Grids)
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-handwritten.svg" alt="Handwritten: Image Processing (Grids)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-handwritten.svg" alt="Handwritten: Image Processing (Grids)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-diagram.svg" alt="Diagram: Image Processing (Grids)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-diagram.svg" alt="Diagram: Image Processing (Grids)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-sticky.svg" alt="Sticky Note: Image Processing (Grids)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/image-processing-grids-sticky.svg" alt="Sticky Note: Image Processing (Grids)" width="30%">
 </a>
 
 
@@ -2520,14 +2520,14 @@ Every image filter is a grid operation:
 
 ### Robotics (Grids)
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-handwritten.svg" alt="Handwritten: Robotics (Grids)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-handwritten.svg" alt="Handwritten: Robotics (Grids)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-diagram.svg" alt="Diagram: Robotics (Grids)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-diagram.svg" alt="Diagram: Robotics (Grids)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-sticky.svg" alt="Sticky Note: Robotics (Grids)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/robotics-grids-sticky.svg" alt="Sticky Note: Robotics (Grids)" width="30%">
 </a>
 
 
@@ -2541,14 +2541,14 @@ Robot vacuum cleaners (Roomba) represent rooms as grids. The robot:
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -2567,14 +2567,14 @@ Robot vacuum cleaners (Roomba) represent rooms as grids. The robot:
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/10-dp-trees-grids/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 

@@ -50,14 +50,14 @@ flowchart LR
 
 ### Core Principles of CI
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-handwritten.svg" alt="Handwritten: Core Principles of CI" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-handwritten.svg" alt="Handwritten: Core Principles of CI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-diagram.svg" alt="Diagram: Core Principles of CI" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-diagram.svg" alt="Diagram: Core Principles of CI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-sticky.svg" alt="Sticky Note: Core Principles of CI" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/core-principles-of-ci-sticky.svg" alt="Sticky Note: Core Principles of CI" width="30%">
 </a>
 
 
@@ -71,14 +71,14 @@ Continuous Integration is built on five essential practices:
 
 ### The Test Pyramid
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-handwritten.svg" alt="Handwritten: The Test Pyramid" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-handwritten.svg" alt="Handwritten: The Test Pyramid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-diagram.svg" alt="Diagram: The Test Pyramid" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-diagram.svg" alt="Diagram: The Test Pyramid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-sticky.svg" alt="Sticky Note: The Test Pyramid" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/the-test-pyramid-sticky.svg" alt="Sticky Note: The Test Pyramid" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ flowchart TD
 
 ### Test Execution Strategy
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-handwritten.svg" alt="Handwritten: Test Execution Strategy" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-handwritten.svg" alt="Handwritten: Test Execution Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-diagram.svg" alt="Diagram: Test Execution Strategy" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-diagram.svg" alt="Diagram: Test Execution Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-sticky.svg" alt="Sticky Note: Test Execution Strategy" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/test-execution-strategy-sticky.svg" alt="Sticky Note: Test Execution Strategy" width="30%">
 </a>
 
 
@@ -125,14 +125,14 @@ flowchart TD
 
 ### Code Quality Gates
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-handwritten.svg" alt="Handwritten: Code Quality Gates" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-handwritten.svg" alt="Handwritten: Code Quality Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-diagram.svg" alt="Diagram: Code Quality Gates" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-diagram.svg" alt="Diagram: Code Quality Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-sticky.svg" alt="Sticky Note: Code Quality Gates" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/code-quality-gates-sticky.svg" alt="Sticky Note: Code Quality Gates" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ Quality gates prevent low-quality code from being merged:
 
 ### CI for Monorepos
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-handwritten.svg" alt="Handwritten: CI for Monorepos" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-handwritten.svg" alt="Handwritten: CI for Monorepos" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-diagram.svg" alt="Diagram: CI for Monorepos" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-diagram.svg" alt="Diagram: CI for Monorepos" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-sticky.svg" alt="Sticky Note: CI for Monorepos" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-for-monorepos-sticky.svg" alt="Sticky Note: CI for Monorepos" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ function getChangedPackages(): string[] {
 
 ### CI Reporting
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-handwritten.svg" alt="Handwritten: CI Reporting" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-handwritten.svg" alt="Handwritten: CI Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-diagram.svg" alt="Diagram: CI Reporting" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-diagram.svg" alt="Diagram: CI Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-sticky.svg" alt="Sticky Note: CI Reporting" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-reporting-sticky.svg" alt="Sticky Note: CI Reporting" width="30%">
 </a>
 
 
@@ -227,14 +227,14 @@ Dependencies: up to date
 
 ### Handling Flaky Tests
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-handwritten.svg" alt="Handwritten: Handling Flaky Tests" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-handwritten.svg" alt="Handwritten: Handling Flaky Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-diagram.svg" alt="Diagram: Handling Flaky Tests" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-diagram.svg" alt="Diagram: Handling Flaky Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-sticky.svg" alt="Sticky Note: Handling Flaky Tests" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/handling-flaky-tests-sticky.svg" alt="Sticky Note: Handling Flaky Tests" width="30%">
 </a>
 
 
@@ -257,14 +257,14 @@ function detectFlakyTests(testResults: TestResult[][]): string[] {
 
 ### CI Pipeline Optimization
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-handwritten.svg" alt="Handwritten: CI Pipeline Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-handwritten.svg" alt="Handwritten: CI Pipeline Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-diagram.svg" alt="Diagram: CI Pipeline Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-diagram.svg" alt="Diagram: CI Pipeline Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-sticky.svg" alt="Sticky Note: CI Pipeline Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-pipeline-optimization-sticky.svg" alt="Sticky Note: CI Pipeline Optimization" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ function optimizePipeline(steps: PipelineStep[]): PipelineStep[] {
 
 ### Artifact Management and Versioning
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-handwritten.svg" alt="Handwritten: Artifact Management and Versioning" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-handwritten.svg" alt="Handwritten: Artifact Management and Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-diagram.svg" alt="Diagram: Artifact Management and Versioning" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-diagram.svg" alt="Diagram: Artifact Management and Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-sticky.svg" alt="Sticky Note: Artifact Management and Versioning" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/artifact-management-and-versioning-sticky.svg" alt="Sticky Note: Artifact Management and Versioning" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ class ArtifactManager {
 
 ### Security Scanning in CI
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-handwritten.svg" alt="Handwritten: Security Scanning in CI" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-handwritten.svg" alt="Handwritten: Security Scanning in CI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-diagram.svg" alt="Diagram: Security Scanning in CI" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-diagram.svg" alt="Diagram: Security Scanning in CI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-sticky.svg" alt="Sticky Note: Security Scanning in CI" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/security-scanning-in-ci-sticky.svg" alt="Sticky Note: Security Scanning in CI" width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ class SecurityGate {
 
 ### CI Services and Infrastructure
 
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-handwritten.svg" alt="Handwritten: CI Services and Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-handwritten.svg" alt="Handwritten: CI Services and Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-diagram.svg" alt="Diagram: CI Services and Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-diagram.svg" alt="Diagram: CI Services and Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-sticky.svg" alt="Sticky Note: CI Services and Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/04-continuous-integration/ci-services-and-infrastructure-sticky.svg" alt="Sticky Note: CI Services and Infrastructure" width="30%">
 </a>
 
 

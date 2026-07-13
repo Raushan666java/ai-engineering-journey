@@ -49,14 +49,14 @@ flowchart LR
 
 ### The Core of DevOps
 
-<a href="../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-handwritten.svg" alt="Handwritten: The Core of DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-handwritten.svg" alt="Handwritten: The Core of DevOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-diagram.svg" alt="Diagram: The Core of DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-diagram.svg" alt="Diagram: The Core of DevOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-sticky.svg" alt="Sticky Note: The Core of DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-sticky.svg" alt="Sticky Note: The Core of DevOps" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ DevOps is not a software tool or a specific job title, but a cultural and profes
 
 ### The Historical Evolution
 
-<a href="../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-handwritten.svg" alt="Handwritten: The Historical Evolution" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-handwritten.svg" alt="Handwritten: The Historical Evolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-diagram.svg" alt="Diagram: The Historical Evolution" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-diagram.svg" alt="Diagram: The Historical Evolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-sticky.svg" alt="Sticky Note: The Historical Evolution" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-sticky.svg" alt="Sticky Note: The Historical Evolution" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ Traditional software development followed the Waterfall model, where requirement
 
 ### Breaking the Silos
 
-<a href="../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-handwritten.svg" alt="Handwritten: Breaking the Silos" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-handwritten.svg" alt="Handwritten: Breaking the Silos" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-diagram.svg" alt="Diagram: Breaking the Silos" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-diagram.svg" alt="Diagram: Breaking the Silos" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-sticky.svg" alt="Sticky Note: Breaking the Silos" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-sticky.svg" alt="Sticky Note: Breaking the Silos" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ DevOps aligns these incentives by making both teams responsible for the end-to-e
 
 ### The Three Ways of DevOps
 
-<a href="../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-handwritten.svg" alt="Handwritten: The Three Ways of DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-handwritten.svg" alt="Handwritten: The Three Ways of DevOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-diagram.svg" alt="Diagram: The Three Ways of DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-diagram.svg" alt="Diagram: The Three Ways of DevOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-sticky.svg" alt="Sticky Note: The Three Ways of DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-sticky.svg" alt="Sticky Note: The Three Ways of DevOps" width="30%">
 </a>
 
 
@@ -142,14 +142,14 @@ Foster a culture that takes risks, learns from failure, and understands that rep
 
 ### DevOps vs Traditional IT
 
-<a href="../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-handwritten.svg" alt="Handwritten: DevOps vs Traditional IT" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-handwritten.svg" alt="Handwritten: DevOps vs Traditional IT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-diagram.svg" alt="Diagram: DevOps vs Traditional IT" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-diagram.svg" alt="Diagram: DevOps vs Traditional IT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-sticky.svg" alt="Sticky Note: DevOps vs Traditional IT" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-sticky.svg" alt="Sticky Note: DevOps vs Traditional IT" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ Foster a culture that takes risks, learns from failure, and understands that rep
 
 ### Value Stream Mapping
 
-<a href="../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-handwritten.svg" alt="Handwritten: Value Stream Mapping" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-handwritten.svg" alt="Handwritten: Value Stream Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-diagram.svg" alt="Diagram: Value Stream Mapping" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-diagram.svg" alt="Diagram: Value Stream Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-sticky.svg" alt="Sticky Note: Value Stream Mapping" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-sticky.svg" alt="Sticky Note: Value Stream Mapping" width="30%">
 </a>
 
 
@@ -208,14 +208,14 @@ flowchart LR
 
 ### DevOps ROI and Maturity Model
 
-<a href="../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-handwritten.svg" alt="Handwritten: DevOps ROI and Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-handwritten.svg" alt="Handwritten: DevOps ROI and Maturity Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-diagram.svg" alt="Diagram: DevOps ROI and Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-diagram.svg" alt="Diagram: DevOps ROI and Maturity Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-sticky.svg" alt="Sticky Note: DevOps ROI and Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-sticky.svg" alt="Sticky Note: DevOps ROI and Maturity Model" width="30%">
 </a>
 
 
@@ -239,14 +239,14 @@ flowchart LR
 
 ### State of DevOps Report Findings
 
-<a href="../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-handwritten.svg" alt="Handwritten: State of DevOps Report Findings" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-handwritten.svg" alt="Handwritten: State of DevOps Report Findings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-diagram.svg" alt="Diagram: State of DevOps Report Findings" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-diagram.svg" alt="Diagram: State of DevOps Report Findings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-sticky.svg" alt="Sticky Note: State of DevOps Report Findings" width="30%">
+<a href="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-sticky.svg" alt="Sticky Note: State of DevOps Report Findings" width="30%">
 </a>
 
 

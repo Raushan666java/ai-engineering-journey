@@ -41,14 +41,14 @@ This section uses Verilog syntax. The same concepts apply to VHDL with different
 
 ### 12.2.1 Module Structure
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-handwritten.svg" alt="Handwritten: 12.2.1 Module Structure" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-handwritten.svg" alt="Handwritten: 12.2.1 Module Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-diagram.svg" alt="Diagram: 12.2.1 Module Structure" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-diagram.svg" alt="Diagram: 12.2.1 Module Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-sticky.svg" alt="Sticky Note: 12.2.1 Module Structure" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-1-module-structure-sticky.svg" alt="Sticky Note: 12.2.1 Module Structure" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ class VerilogAdder {
 
 ### 12.2.2 Data Types
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-handwritten.svg" alt="Handwritten: 12.2.2 Data Types" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-handwritten.svg" alt="Handwritten: 12.2.2 Data Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-diagram.svg" alt="Diagram: 12.2.2 Data Types" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-diagram.svg" alt="Diagram: 12.2.2 Data Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-sticky.svg" alt="Sticky Note: 12.2.2 Data Types" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-2-data-types-sticky.svg" alt="Sticky Note: 12.2.2 Data Types" width="30%">
 </a>
 
 
@@ -109,14 +109,14 @@ integer i;
 
 ### 12.2.3 Continuous Assignments
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-handwritten.svg" alt="Handwritten: 12.2.3 Continuous Assignments" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-handwritten.svg" alt="Handwritten: 12.2.3 Continuous Assignments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-diagram.svg" alt="Diagram: 12.2.3 Continuous Assignments" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-diagram.svg" alt="Diagram: 12.2.3 Continuous Assignments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-sticky.svg" alt="Sticky Note: 12.2.3 Continuous Assignments" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-2-3-continuous-assignments-sticky.svg" alt="Sticky Note: 12.2.3 Continuous Assignments" width="30%">
 </a>
 
 
@@ -137,14 +137,14 @@ endmodule
 
 ### 12.3.1 Always Blocks for Combinational Logic
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-handwritten.svg" alt="Handwritten: 12.3.1 Always Blocks for Combinational Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-handwritten.svg" alt="Handwritten: 12.3.1 Always Blocks for Combinational Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-diagram.svg" alt="Diagram: 12.3.1 Always Blocks for Combinational Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-diagram.svg" alt="Diagram: 12.3.1 Always Blocks for Combinational Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-sticky.svg" alt="Sticky Note: 12.3.1 Always Blocks for Combinational Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-1-always-blocks-for-combinational-logic-sticky.svg" alt="Sticky Note: 12.3.1 Always Blocks for Combinational Logic" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ end
 
 ### 12.3.2 Full Adder in HDL
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-handwritten.svg" alt="Handwritten: 12.3.2 Full Adder in HDL" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-handwritten.svg" alt="Handwritten: 12.3.2 Full Adder in HDL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-diagram.svg" alt="Diagram: 12.3.2 Full Adder in HDL" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-diagram.svg" alt="Diagram: 12.3.2 Full Adder in HDL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-sticky.svg" alt="Sticky Note: 12.3.2 Full Adder in HDL" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-3-2-full-adder-in-hdl-sticky.svg" alt="Sticky Note: 12.3.2 Full Adder in HDL" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ class StructuralRCA {
 
 ### 12.4.1 D Flip-Flop
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-handwritten.svg" alt="Handwritten: 12.4.1 D Flip-Flop" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-handwritten.svg" alt="Handwritten: 12.4.1 D Flip-Flop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-diagram.svg" alt="Diagram: 12.4.1 D Flip-Flop" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-diagram.svg" alt="Diagram: 12.4.1 D Flip-Flop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-sticky.svg" alt="Sticky Note: 12.4.1 D Flip-Flop" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-1-d-flip-flop-sticky.svg" alt="Sticky Note: 12.4.1 D Flip-Flop" width="30%">
 </a>
 
 
@@ -279,14 +279,14 @@ endmodule
 
 ### 12.4.2 Register with Synchronous Reset
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-handwritten.svg" alt="Handwritten: 12.4.2 Register with Synchronous Reset" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-handwritten.svg" alt="Handwritten: 12.4.2 Register with Synchronous Reset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-diagram.svg" alt="Diagram: 12.4.2 Register with Synchronous Reset" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-diagram.svg" alt="Diagram: 12.4.2 Register with Synchronous Reset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-sticky.svg" alt="Sticky Note: 12.4.2 Register with Synchronous Reset" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-2-register-with-synchronous-reset-sticky.svg" alt="Sticky Note: 12.4.2 Register with Synchronous Reset" width="30%">
 </a>
 
 
@@ -307,14 +307,14 @@ endmodule
 
 ### 12.4.3 Blocking vs Non-Blocking Assignments
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-handwritten.svg" alt="Handwritten: 12.4.3 Blocking vs Non-Blocking Assignments" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-handwritten.svg" alt="Handwritten: 12.4.3 Blocking vs Non-Blocking Assignments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-diagram.svg" alt="Diagram: 12.4.3 Blocking vs Non-Blocking Assignments" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-diagram.svg" alt="Diagram: 12.4.3 Blocking vs Non-Blocking Assignments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-sticky.svg" alt="Sticky Note: 12.4.3 Blocking vs Non-Blocking Assignments" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-4-3-blocking-vs-non-blocking-assignments-sticky.svg" alt="Sticky Note: 12.4.3 Blocking vs Non-Blocking Assignments" width="30%">
 </a>
 
 
@@ -465,14 +465,14 @@ tb.runAdderTest();
 
 ### 12.7.1 Synthesizable vs. Non-Synthesizable
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-handwritten.svg" alt="Handwritten: 12.7.1 Synthesizable vs. Non-Synthesizable" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-handwritten.svg" alt="Handwritten: 12.7.1 Synthesizable vs. Non-Synthesizable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-diagram.svg" alt="Diagram: 12.7.1 Synthesizable vs. Non-Synthesizable" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-diagram.svg" alt="Diagram: 12.7.1 Synthesizable vs. Non-Synthesizable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-sticky.svg" alt="Sticky Note: 12.7.1 Synthesizable vs. Non-Synthesizable" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-1-synthesizable-vs-non-synthesizable-sticky.svg" alt="Sticky Note: 12.7.1 Synthesizable vs. Non-Synthesizable" width="30%">
 </a>
 
 
@@ -498,14 +498,14 @@ end
 
 ### 12.7.2 Inferred Hardware
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-handwritten.svg" alt="Handwritten: 12.7.2 Inferred Hardware" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-handwritten.svg" alt="Handwritten: 12.7.2 Inferred Hardware" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-diagram.svg" alt="Diagram: 12.7.2 Inferred Hardware" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-diagram.svg" alt="Diagram: 12.7.2 Inferred Hardware" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-sticky.svg" alt="Sticky Note: 12.7.2 Inferred Hardware" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-2-inferred-hardware-sticky.svg" alt="Sticky Note: 12.7.2 Inferred Hardware" width="30%">
 </a>
 
 
@@ -520,14 +520,14 @@ end
 
 ### 12.7.3 Coding for Synthesis
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-handwritten.svg" alt="Handwritten: 12.7.3 Coding for Synthesis" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-handwritten.svg" alt="Handwritten: 12.7.3 Coding for Synthesis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-diagram.svg" alt="Diagram: 12.7.3 Coding for Synthesis" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-diagram.svg" alt="Diagram: 12.7.3 Coding for Synthesis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-sticky.svg" alt="Sticky Note: 12.7.3 Coding for Synthesis" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-7-3-coding-for-synthesis-sticky.svg" alt="Sticky Note: 12.7.3 Coding for Synthesis" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ end architecture;
 
 ### 12.9.1 Module Instantiation
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-handwritten.svg" alt="Handwritten: 12.9.1 Module Instantiation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-handwritten.svg" alt="Handwritten: 12.9.1 Module Instantiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-diagram.svg" alt="Diagram: 12.9.1 Module Instantiation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-diagram.svg" alt="Diagram: 12.9.1 Module Instantiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-sticky.svg" alt="Sticky Note: 12.9.1 Module Instantiation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-1-module-instantiation-sticky.svg" alt="Sticky Note: 12.9.1 Module Instantiation" width="30%">
 </a>
 
 
@@ -622,14 +622,14 @@ endmodule
 
 ### 12.9.2 Pipelined Adder
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-handwritten.svg" alt="Handwritten: 12.9.2 Pipelined Adder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-handwritten.svg" alt="Handwritten: 12.9.2 Pipelined Adder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-diagram.svg" alt="Diagram: 12.9.2 Pipelined Adder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-diagram.svg" alt="Diagram: 12.9.2 Pipelined Adder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-sticky.svg" alt="Sticky Note: 12.9.2 Pipelined Adder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-9-2-pipelined-adder-sticky.svg" alt="Sticky Note: 12.9.2 Pipelined Adder" width="30%">
 </a>
 
 
@@ -706,14 +706,14 @@ class Pipeline {
 
 ### 12.10.1 Simulation Cycle
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-handwritten.svg" alt="Handwritten: 12.10.1 Simulation Cycle" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-handwritten.svg" alt="Handwritten: 12.10.1 Simulation Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-diagram.svg" alt="Diagram: 12.10.1 Simulation Cycle" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-diagram.svg" alt="Diagram: 12.10.1 Simulation Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-sticky.svg" alt="Sticky Note: 12.10.1 Simulation Cycle" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-1-simulation-cycle-sticky.svg" alt="Sticky Note: 12.10.1 Simulation Cycle" width="30%">
 </a>
 
 
@@ -727,14 +727,14 @@ graph LR
 
 ### 12.10.2 Code Coverage
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-handwritten.svg" alt="Handwritten: 12.10.2 Code Coverage" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-handwritten.svg" alt="Handwritten: 12.10.2 Code Coverage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-diagram.svg" alt="Diagram: 12.10.2 Code Coverage" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-diagram.svg" alt="Diagram: 12.10.2 Code Coverage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-sticky.svg" alt="Sticky Note: 12.10.2 Code Coverage" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/12-10-2-code-coverage-sticky.svg" alt="Sticky Note: 12.10.2 Code Coverage" width="30%">
 </a>
 
 
@@ -1081,14 +1081,14 @@ d) Automatic test generation
 
 ### Answers
 
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/answers-diagram.svg" alt="Diagram: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/12-hdl/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/12-hdl/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/12-hdl/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/12-hdl/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
 </a>
 
 

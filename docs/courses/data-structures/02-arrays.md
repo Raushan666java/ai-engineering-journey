@@ -41,14 +41,14 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ A **vending machine** is an array of slots. Each slot has a fixed position (inde
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ The **Array ADT** is a collection of elements of the same type stored in contigu
 
 ### Core Operations
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/core-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/core-operations-handwritten.svg" alt="Handwritten: Core Operations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/core-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/core-operations-handwritten.svg" alt="Handwritten: Core Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/core-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/core-operations-diagram.svg" alt="Diagram: Core Operations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/core-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/core-operations-diagram.svg" alt="Diagram: Core Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/core-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/core-operations-sticky.svg" alt="Sticky Note: Core Operations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/core-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/core-operations-sticky.svg" alt="Sticky Note: Core Operations" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ The **Array ADT** is a collection of elements of the same type stored in contigu
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -137,14 +137,14 @@ ALGORITHM delete(arr, i, n)
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -171,14 +171,14 @@ ALGORITHM delete(arr, i, n)
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -252,14 +252,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -321,14 +321,14 @@ arr.print_all()      # [10, 25, 30, 40, 50]
 
 ### Java Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ public class ArrayADT {
 
 ### Complexity Analysis — Why?
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-handwritten.svg" alt="Handwritten: Complexity Analysis — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-handwritten.svg" alt="Handwritten: Complexity Analysis — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-diagram.svg" alt="Diagram: Complexity Analysis — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-diagram.svg" alt="Diagram: Complexity Analysis — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-sticky.svg" alt="Sticky Note: Complexity Analysis — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-why-sticky.svg" alt="Sticky Note: Complexity Analysis — Why?" width="30%">
 </a>
 
 
@@ -419,14 +419,14 @@ public class ArrayADT {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ public class ArrayADT {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -466,14 +466,14 @@ public class ArrayADT {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -482,14 +482,14 @@ public class ArrayADT {
 
 ### Static Array
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/static-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/static-array-handwritten.svg" alt="Handwritten: Static Array" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/static-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/static-array-handwritten.svg" alt="Handwritten: Static Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/static-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/static-array-diagram.svg" alt="Diagram: Static Array" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/static-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/static-array-diagram.svg" alt="Diagram: Static Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/static-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/static-array-sticky.svg" alt="Sticky Note: Static Array" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/static-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/static-array-sticky.svg" alt="Sticky Note: Static Array" width="30%">
 </a>
 
 
@@ -502,14 +502,14 @@ int* arr2 = new int[20]; // Heap-allocated, fixed at 20
 
 ### Dynamic Array
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-handwritten.svg" alt="Handwritten: Dynamic Array" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-handwritten.svg" alt="Handwritten: Dynamic Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-diagram.svg" alt="Diagram: Dynamic Array" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-diagram.svg" alt="Diagram: Dynamic Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-sticky.svg" alt="Sticky Note: Dynamic Array" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/dynamic-array-sticky.svg" alt="Sticky Note: Dynamic Array" width="30%">
 </a>
 
 
@@ -529,14 +529,14 @@ A dynamic array (also called *resizeable array*, *vector*, *ArrayList*) starts w
 
 ### Amortized Cost Analysis
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-handwritten.svg" alt="Handwritten: Amortized Cost Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-handwritten.svg" alt="Handwritten: Amortized Cost Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-diagram.svg" alt="Diagram: Amortized Cost Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-diagram.svg" alt="Diagram: Amortized Cost Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-sticky.svg" alt="Sticky Note: Amortized Cost Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/amortized-cost-analysis-sticky.svg" alt="Sticky Note: Amortized Cost Analysis" width="30%">
 </a>
 
 
@@ -547,14 +547,14 @@ Total copies after n insertions (where n = 2^k + 1):
 
 ### C++ Implementation (std::vector behavior)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-handwritten.svg" alt="Handwritten: C++ Implementation (std::vector behavior)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-handwritten.svg" alt="Handwritten: C++ Implementation (std::vector behavior)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-diagram.svg" alt="Diagram: C++ Implementation (std::vector behavior)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-diagram.svg" alt="Diagram: C++ Implementation (std::vector behavior)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-sticky.svg" alt="Sticky Note: C++ Implementation (std::vector behavior)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-std-vector-behavior-sticky.svg" alt="Sticky Note: C++ Implementation (std::vector behavior)" width="30%">
 </a>
 
 
@@ -604,14 +604,14 @@ int main() {
 
 ### Python Implementation (simulating dynamic array)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-handwritten.svg" alt="Handwritten: Python Implementation (simulating dynamic array)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-handwritten.svg" alt="Handwritten: Python Implementation (simulating dynamic array)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-diagram.svg" alt="Diagram: Python Implementation (simulating dynamic array)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-diagram.svg" alt="Diagram: Python Implementation (simulating dynamic array)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-sticky.svg" alt="Sticky Note: Python Implementation (simulating dynamic array)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-simulating-dynamic-array-sticky.svg" alt="Sticky Note: Python Implementation (simulating dynamic array)" width="30%">
 </a>
 
 
@@ -661,14 +661,14 @@ print(f"Size: {len(v)}, Cap: {v.capacity()}")
 
 ### Java Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
 </a>
 
 
@@ -721,14 +721,14 @@ public class DynamicArray<T> {
 
 ### Static vs Dynamic — Comparison
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-handwritten.svg" alt="Handwritten: Static vs Dynamic — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-handwritten.svg" alt="Handwritten: Static vs Dynamic — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-diagram.svg" alt="Diagram: Static vs Dynamic — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-diagram.svg" alt="Diagram: Static vs Dynamic — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-sticky.svg" alt="Sticky Note: Static vs Dynamic — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/static-vs-dynamic-comparison-sticky.svg" alt="Sticky Note: Static vs Dynamic — Comparison" width="30%">
 </a>
 
 
@@ -744,14 +744,14 @@ public class DynamicArray<T> {
 
 ### Complexity — Why?
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
 </a>
 
 
@@ -761,14 +761,14 @@ public class DynamicArray<T> {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -781,14 +781,14 @@ public class DynamicArray<T> {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -803,14 +803,14 @@ public class DynamicArray<T> {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -820,14 +820,14 @@ public class DynamicArray<T> {
 
 ### Insertion
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/insertion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/insertion-handwritten.svg" alt="Handwritten: Insertion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/insertion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/insertion-handwritten.svg" alt="Handwritten: Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/insertion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/insertion-diagram.svg" alt="Diagram: Insertion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/insertion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/insertion-diagram.svg" alt="Diagram: Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/insertion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/insertion-sticky.svg" alt="Sticky Note: Insertion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/insertion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/insertion-sticky.svg" alt="Sticky Note: Insertion" width="30%">
 </a>
 
 
@@ -868,14 +868,14 @@ ALGORITHM insert(arr, n, capacity, pos, val)
 
 ### Deletion
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/deletion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/deletion-handwritten.svg" alt="Handwritten: Deletion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/deletion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/deletion-handwritten.svg" alt="Handwritten: Deletion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/deletion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/deletion-diagram.svg" alt="Diagram: Deletion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/deletion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/deletion-diagram.svg" alt="Diagram: Deletion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/deletion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/deletion-sticky.svg" alt="Sticky Note: Deletion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/deletion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/deletion-sticky.svg" alt="Sticky Note: Deletion" width="30%">
 </a>
 
 
@@ -915,14 +915,14 @@ ALGORITHM delete(arr, n, pos)
 
 ### Traversal
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/traversal-handwritten.svg" alt="Handwritten: Traversal" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/traversal-handwritten.svg" alt="Handwritten: Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/traversal-diagram.svg" alt="Diagram: Traversal" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/traversal-diagram.svg" alt="Diagram: Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/traversal-sticky.svg" alt="Sticky Note: Traversal" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/traversal-sticky.svg" alt="Sticky Note: Traversal" width="30%">
 </a>
 
 
@@ -952,14 +952,14 @@ ALGORITHM traverse(arr, n)
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -1003,14 +1003,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1057,14 +1057,14 @@ traverse(arr, n)               # 10 25 30 40 50
 
 ### Java Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
 </a>
 
 
@@ -1105,14 +1105,14 @@ public class ArrayOps {
 
 ### Complexity — Why?
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
 </a>
 
 
@@ -1127,14 +1127,14 @@ public class ArrayOps {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1146,14 +1146,14 @@ public class ArrayOps {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1171,14 +1171,14 @@ public class ArrayOps {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1186,14 +1186,14 @@ A **revolving door** has four compartments. When the door rotates by one positio
 
 ### Problem
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" alt="Diagram: Problem" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" alt="Diagram: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
 </a>
 
 
@@ -1203,14 +1203,14 @@ Given an array `arr` of size n and integer `k`, rotate the array **left** by k p
 
 ### Algorithm (Reversal Method — O(n) time, O(1) space)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-handwritten.svg" alt="Handwritten: Algorithm (Reversal Method — O(n) time, O(1) space)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-handwritten.svg" alt="Handwritten: Algorithm (Reversal Method — O(n) time, O(1) space)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-diagram.svg" alt="Diagram: Algorithm (Reversal Method — O(n) time, O(1) space)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-diagram.svg" alt="Diagram: Algorithm (Reversal Method — O(n) time, O(1) space)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-sticky.svg" alt="Sticky Note: Algorithm (Reversal Method — O(n) time, O(1) space)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-reversal-method-o-n-time-o-1-space-sticky.svg" alt="Sticky Note: Algorithm (Reversal Method — O(n) time, O(1) space)" width="30%">
 </a>
 
 
@@ -1221,14 +1221,14 @@ Given an array `arr` of size n and integer `k`, rotate the array **left** by k p
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1250,14 +1250,14 @@ ALGORITHM reverse(arr, left, right)
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1288,14 +1288,14 @@ Rotate left by k=3, arr=[1, 2, 3, 4, 5, 6, 7], n=7, k=3
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -1338,14 +1338,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1385,14 +1385,14 @@ print(arr2)  # [6, 7, 1, 2, 3, 4, 5]
 
 ### Java Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
 </a>
 
 
@@ -1441,14 +1441,14 @@ public class ArrayRotation {
 
 ### Complexity — Why?
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
 </a>
 
 
@@ -1463,14 +1463,14 @@ The reversal method is optimal: each element is visited and swapped exactly twic
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1482,14 +1482,14 @@ The reversal method is optimal: each element is visited and swapped exactly twic
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1506,14 +1506,14 @@ The reversal method is optimal: each element is visited and swapped exactly twic
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1521,14 +1521,14 @@ A **deck of cards** held face-down. You flip the entire deck: the top card becom
 
 ### Algorithm (Two-Pointer Swap)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-handwritten.svg" alt="Handwritten: Algorithm (Two-Pointer Swap)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-handwritten.svg" alt="Handwritten: Algorithm (Two-Pointer Swap)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-diagram.svg" alt="Diagram: Algorithm (Two-Pointer Swap)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-diagram.svg" alt="Diagram: Algorithm (Two-Pointer Swap)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-sticky.svg" alt="Sticky Note: Algorithm (Two-Pointer Swap)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-two-pointer-swap-sticky.svg" alt="Sticky Note: Algorithm (Two-Pointer Swap)" width="30%">
 </a>
 
 
@@ -1538,14 +1538,14 @@ A **deck of cards** held face-down. You flip the entire deck: the top card becom
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1561,14 +1561,14 @@ ALGORITHM reverse(arr, n)
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1595,14 +1595,14 @@ Middle element (3) stays in place.
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -1631,14 +1631,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1657,14 +1657,14 @@ print(arr)  # [6, 5, 4, 3, 2, 1]
 
 ### Java Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
 </a>
 
 
@@ -1693,14 +1693,14 @@ public class ArrayReverse {
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -1711,14 +1711,14 @@ public class ArrayReverse {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1730,14 +1730,14 @@ public class ArrayReverse {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1753,14 +1753,14 @@ public class ArrayReverse {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1768,14 +1768,14 @@ A **cash register receipt tape** shows running totals. If you want to know how m
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1789,14 +1789,14 @@ Subarray sum from `l` to `r`:
 
 ### Algorithm
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" alt="Handwritten: Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" alt="Handwritten: Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" alt="Diagram: Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" alt="Diagram: Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" alt="Sticky Note: Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" alt="Sticky Note: Algorithm" width="30%">
 </a>
 
 
@@ -1807,14 +1807,14 @@ Subarray sum from `l` to `r`:
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1834,14 +1834,14 @@ ALGORITHM rangeSum(prefix, l, r)
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1866,14 +1866,14 @@ Build prefix sum for arr = [3, 1, 4, 1, 5, 9, 2, 6]
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -1908,14 +1908,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1943,14 +1943,14 @@ print(f"Sum [0,4]: {range_sum(pref, 0, 4)}")   # 14
 
 ### Java Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
 </a>
 
 
@@ -1984,14 +1984,14 @@ public class PrefixSum {
 
 ### Complexity — Why?
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
 </a>
 
 
@@ -2005,14 +2005,14 @@ Without prefix sums, each range query costs O(n). For q queries, total = O(n×q)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2024,14 +2024,14 @@ Without prefix sums, each range query costs O(n). For q queries, total = O(n×q)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2043,14 +2043,14 @@ Without prefix sums, each range query costs O(n). For q queries, total = O(n×q)
 
 ### 2D Prefix Sum
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-handwritten.svg" alt="Handwritten: 2D Prefix Sum" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-handwritten.svg" alt="Handwritten: 2D Prefix Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-diagram.svg" alt="Diagram: 2D Prefix Sum" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-diagram.svg" alt="Diagram: 2D Prefix Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-sticky.svg" alt="Sticky Note: 2D Prefix Sum" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/2d-prefix-sum-sticky.svg" alt="Sticky Note: 2D Prefix Sum" width="30%">
 </a>
 
 
@@ -2069,14 +2069,14 @@ prefix[i][j] = arr[i][j]
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2084,14 +2084,14 @@ Two friends on opposite ends of a **sorted bookshelf** want to find two books wh
 
 ### Problem
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" alt="Diagram: Problem" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-diagram.svg" alt="Diagram: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
 </a>
 
 
@@ -2099,14 +2099,14 @@ Given a **sorted** array and a target sum, find a pair (i, j) such that arr[i] +
 
 ### Algorithm
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" alt="Handwritten: Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-handwritten.svg" alt="Handwritten: Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" alt="Diagram: Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-diagram.svg" alt="Diagram: Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" alt="Sticky Note: Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/algorithm-sticky.svg" alt="Sticky Note: Algorithm" width="30%">
 </a>
 
 
@@ -2120,14 +2120,14 @@ Given a **sorted** array and a target sum, find a pair (i, j) such that arr[i] +
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2148,14 +2148,14 @@ ALGORITHM twoSumSorted(arr, n, target)
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -2186,14 +2186,14 @@ Now try target = 16 with arr = [1, 2, 3, 4, 5, 6, 7]:
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -2225,14 +2225,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -2256,14 +2256,14 @@ print(f"[{i},{j}] -> {arr[i]} + {arr[j]} = 12")
 
 ### Java Implementation
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-handwritten.svg" alt="Handwritten: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-diagram.svg" alt="Diagram: Java Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/java-implementation-sticky.svg" alt="Sticky Note: Java Implementation" width="30%">
 </a>
 
 
@@ -2293,14 +2293,14 @@ public class TwoPointer {
 
 ### Complexity — Why?
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-handwritten.svg" alt="Handwritten: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-diagram.svg" alt="Diagram: Complexity — Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-why-sticky.svg" alt="Sticky Note: Complexity — Why?" width="30%">
 </a>
 
 
@@ -2313,14 +2313,14 @@ public class TwoPointer {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2333,14 +2333,14 @@ public class TwoPointer {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2380,14 +2380,14 @@ public class TwoPointer {
 
 ### Problem 1: Kadane's Algorithm (Maximum Subarray Sum)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-handwritten.svg" alt="Handwritten: Problem 1: Kadane's Algorithm (Maximum Subarray Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-handwritten.svg" alt="Handwritten: Problem 1: Kadane's Algorithm (Maximum Subarray Sum)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-diagram.svg" alt="Diagram: Problem 1: Kadane's Algorithm (Maximum Subarray Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-diagram.svg" alt="Diagram: Problem 1: Kadane's Algorithm (Maximum Subarray Sum)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-sticky.svg" alt="Sticky Note: Problem 1: Kadane's Algorithm (Maximum Subarray Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-1-kadane-s-algorithm-maximum-subarray-sum-sticky.svg" alt="Sticky Note: Problem 1: Kadane's Algorithm (Maximum Subarray Sum)" width="30%">
 </a>
 
 
@@ -2440,14 +2440,14 @@ int kadane(const vector<int>& arr) {
 
 ### Problem 2: Trapping Rain Water
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-handwritten.svg" alt="Handwritten: Problem 2: Trapping Rain Water" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-handwritten.svg" alt="Handwritten: Problem 2: Trapping Rain Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-diagram.svg" alt="Diagram: Problem 2: Trapping Rain Water" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-diagram.svg" alt="Diagram: Problem 2: Trapping Rain Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-sticky.svg" alt="Sticky Note: Problem 2: Trapping Rain Water" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-2-trapping-rain-water-sticky.svg" alt="Sticky Note: Problem 2: Trapping Rain Water" width="30%">
 </a>
 
 
@@ -2492,14 +2492,14 @@ Total water trapped = 6 ✓
 
 ### Problem 3: Container With Most Water
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-handwritten.svg" alt="Handwritten: Problem 3: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-handwritten.svg" alt="Handwritten: Problem 3: Container With Most Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-diagram.svg" alt="Diagram: Problem 3: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-diagram.svg" alt="Diagram: Problem 3: Container With Most Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-sticky.svg" alt="Sticky Note: Problem 3: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-3-container-with-most-water-sticky.svg" alt="Sticky Note: Problem 3: Container With Most Water" width="30%">
 </a>
 
 
@@ -2538,14 +2538,14 @@ Max area = 49 (lines at indices 1 and 8, height 8 and 7, width 7)
 
 ### Problem 4: Rotate Array (LeetCode 189)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-handwritten.svg" alt="Handwritten: Problem 4: Rotate Array (LeetCode 189)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-handwritten.svg" alt="Handwritten: Problem 4: Rotate Array (LeetCode 189)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-diagram.svg" alt="Diagram: Problem 4: Rotate Array (LeetCode 189)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-diagram.svg" alt="Diagram: Problem 4: Rotate Array (LeetCode 189)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-sticky.svg" alt="Sticky Note: Problem 4: Rotate Array (LeetCode 189)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-4-rotate-array-leetcode-189-sticky.svg" alt="Sticky Note: Problem 4: Rotate Array (LeetCode 189)" width="30%">
 </a>
 
 
@@ -2568,14 +2568,14 @@ def rotate(arr, k):
 
 ### Problem 5: Two Sum (Unsorted — LeetCode 1)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-handwritten.svg" alt="Handwritten: Problem 5: Two Sum (Unsorted — LeetCode 1)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-handwritten.svg" alt="Handwritten: Problem 5: Two Sum (Unsorted — LeetCode 1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-diagram.svg" alt="Diagram: Problem 5: Two Sum (Unsorted — LeetCode 1)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-diagram.svg" alt="Diagram: Problem 5: Two Sum (Unsorted — LeetCode 1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-sticky.svg" alt="Sticky Note: Problem 5: Two Sum (Unsorted — LeetCode 1)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/problem-5-two-sum-unsorted-leetcode-1-sticky.svg" alt="Sticky Note: Problem 5: Two Sum (Unsorted — LeetCode 1)" width="30%">
 </a>
 
 
@@ -2609,14 +2609,14 @@ def two_sum(arr, target):
 
 ### 1. Image Processing (Pixel Buffers)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-handwritten.svg" alt="Handwritten: 1. Image Processing (Pixel Buffers)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-handwritten.svg" alt="Handwritten: 1. Image Processing (Pixel Buffers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-diagram.svg" alt="Diagram: 1. Image Processing (Pixel Buffers)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-diagram.svg" alt="Diagram: 1. Image Processing (Pixel Buffers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-sticky.svg" alt="Sticky Note: 1. Image Processing (Pixel Buffers)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/1-image-processing-pixel-buffers-sticky.svg" alt="Sticky Note: 1. Image Processing (Pixel Buffers)" width="30%">
 </a>
 
 
@@ -2638,14 +2638,14 @@ struct Image {
 
 ### 2. Dynamic Array Implementations in Language Runtimes
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-handwritten.svg" alt="Handwritten: 2. Dynamic Array Implementations in Language Runtimes" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-handwritten.svg" alt="Handwritten: 2. Dynamic Array Implementations in Language Runtimes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-diagram.svg" alt="Diagram: 2. Dynamic Array Implementations in Language Runtimes" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-diagram.svg" alt="Diagram: 2. Dynamic Array Implementations in Language Runtimes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-sticky.svg" alt="Sticky Note: 2. Dynamic Array Implementations in Language Runtimes" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/2-dynamic-array-implementations-in-language-runtimes-sticky.svg" alt="Sticky Note: 2. Dynamic Array Implementations in Language Runtimes" width="30%">
 </a>
 
 
@@ -2658,14 +2658,14 @@ struct Image {
 
 ### 3. Matrix Storage and Linear Algebra
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-handwritten.svg" alt="Handwritten: 3. Matrix Storage and Linear Algebra" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-handwritten.svg" alt="Handwritten: 3. Matrix Storage and Linear Algebra" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-diagram.svg" alt="Diagram: 3. Matrix Storage and Linear Algebra" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-diagram.svg" alt="Diagram: 3. Matrix Storage and Linear Algebra" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-sticky.svg" alt="Sticky Note: 3. Matrix Storage and Linear Algebra" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/3-matrix-storage-and-linear-algebra-sticky.svg" alt="Sticky Note: 3. Matrix Storage and Linear Algebra" width="30%">
 </a>
 
 
@@ -2687,14 +2687,14 @@ class CSRSparseMatrix:
 
 ### 4. CPU Cache Line Optimization
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-handwritten.svg" alt="Handwritten: 4. CPU Cache Line Optimization" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-handwritten.svg" alt="Handwritten: 4. CPU Cache Line Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-diagram.svg" alt="Diagram: 4. CPU Cache Line Optimization" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-diagram.svg" alt="Diagram: 4. CPU Cache Line Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-sticky.svg" alt="Sticky Note: 4. CPU Cache Line Optimization" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/4-cpu-cache-line-optimization-sticky.svg" alt="Sticky Note: 4. CPU Cache Line Optimization" width="30%">
 </a>
 
 
@@ -2709,14 +2709,14 @@ Row-major traversal of a 2D array accesses adjacent memory addresses → prefetc
 
 ### 5. Buffer and Stream I/O
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-handwritten.svg" alt="Handwritten: 5. Buffer and Stream I/O" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-handwritten.svg" alt="Handwritten: 5. Buffer and Stream I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-diagram.svg" alt="Diagram: 5. Buffer and Stream I/O" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-diagram.svg" alt="Diagram: 5. Buffer and Stream I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-sticky.svg" alt="Sticky Note: 5. Buffer and Stream I/O" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/5-buffer-and-stream-i-o-sticky.svg" alt="Sticky Note: 5. Buffer and Stream I/O" width="30%">
 </a>
 
 
@@ -2731,14 +2731,14 @@ ssize_t bytes = read(fd, buffer, BUFFER_SIZE);
 
 ### 6. Hash Table Bucket Arrays
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-handwritten.svg" alt="Handwritten: 6. Hash Table Bucket Arrays" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-handwritten.svg" alt="Handwritten: 6. Hash Table Bucket Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-diagram.svg" alt="Diagram: 6. Hash Table Bucket Arrays" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-diagram.svg" alt="Diagram: 6. Hash Table Bucket Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-sticky.svg" alt="Sticky Note: 6. Hash Table Bucket Arrays" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/6-hash-table-bucket-arrays-sticky.svg" alt="Sticky Note: 6. Hash Table Bucket Arrays" width="30%">
 </a>
 
 
@@ -2903,14 +2903,14 @@ class PrefixSum {
 
 ### Additional MCQs (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
 </a>
 
 
@@ -2954,14 +2954,14 @@ class PrefixSum {
 
 ### Additional Exercises (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
 </a>
 
 
@@ -2993,14 +2993,14 @@ class PrefixSum {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3008,14 +3008,14 @@ A **conveyor belt** in a factory moves products past inspection stations. You wa
 
 ### Subarray Problem Taxonomy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-handwritten.svg" alt="Handwritten: Subarray Problem Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-handwritten.svg" alt="Handwritten: Subarray Problem Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-diagram.svg" alt="Diagram: Subarray Problem Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-diagram.svg" alt="Diagram: Subarray Problem Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-sticky.svg" alt="Sticky Note: Subarray Problem Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/subarray-problem-taxonomy-sticky.svg" alt="Sticky Note: Subarray Problem Taxonomy" width="30%">
 </a>
 
 
@@ -3038,14 +3038,14 @@ flowchart TD
 
 ### Maximum Product Subarray (LeetCode 152)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-handwritten.svg" alt="Handwritten: Maximum Product Subarray (LeetCode 152)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-handwritten.svg" alt="Handwritten: Maximum Product Subarray (LeetCode 152)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-diagram.svg" alt="Diagram: Maximum Product Subarray (LeetCode 152)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-diagram.svg" alt="Diagram: Maximum Product Subarray (LeetCode 152)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-sticky.svg" alt="Sticky Note: Maximum Product Subarray (LeetCode 152)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/maximum-product-subarray-leetcode-152-sticky.svg" alt="Sticky Note: Maximum Product Subarray (LeetCode 152)" width="30%">
 </a>
 
 
@@ -3108,14 +3108,14 @@ console.log(maxProduct([-2, 3, -4]));      // 24
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3123,14 +3123,14 @@ You need to find the **median** score from 1 million exam results. Sorting all 1
 
 ### Quick Select Algorithm
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-handwritten.svg" alt="Handwritten: Quick Select Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-handwritten.svg" alt="Handwritten: Quick Select Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-diagram.svg" alt="Diagram: Quick Select Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-diagram.svg" alt="Diagram: Quick Select Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-sticky.svg" alt="Sticky Note: Quick Select Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/quick-select-algorithm-sticky.svg" alt="Sticky Note: Quick Select Algorithm" width="30%">
 </a>
 
 
@@ -3145,14 +3145,14 @@ You need to find the **median** score from 1 million exam results. Sorting all 1
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -3202,14 +3202,14 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -3223,14 +3223,14 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 
 ### Additional MCQs (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
 </a>
 
 
@@ -3262,14 +3262,14 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 
 ### Additional Exercises (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
 </a>
 
 
@@ -3289,14 +3289,14 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 
 ### Complexity Master Table: Array Operations
 
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-handwritten.svg" alt="Handwritten: Complexity Master Table: Array Operations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-handwritten.svg" alt="Handwritten: Complexity Master Table: Array Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-diagram.svg" alt="Diagram: Complexity Master Table: Array Operations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-diagram.svg" alt="Diagram: Complexity Master Table: Array Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-sticky.svg" alt="Sticky Note: Complexity Master Table: Array Operations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/02-arrays/complexity-master-table-array-operations-sticky.svg" alt="Sticky Note: Complexity Master Table: Array Operations" width="30%">
 </a>
 
 

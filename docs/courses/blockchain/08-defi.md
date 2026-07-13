@@ -47,36 +47,36 @@ flowchart LR
 
 ### What is DeFi?
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" alt="Handwritten: What is DeFi?" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" alt="Handwritten: What is DeFi?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" alt="Diagram: What is DeFi?" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" alt="Diagram: What is DeFi?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" alt="Sticky Note: What is DeFi?" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" alt="Handwritten: What is DeFi?" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" alt="Diagram: What is DeFi?" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" alt="Sticky Note: What is DeFi?" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" alt="Sticky Note: What is DeFi?" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" alt="Handwritten: What is DeFi?" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" alt="Handwritten: What is DeFi?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" alt="Diagram: What is DeFi?" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" alt="Diagram: What is DeFi?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" alt="Sticky Note: What is DeFi?" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" alt="Sticky Note: What is DeFi?" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-handwritten.svg" alt="Handwritten: What is DeFi?" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-diagram.svg" alt="Diagram: What is DeFi?" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/what-is-defi-sticky.svg" alt="Sticky Note: What is DeFi?" width="30%">
 </a>
 
 
@@ -109,36 +109,36 @@ flowchart TB
 
 ### Automated Market Makers (AMM)
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" alt="Handwritten: Automated Market Makers (AMM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" alt="Handwritten: Automated Market Makers (AMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" alt="Diagram: Automated Market Makers (AMM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" alt="Diagram: Automated Market Makers (AMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" alt="Sticky Note: Automated Market Makers (AMM)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" alt="Handwritten: Automated Market Makers (AMM)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" alt="Diagram: Automated Market Makers (AMM)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" alt="Sticky Note: Automated Market Makers (AMM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" alt="Sticky Note: Automated Market Makers (AMM)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" alt="Handwritten: Automated Market Makers (AMM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" alt="Handwritten: Automated Market Makers (AMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" alt="Diagram: Automated Market Makers (AMM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" alt="Diagram: Automated Market Makers (AMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" alt="Sticky Note: Automated Market Makers (AMM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" alt="Sticky Note: Automated Market Makers (AMM)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-handwritten.svg" alt="Handwritten: Automated Market Makers (AMM)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-diagram.svg" alt="Diagram: Automated Market Makers (AMM)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/automated-market-makers-amm-sticky.svg" alt="Sticky Note: Automated Market Makers (AMM)" width="30%">
 </a>
 
 
@@ -195,36 +195,36 @@ console.log(`1 ETH ? ${output.toFixed(2)} USDC`);  // ~1,818 USDC (slippage of ~
 
 ### Impermanent Loss
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" alt="Handwritten: Impermanent Loss" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" alt="Handwritten: Impermanent Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" alt="Diagram: Impermanent Loss" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" alt="Diagram: Impermanent Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" alt="Sticky Note: Impermanent Loss" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" alt="Handwritten: Impermanent Loss" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" alt="Diagram: Impermanent Loss" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" alt="Sticky Note: Impermanent Loss" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" alt="Sticky Note: Impermanent Loss" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" alt="Handwritten: Impermanent Loss" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" alt="Handwritten: Impermanent Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" alt="Diagram: Impermanent Loss" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" alt="Diagram: Impermanent Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" alt="Sticky Note: Impermanent Loss" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" alt="Sticky Note: Impermanent Loss" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-handwritten.svg" alt="Handwritten: Impermanent Loss" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-diagram.svg" alt="Diagram: Impermanent Loss" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/impermanent-loss-sticky.svg" alt="Sticky Note: Impermanent Loss" width="30%">
 </a>
 
 
@@ -254,36 +254,36 @@ for (const r of losses) {
 
 ### Lending Protocols
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" alt="Handwritten: Lending Protocols" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" alt="Handwritten: Lending Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" alt="Diagram: Lending Protocols" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" alt="Diagram: Lending Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" alt="Sticky Note: Lending Protocols" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" alt="Handwritten: Lending Protocols" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" alt="Diagram: Lending Protocols" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" alt="Sticky Note: Lending Protocols" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" alt="Sticky Note: Lending Protocols" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" alt="Handwritten: Lending Protocols" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" alt="Handwritten: Lending Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" alt="Diagram: Lending Protocols" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" alt="Diagram: Lending Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" alt="Sticky Note: Lending Protocols" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" alt="Sticky Note: Lending Protocols" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-handwritten.svg" alt="Handwritten: Lending Protocols" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-diagram.svg" alt="Diagram: Lending Protocols" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/lending-protocols-sticky.svg" alt="Sticky Note: Lending Protocols" width="30%">
 </a>
 
 
@@ -341,36 +341,36 @@ console.log(calculateHealthFactor(alicePosition));  // 1.375
 
 ### Stablecoin Types
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" alt="Handwritten: Stablecoin Types" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" alt="Handwritten: Stablecoin Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" alt="Diagram: Stablecoin Types" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" alt="Diagram: Stablecoin Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" alt="Sticky Note: Stablecoin Types" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" alt="Handwritten: Stablecoin Types" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" alt="Diagram: Stablecoin Types" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" alt="Sticky Note: Stablecoin Types" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" alt="Sticky Note: Stablecoin Types" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" alt="Handwritten: Stablecoin Types" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" alt="Handwritten: Stablecoin Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" alt="Diagram: Stablecoin Types" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" alt="Diagram: Stablecoin Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" alt="Sticky Note: Stablecoin Types" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" alt="Sticky Note: Stablecoin Types" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-handwritten.svg" alt="Handwritten: Stablecoin Types" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-diagram.svg" alt="Diagram: Stablecoin Types" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/stablecoin-types-sticky.svg" alt="Sticky Note: Stablecoin Types" width="30%">
 </a>
 
 
@@ -406,36 +406,36 @@ flowchart TB
 
 ### Yield Farming
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" alt="Handwritten: Yield Farming" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" alt="Handwritten: Yield Farming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" alt="Diagram: Yield Farming" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" alt="Diagram: Yield Farming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" alt="Sticky Note: Yield Farming" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" alt="Handwritten: Yield Farming" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" alt="Diagram: Yield Farming" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" alt="Sticky Note: Yield Farming" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" alt="Sticky Note: Yield Farming" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" alt="Handwritten: Yield Farming" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" alt="Handwritten: Yield Farming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" alt="Diagram: Yield Farming" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" alt="Diagram: Yield Farming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" alt="Sticky Note: Yield Farming" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" alt="Sticky Note: Yield Farming" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-handwritten.svg" alt="Handwritten: Yield Farming" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-diagram.svg" alt="Diagram: Yield Farming" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/yield-farming-sticky.svg" alt="Sticky Note: Yield Farming" width="30%">
 </a>
 
 
@@ -476,36 +476,36 @@ flowchart LR
 
 ### Flash Loans
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" alt="Handwritten: Flash Loans" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" alt="Handwritten: Flash Loans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" alt="Diagram: Flash Loans" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" alt="Diagram: Flash Loans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" alt="Sticky Note: Flash Loans" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" alt="Handwritten: Flash Loans" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" alt="Diagram: Flash Loans" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" alt="Sticky Note: Flash Loans" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" alt="Sticky Note: Flash Loans" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" alt="Handwritten: Flash Loans" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" alt="Handwritten: Flash Loans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" alt="Diagram: Flash Loans" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" alt="Diagram: Flash Loans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" alt="Sticky Note: Flash Loans" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" alt="Sticky Note: Flash Loans" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-handwritten.svg" alt="Handwritten: Flash Loans" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-diagram.svg" alt="Diagram: Flash Loans" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/flash-loans-sticky.svg" alt="Sticky Note: Flash Loans" width="30%">
 </a>
 
 
@@ -546,36 +546,36 @@ async function executeFlashLoanArbitrage() {
 
 ### DeFi Composability (Money Legos)
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" alt="Handwritten: DeFi Composability (Money Legos)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" alt="Handwritten: DeFi Composability (Money Legos)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" alt="Diagram: DeFi Composability (Money Legos)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" alt="Diagram: DeFi Composability (Money Legos)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" alt="Sticky Note: DeFi Composability (Money Legos)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" alt="Handwritten: DeFi Composability (Money Legos)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" alt="Diagram: DeFi Composability (Money Legos)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" alt="Sticky Note: DeFi Composability (Money Legos)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" alt="Sticky Note: DeFi Composability (Money Legos)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" alt="Handwritten: DeFi Composability (Money Legos)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" alt="Handwritten: DeFi Composability (Money Legos)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" alt="Diagram: DeFi Composability (Money Legos)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" alt="Diagram: DeFi Composability (Money Legos)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" alt="Sticky Note: DeFi Composability (Money Legos)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" alt="Sticky Note: DeFi Composability (Money Legos)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-handwritten.svg" alt="Handwritten: DeFi Composability (Money Legos)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-diagram.svg" alt="Diagram: DeFi Composability (Money Legos)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-composability-money-legos-sticky.svg" alt="Sticky Note: DeFi Composability (Money Legos)" width="30%">
 </a>
 
 
@@ -599,36 +599,36 @@ flowchart TB
 
 ### DAO Governance
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" alt="Handwritten: DAO Governance" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" alt="Handwritten: DAO Governance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" alt="Diagram: DAO Governance" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" alt="Diagram: DAO Governance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" alt="Sticky Note: DAO Governance" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" alt="Handwritten: DAO Governance" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" alt="Diagram: DAO Governance" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" alt="Sticky Note: DAO Governance" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" alt="Sticky Note: DAO Governance" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" alt="Handwritten: DAO Governance" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" alt="Handwritten: DAO Governance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" alt="Diagram: DAO Governance" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" alt="Diagram: DAO Governance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" alt="Sticky Note: DAO Governance" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" alt="Sticky Note: DAO Governance" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-handwritten.svg" alt="Handwritten: DAO Governance" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-diagram.svg" alt="Diagram: DAO Governance" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/dao-governance-sticky.svg" alt="Sticky Note: DAO Governance" width="30%">
 </a>
 
 
@@ -673,36 +673,36 @@ function calculateQuorum(
 
 ### NFTs and Marketplaces
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" alt="Handwritten: NFTs and Marketplaces" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" alt="Handwritten: NFTs and Marketplaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" alt="Diagram: NFTs and Marketplaces" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" alt="Diagram: NFTs and Marketplaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" alt="Sticky Note: NFTs and Marketplaces" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" alt="Handwritten: NFTs and Marketplaces" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" alt="Diagram: NFTs and Marketplaces" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" alt="Sticky Note: NFTs and Marketplaces" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" alt="Sticky Note: NFTs and Marketplaces" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" alt="Handwritten: NFTs and Marketplaces" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" alt="Handwritten: NFTs and Marketplaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" alt="Diagram: NFTs and Marketplaces" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" alt="Diagram: NFTs and Marketplaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" alt="Sticky Note: NFTs and Marketplaces" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" alt="Sticky Note: NFTs and Marketplaces" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-handwritten.svg" alt="Handwritten: NFTs and Marketplaces" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-diagram.svg" alt="Diagram: NFTs and Marketplaces" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/nfts-and-marketplaces-sticky.svg" alt="Sticky Note: NFTs and Marketplaces" width="30%">
 </a>
 
 
@@ -723,36 +723,36 @@ NFTs (Non-Fungible Tokens) represent unique digital assets on the blockchain.
 
 ### DeFi Risks
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" alt="Handwritten: DeFi Risks" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" alt="Handwritten: DeFi Risks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" alt="Diagram: DeFi Risks" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" alt="Diagram: DeFi Risks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" alt="Sticky Note: DeFi Risks" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" alt="Handwritten: DeFi Risks" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" alt="Diagram: DeFi Risks" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" alt="Sticky Note: DeFi Risks" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" alt="Sticky Note: DeFi Risks" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" alt="Handwritten: DeFi Risks" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" alt="Handwritten: DeFi Risks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" alt="Diagram: DeFi Risks" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" alt="Diagram: DeFi Risks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" alt="Sticky Note: DeFi Risks" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" alt="Sticky Note: DeFi Risks" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-handwritten.svg" alt="Handwritten: DeFi Risks" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-diagram.svg" alt="Diagram: DeFi Risks" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/08-defi/defi-risks-sticky.svg" alt="Sticky Note: DeFi Risks" width="30%">
 </a>
 
 

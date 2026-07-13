@@ -48,14 +48,14 @@ flowchart LR
 
 ### RESTful API Design
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/restful-api-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/restful-api-design-handwritten.svg" alt="Handwritten: RESTful API Design" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/restful-api-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/restful-api-design-handwritten.svg" alt="Handwritten: RESTful API Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/restful-api-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/restful-api-design-diagram.svg" alt="Diagram: RESTful API Design" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/restful-api-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/restful-api-design-diagram.svg" alt="Diagram: RESTful API Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/restful-api-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/restful-api-design-sticky.svg" alt="Sticky Note: RESTful API Design" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/restful-api-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/restful-api-design-sticky.svg" alt="Sticky Note: RESTful API Design" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ Consistent status codes: 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Req
 
 ### Resource Controllers
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/resource-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/resource-controllers-handwritten.svg" alt="Handwritten: Resource Controllers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/resource-controllers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/resource-controllers-handwritten.svg" alt="Handwritten: Resource Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/resource-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/resource-controllers-diagram.svg" alt="Diagram: Resource Controllers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/resource-controllers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/resource-controllers-diagram.svg" alt="Diagram: Resource Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/resource-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/resource-controllers-sticky.svg" alt="Sticky Note: Resource Controllers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/resource-controllers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/resource-controllers-sticky.svg" alt="Sticky Note: Resource Controllers" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ Route::apiResource('photos.comments', CommentController::class)->shallow();
 
 ### API Resources & Collections
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-handwritten.svg" alt="Handwritten: API Resources & Collections" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-handwritten.svg" alt="Handwritten: API Resources & Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-diagram.svg" alt="Diagram: API Resources & Collections" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-diagram.svg" alt="Diagram: API Resources & Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-sticky.svg" alt="Sticky Note: API Resources & Collections" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-resources-collections-sticky.svg" alt="Sticky Note: API Resources & Collections" width="30%">
 </a>
 
 
@@ -185,14 +185,14 @@ Pagination metadata is automatically included in JSON responses with `links` (fi
 
 ### JSON:API Resources (Laravel 13)
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-handwritten.svg" alt="Handwritten: JSON:API Resources (Laravel 13)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-handwritten.svg" alt="Handwritten: JSON:API Resources (Laravel 13)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-diagram.svg" alt="Diagram: JSON:API Resources (Laravel 13)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-diagram.svg" alt="Diagram: JSON:API Resources (Laravel 13)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-sticky.svg" alt="Sticky Note: JSON:API Resources (Laravel 13)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/json-api-resources-laravel-13-sticky.svg" alt="Sticky Note: JSON:API Resources (Laravel 13)" width="30%">
 </a>
 
 
@@ -233,14 +233,14 @@ Relationship inclusion via `include` parameter: `GET /api/articles?include=autho
 
 ### Sanctum Token Authentication
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-handwritten.svg" alt="Handwritten: Sanctum Token Authentication" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-handwritten.svg" alt="Handwritten: Sanctum Token Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-diagram.svg" alt="Diagram: Sanctum Token Authentication" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-diagram.svg" alt="Diagram: Sanctum Token Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-sticky.svg" alt="Sticky Note: Sanctum Token Authentication" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/sanctum-token-authentication-sticky.svg" alt="Sticky Note: Sanctum Token Authentication" width="30%">
 </a>
 
 
@@ -295,14 +295,14 @@ Route::middleware('auth:sanctum')->group(function () {
 
 ### API Versioning
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-versioning-handwritten.svg" alt="Handwritten: API Versioning" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-versioning-handwritten.svg" alt="Handwritten: API Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-versioning-diagram.svg" alt="Diagram: API Versioning" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-versioning-diagram.svg" alt="Diagram: API Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-versioning-sticky.svg" alt="Sticky Note: API Versioning" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-versioning-sticky.svg" alt="Sticky Note: API Versioning" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ Route::prefix('v2')->group(function () {
 
 ### Rate Limiting
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/rate-limiting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/rate-limiting-handwritten.svg" alt="Handwritten: Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/rate-limiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/rate-limiting-handwritten.svg" alt="Handwritten: Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/rate-limiting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/rate-limiting-diagram.svg" alt="Diagram: Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/rate-limiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/rate-limiting-diagram.svg" alt="Diagram: Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/rate-limiting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/rate-limiting-sticky.svg" alt="Sticky Note: Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/rate-limiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/rate-limiting-sticky.svg" alt="Sticky Note: Rate Limiting" width="30%">
 </a>
 
 
@@ -358,14 +358,14 @@ RateLimiter methods: `hit($key, $decay)`, `tooManyAttempts($key, $max)`, `availa
 
 ### Response Formatting
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/response-formatting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/response-formatting-handwritten.svg" alt="Handwritten: Response Formatting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/response-formatting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/response-formatting-handwritten.svg" alt="Handwritten: Response Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/response-formatting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/response-formatting-diagram.svg" alt="Diagram: Response Formatting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/response-formatting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/response-formatting-diagram.svg" alt="Diagram: Response Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/response-formatting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/response-formatting-sticky.svg" alt="Sticky Note: Response Formatting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/response-formatting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/response-formatting-sticky.svg" alt="Sticky Note: Response Formatting" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ Response::macro('api', function (mixed $data, string $message = '', int $status 
 
 ### Pagination for APIs
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-handwritten.svg" alt="Handwritten: Pagination for APIs" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-handwritten.svg" alt="Handwritten: Pagination for APIs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-diagram.svg" alt="Diagram: Pagination for APIs" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-diagram.svg" alt="Diagram: Pagination for APIs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-sticky.svg" alt="Sticky Note: Pagination for APIs" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/pagination-for-apis-sticky.svg" alt="Sticky Note: Pagination for APIs" width="30%">
 </a>
 
 
@@ -402,14 +402,14 @@ Cursor pagination avoids the COUNT query and is stable with new insertions.
 
 ### Error Handling
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/error-handling-handwritten.svg" alt="Handwritten: Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/error-handling-handwritten.svg" alt="Handwritten: Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/error-handling-diagram.svg" alt="Diagram: Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/error-handling-diagram.svg" alt="Diagram: Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/error-handling-sticky.svg" alt="Sticky Note: Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/error-handling-sticky.svg" alt="Sticky Note: Error Handling" width="30%">
 </a>
 
 
@@ -438,14 +438,14 @@ class PostCreationException extends Exception
 
 ### GraphQL with Lighthouse
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-handwritten.svg" alt="Handwritten: GraphQL with Lighthouse" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-handwritten.svg" alt="Handwritten: GraphQL with Lighthouse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-diagram.svg" alt="Diagram: GraphQL with Lighthouse" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-diagram.svg" alt="Diagram: GraphQL with Lighthouse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-sticky.svg" alt="Sticky Note: GraphQL with Lighthouse" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/graphql-with-lighthouse-sticky.svg" alt="Sticky Note: GraphQL with Lighthouse" width="30%">
 </a>
 
 
@@ -469,14 +469,14 @@ Key directives: `@paginate`, `@find`, `@create`, `@update`, `@delete`, `@can`, `
 
 ### API Resource Class for the Blog
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-handwritten.svg" alt="Handwritten: API Resource Class for the Blog" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-handwritten.svg" alt="Handwritten: API Resource Class for the Blog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-diagram.svg" alt="Diagram: API Resource Class for the Blog" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-diagram.svg" alt="Diagram: API Resource Class for the Blog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-sticky.svg" alt="Sticky Note: API Resource Class for the Blog" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/api-resource-class-for-the-blog-sticky.svg" alt="Sticky Note: API Resource Class for the Blog" width="30%">
 </a>
 
 
@@ -510,14 +510,14 @@ class PostResource extends JsonResource
 
 ### Full Blog Controller
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-handwritten.svg" alt="Handwritten: Full Blog Controller" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-handwritten.svg" alt="Handwritten: Full Blog Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-diagram.svg" alt="Diagram: Full Blog Controller" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-diagram.svg" alt="Diagram: Full Blog Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-sticky.svg" alt="Sticky Note: Full Blog Controller" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/full-blog-controller-sticky.svg" alt="Sticky Note: Full Blog Controller" width="30%">
 </a>
 
 
@@ -615,14 +615,14 @@ class PostController extends Controller
 
 ### Rate Limiter Configuration
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-handwritten.svg" alt="Handwritten: Rate Limiter Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-handwritten.svg" alt="Handwritten: Rate Limiter Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-diagram.svg" alt="Diagram: Rate Limiter Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-diagram.svg" alt="Diagram: Rate Limiter Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-sticky.svg" alt="Sticky Note: Rate Limiter Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/rate-limiter-configuration-sticky.svg" alt="Sticky Note: Rate Limiter Configuration" width="30%">
 </a>
 
 
@@ -645,14 +645,14 @@ RateLimiter::for('auth', function (Request $request) {
 
 ### Route Registration
 
-<a href="../../assets/images/diagrams/laravel/07-api-development/route-registration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/route-registration-handwritten.svg" alt="Handwritten: Route Registration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/route-registration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/route-registration-handwritten.svg" alt="Handwritten: Route Registration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/route-registration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/route-registration-diagram.svg" alt="Diagram: Route Registration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/route-registration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/route-registration-diagram.svg" alt="Diagram: Route Registration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/07-api-development/route-registration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/07-api-development/route-registration-sticky.svg" alt="Sticky Note: Route Registration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/07-api-development/route-registration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/07-api-development/route-registration-sticky.svg" alt="Sticky Note: Route Registration" width="30%">
 </a>
 
 

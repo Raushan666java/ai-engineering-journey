@@ -21,14 +21,14 @@ A prompt is the interface between human intent and model behavior. Unlike tradit
 
 ### 5.1.1 Clarity
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-handwritten.svg" alt="Handwritten: 5.1.1 Clarity" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-handwritten.svg" alt="Handwritten: 5.1.1 Clarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-diagram.svg" alt="Diagram: 5.1.1 Clarity" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-diagram.svg" alt="Diagram: 5.1.1 Clarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-sticky.svg" alt="Sticky Note: 5.1.1 Clarity" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-1-clarity-sticky.svg" alt="Sticky Note: 5.1.1 Clarity" width="30%">
 </a>
 
 
@@ -40,14 +40,14 @@ Clear prompts leave no room for ambiguity. Instead of "Write about AI," specify 
 
 ### 5.1.2 Specificity
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-handwritten.svg" alt="Handwritten: 5.1.2 Specificity" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-handwritten.svg" alt="Handwritten: 5.1.2 Specificity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-diagram.svg" alt="Diagram: 5.1.2 Specificity" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-diagram.svg" alt="Diagram: 5.1.2 Specificity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-sticky.svg" alt="Sticky Note: 5.1.2 Specificity" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-2-specificity-sticky.svg" alt="Sticky Note: 5.1.2 Specificity" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ Specificity includes providing examples, defining key terms, and scoping the res
 
 ### 5.1.3 Role Assignment
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-handwritten.svg" alt="Handwritten: 5.1.3 Role Assignment" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-handwritten.svg" alt="Handwritten: 5.1.3 Role Assignment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-diagram.svg" alt="Diagram: 5.1.3 Role Assignment" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-diagram.svg" alt="Diagram: 5.1.3 Role Assignment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-sticky.svg" alt="Sticky Note: 5.1.3 Role Assignment" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-3-role-assignment-sticky.svg" alt="Sticky Note: 5.1.3 Role Assignment" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ Role assignment is most effective when the role implies specific expertise, cons
 
 ### 5.1.4 Output Formatting
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-handwritten.svg" alt="Handwritten: 5.1.4 Output Formatting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-handwritten.svg" alt="Handwritten: 5.1.4 Output Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-diagram.svg" alt="Diagram: 5.1.4 Output Formatting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-diagram.svg" alt="Diagram: 5.1.4 Output Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-sticky.svg" alt="Sticky Note: 5.1.4 Output Formatting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-1-4-output-formatting-sticky.svg" alt="Sticky Note: 5.1.4 Output Formatting" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ graph TD
 
 ### 5.2.1 Zero-Shot Prompting
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-handwritten.svg" alt="Handwritten: 5.2.1 Zero-Shot Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-handwritten.svg" alt="Handwritten: 5.2.1 Zero-Shot Prompting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-diagram.svg" alt="Diagram: 5.2.1 Zero-Shot Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-diagram.svg" alt="Diagram: 5.2.1 Zero-Shot Prompting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-sticky.svg" alt="Sticky Note: 5.2.1 Zero-Shot Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-1-zero-shot-prompting-sticky.svg" alt="Sticky Note: 5.2.1 Zero-Shot Prompting" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ Zero-shot struggles with:
 
 ### 5.2.2 Few-Shot Prompting
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-handwritten.svg" alt="Handwritten: 5.2.2 Few-Shot Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-handwritten.svg" alt="Handwritten: 5.2.2 Few-Shot Prompting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-diagram.svg" alt="Diagram: 5.2.2 Few-Shot Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-diagram.svg" alt="Diagram: 5.2.2 Few-Shot Prompting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-sticky.svg" alt="Sticky Note: 5.2.2 Few-Shot Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-2-few-shot-prompting-sticky.svg" alt="Sticky Note: 5.2.2 Few-Shot Prompting" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ Few-shot is superior for:
 
 ### 5.2.3 Example Quality
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-handwritten.svg" alt="Handwritten: 5.2.3 Example Quality" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-handwritten.svg" alt="Handwritten: 5.2.3 Example Quality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-diagram.svg" alt="Diagram: 5.2.3 Example Quality" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-diagram.svg" alt="Diagram: 5.2.3 Example Quality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-sticky.svg" alt="Sticky Note: 5.2.3 Example Quality" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-2-3-example-quality-sticky.svg" alt="Sticky Note: 5.2.3 Example Quality" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ The quality of few-shot examples directly impacts performance. Best practices:
 
 ### 5.3.1 Chain-of-Thought Prompting
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-handwritten.svg" alt="Handwritten: 5.3.1 Chain-of-Thought Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-handwritten.svg" alt="Handwritten: 5.3.1 Chain-of-Thought Prompting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-diagram.svg" alt="Diagram: 5.3.1 Chain-of-Thought Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-diagram.svg" alt="Diagram: 5.3.1 Chain-of-Thought Prompting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-sticky.svg" alt="Sticky Note: 5.3.1 Chain-of-Thought Prompting" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-1-chain-of-thought-prompting-sticky.svg" alt="Sticky Note: 5.3.1 Chain-of-Thought Prompting" width="30%">
 </a>
 
 
@@ -220,14 +220,14 @@ Chain-of-thought (CoT) prompting instructs the model to show its reasoning step 
 
 ### 5.3.2 Tree-of-Thought
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-handwritten.svg" alt="Handwritten: 5.3.2 Tree-of-Thought" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-handwritten.svg" alt="Handwritten: 5.3.2 Tree-of-Thought" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-diagram.svg" alt="Diagram: 5.3.2 Tree-of-Thought" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-diagram.svg" alt="Diagram: 5.3.2 Tree-of-Thought" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-sticky.svg" alt="Sticky Note: 5.3.2 Tree-of-Thought" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-2-tree-of-thought-sticky.svg" alt="Sticky Note: 5.3.2 Tree-of-Thought" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ The main cost is increased token usage — each reasoning path generates additio
 
 ### 5.3.3 Self-Consistency
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-handwritten.svg" alt="Handwritten: 5.3.3 Self-Consistency" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-handwritten.svg" alt="Handwritten: 5.3.3 Self-Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-diagram.svg" alt="Diagram: 5.3.3 Self-Consistency" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-diagram.svg" alt="Diagram: 5.3.3 Self-Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-sticky.svg" alt="Sticky Note: 5.3.3 Self-Consistency" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-3-3-self-consistency-sticky.svg" alt="Sticky Note: 5.3.3 Self-Consistency" width="30%">
 </a>
 
 
@@ -304,14 +304,14 @@ flowchart LR
 
 ### 5.4.1 JSON Mode
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-handwritten.svg" alt="Handwritten: 5.4.1 JSON Mode" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-handwritten.svg" alt="Handwritten: 5.4.1 JSON Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-diagram.svg" alt="Diagram: 5.4.1 JSON Mode" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-diagram.svg" alt="Diagram: 5.4.1 JSON Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-sticky.svg" alt="Sticky Note: 5.4.1 JSON Mode" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-1-json-mode-sticky.svg" alt="Sticky Note: 5.4.1 JSON Mode" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ Many LLM providers support JSON mode, which guarantees the output can be parsed 
 
 ### 5.4.2 Grammar Constraints
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-handwritten.svg" alt="Handwritten: 5.4.2 Grammar Constraints" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-handwritten.svg" alt="Handwritten: 5.4.2 Grammar Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-diagram.svg" alt="Diagram: 5.4.2 Grammar Constraints" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-diagram.svg" alt="Diagram: 5.4.2 Grammar Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-sticky.svg" alt="Sticky Note: 5.4.2 Grammar Constraints" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-2-grammar-constraints-sticky.svg" alt="Sticky Note: 5.4.2 Grammar Constraints" width="30%">
 </a>
 
 
@@ -334,14 +334,14 @@ Libraries like **Outlines**, **Guidance**, and **LMQL** constrain model generati
 
 ### 5.4.3 Schema Enforcement
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-handwritten.svg" alt="Handwritten: 5.4.3 Schema Enforcement" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-handwritten.svg" alt="Handwritten: 5.4.3 Schema Enforcement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-diagram.svg" alt="Diagram: 5.4.3 Schema Enforcement" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-diagram.svg" alt="Diagram: 5.4.3 Schema Enforcement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-sticky.svg" alt="Sticky Note: 5.4.3 Schema Enforcement" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-3-schema-enforcement-sticky.svg" alt="Sticky Note: 5.4.3 Schema Enforcement" width="30%">
 </a>
 
 
@@ -362,14 +362,14 @@ type ValidatedResponse = z.infer<typeof ResponseSchema>;
 
 ### 5.4.4 TypeScript Type Guards
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-handwritten.svg" alt="Handwritten: 5.4.4 TypeScript Type Guards" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-handwritten.svg" alt="Handwritten: 5.4.4 TypeScript Type Guards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-diagram.svg" alt="Diagram: 5.4.4 TypeScript Type Guards" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-diagram.svg" alt="Diagram: 5.4.4 TypeScript Type Guards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-sticky.svg" alt="Sticky Note: 5.4.4 TypeScript Type Guards" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-4-4-typescript-type-guards-sticky.svg" alt="Sticky Note: 5.4.4 TypeScript Type Guards" width="30%">
 </a>
 
 
@@ -404,14 +404,14 @@ function isStructuredOutput(obj: unknown): obj is StructuredOutput {
 
 ### 5.5.1 Prompt Compression
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-handwritten.svg" alt="Handwritten: 5.5.1 Prompt Compression" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-handwritten.svg" alt="Handwritten: 5.5.1 Prompt Compression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-diagram.svg" alt="Diagram: 5.5.1 Prompt Compression" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-diagram.svg" alt="Diagram: 5.5.1 Prompt Compression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-sticky.svg" alt="Sticky Note: 5.5.1 Prompt Compression" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-1-prompt-compression-sticky.svg" alt="Sticky Note: 5.5.1 Prompt Compression" width="30%">
 </a>
 
 
@@ -425,14 +425,14 @@ LLMLingua and similar tools use small models to score token importance and remov
 
 ### 5.5.2 Sliding Window
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-handwritten.svg" alt="Handwritten: 5.5.2 Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-handwritten.svg" alt="Handwritten: 5.5.2 Sliding Window" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-diagram.svg" alt="Diagram: 5.5.2 Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-diagram.svg" alt="Diagram: 5.5.2 Sliding Window" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-sticky.svg" alt="Sticky Note: 5.5.2 Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-2-sliding-window-sticky.svg" alt="Sticky Note: 5.5.2 Sliding Window" width="30%">
 </a>
 
 
@@ -442,14 +442,14 @@ A common pattern: process a document in 4000-token windows with 500-token overla
 
 ### 5.5.3 Dynamic Context Insertion
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-handwritten.svg" alt="Handwritten: 5.5.3 Dynamic Context Insertion" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-handwritten.svg" alt="Handwritten: 5.5.3 Dynamic Context Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-diagram.svg" alt="Diagram: 5.5.3 Dynamic Context Insertion" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-diagram.svg" alt="Diagram: 5.5.3 Dynamic Context Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-sticky.svg" alt="Sticky Note: 5.5.3 Dynamic Context Insertion" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-3-dynamic-context-insertion-sticky.svg" alt="Sticky Note: 5.5.3 Dynamic Context Insertion" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ This is the foundation of RAG (covered in Chapter 6) but applies broadly to any 
 
 ### 5.5.4 Recursive Repositories
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-handwritten.svg" alt="Handwritten: 5.5.4 Recursive Repositories" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-handwritten.svg" alt="Handwritten: 5.5.4 Recursive Repositories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-diagram.svg" alt="Diagram: 5.5.4 Recursive Repositories" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-diagram.svg" alt="Diagram: 5.5.4 Recursive Repositories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-sticky.svg" alt="Sticky Note: 5.5.4 Recursive Repositories" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-5-4-recursive-repositories-sticky.svg" alt="Sticky Note: 5.5.4 Recursive Repositories" width="30%">
 </a>
 
 
@@ -489,14 +489,14 @@ This allows models to work with codebases far larger than the context window.
 
 ### 5.6.1 Separation of Concerns
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-handwritten.svg" alt="Handwritten: 5.6.1 Separation of Concerns" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-handwritten.svg" alt="Handwritten: 5.6.1 Separation of Concerns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-diagram.svg" alt="Diagram: 5.6.1 Separation of Concerns" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-diagram.svg" alt="Diagram: 5.6.1 Separation of Concerns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-sticky.svg" alt="Sticky Note: 5.6.1 Separation of Concerns" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-1-separation-of-concerns-sticky.svg" alt="Sticky Note: 5.6.1 Separation of Concerns" width="30%">
 </a>
 
 
@@ -509,14 +509,14 @@ This separation allows the developer to enforce safety rules, output formatting,
 
 ### 5.6.2 System Prompt Design Patterns
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-handwritten.svg" alt="Handwritten: 5.6.2 System Prompt Design Patterns" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-handwritten.svg" alt="Handwritten: 5.6.2 System Prompt Design Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-diagram.svg" alt="Diagram: 5.6.2 System Prompt Design Patterns" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-diagram.svg" alt="Diagram: 5.6.2 System Prompt Design Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-sticky.svg" alt="Sticky Note: 5.6.2 System Prompt Design Patterns" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-2-system-prompt-design-patterns-sticky.svg" alt="Sticky Note: 5.6.2 System Prompt Design Patterns" width="30%">
 </a>
 
 
@@ -556,14 +556,14 @@ If information is missing, use null as the value.
 
 ### 5.6.3 Prompt Injection Prevention
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-handwritten.svg" alt="Handwritten: 5.6.3 Prompt Injection Prevention" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-handwritten.svg" alt="Handwritten: 5.6.3 Prompt Injection Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-diagram.svg" alt="Diagram: 5.6.3 Prompt Injection Prevention" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-diagram.svg" alt="Diagram: 5.6.3 Prompt Injection Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-sticky.svg" alt="Sticky Note: 5.6.3 Prompt Injection Prevention" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-6-3-prompt-injection-prevention-sticky.svg" alt="Sticky Note: 5.6.3 Prompt Injection Prevention" width="30%">
 </a>
 
 
@@ -581,14 +581,14 @@ Prompt injection occurs when user input contains instructions that override the 
 
 ### 5.7.1 Version Control
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-handwritten.svg" alt="Handwritten: 5.7.1 Version Control" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-handwritten.svg" alt="Handwritten: 5.7.1 Version Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-diagram.svg" alt="Diagram: 5.7.1 Version Control" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-diagram.svg" alt="Diagram: 5.7.1 Version Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-sticky.svg" alt="Sticky Note: 5.7.1 Version Control" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-1-version-control-sticky.svg" alt="Sticky Note: 5.7.1 Version Control" width="30%">
 </a>
 
 
@@ -602,14 +602,14 @@ Best practices:
 
 ### 5.7.2 A/B Testing
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-handwritten.svg" alt="Handwritten: 5.7.2 A/B Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-handwritten.svg" alt="Handwritten: 5.7.2 A/B Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-diagram.svg" alt="Diagram: 5.7.2 A/B Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-diagram.svg" alt="Diagram: 5.7.2 A/B Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-sticky.svg" alt="Sticky Note: 5.7.2 A/B Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-2-a-b-testing-sticky.svg" alt="Sticky Note: 5.7.2 A/B Testing" width="30%">
 </a>
 
 
@@ -622,14 +622,14 @@ A/B testing compares prompt variants on live traffic:
 
 ### 5.7.3 Automated Evaluation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-handwritten.svg" alt="Handwritten: 5.7.3 Automated Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-handwritten.svg" alt="Handwritten: 5.7.3 Automated Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-diagram.svg" alt="Diagram: 5.7.3 Automated Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-diagram.svg" alt="Diagram: 5.7.3 Automated Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-sticky.svg" alt="Sticky Note: 5.7.3 Automated Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-3-automated-evaluation-sticky.svg" alt="Sticky Note: 5.7.3 Automated Evaluation" width="30%">
 </a>
 
 
@@ -642,14 +642,14 @@ Each prompt version should be automatically evaluated against a golden dataset:
 
 ### 5.7.4 Regression Testing
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-handwritten.svg" alt="Handwritten: 5.7.4 Regression Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-handwritten.svg" alt="Handwritten: 5.7.4 Regression Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-diagram.svg" alt="Diagram: 5.7.4 Regression Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-diagram.svg" alt="Diagram: 5.7.4 Regression Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-sticky.svg" alt="Sticky Note: 5.7.4 Regression Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-7-4-regression-testing-sticky.svg" alt="Sticky Note: 5.7.4 Regression Testing" width="30%">
 </a>
 
 
@@ -692,14 +692,14 @@ flowchart LR
 
 ### 5.8.1 Systematic Debugging
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-handwritten.svg" alt="Handwritten: 5.8.1 Systematic Debugging" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-handwritten.svg" alt="Handwritten: 5.8.1 Systematic Debugging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-diagram.svg" alt="Diagram: 5.8.1 Systematic Debugging" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-diagram.svg" alt="Diagram: 5.8.1 Systematic Debugging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-sticky.svg" alt="Sticky Note: 5.8.1 Systematic Debugging" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-1-systematic-debugging-sticky.svg" alt="Sticky Note: 5.8.1 Systematic Debugging" width="30%">
 </a>
 
 
@@ -713,14 +713,14 @@ When a prompt produces unexpected outputs, follow a systematic debugging process
 
 ### 5.8.2 Log Analysis
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-handwritten.svg" alt="Handwritten: 5.8.2 Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-handwritten.svg" alt="Handwritten: 5.8.2 Log Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-diagram.svg" alt="Diagram: 5.8.2 Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-diagram.svg" alt="Diagram: 5.8.2 Log Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-sticky.svg" alt="Sticky Note: 5.8.2 Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-2-log-analysis-sticky.svg" alt="Sticky Note: 5.8.2 Log Analysis" width="30%">
 </a>
 
 
@@ -741,14 +741,14 @@ Analyze failure patterns across logs to identify systematic issues:
 
 ### 5.8.3 Failure Categorization
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-handwritten.svg" alt="Handwritten: 5.8.3 Failure Categorization" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-handwritten.svg" alt="Handwritten: 5.8.3 Failure Categorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-diagram.svg" alt="Diagram: 5.8.3 Failure Categorization" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-diagram.svg" alt="Diagram: 5.8.3 Failure Categorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-sticky.svg" alt="Sticky Note: 5.8.3 Failure Categorization" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/5-8-3-failure-categorization-sticky.svg" alt="Sticky Note: 5.8.3 Failure Categorization" width="30%">
 </a>
 
 
@@ -768,14 +768,14 @@ Categorize failures to guide remediation:
 
 ### PromptTemplate Class
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-handwritten.svg" alt="Handwritten: PromptTemplate Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-handwritten.svg" alt="Handwritten: PromptTemplate Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-diagram.svg" alt="Diagram: PromptTemplate Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-diagram.svg" alt="Diagram: PromptTemplate Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-sticky.svg" alt="Sticky Note: PromptTemplate Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/prompttemplate-class-sticky.svg" alt="Sticky Note: PromptTemplate Class" width="30%">
 </a>
 
 
@@ -995,14 +995,14 @@ class PromptTemplate {
 
 ### PromptOptimizer Class
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-handwritten.svg" alt="Handwritten: PromptOptimizer Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-handwritten.svg" alt="Handwritten: PromptOptimizer Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-diagram.svg" alt="Diagram: PromptOptimizer Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-diagram.svg" alt="Diagram: PromptOptimizer Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-sticky.svg" alt="Sticky Note: PromptOptimizer Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/promptoptimizer-class-sticky.svg" alt="Sticky Note: PromptOptimizer Class" width="30%">
 </a>
 
 
@@ -1251,14 +1251,14 @@ D) The system prompt is too long
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/05-prompt-engineering/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 

@@ -127,14 +127,14 @@ flowchart LR
 
 ### 36.1 Manufacturing Data Models
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-handwritten.svg" alt="Handwritten: 36.1 Manufacturing Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-handwritten.svg" alt="Handwritten: 36.1 Manufacturing Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-diagram.svg" alt="Diagram: 36.1 Manufacturing Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-diagram.svg" alt="Diagram: 36.1 Manufacturing Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-sticky.svg" alt="Sticky Note: 36.1 Manufacturing Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-1-manufacturing-data-models-sticky.svg" alt="Sticky Note: 36.1 Manufacturing Data Models" width="30%">
 </a>
 
 
@@ -550,14 +550,14 @@ class IoTReading extends Model
 
 ### 36.2 Predictive Maintenance Agents
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-handwritten.svg" alt="Handwritten: 36.2 Predictive Maintenance Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-handwritten.svg" alt="Handwritten: 36.2 Predictive Maintenance Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-diagram.svg" alt="Diagram: 36.2 Predictive Maintenance Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-diagram.svg" alt="Diagram: 36.2 Predictive Maintenance Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-sticky.svg" alt="Sticky Note: 36.2 Predictive Maintenance Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-2-predictive-maintenance-agents-sticky.svg" alt="Sticky Note: 36.2 Predictive Maintenance Agents" width="30%">
 </a>
 
 
@@ -843,14 +843,14 @@ class PredictiveMaintenanceAgent
 
 ### 36.3 Quality Control Automation
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-handwritten.svg" alt="Handwritten: 36.3 Quality Control Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-handwritten.svg" alt="Handwritten: 36.3 Quality Control Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-diagram.svg" alt="Diagram: 36.3 Quality Control Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-diagram.svg" alt="Diagram: 36.3 Quality Control Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-sticky.svg" alt="Sticky Note: 36.3 Quality Control Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-3-quality-control-automation-sticky.svg" alt="Sticky Note: 36.3 Quality Control Automation" width="30%">
 </a>
 
 
@@ -1090,14 +1090,14 @@ class QualityControlAgent
 
 ### 36.4 IoT Data Ingestion & Processing
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-handwritten.svg" alt="Handwritten: 36.4 IoT Data Ingestion & Processing" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-handwritten.svg" alt="Handwritten: 36.4 IoT Data Ingestion & Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-diagram.svg" alt="Diagram: 36.4 IoT Data Ingestion & Processing" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-diagram.svg" alt="Diagram: 36.4 IoT Data Ingestion & Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-sticky.svg" alt="Sticky Note: 36.4 IoT Data Ingestion & Processing" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-4-iot-data-ingestion-processing-sticky.svg" alt="Sticky Note: 36.4 IoT Data Ingestion & Processing" width="30%">
 </a>
 
 
@@ -1339,14 +1339,14 @@ class IoTDataIngestionAgent
 
 ### 36.5 Production Scheduling Agents
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-handwritten.svg" alt="Handwritten: 36.5 Production Scheduling Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-handwritten.svg" alt="Handwritten: 36.5 Production Scheduling Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-diagram.svg" alt="Diagram: 36.5 Production Scheduling Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-diagram.svg" alt="Diagram: 36.5 Production Scheduling Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-sticky.svg" alt="Sticky Note: 36.5 Production Scheduling Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-5-production-scheduling-agents-sticky.svg" alt="Sticky Note: 36.5 Production Scheduling Agents" width="30%">
 </a>
 
 
@@ -1607,14 +1607,14 @@ class ProductionSchedulingAgent
 
 ### 36.6 Safety Compliance Monitoring
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-handwritten.svg" alt="Handwritten: 36.6 Safety Compliance Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-handwritten.svg" alt="Handwritten: 36.6 Safety Compliance Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-diagram.svg" alt="Diagram: 36.6 Safety Compliance Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-diagram.svg" alt="Diagram: 36.6 Safety Compliance Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-sticky.svg" alt="Sticky Note: 36.6 Safety Compliance Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-6-safety-compliance-monitoring-sticky.svg" alt="Sticky Note: 36.6 Safety Compliance Monitoring" width="30%">
 </a>
 
 
@@ -1848,14 +1848,14 @@ class SafetyComplianceAgent
 
 ### 36.7 Inventory Automation
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-handwritten.svg" alt="Handwritten: 36.7 Inventory Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-handwritten.svg" alt="Handwritten: 36.7 Inventory Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-diagram.svg" alt="Diagram: 36.7 Inventory Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-diagram.svg" alt="Diagram: 36.7 Inventory Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-sticky.svg" alt="Sticky Note: 36.7 Inventory Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-7-inventory-automation-sticky.svg" alt="Sticky Note: 36.7 Inventory Automation" width="30%">
 </a>
 
 
@@ -2055,14 +2055,14 @@ class InventoryAutomationAgent
 
 ### 36.8 Equipment Lifecycle Management
 
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-handwritten.svg" alt="Handwritten: 36.8 Equipment Lifecycle Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-handwritten.svg" alt="Handwritten: 36.8 Equipment Lifecycle Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-diagram.svg" alt="Diagram: 36.8 Equipment Lifecycle Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-diagram.svg" alt="Diagram: 36.8 Equipment Lifecycle Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-sticky.svg" alt="Sticky Note: 36.8 Equipment Lifecycle Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/36-manufacturing/36-8-equipment-lifecycle-management-sticky.svg" alt="Sticky Note: 36.8 Equipment Lifecycle Management" width="30%">
 </a>
 
 

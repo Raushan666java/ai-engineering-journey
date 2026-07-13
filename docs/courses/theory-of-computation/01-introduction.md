@@ -14,14 +14,14 @@
 
 ### Sets
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-handwritten.svg" alt="Handwritten: Sets" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/sets-handwritten.svg" alt="Handwritten: Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-diagram.svg" alt="Diagram: Sets" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/sets-diagram.svg" alt="Diagram: Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/sets-sticky.svg" alt="Sticky Note: Sets" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/sets-sticky.svg" alt="Sticky Note: Sets" width="30%">
 </a>
 
 
@@ -46,14 +46,14 @@ const intersection = new Set([...A].filter(x => B.has(x))); // {2,3}
 
 ### Relations and Functions
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-handwritten.svg" alt="Handwritten: Relations and Functions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-handwritten.svg" alt="Handwritten: Relations and Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-diagram.svg" alt="Diagram: Relations and Functions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-diagram.svg" alt="Diagram: Relations and Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-sticky.svg" alt="Sticky Note: Relations and Functions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/relations-and-functions-sticky.svg" alt="Sticky Note: Relations and Functions" width="30%">
 </a>
 
 
@@ -68,14 +68,14 @@ A function is **injective** (one-to-one), **surjective** (onto), or **bijective*
 
 ### Graphs and Trees
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-handwritten.svg" alt="Handwritten: Graphs and Trees" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-handwritten.svg" alt="Handwritten: Graphs and Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-diagram.svg" alt="Diagram: Graphs and Trees" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-diagram.svg" alt="Diagram: Graphs and Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-sticky.svg" alt="Sticky Note: Graphs and Trees" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/graphs-and-trees-sticky.svg" alt="Sticky Note: Graphs and Trees" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ graph LR
 
 ### Alphabets, Strings, and Languages
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-handwritten.svg" alt="Handwritten: Alphabets, Strings, and Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-handwritten.svg" alt="Handwritten: Alphabets, Strings, and Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-diagram.svg" alt="Diagram: Alphabets, Strings, and Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-diagram.svg" alt="Diagram: Alphabets, Strings, and Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-sticky.svg" alt="Sticky Note: Alphabets, Strings, and Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alphabets-strings-and-languages-sticky.svg" alt="Sticky Note: Alphabets, Strings, and Languages" width="30%">
 </a>
 
 
@@ -172,14 +172,14 @@ graph BT
 
 ### Type 3: Regular Grammars
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-handwritten.svg" alt="Handwritten: Type 3: Regular Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-handwritten.svg" alt="Handwritten: Type 3: Regular Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-diagram.svg" alt="Diagram: Type 3: Regular Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-diagram.svg" alt="Diagram: Type 3: Regular Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-sticky.svg" alt="Sticky Note: Type 3: Regular Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-3-regular-grammars-sticky.svg" alt="Sticky Note: Type 3: Regular Grammars" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ S ? aA | bA, A ? a | b    // strings of length 1 or more
 
 ### Type 2: Context-Free Grammars
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-handwritten.svg" alt="Handwritten: Type 2: Context-Free Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-handwritten.svg" alt="Handwritten: Type 2: Context-Free Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-diagram.svg" alt="Diagram: Type 2: Context-Free Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-diagram.svg" alt="Diagram: Type 2: Context-Free Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-sticky.svg" alt="Sticky Note: Type 2: Context-Free Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-2-context-free-grammars-sticky.svg" alt="Sticky Note: Type 2: Context-Free Grammars" width="30%">
 </a>
 
 
@@ -211,14 +211,14 @@ S ? aSb | e    // {a^n b^n | n = 0}
 
 ### Type 1: Context-Sensitive Grammars
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-handwritten.svg" alt="Handwritten: Type 1: Context-Sensitive Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-handwritten.svg" alt="Handwritten: Type 1: Context-Sensitive Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-diagram.svg" alt="Diagram: Type 1: Context-Sensitive Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-diagram.svg" alt="Diagram: Type 1: Context-Sensitive Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-sticky.svg" alt="Sticky Note: Type 1: Context-Sensitive Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-1-context-sensitive-grammars-sticky.svg" alt="Sticky Note: Type 1: Context-Sensitive Grammars" width="30%">
 </a>
 
 
@@ -235,14 +235,14 @@ cC ? cc    // {a^n b^n c^n | n = 1}
 
 ### Type 0: Unrestricted Grammars
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-handwritten.svg" alt="Handwritten: Type 0: Unrestricted Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-handwritten.svg" alt="Handwritten: Type 0: Unrestricted Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-diagram.svg" alt="Diagram: Type 0: Unrestricted Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-diagram.svg" alt="Diagram: Type 0: Unrestricted Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-sticky.svg" alt="Sticky Note: Type 0: Unrestricted Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/type-0-unrestricted-grammars-sticky.svg" alt="Sticky Note: Type 0: Unrestricted Grammars" width="30%">
 </a>
 
 
@@ -514,84 +514,84 @@ The Theory of Computation emerged from a remarkable confluence of intellectual b
 
 ### Kurt Gödel (1931)
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-handwritten.svg" alt="Handwritten: Kurt Gödel (1931)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-handwritten.svg" alt="Handwritten: Kurt Gödel (1931)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-diagram.svg" alt="Diagram: Kurt Gödel (1931)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-diagram.svg" alt="Diagram: Kurt Gödel (1931)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-sticky.svg" alt="Sticky Note: Kurt Gödel (1931)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/kurt-g-del-1931-sticky.svg" alt="Sticky Note: Kurt Gödel (1931)" width="30%">
 </a>
 
 Gödel's **Incompleteness Theorems** showed that any sufficiently powerful formal system contains statements that can neither be proved nor disproved within the system. This shattered Hilbert's dream of a complete, consistent axiomatization of all mathematics and laid the groundwork for undecidability.
 
 ### Alonzo Church (1936)
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-handwritten.svg" alt="Handwritten: Alonzo Church (1936)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-handwritten.svg" alt="Handwritten: Alonzo Church (1936)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-diagram.svg" alt="Diagram: Alonzo Church (1936)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-diagram.svg" alt="Diagram: Alonzo Church (1936)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-sticky.svg" alt="Sticky Note: Alonzo Church (1936)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alonzo-church-1936-sticky.svg" alt="Sticky Note: Alonzo Church (1936)" width="30%">
 </a>
 
 Church introduced the **lambda calculus** as a formal model of computation and proved that there is no algorithmic procedure to determine whether two lambda expressions are equivalent (the Church-Turing theorem). He also formulated the **Church-Turing thesis**: any function computable by an effective procedure is computable by a Turing machine.
 
 ### Alan Turing (1936–1937)
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-handwritten.svg" alt="Handwritten: Alan Turing (1936–1937)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-handwritten.svg" alt="Handwritten: Alan Turing (1936–1937)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-diagram.svg" alt="Diagram: Alan Turing (1936–1937)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-diagram.svg" alt="Diagram: Alan Turing (1936–1937)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-sticky.svg" alt="Sticky Note: Alan Turing (1936–1937)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/alan-turing-1936-1937-sticky.svg" alt="Sticky Note: Alan Turing (1936–1937)" width="30%">
 </a>
 
 Turing's seminal paper "On Computable Numbers, with an Application to the Entscheidungsproblem" introduced the **Turing machine** as a model of computation. He proved the **undecidability of the halting problem** using a diagonalization argument. Turing also introduced the concept of a **universal Turing machine** — a single machine that can simulate any other Turing machine, which is the theoretical foundation of the stored-program computer.
 
 ### Stephen Kleene (1943–1956)
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-handwritten.svg" alt="Handwritten: Stephen Kleene (1943–1956)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-handwritten.svg" alt="Handwritten: Stephen Kleene (1943–1956)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-diagram.svg" alt="Diagram: Stephen Kleene (1943–1956)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-diagram.svg" alt="Diagram: Stephen Kleene (1943–1956)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-sticky.svg" alt="Sticky Note: Stephen Kleene (1943–1956)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/stephen-kleene-1943-1956-sticky.svg" alt="Sticky Note: Stephen Kleene (1943–1956)" width="30%">
 </a>
 
 Kleene developed **recursive function theory**, formalized **regular expressions** as a notation for regular languages, and proved Kleene's theorem establishing the equivalence of regular expressions and finite automata.
 
 ### Noam Chomsky (1956)
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-handwritten.svg" alt="Handwritten: Noam Chomsky (1956)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-handwritten.svg" alt="Handwritten: Noam Chomsky (1956)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-diagram.svg" alt="Diagram: Noam Chomsky (1956)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-diagram.svg" alt="Diagram: Noam Chomsky (1956)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-sticky.svg" alt="Sticky Note: Noam Chomsky (1956)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/noam-chomsky-1956-sticky.svg" alt="Sticky Note: Noam Chomsky (1956)" width="30%">
 </a>
 
 Chomsky introduced the **Chomsky hierarchy** in his work on formal grammars, connecting linguistics to automata theory. His classification system remains the foundational taxonomy of formal language theory.
 
 ### The Modern Era
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-handwritten.svg" alt="Handwritten: The Modern Era" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-handwritten.svg" alt="Handwritten: The Modern Era" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-diagram.svg" alt="Diagram: The Modern Era" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-diagram.svg" alt="Diagram: The Modern Era" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-sticky.svg" alt="Sticky Note: The Modern Era" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/the-modern-era-sticky.svg" alt="Sticky Note: The Modern Era" width="30%">
 </a>
 
 - **1960s–70s:** Cook, Karp, and Levin develop NP-completeness theory.
@@ -601,14 +601,14 @@ Chomsky introduced the **Chomsky hierarchy** in his work on formal grammars, con
 
 ### Mermaid: Timeline of Key Contributions
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-handwritten.svg" alt="Handwritten: Mermaid: Timeline of Key Contributions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-handwritten.svg" alt="Handwritten: Mermaid: Timeline of Key Contributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-diagram.svg" alt="Diagram: Mermaid: Timeline of Key Contributions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-diagram.svg" alt="Diagram: Mermaid: Timeline of Key Contributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-sticky.svg" alt="Sticky Note: Mermaid: Timeline of Key Contributions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/mermaid-timeline-of-key-contributions-sticky.svg" alt="Sticky Note: Mermaid: Timeline of Key Contributions" width="30%">
 </a>
 
 
@@ -632,14 +632,14 @@ timeline
 
 ### Philosophical Implications
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-handwritten.svg" alt="Handwritten: Philosophical Implications" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-handwritten.svg" alt="Handwritten: Philosophical Implications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-diagram.svg" alt="Diagram: Philosophical Implications" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-diagram.svg" alt="Diagram: Philosophical Implications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-sticky.svg" alt="Sticky Note: Philosophical Implications" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/philosophical-implications-sticky.svg" alt="Sticky Note: Philosophical Implications" width="30%">
 </a>
 
 
@@ -980,14 +980,14 @@ The Theory of Computation provides the mathematical foundations for understandin
 
 ### Basic
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -1001,14 +1001,14 @@ The Theory of Computation provides the mathematical foundations for understandin
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -1025,14 +1025,14 @@ The Theory of Computation provides the mathematical foundations for understandin
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/01-introduction/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 

@@ -56,14 +56,14 @@ Chapter P6 covered the fundamentals: `stream()`, `filter`, `map`, `flatMap`, `re
 
 ### 1.1 `mapMulti` (Java 16+)
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-handwritten.svg" alt="Handwritten: 1.1 `mapMulti` (Java 16+)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-handwritten.svg" alt="Handwritten: 1.1 `mapMulti` (Java 16+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-diagram.svg" alt="Diagram: 1.1 `mapMulti` (Java 16+)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-diagram.svg" alt="Diagram: 1.1 `mapMulti` (Java 16+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-sticky.svg" alt="Sticky Note: 1.1 `mapMulti` (Java 16+)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-1-mapmulti-java-16-sticky.svg" alt="Sticky Note: 1.1 `mapMulti` (Java 16+)" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ public class MapMultiExamples {
 
 ### 1.2 Custom `distinctBy`
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-handwritten.svg" alt="Handwritten: 1.2 Custom `distinctBy`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-handwritten.svg" alt="Handwritten: 1.2 Custom `distinctBy`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-diagram.svg" alt="Diagram: 1.2 Custom `distinctBy`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-diagram.svg" alt="Diagram: 1.2 Custom `distinctBy`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-sticky.svg" alt="Sticky Note: 1.2 Custom `distinctBy`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-2-custom-distinctby-sticky.svg" alt="Sticky Note: 1.2 Custom `distinctBy`" width="30%">
 </a>
 
 
@@ -179,14 +179,14 @@ public class DistinctByExamples {
 
 ### 1.3 `Stream.iterate` with Predicate (Java 9+)
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-handwritten.svg" alt="Handwritten: 1.3 `Stream.iterate` with Predicate (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-handwritten.svg" alt="Handwritten: 1.3 `Stream.iterate` with Predicate (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-diagram.svg" alt="Diagram: 1.3 `Stream.iterate` with Predicate (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-diagram.svg" alt="Diagram: 1.3 `Stream.iterate` with Predicate (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-sticky.svg" alt="Sticky Note: 1.3 `Stream.iterate` with Predicate (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-3-stream-iterate-with-predicate-java-9-sticky.svg" alt="Sticky Note: 1.3 `Stream.iterate` with Predicate (Java 9+)" width="30%">
 </a>
 
 
@@ -234,14 +234,14 @@ public class StreamIterateWithPredicate {
 
 ### 1.4 Custom `zip`
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-handwritten.svg" alt="Handwritten: 1.4 Custom `zip`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-handwritten.svg" alt="Handwritten: 1.4 Custom `zip`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-diagram.svg" alt="Diagram: 1.4 Custom `zip`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-diagram.svg" alt="Diagram: 1.4 Custom `zip`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-sticky.svg" alt="Sticky Note: 1.4 Custom `zip`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-4-custom-zip-sticky.svg" alt="Sticky Note: 1.4 Custom `zip`" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ class BiZip {
 
 ### 1.5 `flatMap` Deep Patterns
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-handwritten.svg" alt="Handwritten: 1.5 `flatMap` Deep Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-handwritten.svg" alt="Handwritten: 1.5 `flatMap` Deep Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-diagram.svg" alt="Diagram: 1.5 `flatMap` Deep Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-diagram.svg" alt="Diagram: 1.5 `flatMap` Deep Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-sticky.svg" alt="Sticky Note: 1.5 `flatMap` Deep Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-5-flatmap-deep-patterns-sticky.svg" alt="Sticky Note: 1.5 `flatMap` Deep Patterns" width="30%">
 </a>
 
 
@@ -392,14 +392,14 @@ public class FlatMapDeep {
 
 ### 1.6 `Stream.concat` and Interleave
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-handwritten.svg" alt="Handwritten: 1.6 `Stream.concat` and Interleave" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-handwritten.svg" alt="Handwritten: 1.6 `Stream.concat` and Interleave" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-diagram.svg" alt="Diagram: 1.6 `Stream.concat` and Interleave" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-diagram.svg" alt="Diagram: 1.6 `Stream.concat` and Interleave" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-sticky.svg" alt="Sticky Note: 1.6 `Stream.concat` and Interleave" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/1-6-stream-concat-and-interleave-sticky.svg" alt="Sticky Note: 1.6 `Stream.concat` and Interleave" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ Chapter P6 introduced `Collector.of` for custom collectors. Here we dissect the 
 
 ### 2.1 The `Collector<T, A, R>` Interface
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-handwritten.svg" alt="Handwritten: 2.1 The `Collector<T, A, R>` Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-handwritten.svg" alt="Handwritten: 2.1 The `Collector<T, A, R>` Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-diagram.svg" alt="Diagram: 2.1 The `Collector<T, A, R>` Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-diagram.svg" alt="Diagram: 2.1 The `Collector<T, A, R>` Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-sticky.svg" alt="Sticky Note: 2.1 The `Collector<T, A, R>` Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-sticky.svg" alt="Sticky Note: 2.1 The `Collector<T, A, R>` Interface" width="30%">
 </a>
 
 
@@ -531,14 +531,14 @@ public class CollectorInterfaceDeep {
 
 ### 2.2 Custom Downstream Collector
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-handwritten.svg" alt="Handwritten: 2.2 Custom Downstream Collector" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-handwritten.svg" alt="Handwritten: 2.2 Custom Downstream Collector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-diagram.svg" alt="Diagram: 2.2 Custom Downstream Collector" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-diagram.svg" alt="Diagram: 2.2 Custom Downstream Collector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-sticky.svg" alt="Sticky Note: 2.2 Custom Downstream Collector" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-2-custom-downstream-collector-sticky.svg" alt="Sticky Note: 2.2 Custom Downstream Collector" width="30%">
 </a>
 
 
@@ -606,14 +606,14 @@ public class DownstreamCollector {
 
 ### 2.3 `Collector.of` with Complex Finisher
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-handwritten.svg" alt="Handwritten: 2.3 `Collector.of` with Complex Finisher" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-handwritten.svg" alt="Handwritten: 2.3 `Collector.of` with Complex Finisher" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-diagram.svg" alt="Diagram: 2.3 `Collector.of` with Complex Finisher" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-diagram.svg" alt="Diagram: 2.3 `Collector.of` with Complex Finisher" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-sticky.svg" alt="Sticky Note: 2.3 `Collector.of` with Complex Finisher" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-3-collector-of-with-complex-finisher-sticky.svg" alt="Sticky Note: 2.3 `Collector.of` with Complex Finisher" width="30%">
 </a>
 
 
@@ -672,14 +672,14 @@ A **monad** is a design pattern that wraps a value and provides two operations:
 
 ### 3.1 `Optional` as a Monad
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-handwritten.svg" alt="Handwritten: 3.1 `Optional` as a Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-handwritten.svg" alt="Handwritten: 3.1 `Optional` as a Monad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-diagram.svg" alt="Diagram: 3.1 `Optional` as a Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-diagram.svg" alt="Diagram: 3.1 `Optional` as a Monad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-sticky.svg" alt="Sticky Note: 3.1 `Optional` as a Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-1-optional-as-a-monad-sticky.svg" alt="Sticky Note: 3.1 `Optional` as a Monad" width="30%">
 </a>
 
 
@@ -726,14 +726,14 @@ public class OptionalAsMonad {
 
 ### 3.2 `CompletableFuture` as a Monad
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-handwritten.svg" alt="Handwritten: 3.2 `CompletableFuture` as a Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-handwritten.svg" alt="Handwritten: 3.2 `CompletableFuture` as a Monad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-diagram.svg" alt="Diagram: 3.2 `CompletableFuture` as a Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-diagram.svg" alt="Diagram: 3.2 `CompletableFuture` as a Monad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-sticky.svg" alt="Sticky Note: 3.2 `CompletableFuture` as a Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-2-completablefuture-as-a-monad-sticky.svg" alt="Sticky Note: 3.2 `CompletableFuture` as a Monad" width="30%">
 </a>
 
 
@@ -770,14 +770,14 @@ public class CompletableFutureAsMonad {
 
 ### 3.3 Custom Monad-Like: `Box<T>`
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-handwritten.svg" alt="Handwritten: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-handwritten.svg" alt="Handwritten: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-diagram.svg" alt="Diagram: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-diagram.svg" alt="Diagram: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-sticky.svg" alt="Sticky Note: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-sticky.svg" alt="Sticky Note: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
 </a>
 
 
@@ -844,14 +844,14 @@ public class CustomMonadDemo {
 
 ### 3.4 Validation Monad
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-handwritten.svg" alt="Handwritten: 3.4 Validation Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-handwritten.svg" alt="Handwritten: 3.4 Validation Monad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-diagram.svg" alt="Diagram: 3.4 Validation Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-diagram.svg" alt="Diagram: 3.4 Validation Monad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-sticky.svg" alt="Sticky Note: 3.4 Validation Monad" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-4-validation-monad-sticky.svg" alt="Sticky Note: 3.4 Validation Monad" width="30%">
 </a>
 
 
@@ -972,14 +972,14 @@ Chapter P6 covered the six core interfaces and their primitive variants. Here we
 
 ### 4.1 Specialization Reference
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-handwritten.svg" alt="Handwritten: 4.1 Specialization Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-handwritten.svg" alt="Handwritten: 4.1 Specialization Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-diagram.svg" alt="Diagram: 4.1 Specialization Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-diagram.svg" alt="Diagram: 4.1 Specialization Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-sticky.svg" alt="Sticky Note: 4.1 Specialization Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-1-specialization-reference-sticky.svg" alt="Sticky Note: 4.1 Specialization Reference" width="30%">
 </a>
 
 
@@ -1028,14 +1028,14 @@ public class SpecializationReference {
 
 ### 4.2 Consumer Chaining
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-handwritten.svg" alt="Handwritten: 4.2 Consumer Chaining" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-handwritten.svg" alt="Handwritten: 4.2 Consumer Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-diagram.svg" alt="Diagram: 4.2 Consumer Chaining" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-diagram.svg" alt="Diagram: 4.2 Consumer Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-sticky.svg" alt="Sticky Note: 4.2 Consumer Chaining" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-2-consumer-chaining-sticky.svg" alt="Sticky Note: 4.2 Consumer Chaining" width="30%">
 </a>
 
 
@@ -1088,14 +1088,14 @@ public class ConsumerChaining {
 
 ### 4.3 Predicate Composition Factories
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-handwritten.svg" alt="Handwritten: 4.3 Predicate Composition Factories" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-handwritten.svg" alt="Handwritten: 4.3 Predicate Composition Factories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-diagram.svg" alt="Diagram: 4.3 Predicate Composition Factories" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-diagram.svg" alt="Diagram: 4.3 Predicate Composition Factories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-sticky.svg" alt="Sticky Note: 4.3 Predicate Composition Factories" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-3-predicate-composition-factories-sticky.svg" alt="Sticky Note: 4.3 Predicate Composition Factories" width="30%">
 </a>
 
 
@@ -1159,14 +1159,14 @@ public class PredicateComposition {
 
 ### 4.4 Function Arity: TriFunction and Beyond
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-handwritten.svg" alt="Handwritten: 4.4 Function Arity: TriFunction and Beyond" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-handwritten.svg" alt="Handwritten: 4.4 Function Arity: TriFunction and Beyond" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-diagram.svg" alt="Diagram: 4.4 Function Arity: TriFunction and Beyond" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-diagram.svg" alt="Diagram: 4.4 Function Arity: TriFunction and Beyond" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-sticky.svg" alt="Sticky Note: 4.4 Function Arity: TriFunction and Beyond" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/4-4-function-arity-trifunction-and-beyond-sticky.svg" alt="Sticky Note: 4.4 Function Arity: TriFunction and Beyond" width="30%">
 </a>
 
 
@@ -1222,14 +1222,14 @@ public class FunctionArity {
 
 ### 5.1 `andThen` and `compose` Deep Dive
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-handwritten.svg" alt="Handwritten: 5.1 `andThen` and `compose` Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-handwritten.svg" alt="Handwritten: 5.1 `andThen` and `compose` Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-diagram.svg" alt="Diagram: 5.1 `andThen` and `compose` Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-diagram.svg" alt="Diagram: 5.1 `andThen` and `compose` Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-sticky.svg" alt="Sticky Note: 5.1 `andThen` and `compose` Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-1-andthen-and-compose-deep-dive-sticky.svg" alt="Sticky Note: 5.1 `andThen` and `compose` Deep Dive" width="30%">
 </a>
 
 
@@ -1265,14 +1265,14 @@ public class CompositionDeep {
 
 ### 5.2 Pipeline Construction
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-handwritten.svg" alt="Handwritten: 5.2 Pipeline Construction" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-handwritten.svg" alt="Handwritten: 5.2 Pipeline Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-diagram.svg" alt="Diagram: 5.2 Pipeline Construction" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-diagram.svg" alt="Diagram: 5.2 Pipeline Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-sticky.svg" alt="Sticky Note: 5.2 Pipeline Construction" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-2-pipeline-construction-sticky.svg" alt="Sticky Note: 5.2 Pipeline Construction" width="30%">
 </a>
 
 
@@ -1318,14 +1318,14 @@ public class PipelineConstruction {
 
 ### 5.3 Partial Application
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-handwritten.svg" alt="Handwritten: 5.3 Partial Application" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-handwritten.svg" alt="Handwritten: 5.3 Partial Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-diagram.svg" alt="Diagram: 5.3 Partial Application" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-diagram.svg" alt="Diagram: 5.3 Partial Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-sticky.svg" alt="Sticky Note: 5.3 Partial Application" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-3-partial-application-sticky.svg" alt="Sticky Note: 5.3 Partial Application" width="30%">
 </a>
 
 
@@ -1371,14 +1371,14 @@ public class PartialApplication {
 
 ### 5.4 Currying Simulation Revisited
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-handwritten.svg" alt="Handwritten: 5.4 Currying Simulation Revisited" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-handwritten.svg" alt="Handwritten: 5.4 Currying Simulation Revisited" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-diagram.svg" alt="Diagram: 5.4 Currying Simulation Revisited" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-diagram.svg" alt="Diagram: 5.4 Currying Simulation Revisited" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-sticky.svg" alt="Sticky Note: 5.4 Currying Simulation Revisited" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/5-4-currying-simulation-revisited-sticky.svg" alt="Sticky Note: 5.4 Currying Simulation Revisited" width="30%">
 </a>
 
 
@@ -1421,14 +1421,14 @@ public class CurryingSimulationDeep {
 
 ### 6.1 Stream Laziness Revisited
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-handwritten.svg" alt="Handwritten: 6.1 Stream Laziness Revisited" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-handwritten.svg" alt="Handwritten: 6.1 Stream Laziness Revisited" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-diagram.svg" alt="Diagram: 6.1 Stream Laziness Revisited" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-diagram.svg" alt="Diagram: 6.1 Stream Laziness Revisited" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-sticky.svg" alt="Sticky Note: 6.1 Stream Laziness Revisited" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-1-stream-laziness-revisited-sticky.svg" alt="Sticky Note: 6.1 Stream Laziness Revisited" width="30%">
 </a>
 
 
@@ -1462,14 +1462,14 @@ public class StreamLazinessDeep {
 
 ### 6.2 `Supplier` for Lazy Initialization
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-handwritten.svg" alt="Handwritten: 6.2 `Supplier` for Lazy Initialization" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-handwritten.svg" alt="Handwritten: 6.2 `Supplier` for Lazy Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-diagram.svg" alt="Diagram: 6.2 `Supplier` for Lazy Initialization" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-diagram.svg" alt="Diagram: 6.2 `Supplier` for Lazy Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-sticky.svg" alt="Sticky Note: 6.2 `Supplier` for Lazy Initialization" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-2-supplier-for-lazy-initialization-sticky.svg" alt="Sticky Note: 6.2 `Supplier` for Lazy Initialization" width="30%">
 </a>
 
 
@@ -1536,14 +1536,14 @@ public class SupplierLazyInit {
 
 ### 6.3 Custom `Lazy<T>` Structure
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-handwritten.svg" alt="Handwritten: 6.3 Custom `Lazy<T>` Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-handwritten.svg" alt="Handwritten: 6.3 Custom `Lazy<T>` Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-diagram.svg" alt="Diagram: 6.3 Custom `Lazy<T>` Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-diagram.svg" alt="Diagram: 6.3 Custom `Lazy<T>` Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-sticky.svg" alt="Sticky Note: 6.3 Custom `Lazy<T>` Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-sticky.svg" alt="Sticky Note: 6.3 Custom `Lazy<T>` Structure" width="30%">
 </a>
 
 
@@ -1633,14 +1633,14 @@ public class CustomLazyDemo {
 
 ### 6.4 Infinite Streams in Practice
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-handwritten.svg" alt="Handwritten: 6.4 Infinite Streams in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-handwritten.svg" alt="Handwritten: 6.4 Infinite Streams in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-diagram.svg" alt="Diagram: 6.4 Infinite Streams in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-diagram.svg" alt="Diagram: 6.4 Infinite Streams in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-sticky.svg" alt="Sticky Note: 6.4 Infinite Streams in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-4-infinite-streams-in-practice-sticky.svg" alt="Sticky Note: 6.4 Infinite Streams in Practice" width="30%">
 </a>
 
 
@@ -1689,14 +1689,14 @@ public class InfiniteStreamsInPractice {
 
 ### 7.1 Records as Functional Data Carriers
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-handwritten.svg" alt="Handwritten: 7.1 Records as Functional Data Carriers" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-handwritten.svg" alt="Handwritten: 7.1 Records as Functional Data Carriers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-diagram.svg" alt="Diagram: 7.1 Records as Functional Data Carriers" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-diagram.svg" alt="Diagram: 7.1 Records as Functional Data Carriers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-sticky.svg" alt="Sticky Note: 7.1 Records as Functional Data Carriers" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-1-records-as-functional-data-carriers-sticky.svg" alt="Sticky Note: 7.1 Records as Functional Data Carriers" width="30%">
 </a>
 
 
@@ -1749,14 +1749,14 @@ public class RecordsAsFunctionalData {
 
 ### 7.2 The `@With` / Wither Pattern
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-handwritten.svg" alt="Handwritten: 7.2 The `@With` / Wither Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-handwritten.svg" alt="Handwritten: 7.2 The `@With` / Wither Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-diagram.svg" alt="Diagram: 7.2 The `@With` / Wither Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-diagram.svg" alt="Diagram: 7.2 The `@With` / Wither Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-sticky.svg" alt="Sticky Note: 7.2 The `@With` / Wither Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-2-the-with-wither-pattern-sticky.svg" alt="Sticky Note: 7.2 The `@With` / Wither Pattern" width="30%">
 </a>
 
 
@@ -1808,14 +1808,14 @@ public class WitherPattern {
 
 ### 7.3 Unmodifiable Collections
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-handwritten.svg" alt="Handwritten: 7.3 Unmodifiable Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-handwritten.svg" alt="Handwritten: 7.3 Unmodifiable Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-diagram.svg" alt="Diagram: 7.3 Unmodifiable Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-diagram.svg" alt="Diagram: 7.3 Unmodifiable Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-sticky.svg" alt="Sticky Note: 7.3 Unmodifiable Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-3-unmodifiable-collections-sticky.svg" alt="Sticky Note: 7.3 Unmodifiable Collections" width="30%">
 </a>
 
 
@@ -1846,14 +1846,14 @@ public class UnmodifiableCollections {
 
 ### 7.4 Defensive Copying
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-handwritten.svg" alt="Handwritten: 7.4 Defensive Copying" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-handwritten.svg" alt="Handwritten: 7.4 Defensive Copying" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-diagram.svg" alt="Diagram: 7.4 Defensive Copying" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-diagram.svg" alt="Diagram: 7.4 Defensive Copying" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-sticky.svg" alt="Sticky Note: 7.4 Defensive Copying" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/7-4-defensive-copying-sticky.svg" alt="Sticky Note: 7.4 Defensive Copying" width="30%">
 </a>
 
 
@@ -1890,14 +1890,14 @@ public class DefensiveCopying {
 
 ### 8.1 Switch Expression & Pattern Matching
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-handwritten.svg" alt="Handwritten: 8.1 Switch Expression & Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-handwritten.svg" alt="Handwritten: 8.1 Switch Expression & Pattern Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-diagram.svg" alt="Diagram: 8.1 Switch Expression & Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-diagram.svg" alt="Diagram: 8.1 Switch Expression & Pattern Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-sticky.svg" alt="Sticky Note: 8.1 Switch Expression & Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-1-switch-expression-pattern-matching-sticky.svg" alt="Sticky Note: 8.1 Switch Expression & Pattern Matching" width="30%">
 </a>
 
 
@@ -1946,14 +1946,14 @@ public class SwitchPatternMatching {
 
 ### 8.2 Record Patterns
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-handwritten.svg" alt="Handwritten: 8.2 Record Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-handwritten.svg" alt="Handwritten: 8.2 Record Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-diagram.svg" alt="Diagram: 8.2 Record Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-diagram.svg" alt="Diagram: 8.2 Record Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-sticky.svg" alt="Sticky Note: 8.2 Record Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-2-record-patterns-sticky.svg" alt="Sticky Note: 8.2 Record Patterns" width="30%">
 </a>
 
 
@@ -2011,14 +2011,14 @@ public class RecordPatterns {
 
 ### 8.3 Guarded Patterns
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-handwritten.svg" alt="Handwritten: 8.3 Guarded Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-handwritten.svg" alt="Handwritten: 8.3 Guarded Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-diagram.svg" alt="Diagram: 8.3 Guarded Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-diagram.svg" alt="Diagram: 8.3 Guarded Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-sticky.svg" alt="Sticky Note: 8.3 Guarded Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-3-guarded-patterns-sticky.svg" alt="Sticky Note: 8.3 Guarded Patterns" width="30%">
 </a>
 
 
@@ -2074,14 +2074,14 @@ public class GuardedPatterns {
 
 ### 8.4 Sealed Class Exhaustive Matching
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-handwritten.svg" alt="Handwritten: 8.4 Sealed Class Exhaustive Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-handwritten.svg" alt="Handwritten: 8.4 Sealed Class Exhaustive Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-diagram.svg" alt="Diagram: 8.4 Sealed Class Exhaustive Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-diagram.svg" alt="Diagram: 8.4 Sealed Class Exhaustive Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-sticky.svg" alt="Sticky Note: 8.4 Sealed Class Exhaustive Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/8-4-sealed-class-exhaustive-matching-sticky.svg" alt="Sticky Note: 8.4 Sealed Class Exhaustive Matching" width="30%">
 </a>
 
 
@@ -2140,14 +2140,14 @@ public class SealedExhaustiveMatching {
 
 ### 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-handwritten.svg" alt="Handwritten: 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-handwritten.svg" alt="Handwritten: 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-diagram.svg" alt="Diagram: 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-diagram.svg" alt="Diagram: 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-sticky.svg" alt="Sticky Note: 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-1-or-ifpresentorelse-stream-deep-patterns-sticky.svg" alt="Sticky Note: 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns" width="30%">
 </a>
 
 
@@ -2205,14 +2205,14 @@ public class OptionalAdvancedPatterns {
 
 ### 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-handwritten.svg" alt="Handwritten: 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-handwritten.svg" alt="Handwritten: 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-diagram.svg" alt="Diagram: 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-diagram.svg" alt="Diagram: 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-sticky.svg" alt="Sticky Note: 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-2-optionalint-optionallong-optionaldouble-sticky.svg" alt="Sticky Note: 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`" width="30%">
 </a>
 
 
@@ -2244,14 +2244,14 @@ public class PrimitiveOptionals {
 
 ### 9.3 Combining Multiple Optionals
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-handwritten.svg" alt="Handwritten: 9.3 Combining Multiple Optionals" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-handwritten.svg" alt="Handwritten: 9.3 Combining Multiple Optionals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-diagram.svg" alt="Diagram: 9.3 Combining Multiple Optionals" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-diagram.svg" alt="Diagram: 9.3 Combining Multiple Optionals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-sticky.svg" alt="Sticky Note: 9.3 Combining Multiple Optionals" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-3-combining-multiple-optionals-sticky.svg" alt="Sticky Note: 9.3 Combining Multiple Optionals" width="30%">
 </a>
 
 
@@ -2309,14 +2309,14 @@ public class CombiningOptionals {
 
 ### 9.4 Result Pattern (Custom `Either`)
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-handwritten.svg" alt="Handwritten: 9.4 Result Pattern (Custom `Either`)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-handwritten.svg" alt="Handwritten: 9.4 Result Pattern (Custom `Either`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-diagram.svg" alt="Diagram: 9.4 Result Pattern (Custom `Either`)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-diagram.svg" alt="Diagram: 9.4 Result Pattern (Custom `Either`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-sticky.svg" alt="Sticky Note: 9.4 Result Pattern (Custom `Either`)" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/9-4-result-pattern-custom-either-sticky.svg" alt="Sticky Note: 9.4 Result Pattern (Custom `Either`)" width="30%">
 </a>
 
 
@@ -2406,14 +2406,14 @@ public class EitherPattern {
 
 ### 10.1 `Try` Monad Pattern
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-handwritten.svg" alt="Handwritten: 10.1 `Try` Monad Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-handwritten.svg" alt="Handwritten: 10.1 `Try` Monad Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-diagram.svg" alt="Diagram: 10.1 `Try` Monad Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-diagram.svg" alt="Diagram: 10.1 `Try` Monad Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-sticky.svg" alt="Sticky Note: 10.1 `Try` Monad Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-1-try-monad-pattern-sticky.svg" alt="Sticky Note: 10.1 `Try` Monad Pattern" width="30%">
 </a>
 
 
@@ -2514,14 +2514,14 @@ public class TryMonadDemo {
 
 ### 10.2 Application `Result` Pattern
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-handwritten.svg" alt="Handwritten: 10.2 Application `Result` Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-handwritten.svg" alt="Handwritten: 10.2 Application `Result` Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-diagram.svg" alt="Diagram: 10.2 Application `Result` Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-diagram.svg" alt="Diagram: 10.2 Application `Result` Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-sticky.svg" alt="Sticky Note: 10.2 Application `Result` Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-2-application-result-pattern-sticky.svg" alt="Sticky Note: 10.2 Application `Result` Pattern" width="30%">
 </a>
 
 
@@ -2601,14 +2601,14 @@ public class ApplicationResult {
 
 ### 10.3 Validation Aggregation
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-handwritten.svg" alt="Handwritten: 10.3 Validation Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-handwritten.svg" alt="Handwritten: 10.3 Validation Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-diagram.svg" alt="Diagram: 10.3 Validation Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-diagram.svg" alt="Diagram: 10.3 Validation Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-sticky.svg" alt="Sticky Note: 10.3 Validation Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/10-3-validation-aggregation-sticky.svg" alt="Sticky Note: 10.3 Validation Aggregation" width="30%">
 </a>
 
 
@@ -2713,14 +2713,14 @@ Chapter P6 introduced `RouterFunction`, `HandlerFunction`, and lambda-based `@Be
 
 ### 11.1 `RouterFunction` Deep
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-handwritten.svg" alt="Handwritten: 11.1 `RouterFunction` Deep" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-handwritten.svg" alt="Handwritten: 11.1 `RouterFunction` Deep" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-diagram.svg" alt="Diagram: 11.1 `RouterFunction` Deep" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-diagram.svg" alt="Diagram: 11.1 `RouterFunction` Deep" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-sticky.svg" alt="Sticky Note: 11.1 `RouterFunction` Deep" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-1-routerfunction-deep-sticky.svg" alt="Sticky Note: 11.1 `RouterFunction` Deep" width="30%">
 </a>
 
 
@@ -2831,14 +2831,14 @@ public class RouterFunctionDeepApplication {
 
 ### 11.2 `StreamResponseBody`
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-handwritten.svg" alt="Handwritten: 11.2 `StreamResponseBody`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-handwritten.svg" alt="Handwritten: 11.2 `StreamResponseBody`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-diagram.svg" alt="Diagram: 11.2 `StreamResponseBody`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-diagram.svg" alt="Diagram: 11.2 `StreamResponseBody`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-sticky.svg" alt="Sticky Note: 11.2 `StreamResponseBody`" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-2-streamresponsebody-sticky.svg" alt="Sticky Note: 11.2 `StreamResponseBody`" width="30%">
 </a>
 
 
@@ -2927,14 +2927,14 @@ public class StreamingEndpointApplication {
 
 ### 11.3 Lambda-Based `@Bean` Definitions
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-handwritten.svg" alt="Handwritten: 11.3 Lambda-Based `@Bean` Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-handwritten.svg" alt="Handwritten: 11.3 Lambda-Based `@Bean` Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-diagram.svg" alt="Diagram: 11.3 Lambda-Based `@Bean` Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-diagram.svg" alt="Diagram: 11.3 Lambda-Based `@Bean` Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-sticky.svg" alt="Sticky Note: 11.3 Lambda-Based `@Bean` Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-3-lambda-based-bean-definitions-sticky.svg" alt="Sticky Note: 11.3 Lambda-Based `@Bean` Definitions" width="30%">
 </a>
 
 
@@ -3004,14 +3004,14 @@ public class FunctionalBeanConfiguration {
 
 ### 11.4 Functional Property Binding
 
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-handwritten.svg" alt="Handwritten: 11.4 Functional Property Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-handwritten.svg" alt="Handwritten: 11.4 Functional Property Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-diagram.svg" alt="Diagram: 11.4 Functional Property Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-diagram.svg" alt="Diagram: 11.4 Functional Property Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-sticky.svg" alt="Sticky Note: 11.4 Functional Property Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/05-functional-deep/11-4-functional-property-binding-sticky.svg" alt="Sticky Note: 11.4 Functional Property Binding" width="30%">
 </a>
 
 

@@ -43,14 +43,14 @@ flowchart LR
 
 ### 5.1 What is a Context-Free Grammar?
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-handwritten.svg" alt="Handwritten: 5.1 What is a Context-Free Grammar?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-handwritten.svg" alt="Handwritten: 5.1 What is a Context-Free Grammar?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-diagram.svg" alt="Diagram: 5.1 What is a Context-Free Grammar?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-diagram.svg" alt="Diagram: 5.1 What is a Context-Free Grammar?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-sticky.svg" alt="Sticky Note: 5.1 What is a Context-Free Grammar?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-1-what-is-a-context-free-grammar-sticky.svg" alt="Sticky Note: 5.1 What is a Context-Free Grammar?" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ A CFG consists of:
 
 ### 5.2 Formal Definition
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-handwritten.svg" alt="Handwritten: 5.2 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-handwritten.svg" alt="Handwritten: 5.2 Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-diagram.svg" alt="Diagram: 5.2 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-diagram.svg" alt="Diagram: 5.2 Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-sticky.svg" alt="Sticky Note: 5.2 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-2-formal-definition-sticky.svg" alt="Sticky Note: 5.2 Formal Definition" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ The term "context-free" means that a variable can be replaced by its production 
 
 ### 5.3 Derivations
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-handwritten.svg" alt="Handwritten: 5.3 Derivations" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-handwritten.svg" alt="Handwritten: 5.3 Derivations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-diagram.svg" alt="Diagram: 5.3 Derivations" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-diagram.svg" alt="Diagram: 5.3 Derivations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-sticky.svg" alt="Sticky Note: 5.3 Derivations" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-3-derivations-sticky.svg" alt="Sticky Note: 5.3 Derivations" width="30%">
 </a>
 
 
@@ -109,14 +109,14 @@ L(G) = { w âˆˆ Î£* | S ⇒* w }
 
 ### 5.4 Leftmost and Rightmost Derivations
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-handwritten.svg" alt="Handwritten: 5.4 Leftmost and Rightmost Derivations" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-handwritten.svg" alt="Handwritten: 5.4 Leftmost and Rightmost Derivations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-diagram.svg" alt="Diagram: 5.4 Leftmost and Rightmost Derivations" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-diagram.svg" alt="Diagram: 5.4 Leftmost and Rightmost Derivations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-sticky.svg" alt="Sticky Note: 5.4 Leftmost and Rightmost Derivations" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-4-leftmost-and-rightmost-derivations-sticky.svg" alt="Sticky Note: 5.4 Leftmost and Rightmost Derivations" width="30%">
 </a>
 
 
@@ -128,14 +128,14 @@ For any parse tree, there is exactly one leftmost derivation and exactly one rig
 
 ### 5.5 Parse Trees
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-handwritten.svg" alt="Handwritten: 5.5 Parse Trees" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-handwritten.svg" alt="Handwritten: 5.5 Parse Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-diagram.svg" alt="Diagram: 5.5 Parse Trees" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-diagram.svg" alt="Diagram: 5.5 Parse Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-sticky.svg" alt="Sticky Note: 5.5 Parse Trees" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-5-parse-trees-sticky.svg" alt="Sticky Note: 5.5 Parse Trees" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ A **parse tree** (or derivation tree) is a graphical representation of a derivat
 
 ### 5.6 Ambiguity
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-handwritten.svg" alt="Handwritten: 5.6 Ambiguity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-handwritten.svg" alt="Handwritten: 5.6 Ambiguity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-diagram.svg" alt="Diagram: 5.6 Ambiguity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-diagram.svg" alt="Diagram: 5.6 Ambiguity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-sticky.svg" alt="Sticky Note: 5.6 Ambiguity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-6-ambiguity-sticky.svg" alt="Sticky Note: 5.6 Ambiguity" width="30%">
 </a>
 
 
@@ -167,14 +167,14 @@ For programming languages, ambiguity is unacceptable → every program must have
 
 ### 5.7 Left Recursion
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-handwritten.svg" alt="Handwritten: 5.7 Left Recursion" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-handwritten.svg" alt="Handwritten: 5.7 Left Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-diagram.svg" alt="Diagram: 5.7 Left Recursion" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-diagram.svg" alt="Diagram: 5.7 Left Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-sticky.svg" alt="Sticky Note: 5.7 Left Recursion" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-7-left-recursion-sticky.svg" alt="Sticky Note: 5.7 Left Recursion" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ Replace A → AÎ±â‚ | AÎ±â‚‚ | â€¦ | AÎ±â‚™ | Î²â‚
 
 ### 5.8 Left Factoring
 
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-handwritten.svg" alt="Handwritten: 5.8 Left Factoring" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-handwritten.svg" alt="Handwritten: 5.8 Left Factoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-diagram.svg" alt="Diagram: 5.8 Left Factoring" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-diagram.svg" alt="Diagram: 5.8 Left Factoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-sticky.svg" alt="Sticky Note: 5.8 Left Factoring" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/06-cfg/5-8-left-factoring-sticky.svg" alt="Sticky Note: 5.8 Left Factoring" width="30%">
 </a>
 
 

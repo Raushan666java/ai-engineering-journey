@@ -45,14 +45,14 @@ flowchart LR
 
 ### 4.1 K-Map Fundamentals
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-handwritten.svg" alt="Handwritten: 4.1 K-Map Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-handwritten.svg" alt="Handwritten: 4.1 K-Map Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-diagram.svg" alt="Diagram: 4.1 K-Map Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-diagram.svg" alt="Diagram: 4.1 K-Map Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-sticky.svg" alt="Sticky Note: 4.1 K-Map Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-1-k-map-fundamentals-sticky.svg" alt="Sticky Note: 4.1 K-Map Fundamentals" width="30%">
 </a>
 
 
@@ -137,14 +137,14 @@ Cells in plane A are adjacent to corresponding cells in plane B (same xy,zw coor
 
 ### 4.2 K-Map Grouping Rules
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-handwritten.svg" alt="Handwritten: 4.2 K-Map Grouping Rules" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-handwritten.svg" alt="Handwritten: 4.2 K-Map Grouping Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-diagram.svg" alt="Diagram: 4.2 K-Map Grouping Rules" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-diagram.svg" alt="Diagram: 4.2 K-Map Grouping Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-sticky.svg" alt="Sticky Note: 4.2 K-Map Grouping Rules" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-2-k-map-grouping-rules-sticky.svg" alt="Sticky Note: 4.2 K-Map Grouping Rules" width="30%">
 </a>
 
 
@@ -162,14 +162,14 @@ Proper grouping is essential for achieving minimal expressions:
 
 ### 4.3 Prime Implicants
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-handwritten.svg" alt="Handwritten: 4.3 Prime Implicants" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-handwritten.svg" alt="Handwritten: 4.3 Prime Implicants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-diagram.svg" alt="Diagram: 4.3 Prime Implicants" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-diagram.svg" alt="Diagram: 4.3 Prime Implicants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-sticky.svg" alt="Sticky Note: 4.3 Prime Implicants" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-3-prime-implicants-sticky.svg" alt="Sticky Note: 4.3 Prime Implicants" width="30%">
 </a>
 
 
@@ -185,14 +185,14 @@ An **essential prime implicant** covers a minterm that is not covered by any oth
 
 ### 4.4 Prime Implicant Chart
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-handwritten.svg" alt="Handwritten: 4.4 Prime Implicant Chart" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-handwritten.svg" alt="Handwritten: 4.4 Prime Implicant Chart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-diagram.svg" alt="Diagram: 4.4 Prime Implicant Chart" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-diagram.svg" alt="Diagram: 4.4 Prime Implicant Chart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-sticky.svg" alt="Sticky Note: 4.4 Prime Implicant Chart" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-4-prime-implicant-chart-sticky.svg" alt="Sticky Note: 4.4 Prime Implicant Chart" width="30%">
 </a>
 
 
@@ -234,14 +234,14 @@ function findEssentialImplicants(chart: PrimeImplicant[]): PrimeImplicant[] {
 
 ### 4.5 Don't-Care Conditions
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-handwritten.svg" alt="Handwritten: 4.5 Don't-Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-handwritten.svg" alt="Handwritten: 4.5 Don't-Care Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-diagram.svg" alt="Diagram: 4.5 Don't-Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-diagram.svg" alt="Diagram: 4.5 Don't-Care Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-sticky.svg" alt="Sticky Note: 4.5 Don't-Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-5-don-t-care-conditions-sticky.svg" alt="Sticky Note: 4.5 Don't-Care Conditions" width="30%">
 </a>
 
 
@@ -263,14 +263,14 @@ graph LR
 
 ### 4.6 Minimisation Procedure: SOP
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-handwritten.svg" alt="Handwritten: 4.6 Minimisation Procedure: SOP" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-handwritten.svg" alt="Handwritten: 4.6 Minimisation Procedure: SOP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-diagram.svg" alt="Diagram: 4.6 Minimisation Procedure: SOP" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-diagram.svg" alt="Diagram: 4.6 Minimisation Procedure: SOP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-sticky.svg" alt="Sticky Note: 4.6 Minimisation Procedure: SOP" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-6-minimisation-procedure-sop-sticky.svg" alt="Sticky Note: 4.6 Minimisation Procedure: SOP" width="30%">
 </a>
 
 
@@ -286,14 +286,14 @@ The standard procedure for deriving a minimal SOP from a K-map:
 
 ### 4.7 Minimisation Procedure: POS
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-handwritten.svg" alt="Handwritten: 4.7 Minimisation Procedure: POS" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-handwritten.svg" alt="Handwritten: 4.7 Minimisation Procedure: POS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-diagram.svg" alt="Diagram: 4.7 Minimisation Procedure: POS" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-diagram.svg" alt="Diagram: 4.7 Minimisation Procedure: POS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-sticky.svg" alt="Sticky Note: 4.7 Minimisation Procedure: POS" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-7-minimisation-procedure-pos-sticky.svg" alt="Sticky Note: 4.7 Minimisation Procedure: POS" width="30%">
 </a>
 
 
@@ -308,14 +308,14 @@ Alternatively, derive the minimal SOP for F' and complement using De Morgan's th
 
 ### 4.8 Quine-McCluskey Algorithm
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-handwritten.svg" alt="Handwritten: 4.8 Quine-McCluskey Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-handwritten.svg" alt="Handwritten: 4.8 Quine-McCluskey Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-diagram.svg" alt="Diagram: 4.8 Quine-McCluskey Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-diagram.svg" alt="Diagram: 4.8 Quine-McCluskey Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-sticky.svg" alt="Sticky Note: 4.8 Quine-McCluskey Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-8-quine-mccluskey-algorithm-sticky.svg" alt="Sticky Note: 4.8 Quine-McCluskey Algorithm" width="30%">
 </a>
 
 
@@ -394,14 +394,14 @@ function quineMcCluskey(minterms: number[], numVars: number): string[] {
 
 ### 4.9 Comparison: K-Map vs Quine-McCluskey
 
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-handwritten.svg" alt="Handwritten: 4.9 Comparison: K-Map vs Quine-McCluskey" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-handwritten.svg" alt="Handwritten: 4.9 Comparison: K-Map vs Quine-McCluskey" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-diagram.svg" alt="Diagram: 4.9 Comparison: K-Map vs Quine-McCluskey" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-diagram.svg" alt="Diagram: 4.9 Comparison: K-Map vs Quine-McCluskey" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-sticky.svg" alt="Sticky Note: 4.9 Comparison: K-Map vs Quine-McCluskey" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/04-karnaugh-maps/4-9-comparison-k-map-vs-quine-mccluskey-sticky.svg" alt="Sticky Note: 4.9 Comparison: K-Map vs Quine-McCluskey" width="30%">
 </a>
 
 

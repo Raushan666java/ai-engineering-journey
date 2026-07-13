@@ -6,7 +6,7 @@ export interface InjectionResult {
 }
 
 function generateImageBlock(topic: Topic, course: string, chapterSlug: string): string {
-  const assetBase = `../../assets/images/diagrams/${course}/${chapterSlug}/${topic.slug}`;
+  const assetBase = `../../../assets/images/diagrams/${course}/${chapterSlug}/${topic.slug}`;
 
   const images = [
     { type: 'handwritten', alt: `Handwritten: ${topic.heading}` },

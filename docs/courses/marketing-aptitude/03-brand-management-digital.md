@@ -15,14 +15,14 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Understanding Brands
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-handwritten.svg" alt="Handwritten: 3.1 Understanding Brands" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-handwritten.svg" alt="Handwritten: 3.1 Understanding Brands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-diagram.svg" alt="Diagram: 3.1 Understanding Brands" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-diagram.svg" alt="Diagram: 3.1 Understanding Brands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-sticky.svg" alt="Sticky Note: 3.1 Understanding Brands" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-1-understanding-brands-sticky.svg" alt="Sticky Note: 3.1 Understanding Brands" width="30%">
 </a>
 
 
@@ -43,14 +43,14 @@ A **brand** is a name, term, sign, symbol, or design — or a combination of the
 
 ### 3.2 Keller's Customer-Based Brand Equity (CBBE) Model
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-handwritten.svg" alt="Handwritten: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-handwritten.svg" alt="Handwritten: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-diagram.svg" alt="Diagram: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-diagram.svg" alt="Diagram: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-sticky.svg" alt="Sticky Note: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-2-keller-s-customer-based-brand-equity-cbbe-model-sticky.svg" alt="Sticky Note: 3.2 Keller's Customer-Based Brand Equity (CBBE) Model" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ Brand resonance is the highest level of brand equity where customers feel a deep
 
 ### 3.3 Brand Positioning
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-handwritten.svg" alt="Handwritten: 3.3 Brand Positioning" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-handwritten.svg" alt="Handwritten: 3.3 Brand Positioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-diagram.svg" alt="Diagram: 3.3 Brand Positioning" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-diagram.svg" alt="Diagram: 3.3 Brand Positioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-sticky.svg" alt="Sticky Note: 3.3 Brand Positioning" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-3-brand-positioning-sticky.svg" alt="Sticky Note: 3.3 Brand Positioning" width="30%">
 </a>
 
 
@@ -128,14 +128,14 @@ Repositioning is changing the brand's position in the consumer's mind. Reasons i
 
 ### 3.4 Brand Extensions
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-handwritten.svg" alt="Handwritten: 3.4 Brand Extensions" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-handwritten.svg" alt="Handwritten: 3.4 Brand Extensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-diagram.svg" alt="Diagram: 3.4 Brand Extensions" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-diagram.svg" alt="Diagram: 3.4 Brand Extensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-sticky.svg" alt="Sticky Note: 3.4 Brand Extensions" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-4-brand-extensions-sticky.svg" alt="Sticky Note: 3.4 Brand Extensions" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ graph LR
 
 ### 3.5 Co-Branding and Licensing
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-handwritten.svg" alt="Handwritten: 3.5 Co-Branding and Licensing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-handwritten.svg" alt="Handwritten: 3.5 Co-Branding and Licensing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-diagram.svg" alt="Diagram: 3.5 Co-Branding and Licensing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-diagram.svg" alt="Diagram: 3.5 Co-Branding and Licensing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-sticky.svg" alt="Sticky Note: 3.5 Co-Branding and Licensing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-5-co-branding-and-licensing-sticky.svg" alt="Sticky Note: 3.5 Co-Branding and Licensing" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ graph LR
 
 ### 3.6 Digital Marketing
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-handwritten.svg" alt="Handwritten: 3.6 Digital Marketing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-handwritten.svg" alt="Handwritten: 3.6 Digital Marketing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-diagram.svg" alt="Diagram: 3.6 Digital Marketing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-diagram.svg" alt="Diagram: 3.6 Digital Marketing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-sticky.svg" alt="Sticky Note: 3.6 Digital Marketing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-6-digital-marketing-sticky.svg" alt="Sticky Note: 3.6 Digital Marketing" width="30%">
 </a>
 
 
@@ -402,14 +402,14 @@ Influencer marketing involves partnering with individuals who have a strong soci
 
 ### 3.7 Customer Relationship Management (CRM)
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-handwritten.svg" alt="Handwritten: 3.7 Customer Relationship Management (CRM)" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-handwritten.svg" alt="Handwritten: 3.7 Customer Relationship Management (CRM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-diagram.svg" alt="Diagram: 3.7 Customer Relationship Management (CRM)" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-diagram.svg" alt="Diagram: 3.7 Customer Relationship Management (CRM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-sticky.svg" alt="Sticky Note: 3.7 Customer Relationship Management (CRM)" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-7-customer-relationship-management-crm-sticky.svg" alt="Sticky Note: 3.7 Customer Relationship Management (CRM)" width="30%">
 </a>
 
 
@@ -476,14 +476,14 @@ console.log(CRMSegmenter.segmentReport(customers));
 
 ### 3.8 Brand Architecture
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-handwritten.svg" alt="Handwritten: 3.8 Brand Architecture" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-handwritten.svg" alt="Handwritten: 3.8 Brand Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-diagram.svg" alt="Diagram: 3.8 Brand Architecture" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-diagram.svg" alt="Diagram: 3.8 Brand Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-sticky.svg" alt="Sticky Note: 3.8 Brand Architecture" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-8-brand-architecture-sticky.svg" alt="Sticky Note: 3.8 Brand Architecture" width="30%">
 </a>
 
 
@@ -512,14 +512,14 @@ graph TD
 
 ### 3.9 Brand Revitalization and Managing Brand Crises
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-handwritten.svg" alt="Handwritten: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-handwritten.svg" alt="Handwritten: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-diagram.svg" alt="Diagram: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-diagram.svg" alt="Diagram: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-sticky.svg" alt="Sticky Note: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-9-brand-revitalization-and-managing-brand-crises-sticky.svg" alt="Sticky Note: 3.9 Brand Revitalization and Managing Brand Crises" width="30%">
 </a>
 
 
@@ -565,14 +565,14 @@ graph LR
 
 ### 3.10 Digital Marketing Funnel and KPIs
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-handwritten.svg" alt="Handwritten: 3.10 Digital Marketing Funnel and KPIs" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-handwritten.svg" alt="Handwritten: 3.10 Digital Marketing Funnel and KPIs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-diagram.svg" alt="Diagram: 3.10 Digital Marketing Funnel and KPIs" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-diagram.svg" alt="Diagram: 3.10 Digital Marketing Funnel and KPIs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-sticky.svg" alt="Sticky Note: 3.10 Digital Marketing Funnel and KPIs" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-10-digital-marketing-funnel-and-kpis-sticky.svg" alt="Sticky Note: 3.10 Digital Marketing Funnel and KPIs" width="30%">
 </a>
 
 
@@ -655,14 +655,14 @@ console.log(generateKPIDashboard(campaignMetrics));
 
 ### 3.11 Comparison Tables
 
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-handwritten.svg" alt="Handwritten: 3.11 Comparison Tables" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-handwritten.svg" alt="Handwritten: 3.11 Comparison Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-diagram.svg" alt="Diagram: 3.11 Comparison Tables" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-diagram.svg" alt="Diagram: 3.11 Comparison Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-sticky.svg" alt="Sticky Note: 3.11 Comparison Tables" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/03-brand-management-digital/3-11-comparison-tables-sticky.svg" alt="Sticky Note: 3.11 Comparison Tables" width="30%">
 </a>
 
 

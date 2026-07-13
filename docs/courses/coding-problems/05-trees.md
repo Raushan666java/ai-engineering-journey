@@ -83,14 +83,14 @@ xychart-beta
 
 ### Problem 1: Binary Tree Inorder Traversal
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-handwritten.svg" alt="Handwritten: Problem 1: Binary Tree Inorder Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-handwritten.svg" alt="Handwritten: Problem 1: Binary Tree Inorder Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-diagram.svg" alt="Diagram: Problem 1: Binary Tree Inorder Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-diagram.svg" alt="Diagram: Problem 1: Binary Tree Inorder Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-sticky.svg" alt="Sticky Note: Problem 1: Binary Tree Inorder Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-1-binary-tree-inorder-traversal-sticky.svg" alt="Sticky Note: Problem 1: Binary Tree Inorder Traversal" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -177,14 +177,14 @@ console.log(inorderTraversal(arrayToTree([]))); // []
 
 ### Problem 2: Maximum Depth of Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Problem 2: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Problem 2: Maximum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-diagram.svg" alt="Diagram: Problem 2: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-diagram.svg" alt="Diagram: Problem 2: Maximum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Problem 2: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-2-maximum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Problem 2: Maximum Depth of Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
@@ -223,14 +223,14 @@ console.log(maxDepth(null)); // 0
 
 ### Problem 3: Same Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-handwritten.svg" alt="Handwritten: Problem 3: Same Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-handwritten.svg" alt="Handwritten: Problem 3: Same Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-diagram.svg" alt="Diagram: Problem 3: Same Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-diagram.svg" alt="Diagram: Problem 3: Same Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-sticky.svg" alt="Sticky Note: Problem 3: Same Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-3-same-tree-sticky.svg" alt="Sticky Note: Problem 3: Same Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -271,14 +271,14 @@ console.log(isSameTree(tree1, tree3)); // false
 
 ### Problem 4: Symmetric Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-handwritten.svg" alt="Handwritten: Problem 4: Symmetric Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-handwritten.svg" alt="Handwritten: Problem 4: Symmetric Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-diagram.svg" alt="Diagram: Problem 4: Symmetric Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-diagram.svg" alt="Diagram: Problem 4: Symmetric Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-sticky.svg" alt="Sticky Note: Problem 4: Symmetric Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-4-symmetric-tree-sticky.svg" alt="Sticky Note: Problem 4: Symmetric Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -320,14 +320,14 @@ console.log(isSymmetric(arrayToTree([1, 2, 2, null, 3, null, 3]))); // false
 
 ### Problem 5: Binary Tree Level Order Traversal
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 5: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 5: Binary Tree Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Problem 5: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Problem 5: Binary Tree Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 5: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-5-binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 5: Binary Tree Level Order Traversal" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
@@ -380,14 +380,14 @@ console.log(levelOrder(null)); // []
 
 ### Problem 6: Convert Sorted Array to BST
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-handwritten.svg" alt="Handwritten: Problem 6: Convert Sorted Array to BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-handwritten.svg" alt="Handwritten: Problem 6: Convert Sorted Array to BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-diagram.svg" alt="Diagram: Problem 6: Convert Sorted Array to BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-diagram.svg" alt="Diagram: Problem 6: Convert Sorted Array to BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-sticky.svg" alt="Sticky Note: Problem 6: Convert Sorted Array to BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-6-convert-sorted-array-to-bst-sticky.svg" alt="Sticky Note: Problem 6: Convert Sorted Array to BST" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -430,14 +430,14 @@ console.log(inorderTraversal(bst)); // [-10, -3, 0, 5, 9]
 
 ### Problem 7: Balanced Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-handwritten.svg" alt="Handwritten: Problem 7: Balanced Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-handwritten.svg" alt="Handwritten: Problem 7: Balanced Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-diagram.svg" alt="Diagram: Problem 7: Balanced Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-diagram.svg" alt="Diagram: Problem 7: Balanced Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-sticky.svg" alt="Sticky Note: Problem 7: Balanced Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-7-balanced-binary-tree-sticky.svg" alt="Sticky Note: Problem 7: Balanced Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -483,14 +483,14 @@ console.log(isBalanced(arrayToTree([1, 2, 2, 3, 3, null, null, 4, 4]))); // fals
 
 ### Problem 8: Minimum Depth of Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Problem 8: Minimum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Problem 8: Minimum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-diagram.svg" alt="Diagram: Problem 8: Minimum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-diagram.svg" alt="Diagram: Problem 8: Minimum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Problem 8: Minimum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-8-minimum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Problem 8: Minimum Depth of Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
@@ -540,14 +540,14 @@ console.log(minDepth(arrayToTree([2, null, 3, null, 4]))); // 3
 
 ### Problem 9: Path Sum
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-handwritten.svg" alt="Handwritten: Problem 9: Path Sum" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-handwritten.svg" alt="Handwritten: Problem 9: Path Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-diagram.svg" alt="Diagram: Problem 9: Path Sum" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-diagram.svg" alt="Diagram: Problem 9: Path Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-sticky.svg" alt="Sticky Note: Problem 9: Path Sum" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-9-path-sum-sticky.svg" alt="Sticky Note: Problem 9: Path Sum" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -585,14 +585,14 @@ console.log(hasPathSum(null, 0)); // false
 
 ### Problem 10: Invert Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-handwritten.svg" alt="Handwritten: Problem 10: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-handwritten.svg" alt="Handwritten: Problem 10: Invert Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-diagram.svg" alt="Diagram: Problem 10: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-diagram.svg" alt="Diagram: Problem 10: Invert Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-sticky.svg" alt="Sticky Note: Problem 10: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-10-invert-binary-tree-sticky.svg" alt="Sticky Note: Problem 10: Invert Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -635,14 +635,14 @@ console.log(levelOrder(inverted));
 
 ### Problem 11: Validate Binary Search Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-handwritten.svg" alt="Handwritten: Problem 11: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-handwritten.svg" alt="Handwritten: Problem 11: Validate Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-diagram.svg" alt="Diagram: Problem 11: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-diagram.svg" alt="Diagram: Problem 11: Validate Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-sticky.svg" alt="Sticky Note: Problem 11: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-11-validate-binary-search-tree-sticky.svg" alt="Sticky Note: Problem 11: Validate Binary Search Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
@@ -691,14 +691,14 @@ console.log(isValidBST(arrayToTree([5, 1, 4, null, null, 3, 6]))); // false
 
 ### Problem 12: Binary Tree Zigzag Level Order Traversal
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 12: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 12: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-diagram.svg" alt="Diagram: Problem 12: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-diagram.svg" alt="Diagram: Problem 12: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 12: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-12-binary-tree-zigzag-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 12: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -756,14 +756,14 @@ console.log(zigzagLevelOrder(arrayToTree([3, 9, 20, null, null, 15, 7])));
 
 ### Problem 13: Construct Binary Tree from Preorder and Inorder
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-handwritten.svg" alt="Handwritten: Problem 13: Construct Binary Tree from Preorder and Inorder" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-handwritten.svg" alt="Handwritten: Problem 13: Construct Binary Tree from Preorder and Inorder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-diagram.svg" alt="Diagram: Problem 13: Construct Binary Tree from Preorder and Inorder" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-diagram.svg" alt="Diagram: Problem 13: Construct Binary Tree from Preorder and Inorder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-sticky.svg" alt="Sticky Note: Problem 13: Construct Binary Tree from Preorder and Inorder" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-13-construct-binary-tree-from-preorder-and-inorder-sticky.svg" alt="Sticky Note: Problem 13: Construct Binary Tree from Preorder and Inorder" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -814,14 +814,14 @@ console.log(levelOrder(buildTree(preorder, inorder)));
 
 ### Problem 14: Binary Tree Right Side View
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-handwritten.svg" alt="Handwritten: Problem 14: Binary Tree Right Side View" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-handwritten.svg" alt="Handwritten: Problem 14: Binary Tree Right Side View" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-diagram.svg" alt="Diagram: Problem 14: Binary Tree Right Side View" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-diagram.svg" alt="Diagram: Problem 14: Binary Tree Right Side View" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-sticky.svg" alt="Sticky Note: Problem 14: Binary Tree Right Side View" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-14-binary-tree-right-side-view-sticky.svg" alt="Sticky Note: Problem 14: Binary Tree Right Side View" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -869,14 +869,14 @@ console.log(rightSideView(arrayToTree([1, 2, 3, null, 5, null, 4])));
 
 ### Problem 15: Kth Smallest Element in a BST
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-handwritten.svg" alt="Handwritten: Problem 15: Kth Smallest Element in a BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-handwritten.svg" alt="Handwritten: Problem 15: Kth Smallest Element in a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-diagram.svg" alt="Diagram: Problem 15: Kth Smallest Element in a BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-diagram.svg" alt="Diagram: Problem 15: Kth Smallest Element in a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-sticky.svg" alt="Sticky Note: Problem 15: Kth Smallest Element in a BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-15-kth-smallest-element-in-a-bst-sticky.svg" alt="Sticky Note: Problem 15: Kth Smallest Element in a BST" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -928,14 +928,14 @@ console.log(kthSmallest(arrayToTree([5, 3, 6, 2, 4, null, null, 1]), 3)); // 3
 
 ### Problem 16: Lowest Common Ancestor of a BST
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-handwritten.svg" alt="Handwritten: Problem 16: Lowest Common Ancestor of a BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-handwritten.svg" alt="Handwritten: Problem 16: Lowest Common Ancestor of a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-diagram.svg" alt="Diagram: Problem 16: Lowest Common Ancestor of a BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-diagram.svg" alt="Diagram: Problem 16: Lowest Common Ancestor of a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-sticky.svg" alt="Sticky Note: Problem 16: Lowest Common Ancestor of a BST" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-16-lowest-common-ancestor-of-a-bst-sticky.svg" alt="Sticky Note: Problem 16: Lowest Common Ancestor of a BST" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -980,14 +980,14 @@ console.log(lowestCommonAncestorBST(bstTree, p, q)?.val); // 6
 
 ### Problem 17: Lowest Common Ancestor of a Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" alt="Handwritten: Problem 17: Lowest Common Ancestor of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" alt="Handwritten: Problem 17: Lowest Common Ancestor of a Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-diagram.svg" alt="Diagram: Problem 17: Lowest Common Ancestor of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-diagram.svg" alt="Diagram: Problem 17: Lowest Common Ancestor of a Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-sticky.svg" alt="Sticky Note: Problem 17: Lowest Common Ancestor of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-17-lowest-common-ancestor-of-a-binary-tree-sticky.svg" alt="Sticky Note: Problem 17: Lowest Common Ancestor of a Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
@@ -1029,14 +1029,14 @@ console.log(lowestCommonAncestor(treeLCA, pNode, qNode)?.val); // 3
 
 ### Problem 18: Binary Tree Maximum Path Sum
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-handwritten.svg" alt="Handwritten: Problem 18: Binary Tree Maximum Path Sum" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-handwritten.svg" alt="Handwritten: Problem 18: Binary Tree Maximum Path Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-diagram.svg" alt="Diagram: Problem 18: Binary Tree Maximum Path Sum" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-diagram.svg" alt="Diagram: Problem 18: Binary Tree Maximum Path Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-sticky.svg" alt="Sticky Note: Problem 18: Binary Tree Maximum Path Sum" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-18-binary-tree-maximum-path-sum-sticky.svg" alt="Sticky Note: Problem 18: Binary Tree Maximum Path Sum" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
@@ -1088,14 +1088,14 @@ console.log(maxPathSum(arrayToTree([1, 2, 3]))); // 6
 
 ### Problem 19: Binary Tree Level Order Traversal II
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-handwritten.svg" alt="Handwritten: Problem 19: Binary Tree Level Order Traversal II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-handwritten.svg" alt="Handwritten: Problem 19: Binary Tree Level Order Traversal II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-diagram.svg" alt="Diagram: Problem 19: Binary Tree Level Order Traversal II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-diagram.svg" alt="Diagram: Problem 19: Binary Tree Level Order Traversal II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-sticky.svg" alt="Sticky Note: Problem 19: Binary Tree Level Order Traversal II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-19-binary-tree-level-order-traversal-ii-sticky.svg" alt="Sticky Note: Problem 19: Binary Tree Level Order Traversal II" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -1145,14 +1145,14 @@ console.log(levelOrderBottom(arrayToTree([3, 9, 20, null, null, 15, 7])));
 
 ### Problem 20: Count Complete Tree Nodes
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-handwritten.svg" alt="Handwritten: Problem 20: Count Complete Tree Nodes" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-handwritten.svg" alt="Handwritten: Problem 20: Count Complete Tree Nodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-diagram.svg" alt="Diagram: Problem 20: Count Complete Tree Nodes" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-diagram.svg" alt="Diagram: Problem 20: Count Complete Tree Nodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-sticky.svg" alt="Sticky Note: Problem 20: Count Complete Tree Nodes" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-20-count-complete-tree-nodes-sticky.svg" alt="Sticky Note: Problem 20: Count Complete Tree Nodes" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
@@ -1207,14 +1207,14 @@ console.log(countNodes(arrayToTree([]))); // 0
 
 ### Problem 21: Binary Tree Paths
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-handwritten.svg" alt="Handwritten: Problem 21: Binary Tree Paths" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-handwritten.svg" alt="Handwritten: Problem 21: Binary Tree Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-diagram.svg" alt="Diagram: Problem 21: Binary Tree Paths" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-diagram.svg" alt="Diagram: Problem 21: Binary Tree Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-sticky.svg" alt="Sticky Note: Problem 21: Binary Tree Paths" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-21-binary-tree-paths-sticky.svg" alt="Sticky Note: Problem 21: Binary Tree Paths" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -1261,14 +1261,14 @@ console.log(binaryTreePaths(arrayToTree([1, 2, 3, null, 5])));
 
 ### Problem 22: Sum Root to Leaf Numbers
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-handwritten.svg" alt="Handwritten: Problem 22: Sum Root to Leaf Numbers" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-handwritten.svg" alt="Handwritten: Problem 22: Sum Root to Leaf Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-diagram.svg" alt="Diagram: Problem 22: Sum Root to Leaf Numbers" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-diagram.svg" alt="Diagram: Problem 22: Sum Root to Leaf Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-sticky.svg" alt="Sticky Note: Problem 22: Sum Root to Leaf Numbers" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-22-sum-root-to-leaf-numbers-sticky.svg" alt="Sticky Note: Problem 22: Sum Root to Leaf Numbers" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -1310,14 +1310,14 @@ console.log(sumNumbers(arrayToTree([4, 9, 0, 5, 1]))); // 1026
 
 ### Problem 23: Flatten Binary Tree to Linked List
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-handwritten.svg" alt="Handwritten: Problem 23: Flatten Binary Tree to Linked List" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-handwritten.svg" alt="Handwritten: Problem 23: Flatten Binary Tree to Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-diagram.svg" alt="Diagram: Problem 23: Flatten Binary Tree to Linked List" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-diagram.svg" alt="Diagram: Problem 23: Flatten Binary Tree to Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-sticky.svg" alt="Sticky Note: Problem 23: Flatten Binary Tree to Linked List" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-23-flatten-binary-tree-to-linked-list-sticky.svg" alt="Sticky Note: Problem 23: Flatten Binary Tree to Linked List" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -1363,14 +1363,14 @@ console.log(rightSideView(flatTree)); // [1, 2, 3, 4, 5, 6]
 
 ### Problem 24: Populating Next Right Pointers in Each Node
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-handwritten.svg" alt="Handwritten: Problem 24: Populating Next Right Pointers in Each Node" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-handwritten.svg" alt="Handwritten: Problem 24: Populating Next Right Pointers in Each Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-diagram.svg" alt="Diagram: Problem 24: Populating Next Right Pointers in Each Node" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-diagram.svg" alt="Diagram: Problem 24: Populating Next Right Pointers in Each Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-sticky.svg" alt="Sticky Note: Problem 24: Populating Next Right Pointers in Each Node" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-24-populating-next-right-pointers-in-each-node-sticky.svg" alt="Sticky Note: Problem 24: Populating Next Right Pointers in Each Node" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -1429,14 +1429,14 @@ function connect(root: NodeWithNext | null): NodeWithNext | null {
 
 ### Problem 25: Serialize and Deserialize Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-handwritten.svg" alt="Handwritten: Problem 25: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-handwritten.svg" alt="Handwritten: Problem 25: Serialize and Deserialize Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-diagram.svg" alt="Diagram: Problem 25: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-diagram.svg" alt="Diagram: Problem 25: Serialize and Deserialize Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-sticky.svg" alt="Sticky Note: Problem 25: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-25-serialize-and-deserialize-binary-tree-sticky.svg" alt="Sticky Note: Problem 25: Serialize and Deserialize Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
@@ -1510,14 +1510,14 @@ console.log(levelOrder(deserialized));
 
 ### Problem 26: Binary Tree Cameras
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-handwritten.svg" alt="Handwritten: Problem 26: Binary Tree Cameras" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-handwritten.svg" alt="Handwritten: Problem 26: Binary Tree Cameras" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-diagram.svg" alt="Diagram: Problem 26: Binary Tree Cameras" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-diagram.svg" alt="Diagram: Problem 26: Binary Tree Cameras" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-sticky.svg" alt="Sticky Note: Problem 26: Binary Tree Cameras" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-26-binary-tree-cameras-sticky.svg" alt="Sticky Note: Problem 26: Binary Tree Cameras" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -1574,14 +1574,14 @@ console.log(minCameraCover(arrayToTree([0, 0, null, 0, null, 0, null, null, 0]))
 
 ### Problem 27: Binary Tree Maximum Path Sum (with variations)
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-handwritten.svg" alt="Handwritten: Problem 27: Binary Tree Maximum Path Sum (with variations)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-handwritten.svg" alt="Handwritten: Problem 27: Binary Tree Maximum Path Sum (with variations)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-diagram.svg" alt="Diagram: Problem 27: Binary Tree Maximum Path Sum (with variations)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-diagram.svg" alt="Diagram: Problem 27: Binary Tree Maximum Path Sum (with variations)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-sticky.svg" alt="Sticky Note: Problem 27: Binary Tree Maximum Path Sum (with variations)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-27-binary-tree-maximum-path-sum-with-variations-sticky.svg" alt="Sticky Note: Problem 27: Binary Tree Maximum Path Sum (with variations)" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -1602,14 +1602,14 @@ Output: 6
 
 ### Problem 28: Recover Binary Search Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-handwritten.svg" alt="Handwritten: Problem 28: Recover Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-handwritten.svg" alt="Handwritten: Problem 28: Recover Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-diagram.svg" alt="Diagram: Problem 28: Recover Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-diagram.svg" alt="Diagram: Problem 28: Recover Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-sticky.svg" alt="Sticky Note: Problem 28: Recover Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-28-recover-binary-search-tree-sticky.svg" alt="Sticky Note: Problem 28: Recover Binary Search Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -1665,14 +1665,14 @@ console.log(inorderTraversal(broken)); // [1, 2, 3]
 
 ### Problem 29: Vertical Order Traversal of a Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-handwritten.svg" alt="Handwritten: Problem 29: Vertical Order Traversal of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-handwritten.svg" alt="Handwritten: Problem 29: Vertical Order Traversal of a Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-diagram.svg" alt="Diagram: Problem 29: Vertical Order Traversal of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-diagram.svg" alt="Diagram: Problem 29: Vertical Order Traversal of a Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-sticky.svg" alt="Sticky Note: Problem 29: Vertical Order Traversal of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-29-vertical-order-traversal-of-a-binary-tree-sticky.svg" alt="Sticky Note: Problem 29: Vertical Order Traversal of a Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -1730,14 +1730,14 @@ console.log(verticalTraversal(arrayToTree([3, 9, 20, null, null, 15, 7])));
 
 ### Problem 30: All Nodes Distance K in Binary Tree
 
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-handwritten.svg" alt="Handwritten: Problem 30: All Nodes Distance K in Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-handwritten.svg" alt="Handwritten: Problem 30: All Nodes Distance K in Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-diagram.svg" alt="Diagram: Problem 30: All Nodes Distance K in Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-diagram.svg" alt="Diagram: Problem 30: All Nodes Distance K in Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-sticky.svg" alt="Sticky Note: Problem 30: All Nodes Distance K in Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/05-trees/problem-30-all-nodes-distance-k-in-binary-tree-sticky.svg" alt="Sticky Note: Problem 30: All Nodes Distance K in Binary Tree" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]

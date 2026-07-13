@@ -14,14 +14,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -37,14 +37,14 @@
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -67,14 +67,14 @@ flowchart LR
 
 ### Protocol Stack Layers (Styled)
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-handwritten.svg" alt="Handwritten: Protocol Stack Layers (Styled)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-handwritten.svg" alt="Handwritten: Protocol Stack Layers (Styled)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-diagram.svg" alt="Diagram: Protocol Stack Layers (Styled)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-diagram.svg" alt="Diagram: Protocol Stack Layers (Styled)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-sticky.svg" alt="Sticky Note: Protocol Stack Layers (Styled)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/protocol-stack-layers-styled-sticky.svg" alt="Sticky Note: Protocol Stack Layers (Styled)" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ flowchart TB
 
 ### Definition
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ A **computer network** is an interconnected collection of autonomous computers t
 
 ### Real-World Analogy: The Postal System
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-handwritten.svg" alt="Handwritten: Real-World Analogy: The Postal System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-handwritten.svg" alt="Handwritten: Real-World Analogy: The Postal System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-diagram.svg" alt="Diagram: Real-World Analogy: The Postal System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-diagram.svg" alt="Diagram: Real-World Analogy: The Postal System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-sticky.svg" alt="Sticky Note: Real-World Analogy: The Postal System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-the-postal-system-sticky.svg" alt="Sticky Note: Real-World Analogy: The Postal System" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ Just as the postal system hides the complexity of transportation (you don't need
 
 ### Network Components
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/network-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/network-components-handwritten.svg" alt="Handwritten: Network Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/network-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/network-components-handwritten.svg" alt="Handwritten: Network Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/network-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/network-components-diagram.svg" alt="Diagram: Network Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/network-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/network-components-diagram.svg" alt="Diagram: Network Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/network-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/network-components-sticky.svg" alt="Sticky Note: Network Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/network-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/network-components-sticky.svg" alt="Sticky Note: Network Components" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ Just as the postal system hides the complexity of transportation (you don't need
 
 ### C++ Implementation: Simple Network Node
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-handwritten.svg" alt="Handwritten: C++ Implementation: Simple Network Node" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-handwritten.svg" alt="Handwritten: C++ Implementation: Simple Network Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-diagram.svg" alt="Diagram: C++ Implementation: Simple Network Node" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-diagram.svg" alt="Diagram: C++ Implementation: Simple Network Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-sticky.svg" alt="Sticky Note: C++ Implementation: Simple Network Node" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-implementation-simple-network-node-sticky.svg" alt="Sticky Note: C++ Implementation: Simple Network Node" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ int main() {
 
 ### Python Implementation: Simple Network Node
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-handwritten.svg" alt="Handwritten: Python Implementation: Simple Network Node" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-handwritten.svg" alt="Handwritten: Python Implementation: Simple Network Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-diagram.svg" alt="Diagram: Python Implementation: Simple Network Node" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-diagram.svg" alt="Diagram: Python Implementation: Simple Network Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-sticky.svg" alt="Sticky Note: Python Implementation: Simple Network Node" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-implementation-simple-network-node-sticky.svg" alt="Sticky Note: Python Implementation: Simple Network Node" width="30%">
 </a>
 
 
@@ -379,14 +379,14 @@ if __name__ == "__main__":
 
 ### Advantages of Computer Networks
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-handwritten.svg" alt="Handwritten: Advantages of Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-handwritten.svg" alt="Handwritten: Advantages of Computer Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-diagram.svg" alt="Diagram: Advantages of Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-diagram.svg" alt="Diagram: Advantages of Computer Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-sticky.svg" alt="Sticky Note: Advantages of Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/advantages-of-computer-networks-sticky.svg" alt="Sticky Note: Advantages of Computer Networks" width="30%">
 </a>
 
 
@@ -401,14 +401,14 @@ if __name__ == "__main__":
 
 ### Disadvantages of Computer Networks
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-handwritten.svg" alt="Handwritten: Disadvantages of Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-handwritten.svg" alt="Handwritten: Disadvantages of Computer Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-diagram.svg" alt="Diagram: Disadvantages of Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-diagram.svg" alt="Diagram: Disadvantages of Computer Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-sticky.svg" alt="Sticky Note: Disadvantages of Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/disadvantages-of-computer-networks-sticky.svg" alt="Sticky Note: Disadvantages of Computer Networks" width="30%">
 </a>
 
 
@@ -422,14 +422,14 @@ if __name__ == "__main__":
 
 ### Edge Cases in Networking
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-handwritten.svg" alt="Handwritten: Edge Cases in Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-handwritten.svg" alt="Handwritten: Edge Cases in Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-diagram.svg" alt="Diagram: Edge Cases in Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-diagram.svg" alt="Diagram: Edge Cases in Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-sticky.svg" alt="Sticky Note: Edge Cases in Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-networking-sticky.svg" alt="Sticky Note: Edge Cases in Networking" width="30%">
 </a>
 
 
@@ -451,14 +451,14 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### 1.2.1 Personal-Area Network (PAN)
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-handwritten.svg" alt="Handwritten: 1.2.1 Personal-Area Network (PAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-handwritten.svg" alt="Handwritten: 1.2.1 Personal-Area Network (PAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-diagram.svg" alt="Diagram: 1.2.1 Personal-Area Network (PAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-diagram.svg" alt="Diagram: 1.2.1 Personal-Area Network (PAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-sticky.svg" alt="Sticky Note: 1.2.1 Personal-Area Network (PAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-1-personal-area-network-pan-sticky.svg" alt="Sticky Note: 1.2.1 Personal-Area Network (PAN)" width="30%">
 </a>
 
 
@@ -470,14 +470,14 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### 1.2.2 Local-Area Network (LAN)
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-handwritten.svg" alt="Handwritten: 1.2.2 Local-Area Network (LAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-handwritten.svg" alt="Handwritten: 1.2.2 Local-Area Network (LAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-diagram.svg" alt="Diagram: 1.2.2 Local-Area Network (LAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-diagram.svg" alt="Diagram: 1.2.2 Local-Area Network (LAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-sticky.svg" alt="Sticky Note: 1.2.2 Local-Area Network (LAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-2-local-area-network-lan-sticky.svg" alt="Sticky Note: 1.2.2 Local-Area Network (LAN)" width="30%">
 </a>
 
 
@@ -492,14 +492,14 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### 1.2.3 Metropolitan-Area Network (MAN)
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-handwritten.svg" alt="Handwritten: 1.2.3 Metropolitan-Area Network (MAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-handwritten.svg" alt="Handwritten: 1.2.3 Metropolitan-Area Network (MAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-diagram.svg" alt="Diagram: 1.2.3 Metropolitan-Area Network (MAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-diagram.svg" alt="Diagram: 1.2.3 Metropolitan-Area Network (MAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-sticky.svg" alt="Sticky Note: 1.2.3 Metropolitan-Area Network (MAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-3-metropolitan-area-network-man-sticky.svg" alt="Sticky Note: 1.2.3 Metropolitan-Area Network (MAN)" width="30%">
 </a>
 
 
@@ -513,14 +513,14 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### 1.2.4 Wide-Area Network (WAN)
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-handwritten.svg" alt="Handwritten: 1.2.4 Wide-Area Network (WAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-handwritten.svg" alt="Handwritten: 1.2.4 Wide-Area Network (WAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-diagram.svg" alt="Diagram: 1.2.4 Wide-Area Network (WAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-diagram.svg" alt="Diagram: 1.2.4 Wide-Area Network (WAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-sticky.svg" alt="Sticky Note: 1.2.4 Wide-Area Network (WAN)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-2-4-wide-area-network-wan-sticky.svg" alt="Sticky Note: 1.2.4 Wide-Area Network (WAN)" width="30%">
 </a>
 
 
@@ -535,14 +535,14 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### Real-World Analogy: Transportation Network
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-handwritten.svg" alt="Handwritten: Real-World Analogy: Transportation Network" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-handwritten.svg" alt="Handwritten: Real-World Analogy: Transportation Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-diagram.svg" alt="Diagram: Real-World Analogy: Transportation Network" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-diagram.svg" alt="Diagram: Real-World Analogy: Transportation Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-sticky.svg" alt="Sticky Note: Real-World Analogy: Transportation Network" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-transportation-network-sticky.svg" alt="Sticky Note: Real-World Analogy: Transportation Network" width="30%">
 </a>
 
 
@@ -556,14 +556,14 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### LAN vs MAN vs WAN: Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-handwritten.svg" alt="Handwritten: LAN vs MAN vs WAN: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-handwritten.svg" alt="Handwritten: LAN vs MAN vs WAN: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-diagram.svg" alt="Diagram: LAN vs MAN vs WAN: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-diagram.svg" alt="Diagram: LAN vs MAN vs WAN: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-sticky.svg" alt="Sticky Note: LAN vs MAN vs WAN: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/lan-vs-man-vs-wan-comparison-table-sticky.svg" alt="Sticky Note: LAN vs MAN vs WAN: Comparison Table" width="30%">
 </a>
 
 
@@ -584,14 +584,14 @@ Networks are classified by geographical span, transmission technology, and switc
 
 ### C++: Network Type Simulator with Congestion
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-handwritten.svg" alt="Handwritten: C++: Network Type Simulator with Congestion" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-handwritten.svg" alt="Handwritten: C++: Network Type Simulator with Congestion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-diagram.svg" alt="Diagram: C++: Network Type Simulator with Congestion" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-diagram.svg" alt="Diagram: C++: Network Type Simulator with Congestion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-sticky.svg" alt="Sticky Note: C++: Network Type Simulator with Congestion" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-network-type-simulator-with-congestion-sticky.svg" alt="Sticky Note: C++: Network Type Simulator with Congestion" width="30%">
 </a>
 
 
@@ -676,14 +676,14 @@ int main() {
 
 ### Python: Network Type Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-handwritten.svg" alt="Handwritten: Python: Network Type Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-handwritten.svg" alt="Handwritten: Python: Network Type Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-diagram.svg" alt="Diagram: Python: Network Type Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-diagram.svg" alt="Diagram: Python: Network Type Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-sticky.svg" alt="Sticky Note: Python: Network Type Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-network-type-simulator-sticky.svg" alt="Sticky Note: Python: Network Type Simulator" width="30%">
 </a>
 
 
@@ -745,14 +745,14 @@ if __name__ == "__main__":
 
 ### Edge Cases for Network Types
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-handwritten.svg" alt="Handwritten: Edge Cases for Network Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-handwritten.svg" alt="Handwritten: Edge Cases for Network Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-diagram.svg" alt="Diagram: Edge Cases for Network Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-diagram.svg" alt="Diagram: Edge Cases for Network Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-sticky.svg" alt="Sticky Note: Edge Cases for Network Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-for-network-types-sticky.svg" alt="Sticky Note: Edge Cases for Network Types" width="30%">
 </a>
 
 
@@ -769,14 +769,14 @@ A **network topology** describes the physical or logical arrangement of links an
 
 ### Real-World Analogy: City Transportation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-handwritten.svg" alt="Handwritten: Real-World Analogy: City Transportation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-handwritten.svg" alt="Handwritten: Real-World Analogy: City Transportation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-diagram.svg" alt="Diagram: Real-World Analogy: City Transportation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-diagram.svg" alt="Diagram: Real-World Analogy: City Transportation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-sticky.svg" alt="Sticky Note: Real-World Analogy: City Transportation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-city-transportation-sticky.svg" alt="Sticky Note: Real-World Analogy: City Transportation" width="30%">
 </a>
 
 
@@ -791,14 +791,14 @@ A **network topology** describes the physical or logical arrangement of links an
 
 ### 1.3.1 Bus Topology
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-handwritten.svg" alt="Handwritten: 1.3.1 Bus Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-handwritten.svg" alt="Handwritten: 1.3.1 Bus Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-diagram.svg" alt="Diagram: 1.3.1 Bus Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-diagram.svg" alt="Diagram: 1.3.1 Bus Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-sticky.svg" alt="Sticky Note: 1.3.1 Bus Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-1-bus-topology-sticky.svg" alt="Sticky Note: 1.3.1 Bus Topology" width="30%">
 </a>
 
 
@@ -836,14 +836,14 @@ All nodes connect to a single shared cable (the *bus* / *backbone*). Only one no
 
 ### 1.3.2 Star Topology
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-handwritten.svg" alt="Handwritten: 1.3.2 Star Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-handwritten.svg" alt="Handwritten: 1.3.2 Star Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-diagram.svg" alt="Diagram: 1.3.2 Star Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-diagram.svg" alt="Diagram: 1.3.2 Star Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-sticky.svg" alt="Sticky Note: 1.3.2 Star Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-2-star-topology-sticky.svg" alt="Sticky Note: 1.3.2 Star Topology" width="30%">
 </a>
 
 
@@ -883,14 +883,14 @@ All nodes connect to a central device (switch or hub). The central device manage
 
 ### 1.3.3 Ring Topology
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-handwritten.svg" alt="Handwritten: 1.3.3 Ring Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-handwritten.svg" alt="Handwritten: 1.3.3 Ring Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-diagram.svg" alt="Diagram: 1.3.3 Ring Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-diagram.svg" alt="Diagram: 1.3.3 Ring Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-sticky.svg" alt="Sticky Note: 1.3.3 Ring Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-3-ring-topology-sticky.svg" alt="Sticky Note: 1.3.3 Ring Topology" width="30%">
 </a>
 
 
@@ -931,14 +931,14 @@ Each node connects to exactly two neighbors, forming a closed loop. Data travels
 
 ### 1.3.4 Mesh Topology
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-handwritten.svg" alt="Handwritten: 1.3.4 Mesh Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-handwritten.svg" alt="Handwritten: 1.3.4 Mesh Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-diagram.svg" alt="Diagram: 1.3.4 Mesh Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-diagram.svg" alt="Diagram: 1.3.4 Mesh Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-sticky.svg" alt="Sticky Note: 1.3.4 Mesh Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-4-mesh-topology-sticky.svg" alt="Sticky Note: 1.3.4 Mesh Topology" width="30%">
 </a>
 
 
@@ -971,14 +971,14 @@ Every node has a dedicated point-to-point link to every other node. Full mesh (e
 
 ### 1.3.5 Tree Topology
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-handwritten.svg" alt="Handwritten: 1.3.5 Tree Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-handwritten.svg" alt="Handwritten: 1.3.5 Tree Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-diagram.svg" alt="Diagram: 1.3.5 Tree Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-diagram.svg" alt="Diagram: 1.3.5 Tree Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-sticky.svg" alt="Sticky Note: 1.3.5 Tree Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-5-tree-topology-sticky.svg" alt="Sticky Note: 1.3.5 Tree Topology" width="30%">
 </a>
 
 
@@ -1016,14 +1016,14 @@ A hierarchical structure combining multiple star topologies connected to a centr
 
 ### 1.3.6 Hybrid Topology
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-handwritten.svg" alt="Handwritten: 1.3.6 Hybrid Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-handwritten.svg" alt="Handwritten: 1.3.6 Hybrid Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-diagram.svg" alt="Diagram: 1.3.6 Hybrid Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-diagram.svg" alt="Diagram: 1.3.6 Hybrid Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-sticky.svg" alt="Sticky Note: 1.3.6 Hybrid Topology" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-3-6-hybrid-topology-sticky.svg" alt="Sticky Note: 1.3.6 Hybrid Topology" width="30%">
 </a>
 
 
@@ -1158,14 +1158,14 @@ Bus         | 51    | 1          | false    | 30
 
 ### Topologies Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-handwritten.svg" alt="Handwritten: Topologies Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-handwritten.svg" alt="Handwritten: Topologies Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-diagram.svg" alt="Diagram: Topologies Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-diagram.svg" alt="Diagram: Topologies Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-sticky.svg" alt="Sticky Note: Topologies Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/topologies-comparison-table-sticky.svg" alt="Sticky Note: Topologies Comparison Table" width="30%">
 </a>
 
 
@@ -1183,14 +1183,14 @@ Bus         | 51    | 1          | false    | 30
 
 ### C++: Topology Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-handwritten.svg" alt="Handwritten: C++: Topology Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-handwritten.svg" alt="Handwritten: C++: Topology Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-diagram.svg" alt="Diagram: C++: Topology Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-diagram.svg" alt="Diagram: C++: Topology Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-sticky.svg" alt="Sticky Note: C++: Topology Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-topology-simulator-sticky.svg" alt="Sticky Note: C++: Topology Simulator" width="30%">
 </a>
 
 
@@ -1310,14 +1310,14 @@ int main() {
 
 ### Python: Topology Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-handwritten.svg" alt="Handwritten: Python: Topology Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-handwritten.svg" alt="Handwritten: Python: Topology Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-diagram.svg" alt="Diagram: Python: Topology Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-diagram.svg" alt="Diagram: Python: Topology Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-sticky.svg" alt="Sticky Note: Python: Topology Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-topology-simulator-sticky.svg" alt="Sticky Note: Python: Topology Simulator" width="30%">
 </a>
 
 
@@ -1405,14 +1405,14 @@ if __name__ == "__main__":
 
 ### Edge Cases: Topology Failure Scenarios
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-handwritten.svg" alt="Handwritten: Edge Cases: Topology Failure Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-handwritten.svg" alt="Handwritten: Edge Cases: Topology Failure Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-diagram.svg" alt="Diagram: Edge Cases: Topology Failure Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-diagram.svg" alt="Diagram: Edge Cases: Topology Failure Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-sticky.svg" alt="Sticky Note: Edge Cases: Topology Failure Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-topology-failure-scenarios-sticky.svg" alt="Sticky Note: Edge Cases: Topology Failure Scenarios" width="30%">
 </a>
 
 
@@ -1426,14 +1426,14 @@ if __name__ == "__main__":
 
 ### Topology Selection Decision Matrix
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-handwritten.svg" alt="Handwritten: Topology Selection Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-handwritten.svg" alt="Handwritten: Topology Selection Decision Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-diagram.svg" alt="Diagram: Topology Selection Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-diagram.svg" alt="Diagram: Topology Selection Decision Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-sticky.svg" alt="Sticky Note: Topology Selection Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/topology-selection-decision-matrix-sticky.svg" alt="Sticky Note: Topology Selection Decision Matrix" width="30%">
 </a>
 
 
@@ -1449,14 +1449,14 @@ if __name__ == "__main__":
 
 ### 1.4.1 What Is a Protocol?
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-handwritten.svg" alt="Handwritten: 1.4.1 What Is a Protocol?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-handwritten.svg" alt="Handwritten: 1.4.1 What Is a Protocol?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-diagram.svg" alt="Diagram: 1.4.1 What Is a Protocol?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-diagram.svg" alt="Diagram: 1.4.1 What Is a Protocol?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-sticky.svg" alt="Sticky Note: 1.4.1 What Is a Protocol?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-1-what-is-a-protocol-sticky.svg" alt="Sticky Note: 1.4.1 What Is a Protocol?" width="30%">
 </a>
 
 
@@ -1467,14 +1467,14 @@ A **protocol** is a set of rules governing the format and meaning of messages ex
 
 ### Real-World Analogy: Diplomatic Protocol
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-handwritten.svg" alt="Handwritten: Real-World Analogy: Diplomatic Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-handwritten.svg" alt="Handwritten: Real-World Analogy: Diplomatic Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-diagram.svg" alt="Diagram: Real-World Analogy: Diplomatic Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-diagram.svg" alt="Diagram: Real-World Analogy: Diplomatic Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-sticky.svg" alt="Sticky Note: Real-World Analogy: Diplomatic Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-diplomatic-protocol-sticky.svg" alt="Sticky Note: Real-World Analogy: Diplomatic Protocol" width="30%">
 </a>
 
 
@@ -1487,14 +1487,14 @@ A **protocol** is a set of rules governing the format and meaning of messages ex
 
 ### 1.4.2 Protocol Layering
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-handwritten.svg" alt="Handwritten: 1.4.2 Protocol Layering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-handwritten.svg" alt="Handwritten: 1.4.2 Protocol Layering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-diagram.svg" alt="Diagram: 1.4.2 Protocol Layering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-diagram.svg" alt="Diagram: 1.4.2 Protocol Layering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-sticky.svg" alt="Sticky Note: 1.4.2 Protocol Layering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-2-protocol-layering-sticky.svg" alt="Sticky Note: 1.4.2 Protocol Layering" width="30%">
 </a>
 
 
@@ -1517,14 +1517,14 @@ Complex network communication is broken into a **stack of layers**. Each layer:
 
 ### 1.4.3 Service Primitives
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-handwritten.svg" alt="Handwritten: 1.4.3 Service Primitives" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-handwritten.svg" alt="Handwritten: 1.4.3 Service Primitives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-diagram.svg" alt="Diagram: 1.4.3 Service Primitives" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-diagram.svg" alt="Diagram: 1.4.3 Service Primitives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-sticky.svg" alt="Sticky Note: 1.4.3 Service Primitives" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-3-service-primitives-sticky.svg" alt="Sticky Note: 1.4.3 Service Primitives" width="30%">
 </a>
 
 
@@ -1563,14 +1563,14 @@ procedure client():
 
 ### 1.4.4 Connection-Oriented vs Connectionless Service
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-handwritten.svg" alt="Handwritten: 1.4.4 Connection-Oriented vs Connectionless Service" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-handwritten.svg" alt="Handwritten: 1.4.4 Connection-Oriented vs Connectionless Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-diagram.svg" alt="Diagram: 1.4.4 Connection-Oriented vs Connectionless Service" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-diagram.svg" alt="Diagram: 1.4.4 Connection-Oriented vs Connectionless Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-sticky.svg" alt="Sticky Note: 1.4.4 Connection-Oriented vs Connectionless Service" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-4-4-connection-oriented-vs-connectionless-service-sticky.svg" alt="Sticky Note: 1.4.4 Connection-Oriented vs Connectionless Service" width="30%">
 </a>
 
 
@@ -1592,14 +1592,14 @@ procedure client():
 
 ### 1.5.1 PDU Names by Layer
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-handwritten.svg" alt="Handwritten: 1.5.1 PDU Names by Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-handwritten.svg" alt="Handwritten: 1.5.1 PDU Names by Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-diagram.svg" alt="Diagram: 1.5.1 PDU Names by Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-diagram.svg" alt="Diagram: 1.5.1 PDU Names by Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-sticky.svg" alt="Sticky Note: 1.5.1 PDU Names by Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-5-1-pdu-names-by-layer-sticky.svg" alt="Sticky Note: 1.5.1 PDU Names by Layer" width="30%">
 </a>
 
 
@@ -1613,14 +1613,14 @@ procedure client():
 
 ### Step-by-Step Encapsulation Process (Numbered)
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-handwritten.svg" alt="Handwritten: Step-by-Step Encapsulation Process (Numbered)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-handwritten.svg" alt="Handwritten: Step-by-Step Encapsulation Process (Numbered)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-diagram.svg" alt="Diagram: Step-by-Step Encapsulation Process (Numbered)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-diagram.svg" alt="Diagram: Step-by-Step Encapsulation Process (Numbered)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-sticky.svg" alt="Sticky Note: Step-by-Step Encapsulation Process (Numbered)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/step-by-step-encapsulation-process-numbered-sticky.svg" alt="Sticky Note: Step-by-Step Encapsulation Process (Numbered)" width="30%">
 </a>
 
 
@@ -1650,14 +1650,14 @@ procedure client():
 
 ### Dry Run Trace: Full Encapsulation and De-encapsulation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-handwritten.svg" alt="Handwritten: Dry Run Trace: Full Encapsulation and De-encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-handwritten.svg" alt="Handwritten: Dry Run Trace: Full Encapsulation and De-encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-diagram.svg" alt="Diagram: Dry Run Trace: Full Encapsulation and De-encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-diagram.svg" alt="Diagram: Dry Run Trace: Full Encapsulation and De-encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-sticky.svg" alt="Sticky Note: Dry Run Trace: Full Encapsulation and De-encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-full-encapsulation-and-de-encapsulation-sticky.svg" alt="Sticky Note: Dry Run Trace: Full Encapsulation and De-encapsulation" width="30%">
 </a>
 
 
@@ -1695,14 +1695,14 @@ Application:  [GET /index.html]
 
 ### C++: Packet Building with Encapsulation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-handwritten.svg" alt="Handwritten: C++: Packet Building with Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-handwritten.svg" alt="Handwritten: C++: Packet Building with Encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-diagram.svg" alt="Diagram: C++: Packet Building with Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-diagram.svg" alt="Diagram: C++: Packet Building with Encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-sticky.svg" alt="Sticky Note: C++: Packet Building with Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-packet-building-with-encapsulation-sticky.svg" alt="Sticky Note: C++: Packet Building with Encapsulation" width="30%">
 </a>
 
 
@@ -1823,14 +1823,14 @@ int main() {
 
 ### Python: Packet Builder with Encapsulation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-handwritten.svg" alt="Handwritten: Python: Packet Builder with Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-handwritten.svg" alt="Handwritten: Python: Packet Builder with Encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-diagram.svg" alt="Diagram: Python: Packet Builder with Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-diagram.svg" alt="Diagram: Python: Packet Builder with Encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-sticky.svg" alt="Sticky Note: Python: Packet Builder with Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-packet-builder-with-encapsulation-sticky.svg" alt="Sticky Note: Python: Packet Builder with Encapsulation" width="30%">
 </a>
 
 
@@ -1920,14 +1920,14 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 
 ### Real-World Analogy: International Postal System
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-handwritten.svg" alt="Handwritten: Real-World Analogy: International Postal System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-handwritten.svg" alt="Handwritten: Real-World Analogy: International Postal System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-diagram.svg" alt="Diagram: Real-World Analogy: International Postal System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-diagram.svg" alt="Diagram: Real-World Analogy: International Postal System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-sticky.svg" alt="Sticky Note: Real-World Analogy: International Postal System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-analogy-international-postal-system-sticky.svg" alt="Sticky Note: Real-World Analogy: International Postal System" width="30%">
 </a>
 
 
@@ -1943,14 +1943,14 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 
 ### The Seven Layers in Detail
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-handwritten.svg" alt="Handwritten: The Seven Layers in Detail" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-handwritten.svg" alt="Handwritten: The Seven Layers in Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-diagram.svg" alt="Diagram: The Seven Layers in Detail" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-diagram.svg" alt="Diagram: The Seven Layers in Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-sticky.svg" alt="Sticky Note: The Seven Layers in Detail" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-seven-layers-in-detail-sticky.svg" alt="Sticky Note: The Seven Layers in Detail" width="30%">
 </a>
 
 
@@ -2002,14 +2002,14 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 
 ### Data Flow Through OSI Layers (Numbered Steps)
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-handwritten.svg" alt="Handwritten: Data Flow Through OSI Layers (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-handwritten.svg" alt="Handwritten: Data Flow Through OSI Layers (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-diagram.svg" alt="Diagram: Data Flow Through OSI Layers (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-diagram.svg" alt="Diagram: Data Flow Through OSI Layers (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-sticky.svg" alt="Sticky Note: Data Flow Through OSI Layers (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/data-flow-through-osi-layers-numbered-steps-sticky.svg" alt="Sticky Note: Data Flow Through OSI Layers (Numbered Steps)" width="30%">
 </a>
 
 
@@ -2033,14 +2033,14 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 
 ### Dry Run Trace: "PING" Through OSI
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-handwritten.svg" alt="Handwritten: Dry Run Trace: "PING" Through OSI" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-handwritten.svg" alt="Handwritten: Dry Run Trace: "PING" Through OSI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-diagram.svg" alt="Diagram: Dry Run Trace: "PING" Through OSI" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-diagram.svg" alt="Diagram: Dry Run Trace: "PING" Through OSI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-sticky.svg" alt="Sticky Note: Dry Run Trace: "PING" Through OSI" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-trace-ping-through-osi-sticky.svg" alt="Sticky Note: Dry Run Trace: "PING" Through OSI" width="30%">
 </a>
 
 
@@ -2058,14 +2058,14 @@ The Open Systems Interconnection (OSI) model, developed by ISO in 1984, partitio
 
 ### C++: OSI Layer Simulation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-handwritten.svg" alt="Handwritten: C++: OSI Layer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-handwritten.svg" alt="Handwritten: C++: OSI Layer Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-diagram.svg" alt="Diagram: C++: OSI Layer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-diagram.svg" alt="Diagram: C++: OSI Layer Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-sticky.svg" alt="Sticky Note: C++: OSI Layer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/c-osi-layer-simulation-sticky.svg" alt="Sticky Note: C++: OSI Layer Simulation" width="30%">
 </a>
 
 
@@ -2157,14 +2157,14 @@ int main() {
 
 ### Python: OSI Layer Simulation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-handwritten.svg" alt="Handwritten: Python: OSI Layer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-handwritten.svg" alt="Handwritten: Python: OSI Layer Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-diagram.svg" alt="Diagram: Python: OSI Layer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-diagram.svg" alt="Diagram: Python: OSI Layer Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-sticky.svg" alt="Sticky Note: Python: OSI Layer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/python-osi-layer-simulation-sticky.svg" alt="Sticky Note: Python: OSI Layer Simulation" width="30%">
 </a>
 
 
@@ -2341,14 +2341,14 @@ Overhead: 147 bytes of headers
 
 ### Complexity Analysis of the OSI Model
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-handwritten.svg" alt="Handwritten: Complexity Analysis of the OSI Model" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-handwritten.svg" alt="Handwritten: Complexity Analysis of the OSI Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-diagram.svg" alt="Diagram: Complexity Analysis of the OSI Model" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-diagram.svg" alt="Diagram: Complexity Analysis of the OSI Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-sticky.svg" alt="Sticky Note: Complexity Analysis of the OSI Model" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/complexity-analysis-of-the-osi-model-sticky.svg" alt="Sticky Note: Complexity Analysis of the OSI Model" width="30%">
 </a>
 
 
@@ -2364,14 +2364,14 @@ Overhead: 147 bytes of headers
 
 ### A&D of the OSI Model
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-handwritten.svg" alt="Handwritten: A&D of the OSI Model" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-handwritten.svg" alt="Handwritten: A&D of the OSI Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-diagram.svg" alt="Diagram: A&D of the OSI Model" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-diagram.svg" alt="Diagram: A&D of the OSI Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-sticky.svg" alt="Sticky Note: A&D of the OSI Model" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/a-d-of-the-osi-model-sticky.svg" alt="Sticky Note: A&D of the OSI Model" width="30%">
 </a>
 
 
@@ -2385,14 +2385,14 @@ Overhead: 147 bytes of headers
 
 ### Edge Cases in OSI Layering
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-handwritten.svg" alt="Handwritten: Edge Cases in OSI Layering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-handwritten.svg" alt="Handwritten: Edge Cases in OSI Layering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-diagram.svg" alt="Diagram: Edge Cases in OSI Layering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-diagram.svg" alt="Diagram: Edge Cases in OSI Layering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-sticky.svg" alt="Sticky Note: Edge Cases in OSI Layering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/edge-cases-in-osi-layering-sticky.svg" alt="Sticky Note: Edge Cases in OSI Layering" width="30%">
 </a>
 
 
@@ -2408,14 +2408,14 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 ### The Four Layers
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-handwritten.svg" alt="Handwritten: The Four Layers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-handwritten.svg" alt="Handwritten: The Four Layers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-diagram.svg" alt="Diagram: The Four Layers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-diagram.svg" alt="Diagram: The Four Layers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-sticky.svg" alt="Sticky Note: The Four Layers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-four-layers-sticky.svg" alt="Sticky Note: The Four Layers" width="30%">
 </a>
 
 
@@ -2428,14 +2428,14 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 ### OSI vs TCP/IP: Layer Mapping
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-handwritten.svg" alt="Handwritten: OSI vs TCP/IP: Layer Mapping" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-handwritten.svg" alt="Handwritten: OSI vs TCP/IP: Layer Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-diagram.svg" alt="Diagram: OSI vs TCP/IP: Layer Mapping" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-diagram.svg" alt="Diagram: OSI vs TCP/IP: Layer Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-sticky.svg" alt="Sticky Note: OSI vs TCP/IP: Layer Mapping" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-layer-mapping-sticky.svg" alt="Sticky Note: OSI vs TCP/IP: Layer Mapping" width="30%">
 </a>
 
 
@@ -2451,14 +2451,14 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 ### OSI vs TCP/IP: Detailed Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-handwritten.svg" alt="Handwritten: OSI vs TCP/IP: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-handwritten.svg" alt="Handwritten: OSI vs TCP/IP: Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-diagram.svg" alt="Diagram: OSI vs TCP/IP: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-diagram.svg" alt="Diagram: OSI vs TCP/IP: Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-sticky.svg" alt="Sticky Note: OSI vs TCP/IP: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-detailed-comparison-sticky.svg" alt="Sticky Note: OSI vs TCP/IP: Detailed Comparison" width="30%">
 </a>
 
 
@@ -2479,14 +2479,14 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 ### Why TCP/IP Won
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-handwritten.svg" alt="Handwritten: Why TCP/IP Won" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-handwritten.svg" alt="Handwritten: Why TCP/IP Won" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-diagram.svg" alt="Diagram: Why TCP/IP Won" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-diagram.svg" alt="Diagram: Why TCP/IP Won" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-sticky.svg" alt="Sticky Note: Why TCP/IP Won" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-tcp-ip-won-sticky.svg" alt="Sticky Note: Why TCP/IP Won" width="30%">
 </a>
 
 
@@ -2498,14 +2498,14 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 ### OSI vs TCP/IP: Quotation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-handwritten.svg" alt="Handwritten: OSI vs TCP/IP: Quotation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-handwritten.svg" alt="Handwritten: OSI vs TCP/IP: Quotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-diagram.svg" alt="Diagram: OSI vs TCP/IP: Quotation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-diagram.svg" alt="Diagram: OSI vs TCP/IP: Quotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-sticky.svg" alt="Sticky Note: OSI vs TCP/IP: Quotation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-vs-tcp-ip-quotation-sticky.svg" alt="Sticky Note: OSI vs TCP/IP: Quotation" width="30%">
 </a>
 
 
@@ -2513,14 +2513,14 @@ The TCP/IP model, developed by the U.S. Department of Defense through ARPANET re
 
 ### Dry Run: TCP/IP Encapsulation
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-handwritten.svg" alt="Handwritten: Dry Run: TCP/IP Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-handwritten.svg" alt="Handwritten: Dry Run: TCP/IP Encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-diagram.svg" alt="Diagram: Dry Run: TCP/IP Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-diagram.svg" alt="Diagram: Dry Run: TCP/IP Encapsulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-sticky.svg" alt="Sticky Note: Dry Run: TCP/IP Encapsulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/dry-run-tcp-ip-encapsulation-sticky.svg" alt="Sticky Note: Dry Run: TCP/IP Encapsulation" width="30%">
 </a>
 
 
@@ -2541,14 +2541,14 @@ A **protocol** is an agreed-upon format and sequence of messages between two ent
 
 ### 1.8.1 Major Protocols by Layer
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-handwritten.svg" alt="Handwritten: 1.8.1 Major Protocols by Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-handwritten.svg" alt="Handwritten: 1.8.1 Major Protocols by Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-diagram.svg" alt="Diagram: 1.8.1 Major Protocols by Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-diagram.svg" alt="Diagram: 1.8.1 Major Protocols by Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-sticky.svg" alt="Sticky Note: 1.8.1 Major Protocols by Layer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-1-major-protocols-by-layer-sticky.svg" alt="Sticky Note: 1.8.1 Major Protocols by Layer" width="30%">
 </a>
 
 
@@ -2569,14 +2569,14 @@ A **protocol** is an agreed-upon format and sequence of messages between two ent
 
 ### 1.8.2 Protocol vs Interface
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-handwritten.svg" alt="Handwritten: 1.8.2 Protocol vs Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-handwritten.svg" alt="Handwritten: 1.8.2 Protocol vs Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-diagram.svg" alt="Diagram: 1.8.2 Protocol vs Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-diagram.svg" alt="Diagram: 1.8.2 Protocol vs Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-sticky.svg" alt="Sticky Note: 1.8.2 Protocol vs Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-2-protocol-vs-interface-sticky.svg" alt="Sticky Note: 1.8.2 Protocol vs Interface" width="30%">
 </a>
 
 
@@ -2590,14 +2590,14 @@ A **protocol** is an agreed-upon format and sequence of messages between two ent
 
 ### 1.8.3 Multiplexing and Demultiplexing
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-handwritten.svg" alt="Handwritten: 1.8.3 Multiplexing and Demultiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-handwritten.svg" alt="Handwritten: 1.8.3 Multiplexing and Demultiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-diagram.svg" alt="Diagram: 1.8.3 Multiplexing and Demultiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-diagram.svg" alt="Diagram: 1.8.3 Multiplexing and Demultiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-sticky.svg" alt="Sticky Note: 1.8.3 Multiplexing and Demultiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-3-multiplexing-and-demultiplexing-sticky.svg" alt="Sticky Note: 1.8.3 Multiplexing and Demultiplexing" width="30%">
 </a>
 
 
@@ -2639,14 +2639,14 @@ Sender (multiplexing):            Receiver (demultiplexing):
 
 ### 1.8.4 Protocol Classification
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-handwritten.svg" alt="Handwritten: 1.8.4 Protocol Classification" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-handwritten.svg" alt="Handwritten: 1.8.4 Protocol Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-diagram.svg" alt="Diagram: 1.8.4 Protocol Classification" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-diagram.svg" alt="Diagram: 1.8.4 Protocol Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-sticky.svg" alt="Sticky Note: 1.8.4 Protocol Classification" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/1-8-4-protocol-classification-sticky.svg" alt="Sticky Note: 1.8.4 Protocol Classification" width="30%">
 </a>
 
 
@@ -2660,14 +2660,14 @@ Sender (multiplexing):            Receiver (demultiplexing):
 
 ### Pseudocode: Simple Protocol Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-handwritten.svg" alt="Handwritten: Pseudocode: Simple Protocol Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-handwritten.svg" alt="Handwritten: Pseudocode: Simple Protocol Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-diagram.svg" alt="Diagram: Pseudocode: Simple Protocol Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-diagram.svg" alt="Diagram: Pseudocode: Simple Protocol Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-sticky.svg" alt="Sticky Note: Pseudocode: Simple Protocol Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/pseudocode-simple-protocol-simulator-sticky.svg" alt="Sticky Note: Pseudocode: Simple Protocol Simulator" width="30%">
 </a>
 
 
@@ -2824,14 +2824,14 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 ### Q1: Why does the OSI model have 7 layers while TCP/IP has only 4?
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-handwritten.svg" alt="Handwritten: Why does the OSI model have 7 layers while TCP/IP has only 4?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-handwritten.svg" alt="Handwritten: Why does the OSI model have 7 layers while TCP/IP has only 4?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-diagram.svg" alt="Diagram: Why does the OSI model have 7 layers while TCP/IP has only 4?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-diagram.svg" alt="Diagram: Why does the OSI model have 7 layers while TCP/IP has only 4?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-sticky.svg" alt="Sticky Note: Why does the OSI model have 7 layers while TCP/IP has only 4?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-does-the-osi-model-have-7-layers-while-tcp-ip-has-only-4-sticky.svg" alt="Sticky Note: Why does the OSI model have 7 layers while TCP/IP has only 4?" width="30%">
 </a>
 
 
@@ -2839,14 +2839,14 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 ### Q2: Why are network layers useful? Wouldn't direct communication be simpler?
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-handwritten.svg" alt="Handwritten: Why are network layers useful? Wouldn't direct communication be simpler?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-handwritten.svg" alt="Handwritten: Why are network layers useful? Wouldn't direct communication be simpler?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-diagram.svg" alt="Diagram: Why are network layers useful? Wouldn't direct communication be simpler?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-diagram.svg" alt="Diagram: Why are network layers useful? Wouldn't direct communication be simpler?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-sticky.svg" alt="Sticky Note: Why are network layers useful? Wouldn't direct communication be simpler?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/why-are-network-layers-useful-wouldn-t-direct-communication-be-simpler-sticky.svg" alt="Sticky Note: Why are network layers useful? Wouldn't direct communication be simpler?" width="30%">
 </a>
 
 
@@ -2860,14 +2860,14 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 ### Q3: What is the difference between a protocol and an interface?
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-handwritten.svg" alt="Handwritten: What is the difference between a protocol and an interface?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-handwritten.svg" alt="Handwritten: What is the difference between a protocol and an interface?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-diagram.svg" alt="Diagram: What is the difference between a protocol and an interface?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-diagram.svg" alt="Diagram: What is the difference between a protocol and an interface?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-sticky.svg" alt="Sticky Note: What is the difference between a protocol and an interface?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-protocol-and-an-interface-sticky.svg" alt="Sticky Note: What is the difference between a protocol and an interface?" width="30%">
 </a>
 
 
@@ -2881,14 +2881,14 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 ### Q4: Explain multiplexing in computer networks.
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-handwritten.svg" alt="Handwritten: Explain multiplexing in computer networks." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-handwritten.svg" alt="Handwritten: Explain multiplexing in computer networks." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-diagram.svg" alt="Diagram: Explain multiplexing in computer networks." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-diagram.svg" alt="Diagram: Explain multiplexing in computer networks." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-sticky.svg" alt="Sticky Note: Explain multiplexing in computer networks." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/explain-multiplexing-in-computer-networks-sticky.svg" alt="Sticky Note: Explain multiplexing in computer networks." width="30%">
 </a>
 
 
@@ -2903,14 +2903,14 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 ### Q5: What is the difference between a hub, a switch, and a router?
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-handwritten.svg" alt="Handwritten: What is the difference between a hub, a switch, and a router?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-handwritten.svg" alt="Handwritten: What is the difference between a hub, a switch, and a router?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-diagram.svg" alt="Diagram: What is the difference between a hub, a switch, and a router?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-diagram.svg" alt="Diagram: What is the difference between a hub, a switch, and a router?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-sticky.svg" alt="Sticky Note: What is the difference between a hub, a switch, and a router?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-is-the-difference-between-a-hub-a-switch-and-a-router-sticky.svg" alt="Sticky Note: What is the difference between a hub, a switch, and a router?" width="30%">
 </a>
 
 
@@ -2922,14 +2922,14 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 ### Q6: What happens if you send 1 GB of data over a network with 1500 byte MTU?
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-handwritten.svg" alt="Handwritten: What happens if you send 1 GB of data over a network with 1500 byte MTU?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-handwritten.svg" alt="Handwritten: What happens if you send 1 GB of data over a network with 1500 byte MTU?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-diagram.svg" alt="Diagram: What happens if you send 1 GB of data over a network with 1500 byte MTU?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-diagram.svg" alt="Diagram: What happens if you send 1 GB of data over a network with 1500 byte MTU?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-sticky.svg" alt="Sticky Note: What happens if you send 1 GB of data over a network with 1500 byte MTU?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/what-happens-if-you-send-1-gb-of-data-over-a-network-with-1500-byte-mtu-sticky.svg" alt="Sticky Note: What happens if you send 1 GB of data over a network with 1500 byte MTU?" width="30%">
 </a>
 
 
@@ -2945,14 +2945,14 @@ LAN throughput with 64 KB window: 513.02 Mbps (utilization: 51.3%)
 
 ### The Internet Uses TCP/IP
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-handwritten.svg" alt="Handwritten: The Internet Uses TCP/IP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-handwritten.svg" alt="Handwritten: The Internet Uses TCP/IP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-diagram.svg" alt="Diagram: The Internet Uses TCP/IP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-diagram.svg" alt="Diagram: The Internet Uses TCP/IP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-sticky.svg" alt="Sticky Note: The Internet Uses TCP/IP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/the-internet-uses-tcp-ip-sticky.svg" alt="Sticky Note: The Internet Uses TCP/IP" width="30%">
 </a>
 
 
@@ -2966,14 +2966,14 @@ The global Internet is built entirely on the TCP/IP protocol suite:
 
 ### OSI in Teaching and Reference
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-handwritten.svg" alt="Handwritten: OSI in Teaching and Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-handwritten.svg" alt="Handwritten: OSI in Teaching and Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-diagram.svg" alt="Diagram: OSI in Teaching and Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-diagram.svg" alt="Diagram: OSI in Teaching and Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-sticky.svg" alt="Sticky Note: OSI in Teaching and Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/osi-in-teaching-and-reference-sticky.svg" alt="Sticky Note: OSI in Teaching and Reference" width="30%">
 </a>
 
 
@@ -2985,14 +2985,14 @@ The OSI model is primarily used as a **pedagogical tool**:
 
 ### Real-World Protocol Stack: Loading a Web Page
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-handwritten.svg" alt="Handwritten: Real-World Protocol Stack: Loading a Web Page" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-handwritten.svg" alt="Handwritten: Real-World Protocol Stack: Loading a Web Page" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-diagram.svg" alt="Diagram: Real-World Protocol Stack: Loading a Web Page" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-diagram.svg" alt="Diagram: Real-World Protocol Stack: Loading a Web Page" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-sticky.svg" alt="Sticky Note: Real-World Protocol Stack: Loading a Web Page" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/real-world-protocol-stack-loading-a-web-page-sticky.svg" alt="Sticky Note: Real-World Protocol Stack: Loading a Web Page" width="30%">
 </a>
 
 
@@ -3075,14 +3075,14 @@ Internet standards are developed through an open, consensus-based process manage
 
 ### Scenario
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/scenario-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/scenario-handwritten.svg" alt="Handwritten: Scenario" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/scenario-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/scenario-handwritten.svg" alt="Handwritten: Scenario" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/scenario-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/scenario-diagram.svg" alt="Diagram: Scenario" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/scenario-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/scenario-diagram.svg" alt="Diagram: Scenario" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/scenario-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/scenario-sticky.svg" alt="Sticky Note: Scenario" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/scenario-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/scenario-sticky.svg" alt="Sticky Note: Scenario" width="30%">
 </a>
 
 
@@ -3090,14 +3090,14 @@ Internet standards are developed through an open, consensus-based process manage
 
 ### Requirements
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/requirements-handwritten.svg" alt="Handwritten: Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/requirements-diagram.svg" alt="Diagram: Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/requirements-sticky.svg" alt="Sticky Note: Requirements" width="30%">
 </a>
 
 
@@ -3109,14 +3109,14 @@ Internet standards are developed through an open, consensus-based process manage
 
 ### Solution
 
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/solution-handwritten.svg" alt="Handwritten: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/solution-handwritten.svg" alt="Handwritten: Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/solution-diagram.svg" alt="Diagram: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/solution-diagram.svg" alt="Diagram: Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/01-introduction/solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/01-introduction/solution-sticky.svg" alt="Sticky Note: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/01-introduction/solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/01-introduction/solution-sticky.svg" alt="Sticky Note: Solution" width="30%">
 </a>
 
 

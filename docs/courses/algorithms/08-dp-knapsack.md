@@ -74,14 +74,14 @@ flowchart LR
 
 ### 8.1 0/1 Knapsack
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-handwritten.svg" alt="Handwritten: 8.1 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-handwritten.svg" alt="Handwritten: 8.1 0/1 Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-diagram.svg" alt="Diagram: 8.1 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-diagram.svg" alt="Diagram: 8.1 0/1 Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-sticky.svg" alt="Sticky Note: 8.1 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-1-0-1-knapsack-sticky.svg" alt="Sticky Note: 8.1 0/1 Knapsack" width="30%">
 </a>
 
 
@@ -278,14 +278,14 @@ int knapsack01_1D(const std::vector<int>& w, const std::vector<int>& v, int W) {
 
 ### 8.2 Fractional Knapsack (Greedy)
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-handwritten.svg" alt="Handwritten: 8.2 Fractional Knapsack (Greedy)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-handwritten.svg" alt="Handwritten: 8.2 Fractional Knapsack (Greedy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-diagram.svg" alt="Diagram: 8.2 Fractional Knapsack (Greedy)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-diagram.svg" alt="Diagram: 8.2 Fractional Knapsack (Greedy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-sticky.svg" alt="Sticky Note: 8.2 Fractional Knapsack (Greedy)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-2-fractional-knapsack-greedy-sticky.svg" alt="Sticky Note: 8.2 Fractional Knapsack (Greedy)" width="30%">
 </a>
 
 
@@ -454,14 +454,14 @@ class FractionalKnapsack {
 
 ### 8.3 Bounded Knapsack
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-handwritten.svg" alt="Handwritten: 8.3 Bounded Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-handwritten.svg" alt="Handwritten: 8.3 Bounded Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-diagram.svg" alt="Diagram: 8.3 Bounded Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-diagram.svg" alt="Diagram: 8.3 Bounded Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-sticky.svg" alt="Sticky Note: 8.3 Bounded Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-3-bounded-knapsack-sticky.svg" alt="Sticky Note: 8.3 Bounded Knapsack" width="30%">
 </a>
 
 
@@ -632,14 +632,14 @@ public class BoundedKnapsack {
 
 ### 8.4 Unbounded Knapsack
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-handwritten.svg" alt="Handwritten: 8.4 Unbounded Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-handwritten.svg" alt="Handwritten: 8.4 Unbounded Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-diagram.svg" alt="Diagram: 8.4 Unbounded Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-diagram.svg" alt="Diagram: 8.4 Unbounded Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-sticky.svg" alt="Sticky Note: 8.4 Unbounded Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-4-unbounded-knapsack-sticky.svg" alt="Sticky Note: 8.4 Unbounded Knapsack" width="30%">
 </a>
 
 
@@ -781,14 +781,14 @@ public class UnboundedKnapsack {
 
 ### 8.5 Subset Sum
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-handwritten.svg" alt="Handwritten: 8.5 Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-handwritten.svg" alt="Handwritten: 8.5 Subset Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-diagram.svg" alt="Diagram: 8.5 Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-diagram.svg" alt="Diagram: 8.5 Subset Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-sticky.svg" alt="Sticky Note: 8.5 Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-5-subset-sum-sticky.svg" alt="Sticky Note: 8.5 Subset Sum" width="30%">
 </a>
 
 
@@ -919,14 +919,14 @@ public class SubsetSum {
 
 ### 8.6 Equal Partition Subset Sum
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-handwritten.svg" alt="Handwritten: 8.6 Equal Partition Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-handwritten.svg" alt="Handwritten: 8.6 Equal Partition Subset Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-diagram.svg" alt="Diagram: 8.6 Equal Partition Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-diagram.svg" alt="Diagram: 8.6 Equal Partition Subset Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-sticky.svg" alt="Sticky Note: 8.6 Equal Partition Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-6-equal-partition-subset-sum-sticky.svg" alt="Sticky Note: 8.6 Equal Partition Subset Sum" width="30%">
 </a>
 
 
@@ -1033,14 +1033,14 @@ public class EqualPartition {
 
 ### 8.7 Coin Change (Minimum Coins)
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-handwritten.svg" alt="Handwritten: 8.7 Coin Change (Minimum Coins)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-handwritten.svg" alt="Handwritten: 8.7 Coin Change (Minimum Coins)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-diagram.svg" alt="Diagram: 8.7 Coin Change (Minimum Coins)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-diagram.svg" alt="Diagram: 8.7 Coin Change (Minimum Coins)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-sticky.svg" alt="Sticky Note: 8.7 Coin Change (Minimum Coins)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-7-coin-change-minimum-coins-sticky.svg" alt="Sticky Note: 8.7 Coin Change (Minimum Coins)" width="30%">
 </a>
 
 
@@ -1189,14 +1189,14 @@ public class CoinChange {
 
 ### 8.8 Target Sum
 
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-handwritten.svg" alt="Handwritten: 8.8 Target Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-handwritten.svg" alt="Handwritten: 8.8 Target Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-diagram.svg" alt="Diagram: 8.8 Target Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-diagram.svg" alt="Diagram: 8.8 Target Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-sticky.svg" alt="Sticky Note: 8.8 Target Sum" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/08-dp-knapsack/8-8-target-sum-sticky.svg" alt="Sticky Note: 8.8 Target Sum" width="30%">
 </a>
 
 

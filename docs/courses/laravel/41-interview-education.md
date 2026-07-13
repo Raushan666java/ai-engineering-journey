@@ -38,14 +38,14 @@ flowchart LR
 
 ### Q1: What are the core data models in an EdTech platform, and how do they relate?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-handwritten.svg" alt="Handwritten: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-handwritten.svg" alt="Handwritten: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-diagram.svg" alt="Diagram: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-diagram.svg" alt="Diagram: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-sticky.svg" alt="Sticky Note: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-are-the-core-data-models-in-an-edtech-platform-and-how-do-they-relate-sticky.svg" alt="Sticky Note: What are the core data models in an EdTech platform, and how do they relate?" width="30%">
 </a>
 
 
@@ -53,14 +53,14 @@ The five core models are **Student**, **Course**, **Enrollment**, **Assessment**
 
 ### Q2: How do you model academic terms, semesters, and academic years in a relational database?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-handwritten.svg" alt="Handwritten: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-handwritten.svg" alt="Handwritten: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-diagram.svg" alt="Diagram: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-diagram.svg" alt="Diagram: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-sticky.svg" alt="Sticky Note: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-model-academic-terms-semesters-and-academic-years-in-a-relational-database-sticky.svg" alt="Sticky Note: How do you model academic terms, semesters, and academic years in a relational database?" width="30%">
 </a>
 
 
@@ -68,14 +68,14 @@ Create a `semesters` table with `id`, `name` (e.g., "Fall 2025"), `start_date`, 
 
 ### Q3: What is a learning management system (LMS) from a developer's perspective?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-handwritten.svg" alt="Handwritten: What is a learning management system (LMS) from a developer's perspective?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-handwritten.svg" alt="Handwritten: What is a learning management system (LMS) from a developer's perspective?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-diagram.svg" alt="Diagram: What is a learning management system (LMS) from a developer's perspective?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-diagram.svg" alt="Diagram: What is a learning management system (LMS) from a developer's perspective?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-sticky.svg" alt="Sticky Note: What is a learning management system (LMS) from a developer's perspective?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-is-a-learning-management-system-lms-from-a-developer-s-perspective-sticky.svg" alt="Sticky Note: What is a learning management system (LMS) from a developer's perspective?" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ An LMS is a centralized platform that manages the lifecycle of learning: course 
 
 ### Q4: How do you handle prerequisite validation in an enrollment workflow?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-handwritten.svg" alt="Handwritten: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-handwritten.svg" alt="Handwritten: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-diagram.svg" alt="Diagram: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-diagram.svg" alt="Diagram: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-sticky.svg" alt="Sticky Note: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-prerequisite-validation-in-an-enrollment-workflow-sticky.svg" alt="Sticky Note: How do you handle prerequisite validation in an enrollment workflow?" width="30%">
 </a>
 
 
@@ -125,14 +125,14 @@ This keeps the logic in a single reusable rule class rather than scattered acros
 
 ### Q6: What student data privacy regulations apply to EdTech, and how do they affect development?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-handwritten.svg" alt="Handwritten: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-handwritten.svg" alt="Handwritten: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-diagram.svg" alt="Diagram: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-diagram.svg" alt="Diagram: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-sticky.svg" alt="Sticky Note: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-student-data-privacy-regulations-apply-to-edtech-and-how-do-they-affect-development-sticky.svg" alt="Sticky Note: What student data privacy regulations apply to EdTech, and how do they affect development?" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ This keeps the logic in a single reusable rule class rather than scattered acros
 
 ### Q7: How would you build a personalized learning path agent in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-handwritten.svg" alt="Handwritten: How would you build a personalized learning path agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-handwritten.svg" alt="Handwritten: How would you build a personalized learning path agent in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-diagram.svg" alt="Diagram: How would you build a personalized learning path agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-diagram.svg" alt="Diagram: How would you build a personalized learning path agent in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-sticky.svg" alt="Sticky Note: How would you build a personalized learning path agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-a-personalized-learning-path-agent-in-laravel-sticky.svg" alt="Sticky Note: How would you build a personalized learning path agent in Laravel?" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ The `CourseCatalogTool` queries available courses by department and difficulty. 
 
 ### Q8: Implement an AI-powered essay grading system with rubric-based scoring.
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-handwritten.svg" alt="Handwritten: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-handwritten.svg" alt="Handwritten: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-diagram.svg" alt="Diagram: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-diagram.svg" alt="Diagram: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-sticky.svg" alt="Sticky Note: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/implement-an-ai-powered-essay-grading-system-with-rubric-based-scoring-sticky.svg" alt="Sticky Note: Implement an AI-powered essay grading system with rubric-based scoring." width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ The rubric JSON contains criteria like `{"clarity": {"max": 25, "descriptor": ".
 
 ### Q9: Design a content generation agent that produces quiz questions from a lesson plan.
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-handwritten.svg" alt="Handwritten: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-handwritten.svg" alt="Handwritten: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-diagram.svg" alt="Diagram: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-diagram.svg" alt="Diagram: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-sticky.svg" alt="Sticky Note: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/design-a-content-generation-agent-that-produces-quiz-questions-from-a-lesson-plan-sticky.svg" alt="Sticky Note: Design a content generation agent that produces quiz questions from a lesson plan." width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ Store generated questions in an `assessment_questions` table with a `generated_b
 
 ### Q10: Build an adaptive quiz engine that adjusts difficulty in real time.
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-handwritten.svg" alt="Handwritten: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-handwritten.svg" alt="Handwritten: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-diagram.svg" alt="Diagram: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-diagram.svg" alt="Diagram: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-sticky.svg" alt="Sticky Note: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/build-an-adaptive-quiz-engine-that-adjusts-difficulty-in-real-time-sticky.svg" alt="Sticky Note: Build an adaptive quiz engine that adjusts difficulty in real time." width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ Store the session state in cache: `Cache::put("quiz:{$studentId}:{$assessmentId}
 
 ### Q11: How would you implement a student progress tracking agent with an early warning system?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-handwritten.svg" alt="Handwritten: How would you implement a student progress tracking agent with an early warning system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-handwritten.svg" alt="Handwritten: How would you implement a student progress tracking agent with an early warning system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-diagram.svg" alt="Diagram: How would you implement a student progress tracking agent with an early warning system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-diagram.svg" alt="Diagram: How would you implement a student progress tracking agent with an early warning system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-sticky.svg" alt="Sticky Note: How would you implement a student progress tracking agent with an early warning system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-implement-a-student-progress-tracking-agent-with-an-early-warning-system-sticky.svg" alt="Sticky Note: How would you implement a student progress tracking agent with an early warning system?" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ Schedule this via `app/Console/Kernel.php` to run weekly, and dispatch notificat
 
 ### Q12: How do you automate enrollment workflows with waitlist management in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-handwritten.svg" alt="Handwritten: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-handwritten.svg" alt="Handwritten: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-diagram.svg" alt="Diagram: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-diagram.svg" alt="Diagram: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-sticky.svg" alt="Sticky Note: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-automate-enrollment-workflows-with-waitlist-management-in-laravel-sticky.svg" alt="Sticky Note: How do you automate enrollment workflows with waitlist management in Laravel?" width="30%">
 </a>
 
 
@@ -436,14 +436,14 @@ Create an Artisan command `enrollments:promote-waitlisted` that checks daily for
 
 ### Q13: Build a curriculum recommendation system using vector similarity search.
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-handwritten.svg" alt="Handwritten: Build a curriculum recommendation system using vector similarity search." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-handwritten.svg" alt="Handwritten: Build a curriculum recommendation system using vector similarity search." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-diagram.svg" alt="Diagram: Build a curriculum recommendation system using vector similarity search." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-diagram.svg" alt="Diagram: Build a curriculum recommendation system using vector similarity search." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-sticky.svg" alt="Sticky Note: Build a curriculum recommendation system using vector similarity search." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/build-a-curriculum-recommendation-system-using-vector-similarity-search-sticky.svg" alt="Sticky Note: Build a curriculum recommendation system using vector similarity search." width="30%">
 </a>
 
 
@@ -480,14 +480,14 @@ Use pgvector with HNSW indexing on a `topics_embedding` column in the `courses` 
 
 ### Q14: How would you build an AI agent that generates personalized study plans for exam preparation?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-handwritten.svg" alt="Handwritten: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-handwritten.svg" alt="Handwritten: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-diagram.svg" alt="Diagram: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-diagram.svg" alt="Diagram: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-sticky.svg" alt="Sticky Note: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-would-you-build-an-ai-agent-that-generates-personalized-study-plans-for-exam-preparation-sticky.svg" alt="Sticky Note: How would you build an AI agent that generates personalized study plans for exam preparation?" width="30%">
 </a>
 
 
@@ -520,14 +520,14 @@ The agent outputs a structured study plan with daily activities, estimated time,
 
 ### Q15: How do you architect a multi-tenant EdTech platform where each school has isolated data?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-handwritten.svg" alt="Handwritten: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-handwritten.svg" alt="Handwritten: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-diagram.svg" alt="Diagram: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-diagram.svg" alt="Diagram: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-sticky.svg" alt="Sticky Note: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-architect-a-multi-tenant-edtech-platform-where-each-school-has-isolated-data-sticky.svg" alt="Sticky Note: How do you architect a multi-tenant EdTech platform where each school has isolated data?" width="30%">
 </a>
 
 
@@ -577,14 +577,14 @@ Scale in three dimensions:
 
 ### Q17: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-handwritten.svg" alt="Handwritten: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-handwritten.svg" alt="Handwritten: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-diagram.svg" alt="Diagram: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-diagram.svg" alt="Diagram: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-sticky.svg" alt="Sticky Note: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-ensure-ferpa-coppa-compliance-in-your-laravel-data-architecture-sticky.svg" alt="Sticky Note: How do you ensure FERPA/COPPA compliance in your Laravel data architecture?" width="30%">
 </a>
 
 
@@ -657,14 +657,14 @@ This keeps a unified API surface while allowing each education agent to evolve i
 
 ### Q19: What database indexing strategy would you use for an EdTech application with heavy read patterns?
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-handwritten.svg" alt="Handwritten: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-handwritten.svg" alt="Handwritten: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-diagram.svg" alt="Diagram: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-diagram.svg" alt="Diagram: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-sticky.svg" alt="Sticky Note: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/what-database-indexing-strategy-would-you-use-for-an-edtech-application-with-heavy-read-patterns-sticky.svg" alt="Sticky Note: What database indexing strategy would you use for an EdTech application with heavy read patterns?" width="30%">
 </a>
 
 
@@ -704,14 +704,14 @@ Include composite indexes that match the `WHERE` + `ORDER BY` clauses of your mo
 
 ### Q20: "Design an AI-powered learning platform from scratch." Walk us through your approach.
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-handwritten.svg" alt="Handwritten: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-handwritten.svg" alt="Handwritten: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-diagram.svg" alt="Diagram: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-diagram.svg" alt="Diagram: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-sticky.svg" alt="Sticky Note: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/design-an-ai-powered-learning-platform-from-scratch-walk-us-through-your-approach-sticky.svg" alt="Sticky Note: "Design an AI-powered learning platform from scratch." Walk us through your approach." width="30%">
 </a>
 
 
@@ -804,14 +804,14 @@ The key design decision is **confidence-based routing**: high-confidence AI grad
 
 ### Q22: "Describe an adaptive learning system architecture that personalizes content for each student."
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-handwritten.svg" alt="Handwritten: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-handwritten.svg" alt="Handwritten: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-diagram.svg" alt="Diagram: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-diagram.svg" alt="Diagram: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-sticky.svg" alt="Sticky Note: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/describe-an-adaptive-learning-system-architecture-that-personalizes-content-for-each-student-sticky.svg" alt="Sticky Note: "Describe an adaptive learning system architecture that personalizes content for each student."" width="30%">
 </a>
 
 
@@ -954,14 +954,14 @@ class MigrateStudentsJob implements ShouldQueue
 
 ### Q25: "How do you handle course content versioning when instructors update lesson materials mid-semester?"
 
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-handwritten.svg" alt="Handwritten: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-handwritten.svg" alt="Handwritten: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-diagram.svg" alt="Diagram: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-diagram.svg" alt="Diagram: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-sticky.svg" alt="Sticky Note: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
+<a href="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/41-interview-education/how-do-you-handle-course-content-versioning-when-instructors-update-lesson-materials-mid-semester-sticky.svg" alt="Sticky Note: "How do you handle course content versioning when instructors update lesson materials mid-semester?"" width="30%">
 </a>
 
 

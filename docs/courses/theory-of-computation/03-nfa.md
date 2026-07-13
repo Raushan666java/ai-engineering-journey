@@ -44,14 +44,14 @@ flowchart LR
 
 ### 2.1 The Concept of Nondeterminism
 
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-handwritten.svg" alt="Handwritten: 2.1 The Concept of Nondeterminism" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-handwritten.svg" alt="Handwritten: 2.1 The Concept of Nondeterminism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-diagram.svg" alt="Diagram: 2.1 The Concept of Nondeterminism" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-diagram.svg" alt="Diagram: 2.1 The Concept of Nondeterminism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-sticky.svg" alt="Sticky Note: 2.1 The Concept of Nondeterminism" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-sticky.svg" alt="Sticky Note: 2.1 The Concept of Nondeterminism" width="30%">
 </a>
 
 
@@ -61,14 +61,14 @@ Nondeterminism is a powerful *descriptive* tool: many languages are much easier 
 
 ### 2.2 Formal Definition of an NFA
 
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-handwritten.svg" alt="Handwritten: 2.2 Formal Definition of an NFA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-handwritten.svg" alt="Handwritten: 2.2 Formal Definition of an NFA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-diagram.svg" alt="Diagram: 2.2 Formal Definition of an NFA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-diagram.svg" alt="Diagram: 2.2 Formal Definition of an NFA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-sticky.svg" alt="Sticky Note: 2.2 Formal Definition of an NFA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-sticky.svg" alt="Sticky Note: 2.2 Formal Definition of an NFA" width="30%">
 </a>
 
 
@@ -84,14 +84,14 @@ The key difference from DFA: Î´ returns a **set** of possible next states rath
 
 ### 2.3 Computation of an NFA
 
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-handwritten.svg" alt="Handwritten: 2.3 Computation of an NFA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-handwritten.svg" alt="Handwritten: 2.3 Computation of an NFA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-diagram.svg" alt="Diagram: 2.3 Computation of an NFA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-diagram.svg" alt="Diagram: 2.3 Computation of an NFA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-sticky.svg" alt="Sticky Note: 2.3 Computation of an NFA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-sticky.svg" alt="Sticky Note: 2.3 Computation of an NFA" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ Language recognized: L(N) = { w | Î´Ì‚(qâ‚€, w) âˆ© F â‰  âˆ�
 
 ### 2.4 NFA with Epsilon Transitions
 
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-handwritten.svg" alt="Handwritten: 2.4 NFA with Epsilon Transitions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-handwritten.svg" alt="Handwritten: 2.4 NFA with Epsilon Transitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-diagram.svg" alt="Diagram: 2.4 NFA with Epsilon Transitions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-diagram.svg" alt="Diagram: 2.4 NFA with Epsilon Transitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-sticky.svg" alt="Sticky Note: 2.4 NFA with Epsilon Transitions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-sticky.svg" alt="Sticky Note: 2.4 NFA with Epsilon Transitions" width="30%">
 </a>
 
 
@@ -135,14 +135,14 @@ NFA-Îµ are strictly a convenience → they add no computational power. Both st
 
 ### 2.5 Equivalence of NFA and DFA: Subset Construction
 
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-handwritten.svg" alt="Handwritten: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-handwritten.svg" alt="Handwritten: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-diagram.svg" alt="Diagram: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-diagram.svg" alt="Diagram: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-sticky.svg" alt="Sticky Note: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-sticky.svg" alt="Sticky Note: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
 </a>
 
 
@@ -161,14 +161,14 @@ Given NFA N = (Q_N, Î£, Î´_N, qâ‚€, F_N), construct DFA D = (Q_D, Î£,
 
 ### 2.6 Why Nondeterminism Matters
 
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-handwritten.svg" alt="Handwritten: 2.6 Why Nondeterminism Matters" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-handwritten.svg" alt="Handwritten: 2.6 Why Nondeterminism Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-diagram.svg" alt="Diagram: 2.6 Why Nondeterminism Matters" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-diagram.svg" alt="Diagram: 2.6 Why Nondeterminism Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-sticky.svg" alt="Sticky Note: 2.6 Why Nondeterminism Matters" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-sticky.svg" alt="Sticky Note: 2.6 Why Nondeterminism Matters" width="30%">
 </a>
 
 

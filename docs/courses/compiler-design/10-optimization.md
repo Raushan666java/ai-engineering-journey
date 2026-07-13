@@ -40,14 +40,14 @@ flowchart LR
 
 ### Machine-Independent versus Machine-Dependent Optimization
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-handwritten.svg" alt="Handwritten: Machine-Independent versus Machine-Dependent Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-handwritten.svg" alt="Handwritten: Machine-Independent versus Machine-Dependent Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-diagram.svg" alt="Diagram: Machine-Independent versus Machine-Dependent Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-diagram.svg" alt="Diagram: Machine-Independent versus Machine-Dependent Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-sticky.svg" alt="Sticky Note: Machine-Independent versus Machine-Dependent Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/machine-independent-versus-machine-dependent-optimization-sticky.svg" alt="Sticky Note: Machine-Independent versus Machine-Dependent Optimization" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ Code optimization encompasses any transformation of intermediate or target code 
 
 ### Peephole Optimization
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-handwritten.svg" alt="Handwritten: Peephole Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-handwritten.svg" alt="Handwritten: Peephole Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-diagram.svg" alt="Diagram: Peephole Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-diagram.svg" alt="Diagram: Peephole Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-sticky.svg" alt="Sticky Note: Peephole Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/peephole-optimization-sticky.svg" alt="Sticky Note: Peephole Optimization" width="30%">
 </a>
 
 
@@ -90,14 +90,14 @@ Peephole optimization examines a short window (typically 2?5 instructions) of co
 
 ### Complete TypeScript Peephole Optimizer
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-handwritten.svg" alt="Handwritten: Complete TypeScript Peephole Optimizer" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-handwritten.svg" alt="Handwritten: Complete TypeScript Peephole Optimizer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-diagram.svg" alt="Diagram: Complete TypeScript Peephole Optimizer" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-diagram.svg" alt="Diagram: Complete TypeScript Peephole Optimizer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-sticky.svg" alt="Sticky Note: Complete TypeScript Peephole Optimizer" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/complete-typescript-peephole-optimizer-sticky.svg" alt="Sticky Note: Complete TypeScript Peephole Optimizer" width="30%">
 </a>
 
 
@@ -459,14 +459,14 @@ class PeepholeOptimizer {
 
 ### Common-Subexpression Elimination
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-handwritten.svg" alt="Handwritten: Common-Subexpression Elimination" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-handwritten.svg" alt="Handwritten: Common-Subexpression Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-diagram.svg" alt="Diagram: Common-Subexpression Elimination" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-diagram.svg" alt="Diagram: Common-Subexpression Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-sticky.svg" alt="Sticky Note: Common-Subexpression Elimination" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/common-subexpression-elimination-sticky.svg" alt="Sticky Note: Common-Subexpression Elimination" width="30%">
 </a>
 
 
@@ -523,14 +523,14 @@ class GlobalCSE {
 
 ### Dead-Code Elimination with Side-Effect Analysis
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-handwritten.svg" alt="Handwritten: Dead-Code Elimination with Side-Effect Analysis" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-handwritten.svg" alt="Handwritten: Dead-Code Elimination with Side-Effect Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-diagram.svg" alt="Diagram: Dead-Code Elimination with Side-Effect Analysis" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-diagram.svg" alt="Diagram: Dead-Code Elimination with Side-Effect Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-sticky.svg" alt="Sticky Note: Dead-Code Elimination with Side-Effect Analysis" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/dead-code-elimination-with-side-effect-analysis-sticky.svg" alt="Sticky Note: Dead-Code Elimination with Side-Effect Analysis" width="30%">
 </a>
 
 
@@ -547,14 +547,14 @@ function hasSideEffects(instr: TACInstr): boolean {
 
 ### Optimization-Enabling Analyses
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-handwritten.svg" alt="Handwritten: Optimization-Enabling Analyses" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-handwritten.svg" alt="Handwritten: Optimization-Enabling Analyses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-diagram.svg" alt="Diagram: Optimization-Enabling Analyses" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-diagram.svg" alt="Diagram: Optimization-Enabling Analyses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-sticky.svg" alt="Sticky Note: Optimization-Enabling Analyses" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/optimization-enabling-analyses-sticky.svg" alt="Sticky Note: Optimization-Enabling Analyses" width="30%">
 </a>
 
 
@@ -571,14 +571,14 @@ These analyses are covered in depth in Chapters 11 and 12.
 
 ### Fixed-Point Optimization Loop
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-handwritten.svg" alt="Handwritten: Fixed-Point Optimization Loop" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-handwritten.svg" alt="Handwritten: Fixed-Point Optimization Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-diagram.svg" alt="Diagram: Fixed-Point Optimization Loop" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-diagram.svg" alt="Diagram: Fixed-Point Optimization Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-sticky.svg" alt="Sticky Note: Fixed-Point Optimization Loop" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/fixed-point-optimization-loop-sticky.svg" alt="Sticky Note: Fixed-Point Optimization Loop" width="30%">
 </a>
 
 
@@ -597,14 +597,14 @@ flowchart LR
 
 ### Complete Demo
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-handwritten.svg" alt="Handwritten: Complete Demo" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-handwritten.svg" alt="Handwritten: Complete Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-diagram.svg" alt="Diagram: Complete Demo" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-diagram.svg" alt="Diagram: Complete Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-sticky.svg" alt="Sticky Note: Complete Demo" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/complete-demo-sticky.svg" alt="Sticky Note: Complete Demo" width="30%">
 </a>
 
 
@@ -670,14 +670,14 @@ console.log(`\nSummary: ${testCode.length} ? ${opt3.length} instructions (${((1 
 
 ### Concept Comparison
 
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/10-optimization/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
 </a>
 
 

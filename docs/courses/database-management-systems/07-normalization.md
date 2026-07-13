@@ -46,14 +46,14 @@ flowchart LR
 
 ### 7.1 The Problem: Anomalies in Unnormalized Data
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-handwritten.svg" alt="Handwritten: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-handwritten.svg" alt="Handwritten: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-diagram.svg" alt="Diagram: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-diagram.svg" alt="Diagram: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-sticky.svg" alt="Sticky Note: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-1-the-problem-anomalies-in-unnormalized-data-sticky.svg" alt="Sticky Note: 7.1 The Problem: Anomalies in Unnormalized Data" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ This single table stores all information about students, courses, instructors, a
 
 ### 7.2 Functional Dependencies
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-handwritten.svg" alt="Handwritten: 7.2 Functional Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-handwritten.svg" alt="Handwritten: 7.2 Functional Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-diagram.svg" alt="Diagram: 7.2 Functional Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-diagram.svg" alt="Diagram: 7.2 Functional Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-sticky.svg" alt="Sticky Note: 7.2 Functional Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-2-functional-dependencies-sticky.svg" alt="Sticky Note: 7.2 Functional Dependencies" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ If this condition fails for any two tuples, the FD does NOT hold.
 
 ### 7.3 Armstrong's Axioms (FD Inference Rules)
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-handwritten.svg" alt="Handwritten: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-handwritten.svg" alt="Handwritten: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-diagram.svg" alt="Diagram: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-diagram.svg" alt="Diagram: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-sticky.svg" alt="Sticky Note: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-3-armstrong-s-axioms-fd-inference-rules-sticky.svg" alt="Sticky Note: 7.3 Armstrong's Axioms (FD Inference Rules)" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ Armstrong's axioms are a complete and sound set of inference rules for deriving 
 
 ### 7.4 Attribute Closure
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-handwritten.svg" alt="Handwritten: 7.4 Attribute Closure" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-handwritten.svg" alt="Handwritten: 7.4 Attribute Closure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-diagram.svg" alt="Diagram: 7.4 Attribute Closure" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-diagram.svg" alt="Diagram: 7.4 Attribute Closure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-sticky.svg" alt="Sticky Note: 7.4 Attribute Closure" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-4-attribute-closure-sticky.svg" alt="Sticky Note: 7.4 Attribute Closure" width="30%">
 </a>
 
 
@@ -361,14 +361,14 @@ FUNCTION ComputeClosure(X, F):
 
 ### 7.5 Finding Candidate Keys from Functional Dependencies
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-handwritten.svg" alt="Handwritten: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-handwritten.svg" alt="Handwritten: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-diagram.svg" alt="Diagram: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-diagram.svg" alt="Diagram: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-sticky.svg" alt="Sticky Note: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-5-finding-candidate-keys-from-functional-dependencies-sticky.svg" alt="Sticky Note: 7.5 Finding Candidate Keys from Functional Dependencies" width="30%">
 </a>
 
 
@@ -480,14 +480,14 @@ Compute closure(C+) with F:
 
 ### 7.6 First Normal Form (1NF)
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-handwritten.svg" alt="Handwritten: 7.6 First Normal Form (1NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-handwritten.svg" alt="Handwritten: 7.6 First Normal Form (1NF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-diagram.svg" alt="Diagram: 7.6 First Normal Form (1NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-diagram.svg" alt="Diagram: 7.6 First Normal Form (1NF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-sticky.svg" alt="Sticky Note: 7.6 First Normal Form (1NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-6-first-normal-form-1nf-sticky.svg" alt="Sticky Note: 7.6 First Normal Form (1NF)" width="30%">
 </a>
 
 
@@ -598,14 +598,14 @@ CREATE TABLE enrollment (
 
 ### 7.7 Second Normal Form (2NF)
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-handwritten.svg" alt="Handwritten: 7.7 Second Normal Form (2NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-handwritten.svg" alt="Handwritten: 7.7 Second Normal Form (2NF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-diagram.svg" alt="Diagram: 7.7 Second Normal Form (2NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-diagram.svg" alt="Diagram: 7.7 Second Normal Form (2NF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-sticky.svg" alt="Sticky Note: 7.7 Second Normal Form (2NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-7-second-normal-form-2nf-sticky.svg" alt="Sticky Note: 7.7 Second Normal Form (2NF)" width="30%">
 </a>
 
 
@@ -747,14 +747,14 @@ R3: ENROLLMENT
 
 ### 7.8 Third Normal Form (3NF)
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-handwritten.svg" alt="Handwritten: 7.8 Third Normal Form (3NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-handwritten.svg" alt="Handwritten: 7.8 Third Normal Form (3NF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-diagram.svg" alt="Diagram: 7.8 Third Normal Form (3NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-diagram.svg" alt="Diagram: 7.8 Third Normal Form (3NF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-sticky.svg" alt="Sticky Note: 7.8 Third Normal Form (3NF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-8-third-normal-form-3nf-sticky.svg" alt="Sticky Note: 7.8 Third Normal Form (3NF)" width="30%">
 </a>
 
 
@@ -969,14 +969,14 @@ CREATE TABLE order_line (
 
 ### 7.9 Boyce-Codd Normal Form (BCNF)
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-handwritten.svg" alt="Handwritten: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-handwritten.svg" alt="Handwritten: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-diagram.svg" alt="Diagram: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-diagram.svg" alt="Diagram: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-sticky.svg" alt="Sticky Note: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-9-boyce-codd-normal-form-bcnf-sticky.svg" alt="Sticky Note: 7.9 Boyce-Codd Normal Form (BCNF)" width="30%">
 </a>
 
 
@@ -1121,14 +1121,14 @@ BCNF decomposition by this method ALWAYS produces lossless joins.
 
 ### 7.10 Lossless Join Decomposition
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-handwritten.svg" alt="Handwritten: 7.10 Lossless Join Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-handwritten.svg" alt="Handwritten: 7.10 Lossless Join Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-diagram.svg" alt="Diagram: 7.10 Lossless Join Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-diagram.svg" alt="Diagram: 7.10 Lossless Join Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-sticky.svg" alt="Sticky Note: 7.10 Lossless Join Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-10-lossless-join-decomposition-sticky.svg" alt="Sticky Note: 7.10 Lossless Join Decomposition" width="30%">
 </a>
 
 
@@ -1214,14 +1214,14 @@ FUNCTION IsLossless(R, decomposition, F):
 
 ### 7.11 Dependency Preservation
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-handwritten.svg" alt="Handwritten: 7.11 Dependency Preservation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-handwritten.svg" alt="Handwritten: 7.11 Dependency Preservation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-diagram.svg" alt="Diagram: 7.11 Dependency Preservation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-diagram.svg" alt="Diagram: 7.11 Dependency Preservation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-sticky.svg" alt="Sticky Note: 7.11 Dependency Preservation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-11-dependency-preservation-sticky.svg" alt="Sticky Note: 7.11 Dependency Preservation" width="30%">
 </a>
 
 
@@ -1280,14 +1280,14 @@ FUNCTION IsDependencyPreserving(R, decomposition, F):
 
 ### 7.12 C++ Implementation â€” FD Closure Calculator
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-handwritten.svg" alt="Handwritten: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-handwritten.svg" alt="Handwritten: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-diagram.svg" alt="Diagram: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-diagram.svg" alt="Diagram: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-sticky.svg" alt="Sticky Note: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-12-c-implementation-fd-closure-calculator-sticky.svg" alt="Sticky Note: 7.12 C++ Implementation â€” FD Closure Calculator" width="30%">
 </a>
 
 
@@ -1474,14 +1474,14 @@ Candidate keys:
 
 ### 7.13 C++ Implementation â€” BCNF Decomposition
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-handwritten.svg" alt="Handwritten: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-handwritten.svg" alt="Handwritten: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-diagram.svg" alt="Diagram: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-diagram.svg" alt="Diagram: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-sticky.svg" alt="Sticky Note: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-13-c-implementation-bcnf-decomposition-sticky.svg" alt="Sticky Note: 7.13 C++ Implementation â€” BCNF Decomposition" width="30%">
 </a>
 
 
@@ -1575,14 +1575,14 @@ int main() {
 
 ### 7.14 Python Implementation â€” Attribute Closure and Normalization Checker
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-handwritten.svg" alt="Handwritten: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-handwritten.svg" alt="Handwritten: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-diagram.svg" alt="Diagram: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-diagram.svg" alt="Diagram: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-sticky.svg" alt="Sticky Note: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-14-python-implementation-attribute-closure-and-normalization-checker-sticky.svg" alt="Sticky Note: 7.14 Python Implementation â€” Attribute Closure and Normalization Checker" width="30%">
 </a>
 
 
@@ -1810,14 +1810,14 @@ if __name__ == "__main__":
 
 ### 7.15 Python Implementation â€” 3NF Synthesis
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-handwritten.svg" alt="Handwritten: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-handwritten.svg" alt="Handwritten: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-diagram.svg" alt="Diagram: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-diagram.svg" alt="Diagram: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-sticky.svg" alt="Sticky Note: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-15-python-implementation-3nf-synthesis-sticky.svg" alt="Sticky Note: 7.15 Python Implementation â€” 3NF Synthesis" width="30%">
 </a>
 
 
@@ -1921,14 +1921,14 @@ if __name__ == "__main__":
 
 ### 7.16 Python Implementation â€” BCNF Decomposition
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-handwritten.svg" alt="Handwritten: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-handwritten.svg" alt="Handwritten: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-diagram.svg" alt="Diagram: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-diagram.svg" alt="Diagram: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-sticky.svg" alt="Sticky Note: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-16-python-implementation-bcnf-decomposition-sticky.svg" alt="Sticky Note: 7.16 Python Implementation â€” BCNF Decomposition" width="30%">
 </a>
 
 
@@ -2017,14 +2017,14 @@ if __name__ == "__main__":
 
 ### 7.17 Python Implementation â€” Normalization Analyzer
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-handwritten.svg" alt="Handwritten: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-handwritten.svg" alt="Handwritten: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-diagram.svg" alt="Diagram: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-diagram.svg" alt="Diagram: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-sticky.svg" alt="Sticky Note: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-17-python-implementation-normalization-analyzer-sticky.svg" alt="Sticky Note: 7.17 Python Implementation â€” Normalization Analyzer" width="30%">
 </a>
 
 
@@ -2142,14 +2142,14 @@ if __name__ == "__main__":
 
 ### 7.18 Multiple Candidate Keys in Normalization
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-handwritten.svg" alt="Handwritten: 7.18 Multiple Candidate Keys in Normalization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-handwritten.svg" alt="Handwritten: 7.18 Multiple Candidate Keys in Normalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-diagram.svg" alt="Diagram: 7.18 Multiple Candidate Keys in Normalization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-diagram.svg" alt="Diagram: 7.18 Multiple Candidate Keys in Normalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-sticky.svg" alt="Sticky Note: 7.18 Multiple Candidate Keys in Normalization" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-18-multiple-candidate-keys-in-normalization-sticky.svg" alt="Sticky Note: 7.18 Multiple Candidate Keys in Normalization" width="30%">
 </a>
 
 
@@ -2196,14 +2196,14 @@ CREATE TABLE employee (
 
 ### 7.19 Interview Corner
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-handwritten.svg" alt="Handwritten: 7.19 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-handwritten.svg" alt="Handwritten: 7.19 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-diagram.svg" alt="Diagram: 7.19 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-diagram.svg" alt="Diagram: 7.19 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-sticky.svg" alt="Sticky Note: 7.19 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-19-interview-corner-sticky.svg" alt="Sticky Note: 7.19 Interview Corner" width="30%">
 </a>
 
 
@@ -2283,14 +2283,14 @@ The principle: normalize first, then denormalize with purpose. Document WHY and 
 
 ### 7.20 Applications in Real Database Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-handwritten.svg" alt="Handwritten: 7.20 Applications in Real Database Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-handwritten.svg" alt="Handwritten: 7.20 Applications in Real Database Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-diagram.svg" alt="Diagram: 7.20 Applications in Real Database Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-diagram.svg" alt="Diagram: 7.20 Applications in Real Database Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-sticky.svg" alt="Sticky Note: 7.20 Applications in Real Database Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-20-applications-in-real-database-systems-sticky.svg" alt="Sticky Note: 7.20 Applications in Real Database Systems" width="30%">
 </a>
 
 
@@ -2405,14 +2405,14 @@ GROUP BY c.customer_id, c.name;
 
 ### 7.21 Normal Forms Comparison Summary
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-handwritten.svg" alt="Handwritten: 7.21 Normal Forms Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-handwritten.svg" alt="Handwritten: 7.21 Normal Forms Comparison Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-diagram.svg" alt="Diagram: 7.21 Normal Forms Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-diagram.svg" alt="Diagram: 7.21 Normal Forms Comparison Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-sticky.svg" alt="Sticky Note: 7.21 Normal Forms Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-21-normal-forms-comparison-summary-sticky.svg" alt="Sticky Note: 7.21 Normal Forms Comparison Summary" width="30%">
 </a>
 
 
@@ -2457,14 +2457,14 @@ Check MVDs (4NF) â”€â”€> Schema is BCNF âœ“ (or 3NF if BCNF not po
 
 ### 7.22 Chapter Quiz
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-handwritten.svg" alt="Handwritten: 7.22 Chapter Quiz" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-handwritten.svg" alt="Handwritten: 7.22 Chapter Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-diagram.svg" alt="Diagram: 7.22 Chapter Quiz" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-diagram.svg" alt="Diagram: 7.22 Chapter Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-sticky.svg" alt="Sticky Note: 7.22 Chapter Quiz" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-22-chapter-quiz-sticky.svg" alt="Sticky Note: 7.22 Chapter Quiz" width="30%">
 </a>
 
 
@@ -2532,14 +2532,14 @@ Check MVDs (4NF) â”€â”€> Schema is BCNF âœ“ (or 3NF if BCNF not po
 
 ### 7.23 Exercises
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-handwritten.svg" alt="Handwritten: 7.23 Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-handwritten.svg" alt="Handwritten: 7.23 Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-diagram.svg" alt="Diagram: 7.23 Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-diagram.svg" alt="Diagram: 7.23 Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-sticky.svg" alt="Sticky Note: 7.23 Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-23-exercises-sticky.svg" alt="Sticky Note: 7.23 Exercises" width="30%">
 </a>
 
 
@@ -2590,14 +2590,14 @@ Check MVDs (4NF) â”€â”€> Schema is BCNF âœ“ (or 3NF if BCNF not po
 
 ### 7.24 Quick Reference Cards
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-handwritten.svg" alt="Handwritten: 7.24 Quick Reference Cards" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-handwritten.svg" alt="Handwritten: 7.24 Quick Reference Cards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-diagram.svg" alt="Diagram: 7.24 Quick Reference Cards" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-diagram.svg" alt="Diagram: 7.24 Quick Reference Cards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-sticky.svg" alt="Sticky Note: 7.24 Quick Reference Cards" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-24-quick-reference-cards-sticky.svg" alt="Sticky Note: 7.24 Quick Reference Cards" width="30%">
 </a>
 
 
@@ -2646,14 +2646,14 @@ Usage:
 
 ### 7.25 TypeScript Functional Dependency Analyzer
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-handwritten.svg" alt="Handwritten: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-handwritten.svg" alt="Handwritten: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-diagram.svg" alt="Diagram: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-diagram.svg" alt="Diagram: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-sticky.svg" alt="Sticky Note: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/7-25-typescript-functional-dependency-analyzer-sticky.svg" alt="Sticky Note: 7.25 TypeScript Functional Dependency Analyzer" width="30%">
 </a>
 
 
@@ -2827,14 +2827,14 @@ analyzer.printReport();
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 
@@ -2872,14 +2872,14 @@ analyzer.printReport();
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 
@@ -2894,14 +2894,14 @@ analyzer.printReport();
 
 ### Summary
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/summary-diagram.svg" alt="Diagram: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
 </a>
 
 
@@ -2922,14 +2922,14 @@ analyzer.printReport();
 
 ### One-Sentence Takeaways
 
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-handwritten.svg" alt="Handwritten: One-Sentence Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-handwritten.svg" alt="Handwritten: One-Sentence Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-diagram.svg" alt="Diagram: One-Sentence Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-diagram.svg" alt="Diagram: One-Sentence Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-sticky.svg" alt="Sticky Note: One-Sentence Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/07-normalization/one-sentence-takeaways-sticky.svg" alt="Sticky Note: One-Sentence Takeaways" width="30%">
 </a>
 
 

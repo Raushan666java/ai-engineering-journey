@@ -46,14 +46,14 @@ A functional interface is an interface that contains exactly one abstract method
 
 ### 1.1 Core Functional Interfaces in `java.util.function`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-handwritten.svg" alt="Handwritten: 1.1 Core Functional Interfaces in `java.util.function`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-handwritten.svg" alt="Handwritten: 1.1 Core Functional Interfaces in `java.util.function`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-diagram.svg" alt="Diagram: 1.1 Core Functional Interfaces in `java.util.function`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-diagram.svg" alt="Diagram: 1.1 Core Functional Interfaces in `java.util.function`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-sticky.svg" alt="Sticky Note: 1.1 Core Functional Interfaces in `java.util.function`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-1-core-functional-interfaces-in-java-util-function-sticky.svg" alt="Sticky Note: 1.1 Core Functional Interfaces in `java.util.function`" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ public class CoreFunctionalInterfaces {
 
 ### 1.2 Primitive Variants
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-handwritten.svg" alt="Handwritten: 1.2 Primitive Variants" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-handwritten.svg" alt="Handwritten: 1.2 Primitive Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-diagram.svg" alt="Diagram: 1.2 Primitive Variants" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-diagram.svg" alt="Diagram: 1.2 Primitive Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-sticky.svg" alt="Sticky Note: 1.2 Primitive Variants" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-2-primitive-variants-sticky.svg" alt="Sticky Note: 1.2 Primitive Variants" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ public class PrimitiveFunctionalInterfaces {
 
 ### 1.3 Bi-Argument Variants
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-handwritten.svg" alt="Handwritten: 1.3 Bi-Argument Variants" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-handwritten.svg" alt="Handwritten: 1.3 Bi-Argument Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-diagram.svg" alt="Diagram: 1.3 Bi-Argument Variants" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-diagram.svg" alt="Diagram: 1.3 Bi-Argument Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-sticky.svg" alt="Sticky Note: 1.3 Bi-Argument Variants" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-3-bi-argument-variants-sticky.svg" alt="Sticky Note: 1.3 Bi-Argument Variants" width="30%">
 </a>
 
 
@@ -196,14 +196,14 @@ public class BiFunctionalInterfaces {
 
 ### 1.4 Custom Functional Interfaces
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-handwritten.svg" alt="Handwritten: 1.4 Custom Functional Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-handwritten.svg" alt="Handwritten: 1.4 Custom Functional Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-diagram.svg" alt="Diagram: 1.4 Custom Functional Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-diagram.svg" alt="Diagram: 1.4 Custom Functional Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-sticky.svg" alt="Sticky Note: 1.4 Custom Functional Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-4-custom-functional-interfaces-sticky.svg" alt="Sticky Note: 1.4 Custom Functional Interfaces" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ public class CustomFunctionalInterfaceDemo {
 
 ### 1.5 Operator Interfaces
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-handwritten.svg" alt="Handwritten: 1.5 Operator Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-handwritten.svg" alt="Handwritten: 1.5 Operator Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-diagram.svg" alt="Diagram: 1.5 Operator Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-diagram.svg" alt="Diagram: 1.5 Operator Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-sticky.svg" alt="Sticky Note: 1.5 Operator Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/1-5-operator-interfaces-sticky.svg" alt="Sticky Note: 1.5 Operator Interfaces" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ A lambda expression is a concise anonymous function that can be treated as a val
 
 ### 2.1 The Five Forms
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-handwritten.svg" alt="Handwritten: 2.1 The Five Forms" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-handwritten.svg" alt="Handwritten: 2.1 The Five Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-diagram.svg" alt="Diagram: 2.1 The Five Forms" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-diagram.svg" alt="Diagram: 2.1 The Five Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-sticky.svg" alt="Sticky Note: 2.1 The Five Forms" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-1-the-five-forms-sticky.svg" alt="Sticky Note: 2.1 The Five Forms" width="30%">
 </a>
 
 
@@ -361,14 +361,14 @@ public class LambdaSyntax {
 
 ### 2.2 Explicit Types and Mixed Inference
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-handwritten.svg" alt="Handwritten: 2.2 Explicit Types and Mixed Inference" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-handwritten.svg" alt="Handwritten: 2.2 Explicit Types and Mixed Inference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-diagram.svg" alt="Diagram: 2.2 Explicit Types and Mixed Inference" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-diagram.svg" alt="Diagram: 2.2 Explicit Types and Mixed Inference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-sticky.svg" alt="Sticky Note: 2.2 Explicit Types and Mixed Inference" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-2-explicit-types-and-mixed-inference-sticky.svg" alt="Sticky Note: 2.2 Explicit Types and Mixed Inference" width="30%">
 </a>
 
 
@@ -401,14 +401,14 @@ public class ExplicitTyping {
 
 ### 2.3 Variable Capture (Effectively Final)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-handwritten.svg" alt="Handwritten: 2.3 Variable Capture (Effectively Final)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-handwritten.svg" alt="Handwritten: 2.3 Variable Capture (Effectively Final)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-diagram.svg" alt="Diagram: 2.3 Variable Capture (Effectively Final)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-diagram.svg" alt="Diagram: 2.3 Variable Capture (Effectively Final)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-sticky.svg" alt="Sticky Note: 2.3 Variable Capture (Effectively Final)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-3-variable-capture-effectively-final-sticky.svg" alt="Sticky Note: 2.3 Variable Capture (Effectively Final)" width="30%">
 </a>
 
 
@@ -453,14 +453,14 @@ public class VariableCapture {
 
 ### 2.4 The `this` Reference
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-handwritten.svg" alt="Handwritten: 2.4 The `this` Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-handwritten.svg" alt="Handwritten: 2.4 The `this` Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-diagram.svg" alt="Diagram: 2.4 The `this` Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-diagram.svg" alt="Diagram: 2.4 The `this` Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-sticky.svg" alt="Sticky Note: 2.4 The `this` Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-4-the-this-reference-sticky.svg" alt="Sticky Note: 2.4 The `this` Reference" width="30%">
 </a>
 
 
@@ -500,14 +500,14 @@ public class ThisReferenceDemo {
 
 ### 2.5 Lambda as Expression, Not Statement
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-handwritten.svg" alt="Handwritten: 2.5 Lambda as Expression, Not Statement" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-handwritten.svg" alt="Handwritten: 2.5 Lambda as Expression, Not Statement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-diagram.svg" alt="Diagram: 2.5 Lambda as Expression, Not Statement" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-diagram.svg" alt="Diagram: 2.5 Lambda as Expression, Not Statement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-sticky.svg" alt="Sticky Note: 2.5 Lambda as Expression, Not Statement" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/2-5-lambda-as-expression-not-statement-sticky.svg" alt="Sticky Note: 2.5 Lambda as Expression, Not Statement" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ Method references are shorthand for lambdas that simply call an existing method.
 
 ### 3.1 Static Method Reference (`Class::staticMethod`)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-handwritten.svg" alt="Handwritten: 3.1 Static Method Reference (`Class::staticMethod`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-handwritten.svg" alt="Handwritten: 3.1 Static Method Reference (`Class::staticMethod`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-diagram.svg" alt="Diagram: 3.1 Static Method Reference (`Class::staticMethod`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-diagram.svg" alt="Diagram: 3.1 Static Method Reference (`Class::staticMethod`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-sticky.svg" alt="Sticky Note: 3.1 Static Method Reference (`Class::staticMethod`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-1-static-method-reference-class-staticmethod-sticky.svg" alt="Sticky Note: 3.1 Static Method Reference (`Class::staticMethod`)" width="30%">
 </a>
 
 
@@ -600,14 +600,14 @@ public class StaticMethodRef {
 
 ### 3.2 Bound Instance Method Reference (`instance::method`)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-handwritten.svg" alt="Handwritten: 3.2 Bound Instance Method Reference (`instance::method`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-handwritten.svg" alt="Handwritten: 3.2 Bound Instance Method Reference (`instance::method`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-diagram.svg" alt="Diagram: 3.2 Bound Instance Method Reference (`instance::method`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-diagram.svg" alt="Diagram: 3.2 Bound Instance Method Reference (`instance::method`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-sticky.svg" alt="Sticky Note: 3.2 Bound Instance Method Reference (`instance::method`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-2-bound-instance-method-reference-instance-method-sticky.svg" alt="Sticky Note: 3.2 Bound Instance Method Reference (`instance::method`)" width="30%">
 </a>
 
 
@@ -657,14 +657,14 @@ class Logger {
 
 ### 3.3 Unbound Instance Method Reference (`Class::instanceMethod`)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-handwritten.svg" alt="Handwritten: 3.3 Unbound Instance Method Reference (`Class::instanceMethod`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-handwritten.svg" alt="Handwritten: 3.3 Unbound Instance Method Reference (`Class::instanceMethod`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-diagram.svg" alt="Diagram: 3.3 Unbound Instance Method Reference (`Class::instanceMethod`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-diagram.svg" alt="Diagram: 3.3 Unbound Instance Method Reference (`Class::instanceMethod`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-sticky.svg" alt="Sticky Note: 3.3 Unbound Instance Method Reference (`Class::instanceMethod`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-3-unbound-instance-method-reference-class-instancemethod-sticky.svg" alt="Sticky Note: 3.3 Unbound Instance Method Reference (`Class::instanceMethod`)" width="30%">
 </a>
 
 
@@ -704,14 +704,14 @@ public class UnboundInstanceMethodRef {
 
 ### 3.4 Constructor Reference (`Class::new`)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-handwritten.svg" alt="Handwritten: 3.4 Constructor Reference (`Class::new`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-handwritten.svg" alt="Handwritten: 3.4 Constructor Reference (`Class::new`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-diagram.svg" alt="Diagram: 3.4 Constructor Reference (`Class::new`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-diagram.svg" alt="Diagram: 3.4 Constructor Reference (`Class::new`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-sticky.svg" alt="Sticky Note: 3.4 Constructor Reference (`Class::new`)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-4-constructor-reference-class-new-sticky.svg" alt="Sticky Note: 3.4 Constructor Reference (`Class::new`)" width="30%">
 </a>
 
 
@@ -781,14 +781,14 @@ public class ConstructorReference {
 
 ### 3.5 Summary Table
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-handwritten.svg" alt="Handwritten: 3.5 Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-handwritten.svg" alt="Handwritten: 3.5 Summary Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-diagram.svg" alt="Diagram: 3.5 Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-diagram.svg" alt="Diagram: 3.5 Summary Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-sticky.svg" alt="Sticky Note: 3.5 Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/3-5-summary-table-sticky.svg" alt="Sticky Note: 3.5 Summary Table" width="30%">
 </a>
 
 
@@ -824,14 +824,14 @@ A stream pipeline consists of three phases:
 
 ### 4.1 Pipeline Structure
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-handwritten.svg" alt="Handwritten: 4.1 Pipeline Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-handwritten.svg" alt="Handwritten: 4.1 Pipeline Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-diagram.svg" alt="Diagram: 4.1 Pipeline Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-diagram.svg" alt="Diagram: 4.1 Pipeline Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-sticky.svg" alt="Sticky Note: 4.1 Pipeline Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-1-pipeline-structure-sticky.svg" alt="Sticky Note: 4.1 Pipeline Structure" width="30%">
 </a>
 
 
@@ -868,14 +868,14 @@ public class PipelineStructure {
 
 ### 4.2 Stream Sources
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-handwritten.svg" alt="Handwritten: 4.2 Stream Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-handwritten.svg" alt="Handwritten: 4.2 Stream Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-diagram.svg" alt="Diagram: 4.2 Stream Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-diagram.svg" alt="Diagram: 4.2 Stream Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-sticky.svg" alt="Sticky Note: 4.2 Stream Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-2-stream-sources-sticky.svg" alt="Sticky Note: 4.2 Stream Sources" width="30%">
 </a>
 
 
@@ -951,14 +951,14 @@ public class StreamSources {
 
 ### 4.3 Stateless vs. Stateful Intermediate Operations
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-handwritten.svg" alt="Handwritten: 4.3 Stateless vs. Stateful Intermediate Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-handwritten.svg" alt="Handwritten: 4.3 Stateless vs. Stateful Intermediate Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-diagram.svg" alt="Diagram: 4.3 Stateless vs. Stateful Intermediate Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-diagram.svg" alt="Diagram: 4.3 Stateless vs. Stateful Intermediate Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-sticky.svg" alt="Sticky Note: 4.3 Stateless vs. Stateful Intermediate Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-3-stateless-vs-stateful-intermediate-operations-sticky.svg" alt="Sticky Note: 4.3 Stateless vs. Stateful Intermediate Operations" width="30%">
 </a>
 
 
@@ -996,14 +996,14 @@ public class StatelessVsStateful {
 
 ### 4.4 Lazy Evaluation
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-handwritten.svg" alt="Handwritten: 4.4 Lazy Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-handwritten.svg" alt="Handwritten: 4.4 Lazy Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-diagram.svg" alt="Diagram: 4.4 Lazy Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-diagram.svg" alt="Diagram: 4.4 Lazy Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-sticky.svg" alt="Sticky Note: 4.4 Lazy Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-4-lazy-evaluation-sticky.svg" alt="Sticky Note: 4.4 Lazy Evaluation" width="30%">
 </a>
 
 
@@ -1047,14 +1047,14 @@ public class LazyEvaluation {
 
 ### 4.5 Short-Circuiting
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-handwritten.svg" alt="Handwritten: 4.5 Short-Circuiting" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-handwritten.svg" alt="Handwritten: 4.5 Short-Circuiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-diagram.svg" alt="Diagram: 4.5 Short-Circuiting" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-diagram.svg" alt="Diagram: 4.5 Short-Circuiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-sticky.svg" alt="Sticky Note: 4.5 Short-Circuiting" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-5-short-circuiting-sticky.svg" alt="Sticky Note: 4.5 Short-Circuiting" width="30%">
 </a>
 
 
@@ -1104,14 +1104,14 @@ public class ShortCircuiting {
 
 ### 4.6 Common Terminal Operations
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-handwritten.svg" alt="Handwritten: 4.6 Common Terminal Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-handwritten.svg" alt="Handwritten: 4.6 Common Terminal Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-diagram.svg" alt="Diagram: 4.6 Common Terminal Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-diagram.svg" alt="Diagram: 4.6 Common Terminal Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-sticky.svg" alt="Sticky Note: 4.6 Common Terminal Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/4-6-common-terminal-operations-sticky.svg" alt="Sticky Note: 4.6 Common Terminal Operations" width="30%">
 </a>
 
 
@@ -1177,14 +1177,14 @@ The `map` operation applies a function to each element, producing a new stream o
 
 ### 5.1 One-to-One Transformation with `map`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-handwritten.svg" alt="Handwritten: 5.1 One-to-One Transformation with `map`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-handwritten.svg" alt="Handwritten: 5.1 One-to-One Transformation with `map`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-diagram.svg" alt="Diagram: 5.1 One-to-One Transformation with `map`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-diagram.svg" alt="Diagram: 5.1 One-to-One Transformation with `map`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-sticky.svg" alt="Sticky Note: 5.1 One-to-One Transformation with `map`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-1-one-to-one-transformation-with-map-sticky.svg" alt="Sticky Note: 5.1 One-to-One Transformation with `map`" width="30%">
 </a>
 
 
@@ -1231,14 +1231,14 @@ public class MapPatterns {
 
 ### 5.2 One-to-Many with `flatMap`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-handwritten.svg" alt="Handwritten: 5.2 One-to-Many with `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-handwritten.svg" alt="Handwritten: 5.2 One-to-Many with `flatMap`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-diagram.svg" alt="Diagram: 5.2 One-to-Many with `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-diagram.svg" alt="Diagram: 5.2 One-to-Many with `flatMap`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-sticky.svg" alt="Sticky Note: 5.2 One-to-Many with `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-2-one-to-many-with-flatmap-sticky.svg" alt="Sticky Note: 5.2 One-to-Many with `flatMap`" width="30%">
 </a>
 
 
@@ -1281,14 +1281,14 @@ record Team(String name, List<String> members) {}
 
 ### 5.3 Flattening Nested Structures
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-handwritten.svg" alt="Handwritten: 5.3 Flattening Nested Structures" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-handwritten.svg" alt="Handwritten: 5.3 Flattening Nested Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-diagram.svg" alt="Diagram: 5.3 Flattening Nested Structures" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-diagram.svg" alt="Diagram: 5.3 Flattening Nested Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-sticky.svg" alt="Sticky Note: 5.3 Flattening Nested Structures" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-3-flattening-nested-structures-sticky.svg" alt="Sticky Note: 5.3 Flattening Nested Structures" width="30%">
 </a>
 
 
@@ -1348,14 +1348,14 @@ public class FlattenNestedStructures {
 
 ### 5.4 `Optional` Mapping with `flatMap`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-handwritten.svg" alt="Handwritten: 5.4 `Optional` Mapping with `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-handwritten.svg" alt="Handwritten: 5.4 `Optional` Mapping with `flatMap`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-diagram.svg" alt="Diagram: 5.4 `Optional` Mapping with `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-diagram.svg" alt="Diagram: 5.4 `Optional` Mapping with `flatMap`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-sticky.svg" alt="Sticky Note: 5.4 `Optional` Mapping with `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-4-optional-mapping-with-flatmap-sticky.svg" alt="Sticky Note: 5.4 `Optional` Mapping with `flatMap`" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ public class OptionalFlatMap {
 
 ### 5.5 Stream of Optionals → `flatMap(Optional::stream)` (Java 9+)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-handwritten.svg" alt="Handwritten: 5.5 Stream of Optionals → `flatMap(Optional::stream)` (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-handwritten.svg" alt="Handwritten: 5.5 Stream of Optionals → `flatMap(Optional::stream)` (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-diagram.svg" alt="Diagram: 5.5 Stream of Optionals → `flatMap(Optional::stream)` (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-diagram.svg" alt="Diagram: 5.5 Stream of Optionals → `flatMap(Optional::stream)` (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-sticky.svg" alt="Sticky Note: 5.5 Stream of Optionals → `flatMap(Optional::stream)` (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/5-5-stream-of-optionals-flatmap-optional-stream-java-9-sticky.svg" alt="Sticky Note: 5.5 Stream of Optionals → `flatMap(Optional::stream)` (Java 9+)" width="30%">
 </a>
 
 
@@ -1462,14 +1462,14 @@ public class StreamOfOptionals {
 
 ### 6.1 Basic Filtering
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-handwritten.svg" alt="Handwritten: 6.1 Basic Filtering" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-handwritten.svg" alt="Handwritten: 6.1 Basic Filtering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-diagram.svg" alt="Diagram: 6.1 Basic Filtering" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-diagram.svg" alt="Diagram: 6.1 Basic Filtering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-sticky.svg" alt="Sticky Note: 6.1 Basic Filtering" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-1-basic-filtering-sticky.svg" alt="Sticky Note: 6.1 Basic Filtering" width="30%">
 </a>
 
 
@@ -1510,14 +1510,14 @@ public class BasicFiltering {
 
 ### 6.2 `Predicate.negate()`, `.and()`, `.or()`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-handwritten.svg" alt="Handwritten: 6.2 `Predicate.negate()`, `.and()`, `.or()`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-handwritten.svg" alt="Handwritten: 6.2 `Predicate.negate()`, `.and()`, `.or()`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-diagram.svg" alt="Diagram: 6.2 `Predicate.negate()`, `.and()`, `.or()`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-diagram.svg" alt="Diagram: 6.2 `Predicate.negate()`, `.and()`, `.or()`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-sticky.svg" alt="Sticky Note: 6.2 `Predicate.negate()`, `.and()`, `.or()`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-2-predicate-negate-and-or-sticky.svg" alt="Sticky Note: 6.2 `Predicate.negate()`, `.and()`, `.or()`" width="30%">
 </a>
 
 
@@ -1569,14 +1569,14 @@ public class PredicateCombination {
 
 ### 6.3 Reusable Predicates with `Predicate.isEqual`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-handwritten.svg" alt="Handwritten: 6.3 Reusable Predicates with `Predicate.isEqual`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-handwritten.svg" alt="Handwritten: 6.3 Reusable Predicates with `Predicate.isEqual`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-diagram.svg" alt="Diagram: 6.3 Reusable Predicates with `Predicate.isEqual`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-diagram.svg" alt="Diagram: 6.3 Reusable Predicates with `Predicate.isEqual`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-sticky.svg" alt="Sticky Note: 6.3 Reusable Predicates with `Predicate.isEqual`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-3-reusable-predicates-with-predicate-isequal-sticky.svg" alt="Sticky Note: 6.3 Reusable Predicates with `Predicate.isEqual`" width="30%">
 </a>
 
 
@@ -1611,14 +1611,14 @@ public class PredicateIsEqual {
 
 ### 6.4 Distinct Elements with `distinct`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-handwritten.svg" alt="Handwritten: 6.4 Distinct Elements with `distinct`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-handwritten.svg" alt="Handwritten: 6.4 Distinct Elements with `distinct`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-diagram.svg" alt="Diagram: 6.4 Distinct Elements with `distinct`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-diagram.svg" alt="Diagram: 6.4 Distinct Elements with `distinct`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-sticky.svg" alt="Sticky Note: 6.4 Distinct Elements with `distinct`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-4-distinct-elements-with-distinct-sticky.svg" alt="Sticky Note: 6.4 Distinct Elements with `distinct`" width="30%">
 </a>
 
 
@@ -1662,14 +1662,14 @@ public class DistinctFiltering {
 
 ### 6.5 Take-While / Drop-While (Java 9+)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-handwritten.svg" alt="Handwritten: 6.5 Take-While / Drop-While (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-handwritten.svg" alt="Handwritten: 6.5 Take-While / Drop-While (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-diagram.svg" alt="Diagram: 6.5 Take-While / Drop-While (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-diagram.svg" alt="Diagram: 6.5 Take-While / Drop-While (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-sticky.svg" alt="Sticky Note: 6.5 Take-While / Drop-While (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/6-5-take-while-drop-while-java-9-sticky.svg" alt="Sticky Note: 6.5 Take-While / Drop-While (Java 9+)" width="30%">
 </a>
 
 
@@ -1713,14 +1713,14 @@ Reduction takes a stream of elements and produces a single value.
 
 ### 7.1 `T reduce(T identity, BinaryOperator<T>)`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-handwritten.svg" alt="Handwritten: 7.1 `T reduce(T identity, BinaryOperator<T>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-handwritten.svg" alt="Handwritten: 7.1 `T reduce(T identity, BinaryOperator<T>)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-diagram.svg" alt="Diagram: 7.1 `T reduce(T identity, BinaryOperator<T>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-diagram.svg" alt="Diagram: 7.1 `T reduce(T identity, BinaryOperator<T>)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-sticky.svg" alt="Sticky Note: 7.1 `T reduce(T identity, BinaryOperator<T>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-1-t-reduce-t-identity-binaryoperator-t-sticky.svg" alt="Sticky Note: 7.1 `T reduce(T identity, BinaryOperator<T>)`" width="30%">
 </a>
 
 
@@ -1765,14 +1765,14 @@ public class ReduceWithIdentity {
 
 ### 7.2 `Optional<T> reduce(BinaryOperator<T>)`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-handwritten.svg" alt="Handwritten: 7.2 `Optional<T> reduce(BinaryOperator<T>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-handwritten.svg" alt="Handwritten: 7.2 `Optional<T> reduce(BinaryOperator<T>)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-diagram.svg" alt="Diagram: 7.2 `Optional<T> reduce(BinaryOperator<T>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-diagram.svg" alt="Diagram: 7.2 `Optional<T> reduce(BinaryOperator<T>)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-sticky.svg" alt="Sticky Note: 7.2 `Optional<T> reduce(BinaryOperator<T>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-2-optional-t-reduce-binaryoperator-t-sticky.svg" alt="Sticky Note: 7.2 `Optional<T> reduce(BinaryOperator<T>)`" width="30%">
 </a>
 
 
@@ -1810,14 +1810,14 @@ public class ReduceWithoutIdentity {
 
 ### 7.3 `reduce(U identity, BiFunction<U,T,U>, BinaryOperator<U>)`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-handwritten.svg" alt="Handwritten: 7.3 `reduce(U identity, BiFunction<U,T,U>, BinaryOperator<U>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-handwritten.svg" alt="Handwritten: 7.3 `reduce(U identity, BiFunction<U,T,U>, BinaryOperator<U>)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-diagram.svg" alt="Diagram: 7.3 `reduce(U identity, BiFunction<U,T,U>, BinaryOperator<U>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-diagram.svg" alt="Diagram: 7.3 `reduce(U identity, BiFunction<U,T,U>, BinaryOperator<U>)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-sticky.svg" alt="Sticky Note: 7.3 `reduce(U identity, BiFunction<U,T,U>, BinaryOperator<U>)`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-3-reduce-u-identity-bifunction-u-t-u-binaryoperator-u-sticky.svg" alt="Sticky Note: 7.3 `reduce(U identity, BiFunction<U,T,U>, BinaryOperator<U>)`" width="30%">
 </a>
 
 
@@ -1856,14 +1856,14 @@ public class ReduceThreeArg {
 
 ### 7.4 Mutable Reduction with `collect`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-handwritten.svg" alt="Handwritten: 7.4 Mutable Reduction with `collect`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-handwritten.svg" alt="Handwritten: 7.4 Mutable Reduction with `collect`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-diagram.svg" alt="Diagram: 7.4 Mutable Reduction with `collect`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-diagram.svg" alt="Diagram: 7.4 Mutable Reduction with `collect`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-sticky.svg" alt="Sticky Note: 7.4 Mutable Reduction with `collect`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-4-mutable-reduction-with-collect-sticky.svg" alt="Sticky Note: 7.4 Mutable Reduction with `collect`" width="30%">
 </a>
 
 
@@ -1919,14 +1919,14 @@ public class MutableReduction {
 
 ### 7.5 Custom Collector
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-handwritten.svg" alt="Handwritten: 7.5 Custom Collector" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-handwritten.svg" alt="Handwritten: 7.5 Custom Collector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-diagram.svg" alt="Diagram: 7.5 Custom Collector" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-diagram.svg" alt="Diagram: 7.5 Custom Collector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-sticky.svg" alt="Sticky Note: 7.5 Custom Collector" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/7-5-custom-collector-sticky.svg" alt="Sticky Note: 7.5 Custom Collector" width="30%">
 </a>
 
 
@@ -1987,14 +1987,14 @@ public class CustomCollector {
 
 ### 8.1 Simple Grouping
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-handwritten.svg" alt="Handwritten: 8.1 Simple Grouping" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-handwritten.svg" alt="Handwritten: 8.1 Simple Grouping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-diagram.svg" alt="Diagram: 8.1 Simple Grouping" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-diagram.svg" alt="Diagram: 8.1 Simple Grouping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-sticky.svg" alt="Sticky Note: 8.1 Simple Grouping" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-1-simple-grouping-sticky.svg" alt="Sticky Note: 8.1 Simple Grouping" width="30%">
 </a>
 
 
@@ -2040,14 +2040,14 @@ public class SimpleGroupingBy {
 
 ### 8.2 Grouping with Downstream Collectors
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-handwritten.svg" alt="Handwritten: 8.2 Grouping with Downstream Collectors" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-handwritten.svg" alt="Handwritten: 8.2 Grouping with Downstream Collectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-diagram.svg" alt="Diagram: 8.2 Grouping with Downstream Collectors" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-diagram.svg" alt="Diagram: 8.2 Grouping with Downstream Collectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-sticky.svg" alt="Sticky Note: 8.2 Grouping with Downstream Collectors" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-2-grouping-with-downstream-collectors-sticky.svg" alt="Sticky Note: 8.2 Grouping with Downstream Collectors" width="30%">
 </a>
 
 
@@ -2110,14 +2110,14 @@ public class GroupingDownstream {
 
 ### 8.3 Multi-Level Grouping
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-handwritten.svg" alt="Handwritten: 8.3 Multi-Level Grouping" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-handwritten.svg" alt="Handwritten: 8.3 Multi-Level Grouping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-diagram.svg" alt="Diagram: 8.3 Multi-Level Grouping" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-diagram.svg" alt="Diagram: 8.3 Multi-Level Grouping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-sticky.svg" alt="Sticky Note: 8.3 Multi-Level Grouping" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-3-multi-level-grouping-sticky.svg" alt="Sticky Note: 8.3 Multi-Level Grouping" width="30%">
 </a>
 
 
@@ -2175,14 +2175,14 @@ public class MultiLevelGrouping {
 
 ### 8.4 Grouping with `groupingByConcurrent`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-handwritten.svg" alt="Handwritten: 8.4 Grouping with `groupingByConcurrent`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-handwritten.svg" alt="Handwritten: 8.4 Grouping with `groupingByConcurrent`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-diagram.svg" alt="Diagram: 8.4 Grouping with `groupingByConcurrent`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-diagram.svg" alt="Diagram: 8.4 Grouping with `groupingByConcurrent`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-sticky.svg" alt="Sticky Note: 8.4 Grouping with `groupingByConcurrent`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-4-grouping-with-groupingbyconcurrent-sticky.svg" alt="Sticky Note: 8.4 Grouping with `groupingByConcurrent`" width="30%">
 </a>
 
 
@@ -2234,14 +2234,14 @@ public class ConcurrentGrouping {
 
 ### 8.5 Advanced Collectors
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-handwritten.svg" alt="Handwritten: 8.5 Advanced Collectors" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-handwritten.svg" alt="Handwritten: 8.5 Advanced Collectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-diagram.svg" alt="Diagram: 8.5 Advanced Collectors" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-diagram.svg" alt="Diagram: 8.5 Advanced Collectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-sticky.svg" alt="Sticky Note: 8.5 Advanced Collectors" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/8-5-advanced-collectors-sticky.svg" alt="Sticky Note: 8.5 Advanced Collectors" width="30%">
 </a>
 
 
@@ -2330,14 +2330,14 @@ public class AdvancedCollectors {
 
 ### 9.1 `andThen` vs `compose`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-handwritten.svg" alt="Handwritten: 9.1 `andThen` vs `compose`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-handwritten.svg" alt="Handwritten: 9.1 `andThen` vs `compose`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-diagram.svg" alt="Diagram: 9.1 `andThen` vs `compose`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-diagram.svg" alt="Diagram: 9.1 `andThen` vs `compose`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-sticky.svg" alt="Sticky Note: 9.1 `andThen` vs `compose`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-1-andthen-vs-compose-sticky.svg" alt="Sticky Note: 9.1 `andThen` vs `compose`" width="30%">
 </a>
 
 
@@ -2379,14 +2379,14 @@ public class FunctionComposition {
 
 ### 9.2 Combining Functions
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-handwritten.svg" alt="Handwritten: 9.2 Combining Functions" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-handwritten.svg" alt="Handwritten: 9.2 Combining Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-diagram.svg" alt="Diagram: 9.2 Combining Functions" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-diagram.svg" alt="Diagram: 9.2 Combining Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-sticky.svg" alt="Sticky Note: 9.2 Combining Functions" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-2-combining-functions-sticky.svg" alt="Sticky Note: 9.2 Combining Functions" width="30%">
 </a>
 
 
@@ -2432,14 +2432,14 @@ public class CombiningFunctions {
 
 ### 9.3 Currying Simulation
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-handwritten.svg" alt="Handwritten: 9.3 Currying Simulation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-handwritten.svg" alt="Handwritten: 9.3 Currying Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-diagram.svg" alt="Diagram: 9.3 Currying Simulation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-diagram.svg" alt="Diagram: 9.3 Currying Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-sticky.svg" alt="Sticky Note: 9.3 Currying Simulation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-3-currying-simulation-sticky.svg" alt="Sticky Note: 9.3 Currying Simulation" width="30%">
 </a>
 
 
@@ -2490,14 +2490,14 @@ public class CurryingSimulation {
 
 ### 9.4 Composing with `andThen` on Other Functional Types
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-handwritten.svg" alt="Handwritten: 9.4 Composing with `andThen` on Other Functional Types" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-handwritten.svg" alt="Handwritten: 9.4 Composing with `andThen` on Other Functional Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-diagram.svg" alt="Diagram: 9.4 Composing with `andThen` on Other Functional Types" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-diagram.svg" alt="Diagram: 9.4 Composing with `andThen` on Other Functional Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-sticky.svg" alt="Sticky Note: 9.4 Composing with `andThen` on Other Functional Types" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/9-4-composing-with-andthen-on-other-functional-types-sticky.svg" alt="Sticky Note: 9.4 Composing with `andThen` on Other Functional Types" width="30%">
 </a>
 
 
@@ -2541,14 +2541,14 @@ public class ComposingConsumersAndSuppliers {
 
 ### 10.1 Creation and Basic Retrieval
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-handwritten.svg" alt="Handwritten: 10.1 Creation and Basic Retrieval" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-handwritten.svg" alt="Handwritten: 10.1 Creation and Basic Retrieval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-diagram.svg" alt="Diagram: 10.1 Creation and Basic Retrieval" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-diagram.svg" alt="Diagram: 10.1 Creation and Basic Retrieval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-sticky.svg" alt="Sticky Note: 10.1 Creation and Basic Retrieval" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-1-creation-and-basic-retrieval-sticky.svg" alt="Sticky Note: 10.1 Creation and Basic Retrieval" width="30%">
 </a>
 
 
@@ -2601,14 +2601,14 @@ public class OptionalBasics {
 
 ### 10.2 `map` vs `flatMap`
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-handwritten.svg" alt="Handwritten: 10.2 `map` vs `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-handwritten.svg" alt="Handwritten: 10.2 `map` vs `flatMap`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-diagram.svg" alt="Diagram: 10.2 `map` vs `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-diagram.svg" alt="Diagram: 10.2 `map` vs `flatMap`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-sticky.svg" alt="Sticky Note: 10.2 `map` vs `flatMap`" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-2-map-vs-flatmap-sticky.svg" alt="Sticky Note: 10.2 `map` vs `flatMap`" width="30%">
 </a>
 
 
@@ -2651,14 +2651,14 @@ public class OptionalMapVsFlatMap {
 
 ### 10.3 `filter` on Optional
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-handwritten.svg" alt="Handwritten: 10.3 `filter` on Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-handwritten.svg" alt="Handwritten: 10.3 `filter` on Optional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-diagram.svg" alt="Diagram: 10.3 `filter` on Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-diagram.svg" alt="Diagram: 10.3 `filter` on Optional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-sticky.svg" alt="Sticky Note: 10.3 `filter` on Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-3-filter-on-optional-sticky.svg" alt="Sticky Note: 10.3 `filter` on Optional" width="30%">
 </a>
 
 
@@ -2693,14 +2693,14 @@ public class OptionalFilter {
 
 ### 10.4 `or` (Java 9+) → Alternative Optional
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-handwritten.svg" alt="Handwritten: 10.4 `or` (Java 9+) → Alternative Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-handwritten.svg" alt="Handwritten: 10.4 `or` (Java 9+) → Alternative Optional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-diagram.svg" alt="Diagram: 10.4 `or` (Java 9+) → Alternative Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-diagram.svg" alt="Diagram: 10.4 `or` (Java 9+) → Alternative Optional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-sticky.svg" alt="Sticky Note: 10.4 `or` (Java 9+) → Alternative Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-4-or-java-9-alternative-optional-sticky.svg" alt="Sticky Note: 10.4 `or` (Java 9+) → Alternative Optional" width="30%">
 </a>
 
 
@@ -2747,14 +2747,14 @@ public class OptionalOr {
 
 ### 10.5 `stream()` on Optional (Java 9+)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-handwritten.svg" alt="Handwritten: 10.5 `stream()` on Optional (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-handwritten.svg" alt="Handwritten: 10.5 `stream()` on Optional (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-diagram.svg" alt="Diagram: 10.5 `stream()` on Optional (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-diagram.svg" alt="Diagram: 10.5 `stream()` on Optional (Java 9+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-sticky.svg" alt="Sticky Note: 10.5 `stream()` on Optional (Java 9+)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-5-stream-on-optional-java-9-sticky.svg" alt="Sticky Note: 10.5 `stream()` on Optional (Java 9+)" width="30%">
 </a>
 
 
@@ -2808,14 +2808,14 @@ public class OptionalStream {
 
 ### 10.6 Anti-Patterns and Best Practices
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-handwritten.svg" alt="Handwritten: 10.6 Anti-Patterns and Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-handwritten.svg" alt="Handwritten: 10.6 Anti-Patterns and Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-diagram.svg" alt="Diagram: 10.6 Anti-Patterns and Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-diagram.svg" alt="Diagram: 10.6 Anti-Patterns and Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-sticky.svg" alt="Sticky Note: 10.6 Anti-Patterns and Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/10-6-anti-patterns-and-best-practices-sticky.svg" alt="Sticky Note: 10.6 Anti-Patterns and Best Practices" width="30%">
 </a>
 
 
@@ -2884,14 +2884,14 @@ public class OptionalBestPractices {
 
 ### 11.1 Basic Creation
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-handwritten.svg" alt="Handwritten: 11.1 Basic Creation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-handwritten.svg" alt="Handwritten: 11.1 Basic Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-diagram.svg" alt="Diagram: 11.1 Basic Creation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-diagram.svg" alt="Diagram: 11.1 Basic Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-sticky.svg" alt="Sticky Note: 11.1 Basic Creation" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-1-basic-creation-sticky.svg" alt="Sticky Note: 11.1 Basic Creation" width="30%">
 </a>
 
 
@@ -2933,14 +2933,14 @@ public class CompletableFutureBasics {
 
 ### 11.2 Callback Chains
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-handwritten.svg" alt="Handwritten: 11.2 Callback Chains" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-handwritten.svg" alt="Handwritten: 11.2 Callback Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-diagram.svg" alt="Diagram: 11.2 Callback Chains" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-diagram.svg" alt="Diagram: 11.2 Callback Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-sticky.svg" alt="Sticky Note: 11.2 Callback Chains" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-2-callback-chains-sticky.svg" alt="Sticky Note: 11.2 Callback Chains" width="30%">
 </a>
 
 
@@ -2989,14 +2989,14 @@ public class FutureCallbacks {
 
 ### 11.3 Combining Multiple Futures
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-handwritten.svg" alt="Handwritten: 11.3 Combining Multiple Futures" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-handwritten.svg" alt="Handwritten: 11.3 Combining Multiple Futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-diagram.svg" alt="Diagram: 11.3 Combining Multiple Futures" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-diagram.svg" alt="Diagram: 11.3 Combining Multiple Futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-sticky.svg" alt="Sticky Note: 11.3 Combining Multiple Futures" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-3-combining-multiple-futures-sticky.svg" alt="Sticky Note: 11.3 Combining Multiple Futures" width="30%">
 </a>
 
 
@@ -3045,14 +3045,14 @@ public class CombiningFutures {
 
 ### 11.4 Error Handling
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-handwritten.svg" alt="Handwritten: 11.4 Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-handwritten.svg" alt="Handwritten: 11.4 Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-diagram.svg" alt="Diagram: 11.4 Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-diagram.svg" alt="Diagram: 11.4 Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-sticky.svg" alt="Sticky Note: 11.4 Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-4-error-handling-sticky.svg" alt="Sticky Note: 11.4 Error Handling" width="30%">
 </a>
 
 
@@ -3109,14 +3109,14 @@ public class FutureErrorHandling {
 
 ### 11.5 Timeouts and Completing
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-handwritten.svg" alt="Handwritten: 11.5 Timeouts and Completing" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-handwritten.svg" alt="Handwritten: 11.5 Timeouts and Completing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-diagram.svg" alt="Diagram: 11.5 Timeouts and Completing" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-diagram.svg" alt="Diagram: 11.5 Timeouts and Completing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-sticky.svg" alt="Sticky Note: 11.5 Timeouts and Completing" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-5-timeouts-and-completing-sticky.svg" alt="Sticky Note: 11.5 Timeouts and Completing" width="30%">
 </a>
 
 
@@ -3171,14 +3171,14 @@ public class FutureTimeouts {
 
 ### 11.6 Real-World Pattern: Parallel API Calls
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-handwritten.svg" alt="Handwritten: 11.6 Real-World Pattern: Parallel API Calls" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-handwritten.svg" alt="Handwritten: 11.6 Real-World Pattern: Parallel API Calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-diagram.svg" alt="Diagram: 11.6 Real-World Pattern: Parallel API Calls" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-diagram.svg" alt="Diagram: 11.6 Real-World Pattern: Parallel API Calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-sticky.svg" alt="Sticky Note: 11.6 Real-World Pattern: Parallel API Calls" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/11-6-real-world-pattern-parallel-api-calls-sticky.svg" alt="Sticky Note: 11.6 Real-World Pattern: Parallel API Calls" width="30%">
 </a>
 
 
@@ -3269,14 +3269,14 @@ public class ParallelApiPattern {
 
 ### 12.1 Lambda-Based Route Definitions (Spring Web MVC)
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-handwritten.svg" alt="Handwritten: 12.1 Lambda-Based Route Definitions (Spring Web MVC)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-handwritten.svg" alt="Handwritten: 12.1 Lambda-Based Route Definitions (Spring Web MVC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-diagram.svg" alt="Diagram: 12.1 Lambda-Based Route Definitions (Spring Web MVC)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-diagram.svg" alt="Diagram: 12.1 Lambda-Based Route Definitions (Spring Web MVC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-sticky.svg" alt="Sticky Note: 12.1 Lambda-Based Route Definitions (Spring Web MVC)" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-1-lambda-based-route-definitions-spring-web-mvc-sticky.svg" alt="Sticky Note: 12.1 Lambda-Based Route Definitions (Spring Web MVC)" width="30%">
 </a>
 
 
@@ -3329,14 +3329,14 @@ public class FunctionalRoutesApplication {
 
 ### 12.2 RouterFunction with Predicates and Nested Routes
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-handwritten.svg" alt="Handwritten: 12.2 RouterFunction with Predicates and Nested Routes" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-handwritten.svg" alt="Handwritten: 12.2 RouterFunction with Predicates and Nested Routes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-diagram.svg" alt="Diagram: 12.2 RouterFunction with Predicates and Nested Routes" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-diagram.svg" alt="Diagram: 12.2 RouterFunction with Predicates and Nested Routes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-sticky.svg" alt="Sticky Note: 12.2 RouterFunction with Predicates and Nested Routes" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-2-routerfunction-with-predicates-and-nested-routes-sticky.svg" alt="Sticky Note: 12.2 RouterFunction with Predicates and Nested Routes" width="30%">
 </a>
 
 
@@ -3395,14 +3395,14 @@ public class AdvancedRouterConfiguration {
 
 ### 12.3 `@Bean` Factory Methods Using Lambdas
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-handwritten.svg" alt="Handwritten: 12.3 `@Bean` Factory Methods Using Lambdas" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-handwritten.svg" alt="Handwritten: 12.3 `@Bean` Factory Methods Using Lambdas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-diagram.svg" alt="Diagram: 12.3 `@Bean` Factory Methods Using Lambdas" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-diagram.svg" alt="Diagram: 12.3 `@Bean` Factory Methods Using Lambdas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-sticky.svg" alt="Sticky Note: 12.3 `@Bean` Factory Methods Using Lambdas" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-3-bean-factory-methods-using-lambdas-sticky.svg" alt="Sticky Note: 12.3 `@Bean` Factory Methods Using Lambdas" width="30%">
 </a>
 
 
@@ -3459,14 +3459,14 @@ public class BeanFactoryFunctions {
 
 ### 12.4 Using Functional Beans
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-handwritten.svg" alt="Handwritten: 12.4 Using Functional Beans" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-handwritten.svg" alt="Handwritten: 12.4 Using Functional Beans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-diagram.svg" alt="Diagram: 12.4 Using Functional Beans" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-diagram.svg" alt="Diagram: 12.4 Using Functional Beans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-sticky.svg" alt="Sticky Note: 12.4 Using Functional Beans" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-4-using-functional-beans-sticky.svg" alt="Sticky Note: 12.4 Using Functional Beans" width="30%">
 </a>
 
 
@@ -3527,14 +3527,14 @@ public class UserService {
 
 ### 12.5 Stream-Based Repository Pattern
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-handwritten.svg" alt="Handwritten: 12.5 Stream-Based Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-handwritten.svg" alt="Handwritten: 12.5 Stream-Based Repository Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-diagram.svg" alt="Diagram: 12.5 Stream-Based Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-diagram.svg" alt="Diagram: 12.5 Stream-Based Repository Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-sticky.svg" alt="Sticky Note: 12.5 Stream-Based Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-5-stream-based-repository-pattern-sticky.svg" alt="Sticky Note: 12.5 Stream-Based Repository Pattern" width="30%">
 </a>
 
 
@@ -3626,14 +3626,14 @@ public class ProductRepository {
 
 ### 12.6 CompletableFuture in Spring Service
 
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-handwritten.svg" alt="Handwritten: 12.6 CompletableFuture in Spring Service" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-handwritten.svg" alt="Handwritten: 12.6 CompletableFuture in Spring Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-diagram.svg" alt="Diagram: 12.6 CompletableFuture in Spring Service" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-diagram.svg" alt="Diagram: 12.6 CompletableFuture in Spring Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-sticky.svg" alt="Sticky Note: 12.6 CompletableFuture in Spring Service" width="30%">
+<a href="../../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p6-lambdas-streams/12-6-completablefuture-in-spring-service-sticky.svg" alt="Sticky Note: 12.6 CompletableFuture in Spring Service" width="30%">
 </a>
 
 

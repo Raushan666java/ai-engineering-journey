@@ -45,14 +45,14 @@ flowchart LR
 
 ### 14.1.1 What Is NoSQL?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-handwritten.svg" alt="Handwritten: 14.1.1 What Is NoSQL?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-handwritten.svg" alt="Handwritten: 14.1.1 What Is NoSQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-diagram.svg" alt="Diagram: 14.1.1 What Is NoSQL?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-diagram.svg" alt="Diagram: 14.1.1 What Is NoSQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-sticky.svg" alt="Sticky Note: 14.1.1 What Is NoSQL?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-1-what-is-nosql-sticky.svg" alt="Sticky Note: 14.1.1 What Is NoSQL?" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ NoSQL (Not Only SQL) refers to a class of database management systems that do no
 
 ### 14.1.2 Why NoSQL? â€” The Motivation
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-handwritten.svg" alt="Handwritten: 14.1.2 Why NoSQL? â€” The Motivation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-handwritten.svg" alt="Handwritten: 14.1.2 Why NoSQL? â€” The Motivation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-diagram.svg" alt="Diagram: 14.1.2 Why NoSQL? â€” The Motivation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-diagram.svg" alt="Diagram: 14.1.2 Why NoSQL? â€” The Motivation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-sticky.svg" alt="Sticky Note: 14.1.2 Why NoSQL? â€” The Motivation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-2-why-nosql-the-motivation-sticky.svg" alt="Sticky Note: 14.1.2 Why NoSQL? â€” The Motivation" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ Object-Relational Mapping (ORM) tools like Hibernate exist because relational ta
 
 ### 14.1.3 When to Use NoSQL vs. SQL
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-handwritten.svg" alt="Handwritten: 14.1.3 When to Use NoSQL vs. SQL" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-handwritten.svg" alt="Handwritten: 14.1.3 When to Use NoSQL vs. SQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-diagram.svg" alt="Diagram: 14.1.3 When to Use NoSQL vs. SQL" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-diagram.svg" alt="Diagram: 14.1.3 When to Use NoSQL vs. SQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-sticky.svg" alt="Sticky Note: 14.1.3 When to Use NoSQL vs. SQL" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-3-when-to-use-nosql-vs-sql-sticky.svg" alt="Sticky Note: 14.1.3 When to Use NoSQL vs. SQL" width="30%">
 </a>
 
 
@@ -133,14 +133,14 @@ Application Data Needs
 
 ### 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-handwritten.svg" alt="Handwritten: 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-handwritten.svg" alt="Handwritten: 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-diagram.svg" alt="Diagram: 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-diagram.svg" alt="Diagram: 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-sticky.svg" alt="Sticky Note: 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-1-4-real-world-analogy-library-sql-vs-warehouse-nosql-sticky.svg" alt="Sticky Note: 14.1.4 Real-World Analogy: Library (SQL) vs. Warehouse (NoSQL)" width="30%">
 </a>
 
 
@@ -197,14 +197,14 @@ Scaling: add more racks, shift pallets between racks (rebalancing), no downtime
 
 ### 14.2.1 When Polyglot Persistence Wins
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-handwritten.svg" alt="Handwritten: 14.2.1 When Polyglot Persistence Wins" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-handwritten.svg" alt="Handwritten: 14.2.1 When Polyglot Persistence Wins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-diagram.svg" alt="Diagram: 14.2.1 When Polyglot Persistence Wins" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-diagram.svg" alt="Diagram: 14.2.1 When Polyglot Persistence Wins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-sticky.svg" alt="Sticky Note: 14.2.1 When Polyglot Persistence Wins" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-2-1-when-polyglot-persistence-wins-sticky.svg" alt="Sticky Note: 14.2.1 When Polyglot Persistence Wins" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ Modern applications rarely choose one over the other â€” they use both:
 
 ### 14.3.1 Core Concept
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-handwritten.svg" alt="Handwritten: 14.3.1 Core Concept" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-handwritten.svg" alt="Handwritten: 14.3.1 Core Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-diagram.svg" alt="Diagram: 14.3.1 Core Concept" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-diagram.svg" alt="Diagram: 14.3.1 Core Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-sticky.svg" alt="Sticky Note: 14.3.1 Core Concept" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-1-core-concept-sticky.svg" alt="Sticky Note: 14.3.1 Core Concept" width="30%">
 </a>
 
 
@@ -270,14 +270,14 @@ Availability   Partition Tolerance
 
 ### 14.3.2 Understanding Network Partitions
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-handwritten.svg" alt="Handwritten: 14.3.2 Understanding Network Partitions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-handwritten.svg" alt="Handwritten: 14.3.2 Understanding Network Partitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-diagram.svg" alt="Diagram: 14.3.2 Understanding Network Partitions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-diagram.svg" alt="Diagram: 14.3.2 Understanding Network Partitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-sticky.svg" alt="Sticky Note: 14.3.2 Understanding Network Partitions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-2-understanding-network-partitions-sticky.svg" alt="Sticky Note: 14.3.2 Understanding Network Partitions" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ Partition State:
 
 ### 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-handwritten.svg" alt="Handwritten: 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-handwritten.svg" alt="Handwritten: 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-diagram.svg" alt="Diagram: 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-diagram.svg" alt="Diagram: 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-sticky.svg" alt="Sticky Note: 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-3-cap-trade-off-scenarios-dry-run-trace-tables-sticky.svg" alt="Sticky Note: 14.3.3 CAP Trade-off Scenarios â€” Dry Run Trace Tables" width="30%">
 </a>
 
 
@@ -364,14 +364,14 @@ Step | Event                          | Value | Action
 
 ### 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-handwritten.svg" alt="Handwritten: 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-handwritten.svg" alt="Handwritten: 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-diagram.svg" alt="Diagram: 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-diagram.svg" alt="Diagram: 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-sticky.svg" alt="Sticky Note: 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-4-cap-theorem-detailed-explanation-of-c-a-p-sticky.svg" alt="Sticky Note: 14.3.4 CAP Theorem â€” Detailed Explanation of C, A, P" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ Step | Event                          | Value | Action
 
 ### 14.3.5 CAP Simulator â€” Python
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-handwritten.svg" alt="Handwritten: 14.3.5 CAP Simulator â€” Python" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-handwritten.svg" alt="Handwritten: 14.3.5 CAP Simulator â€” Python" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-diagram.svg" alt="Diagram: 14.3.5 CAP Simulator â€” Python" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-diagram.svg" alt="Diagram: 14.3.5 CAP Simulator â€” Python" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-sticky.svg" alt="Sticky Note: 14.3.5 CAP Simulator â€” Python" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-5-cap-simulator-python-sticky.svg" alt="Sticky Note: 14.3.5 CAP Simulator â€” Python" width="30%">
 </a>
 
 
@@ -560,14 +560,14 @@ Initial: balance=100 on all 3 nodes
 
 ### 14.3.6 CAP Simulator â€” C++
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-handwritten.svg" alt="Handwritten: 14.3.6 CAP Simulator â€” C++" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-handwritten.svg" alt="Handwritten: 14.3.6 CAP Simulator â€” C++" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-diagram.svg" alt="Diagram: 14.3.6 CAP Simulator â€” C++" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-diagram.svg" alt="Diagram: 14.3.6 CAP Simulator â€” C++" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-sticky.svg" alt="Sticky Note: 14.3.6 CAP Simulator â€” C++" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-6-cap-simulator-c-sticky.svg" alt="Sticky Note: 14.3.6 CAP Simulator â€” C++" width="30%">
 </a>
 
 
@@ -702,14 +702,14 @@ int main() {
 
 ### 14.3.7 CAP Theorem â€” Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.3.7 CAP Theorem â€” Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.3.7 CAP Theorem â€” Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-diagram.svg" alt="Diagram: 14.3.7 CAP Theorem â€” Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-diagram.svg" alt="Diagram: 14.3.7 CAP Theorem â€” Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.3.7 CAP Theorem â€” Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-3-7-cap-theorem-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.3.7 CAP Theorem â€” Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -732,14 +732,14 @@ int main() {
 
 ### 14.4.1 Full Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-handwritten.svg" alt="Handwritten: 14.4.1 Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-handwritten.svg" alt="Handwritten: 14.4.1 Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-diagram.svg" alt="Diagram: 14.4.1 Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-diagram.svg" alt="Diagram: 14.4.1 Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-sticky.svg" alt="Sticky Note: 14.4.1 Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-1-full-comparison-sticky.svg" alt="Sticky Note: 14.4.1 Full Comparison" width="30%">
 </a>
 
 
@@ -758,14 +758,14 @@ int main() {
 
 ### 14.4.2 ACID in Detail
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-handwritten.svg" alt="Handwritten: 14.4.2 ACID in Detail" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-handwritten.svg" alt="Handwritten: 14.4.2 ACID in Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-diagram.svg" alt="Diagram: 14.4.2 ACID in Detail" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-diagram.svg" alt="Diagram: 14.4.2 ACID in Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-sticky.svg" alt="Sticky Note: 14.4.2 ACID in Detail" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-2-acid-in-detail-sticky.svg" alt="Sticky Note: 14.4.2 ACID in Detail" width="30%">
 </a>
 
 
@@ -779,14 +779,14 @@ int main() {
 
 ### 14.4.3 BASE in Detail
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-handwritten.svg" alt="Handwritten: 14.4.3 BASE in Detail" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-handwritten.svg" alt="Handwritten: 14.4.3 BASE in Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-diagram.svg" alt="Diagram: 14.4.3 BASE in Detail" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-diagram.svg" alt="Diagram: 14.4.3 BASE in Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-sticky.svg" alt="Sticky Note: 14.4.3 BASE in Detail" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-3-base-in-detail-sticky.svg" alt="Sticky Note: 14.4.3 BASE in Detail" width="30%">
 </a>
 
 
@@ -798,14 +798,14 @@ int main() {
 
 ### 14.4.4 When to Choose ACID vs. BASE
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-handwritten.svg" alt="Handwritten: 14.4.4 When to Choose ACID vs. BASE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-handwritten.svg" alt="Handwritten: 14.4.4 When to Choose ACID vs. BASE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-diagram.svg" alt="Diagram: 14.4.4 When to Choose ACID vs. BASE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-diagram.svg" alt="Diagram: 14.4.4 When to Choose ACID vs. BASE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-sticky.svg" alt="Sticky Note: 14.4.4 When to Choose ACID vs. BASE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-4-4-when-to-choose-acid-vs-base-sticky.svg" alt="Sticky Note: 14.4.4 When to Choose ACID vs. BASE" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ These systems attempt to provide both ACID transactions and horizontal scalabili
 
 ### 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-handwritten.svg" alt="Handwritten: 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-handwritten.svg" alt="Handwritten: 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-diagram.svg" alt="Diagram: 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-diagram.svg" alt="Diagram: 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-sticky.svg" alt="Sticky Note: 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-1-key-value-stores-redis-dynamodb-riak-memcached-sticky.svg" alt="Sticky Note: 14.5.1 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)" width="30%">
 </a>
 
 
@@ -893,14 +893,14 @@ These systems attempt to provide both ACID transactions and horizontal scalabili
 
 ### 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-handwritten.svg" alt="Handwritten: 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-handwritten.svg" alt="Handwritten: 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-diagram.svg" alt="Diagram: 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-diagram.svg" alt="Diagram: 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-sticky.svg" alt="Sticky Note: 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-2-document-stores-mongodb-couchbase-couchdb-firebase-sticky.svg" alt="Sticky Note: 14.5.2 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)" width="30%">
 </a>
 
 
@@ -977,14 +977,14 @@ db.products.aggregate([
 
 ### 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-handwritten.svg" alt="Handwritten: 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-handwritten.svg" alt="Handwritten: 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-diagram.svg" alt="Diagram: 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-diagram.svg" alt="Diagram: 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-sticky.svg" alt="Sticky Note: 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-3-column-family-stores-cassandra-hbase-scylladb-bigtable-sticky.svg" alt="Sticky Note: 14.5.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)" width="30%">
 </a>
 
 
@@ -1077,14 +1077,14 @@ WHERE sensor_id = 123e4567-e89b-12d3-a456-426614174000
 
 ### 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-handwritten.svg" alt="Handwritten: 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-handwritten.svg" alt="Handwritten: 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-diagram.svg" alt="Diagram: 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-diagram.svg" alt="Diagram: 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-sticky.svg" alt="Sticky Note: 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-4-graph-databases-neo4j-amazon-neptune-arangodb-janusgraph-sticky.svg" alt="Sticky Note: 14.5.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)" width="30%">
 </a>
 
 
@@ -1151,14 +1151,14 @@ RETURN p
 
 ### 14.5.5 NoSQL Types â€” Full Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-handwritten.svg" alt="Handwritten: 14.5.5 NoSQL Types â€” Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-handwritten.svg" alt="Handwritten: 14.5.5 NoSQL Types â€” Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-diagram.svg" alt="Diagram: 14.5.5 NoSQL Types â€” Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-diagram.svg" alt="Diagram: 14.5.5 NoSQL Types â€” Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-sticky.svg" alt="Sticky Note: 14.5.5 NoSQL Types â€” Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-5-5-nosql-types-full-comparison-sticky.svg" alt="Sticky Note: 14.5.5 NoSQL Types â€” Full Comparison" width="30%">
 </a>
 
 
@@ -1183,14 +1183,14 @@ Consistency models define the contract between a distributed data store and its 
 
 ### 14.6.1 The Consistency Spectrum
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-handwritten.svg" alt="Handwritten: 14.6.1 The Consistency Spectrum" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-handwritten.svg" alt="Handwritten: 14.6.1 The Consistency Spectrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-diagram.svg" alt="Diagram: 14.6.1 The Consistency Spectrum" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-diagram.svg" alt="Diagram: 14.6.1 The Consistency Spectrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-sticky.svg" alt="Sticky Note: 14.6.1 The Consistency Spectrum" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-1-the-consistency-spectrum-sticky.svg" alt="Sticky Note: 14.6.1 The Consistency Spectrum" width="30%">
 </a>
 
 
@@ -1204,14 +1204,14 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 
 ### 14.6.2 Strong Consistency (Linearizability)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-handwritten.svg" alt="Handwritten: 14.6.2 Strong Consistency (Linearizability)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-handwritten.svg" alt="Handwritten: 14.6.2 Strong Consistency (Linearizability)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-diagram.svg" alt="Diagram: 14.6.2 Strong Consistency (Linearizability)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-diagram.svg" alt="Diagram: 14.6.2 Strong Consistency (Linearizability)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-sticky.svg" alt="Sticky Note: 14.6.2 Strong Consistency (Linearizability)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-2-strong-consistency-linearizability-sticky.svg" alt="Sticky Note: 14.6.2 Strong Consistency (Linearizability)" width="30%">
 </a>
 
 
@@ -1233,14 +1233,14 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 
 ### 14.6.3 Eventual Consistency
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-handwritten.svg" alt="Handwritten: 14.6.3 Eventual Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-handwritten.svg" alt="Handwritten: 14.6.3 Eventual Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-diagram.svg" alt="Diagram: 14.6.3 Eventual Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-diagram.svg" alt="Diagram: 14.6.3 Eventual Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-sticky.svg" alt="Sticky Note: 14.6.3 Eventual Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-3-eventual-consistency-sticky.svg" alt="Sticky Note: 14.6.3 Eventual Consistency" width="30%">
 </a>
 
 
@@ -1274,14 +1274,14 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 
 ### 14.6.4 Causal Consistency
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-handwritten.svg" alt="Handwritten: 14.6.4 Causal Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-handwritten.svg" alt="Handwritten: 14.6.4 Causal Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-diagram.svg" alt="Diagram: 14.6.4 Causal Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-diagram.svg" alt="Diagram: 14.6.4 Causal Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-sticky.svg" alt="Sticky Note: 14.6.4 Causal Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-4-causal-consistency-sticky.svg" alt="Sticky Note: 14.6.4 Causal Consistency" width="30%">
 </a>
 
 
@@ -1306,14 +1306,14 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 
 ### 14.6.5 Read-Your-Writes Consistency
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-handwritten.svg" alt="Handwritten: 14.6.5 Read-Your-Writes Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-handwritten.svg" alt="Handwritten: 14.6.5 Read-Your-Writes Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-diagram.svg" alt="Diagram: 14.6.5 Read-Your-Writes Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-diagram.svg" alt="Diagram: 14.6.5 Read-Your-Writes Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-sticky.svg" alt="Sticky Note: 14.6.5 Read-Your-Writes Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-5-read-your-writes-consistency-sticky.svg" alt="Sticky Note: 14.6.5 Read-Your-Writes Consistency" width="30%">
 </a>
 
 
@@ -1341,14 +1341,14 @@ Eventual < Causal < Read-Your-Writes < Session < Monotonic < Strong (Linearizabl
 
 ### 14.6.6 Session Consistency
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-handwritten.svg" alt="Handwritten: 14.6.6 Session Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-handwritten.svg" alt="Handwritten: 14.6.6 Session Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-diagram.svg" alt="Diagram: 14.6.6 Session Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-diagram.svg" alt="Diagram: 14.6.6 Session Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-sticky.svg" alt="Sticky Note: 14.6.6 Session Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-6-session-consistency-sticky.svg" alt="Sticky Note: 14.6.6 Session Consistency" width="30%">
 </a>
 
 
@@ -1370,14 +1370,14 @@ Session 2 (same user on different device): Items in cart may not reflect Session
 
 ### 14.6.7 Monotonic Read Consistency
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-handwritten.svg" alt="Handwritten: 14.6.7 Monotonic Read Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-handwritten.svg" alt="Handwritten: 14.6.7 Monotonic Read Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-diagram.svg" alt="Diagram: 14.6.7 Monotonic Read Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-diagram.svg" alt="Diagram: 14.6.7 Monotonic Read Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-sticky.svg" alt="Sticky Note: 14.6.7 Monotonic Read Consistency" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-7-monotonic-read-consistency-sticky.svg" alt="Sticky Note: 14.6.7 Monotonic Read Consistency" width="30%">
 </a>
 
 
@@ -1399,14 +1399,14 @@ Session 2 (same user on different device): Items in cart may not reflect Session
 
 ### 14.6.8 Consistency Models Comparison Table
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-handwritten.svg" alt="Handwritten: 14.6.8 Consistency Models Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-handwritten.svg" alt="Handwritten: 14.6.8 Consistency Models Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-diagram.svg" alt="Diagram: 14.6.8 Consistency Models Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-diagram.svg" alt="Diagram: 14.6.8 Consistency Models Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-sticky.svg" alt="Sticky Note: 14.6.8 Consistency Models Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-8-consistency-models-comparison-table-sticky.svg" alt="Sticky Note: 14.6.8 Consistency Models Comparison Table" width="30%">
 </a>
 
 
@@ -1421,14 +1421,14 @@ Session 2 (same user on different device): Items in cart may not reflect Session
 
 ### 14.6.9 Complexity Analysis
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-handwritten.svg" alt="Handwritten: 14.6.9 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-handwritten.svg" alt="Handwritten: 14.6.9 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-diagram.svg" alt="Diagram: 14.6.9 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-diagram.svg" alt="Diagram: 14.6.9 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-sticky.svg" alt="Sticky Note: 14.6.9 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-6-9-complexity-analysis-sticky.svg" alt="Sticky Note: 14.6.9 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1452,14 +1452,14 @@ Session 2 (same user on different device): Items in cart may not reflect Session
 
 ### 14.7.1 What Are Vector Clocks?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-handwritten.svg" alt="Handwritten: 14.7.1 What Are Vector Clocks?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-handwritten.svg" alt="Handwritten: 14.7.1 What Are Vector Clocks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-diagram.svg" alt="Diagram: 14.7.1 What Are Vector Clocks?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-diagram.svg" alt="Diagram: 14.7.1 What Are Vector Clocks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-sticky.svg" alt="Sticky Note: 14.7.1 What Are Vector Clocks?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-1-what-are-vector-clocks-sticky.svg" alt="Sticky Note: 14.7.1 What Are Vector Clocks?" width="30%">
 </a>
 
 
@@ -1477,14 +1477,14 @@ Vector Clock: [A:3, B:2, C:1]
 
 ### 14.7.2 How Vector Clocks Work â€” Step by Step
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-handwritten.svg" alt="Handwritten: 14.7.2 How Vector Clocks Work â€” Step by Step" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-handwritten.svg" alt="Handwritten: 14.7.2 How Vector Clocks Work â€” Step by Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-diagram.svg" alt="Diagram: 14.7.2 How Vector Clocks Work â€” Step by Step" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-diagram.svg" alt="Diagram: 14.7.2 How Vector Clocks Work â€” Step by Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-sticky.svg" alt="Sticky Note: 14.7.2 How Vector Clocks Work â€” Step by Step" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-2-how-vector-clocks-work-step-by-step-sticky.svg" alt="Sticky Note: 14.7.2 How Vector Clocks Work â€” Step by Step" width="30%">
 </a>
 
 
@@ -1515,14 +1515,14 @@ Merge result: cart=["item_1", "item_2"], VC=[A:1, B:1]
 
 ### 14.7.3 Vector Clock Comparison Rules
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-handwritten.svg" alt="Handwritten: 14.7.3 Vector Clock Comparison Rules" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-handwritten.svg" alt="Handwritten: 14.7.3 Vector Clock Comparison Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-diagram.svg" alt="Diagram: 14.7.3 Vector Clock Comparison Rules" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-diagram.svg" alt="Diagram: 14.7.3 Vector Clock Comparison Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-sticky.svg" alt="Sticky Note: 14.7.3 Vector Clock Comparison Rules" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-3-vector-clock-comparison-rules-sticky.svg" alt="Sticky Note: 14.7.3 Vector Clock Comparison Rules" width="30%">
 </a>
 
 
@@ -1535,14 +1535,14 @@ Merge result: cart=["item_1", "item_2"], VC=[A:1, B:1]
 
 ### 14.7.4 Vector Clock â€” Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-handwritten.svg" alt="Handwritten: 14.7.4 Vector Clock â€” Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-handwritten.svg" alt="Handwritten: 14.7.4 Vector Clock â€” Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-diagram.svg" alt="Diagram: 14.7.4 Vector Clock â€” Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-diagram.svg" alt="Diagram: 14.7.4 Vector Clock â€” Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-sticky.svg" alt="Sticky Note: 14.7.4 Vector Clock â€” Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-4-vector-clock-dry-run-trace-table-sticky.svg" alt="Sticky Note: 14.7.4 Vector Clock â€” Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -1570,14 +1570,14 @@ T8   | â€”                             | Merge: concurrent!             | [
 
 ### 14.7.5 Vector Clock â€” Python Implementation
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-handwritten.svg" alt="Handwritten: 14.7.5 Vector Clock â€” Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-handwritten.svg" alt="Handwritten: 14.7.5 Vector Clock â€” Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-diagram.svg" alt="Diagram: 14.7.5 Vector Clock â€” Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-diagram.svg" alt="Diagram: 14.7.5 Vector Clock â€” Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-sticky.svg" alt="Sticky Note: 14.7.5 Vector Clock â€” Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-5-vector-clock-python-implementation-sticky.svg" alt="Sticky Note: 14.7.5 Vector Clock â€” Python Implementation" width="30%">
 </a>
 
 
@@ -1752,14 +1752,14 @@ VECTOR CLOCK CONFLICT DETECTION DEMO
 
 ### 14.7.6 Vector Clock â€” C++ Implementation
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-handwritten.svg" alt="Handwritten: 14.7.6 Vector Clock â€” C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-handwritten.svg" alt="Handwritten: 14.7.6 Vector Clock â€” C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-diagram.svg" alt="Diagram: 14.7.6 Vector Clock â€” C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-diagram.svg" alt="Diagram: 14.7.6 Vector Clock â€” C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-sticky.svg" alt="Sticky Note: 14.7.6 Vector Clock â€” C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-6-vector-clock-c-implementation-sticky.svg" alt="Sticky Note: 14.7.6 Vector Clock â€” C++ Implementation" width="30%">
 </a>
 
 
@@ -1911,14 +1911,14 @@ int main() {
 
 ### 14.7.7 Conflict Resolution Strategies
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-handwritten.svg" alt="Handwritten: 14.7.7 Conflict Resolution Strategies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-handwritten.svg" alt="Handwritten: 14.7.7 Conflict Resolution Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-diagram.svg" alt="Diagram: 14.7.7 Conflict Resolution Strategies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-diagram.svg" alt="Diagram: 14.7.7 Conflict Resolution Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-sticky.svg" alt="Sticky Note: 14.7.7 Conflict Resolution Strategies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-7-7-conflict-resolution-strategies-sticky.svg" alt="Sticky Note: 14.7.7 Conflict Resolution Strategies" width="30%">
 </a>
 
 
@@ -1943,14 +1943,14 @@ int main() {
 
 ### 14.8.1 Why Shard?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-handwritten.svg" alt="Handwritten: 14.8.1 Why Shard?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-handwritten.svg" alt="Handwritten: 14.8.1 Why Shard?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-diagram.svg" alt="Diagram: 14.8.1 Why Shard?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-diagram.svg" alt="Diagram: 14.8.1 Why Shard?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-sticky.svg" alt="Sticky Note: 14.8.1 Why Shard?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-1-why-shard-sticky.svg" alt="Sticky Note: 14.8.1 Why Shard?" width="30%">
 </a>
 
 
@@ -1963,14 +1963,14 @@ int main() {
 
 ### 14.8.2 Hash-Based Sharding
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-handwritten.svg" alt="Handwritten: 14.8.2 Hash-Based Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-handwritten.svg" alt="Handwritten: 14.8.2 Hash-Based Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-diagram.svg" alt="Diagram: 14.8.2 Hash-Based Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-diagram.svg" alt="Diagram: 14.8.2 Hash-Based Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-sticky.svg" alt="Sticky Note: 14.8.2 Hash-Based Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-2-hash-based-sharding-sticky.svg" alt="Sticky Note: 14.8.2 Hash-Based Sharding" width="30%">
 </a>
 
 
@@ -2048,14 +2048,14 @@ Instead of `hash(key) % N`, use a hash ring with virtual nodes. When adding shar
 
 ### 14.8.3 Range-Based Sharding
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-handwritten.svg" alt="Handwritten: 14.8.3 Range-Based Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-handwritten.svg" alt="Handwritten: 14.8.3 Range-Based Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-diagram.svg" alt="Diagram: 14.8.3 Range-Based Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-diagram.svg" alt="Diagram: 14.8.3 Range-Based Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-sticky.svg" alt="Sticky Note: 14.8.3 Range-Based Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-3-range-based-sharding-sticky.svg" alt="Sticky Note: 14.8.3 Range-Based Sharding" width="30%">
 </a>
 
 
@@ -2128,14 +2128,14 @@ If "aaron", "abby", "adam"... all go to Shard 0 â€” uneven!
 
 ### 14.8.4 Geographic (Geo) Sharding
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-handwritten.svg" alt="Handwritten: 14.8.4 Geographic (Geo) Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-handwritten.svg" alt="Handwritten: 14.8.4 Geographic (Geo) Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-diagram.svg" alt="Diagram: 14.8.4 Geographic (Geo) Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-diagram.svg" alt="Diagram: 14.8.4 Geographic (Geo) Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-sticky.svg" alt="Sticky Note: 14.8.4 Geographic (Geo) Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-4-geographic-geo-sharding-sticky.svg" alt="Sticky Note: 14.8.4 Geographic (Geo) Sharding" width="30%">
 </a>
 
 
@@ -2189,14 +2189,14 @@ function store_user_geo(user_id, geo_shard):
 
 ### 14.8.5 Sharding Strategies â€” Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-handwritten.svg" alt="Handwritten: 14.8.5 Sharding Strategies â€” Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-handwritten.svg" alt="Handwritten: 14.8.5 Sharding Strategies â€” Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-diagram.svg" alt="Diagram: 14.8.5 Sharding Strategies â€” Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-diagram.svg" alt="Diagram: 14.8.5 Sharding Strategies â€” Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-sticky.svg" alt="Sticky Note: 14.8.5 Sharding Strategies â€” Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-5-sharding-strategies-comparison-sticky.svg" alt="Sticky Note: 14.8.5 Sharding Strategies â€” Comparison" width="30%">
 </a>
 
 
@@ -2212,14 +2212,14 @@ function store_user_geo(user_id, geo_shard):
 
 ### 14.8.6 Sharding â€” Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.8.6 Sharding â€” Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.8.6 Sharding â€” Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-diagram.svg" alt="Diagram: 14.8.6 Sharding â€” Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-diagram.svg" alt="Diagram: 14.8.6 Sharding â€” Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.8.6 Sharding â€” Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-8-6-sharding-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.8.6 Sharding â€” Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2242,14 +2242,14 @@ function store_user_geo(user_id, geo_shard):
 
 ### 14.9.1 Master-Slave (Leader-Follower) Replication
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-handwritten.svg" alt="Handwritten: 14.9.1 Master-Slave (Leader-Follower) Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-handwritten.svg" alt="Handwritten: 14.9.1 Master-Slave (Leader-Follower) Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-diagram.svg" alt="Diagram: 14.9.1 Master-Slave (Leader-Follower) Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-diagram.svg" alt="Diagram: 14.9.1 Master-Slave (Leader-Follower) Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-sticky.svg" alt="Sticky Note: 14.9.1 Master-Slave (Leader-Follower) Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-1-master-slave-leader-follower-replication-sticky.svg" alt="Sticky Note: 14.9.1 Master-Slave (Leader-Follower) Replication" width="30%">
 </a>
 
 
@@ -2352,14 +2352,14 @@ Step | Client Action              | Master | Slave1 | Slave2 | Notes
 
 ### 14.9.2 Multi-Master Replication
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-handwritten.svg" alt="Handwritten: 14.9.2 Multi-Master Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-handwritten.svg" alt="Handwritten: 14.9.2 Multi-Master Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-diagram.svg" alt="Diagram: 14.9.2 Multi-Master Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-diagram.svg" alt="Diagram: 14.9.2 Multi-Master Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-sticky.svg" alt="Sticky Note: 14.9.2 Multi-Master Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-2-multi-master-replication-sticky.svg" alt="Sticky Note: 14.9.2 Multi-Master Replication" width="30%">
 </a>
 
 
@@ -2461,14 +2461,14 @@ Step | Time | Action                        | Master A   | Master B
 
 ### 14.9.3 Peer-to-Peer (Leaderless) Replication
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-handwritten.svg" alt="Handwritten: 14.9.3 Peer-to-Peer (Leaderless) Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-handwritten.svg" alt="Handwritten: 14.9.3 Peer-to-Peer (Leaderless) Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-diagram.svg" alt="Diagram: 14.9.3 Peer-to-Peer (Leaderless) Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-diagram.svg" alt="Diagram: 14.9.3 Peer-to-Peer (Leaderless) Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-sticky.svg" alt="Sticky Note: 14.9.3 Peer-to-Peer (Leaderless) Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-3-peer-to-peer-leaderless-replication-sticky.svg" alt="Sticky Note: 14.9.3 Peer-to-Peer (Leaderless) Replication" width="30%">
 </a>
 
 
@@ -2527,14 +2527,14 @@ function read(key, R=2):
 
 ### 14.9.4 Replication Types â€” Full Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-handwritten.svg" alt="Handwritten: 14.9.4 Replication Types â€” Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-handwritten.svg" alt="Handwritten: 14.9.4 Replication Types â€” Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-diagram.svg" alt="Diagram: 14.9.4 Replication Types â€” Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-diagram.svg" alt="Diagram: 14.9.4 Replication Types â€” Full Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-sticky.svg" alt="Sticky Note: 14.9.4 Replication Types â€” Full Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-4-replication-types-full-comparison-sticky.svg" alt="Sticky Note: 14.9.4 Replication Types â€” Full Comparison" width="30%">
 </a>
 
 
@@ -2551,14 +2551,14 @@ function read(key, R=2):
 
 ### 14.9.5 Replication â€” Edge Cases and Trade-offs
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-handwritten.svg" alt="Handwritten: 14.9.5 Replication â€” Edge Cases and Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-handwritten.svg" alt="Handwritten: 14.9.5 Replication â€” Edge Cases and Trade-offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-diagram.svg" alt="Diagram: 14.9.5 Replication â€” Edge Cases and Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-diagram.svg" alt="Diagram: 14.9.5 Replication â€” Edge Cases and Trade-offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-sticky.svg" alt="Sticky Note: 14.9.5 Replication â€” Edge Cases and Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-9-5-replication-edge-cases-and-trade-offs-sticky.svg" alt="Sticky Note: 14.9.5 Replication â€” Edge Cases and Trade-offs" width="30%">
 </a>
 
 
@@ -2583,14 +2583,14 @@ During a read, if the coordinator detects that some replicas have stale data, it
 
 ### 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-handwritten.svg" alt="Handwritten: 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-handwritten.svg" alt="Handwritten: 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-diagram.svg" alt="Diagram: 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-diagram.svg" alt="Diagram: 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-sticky.svg" alt="Sticky Note: 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-1-python-implementation-in-memory-with-replication-ttl-and-persistence-sticky.svg" alt="Sticky Note: 14.10.1 Python Implementation (In-Memory, with Replication, TTL, and Persistence)" width="30%">
 </a>
 
 
@@ -2871,14 +2871,14 @@ if __name__ == "__main__":
 
 ### 14.10.2 C++ Implementation (Minimal In-Memory KV Store)
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-handwritten.svg" alt="Handwritten: 14.10.2 C++ Implementation (Minimal In-Memory KV Store)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-handwritten.svg" alt="Handwritten: 14.10.2 C++ Implementation (Minimal In-Memory KV Store)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-diagram.svg" alt="Diagram: 14.10.2 C++ Implementation (Minimal In-Memory KV Store)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-diagram.svg" alt="Diagram: 14.10.2 C++ Implementation (Minimal In-Memory KV Store)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-sticky.svg" alt="Sticky Note: 14.10.2 C++ Implementation (Minimal In-Memory KV Store)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-2-c-implementation-minimal-in-memory-kv-store-sticky.svg" alt="Sticky Note: 14.10.2 C++ Implementation (Minimal In-Memory KV Store)" width="30%">
 </a>
 
 
@@ -2981,14 +2981,14 @@ int main() {
 
 ### 14.10.3 Complexity Analysis â€” Why These Complexities?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-handwritten.svg" alt="Handwritten: 14.10.3 Complexity Analysis â€” Why These Complexities?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-handwritten.svg" alt="Handwritten: 14.10.3 Complexity Analysis â€” Why These Complexities?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-diagram.svg" alt="Diagram: 14.10.3 Complexity Analysis â€” Why These Complexities?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-diagram.svg" alt="Diagram: 14.10.3 Complexity Analysis â€” Why These Complexities?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-sticky.svg" alt="Sticky Note: 14.10.3 Complexity Analysis â€” Why These Complexities?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-10-3-complexity-analysis-why-these-complexities-sticky.svg" alt="Sticky Note: 14.10.3 Complexity Analysis â€” Why These Complexities?" width="30%">
 </a>
 
 
@@ -3006,14 +3006,14 @@ Hash tables sacrifice ordering for speed. B-Trees (used by SQL databases) mainta
 
 ### Q1: Explain the CAP theorem. Can you really only choose two?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-handwritten.svg" alt="Handwritten: Explain the CAP theorem. Can you really only choose two?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-handwritten.svg" alt="Handwritten: Explain the CAP theorem. Can you really only choose two?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-diagram.svg" alt="Diagram: Explain the CAP theorem. Can you really only choose two?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-diagram.svg" alt="Diagram: Explain the CAP theorem. Can you really only choose two?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-sticky.svg" alt="Sticky Note: Explain the CAP theorem. Can you really only choose two?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-cap-theorem-can-you-really-only-choose-two-sticky.svg" alt="Sticky Note: Explain the CAP theorem. Can you really only choose two?" width="30%">
 </a>
 
 
@@ -3027,14 +3027,14 @@ Hash tables sacrifice ordering for speed. B-Trees (used by SQL databases) mainta
 
 ### Q2: When would you choose NoSQL over SQL?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-handwritten.svg" alt="Handwritten: When would you choose NoSQL over SQL?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-handwritten.svg" alt="Handwritten: When would you choose NoSQL over SQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-diagram.svg" alt="Diagram: When would you choose NoSQL over SQL?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-diagram.svg" alt="Diagram: When would you choose NoSQL over SQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-sticky.svg" alt="Sticky Note: When would you choose NoSQL over SQL?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/when-would-you-choose-nosql-over-sql-sticky.svg" alt="Sticky Note: When would you choose NoSQL over SQL?" width="30%">
 </a>
 
 
@@ -3051,14 +3051,14 @@ Hash tables sacrifice ordering for speed. B-Trees (used by SQL databases) mainta
 
 ### Q3: How do you choose a shard key?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-handwritten.svg" alt="Handwritten: How do you choose a shard key?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-handwritten.svg" alt="Handwritten: How do you choose a shard key?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-diagram.svg" alt="Diagram: How do you choose a shard key?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-diagram.svg" alt="Diagram: How do you choose a shard key?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-sticky.svg" alt="Sticky Note: How do you choose a shard key?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/how-do-you-choose-a-shard-key-sticky.svg" alt="Sticky Note: How do you choose a shard key?" width="30%">
 </a>
 
 
@@ -3076,14 +3076,14 @@ Hash tables sacrifice ordering for speed. B-Trees (used by SQL databases) mainta
 
 ### Q4: Explain the Gossip Protocol.
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-handwritten.svg" alt="Handwritten: Explain the Gossip Protocol." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-handwritten.svg" alt="Handwritten: Explain the Gossip Protocol." width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-diagram.svg" alt="Diagram: Explain the Gossip Protocol." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-diagram.svg" alt="Diagram: Explain the Gossip Protocol." width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-sticky.svg" alt="Sticky Note: Explain the Gossip Protocol." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-the-gossip-protocol-sticky.svg" alt="Sticky Note: Explain the Gossip Protocol." width="30%">
 </a>
 
 
@@ -3107,14 +3107,14 @@ Periodically (e.g., every second), each node:
 
 ### Q5: What is the difference between synchronous and asynchronous replication?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-handwritten.svg" alt="Handwritten: What is the difference between synchronous and asynchronous replication?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-handwritten.svg" alt="Handwritten: What is the difference between synchronous and asynchronous replication?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-diagram.svg" alt="Diagram: What is the difference between synchronous and asynchronous replication?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-diagram.svg" alt="Diagram: What is the difference between synchronous and asynchronous replication?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-sticky.svg" alt="Sticky Note: What is the difference between synchronous and asynchronous replication?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-difference-between-synchronous-and-asynchronous-replication-sticky.svg" alt="Sticky Note: What is the difference between synchronous and asynchronous replication?" width="30%">
 </a>
 
 
@@ -3124,14 +3124,14 @@ Periodically (e.g., every second), each node:
 
 ### Q6: How does Cassandra handle consistency?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-handwritten.svg" alt="Handwritten: How does Cassandra handle consistency?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-handwritten.svg" alt="Handwritten: How does Cassandra handle consistency?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-diagram.svg" alt="Diagram: How does Cassandra handle consistency?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-diagram.svg" alt="Diagram: How does Cassandra handle consistency?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-sticky.svg" alt="Sticky Note: How does Cassandra handle consistency?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/how-does-cassandra-handle-consistency-sticky.svg" alt="Sticky Note: How does Cassandra handle consistency?" width="30%">
 </a>
 
 
@@ -3145,14 +3145,14 @@ Periodically (e.g., every second), each node:
 
 ### Q7: What is MongoDB's replication mechanism?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-handwritten.svg" alt="Handwritten: What is MongoDB's replication mechanism?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-handwritten.svg" alt="Handwritten: What is MongoDB's replication mechanism?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-diagram.svg" alt="Diagram: What is MongoDB's replication mechanism?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-diagram.svg" alt="Diagram: What is MongoDB's replication mechanism?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-sticky.svg" alt="Sticky Note: What is MongoDB's replication mechanism?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-mongodb-s-replication-mechanism-sticky.svg" alt="Sticky Note: What is MongoDB's replication mechanism?" width="30%">
 </a>
 
 
@@ -3160,14 +3160,14 @@ Periodically (e.g., every second), each node:
 
 ### Q8: Compare eventual consistency with strong consistency for a shopping cart.
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-handwritten.svg" alt="Handwritten: Compare eventual consistency with strong consistency for a shopping cart." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-handwritten.svg" alt="Handwritten: Compare eventual consistency with strong consistency for a shopping cart." width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-diagram.svg" alt="Diagram: Compare eventual consistency with strong consistency for a shopping cart." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-diagram.svg" alt="Diagram: Compare eventual consistency with strong consistency for a shopping cart." width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-sticky.svg" alt="Sticky Note: Compare eventual consistency with strong consistency for a shopping cart." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/compare-eventual-consistency-with-strong-consistency-for-a-shopping-cart-sticky.svg" alt="Sticky Note: Compare eventual consistency with strong consistency for a shopping cart." width="30%">
 </a>
 
 
@@ -3177,14 +3177,14 @@ Periodically (e.g., every second), each node:
 
 ### Q9: What is the "split-brain" problem?
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-handwritten.svg" alt="Handwritten: What is the "split-brain" problem?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-handwritten.svg" alt="Handwritten: What is the "split-brain" problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-diagram.svg" alt="Diagram: What is the "split-brain" problem?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-diagram.svg" alt="Diagram: What is the "split-brain" problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-sticky.svg" alt="Sticky Note: What is the "split-brain" problem?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/what-is-the-split-brain-problem-sticky.svg" alt="Sticky Note: What is the "split-brain" problem?" width="30%">
 </a>
 
 
@@ -3192,14 +3192,14 @@ Periodically (e.g., every second), each node:
 
 ### Q10: Explain MongoDB's Aggregation Pipeline.
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-handwritten.svg" alt="Handwritten: Explain MongoDB's Aggregation Pipeline." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-handwritten.svg" alt="Handwritten: Explain MongoDB's Aggregation Pipeline." width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-diagram.svg" alt="Diagram: Explain MongoDB's Aggregation Pipeline." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-diagram.svg" alt="Diagram: Explain MongoDB's Aggregation Pipeline." width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-sticky.svg" alt="Sticky Note: Explain MongoDB's Aggregation Pipeline." width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/explain-mongodb-s-aggregation-pipeline-sticky.svg" alt="Sticky Note: Explain MongoDB's Aggregation Pipeline." width="30%">
 </a>
 
 
@@ -3220,14 +3220,14 @@ Each stage feeds its output to the next stage. Similar to Unix pipes.
 
 ### 14.12.1 Amazon DynamoDB
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-handwritten.svg" alt="Handwritten: 14.12.1 Amazon DynamoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-handwritten.svg" alt="Handwritten: 14.12.1 Amazon DynamoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-diagram.svg" alt="Diagram: 14.12.1 Amazon DynamoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-diagram.svg" alt="Diagram: 14.12.1 Amazon DynamoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-sticky.svg" alt="Sticky Note: 14.12.1 Amazon DynamoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-1-amazon-dynamodb-sticky.svg" alt="Sticky Note: 14.12.1 Amazon DynamoDB" width="30%">
 </a>
 
 
@@ -3254,14 +3254,14 @@ Each stage feeds its output to the next stage. Similar to Unix pipes.
 
 ### 14.12.2 Apache Cassandra
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-handwritten.svg" alt="Handwritten: 14.12.2 Apache Cassandra" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-handwritten.svg" alt="Handwritten: 14.12.2 Apache Cassandra" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-diagram.svg" alt="Diagram: 14.12.2 Apache Cassandra" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-diagram.svg" alt="Diagram: 14.12.2 Apache Cassandra" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-sticky.svg" alt="Sticky Note: 14.12.2 Apache Cassandra" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-2-apache-cassandra-sticky.svg" alt="Sticky Note: 14.12.2 Apache Cassandra" width="30%">
 </a>
 
 
@@ -3297,14 +3297,14 @@ Each stage feeds its output to the next stage. Similar to Unix pipes.
 
 ### 14.12.3 MongoDB
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-handwritten.svg" alt="Handwritten: 14.12.3 MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-handwritten.svg" alt="Handwritten: 14.12.3 MongoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-diagram.svg" alt="Diagram: 14.12.3 MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-diagram.svg" alt="Diagram: 14.12.3 MongoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-sticky.svg" alt="Sticky Note: 14.12.3 MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-3-mongodb-sticky.svg" alt="Sticky Note: 14.12.3 MongoDB" width="30%">
 </a>
 
 
@@ -3333,14 +3333,14 @@ mongos (router) â†’ config servers (metadata)
 
 ### 14.12.4 Neo4j
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-handwritten.svg" alt="Handwritten: 14.12.4 Neo4j" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-handwritten.svg" alt="Handwritten: 14.12.4 Neo4j" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-diagram.svg" alt="Diagram: 14.12.4 Neo4j" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-diagram.svg" alt="Diagram: 14.12.4 Neo4j" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-sticky.svg" alt="Sticky Note: 14.12.4 Neo4j" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-4-neo4j-sticky.svg" alt="Sticky Note: 14.12.4 Neo4j" width="30%">
 </a>
 
 
@@ -3362,14 +3362,14 @@ mongos (router) â†’ config servers (metadata)
 
 ### 14.12.5 Redis
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-handwritten.svg" alt="Handwritten: 14.12.5 Redis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-handwritten.svg" alt="Handwritten: 14.12.5 Redis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-diagram.svg" alt="Diagram: 14.12.5 Redis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-diagram.svg" alt="Diagram: 14.12.5 Redis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-sticky.svg" alt="Sticky Note: 14.12.5 Redis" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-5-redis-sticky.svg" alt="Sticky Note: 14.12.5 Redis" width="30%">
 </a>
 
 
@@ -3400,14 +3400,14 @@ mongos (router) â†’ config servers (metadata)
 
 ### 14.12.6 System Selection Decision Matrix
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-handwritten.svg" alt="Handwritten: 14.12.6 System Selection Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-handwritten.svg" alt="Handwritten: 14.12.6 System Selection Decision Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-diagram.svg" alt="Diagram: 14.12.6 System Selection Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-diagram.svg" alt="Diagram: 14.12.6 System Selection Decision Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-sticky.svg" alt="Sticky Note: 14.12.6 System Selection Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-6-system-selection-decision-matrix-sticky.svg" alt="Sticky Note: 14.12.6 System Selection Decision Matrix" width="30%">
 </a>
 
 
@@ -3498,14 +3498,14 @@ mongos (router) â†’ config servers (metadata)
 
 ### 14.12 TypeScript CAP Theorem & Consistency Model Simulator
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-handwritten.svg" alt="Handwritten: 14.12 TypeScript CAP Theorem & Consistency Model Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-handwritten.svg" alt="Handwritten: 14.12 TypeScript CAP Theorem & Consistency Model Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-diagram.svg" alt="Diagram: 14.12 TypeScript CAP Theorem & Consistency Model Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-diagram.svg" alt="Diagram: 14.12 TypeScript CAP Theorem & Consistency Model Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-sticky.svg" alt="Sticky Note: 14.12 TypeScript CAP Theorem & Consistency Model Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/14-12-typescript-cap-theorem-consistency-model-simulator-sticky.svg" alt="Sticky Note: 14.12 TypeScript CAP Theorem & Consistency Model Simulator" width="30%">
 </a>
 
 
@@ -3633,14 +3633,14 @@ quadrantChart
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 
@@ -3767,14 +3767,14 @@ quadrantChart
 
 ### Basic
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -3790,14 +3790,14 @@ quadrantChart
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -3813,14 +3813,14 @@ quadrantChart
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/14-nosql/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/14-nosql/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/14-nosql/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/14-nosql/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 

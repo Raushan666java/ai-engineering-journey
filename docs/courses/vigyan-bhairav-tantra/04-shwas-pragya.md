@@ -26,14 +26,14 @@
 
 ### श्वास ही क्यों?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: श्वास ही क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: श्वास ही क्यों?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: श्वास ही क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: श्वास ही क्यों?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: श्वास ही क्यों?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: श्वास ही क्यों?" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ flowchart TB
 
 ### ओशो का प्राणायाम से अंतर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: ओशो का प्राणायाम से अंतर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: ओशो का प्राणायाम से अंतर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: ओशो का प्राणायाम से अंतर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: ओशो का प्राणायाम से अंतर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: ओशो का प्राणायाम से अंतर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: ओशो का प्राणायाम से अंतर" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ flowchart TB
 
 ### विधि १: श्वास-प्राण धारण (Breath Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-handwritten.svg" alt="Handwritten: विधि १: श्वास-प्राण धारण (Breath Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-handwritten.svg" alt="Handwritten: विधि १: श्वास-प्राण धारण (Breath Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-diagram.svg" alt="Diagram: विधि १: श्वास-प्राण धारण (Breath Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-diagram.svg" alt="Diagram: विधि १: श्वास-प्राण धारण (Breath Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-sticky.svg" alt="Sticky Note: विधि १: श्वास-प्राण धारण (Breath Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/breath-awareness-sticky.svg" alt="Sticky Note: विधि १: श्वास-प्राण धारण (Breath Awareness)" width="30%">
 </a>
 
 
@@ -165,14 +165,14 @@ flowchart TB
 
 ### विधि २: प्राण-अपान संयोग (Union of Prana and Apana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-handwritten.svg" alt="Handwritten: विधि २: प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-handwritten.svg" alt="Handwritten: विधि २: प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-diagram.svg" alt="Diagram: विधि २: प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-diagram.svg" alt="Diagram: विधि २: प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-sticky.svg" alt="Sticky Note: विधि २: प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/union-of-prana-and-apana-sticky.svg" alt="Sticky Note: विधि २: प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
 </a>
 
 
@@ -198,14 +198,14 @@ flowchart TB
 
 ### विधि ३: श्वास-प्रश्वास साक्षी (Witnessing Inhale and Exhale)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-handwritten.svg" alt="Handwritten: विधि ३: श्वास-प्रश्वास साक्षी (Witnessing Inhale and Exhale)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-handwritten.svg" alt="Handwritten: विधि ३: श्वास-प्रश्वास साक्षी (Witnessing Inhale and Exhale)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-diagram.svg" alt="Diagram: विधि ३: श्वास-प्रश्वास साक्षी (Witnessing Inhale and Exhale)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-diagram.svg" alt="Diagram: विधि ३: श्वास-प्रश्वास साक्षी (Witnessing Inhale and Exhale)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-sticky.svg" alt="Sticky Note: विधि ३: श्वास-प्रश्वास साक्षी (Witnessing Inhale and Exhale)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/witnessing-inhale-and-exhale-sticky.svg" alt="Sticky Note: विधि ३: श्वास-प्रश्वास साक्षी (Witnessing Inhale and Exhale)" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ flowchart TB
 
 ### विधि ४: श्वास रुकने पर ध्यान (Attention at Breath Stoppage)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-handwritten.svg" alt="Handwritten: विधि ४: श्वास रुकने पर ध्यान (Attention at Breath Stoppage)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-handwritten.svg" alt="Handwritten: विधि ४: श्वास रुकने पर ध्यान (Attention at Breath Stoppage)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-diagram.svg" alt="Diagram: विधि ४: श्वास रुकने पर ध्यान (Attention at Breath Stoppage)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-diagram.svg" alt="Diagram: विधि ४: श्वास रुकने पर ध्यान (Attention at Breath Stoppage)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-sticky.svg" alt="Sticky Note: विधि ४: श्वास रुकने पर ध्यान (Attention at Breath Stoppage)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/attention-at-breath-stoppage-sticky.svg" alt="Sticky Note: विधि ४: श्वास रुकने पर ध्यान (Attention at Breath Stoppage)" width="30%">
 </a>
 
 
@@ -254,14 +254,14 @@ flowchart TB
 
 ### विधि ५: प्राण-शून्य विस्तार (Expansion of Prana into Void)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-handwritten.svg" alt="Handwritten: विधि ५: प्राण-शून्य विस्तार (Expansion of Prana into Void)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-handwritten.svg" alt="Handwritten: विधि ५: प्राण-शून्य विस्तार (Expansion of Prana into Void)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-diagram.svg" alt="Diagram: विधि ५: प्राण-शून्य विस्तार (Expansion of Prana into Void)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-diagram.svg" alt="Diagram: विधि ५: प्राण-शून्य विस्तार (Expansion of Prana into Void)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-sticky.svg" alt="Sticky Note: विधि ५: प्राण-शून्य विस्तार (Expansion of Prana into Void)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/expansion-of-prana-into-void-sticky.svg" alt="Sticky Note: विधि ५: प्राण-शून्य विस्तार (Expansion of Prana into Void)" width="30%">
 </a>
 
 
@@ -279,14 +279,14 @@ flowchart TB
 
 ### विधि ६-१०: श्वास के पाँच आयाम (Five Dimensions of Breath)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-handwritten.svg" alt="Handwritten: विधि ६-१०: श्वास के पाँच आयाम (Five Dimensions of Breath)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-handwritten.svg" alt="Handwritten: विधि ६-१०: श्वास के पाँच आयाम (Five Dimensions of Breath)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-diagram.svg" alt="Diagram: विधि ६-१०: श्वास के पाँच आयाम (Five Dimensions of Breath)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-diagram.svg" alt="Diagram: विधि ६-१०: श्वास के पाँच आयाम (Five Dimensions of Breath)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-sticky.svg" alt="Sticky Note: विधि ६-१०: श्वास के पाँच आयाम (Five Dimensions of Breath)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/five-dimensions-of-breath-sticky.svg" alt="Sticky Note: विधि ६-१०: श्वास के पाँच आयाम (Five Dimensions of Breath)" width="30%">
 </a>
 
 
@@ -307,14 +307,14 @@ flowchart TB
 
 ### विधि ११-१५: उन्नत श्वास तकनीकें (Advanced Breath Techniques)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-handwritten.svg" alt="Handwritten: विधि ११-१५: उन्नत श्वास तकनीकें (Advanced Breath Techniques)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-handwritten.svg" alt="Handwritten: विधि ११-१५: उन्नत श्वास तकनीकें (Advanced Breath Techniques)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-diagram.svg" alt="Diagram: विधि ११-१५: उन्नत श्वास तकनीकें (Advanced Breath Techniques)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-diagram.svg" alt="Diagram: विधि ११-१५: उन्नत श्वास तकनीकें (Advanced Breath Techniques)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-sticky.svg" alt="Sticky Note: विधि ११-१५: उन्नत श्वास तकनीकें (Advanced Breath Techniques)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/advanced-breath-techniques-sticky.svg" alt="Sticky Note: विधि ११-१५: उन्नत श्वास तकनीकें (Advanced Breath Techniques)" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ flowchart TB
 
 ### यह इतना क्रांतिकारी क्यों है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: यह इतना क्रांतिकारी क्यों है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: यह इतना क्रांतिकारी क्यों है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: यह इतना क्रांतिकारी क्यों है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: यह इतना क्रांतिकारी क्यों है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: यह इतना क्रांतिकारी क्यों है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: यह इतना क्रांतिकारी क्यों है?" width="30%">
 </a>
 
 
@@ -353,14 +353,14 @@ flowchart TB
 
 ### नियंत्रण vs देखना — ओशो का मूल भेद
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-handwritten.svg" alt="Handwritten: नियंत्रण vs देखना — ओशो का मूल भेद" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-handwritten.svg" alt="Handwritten: नियंत्रण vs देखना — ओशो का मूल भेद" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-diagram.svg" alt="Diagram: नियंत्रण vs देखना — ओशो का मूल भेद" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-diagram.svg" alt="Diagram: नियंत्रण vs देखना — ओशो का मूल भेद" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-sticky.svg" alt="Sticky Note: नियंत्रण vs देखना — ओशो का मूल भेद" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/vs-sticky.svg" alt="Sticky Note: नियंत्रण vs देखना — ओशो का मूल भेद" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ flowchart TB
 
 ### श्वास देखने का अभ्यास — ओशो की चरणबद्ध विधि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: श्वास देखने का अभ्यास — ओशो की चरणबद्ध विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: श्वास देखने का अभ्यास — ओशो की चरणबद्ध विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: श्वास देखने का अभ्यास — ओशो की चरणबद्ध विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: श्वास देखने का अभ्यास — ओशो की चरणबद्ध विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: श्वास देखने का अभ्यास — ओशो की चरणबद्ध विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: श्वास देखने का अभ्यास — ओशो की चरणबद्ध विधि" width="30%">
 </a>
 
 
@@ -418,14 +418,14 @@ flowchart LR
 
 ### सामान्य गलतियाँ — ओशो के अनुसार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: सामान्य गलतियाँ — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: सामान्य गलतियाँ — ओशो के अनुसार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: सामान्य गलतियाँ — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: सामान्य गलतियाँ — ओशो के अनुसार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: सामान्य गलतियाँ — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: सामान्य गलतियाँ — ओशो के अनुसार" width="30%">
 </a>
 
 
@@ -828,14 +828,14 @@ runOshoBreathMeditation();
 
 ### दिन में कभी भी — कहीं भी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: दिन में कभी भी — कहीं भी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: दिन में कभी भी — कहीं भी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: दिन में कभी भी — कहीं भी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: दिन में कभी भी — कहीं भी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: दिन में कभी भी — कहीं भी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: दिन में कभी भी — कहीं भी" width="30%">
 </a>
 
 
@@ -844,14 +844,14 @@ runOshoBreathMeditation();
 
 ### जीवन में श्वास-प्रज्ञा को शामिल करना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: जीवन में श्वास-प्रज्ञा को शामिल करना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: जीवन में श्वास-प्रज्ञा को शामिल करना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: जीवन में श्वास-प्रज्ञा को शामिल करना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: जीवन में श्वास-प्रज्ञा को शामिल करना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: जीवन में श्वास-प्रज्ञा को शामिल करना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: जीवन में श्वास-प्रज्ञा को शामिल करना" width="30%">
 </a>
 
 
@@ -885,14 +885,14 @@ runOshoBreathMeditation();
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 ओशो के अनुसार श्वास ध्यान का मूल सिद्धांत क्या है?
@@ -909,14 +909,14 @@ b) "श्वास को देखो — बस देखो। उसे ब
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 विधि ४ (श्वास रुकने पर ध्यान) में क्या करना है?
@@ -933,14 +933,14 @@ b) श्वास के आने और जाने के बीच के 
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 पारंपरिक प्राणायाम और ओशो की श्वास-प्रज्ञा में मुख्य अंतर क्या है?
@@ -957,14 +957,14 @@ a) प्राणायाम = नियंत्रण, ओशो = दर्
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 ओशो के अनुसार श्वास किन तीन चीज़ों के बीच का पुल है?
@@ -981,14 +981,14 @@ b) शरीर (स्थूल), मन (सूक्ष्म), चेतन�
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 ओशो के अनुसार श्वास ध्यान में सबसे बड़ी गलती क्या है?
@@ -1005,14 +1005,14 @@ b) श्वास को बदलने की कोशिश — "श्व�
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 विधि २ (प्राण-अपान संयोग) में क्या होता है?
@@ -1029,14 +1029,14 @@ b) प्राण और अपान — दो विपरीत ऊर्�
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 ओशो का "जस्ट वॉच द ब्रीथ" क्रांतिकारी क्यों है?
@@ -1053,14 +1053,14 @@ b) सदियों से श्वास नियंत्रण सिख�
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 ओशो के अनुसार श्वास ध्यान कब भी किया जा सकता है?
@@ -1081,14 +1081,14 @@ c) चौबीसों घंटे — श्वास हमेशा चल
 
 ### अभ्यास १: अपना पहला श्वास ध्यान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास १: अपना पहला श्वास ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास १: अपना पहला श्वास ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास १: अपना पहला श्वास ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास १: अपना पहला श्वास ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास १: अपना पहला श्वास ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास १: अपना पहला श्वास ध्यान" width="30%">
 </a>
 
 
@@ -1112,14 +1112,14 @@ console.log('वैकल्पिक: खुद बैठकर १० मि�
 
 ### अभ्यास २: श्वास पैटर्न विश्लेषण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास २: श्वास पैटर्न विश्लेषण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास २: श्वास पैटर्न विश्लेषण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास २: श्वास पैटर्न विश्लेषण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास २: श्वास पैटर्न विश्लेषण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास २: श्वास पैटर्न विश्लेषण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास २: श्वास पैटर्न विश्लेषण" width="30%">
 </a>
 
 
@@ -1161,14 +1161,14 @@ console.log(analyzeBreathPattern(demoPatterns));
 
 ### अभ्यास ३: ७ दिन का श्वास अभ्यास — ओशो के साथ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास ३: ७ दिन का श्वास अभ्यास — ओशो के साथ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास ३: ७ दिन का श्वास अभ्यास — ओशो के साथ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास ३: ७ दिन का श्वास अभ्यास — ओशो के साथ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास ३: ७ दिन का श्वास अभ्यास — ओशो के साथ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास ३: ७ दिन का श्वास अभ्यास — ओशो के साथ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास ३: ७ दिन का श्वास अभ्यास — ओशो के साथ" width="30%">
 </a>
 
 
@@ -1201,14 +1201,14 @@ console.log('क्या कोई कठिनाई आई?');
 
 ### अभ्यास ४: ओशो के शब्द — श्वास पर चिंतन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास ४: ओशो के शब्द — श्वास पर चिंतन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-handwritten.svg" alt="Handwritten: अभ्यास ४: ओशो के शब्द — श्वास पर चिंतन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास ४: ओशो के शब्द — श्वास पर चिंतन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-diagram.svg" alt="Diagram: अभ्यास ४: ओशो के शब्द — श्वास पर चिंतन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास ४: ओशो के शब्द — श्वास पर चिंतन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/04-shwas-pragya/-sticky.svg" alt="Sticky Note: अभ्यास ४: ओशो के शब्द — श्वास पर चिंतन" width="30%">
 </a>
 
 

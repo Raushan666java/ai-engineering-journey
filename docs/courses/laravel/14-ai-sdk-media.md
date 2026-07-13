@@ -45,14 +45,14 @@ flowchart LR
 
 ### 14.1 Image Generation
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-handwritten.svg" alt="Handwritten: 14.1 Image Generation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-handwritten.svg" alt="Handwritten: 14.1 Image Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-diagram.svg" alt="Diagram: 14.1 Image Generation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-diagram.svg" alt="Diagram: 14.1 Image Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-sticky.svg" alt="Sticky Note: 14.1 Image Generation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-1-image-generation-sticky.svg" alt="Sticky Note: 14.1 Image Generation" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ class ImageController extends Controller
 
 ### 14.2 Text-to-Speech (TTS) Audio
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-handwritten.svg" alt="Handwritten: 14.2 Text-to-Speech (TTS) Audio" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-handwritten.svg" alt="Handwritten: 14.2 Text-to-Speech (TTS) Audio" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-diagram.svg" alt="Diagram: 14.2 Text-to-Speech (TTS) Audio" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-diagram.svg" alt="Diagram: 14.2 Text-to-Speech (TTS) Audio" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-sticky.svg" alt="Sticky Note: 14.2 Text-to-Speech (TTS) Audio" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-2-text-to-speech-tts-audio-sticky.svg" alt="Sticky Note: 14.2 Text-to-Speech (TTS) Audio" width="30%">
 </a>
 
 
@@ -182,14 +182,14 @@ class AudioController extends Controller
 
 ### 14.3 Speech-to-Text Transcription
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-handwritten.svg" alt="Handwritten: 14.3 Speech-to-Text Transcription" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-handwritten.svg" alt="Handwritten: 14.3 Speech-to-Text Transcription" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-diagram.svg" alt="Diagram: 14.3 Speech-to-Text Transcription" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-diagram.svg" alt="Diagram: 14.3 Speech-to-Text Transcription" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-sticky.svg" alt="Sticky Note: 14.3 Speech-to-Text Transcription" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-3-speech-to-text-transcription-sticky.svg" alt="Sticky Note: 14.3 Speech-to-Text Transcription" width="30%">
 </a>
 
 
@@ -270,14 +270,14 @@ class TranscriptionController extends Controller
 
 ### 14.4 Embeddings
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-handwritten.svg" alt="Handwritten: 14.4 Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-handwritten.svg" alt="Handwritten: 14.4 Embeddings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-diagram.svg" alt="Diagram: 14.4 Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-diagram.svg" alt="Diagram: 14.4 Embeddings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-sticky.svg" alt="Sticky Note: 14.4 Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-4-embeddings-sticky.svg" alt="Sticky Note: 14.4 Embeddings" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ class SearchController extends Controller
 
 ### 14.5 Caching Embeddings
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-handwritten.svg" alt="Handwritten: 14.5 Caching Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-handwritten.svg" alt="Handwritten: 14.5 Caching Embeddings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-diagram.svg" alt="Diagram: 14.5 Caching Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-diagram.svg" alt="Diagram: 14.5 Caching Embeddings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-sticky.svg" alt="Sticky Note: 14.5 Caching Embeddings" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-5-caching-embeddings-sticky.svg" alt="Sticky Note: 14.5 Caching Embeddings" width="30%">
 </a>
 
 
@@ -488,14 +488,14 @@ class DocumentObserver
 
 ### 14.6 Reranking
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-handwritten.svg" alt="Handwritten: 14.6 Reranking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-handwritten.svg" alt="Handwritten: 14.6 Reranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-diagram.svg" alt="Diagram: 14.6 Reranking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-diagram.svg" alt="Diagram: 14.6 Reranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-sticky.svg" alt="Sticky Note: 14.6 Reranking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-6-reranking-sticky.svg" alt="Sticky Note: 14.6 Reranking" width="30%">
 </a>
 
 
@@ -579,14 +579,14 @@ class SearchController extends Controller
 
 ### 14.7 Files and Vector Stores
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-handwritten.svg" alt="Handwritten: 14.7 Files and Vector Stores" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-handwritten.svg" alt="Handwritten: 14.7 Files and Vector Stores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-diagram.svg" alt="Diagram: 14.7 Files and Vector Stores" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-diagram.svg" alt="Diagram: 14.7 Files and Vector Stores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-sticky.svg" alt="Sticky Note: 14.7 Files and Vector Stores" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-7-files-and-vector-stores-sticky.svg" alt="Sticky Note: 14.7 Files and Vector Stores" width="30%">
 </a>
 
 
@@ -624,14 +624,14 @@ class VectorStoreController extends Controller
 
 ### 14.8 Failover and Retry
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-handwritten.svg" alt="Handwritten: 14.8 Failover and Retry" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-handwritten.svg" alt="Handwritten: 14.8 Failover and Retry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-diagram.svg" alt="Diagram: 14.8 Failover and Retry" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-diagram.svg" alt="Diagram: 14.8 Failover and Retry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-sticky.svg" alt="Sticky Note: 14.8 Failover and Retry" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-8-failover-and-retry-sticky.svg" alt="Sticky Note: 14.8 Failover and Retry" width="30%">
 </a>
 
 
@@ -675,14 +675,14 @@ class ResilientImageController extends Controller
 
 ### 14.9 Testing AI SDK Operations
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-handwritten.svg" alt="Handwritten: 14.9 Testing AI SDK Operations" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-handwritten.svg" alt="Handwritten: 14.9 Testing AI SDK Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-diagram.svg" alt="Diagram: 14.9 Testing AI SDK Operations" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-diagram.svg" alt="Diagram: 14.9 Testing AI SDK Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-sticky.svg" alt="Sticky Note: 14.9 Testing AI SDK Operations" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-9-testing-ai-sdk-operations-sticky.svg" alt="Sticky Note: 14.9 Testing AI SDK Operations" width="30%">
 </a>
 
 
@@ -783,14 +783,14 @@ class AiSdkTest extends TestCase
 
 ### 14.10 Events
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-handwritten.svg" alt="Handwritten: 14.10 Events" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-handwritten.svg" alt="Handwritten: 14.10 Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-diagram.svg" alt="Diagram: 14.10 Events" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-diagram.svg" alt="Diagram: 14.10 Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-sticky.svg" alt="Sticky Note: 14.10 Events" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-10-events-sticky.svg" alt="Sticky Note: 14.10 Events" width="30%">
 </a>
 
 
@@ -822,14 +822,14 @@ class LogAiUsage
 
 ### 14.11 Complete Example: Multi-Modal Content Analysis
 
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-handwritten.svg" alt="Handwritten: 14.11 Complete Example: Multi-Modal Content Analysis" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-handwritten.svg" alt="Handwritten: 14.11 Complete Example: Multi-Modal Content Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-diagram.svg" alt="Diagram: 14.11 Complete Example: Multi-Modal Content Analysis" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-diagram.svg" alt="Diagram: 14.11 Complete Example: Multi-Modal Content Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-sticky.svg" alt="Sticky Note: 14.11 Complete Example: Multi-Modal Content Analysis" width="30%">
+<a href="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/14-ai-sdk-media/14-11-complete-example-multi-modal-content-analysis-sticky.svg" alt="Sticky Note: 14.11 Complete Example: Multi-Modal Content Analysis" width="30%">
 </a>
 
 

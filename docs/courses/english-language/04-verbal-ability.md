@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 4.1 What Is Verbal Ability?
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-handwritten.svg" alt="Handwritten: 4.1 What Is Verbal Ability?" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-handwritten.svg" alt="Handwritten: 4.1 What Is Verbal Ability?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-diagram.svg" alt="Diagram: 4.1 What Is Verbal Ability?" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-diagram.svg" alt="Diagram: 4.1 What Is Verbal Ability?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-sticky.svg" alt="Sticky Note: 4.1 What Is Verbal Ability?" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-1-what-is-verbal-ability-sticky.svg" alt="Sticky Note: 4.1 What Is Verbal Ability?" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@ Verbal Ability in government exams is a broad category that tests your command o
 
 ### 4.2 Para Jumbles (Sentence Rearrangement)
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-handwritten.svg" alt="Handwritten: 4.2 Para Jumbles (Sentence Rearrangement)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-handwritten.svg" alt="Handwritten: 4.2 Para Jumbles (Sentence Rearrangement)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-diagram.svg" alt="Diagram: 4.2 Para Jumbles (Sentence Rearrangement)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-diagram.svg" alt="Diagram: 4.2 Para Jumbles (Sentence Rearrangement)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-sticky.svg" alt="Sticky Note: 4.2 Para Jumbles (Sentence Rearrangement)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-2-para-jumbles-sentence-rearrangement-sticky.svg" alt="Sticky Note: 4.2 Para Jumbles (Sentence Rearrangement)" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ d) S → Q → P → R
 
 ### 4.3 Fillers (Single, Double, Triple)
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-handwritten.svg" alt="Handwritten: 4.3 Fillers (Single, Double, Triple)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-handwritten.svg" alt="Handwritten: 4.3 Fillers (Single, Double, Triple)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-diagram.svg" alt="Diagram: 4.3 Fillers (Single, Double, Triple)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-diagram.svg" alt="Diagram: 4.3 Fillers (Single, Double, Triple)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-sticky.svg" alt="Sticky Note: 4.3 Fillers (Single, Double, Triple)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-3-fillers-single-double-triple-sticky.svg" alt="Sticky Note: 4.3 Fillers (Single, Double, Triple)" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ Context suggests a negative tone (problems with systems). Option (a): "obsolete"
 
 ### 4.4 Odd One Out (Sentence)
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-handwritten.svg" alt="Handwritten: 4.4 Odd One Out (Sentence)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-handwritten.svg" alt="Handwritten: 4.4 Odd One Out (Sentence)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-diagram.svg" alt="Diagram: 4.4 Odd One Out (Sentence)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-diagram.svg" alt="Diagram: 4.4 Odd One Out (Sentence)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-sticky.svg" alt="Sticky Note: 4.4 Odd One Out (Sentence)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-4-odd-one-out-sentence-sticky.svg" alt="Sticky Note: 4.4 Odd One Out (Sentence)" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ In this question type, you are given 4–5 sentences. Three or four form a coher
 
 ### 4.5 Odd One Out (Word)
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-handwritten.svg" alt="Handwritten: 4.5 Odd One Out (Word)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-handwritten.svg" alt="Handwritten: 4.5 Odd One Out (Word)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-diagram.svg" alt="Diagram: 4.5 Odd One Out (Word)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-diagram.svg" alt="Diagram: 4.5 Odd One Out (Word)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-sticky.svg" alt="Sticky Note: 4.5 Odd One Out (Word)" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-5-odd-one-out-word-sticky.svg" alt="Sticky Note: 4.5 Odd One Out (Word)" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ a) Phishing   b) Ransomware   c) Malware   d) Firefly
 
 ### 4.6 Verbal Analogies
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-handwritten.svg" alt="Handwritten: 4.6 Verbal Analogies" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-handwritten.svg" alt="Handwritten: 4.6 Verbal Analogies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-diagram.svg" alt="Diagram: 4.6 Verbal Analogies" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-diagram.svg" alt="Diagram: 4.6 Verbal Analogies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-sticky.svg" alt="Sticky Note: 4.6 Verbal Analogies" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-6-verbal-analogies-sticky.svg" alt="Sticky Note: 4.6 Verbal Analogies" width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@ a) Chapter    b) Book    c) Introduction    d) Author
 
 ### 4.7 Sentence Correction / Improvement
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-handwritten.svg" alt="Handwritten: 4.7 Sentence Correction / Improvement" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-handwritten.svg" alt="Handwritten: 4.7 Sentence Correction / Improvement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-diagram.svg" alt="Diagram: 4.7 Sentence Correction / Improvement" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-diagram.svg" alt="Diagram: 4.7 Sentence Correction / Improvement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-sticky.svg" alt="Sticky Note: 4.7 Sentence Correction / Improvement" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-7-sentence-correction-improvement-sticky.svg" alt="Sticky Note: 4.7 Sentence Correction / Improvement" width="30%">
 </a>
 
 
@@ -360,14 +360,14 @@ This topic overlaps with grammar but tests broader verbal ability — logic, con
 
 ### 4.8 Word Usage Games
 
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-handwritten.svg" alt="Handwritten: 4.8 Word Usage Games" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-handwritten.svg" alt="Handwritten: 4.8 Word Usage Games" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-diagram.svg" alt="Diagram: 4.8 Word Usage Games" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-diagram.svg" alt="Diagram: 4.8 Word Usage Games" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-sticky.svg" alt="Sticky Note: 4.8 Word Usage Games" width="30%">
+<a href="../../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/04-verbal-ability/4-8-word-usage-games-sticky.svg" alt="Sticky Note: 4.8 Word Usage Games" width="30%">
 </a>
 
 

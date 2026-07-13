@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 6.1 National Affairs — Major Events
 
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-handwritten.svg" alt="Handwritten: 6.1 National Affairs — Major Events" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-handwritten.svg" alt="Handwritten: 6.1 National Affairs — Major Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-diagram.svg" alt="Diagram: 6.1 National Affairs — Major Events" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-diagram.svg" alt="Diagram: 6.1 National Affairs — Major Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-sticky.svg" alt="Sticky Note: 6.1 National Affairs — Major Events" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-1-national-affairs-major-events-sticky.svg" alt="Sticky Note: 6.1 National Affairs — Major Events" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ timeline
 
 ### 6.2 International Affairs
 
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-handwritten.svg" alt="Handwritten: 6.2 International Affairs" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-handwritten.svg" alt="Handwritten: 6.2 International Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-diagram.svg" alt="Diagram: 6.2 International Affairs" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-diagram.svg" alt="Diagram: 6.2 International Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-sticky.svg" alt="Sticky Note: 6.2 International Affairs" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-2-international-affairs-sticky.svg" alt="Sticky Note: 6.2 International Affairs" width="30%">
 </a>
 
 
@@ -172,14 +172,14 @@ mindmap
 
 ### 6.3 Economic Affairs 2024
 
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-handwritten.svg" alt="Handwritten: 6.3 Economic Affairs 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-handwritten.svg" alt="Handwritten: 6.3 Economic Affairs 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-diagram.svg" alt="Diagram: 6.3 Economic Affairs 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-diagram.svg" alt="Diagram: 6.3 Economic Affairs 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-sticky.svg" alt="Sticky Note: 6.3 Economic Affairs 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-3-economic-affairs-2024-sticky.svg" alt="Sticky Note: 6.3 Economic Affairs 2024" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ mindmap
 
 ### 6.4 Science & Technology 2024
 
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-handwritten.svg" alt="Handwritten: 6.4 Science & Technology 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-handwritten.svg" alt="Handwritten: 6.4 Science & Technology 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-diagram.svg" alt="Diagram: 6.4 Science & Technology 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-diagram.svg" alt="Diagram: 6.4 Science & Technology 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-sticky.svg" alt="Sticky Note: 6.4 Science & Technology 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-4-science-technology-2024-sticky.svg" alt="Sticky Note: 6.4 Science & Technology 2024" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ mindmap
 
 ### 6.5 Sports Events 2024
 
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-handwritten.svg" alt="Handwritten: 6.5 Sports Events 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-handwritten.svg" alt="Handwritten: 6.5 Sports Events 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-diagram.svg" alt="Diagram: 6.5 Sports Events 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-diagram.svg" alt="Diagram: 6.5 Sports Events 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-sticky.svg" alt="Sticky Note: 6.5 Sports Events 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-5-sports-events-2024-sticky.svg" alt="Sticky Note: 6.5 Sports Events 2024" width="30%">
 </a>
 
 
@@ -296,14 +296,14 @@ mindmap
 
 ### 6.6 Awards & Honours 2024
 
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-handwritten.svg" alt="Handwritten: 6.6 Awards & Honours 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-handwritten.svg" alt="Handwritten: 6.6 Awards & Honours 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-diagram.svg" alt="Diagram: 6.6 Awards & Honours 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-diagram.svg" alt="Diagram: 6.6 Awards & Honours 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-sticky.svg" alt="Sticky Note: 6.6 Awards & Honours 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-6-awards-honours-2024-sticky.svg" alt="Sticky Note: 6.6 Awards & Honours 2024" width="30%">
 </a>
 
 
@@ -342,14 +342,14 @@ mindmap
 
 ### 6.7 Obituaries 2024
 
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-handwritten.svg" alt="Handwritten: 6.7 Obituaries 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-handwritten.svg" alt="Handwritten: 6.7 Obituaries 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-diagram.svg" alt="Diagram: 6.7 Obituaries 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-diagram.svg" alt="Diagram: 6.7 Obituaries 2024" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-sticky.svg" alt="Sticky Note: 6.7 Obituaries 2024" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/06-current-affairs-2024/6-7-obituaries-2024-sticky.svg" alt="Sticky Note: 6.7 Obituaries 2024" width="30%">
 </a>
 
 

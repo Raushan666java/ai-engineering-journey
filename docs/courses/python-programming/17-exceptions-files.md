@@ -60,14 +60,14 @@ flowchart LR
 
 ### 17.1.1 Basic try/except
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-handwritten.svg" alt="Handwritten: 17.1.1 Basic try/except" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-handwritten.svg" alt="Handwritten: 17.1.1 Basic try/except" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-diagram.svg" alt="Diagram: 17.1.1 Basic try/except" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-diagram.svg" alt="Diagram: 17.1.1 Basic try/except" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-sticky.svg" alt="Sticky Note: 17.1.1 Basic try/except" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-1-basic-try-except-sticky.svg" alt="Sticky Note: 17.1.1 Basic try/except" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ except ZeroDivisionError:
 
 ### 17.1.2 Catching Multiple Exceptions
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-handwritten.svg" alt="Handwritten: 17.1.2 Catching Multiple Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-handwritten.svg" alt="Handwritten: 17.1.2 Catching Multiple Exceptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-diagram.svg" alt="Diagram: 17.1.2 Catching Multiple Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-diagram.svg" alt="Diagram: 17.1.2 Catching Multiple Exceptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-sticky.svg" alt="Sticky Note: 17.1.2 Catching Multiple Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-2-catching-multiple-exceptions-sticky.svg" alt="Sticky Note: 17.1.2 Catching Multiple Exceptions" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ except (ValueError, TypeError) as e:
 
 ### 17.1.3 Accessing the Exception
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-handwritten.svg" alt="Handwritten: 17.1.3 Accessing the Exception" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-handwritten.svg" alt="Handwritten: 17.1.3 Accessing the Exception" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-diagram.svg" alt="Diagram: 17.1.3 Accessing the Exception" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-diagram.svg" alt="Diagram: 17.1.3 Accessing the Exception" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-sticky.svg" alt="Sticky Note: 17.1.3 Accessing the Exception" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-3-accessing-the-exception-sticky.svg" alt="Sticky Note: 17.1.3 Accessing the Exception" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ except IndexError as e:
 
 ### 17.1.4 Bare except (Discouraged)
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-handwritten.svg" alt="Handwritten: 17.1.4 Bare except (Discouraged)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-handwritten.svg" alt="Handwritten: 17.1.4 Bare except (Discouraged)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-diagram.svg" alt="Diagram: 17.1.4 Bare except (Discouraged)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-diagram.svg" alt="Diagram: 17.1.4 Bare except (Discouraged)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-sticky.svg" alt="Sticky Note: 17.1.4 Bare except (Discouraged)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-4-bare-except-discouraged-sticky.svg" alt="Sticky Note: 17.1.4 Bare except (Discouraged)" width="30%">
 </a>
 
 
@@ -165,14 +165,14 @@ except Exception as e:
 
 ### 17.1.5 else and finally
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-handwritten.svg" alt="Handwritten: 17.1.5 else and finally" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-handwritten.svg" alt="Handwritten: 17.1.5 else and finally" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-diagram.svg" alt="Diagram: 17.1.5 else and finally" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-diagram.svg" alt="Diagram: 17.1.5 else and finally" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-sticky.svg" alt="Sticky Note: 17.1.5 else and finally" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-1-5-else-and-finally-sticky.svg" alt="Sticky Note: 17.1.5 else and finally" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ except ValueError as e:
 
 ### 17.2.1 Re-raising Exceptions
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-handwritten.svg" alt="Handwritten: 17.2.1 Re-raising Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-handwritten.svg" alt="Handwritten: 17.2.1 Re-raising Exceptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-diagram.svg" alt="Diagram: 17.2.1 Re-raising Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-diagram.svg" alt="Diagram: 17.2.1 Re-raising Exceptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-sticky.svg" alt="Sticky Note: 17.2.1 Re-raising Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-1-re-raising-exceptions-sticky.svg" alt="Sticky Note: 17.2.1 Re-raising Exceptions" width="30%">
 </a>
 
 
@@ -239,14 +239,14 @@ except Exception:
 
 ### 17.2.2 Chaining Exceptions
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-handwritten.svg" alt="Handwritten: 17.2.2 Chaining Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-handwritten.svg" alt="Handwritten: 17.2.2 Chaining Exceptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-diagram.svg" alt="Diagram: 17.2.2 Chaining Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-diagram.svg" alt="Diagram: 17.2.2 Chaining Exceptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-sticky.svg" alt="Sticky Note: 17.2.2 Chaining Exceptions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-2-chaining-exceptions-sticky.svg" alt="Sticky Note: 17.2.2 Chaining Exceptions" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ The `from` clause sets the `__cause__` attribute, creating an exception chain vi
 
 ### 17.2.3 Suppressing Chaining
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-handwritten.svg" alt="Handwritten: 17.2.3 Suppressing Chaining" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-handwritten.svg" alt="Handwritten: 17.2.3 Suppressing Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-diagram.svg" alt="Diagram: 17.2.3 Suppressing Chaining" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-diagram.svg" alt="Diagram: 17.2.3 Suppressing Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-sticky.svg" alt="Sticky Note: 17.2.3 Suppressing Chaining" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-2-3-suppressing-chaining-sticky.svg" alt="Sticky Note: 17.2.3 Suppressing Chaining" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ Assertions can be disabled with `-O` (optimize) flag: `python -O script.py`. Do 
 
 ### 17.5.1 Opening and Closing Files
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-handwritten.svg" alt="Handwritten: 17.5.1 Opening and Closing Files" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-handwritten.svg" alt="Handwritten: 17.5.1 Opening and Closing Files" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-diagram.svg" alt="Diagram: 17.5.1 Opening and Closing Files" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-diagram.svg" alt="Diagram: 17.5.1 Opening and Closing Files" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-sticky.svg" alt="Sticky Note: 17.5.1 Opening and Closing Files" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-1-opening-and-closing-files-sticky.svg" alt="Sticky Note: 17.5.1 Opening and Closing Files" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ with open("example.txt", "r") as f:
 
 ### 17.5.2 File Modes
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-handwritten.svg" alt="Handwritten: 17.5.2 File Modes" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-handwritten.svg" alt="Handwritten: 17.5.2 File Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-diagram.svg" alt="Diagram: 17.5.2 File Modes" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-diagram.svg" alt="Diagram: 17.5.2 File Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-sticky.svg" alt="Sticky Note: 17.5.2 File Modes" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-2-file-modes-sticky.svg" alt="Sticky Note: 17.5.2 File Modes" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ with open("output.txt", "r") as f:
 
 ### 17.5.3 Binary Mode
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-handwritten.svg" alt="Handwritten: 17.5.3 Binary Mode" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-handwritten.svg" alt="Handwritten: 17.5.3 Binary Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-diagram.svg" alt="Diagram: 17.5.3 Binary Mode" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-diagram.svg" alt="Diagram: 17.5.3 Binary Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-sticky.svg" alt="Sticky Note: 17.5.3 Binary Mode" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-3-binary-mode-sticky.svg" alt="Sticky Note: 17.5.3 Binary Mode" width="30%">
 </a>
 
 
@@ -437,14 +437,14 @@ with open("output.bin", "wb") as f:
 
 ### 17.5.4 Seeking
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-handwritten.svg" alt="Handwritten: 17.5.4 Seeking" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-handwritten.svg" alt="Handwritten: 17.5.4 Seeking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-diagram.svg" alt="Diagram: 17.5.4 Seeking" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-diagram.svg" alt="Diagram: 17.5.4 Seeking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-sticky.svg" alt="Sticky Note: 17.5.4 Seeking" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/17-5-4-seeking-sticky.svg" alt="Sticky Note: 17.5.4 Seeking" width="30%">
 </a>
 
 
@@ -763,14 +763,14 @@ const content = fs.readFileSync(
 
 ### Python vs TypeScript Error Handling
 
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-handwritten.svg" alt="Handwritten: Python vs TypeScript Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-handwritten.svg" alt="Handwritten: Python vs TypeScript Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-diagram.svg" alt="Diagram: Python vs TypeScript Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-diagram.svg" alt="Diagram: Python vs TypeScript Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-sticky.svg" alt="Sticky Note: Python vs TypeScript Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/17-exceptions-files/python-vs-typescript-error-handling-sticky.svg" alt="Sticky Note: Python vs TypeScript Error Handling" width="30%">
 </a>
 
 

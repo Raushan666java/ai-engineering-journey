@@ -64,14 +64,14 @@ flowchart LR
 
 ### 1. DNS Hierarchy
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-handwritten.svg" alt="Handwritten: 1. DNS Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-handwritten.svg" alt="Handwritten: 1. DNS Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-diagram.svg" alt="Diagram: 1. DNS Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-diagram.svg" alt="Diagram: 1. DNS Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-sticky.svg" alt="Sticky Note: 1. DNS Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/1-dns-hierarchy-sticky.svg" alt="Sticky Note: 1. DNS Hierarchy" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ The Domain Name System (DNS) is a hierarchical, distributed naming system that r
 
 ### 2. DNS Resolution Flow
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-handwritten.svg" alt="Handwritten: 2. DNS Resolution Flow" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-handwritten.svg" alt="Handwritten: 2. DNS Resolution Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-diagram.svg" alt="Diagram: 2. DNS Resolution Flow" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-diagram.svg" alt="Diagram: 2. DNS Resolution Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-sticky.svg" alt="Sticky Note: 2. DNS Resolution Flow" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/2-dns-resolution-flow-sticky.svg" alt="Sticky Note: 2. DNS Resolution Flow" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 ### 3. DNS Caching
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-handwritten.svg" alt="Handwritten: 3. DNS Caching" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-handwritten.svg" alt="Handwritten: 3. DNS Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-diagram.svg" alt="Diagram: 3. DNS Caching" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-diagram.svg" alt="Diagram: 3. DNS Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-sticky.svg" alt="Sticky Note: 3. DNS Caching" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/3-dns-caching-sticky.svg" alt="Sticky Note: 3. DNS Caching" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 ### 4. DNS Record Types
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-handwritten.svg" alt="Handwritten: 4. DNS Record Types" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-handwritten.svg" alt="Handwritten: 4. DNS Record Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-diagram.svg" alt="Diagram: 4. DNS Record Types" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-diagram.svg" alt="Diagram: 4. DNS Record Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-sticky.svg" alt="Sticky Note: 4. DNS Record Types" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/4-dns-record-types-sticky.svg" alt="Sticky Note: 4. DNS Record Types" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 ### 5. DNS-Based Load Balancing
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-handwritten.svg" alt="Handwritten: 5. DNS-Based Load Balancing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-handwritten.svg" alt="Handwritten: 5. DNS-Based Load Balancing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-diagram.svg" alt="Diagram: 5. DNS-Based Load Balancing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-diagram.svg" alt="Diagram: 5. DNS-Based Load Balancing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-sticky.svg" alt="Sticky Note: 5. DNS-Based Load Balancing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/5-dns-based-load-balancing-sticky.svg" alt="Sticky Note: 5. DNS-Based Load Balancing" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ api.example.com  ?  10.0.0.1 (TTL=60)
 
 ### 6. Anycast Routing
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-handwritten.svg" alt="Handwritten: 6. Anycast Routing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-handwritten.svg" alt="Handwritten: 6. Anycast Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-diagram.svg" alt="Diagram: 6. Anycast Routing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-diagram.svg" alt="Diagram: 6. Anycast Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-sticky.svg" alt="Sticky Note: 6. Anycast Routing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/6-anycast-routing-sticky.svg" alt="Sticky Note: 6. Anycast Routing" width="30%">
 </a>
 
 
@@ -238,14 +238,14 @@ Anycast advertises the same IP prefix from multiple geographically distributed l
 
 ### 7. CDN Architecture
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-handwritten.svg" alt="Handwritten: 7. CDN Architecture" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-handwritten.svg" alt="Handwritten: 7. CDN Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-diagram.svg" alt="Diagram: 7. CDN Architecture" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-diagram.svg" alt="Diagram: 7. CDN Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-sticky.svg" alt="Sticky Note: 7. CDN Architecture" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/7-cdn-architecture-sticky.svg" alt="Sticky Note: 7. CDN Architecture" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ User ? PoP (hit)  ? User
 
 ### 8. CDN Caching Strategies
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-handwritten.svg" alt="Handwritten: 8. CDN Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-handwritten.svg" alt="Handwritten: 8. CDN Caching Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-diagram.svg" alt="Diagram: 8. CDN Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-diagram.svg" alt="Diagram: 8. CDN Caching Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-sticky.svg" alt="Sticky Note: 8. CDN Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/8-cdn-caching-strategies-sticky.svg" alt="Sticky Note: 8. CDN Caching Strategies" width="30%">
 </a>
 
 
@@ -297,14 +297,14 @@ User ? PoP (hit)  ? User
 
 ### 9. Edge Caching Comparison
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-handwritten.svg" alt="Handwritten: 9. Edge Caching Comparison" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-handwritten.svg" alt="Handwritten: 9. Edge Caching Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-diagram.svg" alt="Diagram: 9. Edge Caching Comparison" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-diagram.svg" alt="Diagram: 9. Edge Caching Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-sticky.svg" alt="Sticky Note: 9. Edge Caching Comparison" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/9-edge-caching-comparison-sticky.svg" alt="Sticky Note: 9. Edge Caching Comparison" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ User ? PoP (hit)  ? User
 
 ### 10. Image Optimization Pipeline
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-handwritten.svg" alt="Handwritten: 10. Image Optimization Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-handwritten.svg" alt="Handwritten: 10. Image Optimization Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-diagram.svg" alt="Diagram: 10. Image Optimization Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-diagram.svg" alt="Diagram: 10. Image Optimization Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-sticky.svg" alt="Sticky Note: 10. Image Optimization Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/10-image-optimization-pipeline-sticky.svg" alt="Sticky Note: 10. Image Optimization Pipeline" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ Key parameters: `w` (width), `h` (height), `q` (quality), `f` (format), `fit` (c
 
 ### 11. Origin Shielding
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-handwritten.svg" alt="Handwritten: 11. Origin Shielding" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-handwritten.svg" alt="Handwritten: 11. Origin Shielding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-diagram.svg" alt="Diagram: 11. Origin Shielding" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-diagram.svg" alt="Diagram: 11. Origin Shielding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-sticky.svg" alt="Sticky Note: 11. Origin Shielding" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/11-origin-shielding-sticky.svg" alt="Sticky Note: 11. Origin Shielding" width="30%">
 </a>
 
 
@@ -367,14 +367,14 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 ### 12. DDoS Mitigation at Edge
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-handwritten.svg" alt="Handwritten: 12. DDoS Mitigation at Edge" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-handwritten.svg" alt="Handwritten: 12. DDoS Mitigation at Edge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-diagram.svg" alt="Diagram: 12. DDoS Mitigation at Edge" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-diagram.svg" alt="Diagram: 12. DDoS Mitigation at Edge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-sticky.svg" alt="Sticky Note: 12. DDoS Mitigation at Edge" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/12-ddos-mitigation-at-edge-sticky.svg" alt="Sticky Note: 12. DDoS Mitigation at Edge" width="30%">
 </a>
 
 
@@ -392,14 +392,14 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 ### 13. Edge Computing
 
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-handwritten.svg" alt="Handwritten: 13. Edge Computing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-handwritten.svg" alt="Handwritten: 13. Edge Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-diagram.svg" alt="Diagram: 13. Edge Computing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-diagram.svg" alt="Diagram: 13. Edge Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-sticky.svg" alt="Sticky Note: 13. Edge Computing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/15-cdn-dns-edge/13-edge-computing-sticky.svg" alt="Sticky Note: 13. Edge Computing" width="30%">
 </a>
 
 

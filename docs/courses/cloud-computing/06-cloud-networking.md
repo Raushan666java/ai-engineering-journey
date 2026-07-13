@@ -46,14 +46,14 @@ flowchart LR
 
 ### 6.1 VPC Architecture
 
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-handwritten.svg" alt="Handwritten: 6.1 VPC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-handwritten.svg" alt="Handwritten: 6.1 VPC Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-diagram.svg" alt="Diagram: 6.1 VPC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-diagram.svg" alt="Diagram: 6.1 VPC Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-sticky.svg" alt="Sticky Note: 6.1 VPC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-1-vpc-architecture-sticky.svg" alt="Sticky Note: 6.1 VPC Architecture" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ graph TB
 
 ### 6.2 Security Groups vs Network ACLs
 
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-handwritten.svg" alt="Handwritten: 6.2 Security Groups vs Network ACLs" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-handwritten.svg" alt="Handwritten: 6.2 Security Groups vs Network ACLs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-diagram.svg" alt="Diagram: 6.2 Security Groups vs Network ACLs" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-diagram.svg" alt="Diagram: 6.2 Security Groups vs Network ACLs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-sticky.svg" alt="Sticky Note: 6.2 Security Groups vs Network ACLs" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-2-security-groups-vs-network-acls-sticky.svg" alt="Sticky Note: 6.2 Security Groups vs Network ACLs" width="30%">
 </a>
 
 
@@ -216,14 +216,14 @@ function createAppSecurityGroup(vpcId: string): SecurityGroup {
 
 ### 6.3 Load Balancers
 
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-handwritten.svg" alt="Handwritten: 6.3 Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-handwritten.svg" alt="Handwritten: 6.3 Load Balancers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-diagram.svg" alt="Diagram: 6.3 Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-diagram.svg" alt="Diagram: 6.3 Load Balancers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-sticky.svg" alt="Sticky Note: 6.3 Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-3-load-balancers-sticky.svg" alt="Sticky Note: 6.3 Load Balancers" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ sequenceDiagram
 
 ### 6.4 Hybrid Connectivity
 
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-handwritten.svg" alt="Handwritten: 6.4 Hybrid Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-handwritten.svg" alt="Handwritten: 6.4 Hybrid Connectivity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-diagram.svg" alt="Diagram: 6.4 Hybrid Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-diagram.svg" alt="Diagram: 6.4 Hybrid Connectivity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-sticky.svg" alt="Sticky Note: 6.4 Hybrid Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-4-hybrid-connectivity-sticky.svg" alt="Sticky Note: 6.4 Hybrid Connectivity" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ graph TB
 
 ### 6.5 DNS and Route 53
 
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-handwritten.svg" alt="Handwritten: 6.5 DNS and Route 53" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-handwritten.svg" alt="Handwritten: 6.5 DNS and Route 53" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-diagram.svg" alt="Diagram: 6.5 DNS and Route 53" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-diagram.svg" alt="Diagram: 6.5 DNS and Route 53" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-sticky.svg" alt="Sticky Note: 6.5 DNS and Route 53" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-5-dns-and-route-53-sticky.svg" alt="Sticky Note: 6.5 DNS and Route 53" width="30%">
 </a>
 
 
@@ -366,14 +366,14 @@ sequenceDiagram
 
 ### 6.6 VPC Peering and Transit Gateway
 
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-handwritten.svg" alt="Handwritten: 6.6 VPC Peering and Transit Gateway" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-handwritten.svg" alt="Handwritten: 6.6 VPC Peering and Transit Gateway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-diagram.svg" alt="Diagram: 6.6 VPC Peering and Transit Gateway" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-diagram.svg" alt="Diagram: 6.6 VPC Peering and Transit Gateway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-sticky.svg" alt="Sticky Note: 6.6 VPC Peering and Transit Gateway" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/06-cloud-networking/6-6-vpc-peering-and-transit-gateway-sticky.svg" alt="Sticky Note: 6.6 VPC Peering and Transit Gateway" width="30%">
 </a>
 
 

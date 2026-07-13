@@ -55,14 +55,14 @@ Classical planning assumes a deterministic, fully observable, static environment
 
 ### 8.1.1 STRIPS Representation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-handwritten.svg" alt="Handwritten: 8.1.1 STRIPS Representation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-handwritten.svg" alt="Handwritten: 8.1.1 STRIPS Representation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-diagram.svg" alt="Diagram: 8.1.1 STRIPS Representation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-diagram.svg" alt="Diagram: 8.1.1 STRIPS Representation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-sticky.svg" alt="Sticky Note: 8.1.1 STRIPS Representation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-sticky.svg" alt="Sticky Note: 8.1.1 STRIPS Representation" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ print(strips_plan(initial, goal, actions))  # ['Pickup(A)', 'Stack(A,B)']
 
 ### 8.1.2 ADL (Action Description Language)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-handwritten.svg" alt="Handwritten: 8.1.2 ADL (Action Description Language)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-handwritten.svg" alt="Handwritten: 8.1.2 ADL (Action Description Language)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-diagram.svg" alt="Diagram: 8.1.2 ADL (Action Description Language)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-diagram.svg" alt="Diagram: 8.1.2 ADL (Action Description Language)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-sticky.svg" alt="Sticky Note: 8.1.2 ADL (Action Description Language)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-sticky.svg" alt="Sticky Note: 8.1.2 ADL (Action Description Language)" width="30%">
 </a>
 
 
@@ -220,14 +220,14 @@ Action(Move(robot, from, to)
 
 ### 8.2.1 Forward (Progression) Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-handwritten.svg" alt="Handwritten: 8.2.1 Forward (Progression) Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-handwritten.svg" alt="Handwritten: 8.2.1 Forward (Progression) Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-diagram.svg" alt="Diagram: 8.2.1 Forward (Progression) Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-diagram.svg" alt="Diagram: 8.2.1 Forward (Progression) Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-sticky.svg" alt="Sticky Note: 8.2.1 Forward (Progression) Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-sticky.svg" alt="Sticky Note: 8.2.1 Forward (Progression) Search" width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@ def forward_search(initial, goal, actions):
 
 ### 8.2.2 Backward (Regression) Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-handwritten.svg" alt="Handwritten: 8.2.2 Backward (Regression) Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-handwritten.svg" alt="Handwritten: 8.2.2 Backward (Regression) Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-diagram.svg" alt="Diagram: 8.2.2 Backward (Regression) Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-diagram.svg" alt="Diagram: 8.2.2 Backward (Regression) Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-sticky.svg" alt="Sticky Note: 8.2.2 Backward (Regression) Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-sticky.svg" alt="Sticky Note: 8.2.2 Backward (Regression) Search" width="30%">
 </a>
 
 

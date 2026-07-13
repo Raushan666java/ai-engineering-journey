@@ -128,14 +128,14 @@ flowchart LR
 
 ### 37.1 Platform Overview & Architecture
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-handwritten.svg" alt="Handwritten: 37.1 Platform Overview & Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-handwritten.svg" alt="Handwritten: 37.1 Platform Overview & Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-diagram.svg" alt="Diagram: 37.1 Platform Overview & Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-diagram.svg" alt="Diagram: 37.1 Platform Overview & Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-sticky.svg" alt="Sticky Note: 37.1 Platform Overview & Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-1-platform-overview-architecture-sticky.svg" alt="Sticky Note: 37.1 Platform Overview & Architecture" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ return [
 
 ### 37.2 Centralized Agent Registry
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-handwritten.svg" alt="Handwritten: 37.2 Centralized Agent Registry" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-handwritten.svg" alt="Handwritten: 37.2 Centralized Agent Registry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-diagram.svg" alt="Diagram: 37.2 Centralized Agent Registry" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-diagram.svg" alt="Diagram: 37.2 Centralized Agent Registry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-sticky.svg" alt="Sticky Note: 37.2 Centralized Agent Registry" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-2-centralized-agent-registry-sticky.svg" alt="Sticky Note: 37.2 Centralized Agent Registry" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ class AgentRegistration extends Model
 
 ### 37.3 Agent Communication Bus
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-handwritten.svg" alt="Handwritten: 37.3 Agent Communication Bus" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-handwritten.svg" alt="Handwritten: 37.3 Agent Communication Bus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-diagram.svg" alt="Diagram: 37.3 Agent Communication Bus" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-diagram.svg" alt="Diagram: 37.3 Agent Communication Bus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-sticky.svg" alt="Sticky Note: 37.3 Agent Communication Bus" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-3-agent-communication-bus-sticky.svg" alt="Sticky Note: 37.3 Agent Communication Bus" width="30%">
 </a>
 
 
@@ -845,14 +845,14 @@ class AgentBusServiceProvider extends ServiceProvider
 
 ### 37.4 Shared Memory & Knowledge Base
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-handwritten.svg" alt="Handwritten: 37.4 Shared Memory & Knowledge Base" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-handwritten.svg" alt="Handwritten: 37.4 Shared Memory & Knowledge Base" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-diagram.svg" alt="Diagram: 37.4 Shared Memory & Knowledge Base" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-diagram.svg" alt="Diagram: 37.4 Shared Memory & Knowledge Base" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-sticky.svg" alt="Sticky Note: 37.4 Shared Memory & Knowledge Base" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-4-shared-memory-knowledge-base-sticky.svg" alt="Sticky Note: 37.4 Shared Memory & Knowledge Base" width="30%">
 </a>
 
 
@@ -1069,14 +1069,14 @@ class SharedMemoryService
 
 ### 37.5 Enterprise Agent Orchestrator
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-handwritten.svg" alt="Handwritten: 37.5 Enterprise Agent Orchestrator" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-handwritten.svg" alt="Handwritten: 37.5 Enterprise Agent Orchestrator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-diagram.svg" alt="Diagram: 37.5 Enterprise Agent Orchestrator" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-diagram.svg" alt="Diagram: 37.5 Enterprise Agent Orchestrator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-sticky.svg" alt="Sticky Note: 37.5 Enterprise Agent Orchestrator" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-5-enterprise-agent-orchestrator-sticky.svg" alt="Sticky Note: 37.5 Enterprise Agent Orchestrator" width="30%">
 </a>
 
 
@@ -1503,14 +1503,14 @@ class WorkflowServiceProvider extends ServiceProvider
 
 ### 37.6 Multi-Tenant Isolation
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-handwritten.svg" alt="Handwritten: 37.6 Multi-Tenant Isolation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-handwritten.svg" alt="Handwritten: 37.6 Multi-Tenant Isolation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-diagram.svg" alt="Diagram: 37.6 Multi-Tenant Isolation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-diagram.svg" alt="Diagram: 37.6 Multi-Tenant Isolation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-sticky.svg" alt="Sticky Note: 37.6 Multi-Tenant Isolation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-6-multi-tenant-isolation-sticky.svg" alt="Sticky Note: 37.6 Multi-Tenant Isolation" width="30%">
 </a>
 
 
@@ -1716,14 +1716,14 @@ class TenantAgentResolver
 
 ### 37.7 MCP Server Integration
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-handwritten.svg" alt="Handwritten: 37.7 MCP Server Integration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-handwritten.svg" alt="Handwritten: 37.7 MCP Server Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-diagram.svg" alt="Diagram: 37.7 MCP Server Integration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-diagram.svg" alt="Diagram: 37.7 MCP Server Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-sticky.svg" alt="Sticky Note: 37.7 MCP Server Integration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-7-mcp-server-integration-sticky.svg" alt="Sticky Note: 37.7 MCP Server Integration" width="30%">
 </a>
 
 
@@ -1975,14 +1975,14 @@ class McpServer extends Model
 
 ### 37.8 Monitoring & Observability
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-handwritten.svg" alt="Handwritten: 37.8 Monitoring & Observability" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-handwritten.svg" alt="Handwritten: 37.8 Monitoring & Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-diagram.svg" alt="Diagram: 37.8 Monitoring & Observability" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-diagram.svg" alt="Diagram: 37.8 Monitoring & Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-sticky.svg" alt="Sticky Note: 37.8 Monitoring & Observability" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-8-monitoring-observability-sticky.svg" alt="Sticky Note: 37.8 Monitoring & Observability" width="30%">
 </a>
 
 
@@ -2292,14 +2292,14 @@ class AgentDashboardController extends Controller
 
 ### 37.9 Deployment Architecture
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-handwritten.svg" alt="Handwritten: 37.9 Deployment Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-handwritten.svg" alt="Handwritten: 37.9 Deployment Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-diagram.svg" alt="Diagram: 37.9 Deployment Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-diagram.svg" alt="Diagram: 37.9 Deployment Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-sticky.svg" alt="Sticky Note: 37.9 Deployment Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-9-deployment-architecture-sticky.svg" alt="Sticky Note: 37.9 Deployment Architecture" width="30%">
 </a>
 
 
@@ -2537,14 +2537,14 @@ class ScalingPolicy
 
 ### 37.10 Complete End-to-End Workflow
 
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-handwritten.svg" alt="Handwritten: 37.10 Complete End-to-End Workflow" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-handwritten.svg" alt="Handwritten: 37.10 Complete End-to-End Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-diagram.svg" alt="Diagram: 37.10 Complete End-to-End Workflow" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-diagram.svg" alt="Diagram: 37.10 Complete End-to-End Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-sticky.svg" alt="Sticky Note: 37.10 Complete End-to-End Workflow" width="30%">
+<a href="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/37-enterprise-capstone/37-10-complete-end-to-end-workflow-sticky.svg" alt="Sticky Note: 37.10 Complete End-to-End Workflow" width="30%">
 </a>
 
 

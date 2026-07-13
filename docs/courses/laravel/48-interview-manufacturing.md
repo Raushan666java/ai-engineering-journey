@@ -55,14 +55,14 @@ The four types share the same `maintenance_logs` table but differ in `type`, `pr
 
 ### Q3: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-handwritten.svg" alt="Handwritten: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-handwritten.svg" alt="Handwritten: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-diagram.svg" alt="Diagram: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-diagram.svg" alt="Diagram: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-sticky.svg" alt="Sticky Note: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/what-manufacturing-metrics-are-typically-tracked-and-how-would-you-calculate-them-in-laravel-sticky.svg" alt="Sticky Note: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ Challenges for Laravel applications:
 
 ### Q5: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform.
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-handwritten.svg" alt="Handwritten: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform." width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-handwritten.svg" alt="Handwritten: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-diagram.svg" alt="Diagram: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform." width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-diagram.svg" alt="Diagram: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-sticky.svg" alt="Sticky Note: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform." width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/describe-the-role-of-iso-55000-iso-9001-and-iso-45001-in-a-manufacturing-software-platform-sticky.svg" alt="Sticky Note: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform." width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ In Laravel, each standard maps to an agent or service class that generates compl
 
 ### Q6: How would you implement a predictive maintenance agent using the Laravel AI SDK?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-handwritten.svg" alt="Handwritten: How would you implement a predictive maintenance agent using the Laravel AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-handwritten.svg" alt="Handwritten: How would you implement a predictive maintenance agent using the Laravel AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-diagram.svg" alt="Diagram: How would you implement a predictive maintenance agent using the Laravel AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-diagram.svg" alt="Diagram: How would you implement a predictive maintenance agent using the Laravel AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-sticky.svg" alt="Sticky Note: How would you implement a predictive maintenance agent using the Laravel AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-predictive-maintenance-agent-using-the-laravel-ai-sdk-sticky.svg" alt="Sticky Note: How would you implement a predictive maintenance agent using the Laravel AI SDK?" width="30%">
 </a>
 
 
@@ -232,14 +232,14 @@ The agent combines statistical sensor analysis with the LLM's ability to recogni
 
 ### Q7: How would you build a quality control automation system with AI pattern detection?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-handwritten.svg" alt="Handwritten: How would you build a quality control automation system with AI pattern detection?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-handwritten.svg" alt="Handwritten: How would you build a quality control automation system with AI pattern detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-diagram.svg" alt="Diagram: How would you build a quality control automation system with AI pattern detection?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-diagram.svg" alt="Diagram: How would you build a quality control automation system with AI pattern detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-sticky.svg" alt="Sticky Note: How would you build a quality control automation system with AI pattern detection?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-a-quality-control-automation-system-with-ai-pattern-detection-sticky.svg" alt="Sticky Note: How would you build a quality control automation system with AI pattern detection?" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ The agent combines statistical process control (SPC) methods → calculating dri
 
 ### Q8: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-handwritten.svg" alt="Handwritten: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-handwritten.svg" alt="Handwritten: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-diagram.svg" alt="Diagram: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-diagram.svg" alt="Diagram: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-sticky.svg" alt="Sticky Note: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-a-high-throughput-iot-data-ingestion-pipeline-in-laravel-sticky.svg" alt="Sticky Note: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?" width="30%">
 </a>
 
 
@@ -547,14 +547,14 @@ For more sophisticated optimization (minimizing changeover time, balancing workl
 
 ### Q10: How would you implement safety compliance monitoring with regulatory reporting?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-handwritten.svg" alt="Handwritten: How would you implement safety compliance monitoring with regulatory reporting?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-handwritten.svg" alt="Handwritten: How would you implement safety compliance monitoring with regulatory reporting?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-diagram.svg" alt="Diagram: How would you implement safety compliance monitoring with regulatory reporting?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-diagram.svg" alt="Diagram: How would you implement safety compliance monitoring with regulatory reporting?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-sticky.svg" alt="Sticky Note: How would you implement safety compliance monitoring with regulatory reporting?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-safety-compliance-monitoring-with-regulatory-reporting-sticky.svg" alt="Sticky Note: How would you implement safety compliance monitoring with regulatory reporting?" width="30%">
 </a>
 
 
@@ -656,14 +656,14 @@ The report can be exposed as a JSON API endpoint and consumed by a dashboard, or
 
 ### Q11: How would you build an inventory automation agent with AI-driven reorder calculations?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-handwritten.svg" alt="Handwritten: How would you build an inventory automation agent with AI-driven reorder calculations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-handwritten.svg" alt="Handwritten: How would you build an inventory automation agent with AI-driven reorder calculations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-diagram.svg" alt="Diagram: How would you build an inventory automation agent with AI-driven reorder calculations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-diagram.svg" alt="Diagram: How would you build an inventory automation agent with AI-driven reorder calculations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-sticky.svg" alt="Sticky Note: How would you build an inventory automation agent with AI-driven reorder calculations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-build-an-inventory-automation-agent-with-ai-driven-reorder-calculations-sticky.svg" alt="Sticky Note: How would you build an inventory automation agent with AI-driven reorder calculations?" width="30%">
 </a>
 
 
@@ -738,14 +738,14 @@ The demand estimation becomes more accurate when the agent receives upcoming `Pr
 
 ### Q12: How would you implement equipment lifecycle management with depreciation and TCO tracking?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-handwritten.svg" alt="Handwritten: How would you implement equipment lifecycle management with depreciation and TCO tracking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-handwritten.svg" alt="Handwritten: How would you implement equipment lifecycle management with depreciation and TCO tracking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-diagram.svg" alt="Diagram: How would you implement equipment lifecycle management with depreciation and TCO tracking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-diagram.svg" alt="Diagram: How would you implement equipment lifecycle management with depreciation and TCO tracking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-sticky.svg" alt="Sticky Note: How would you implement equipment lifecycle management with depreciation and TCO tracking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-implement-equipment-lifecycle-management-with-depreciation-and-tco-tracking-sticky.svg" alt="Sticky Note: How would you implement equipment lifecycle management with depreciation and TCO tracking?" width="30%">
 </a>
 
 
@@ -853,14 +853,14 @@ class EquipmentLifecycleAgent
 
 ### Q13: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-handwritten.svg" alt="Handwritten: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-handwritten.svg" alt="Handwritten: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-diagram.svg" alt="Diagram: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-diagram.svg" alt="Diagram: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-sticky.svg" alt="Sticky Note: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-integrate-real-time-sensor-data-from-mqtt-brokers-into-a-laravel-application-sticky.svg" alt="Sticky Note: How would you integrate real-time sensor data from MQTT brokers into a Laravel application?" width="30%">
 </a>
 
 
@@ -992,14 +992,14 @@ The agent correlates three data sources → inspection measurements, equipment s
 
 ### Q15: How would you expose manufacturing agent capabilities as MCP tools for external systems?
 
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-handwritten.svg" alt="Handwritten: How would you expose manufacturing agent capabilities as MCP tools for external systems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-handwritten.svg" alt="Handwritten: How would you expose manufacturing agent capabilities as MCP tools for external systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-diagram.svg" alt="Diagram: How would you expose manufacturing agent capabilities as MCP tools for external systems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-diagram.svg" alt="Diagram: How would you expose manufacturing agent capabilities as MCP tools for external systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-sticky.svg" alt="Sticky Note: How would you expose manufacturing agent capabilities as MCP tools for external systems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/48-interview-manufacturing/how-would-you-expose-manufacturing-agent-capabilities-as-mcp-tools-for-external-systems-sticky.svg" alt="Sticky Note: How would you expose manufacturing agent capabilities as MCP tools for external systems?" width="30%">
 </a>
 
 

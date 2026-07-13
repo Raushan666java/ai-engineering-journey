@@ -18,14 +18,14 @@ After completing this chapter, the student will be able to:
 
 ### Why Measure Software?
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-handwritten.svg" alt="Handwritten: Why Measure Software?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-handwritten.svg" alt="Handwritten: Why Measure Software?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-diagram.svg" alt="Diagram: Why Measure Software?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-diagram.svg" alt="Diagram: Why Measure Software?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-sticky.svg" alt="Sticky Note: Why Measure Software?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-sticky.svg" alt="Sticky Note: Why Measure Software?" width="30%">
 </a>
 
 
@@ -48,14 +48,14 @@ graph TD
 
 ### Metric Classification
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-handwritten.svg" alt="Handwritten: Metric Classification" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-handwritten.svg" alt="Handwritten: Metric Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-diagram.svg" alt="Diagram: Metric Classification" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-diagram.svg" alt="Diagram: Metric Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-sticky.svg" alt="Sticky Note: Metric Classification" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-sticky.svg" alt="Sticky Note: Metric Classification" width="30%">
 </a>
 
 
@@ -87,14 +87,14 @@ graph TD
 
 ### GQM Paradigm (Goal-Question-Metric)
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-handwritten.svg" alt="Handwritten: GQM Paradigm (Goal-Question-Metric)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-handwritten.svg" alt="Handwritten: GQM Paradigm (Goal-Question-Metric)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-diagram.svg" alt="Diagram: GQM Paradigm (Goal-Question-Metric)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-diagram.svg" alt="Diagram: GQM Paradigm (Goal-Question-Metric)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-sticky.svg" alt="Sticky Note: GQM Paradigm (Goal-Question-Metric)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-sticky.svg" alt="Sticky Note: GQM Paradigm (Goal-Question-Metric)" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ graph TD
 
 ### Size Metrics
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-handwritten.svg" alt="Handwritten: Size Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-handwritten.svg" alt="Handwritten: Size Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-diagram.svg" alt="Diagram: Size Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-diagram.svg" alt="Diagram: Size Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-sticky.svg" alt="Sticky Note: Size Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-sticky.svg" alt="Sticky Note: Size Metrics" width="30%">
 </a>
 
 
@@ -186,14 +186,14 @@ As detailed in Chapter 8 (Project Management), function points measure functiona
 
 ### Code Metrics
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-handwritten.svg" alt="Handwritten: Code Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-handwritten.svg" alt="Handwritten: Code Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-diagram.svg" alt="Diagram: Code Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-diagram.svg" alt="Diagram: Code Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-sticky.svg" alt="Sticky Note: Code Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-sticky.svg" alt="Sticky Note: Code Metrics" width="30%">
 </a>
 
 
@@ -263,14 +263,14 @@ Maurice Halstead's software science metrics measure program vocabulary and lengt
 
 ### Maintainability Index
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-handwritten.svg" alt="Handwritten: Maintainability Index" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-handwritten.svg" alt="Handwritten: Maintainability Index" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-diagram.svg" alt="Diagram: Maintainability Index" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-diagram.svg" alt="Diagram: Maintainability Index" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-sticky.svg" alt="Sticky Note: Maintainability Index" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-sticky.svg" alt="Sticky Note: Maintainability Index" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ Where:
 
 ### Quality Metrics
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-handwritten.svg" alt="Handwritten: Quality Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-handwritten.svg" alt="Handwritten: Quality Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-diagram.svg" alt="Diagram: Quality Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-diagram.svg" alt="Diagram: Quality Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-sticky.svg" alt="Sticky Note: Quality Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-sticky.svg" alt="Sticky Note: Quality Metrics" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ Where:
 
 ### Agile Metrics
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-handwritten.svg" alt="Handwritten: Agile Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-handwritten.svg" alt="Handwritten: Agile Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-diagram.svg" alt="Diagram: Agile Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-diagram.svg" alt="Diagram: Agile Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-sticky.svg" alt="Sticky Note: Agile Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-sticky.svg" alt="Sticky Note: Agile Metrics" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@ graph LR
 
 ### Process Metrics
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-handwritten.svg" alt="Handwritten: Process Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-handwritten.svg" alt="Handwritten: Process Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-diagram.svg" alt="Diagram: Process Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-diagram.svg" alt="Diagram: Process Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-sticky.svg" alt="Sticky Note: Process Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-sticky.svg" alt="Sticky Note: Process Metrics" width="30%">
 </a>
 
 
@@ -383,14 +383,14 @@ graph LR
 
 ### Project Metrics — Earned Value Management
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-handwritten.svg" alt="Handwritten: Project Metrics — Earned Value Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-handwritten.svg" alt="Handwritten: Project Metrics — Earned Value Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-diagram.svg" alt="Diagram: Project Metrics — Earned Value Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-diagram.svg" alt="Diagram: Project Metrics — Earned Value Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-sticky.svg" alt="Sticky Note: Project Metrics — Earned Value Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-sticky.svg" alt="Sticky Note: Project Metrics — Earned Value Management" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ Earned Value Management (EVM) integrates scope, schedule, and cost.
 
 ### Prediction Metrics
 
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-handwritten.svg" alt="Handwritten: Prediction Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-handwritten.svg" alt="Handwritten: Prediction Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-diagram.svg" alt="Diagram: Prediction Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-diagram.svg" alt="Diagram: Prediction Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-sticky.svg" alt="Sticky Note: Prediction Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-sticky.svg" alt="Sticky Note: Prediction Metrics" width="30%">
 </a>
 
 

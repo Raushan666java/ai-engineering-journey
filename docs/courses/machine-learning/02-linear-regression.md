@@ -48,14 +48,14 @@ flowchart LR
 
 ### Simple Linear Regression
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-handwritten.svg" alt="Handwritten: Simple Linear Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-handwritten.svg" alt="Handwritten: Simple Linear Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-diagram.svg" alt="Diagram: Simple Linear Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-diagram.svg" alt="Diagram: Simple Linear Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-sticky.svg" alt="Sticky Note: Simple Linear Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-sticky.svg" alt="Sticky Note: Simple Linear Regression" width="30%">
 </a>
 
 
@@ -74,14 +74,14 @@ Where:
 
 ### The Cost Function: Mean Squared Error (MSE)
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-handwritten.svg" alt="Handwritten: The Cost Function: Mean Squared Error (MSE)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-handwritten.svg" alt="Handwritten: The Cost Function: Mean Squared Error (MSE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-diagram.svg" alt="Diagram: The Cost Function: Mean Squared Error (MSE)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-diagram.svg" alt="Diagram: The Cost Function: Mean Squared Error (MSE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-sticky.svg" alt="Sticky Note: The Cost Function: Mean Squared Error (MSE)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-sticky.svg" alt="Sticky Note: The Cost Function: Mean Squared Error (MSE)" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ The $\frac{1}{2}$ factor simplifies the derivative. Minimizing $J$ yields the "l
 
 ### Ordinary Least Squares (Closed-Form Solution)
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-handwritten.svg" alt="Handwritten: Ordinary Least Squares (Closed-Form Solution)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-handwritten.svg" alt="Handwritten: Ordinary Least Squares (Closed-Form Solution)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-diagram.svg" alt="Diagram: Ordinary Least Squares (Closed-Form Solution)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-diagram.svg" alt="Diagram: Ordinary Least Squares (Closed-Form Solution)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-sticky.svg" alt="Sticky Note: Ordinary Least Squares (Closed-Form Solution)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-sticky.svg" alt="Sticky Note: Ordinary Least Squares (Closed-Form Solution)" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ $$w_0 = \bar{y} - w_1 \bar{x}$$
 
 ### Matrix Formulation and the Normal Equation
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-handwritten.svg" alt="Handwritten: Matrix Formulation and the Normal Equation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-handwritten.svg" alt="Handwritten: Matrix Formulation and the Normal Equation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-diagram.svg" alt="Diagram: Matrix Formulation and the Normal Equation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-diagram.svg" alt="Diagram: Matrix Formulation and the Normal Equation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-sticky.svg" alt="Sticky Note: Matrix Formulation and the Normal Equation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-sticky.svg" alt="Sticky Note: Matrix Formulation and the Normal Equation" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ $$\mathbf{w} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$$
 
 ### Gradient Descent
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-handwritten.svg" alt="Handwritten: Gradient Descent" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-handwritten.svg" alt="Handwritten: Gradient Descent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-diagram.svg" alt="Diagram: Gradient Descent" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-diagram.svg" alt="Diagram: Gradient Descent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-sticky.svg" alt="Sticky Note: Gradient Descent" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-sticky.svg" alt="Sticky Note: Gradient Descent" width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ flowchart TD
 
 ### Feature Scaling
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-handwritten.svg" alt="Handwritten: Feature Scaling" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-handwritten.svg" alt="Handwritten: Feature Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-diagram.svg" alt="Diagram: Feature Scaling" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-diagram.svg" alt="Diagram: Feature Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-sticky.svg" alt="Sticky Note: Feature Scaling" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-sticky.svg" alt="Sticky Note: Feature Scaling" width="30%">
 </a>
 
 
@@ -215,14 +215,14 @@ Output bounded to $[0, 1]$. Sensitive to outliers.
 
 ### Polynomial Regression
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-handwritten.svg" alt="Handwritten: Polynomial Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-handwritten.svg" alt="Handwritten: Polynomial Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-diagram.svg" alt="Diagram: Polynomial Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-diagram.svg" alt="Diagram: Polynomial Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-sticky.svg" alt="Sticky Note: Polynomial Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-sticky.svg" alt="Sticky Note: Polynomial Regression" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ flowchart LR
 
 ### Overfitting in Regression
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-handwritten.svg" alt="Handwritten: Overfitting in Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-handwritten.svg" alt="Handwritten: Overfitting in Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-diagram.svg" alt="Diagram: Overfitting in Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-diagram.svg" alt="Diagram: Overfitting in Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-sticky.svg" alt="Sticky Note: Overfitting in Regression" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-sticky.svg" alt="Sticky Note: Overfitting in Regression" width="30%">
 </a>
 
 
@@ -267,14 +267,14 @@ Overfitting occurs when the model fits the training data too closely, capturing 
 
 ### Regularization
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-handwritten.svg" alt="Handwritten: Regularization" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-handwritten.svg" alt="Handwritten: Regularization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-diagram.svg" alt="Diagram: Regularization" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-diagram.svg" alt="Diagram: Regularization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-sticky.svg" alt="Sticky Note: Regularization" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-sticky.svg" alt="Sticky Note: Regularization" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ flowchart TD
 
 ### Model Evaluation Metrics
 
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-handwritten.svg" alt="Handwritten: Model Evaluation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-handwritten.svg" alt="Handwritten: Model Evaluation Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-diagram.svg" alt="Diagram: Model Evaluation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-diagram.svg" alt="Diagram: Model Evaluation Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-sticky.svg" alt="Sticky Note: Model Evaluation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-sticky.svg" alt="Sticky Note: Model Evaluation Metrics" width="30%">
 </a>
 
 

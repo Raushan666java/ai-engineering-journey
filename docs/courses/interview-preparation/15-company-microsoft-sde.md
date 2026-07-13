@@ -69,14 +69,14 @@ flowchart LR
 
 ### Problem 1: Lowest Common Ancestor of a Binary Tree
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" alt="Handwritten: Problem 1: Lowest Common Ancestor of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-handwritten.svg" alt="Handwritten: Problem 1: Lowest Common Ancestor of a Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-diagram.svg" alt="Diagram: Problem 1: Lowest Common Ancestor of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-diagram.svg" alt="Diagram: Problem 1: Lowest Common Ancestor of a Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-sticky.svg" alt="Sticky Note: Problem 1: Lowest Common Ancestor of a Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-1-lowest-common-ancestor-of-a-binary-tree-sticky.svg" alt="Sticky Note: Problem 1: Lowest Common Ancestor of a Binary Tree" width="30%">
 </a>
 
 
@@ -125,14 +125,14 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode, q: TreeNode): 
 
 ### Problem 2: Reverse Linked List II (Reverse between positions)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-handwritten.svg" alt="Handwritten: Problem 2: Reverse Linked List II (Reverse between positions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-handwritten.svg" alt="Handwritten: Problem 2: Reverse Linked List II (Reverse between positions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-diagram.svg" alt="Diagram: Problem 2: Reverse Linked List II (Reverse between positions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-diagram.svg" alt="Diagram: Problem 2: Reverse Linked List II (Reverse between positions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-sticky.svg" alt="Sticky Note: Problem 2: Reverse Linked List II (Reverse between positions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-2-reverse-linked-list-ii-reverse-between-positions-sticky.svg" alt="Sticky Note: Problem 2: Reverse Linked List II (Reverse between positions)" width="30%">
 </a>
 
 
@@ -193,14 +193,14 @@ function reverseBetween(head: ListNode | null, left: number, right: number): Lis
 
 ### Problem 3: Find All Duplicates in an Array
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-handwritten.svg" alt="Handwritten: Problem 3: Find All Duplicates in an Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-handwritten.svg" alt="Handwritten: Problem 3: Find All Duplicates in an Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-diagram.svg" alt="Diagram: Problem 3: Find All Duplicates in an Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-diagram.svg" alt="Diagram: Problem 3: Find All Duplicates in an Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-sticky.svg" alt="Sticky Note: Problem 3: Find All Duplicates in an Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-3-find-all-duplicates-in-an-array-sticky.svg" alt="Sticky Note: Problem 3: Find All Duplicates in an Array" width="30%">
 </a>
 
 
@@ -249,14 +249,14 @@ function findDuplicates(nums: number[]): number[] {
 
 ### Problem 4: Design a Stack with getMin() in O(1)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-handwritten.svg" alt="Handwritten: Problem 4: Design a Stack with getMin() in O(1)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-handwritten.svg" alt="Handwritten: Problem 4: Design a Stack with getMin() in O(1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-diagram.svg" alt="Diagram: Problem 4: Design a Stack with getMin() in O(1)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-diagram.svg" alt="Diagram: Problem 4: Design a Stack with getMin() in O(1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-sticky.svg" alt="Sticky Note: Problem 4: Design a Stack with getMin() in O(1)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-4-design-a-stack-with-getmin-in-o-1-sticky.svg" alt="Sticky Note: Problem 4: Design a Stack with getMin() in O(1)" width="30%">
 </a>
 
 
@@ -335,14 +335,14 @@ class MinStackOptimized {
 
 ### Problem 5: Binary Tree Zigzag Level Order Traversal
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 5: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 5: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-diagram.svg" alt="Diagram: Problem 5: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-diagram.svg" alt="Diagram: Problem 5: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 5: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-5-binary-tree-zigzag-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 5: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ function zigzagLevelOrderOptimized(root: TreeNode | null): number[][] {
 
 ### Problem 6: Kth Largest Element in an Array
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-handwritten.svg" alt="Handwritten: Problem 6: Kth Largest Element in an Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-handwritten.svg" alt="Handwritten: Problem 6: Kth Largest Element in an Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-diagram.svg" alt="Diagram: Problem 6: Kth Largest Element in an Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-diagram.svg" alt="Diagram: Problem 6: Kth Largest Element in an Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-sticky.svg" alt="Sticky Note: Problem 6: Kth Largest Element in an Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-6-kth-largest-element-in-an-array-sticky.svg" alt="Sticky Note: Problem 6: Kth Largest Element in an Array" width="30%">
 </a>
 
 
@@ -510,14 +510,14 @@ function partition(nums: number[], left: number, right: number): number {
 
 ### Problem SD-1: Design Microsoft Teams
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-handwritten.svg" alt="Handwritten: Problem SD-1: Design Microsoft Teams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-handwritten.svg" alt="Handwritten: Problem SD-1: Design Microsoft Teams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-diagram.svg" alt="Diagram: Problem SD-1: Design Microsoft Teams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-diagram.svg" alt="Diagram: Problem SD-1: Design Microsoft Teams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-sticky.svg" alt="Sticky Note: Problem SD-1: Design Microsoft Teams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-1-design-microsoft-teams-sticky.svg" alt="Sticky Note: Problem SD-1: Design Microsoft Teams" width="30%">
 </a>
 
 
@@ -596,14 +596,14 @@ Chat {
 
 ### Problem SD-2: Design OneDrive (Cloud File Storage)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-handwritten.svg" alt="Handwritten: Problem SD-2: Design OneDrive (Cloud File Storage)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-handwritten.svg" alt="Handwritten: Problem SD-2: Design OneDrive (Cloud File Storage)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-diagram.svg" alt="Diagram: Problem SD-2: Design OneDrive (Cloud File Storage)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-diagram.svg" alt="Diagram: Problem SD-2: Design OneDrive (Cloud File Storage)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-sticky.svg" alt="Sticky Note: Problem SD-2: Design OneDrive (Cloud File Storage)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/problem-sd-2-design-onedrive-cloud-file-storage-sticky.svg" alt="Sticky Note: Problem SD-2: Design OneDrive (Cloud File Storage)" width="30%">
 </a>
 
 
@@ -702,14 +702,14 @@ interface FileChange {
 
 ### Operating Systems (5 Questions)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-handwritten.svg" alt="Handwritten: Operating Systems (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-handwritten.svg" alt="Handwritten: Operating Systems (5 Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-diagram.svg" alt="Diagram: Operating Systems (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-diagram.svg" alt="Diagram: Operating Systems (5 Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-sticky.svg" alt="Sticky Note: Operating Systems (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/operating-systems-5-questions-sticky.svg" alt="Sticky Note: Operating Systems (5 Questions)" width="30%">
 </a>
 
 
@@ -800,14 +800,14 @@ New → Ready → Running → Terminated
 
 ### Database Management Systems (5 Questions)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-handwritten.svg" alt="Handwritten: Database Management Systems (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-handwritten.svg" alt="Handwritten: Database Management Systems (5 Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-diagram.svg" alt="Diagram: Database Management Systems (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-diagram.svg" alt="Diagram: Database Management Systems (5 Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-sticky.svg" alt="Sticky Note: Database Management Systems (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/database-management-systems-5-questions-sticky.svg" alt="Sticky Note: Database Management Systems (5 Questions)" width="30%">
 </a>
 
 
@@ -901,14 +901,14 @@ Transaction isolation levels define how transaction changes are visible to other
 
 ### Computer Networks (5 Questions)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-handwritten.svg" alt="Handwritten: Computer Networks (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-handwritten.svg" alt="Handwritten: Computer Networks (5 Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-diagram.svg" alt="Diagram: Computer Networks (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-diagram.svg" alt="Diagram: Computer Networks (5 Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-sticky.svg" alt="Sticky Note: Computer Networks (5 Questions)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-networks-5-questions-sticky.svg" alt="Sticky Note: Computer Networks (5 Questions)" width="30%">
 </a>
 
 
@@ -1016,14 +1016,14 @@ DNS (Domain Name System) translates human-readable domain names (google.com) to 
 
 ### Q1: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-handwritten.svg" alt="Handwritten: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-handwritten.svg" alt="Handwritten: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-diagram.svg" alt="Diagram: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-diagram.svg" alt="Diagram: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-sticky.svg" alt="Sticky Note: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-had-to-learn-a-new-technology-quickly-growth-mindset-sticky.svg" alt="Sticky Note: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)" width="30%">
 </a>
 
 
@@ -1041,14 +1041,14 @@ DNS (Domain Name System) translates human-readable domain names (google.com) to 
 
 ### Q2: Describe a project that required collaboration across teams. (Collaboration / One Microsoft)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-handwritten.svg" alt="Handwritten: Describe a project that required collaboration across teams. (Collaboration / One Microsoft)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-handwritten.svg" alt="Handwritten: Describe a project that required collaboration across teams. (Collaboration / One Microsoft)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-diagram.svg" alt="Diagram: Describe a project that required collaboration across teams. (Collaboration / One Microsoft)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-diagram.svg" alt="Diagram: Describe a project that required collaboration across teams. (Collaboration / One Microsoft)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-sticky.svg" alt="Sticky Note: Describe a project that required collaboration across teams. (Collaboration / One Microsoft)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-project-that-required-collaboration-across-teams-collaboration-one-microsoft-sticky.svg" alt="Sticky Note: Describe a project that required collaboration across teams. (Collaboration / One Microsoft)" width="30%">
 </a>
 
 
@@ -1064,14 +1064,14 @@ Microsoft values cross-team collaboration. Show:
 
 ### Q3: Tell me about a time you received critical feedback. How did you handle it? (Growth Mindset)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-handwritten.svg" alt="Handwritten: Tell me about a time you received critical feedback. How did you handle it? (Growth Mindset)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-handwritten.svg" alt="Handwritten: Tell me about a time you received critical feedback. How did you handle it? (Growth Mindset)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-diagram.svg" alt="Diagram: Tell me about a time you received critical feedback. How did you handle it? (Growth Mindset)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-diagram.svg" alt="Diagram: Tell me about a time you received critical feedback. How did you handle it? (Growth Mindset)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-sticky.svg" alt="Sticky Note: Tell me about a time you received critical feedback. How did you handle it? (Growth Mindset)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-you-received-critical-feedback-how-did-you-handle-it-growth-mindset-sticky.svg" alt="Sticky Note: Tell me about a time you received critical feedback. How did you handle it? (Growth Mindset)" width="30%">
 </a>
 
 
@@ -1087,14 +1087,14 @@ Don't get defensive. Show you:
 
 ### Q4: Describe a time you went above and beyond for a customer or user. (Customer Obsession)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-handwritten.svg" alt="Handwritten: Describe a time you went above and beyond for a customer or user. (Customer Obsession)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-handwritten.svg" alt="Handwritten: Describe a time you went above and beyond for a customer or user. (Customer Obsession)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-diagram.svg" alt="Diagram: Describe a time you went above and beyond for a customer or user. (Customer Obsession)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-diagram.svg" alt="Diagram: Describe a time you went above and beyond for a customer or user. (Customer Obsession)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-sticky.svg" alt="Sticky Note: Describe a time you went above and beyond for a customer or user. (Customer Obsession)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-went-above-and-beyond-for-a-customer-or-user-customer-obsession-sticky.svg" alt="Sticky Note: Describe a time you went above and beyond for a customer or user. (Customer Obsession)" width="30%">
 </a>
 
 
@@ -1109,14 +1109,14 @@ Microsoft emphasizes "customer-obsessed" culture. Show you:
 
 ### Q5: Tell me about a complex problem you solved. (Problem Solving)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-handwritten.svg" alt="Handwritten: Tell me about a complex problem you solved. (Problem Solving)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-handwritten.svg" alt="Handwritten: Tell me about a complex problem you solved. (Problem Solving)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-diagram.svg" alt="Diagram: Tell me about a complex problem you solved. (Problem Solving)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-diagram.svg" alt="Diagram: Tell me about a complex problem you solved. (Problem Solving)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-sticky.svg" alt="Sticky Note: Tell me about a complex problem you solved. (Problem Solving)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-complex-problem-you-solved-problem-solving-sticky.svg" alt="Sticky Note: Tell me about a complex problem you solved. (Problem Solving)" width="30%">
 </a>
 
 
@@ -1132,14 +1132,14 @@ Microsoft emphasizes "customer-obsessed" culture. Show you:
 
 ### Q6: Describe a time you influenced a technical decision. (Technical Influence)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-handwritten.svg" alt="Handwritten: Describe a time you influenced a technical decision. (Technical Influence)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-handwritten.svg" alt="Handwritten: Describe a time you influenced a technical decision. (Technical Influence)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-diagram.svg" alt="Diagram: Describe a time you influenced a technical decision. (Technical Influence)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-diagram.svg" alt="Diagram: Describe a time you influenced a technical decision. (Technical Influence)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-sticky.svg" alt="Sticky Note: Describe a time you influenced a technical decision. (Technical Influence)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-a-time-you-influenced-a-technical-decision-technical-influence-sticky.svg" alt="Sticky Note: Describe a time you influenced a technical decision. (Technical Influence)" width="30%">
 </a>
 
 
@@ -1155,14 +1155,14 @@ Show you can lead technical direction without authority:
 
 ### Q7: Tell me about a time a project didn't go as planned. (Resilience)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-handwritten.svg" alt="Handwritten: Tell me about a time a project didn't go as planned. (Resilience)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-handwritten.svg" alt="Handwritten: Tell me about a time a project didn't go as planned. (Resilience)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-diagram.svg" alt="Diagram: Tell me about a time a project didn't go as planned. (Resilience)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-diagram.svg" alt="Diagram: Tell me about a time a project didn't go as planned. (Resilience)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-sticky.svg" alt="Sticky Note: Tell me about a time a project didn't go as planned. (Resilience)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/tell-me-about-a-time-a-project-didn-t-go-as-planned-resilience-sticky.svg" alt="Sticky Note: Tell me about a time a project didn't go as planned. (Resilience)" width="30%">
 </a>
 
 
@@ -1178,14 +1178,14 @@ Microsoft wants to see how you handle failure:
 
 ### Q8: How do you prioritize your work when you have multiple competing deadlines? (Prioritization)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-handwritten.svg" alt="Handwritten: How do you prioritize your work when you have multiple competing deadlines? (Prioritization)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-handwritten.svg" alt="Handwritten: How do you prioritize your work when you have multiple competing deadlines? (Prioritization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-diagram.svg" alt="Diagram: How do you prioritize your work when you have multiple competing deadlines? (Prioritization)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-diagram.svg" alt="Diagram: How do you prioritize your work when you have multiple competing deadlines? (Prioritization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-sticky.svg" alt="Sticky Note: How do you prioritize your work when you have multiple competing deadlines? (Prioritization)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/how-do-you-prioritize-your-work-when-you-have-multiple-competing-deadlines-prioritization-sticky.svg" alt="Sticky Note: How do you prioritize your work when you have multiple competing deadlines? (Prioritization)" width="30%">
 </a>
 
 
@@ -1203,14 +1203,14 @@ I communicate with my manager and stakeholders about trade-offs. If I feel I can
 
 ### Q9: Describe your experience with code reviews — both giving and receiving. (Quality)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-handwritten.svg" alt="Handwritten: Describe your experience with code reviews — both giving and receiving. (Quality)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-handwritten.svg" alt="Handwritten: Describe your experience with code reviews — both giving and receiving. (Quality)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-diagram.svg" alt="Diagram: Describe your experience with code reviews — both giving and receiving. (Quality)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-diagram.svg" alt="Diagram: Describe your experience with code reviews — both giving and receiving. (Quality)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-sticky.svg" alt="Sticky Note: Describe your experience with code reviews — both giving and receiving. (Quality)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/describe-your-experience-with-code-reviews-both-giving-and-receiving-quality-sticky.svg" alt="Sticky Note: Describe your experience with code reviews — both giving and receiving. (Quality)" width="30%">
 </a>
 
 
@@ -1225,14 +1225,14 @@ I communicate with my manager and stakeholders about trade-offs. If I feel I can
 
 ### Q10: Why Microsoft? Why this team/role? (Motivation)
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-handwritten.svg" alt="Handwritten: Why Microsoft? Why this team/role? (Motivation)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-handwritten.svg" alt="Handwritten: Why Microsoft? Why this team/role? (Motivation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-diagram.svg" alt="Diagram: Why Microsoft? Why this team/role? (Motivation)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-diagram.svg" alt="Diagram: Why Microsoft? Why this team/role? (Motivation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-sticky.svg" alt="Sticky Note: Why Microsoft? Why this team/role? (Motivation)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/why-microsoft-why-this-team-role-motivation-sticky.svg" alt="Sticky Note: Why Microsoft? Why this team/role? (Motivation)" width="30%">
 </a>
 
 
@@ -1254,14 +1254,14 @@ Be specific. Avoid generic "Microsoft is a great company" responses. Instead:
 
 ### Coding Preparation
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-handwritten.svg" alt="Handwritten: Coding Preparation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-handwritten.svg" alt="Handwritten: Coding Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-diagram.svg" alt="Diagram: Coding Preparation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-diagram.svg" alt="Diagram: Coding Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-sticky.svg" alt="Sticky Note: Coding Preparation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/coding-preparation-sticky.svg" alt="Sticky Note: Coding Preparation" width="30%">
 </a>
 
 | Topic | Focus Areas | LeetCode Count |
@@ -1274,14 +1274,14 @@ Be specific. Avoid generic "Microsoft is a great company" responses. Instead:
 
 ### Computer Fundamentals Coverage
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-handwritten.svg" alt="Handwritten: Computer Fundamentals Coverage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-handwritten.svg" alt="Handwritten: Computer Fundamentals Coverage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-diagram.svg" alt="Diagram: Computer Fundamentals Coverage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-diagram.svg" alt="Diagram: Computer Fundamentals Coverage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-sticky.svg" alt="Sticky Note: Computer Fundamentals Coverage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/computer-fundamentals-coverage-sticky.svg" alt="Sticky Note: Computer Fundamentals Coverage" width="30%">
 </a>
 
 | Topic | Key Concepts |
@@ -1292,14 +1292,14 @@ Be specific. Avoid generic "Microsoft is a great company" responses. Instead:
 
 ### Behavioral Preparation
 
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-handwritten.svg" alt="Handwritten: Behavioral Preparation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-handwritten.svg" alt="Handwritten: Behavioral Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-diagram.svg" alt="Diagram: Behavioral Preparation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-diagram.svg" alt="Diagram: Behavioral Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-sticky.svg" alt="Sticky Note: Behavioral Preparation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/15-company-microsoft-sde/behavioral-preparation-sticky.svg" alt="Sticky Note: Behavioral Preparation" width="30%">
 </a>
 
 | Microsoft Principle | Prepare 2 Stories About |

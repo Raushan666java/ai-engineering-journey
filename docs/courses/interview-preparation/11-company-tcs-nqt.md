@@ -55,14 +55,14 @@ pie showData
 
 ### Problem 1: Find the Majority Element
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-handwritten.svg" alt="Handwritten: Problem 1: Find the Majority Element" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-handwritten.svg" alt="Handwritten: Problem 1: Find the Majority Element" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-diagram.svg" alt="Diagram: Problem 1: Find the Majority Element" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-diagram.svg" alt="Diagram: Problem 1: Find the Majority Element" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-sticky.svg" alt="Sticky Note: Problem 1: Find the Majority Element" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-sticky.svg" alt="Sticky Note: Problem 1: Find the Majority Element" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ function findMajorityElementOptimal(nums: number[]): number {
 
 ### Problem 2: Equilibrium Index (Pivot Index)
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-handwritten.svg" alt="Handwritten: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-handwritten.svg" alt="Handwritten: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-diagram.svg" alt="Diagram: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-diagram.svg" alt="Diagram: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-sticky.svg" alt="Sticky Note: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-sticky.svg" alt="Sticky Note: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@ function findEquilibriumIndex(nums: number[]): number {
 
 ### Problem 3: Longest Substring Without Repeating Characters
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Problem 3: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Problem 3: Longest Substring Without Repeating Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Problem 3: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Problem 3: Longest Substring Without Repeating Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Problem 3: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Problem 3: Longest Substring Without Repeating Characters" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ function lengthOfLongestSubstring(s: string): number {
 
 ### Problem 4: 0-1 Knapsack (DP)
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-handwritten.svg" alt="Handwritten: Problem 4: 0-1 Knapsack (DP)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-handwritten.svg" alt="Handwritten: Problem 4: 0-1 Knapsack (DP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-diagram.svg" alt="Diagram: Problem 4: 0-1 Knapsack (DP)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-diagram.svg" alt="Diagram: Problem 4: 0-1 Knapsack (DP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-sticky.svg" alt="Sticky Note: Problem 4: 0-1 Knapsack (DP)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-sticky.svg" alt="Sticky Note: Problem 4: 0-1 Knapsack (DP)" width="30%">
 </a>
 
 
@@ -344,14 +344,14 @@ function knapsack01Optimized(values: number[], weights: number[], W: number): nu
 
 ### Problem 5: Count Pairs with Given Sum
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-handwritten.svg" alt="Handwritten: Problem 5: Count Pairs with Given Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-handwritten.svg" alt="Handwritten: Problem 5: Count Pairs with Given Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-diagram.svg" alt="Diagram: Problem 5: Count Pairs with Given Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-diagram.svg" alt="Diagram: Problem 5: Count Pairs with Given Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-sticky.svg" alt="Sticky Note: Problem 5: Count Pairs with Given Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-sticky.svg" alt="Sticky Note: Problem 5: Count Pairs with Given Sum" width="30%">
 </a>
 
 
@@ -400,14 +400,14 @@ function countPairsWithSum(arr: number[], k: number): number {
 
 ### Problem 6: Longest Common Subsequence (LCS)
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: Problem 6: Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: Problem 6: Longest Common Subsequence (LCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: Problem 6: Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: Problem 6: Longest Common Subsequence (LCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: Problem 6: Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: Problem 6: Longest Common Subsequence (LCS)" width="30%">
 </a>
 
 
@@ -485,14 +485,14 @@ function longestCommonSubsequenceOptimized(text1: string, text2: string): number
 
 ### Time, Speed, and Distance
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-handwritten.svg" alt="Handwritten: Time, Speed, and Distance" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-handwritten.svg" alt="Handwritten: Time, Speed, and Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-diagram.svg" alt="Diagram: Time, Speed, and Distance" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-diagram.svg" alt="Diagram: Time, Speed, and Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-sticky.svg" alt="Sticky Note: Time, Speed, and Distance" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-sticky.svg" alt="Sticky Note: Time, Speed, and Distance" width="30%">
 </a>
 
 
@@ -563,14 +563,14 @@ Time = 600 / 20 = 30 seconds
 
 ### Profit and Loss
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-handwritten.svg" alt="Handwritten: Profit and Loss" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-handwritten.svg" alt="Handwritten: Profit and Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-diagram.svg" alt="Diagram: Profit and Loss" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-diagram.svg" alt="Diagram: Profit and Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-sticky.svg" alt="Sticky Note: Profit and Loss" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-sticky.svg" alt="Sticky Note: Profit and Loss" width="30%">
 </a>
 
 
@@ -648,14 +648,14 @@ Profit % = 28%
 
 ### Percentages
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-handwritten.svg" alt="Handwritten: Percentages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-handwritten.svg" alt="Handwritten: Percentages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-diagram.svg" alt="Diagram: Percentages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-diagram.svg" alt="Diagram: Percentages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-sticky.svg" alt="Sticky Note: Percentages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-sticky.svg" alt="Sticky Note: Percentages" width="30%">
 </a>
 
 
@@ -735,14 +735,14 @@ P = 168000
 
 ### Ratios and Proportions
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-handwritten.svg" alt="Handwritten: Ratios and Proportions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-handwritten.svg" alt="Handwritten: Ratios and Proportions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-diagram.svg" alt="Diagram: Ratios and Proportions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-diagram.svg" alt="Diagram: Ratios and Proportions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-sticky.svg" alt="Sticky Note: Ratios and Proportions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-sticky.svg" alt="Sticky Note: Ratios and Proportions" width="30%">
 </a>
 
 
@@ -791,14 +791,14 @@ Numbers: 4 × 20 = 80, 7 × 20 = 140
 
 ### Averages
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-handwritten.svg" alt="Handwritten: Averages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-handwritten.svg" alt="Handwritten: Averages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-diagram.svg" alt="Diagram: Averages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-diagram.svg" alt="Diagram: Averages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-sticky.svg" alt="Sticky Note: Averages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-sticky.svg" alt="Sticky Note: Averages" width="30%">
 </a>
 
 
@@ -833,14 +833,14 @@ Teacher's age = 403 - 360 = 43
 
 ### Coding-Decoding
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-handwritten.svg" alt="Handwritten: Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-handwritten.svg" alt="Handwritten: Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-diagram.svg" alt="Diagram: Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-diagram.svg" alt="Diagram: Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-sticky.svg" alt="Sticky Note: Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-sticky.svg" alt="Sticky Note: Coding-Decoding" width="30%">
 </a>
 
 
@@ -922,14 +922,14 @@ The question asks: what is "cherry"? → "date"
 
 ### Blood Relations
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-handwritten.svg" alt="Handwritten: Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-handwritten.svg" alt="Handwritten: Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-diagram.svg" alt="Diagram: Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-diagram.svg" alt="Diagram: Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-sticky.svg" alt="Sticky Note: Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-sticky.svg" alt="Sticky Note: Blood Relations" width="30%">
 </a>
 
 
@@ -976,14 +976,14 @@ So the woman is the niece of the man
 
 ### Direction Sense
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-handwritten.svg" alt="Handwritten: Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-handwritten.svg" alt="Handwritten: Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-diagram.svg" alt="Diagram: Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-diagram.svg" alt="Diagram: Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-sticky.svg" alt="Sticky Note: Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-sticky.svg" alt="Sticky Note: Direction Sense" width="30%">
 </a>
 
 
@@ -1037,14 +1037,14 @@ Final position: 7 km East, 7 km South → Southeast direction from start
 
 ### Syllogisms
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-handwritten.svg" alt="Handwritten: Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-handwritten.svg" alt="Handwritten: Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-diagram.svg" alt="Diagram: Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-diagram.svg" alt="Diagram: Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-sticky.svg" alt="Sticky Note: Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-sticky.svg" alt="Sticky Note: Syllogisms" width="30%">
 </a>
 
 
@@ -1104,14 +1104,14 @@ Both follow independently.
 
 ### Synonyms
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-handwritten.svg" alt="Handwritten: Synonyms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-handwritten.svg" alt="Handwritten: Synonyms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-diagram.svg" alt="Diagram: Synonyms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-diagram.svg" alt="Diagram: Synonyms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-sticky.svg" alt="Sticky Note: Synonyms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-sticky.svg" alt="Sticky Note: Synonyms" width="30%">
 </a>
 
 
@@ -1147,14 +1147,14 @@ Enervate means to cause someone to feel drained of energy or weakened.
 
 ### Antonyms
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-handwritten.svg" alt="Handwritten: Antonyms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-handwritten.svg" alt="Handwritten: Antonyms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-diagram.svg" alt="Diagram: Antonyms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-diagram.svg" alt="Diagram: Antonyms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-sticky.svg" alt="Sticky Note: Antonyms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-sticky.svg" alt="Sticky Note: Antonyms" width="30%">
 </a>
 
 
@@ -1190,14 +1190,14 @@ Obfuscate means to render obscure or unclear. Antonym is clarify.
 
 ### Sentence Completion
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-handwritten.svg" alt="Handwritten: Sentence Completion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-handwritten.svg" alt="Handwritten: Sentence Completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-diagram.svg" alt="Diagram: Sentence Completion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-diagram.svg" alt="Diagram: Sentence Completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-sticky.svg" alt="Sticky Note: Sentence Completion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-sticky.svg" alt="Sticky Note: Sentence Completion" width="30%">
 </a>
 
 
@@ -1247,14 +1247,14 @@ a) convoluted  b) esoteric  c) lucid  d) ambiguous
 
 ### For TCS NQT Foundation:
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-handwritten.svg" alt="Handwritten: For TCS NQT Foundation:" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-handwritten.svg" alt="Handwritten: For TCS NQT Foundation:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-diagram.svg" alt="Diagram: For TCS NQT Foundation:" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-diagram.svg" alt="Diagram: For TCS NQT Foundation:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-sticky.svg" alt="Sticky Note: For TCS NQT Foundation:" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-sticky.svg" alt="Sticky Note: For TCS NQT Foundation:" width="30%">
 </a>
 
 | Section | Tips |
@@ -1265,14 +1265,14 @@ a) convoluted  b) esoteric  c) lucid  d) ambiguous
 
 ### For TCS NQT Advanced (Digital):
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-handwritten.svg" alt="Handwritten: For TCS NQT Advanced (Digital):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-handwritten.svg" alt="Handwritten: For TCS NQT Advanced (Digital):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-diagram.svg" alt="Diagram: For TCS NQT Advanced (Digital):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-diagram.svg" alt="Diagram: For TCS NQT Advanced (Digital):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-sticky.svg" alt="Sticky Note: For TCS NQT Advanced (Digital):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-sticky.svg" alt="Sticky Note: For TCS NQT Advanced (Digital):" width="30%">
 </a>
 
 | Area | Focus |
@@ -1283,14 +1283,14 @@ a) convoluted  b) esoteric  c) lucid  d) ambiguous
 
 ### Email Writing Template (TCS-specific):
 
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-handwritten.svg" alt="Handwritten: Email Writing Template (TCS-specific):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-handwritten.svg" alt="Handwritten: Email Writing Template (TCS-specific):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-diagram.svg" alt="Diagram: Email Writing Template (TCS-specific):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-diagram.svg" alt="Diagram: Email Writing Template (TCS-specific):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-sticky.svg" alt="Sticky Note: Email Writing Template (TCS-specific):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-sticky.svg" alt="Sticky Note: Email Writing Template (TCS-specific):" width="30%">
 </a>
 
 ```

@@ -55,14 +55,14 @@ flowchart LR
 
 ### What is an Operating System?
 
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-handwritten.svg" alt="Handwritten: What is an Operating System?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-handwritten.svg" alt="Handwritten: What is an Operating System?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-diagram.svg" alt="Diagram: What is an Operating System?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-diagram.svg" alt="Diagram: What is an Operating System?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-sticky.svg" alt="Sticky Note: What is an Operating System?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/what-is-an-operating-system-sticky.svg" alt="Sticky Note: What is an Operating System?" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ if __name__ == "__main__":
 
 ### Operating System Functions
 
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-handwritten.svg" alt="Handwritten: Operating System Functions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-handwritten.svg" alt="Handwritten: Operating System Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-diagram.svg" alt="Diagram: Operating System Functions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-diagram.svg" alt="Diagram: Operating System Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-sticky.svg" alt="Sticky Note: Operating System Functions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-functions-sticky.svg" alt="Sticky Note: Operating System Functions" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ if __name__ == "__main__":
 
 ### History of Operating Systems
 
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-handwritten.svg" alt="Handwritten: History of Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-handwritten.svg" alt="Handwritten: History of Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-diagram.svg" alt="Diagram: History of Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-diagram.svg" alt="Diagram: History of Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-sticky.svg" alt="Sticky Note: History of Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/history-of-operating-systems-sticky.svg" alt="Sticky Note: History of Operating Systems" width="30%">
 </a>
 
 
@@ -589,14 +589,14 @@ Linux (Linus Torvalds, 1991) brought Unix-like power to PCs as free software. Wi
 
 ### Types of Operating Systems
 
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-handwritten.svg" alt="Handwritten: Types of Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-handwritten.svg" alt="Handwritten: Types of Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-diagram.svg" alt="Diagram: Types of Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-diagram.svg" alt="Diagram: Types of Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-sticky.svg" alt="Sticky Note: Types of Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/types-of-operating-systems-sticky.svg" alt="Sticky Note: Types of Operating Systems" width="30%">
 </a>
 
 
@@ -663,14 +663,14 @@ Designed for devices with limited resources → sensors, smart appliances, IoT d
 
 ### System Calls
 
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-handwritten.svg" alt="Handwritten: System Calls" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/system-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/system-calls-handwritten.svg" alt="Handwritten: System Calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-diagram.svg" alt="Diagram: System Calls" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/system-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/system-calls-diagram.svg" alt="Diagram: System Calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/system-calls-sticky.svg" alt="Sticky Note: System Calls" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/system-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/system-calls-sticky.svg" alt="Sticky Note: System Calls" width="30%">
 </a>
 
 
@@ -902,14 +902,14 @@ Most programs use an **API** rather than invoking system calls directly. The C s
 
 ### Operating System Structures
 
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-handwritten.svg" alt="Handwritten: Operating System Structures" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-handwritten.svg" alt="Handwritten: Operating System Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-diagram.svg" alt="Diagram: Operating System Structures" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-diagram.svg" alt="Diagram: Operating System Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-sticky.svg" alt="Sticky Note: Operating System Structures" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/operating-system-structures-sticky.svg" alt="Sticky Note: Operating System Structures" width="30%">
 </a>
 
 
@@ -1020,14 +1020,14 @@ Modern kernels combine monolithic and microkernel ideas. The kernel is a core wi
 
 ### Kernel Types Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-handwritten.svg" alt="Handwritten: Kernel Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-handwritten.svg" alt="Handwritten: Kernel Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-diagram.svg" alt="Diagram: Kernel Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-diagram.svg" alt="Diagram: Kernel Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-sticky.svg" alt="Sticky Note: Kernel Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/01-introduction/kernel-types-comparison-sticky.svg" alt="Sticky Note: Kernel Types Comparison" width="30%">
 </a>
 
 

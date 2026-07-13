@@ -54,14 +54,14 @@ flowchart TD
 
 ### B-Tree Definition and Properties
 
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-handwritten.svg" alt="Handwritten: B-Tree Definition and Properties" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-handwritten.svg" alt="Handwritten: B-Tree Definition and Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-diagram.svg" alt="Diagram: B-Tree Definition and Properties" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-diagram.svg" alt="Diagram: B-Tree Definition and Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-sticky.svg" alt="Sticky Note: B-Tree Definition and Properties" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-sticky.svg" alt="Sticky Note: B-Tree Definition and Properties" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ A B-tree of **order m** is a balanced search tree satisfying:
 
 ### Height Bound — Why It Matters
 
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-handwritten.svg" alt="Handwritten: Height Bound — Why It Matters" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-handwritten.svg" alt="Handwritten: Height Bound — Why It Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-diagram.svg" alt="Diagram: Height Bound — Why It Matters" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-diagram.svg" alt="Diagram: Height Bound — Why It Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-sticky.svg" alt="Sticky Note: Height Bound — Why It Matters" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-sticky.svg" alt="Sticky Note: Height Bound — Why It Matters" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ The height \( h \) of a B-tree of order \( m \) with \( n \) keys satisfies:
 
 ### Search Operation
 
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/search-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/search-operation-handwritten.svg" alt="Handwritten: Search Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-handwritten.svg" alt="Handwritten: Search Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/search-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/search-operation-diagram.svg" alt="Diagram: Search Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-diagram.svg" alt="Diagram: Search Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/search-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/search-operation-sticky.svg" alt="Sticky Note: Search Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-sticky.svg" alt="Sticky Note: Search Operation" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ class BTree {
 
 ### Insertion Operation
 
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-handwritten.svg" alt="Handwritten: Insertion Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-handwritten.svg" alt="Handwritten: Insertion Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-diagram.svg" alt="Diagram: Insertion Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-diagram.svg" alt="Diagram: Insertion Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-sticky.svg" alt="Sticky Note: Insertion Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-sticky.svg" alt="Sticky Note: Insertion Operation" width="30%">
 </a>
 
 
@@ -726,14 +726,14 @@ class BTree {
 
 ### Deletion Operation
 
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-handwritten.svg" alt="Handwritten: Deletion Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-handwritten.svg" alt="Handwritten: Deletion Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-diagram.svg" alt="Diagram: Deletion Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-diagram.svg" alt="Diagram: Deletion Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-sticky.svg" alt="Sticky Note: Deletion Operation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-sticky.svg" alt="Sticky Note: Deletion Operation" width="30%">
 </a>
 
 
@@ -1253,14 +1253,14 @@ class BTree {
 
 ### B+ Trees
 
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/b-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/b-trees-handwritten.svg" alt="Handwritten: B+ Trees" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-handwritten.svg" alt="Handwritten: B+ Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/b-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/b-trees-diagram.svg" alt="Diagram: B+ Trees" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-diagram.svg" alt="Diagram: B+ Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/15-b-trees/b-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/15-b-trees/b-trees-sticky.svg" alt="Sticky Note: B+ Trees" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-sticky.svg" alt="Sticky Note: B+ Trees" width="30%">
 </a>
 
 

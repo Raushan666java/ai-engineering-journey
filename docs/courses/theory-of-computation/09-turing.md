@@ -44,14 +44,14 @@ flowchart LR
 
 ### 8.1 The Turing Machine Model
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-handwritten.svg" alt="Handwritten: 8.1 The Turing Machine Model" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-handwritten.svg" alt="Handwritten: 8.1 The Turing Machine Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-diagram.svg" alt="Diagram: 8.1 The Turing Machine Model" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-diagram.svg" alt="Diagram: 8.1 The Turing Machine Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-sticky.svg" alt="Sticky Note: 8.1 The Turing Machine Model" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-sticky.svg" alt="Sticky Note: 8.1 The Turing Machine Model" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ Unlike finite automata, the TM has **unbounded memory** (the infinite tape) and 
 
 ### 8.2 Formal Definition of a Turing Machine
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-handwritten.svg" alt="Handwritten: 8.2 Formal Definition of a Turing Machine" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-handwritten.svg" alt="Handwritten: 8.2 Formal Definition of a Turing Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-diagram.svg" alt="Diagram: 8.2 Formal Definition of a Turing Machine" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-diagram.svg" alt="Diagram: 8.2 Formal Definition of a Turing Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-sticky.svg" alt="Sticky Note: 8.2 Formal Definition of a Turing Machine" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-sticky.svg" alt="Sticky Note: 8.2 Formal Definition of a Turing Machine" width="30%">
 </a>
 
 
@@ -95,14 +95,14 @@ A transition Î´(q, a) = (r, b, L) means:
 
 ### 8.3 Configuration and Computation
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-handwritten.svg" alt="Handwritten: 8.3 Configuration and Computation" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-handwritten.svg" alt="Handwritten: 8.3 Configuration and Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-diagram.svg" alt="Diagram: 8.3 Configuration and Computation" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-diagram.svg" alt="Diagram: 8.3 Configuration and Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-sticky.svg" alt="Sticky Note: 8.3 Configuration and Computation" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-sticky.svg" alt="Sticky Note: 8.3 Configuration and Computation" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ A TM **halts** when it enters q_accept or q_reject. Otherwise it loops.
 
 ### 8.4 Turing Machine Language
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-handwritten.svg" alt="Handwritten: 8.4 Turing Machine Language" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-handwritten.svg" alt="Handwritten: 8.4 Turing Machine Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-diagram.svg" alt="Diagram: 8.4 Turing Machine Language" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-diagram.svg" alt="Diagram: 8.4 Turing Machine Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-sticky.svg" alt="Sticky Note: 8.4 Turing Machine Language" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-sticky.svg" alt="Sticky Note: 8.4 Turing Machine Language" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ Turing machines recognize exactly the **recursively enumerable** (RE) languages.
 
 ### 8.5 Acceptors, Deciders, and Recognizers
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-handwritten.svg" alt="Handwritten: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-handwritten.svg" alt="Handwritten: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-diagram.svg" alt="Diagram: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-diagram.svg" alt="Diagram: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-sticky.svg" alt="Sticky Note: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-sticky.svg" alt="Sticky Note: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ This "dovetailing" technique ensures every accepted string is eventually printed
 
 ### 8.6 Designing Turing Machines
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-handwritten.svg" alt="Handwritten: 8.6 Designing Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-handwritten.svg" alt="Handwritten: 8.6 Designing Turing Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-diagram.svg" alt="Diagram: 8.6 Designing Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-diagram.svg" alt="Diagram: 8.6 Designing Turing Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-sticky.svg" alt="Sticky Note: 8.6 Designing Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-sticky.svg" alt="Sticky Note: 8.6 Designing Turing Machines" width="30%">
 </a>
 
 
@@ -197,14 +197,14 @@ Designing TMs is akin to writing low-level programs. Common design patterns:
 
 ### 8.7 The TM Computation: A Complete Example
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-handwritten.svg" alt="Handwritten: 8.7 The TM Computation: A Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-handwritten.svg" alt="Handwritten: 8.7 The TM Computation: A Complete Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-diagram.svg" alt="Diagram: 8.7 The TM Computation: A Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-diagram.svg" alt="Diagram: 8.7 The TM Computation: A Complete Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-sticky.svg" alt="Sticky Note: 8.7 The TM Computation: A Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-sticky.svg" alt="Sticky Note: 8.7 The TM Computation: A Complete Example" width="30%">
 </a>
 
 
@@ -236,14 +236,14 @@ This trace shows the algorithm's pattern: each pass removes one a, one b, and on
 
 ### 8.8 Multitape Turing Machines
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-handwritten.svg" alt="Handwritten: 8.8 Multitape Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-handwritten.svg" alt="Handwritten: 8.8 Multitape Turing Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-diagram.svg" alt="Diagram: 8.8 Multitape Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-diagram.svg" alt="Diagram: 8.8 Multitape Turing Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-sticky.svg" alt="Sticky Note: 8.8 Multitape Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-sticky.svg" alt="Sticky Note: 8.8 Multitape Turing Machines" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ flowchart LR
 
 ### 8.7 Nondeterministic Turing Machines
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-handwritten.svg" alt="Handwritten: 8.7 Nondeterministic Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-handwritten.svg" alt="Handwritten: 8.7 Nondeterministic Turing Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-diagram.svg" alt="Diagram: 8.7 Nondeterministic Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-diagram.svg" alt="Diagram: 8.7 Nondeterministic Turing Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-sticky.svg" alt="Sticky Note: 8.7 Nondeterministic Turing Machines" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-sticky.svg" alt="Sticky Note: 8.7 Nondeterministic Turing Machines" width="30%">
 </a>
 
 
@@ -297,14 +297,14 @@ At each step, the NTM may have multiple choices. It accepts if **any** branch le
 
 ### 8.8 Turing Machine Variants
 
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-handwritten.svg" alt="Handwritten: 8.8 Turing Machine Variants" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-handwritten.svg" alt="Handwritten: 8.8 Turing Machine Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-diagram.svg" alt="Diagram: 8.8 Turing Machine Variants" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-diagram.svg" alt="Diagram: 8.8 Turing Machine Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-sticky.svg" alt="Sticky Note: 8.8 Turing Machine Variants" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-sticky.svg" alt="Sticky Note: 8.8 Turing Machine Variants" width="30%">
 </a>
 
 

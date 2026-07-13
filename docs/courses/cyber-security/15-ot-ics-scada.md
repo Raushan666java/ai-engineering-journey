@@ -61,14 +61,14 @@ flowchart TD
 
 ### 1.1 What Is OT/ICS/SCADA?
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-handwritten.svg" alt="Handwritten: 1.1 What Is OT/ICS/SCADA?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-handwritten.svg" alt="Handwritten: 1.1 What Is OT/ICS/SCADA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-diagram.svg" alt="Diagram: 1.1 What Is OT/ICS/SCADA?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-diagram.svg" alt="Diagram: 1.1 What Is OT/ICS/SCADA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-sticky.svg" alt="Sticky Note: 1.1 What Is OT/ICS/SCADA?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-1-what-is-ot-ics-scada-sticky.svg" alt="Sticky Note: 1.1 What Is OT/ICS/SCADA?" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ flowchart TD
 
 ### 1.2 The Purdue Model for Control Hierarchy
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-handwritten.svg" alt="Handwritten: 1.2 The Purdue Model for Control Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-handwritten.svg" alt="Handwritten: 1.2 The Purdue Model for Control Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-diagram.svg" alt="Diagram: 1.2 The Purdue Model for Control Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-diagram.svg" alt="Diagram: 1.2 The Purdue Model for Control Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-sticky.svg" alt="Sticky Note: 1.2 The Purdue Model for Control Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-2-the-purdue-model-for-control-hierarchy-sticky.svg" alt="Sticky Note: 1.2 The Purdue Model for Control Hierarchy" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ flowchart BT
 
 ### 1.3 ISA‑99 / IEC 62443 Standards
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-handwritten.svg" alt="Handwritten: 1.3 ISA‑99 / IEC 62443 Standards" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-handwritten.svg" alt="Handwritten: 1.3 ISA‑99 / IEC 62443 Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-diagram.svg" alt="Diagram: 1.3 ISA‑99 / IEC 62443 Standards" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-diagram.svg" alt="Diagram: 1.3 ISA‑99 / IEC 62443 Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-sticky.svg" alt="Sticky Note: 1.3 ISA‑99 / IEC 62443 Standards" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-3-isa-99-iec-62443-standards-sticky.svg" alt="Sticky Note: 1.3 ISA‑99 / IEC 62443 Standards" width="30%">
 </a>
 
 
@@ -163,14 +163,14 @@ IEC 62443 (formerly ISA‑99) is the international standard series for ICS secur
 
 ### 1.4 IT vs. OT Security: Critical Differences
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-handwritten.svg" alt="Handwritten: 1.4 IT vs. OT Security: Critical Differences" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-handwritten.svg" alt="Handwritten: 1.4 IT vs. OT Security: Critical Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-diagram.svg" alt="Diagram: 1.4 IT vs. OT Security: Critical Differences" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-diagram.svg" alt="Diagram: 1.4 IT vs. OT Security: Critical Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-sticky.svg" alt="Sticky Note: 1.4 IT vs. OT Security: Critical Differences" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/1-4-it-vs-ot-security-critical-differences-sticky.svg" alt="Sticky Note: 1.4 IT vs. OT Security: Critical Differences" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ IEC 62443 (formerly ISA‑99) is the international standard series for ICS secur
 
 ### 2.1 PLC Architecture and Memory Layout
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-handwritten.svg" alt="Handwritten: 2.1 PLC Architecture and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-handwritten.svg" alt="Handwritten: 2.1 PLC Architecture and Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-diagram.svg" alt="Diagram: 2.1 PLC Architecture and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-diagram.svg" alt="Diagram: 2.1 PLC Architecture and Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-sticky.svg" alt="Sticky Note: 2.1 PLC Architecture and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-1-plc-architecture-and-memory-layout-sticky.svg" alt="Sticky Note: 2.1 PLC Architecture and Memory Layout" width="30%">
 </a>
 
 
@@ -221,14 +221,14 @@ A PLC executes a cyclic **scan loop**:
 
 ### 2.2 Vendor-Specific Security Considerations
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-handwritten.svg" alt="Handwritten: 2.2 Vendor-Specific Security Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-handwritten.svg" alt="Handwritten: 2.2 Vendor-Specific Security Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-diagram.svg" alt="Diagram: 2.2 Vendor-Specific Security Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-diagram.svg" alt="Diagram: 2.2 Vendor-Specific Security Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-sticky.svg" alt="Sticky Note: 2.2 Vendor-Specific Security Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-2-vendor-specific-security-considerations-sticky.svg" alt="Sticky Note: 2.2 Vendor-Specific Security Considerations" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ A PLC executes a cyclic **scan loop**:
 
 ### 2.3 Remote Access Protocols
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-handwritten.svg" alt="Handwritten: 2.3 Remote Access Protocols" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-handwritten.svg" alt="Handwritten: 2.3 Remote Access Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-diagram.svg" alt="Diagram: 2.3 Remote Access Protocols" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-diagram.svg" alt="Diagram: 2.3 Remote Access Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-sticky.svg" alt="Sticky Note: 2.3 Remote Access Protocols" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/2-3-remote-access-protocols-sticky.svg" alt="Sticky Note: 2.3 Remote Access Protocols" width="30%">
 </a>
 
 
@@ -283,14 +283,14 @@ A PLC executes a cyclic **scan loop**:
 
 ### 3.1 Modbus TCP / RTU
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-handwritten.svg" alt="Handwritten: 3.1 Modbus TCP / RTU" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-handwritten.svg" alt="Handwritten: 3.1 Modbus TCP / RTU" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-diagram.svg" alt="Diagram: 3.1 Modbus TCP / RTU" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-diagram.svg" alt="Diagram: 3.1 Modbus TCP / RTU" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-sticky.svg" alt="Sticky Note: 3.1 Modbus TCP / RTU" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-1-modbus-tcp-rtu-sticky.svg" alt="Sticky Note: 3.1 Modbus TCP / RTU" width="30%">
 </a>
 
 
@@ -346,14 +346,14 @@ TID   PID   LEN   UID   FC   Start  Count
 
 ### 3.2 DNP3
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-handwritten.svg" alt="Handwritten: 3.2 DNP3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-handwritten.svg" alt="Handwritten: 3.2 DNP3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-diagram.svg" alt="Diagram: 3.2 DNP3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-diagram.svg" alt="Diagram: 3.2 DNP3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-sticky.svg" alt="Sticky Note: 3.2 DNP3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-2-dnp3-sticky.svg" alt="Sticky Note: 3.2 DNP3" width="30%">
 </a>
 
 
@@ -396,14 +396,14 @@ flowchart LR
 
 ### 3.3 Siemens S7comm
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-handwritten.svg" alt="Handwritten: 3.3 Siemens S7comm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-handwritten.svg" alt="Handwritten: 3.3 Siemens S7comm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-diagram.svg" alt="Diagram: 3.3 Siemens S7comm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-diagram.svg" alt="Diagram: 3.3 Siemens S7comm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-sticky.svg" alt="Sticky Note: 3.3 Siemens S7comm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-3-siemens-s7comm-sticky.svg" alt="Sticky Note: 3.3 Siemens S7comm" width="30%">
 </a>
 
 
@@ -422,14 +422,14 @@ S7comm is Siemens' proprietary protocol for S7-300/400/1200/1500 PLCs. It operat
 
 ### 3.4 Profinet
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-handwritten.svg" alt="Handwritten: 3.4 Profinet" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-handwritten.svg" alt="Handwritten: 3.4 Profinet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-diagram.svg" alt="Diagram: 3.4 Profinet" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-diagram.svg" alt="Diagram: 3.4 Profinet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-sticky.svg" alt="Sticky Note: 3.4 Profinet" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-4-profinet-sticky.svg" alt="Sticky Note: 3.4 Profinet" width="30%">
 </a>
 
 
@@ -443,14 +443,14 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 ### 3.5 OPC UA
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-handwritten.svg" alt="Handwritten: 3.5 OPC UA" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-handwritten.svg" alt="Handwritten: 3.5 OPC UA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-diagram.svg" alt="Diagram: 3.5 OPC UA" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-diagram.svg" alt="Diagram: 3.5 OPC UA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-sticky.svg" alt="Sticky Note: 3.5 OPC UA" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-5-opc-ua-sticky.svg" alt="Sticky Note: 3.5 OPC UA" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 ### 3.6 BACnet
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-handwritten.svg" alt="Handwritten: 3.6 BACnet" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-handwritten.svg" alt="Handwritten: 3.6 BACnet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-diagram.svg" alt="Diagram: 3.6 BACnet" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-diagram.svg" alt="Diagram: 3.6 BACnet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-sticky.svg" alt="Sticky Note: 3.6 BACnet" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/3-6-bacnet-sticky.svg" alt="Sticky Note: 3.6 BACnet" width="30%">
 </a>
 
 
@@ -487,14 +487,14 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 ### 4.1 Stuxnet (2010)
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-handwritten.svg" alt="Handwritten: 4.1 Stuxnet (2010)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-handwritten.svg" alt="Handwritten: 4.1 Stuxnet (2010)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-diagram.svg" alt="Diagram: 4.1 Stuxnet (2010)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-diagram.svg" alt="Diagram: 4.1 Stuxnet (2010)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-sticky.svg" alt="Sticky Note: 4.1 Stuxnet (2010)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-1-stuxnet-2010-sticky.svg" alt="Sticky Note: 4.1 Stuxnet (2010)" width="30%">
 </a>
 
 
@@ -516,14 +516,14 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 ### 4.2 TRITON / TRISIS (2017)
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-handwritten.svg" alt="Handwritten: 4.2 TRITON / TRISIS (2017)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-handwritten.svg" alt="Handwritten: 4.2 TRITON / TRISIS (2017)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-diagram.svg" alt="Diagram: 4.2 TRITON / TRISIS (2017)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-diagram.svg" alt="Diagram: 4.2 TRITON / TRISIS (2017)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-sticky.svg" alt="Sticky Note: 4.2 TRITON / TRISIS (2017)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-2-triton-trisis-2017-sticky.svg" alt="Sticky Note: 4.2 TRITON / TRISIS (2017)" width="30%">
 </a>
 
 
@@ -544,14 +544,14 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 ### 4.3 Industroyer / CrashOverride (2016)
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-handwritten.svg" alt="Handwritten: 4.3 Industroyer / CrashOverride (2016)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-handwritten.svg" alt="Handwritten: 4.3 Industroyer / CrashOverride (2016)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-diagram.svg" alt="Diagram: 4.3 Industroyer / CrashOverride (2016)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-diagram.svg" alt="Diagram: 4.3 Industroyer / CrashOverride (2016)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-sticky.svg" alt="Sticky Note: 4.3 Industroyer / CrashOverride (2016)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-3-industroyer-crashoverride-2016-sticky.svg" alt="Sticky Note: 4.3 Industroyer / CrashOverride (2016)" width="30%">
 </a>
 
 
@@ -571,14 +571,14 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 ### 4.4 Incontroller / Pipedream (2022)
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-handwritten.svg" alt="Handwritten: 4.4 Incontroller / Pipedream (2022)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-handwritten.svg" alt="Handwritten: 4.4 Incontroller / Pipedream (2022)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-diagram.svg" alt="Diagram: 4.4 Incontroller / Pipedream (2022)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-diagram.svg" alt="Diagram: 4.4 Incontroller / Pipedream (2022)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-sticky.svg" alt="Sticky Note: 4.4 Incontroller / Pipedream (2022)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/4-4-incontroller-pipedream-2022-sticky.svg" alt="Sticky Note: 4.4 Incontroller / Pipedream (2022)" width="30%">
 </a>
 
 
@@ -603,14 +603,14 @@ Profinet is Siemens' real-time Ethernet standard for industrial automation:
 
 ### 5.1 ISA-99 Zones and Conduits
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-handwritten.svg" alt="Handwritten: 5.1 ISA-99 Zones and Conduits" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-handwritten.svg" alt="Handwritten: 5.1 ISA-99 Zones and Conduits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-diagram.svg" alt="Diagram: 5.1 ISA-99 Zones and Conduits" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-diagram.svg" alt="Diagram: 5.1 ISA-99 Zones and Conduits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-sticky.svg" alt="Sticky Note: 5.1 ISA-99 Zones and Conduits" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-1-isa-99-zones-and-conduits-sticky.svg" alt="Sticky Note: 5.1 ISA-99 Zones and Conduits" width="30%">
 </a>
 
 
@@ -632,14 +632,14 @@ The ISA-99 model divides the ICS network into **zones** (groups of assets with s
 
 ### 5.2 Unidirectional Gateways and Data Diodes
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-handwritten.svg" alt="Handwritten: 5.2 Unidirectional Gateways and Data Diodes" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-handwritten.svg" alt="Handwritten: 5.2 Unidirectional Gateways and Data Diodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-diagram.svg" alt="Diagram: 5.2 Unidirectional Gateways and Data Diodes" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-diagram.svg" alt="Diagram: 5.2 Unidirectional Gateways and Data Diodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-sticky.svg" alt="Sticky Note: 5.2 Unidirectional Gateways and Data Diodes" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-2-unidirectional-gateways-and-data-diodes-sticky.svg" alt="Sticky Note: 5.2 Unidirectional Gateways and Data Diodes" width="30%">
 </a>
 
 
@@ -666,14 +666,14 @@ A **data diode** (unidirectional gateway) physically enforces one-way data flow 
 
 ### 5.3 OT Firewalls (Protocol-Aware)
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-handwritten.svg" alt="Handwritten: 5.3 OT Firewalls (Protocol-Aware)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-handwritten.svg" alt="Handwritten: 5.3 OT Firewalls (Protocol-Aware)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-diagram.svg" alt="Diagram: 5.3 OT Firewalls (Protocol-Aware)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-diagram.svg" alt="Diagram: 5.3 OT Firewalls (Protocol-Aware)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-sticky.svg" alt="Sticky Note: 5.3 OT Firewalls (Protocol-Aware)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/5-3-ot-firewalls-protocol-aware-sticky.svg" alt="Sticky Note: 5.3 OT Firewalls (Protocol-Aware)" width="30%">
 </a>
 
 
@@ -701,14 +701,14 @@ DENY Modbus-TCP from any to any except registered masters
 
 ### 6.1 Passive vs. Active Monitoring
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-handwritten.svg" alt="Handwritten: 6.1 Passive vs. Active Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-handwritten.svg" alt="Handwritten: 6.1 Passive vs. Active Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-diagram.svg" alt="Diagram: 6.1 Passive vs. Active Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-diagram.svg" alt="Diagram: 6.1 Passive vs. Active Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-sticky.svg" alt="Sticky Note: 6.1 Passive vs. Active Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-1-passive-vs-active-monitoring-sticky.svg" alt="Sticky Note: 6.1 Passive vs. Active Monitoring" width="30%">
 </a>
 
 
@@ -725,14 +725,14 @@ DENY Modbus-TCP from any to any except registered masters
 
 ### 6.2 OT-SIEM Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-handwritten.svg" alt="Handwritten: 6.2 OT-SIEM Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-handwritten.svg" alt="Handwritten: 6.2 OT-SIEM Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-diagram.svg" alt="Diagram: 6.2 OT-SIEM Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-diagram.svg" alt="Diagram: 6.2 OT-SIEM Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-sticky.svg" alt="Sticky Note: 6.2 OT-SIEM Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-2-ot-siem-architecture-sticky.svg" alt="Sticky Note: 6.2 OT-SIEM Architecture" width="30%">
 </a>
 
 
@@ -766,14 +766,14 @@ DENY Modbus-TCP from any to any except registered masters
 
 ### 6.3 Wireshark Dissectors for Industrial Protocols
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-handwritten.svg" alt="Handwritten: 6.3 Wireshark Dissectors for Industrial Protocols" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-handwritten.svg" alt="Handwritten: 6.3 Wireshark Dissectors for Industrial Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-diagram.svg" alt="Diagram: 6.3 Wireshark Dissectors for Industrial Protocols" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-diagram.svg" alt="Diagram: 6.3 Wireshark Dissectors for Industrial Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-sticky.svg" alt="Sticky Note: 6.3 Wireshark Dissectors for Industrial Protocols" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-3-wireshark-dissectors-for-industrial-protocols-sticky.svg" alt="Sticky Note: 6.3 Wireshark Dissectors for Industrial Protocols" width="30%">
 </a>
 
 
@@ -806,14 +806,14 @@ modbus and ip.src != 192.168.1.0/24
 
 ### 6.4 Zeek Script for OT Detection
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-handwritten.svg" alt="Handwritten: 6.4 Zeek Script for OT Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-handwritten.svg" alt="Handwritten: 6.4 Zeek Script for OT Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-diagram.svg" alt="Diagram: 6.4 Zeek Script for OT Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-diagram.svg" alt="Diagram: 6.4 Zeek Script for OT Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-sticky.svg" alt="Sticky Note: 6.4 Zeek Script for OT Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/6-4-zeek-script-for-ot-detection-sticky.svg" alt="Sticky Note: 6.4 Zeek Script for OT Detection" width="30%">
 </a>
 
 
@@ -864,14 +864,14 @@ event zeek_init() {
 
 ### 7.1 Jump Box Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-handwritten.svg" alt="Handwritten: 7.1 Jump Box Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-handwritten.svg" alt="Handwritten: 7.1 Jump Box Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-diagram.svg" alt="Diagram: 7.1 Jump Box Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-diagram.svg" alt="Diagram: 7.1 Jump Box Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-sticky.svg" alt="Sticky Note: 7.1 Jump Box Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-1-jump-box-architecture-sticky.svg" alt="Sticky Note: 7.1 Jump Box Architecture" width="30%">
 </a>
 
 
@@ -897,14 +897,14 @@ A **jump box** (bastion host) is a hardened gateway that mediates all remote con
 
 ### 7.2 Vendor MFA and Access Lifecycle
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-handwritten.svg" alt="Handwritten: 7.2 Vendor MFA and Access Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-handwritten.svg" alt="Handwritten: 7.2 Vendor MFA and Access Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-diagram.svg" alt="Diagram: 7.2 Vendor MFA and Access Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-diagram.svg" alt="Diagram: 7.2 Vendor MFA and Access Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-sticky.svg" alt="Sticky Note: 7.2 Vendor MFA and Access Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-2-vendor-mfa-and-access-lifecycle-sticky.svg" alt="Sticky Note: 7.2 Vendor MFA and Access Lifecycle" width="30%">
 </a>
 
 
@@ -920,14 +920,14 @@ A **jump box** (bastion host) is a hardened gateway that mediates all remote con
 
 ### 7.3 Air-Gap Considerations
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-handwritten.svg" alt="Handwritten: 7.3 Air-Gap Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-handwritten.svg" alt="Handwritten: 7.3 Air-Gap Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-diagram.svg" alt="Diagram: 7.3 Air-Gap Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-diagram.svg" alt="Diagram: 7.3 Air-Gap Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-sticky.svg" alt="Sticky Note: 7.3 Air-Gap Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/7-3-air-gap-considerations-sticky.svg" alt="Sticky Note: 7.3 Air-Gap Considerations" width="30%">
 </a>
 
 
@@ -943,14 +943,14 @@ A true **air gap** (no network connectivity between OT and IT) is the most secur
 
 ### 8.1 Modbus TCP Scanner
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-handwritten.svg" alt="Handwritten: 8.1 Modbus TCP Scanner" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-handwritten.svg" alt="Handwritten: 8.1 Modbus TCP Scanner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-diagram.svg" alt="Diagram: 8.1 Modbus TCP Scanner" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-diagram.svg" alt="Diagram: 8.1 Modbus TCP Scanner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-sticky.svg" alt="Sticky Note: 8.1 Modbus TCP Scanner" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-1-modbus-tcp-scanner-sticky.svg" alt="Sticky Note: 8.1 Modbus TCP Scanner" width="30%">
 </a>
 
 
@@ -1151,14 +1151,14 @@ async function writeSingleCoil(ip: string, unitId: number, address: number, valu
 
 ### 8.2 S7comm Packet Builder and PLC Info Reader
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-handwritten.svg" alt="Handwritten: 8.2 S7comm Packet Builder and PLC Info Reader" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-handwritten.svg" alt="Handwritten: 8.2 S7comm Packet Builder and PLC Info Reader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-diagram.svg" alt="Diagram: 8.2 S7comm Packet Builder and PLC Info Reader" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-diagram.svg" alt="Diagram: 8.2 S7comm Packet Builder and PLC Info Reader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-sticky.svg" alt="Sticky Note: 8.2 S7comm Packet Builder and PLC Info Reader" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-2-s7comm-packet-builder-and-plc-info-reader-sticky.svg" alt="Sticky Note: 8.2 S7comm Packet Builder and PLC Info Reader" width="30%">
 </a>
 
 
@@ -1307,14 +1307,14 @@ if (require.main === module) {
 
 ### 8.3 DNP3 Frame Parser
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-handwritten.svg" alt="Handwritten: 8.3 DNP3 Frame Parser" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-handwritten.svg" alt="Handwritten: 8.3 DNP3 Frame Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-diagram.svg" alt="Diagram: 8.3 DNP3 Frame Parser" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-diagram.svg" alt="Diagram: 8.3 DNP3 Frame Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-sticky.svg" alt="Sticky Note: 8.3 DNP3 Frame Parser" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-3-dnp3-frame-parser-sticky.svg" alt="Sticky Note: 8.3 DNP3 Frame Parser" width="30%">
 </a>
 
 
@@ -1456,14 +1456,14 @@ if (process.argv[2]) {
 
 ### 8.4 Purdue Model Validator
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-handwritten.svg" alt="Handwritten: 8.4 Purdue Model Validator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-handwritten.svg" alt="Handwritten: 8.4 Purdue Model Validator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-diagram.svg" alt="Diagram: 8.4 Purdue Model Validator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-diagram.svg" alt="Diagram: 8.4 Purdue Model Validator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-sticky.svg" alt="Sticky Note: 8.4 Purdue Model Validator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-4-purdue-model-validator-sticky.svg" alt="Sticky Note: 8.4 Purdue Model Validator" width="30%">
 </a>
 
 
@@ -1696,14 +1696,14 @@ console.log(validator.generateReport(flows));
 
 ### 8.5 ICS Threat Detection Rules
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-handwritten.svg" alt="Handwritten: 8.5 ICS Threat Detection Rules" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-handwritten.svg" alt="Handwritten: 8.5 ICS Threat Detection Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-diagram.svg" alt="Diagram: 8.5 ICS Threat Detection Rules" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-diagram.svg" alt="Diagram: 8.5 ICS Threat Detection Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-sticky.svg" alt="Sticky Note: 8.5 ICS Threat Detection Rules" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-5-ics-threat-detection-rules-sticky.svg" alt="Sticky Note: 8.5 ICS Threat Detection Rules" width="30%">
 </a>
 
 
@@ -2056,14 +2056,14 @@ console.log(detector.generateReport());
 
 ### 8.6 BACnet Who-Is Service Scanner
 
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-handwritten.svg" alt="Handwritten: 8.6 BACnet Who-Is Service Scanner" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-handwritten.svg" alt="Handwritten: 8.6 BACnet Who-Is Service Scanner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-diagram.svg" alt="Diagram: 8.6 BACnet Who-Is Service Scanner" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-diagram.svg" alt="Diagram: 8.6 BACnet Who-Is Service Scanner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-sticky.svg" alt="Sticky Note: 8.6 BACnet Who-Is Service Scanner" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/15-ot-ics-scada/8-6-bacnet-who-is-service-scanner-sticky.svg" alt="Sticky Note: 8.6 BACnet Who-Is Service Scanner" width="30%">
 </a>
 
 

@@ -43,14 +43,14 @@ flowchart LR
 
 ### 1.1 Runaway Loops
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-handwritten.svg" alt="Handwritten: 1.1 Runaway Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-handwritten.svg" alt="Handwritten: 1.1 Runaway Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-diagram.svg" alt="Diagram: 1.1 Runaway Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-diagram.svg" alt="Diagram: 1.1 Runaway Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-sticky.svg" alt="Sticky Note: 1.1 Runaway Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-1-runaway-loops-sticky.svg" alt="Sticky Note: 1.1 Runaway Loops" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ The **formal condition** for a runaway loop is a positive feedback gain ≥ 1. I
 
 ### 1.2 Reward Hacking and Goal Misgeneralization
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-handwritten.svg" alt="Handwritten: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-handwritten.svg" alt="Handwritten: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-diagram.svg" alt="Diagram: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-diagram.svg" alt="Diagram: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-sticky.svg" alt="Sticky Note: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-2-reward-hacking-and-goal-misgeneralization-sticky.svg" alt="Sticky Note: 1.2 Reward Hacking and Goal Misgeneralization" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ In LLM agent loops, reward hacking takes subtle forms:
 
 ### 1.3 Loop Arrest and Local Optima
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-handwritten.svg" alt="Handwritten: 1.3 Loop Arrest and Local Optima" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-handwritten.svg" alt="Handwritten: 1.3 Loop Arrest and Local Optima" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-diagram.svg" alt="Diagram: 1.3 Loop Arrest and Local Optima" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-diagram.svg" alt="Diagram: 1.3 Loop Arrest and Local Optima" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-sticky.svg" alt="Sticky Note: 1.3 Loop Arrest and Local Optima" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-3-loop-arrest-and-local-optima-sticky.svg" alt="Sticky Note: 1.3 Loop Arrest and Local Optima" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ Practical techniques:
 
 ### 1.4 Cascading Loops in Multi-Agent Systems
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-handwritten.svg" alt="Handwritten: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-handwritten.svg" alt="Handwritten: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-diagram.svg" alt="Diagram: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-diagram.svg" alt="Diagram: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-sticky.svg" alt="Sticky Note: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-4-cascading-loops-in-multi-agent-systems-sticky.svg" alt="Sticky Note: 1.4 Cascading Loops in Multi-Agent Systems" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ When multiple agents interact, one agent's loop failure can propagate:
 
 ### 1.5 Circuit Breaker Pattern
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-handwritten.svg" alt="Handwritten: 1.5 Circuit Breaker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-handwritten.svg" alt="Handwritten: 1.5 Circuit Breaker Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-diagram.svg" alt="Diagram: 1.5 Circuit Breaker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-diagram.svg" alt="Diagram: 1.5 Circuit Breaker Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-sticky.svg" alt="Sticky Note: 1.5 Circuit Breaker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/1-5-circuit-breaker-pattern-sticky.svg" alt="Sticky Note: 1.5 Circuit Breaker Pattern" width="30%">
 </a>
 
 
@@ -234,14 +234,14 @@ async function runAgentWithCircuitBreaker(input: Input): Promise<Output> {
 
 ### 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-handwritten.svg" alt="Handwritten: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-handwritten.svg" alt="Handwritten: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-diagram.svg" alt="Diagram: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-diagram.svg" alt="Diagram: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-sticky.svg" alt="Sticky Note: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-1-budgetgovernorkillswitch-halt-when-cost-exceeds-budget-sticky.svg" alt="Sticky Note: 2.1 BudgetGovernorKillSwitch — Halt When Cost Exceeds Budget" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ console.log(JSON.stringify(governor.report, null, 2));
 
 ### 2.2 RetryKillSwitch — Detect Repeated Identical Actions
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-handwritten.svg" alt="Handwritten: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-handwritten.svg" alt="Handwritten: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-diagram.svg" alt="Diagram: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-diagram.svg" alt="Diagram: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-sticky.svg" alt="Sticky Note: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-2-retrykillswitch-detect-repeated-identical-actions-sticky.svg" alt="Sticky Note: 2.2 RetryKillSwitch — Detect Repeated Identical Actions" width="30%">
 </a>
 
 
@@ -575,14 +575,14 @@ console.log(`\nHealthy agent result: killed=${killSwitch.isKilled}`);
 
 ### 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-handwritten.svg" alt="Handwritten: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-handwritten.svg" alt="Handwritten: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-diagram.svg" alt="Diagram: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-diagram.svg" alt="Diagram: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-sticky.svg" alt="Sticky Note: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/2-3-safeagentloop-full-circuit-breaker-kill-switches-sticky.svg" alt="Sticky Note: 2.3 SafeAgentLoop — Full Circuit Breaker + Kill Switches" width="30%">
 </a>
 
 
@@ -1582,14 +1582,14 @@ main();
 
 ### Mermaid: Safety Monitor Pipeline
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-handwritten.svg" alt="Handwritten: Mermaid: Safety Monitor Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-handwritten.svg" alt="Handwritten: Mermaid: Safety Monitor Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-diagram.svg" alt="Diagram: Mermaid: Safety Monitor Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-diagram.svg" alt="Diagram: Mermaid: Safety Monitor Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-sticky.svg" alt="Sticky Note: Mermaid: Safety Monitor Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/mermaid-safety-monitor-pipeline-sticky.svg" alt="Sticky Note: Mermaid: Safety Monitor Pipeline" width="30%">
 </a>
 
 
@@ -2233,14 +2233,14 @@ main();
 
 ### 4.1 Review
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-handwritten.svg" alt="Handwritten: 4.1 Review" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-handwritten.svg" alt="Handwritten: 4.1 Review" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-diagram.svg" alt="Diagram: 4.1 Review" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-diagram.svg" alt="Diagram: 4.1 Review" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-sticky.svg" alt="Sticky Note: 4.1 Review" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-1-review-sticky.svg" alt="Sticky Note: 4.1 Review" width="30%">
 </a>
 
 
@@ -2252,14 +2252,14 @@ main();
 
 ### 4.2 Application
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-handwritten.svg" alt="Handwritten: 4.2 Application" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-handwritten.svg" alt="Handwritten: 4.2 Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-diagram.svg" alt="Diagram: 4.2 Application" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-diagram.svg" alt="Diagram: 4.2 Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-sticky.svg" alt="Sticky Note: 4.2 Application" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-2-application-sticky.svg" alt="Sticky Note: 4.2 Application" width="30%">
 </a>
 
 
@@ -2271,14 +2271,14 @@ main();
 
 ### 4.3 Challenge
 
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-handwritten.svg" alt="Handwritten: 4.3 Challenge" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-handwritten.svg" alt="Handwritten: 4.3 Challenge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-diagram.svg" alt="Diagram: 4.3 Challenge" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-diagram.svg" alt="Diagram: 4.3 Challenge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-sticky.svg" alt="Sticky Note: 4.3 Challenge" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch07-loop-safety/4-3-challenge-sticky.svg" alt="Sticky Note: 4.3 Challenge" width="30%">
 </a>
 
 

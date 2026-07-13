@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Number Systems
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-handwritten.svg" alt="Handwritten: 1. Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-handwritten.svg" alt="Handwritten: 1. Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-diagram.svg" alt="Diagram: 1. Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-diagram.svg" alt="Diagram: 1. Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-sticky.svg" alt="Sticky Note: 1. Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/1-number-systems-sticky.svg" alt="Sticky Note: 1. Number Systems" width="30%">
 </a>
 
 
@@ -46,14 +46,14 @@ Value = dₙ × bⁿ + dₙ₋₁ × bⁿ⁻¹ + ... + d₁ × b¹ + d₀ × b�
 
 ### 2. Conversions Between Bases
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-handwritten.svg" alt="Handwritten: 2. Conversions Between Bases" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-handwritten.svg" alt="Handwritten: 2. Conversions Between Bases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-diagram.svg" alt="Diagram: 2. Conversions Between Bases" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-diagram.svg" alt="Diagram: 2. Conversions Between Bases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-sticky.svg" alt="Sticky Note: 2. Conversions Between Bases" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/2-conversions-between-bases-sticky.svg" alt="Sticky Note: 2. Conversions Between Bases" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ Multiply each digit by its positional weight and sum.
 
 ### 3. Complements
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-handwritten.svg" alt="Handwritten: 3. Complements" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-handwritten.svg" alt="Handwritten: 3. Complements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-diagram.svg" alt="Diagram: 3. Complements" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-diagram.svg" alt="Diagram: 3. Complements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-sticky.svg" alt="Sticky Note: 3. Complements" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/3-complements-sticky.svg" alt="Sticky Note: 3. Complements" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ Discard the final carry if it occurs.
 
 ### 4. Signed vs Unsigned Numbers
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-handwritten.svg" alt="Handwritten: 4. Signed vs Unsigned Numbers" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-handwritten.svg" alt="Handwritten: 4. Signed vs Unsigned Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-diagram.svg" alt="Diagram: 4. Signed vs Unsigned Numbers" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-diagram.svg" alt="Diagram: 4. Signed vs Unsigned Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-sticky.svg" alt="Sticky Note: 4. Signed vs Unsigned Numbers" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/4-signed-vs-unsigned-numbers-sticky.svg" alt="Sticky Note: 4. Signed vs Unsigned Numbers" width="30%">
 </a>
 
 
@@ -205,14 +205,14 @@ Discard the final carry if it occurs.
 
 ### 5. Fixed-Point Representation
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-handwritten.svg" alt="Handwritten: 5. Fixed-Point Representation" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-handwritten.svg" alt="Handwritten: 5. Fixed-Point Representation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-diagram.svg" alt="Diagram: 5. Fixed-Point Representation" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-diagram.svg" alt="Diagram: 5. Fixed-Point Representation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-sticky.svg" alt="Sticky Note: 5. Fixed-Point Representation" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/5-fixed-point-representation-sticky.svg" alt="Sticky Note: 5. Fixed-Point Representation" width="30%">
 </a>
 
 
@@ -232,14 +232,14 @@ Value = signed integer part + fractional part.
 
 ### 6. Floating-Point Representation (IEEE 754 Single Precision)
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-handwritten.svg" alt="Handwritten: 6. Floating-Point Representation (IEEE 754 Single Precision)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-handwritten.svg" alt="Handwritten: 6. Floating-Point Representation (IEEE 754 Single Precision)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-diagram.svg" alt="Diagram: 6. Floating-Point Representation (IEEE 754 Single Precision)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-diagram.svg" alt="Diagram: 6. Floating-Point Representation (IEEE 754 Single Precision)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-sticky.svg" alt="Sticky Note: 6. Floating-Point Representation (IEEE 754 Single Precision)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/6-floating-point-representation-ieee-754-single-precision-sticky.svg" alt="Sticky Note: 6. Floating-Point Representation (IEEE 754 Single Precision)" width="30%">
 </a>
 
 
@@ -301,14 +301,14 @@ Value = (−1)⁰ × 1.5 × 2¹ = 3.0
 
 ### 7. Boolean Algebra Basics
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-handwritten.svg" alt="Handwritten: 7. Boolean Algebra Basics" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-handwritten.svg" alt="Handwritten: 7. Boolean Algebra Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-diagram.svg" alt="Diagram: 7. Boolean Algebra Basics" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-diagram.svg" alt="Diagram: 7. Boolean Algebra Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-sticky.svg" alt="Sticky Note: 7. Boolean Algebra Basics" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/7-boolean-algebra-basics-sticky.svg" alt="Sticky Note: 7. Boolean Algebra Basics" width="30%">
 </a>
 
 
@@ -344,14 +344,14 @@ Value = (−1)⁰ × 1.5 × 2¹ = 3.0
 
 ### 8. Logic Gates
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-handwritten.svg" alt="Handwritten: 8. Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-handwritten.svg" alt="Handwritten: 8. Logic Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-diagram.svg" alt="Diagram: 8. Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-diagram.svg" alt="Diagram: 8. Logic Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-sticky.svg" alt="Sticky Note: 8. Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/8-logic-gates-sticky.svg" alt="Sticky Note: 8. Logic Gates" width="30%">
 </a>
 
 
@@ -374,14 +374,14 @@ Value = (−1)⁰ × 1.5 × 2¹ = 3.0
 
 ### 9. SOP and POS Forms
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-handwritten.svg" alt="Handwritten: 9. SOP and POS Forms" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-handwritten.svg" alt="Handwritten: 9. SOP and POS Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-diagram.svg" alt="Diagram: 9. SOP and POS Forms" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-diagram.svg" alt="Diagram: 9. SOP and POS Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-sticky.svg" alt="Sticky Note: 9. SOP and POS Forms" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/9-sop-and-pos-forms-sticky.svg" alt="Sticky Note: 9. SOP and POS Forms" width="30%">
 </a>
 
 
@@ -450,14 +450,14 @@ Group: A (covers m2, m3) + B (covers m1, m3) → F = A + B
 
 ### 10. Don't Care Conditions
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-handwritten.svg" alt="Handwritten: 10. Don't Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-handwritten.svg" alt="Handwritten: 10. Don't Care Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-diagram.svg" alt="Diagram: 10. Don't Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-diagram.svg" alt="Diagram: 10. Don't Care Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-sticky.svg" alt="Sticky Note: 10. Don't Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/10-don-t-care-conditions-sticky.svg" alt="Sticky Note: 10. Don't Care Conditions" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ Output values that never occur or we don't care about. Marked as X (don't care).
 
 ### 11. Important Exam Formulae
 
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-handwritten.svg" alt="Handwritten: 11. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-handwritten.svg" alt="Handwritten: 11. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-diagram.svg" alt="Diagram: 11. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-diagram.svg" alt="Diagram: 11. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-sticky.svg" alt="Sticky Note: 11. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/01-number-systems/11-important-exam-formulae-sticky.svg" alt="Sticky Note: 11. Important Exam Formulae" width="30%">
 </a>
 
 

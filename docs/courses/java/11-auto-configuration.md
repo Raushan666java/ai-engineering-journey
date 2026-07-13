@@ -89,14 +89,14 @@ Decomposing `@SpringBootApplication`:
 
 ### 1.1 @EnableAutoConfiguration Internals
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-handwritten.svg" alt="Handwritten: 1.1 @EnableAutoConfiguration Internals" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-handwritten.svg" alt="Handwritten: 1.1 @EnableAutoConfiguration Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-diagram.svg" alt="Diagram: 1.1 @EnableAutoConfiguration Internals" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-diagram.svg" alt="Diagram: 1.1 @EnableAutoConfiguration Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-sticky.svg" alt="Sticky Note: 1.1 @EnableAutoConfiguration Internals" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-1-enableautoconfiguration-internals-sticky.svg" alt="Sticky Note: 1.1 @EnableAutoConfiguration Internals" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ The critical element is `@Import(AutoConfigurationImportSelector.class)`. `AutoC
 
 ### 1.2 AutoConfigurationImportSelector
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-handwritten.svg" alt="Handwritten: 1.2 AutoConfigurationImportSelector" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-handwritten.svg" alt="Handwritten: 1.2 AutoConfigurationImportSelector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-diagram.svg" alt="Diagram: 1.2 AutoConfigurationImportSelector" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-diagram.svg" alt="Diagram: 1.2 AutoConfigurationImportSelector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-sticky.svg" alt="Sticky Note: 1.2 AutoConfigurationImportSelector" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-2-autoconfigurationimportselector-sticky.svg" alt="Sticky Note: 1.2 AutoConfigurationImportSelector" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ The result is that only the auto-configuration classes whose conditions are met 
 
 ### 1.3 Which Auto-Configuration Classes Are Loaded?
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-handwritten.svg" alt="Handwritten: 1.3 Which Auto-Configuration Classes Are Loaded?" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-handwritten.svg" alt="Handwritten: 1.3 Which Auto-Configuration Classes Are Loaded?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-diagram.svg" alt="Diagram: 1.3 Which Auto-Configuration Classes Are Loaded?" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-diagram.svg" alt="Diagram: 1.3 Which Auto-Configuration Classes Are Loaded?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-sticky.svg" alt="Sticky Note: 1.3 Which Auto-Configuration Classes Are Loaded?" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/1-3-which-auto-configuration-classes-are-loaded-sticky.svg" alt="Sticky Note: 1.3 Which Auto-Configuration Classes Are Loaded?" width="30%">
 </a>
 
 
@@ -263,14 +263,14 @@ These decisions are expressed with the `@Conditional` family of annotations, whi
 
 ### 2.1 @ConditionalOnClass and @ConditionalOnMissingClass
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-handwritten.svg" alt="Handwritten: 2.1 @ConditionalOnClass and @ConditionalOnMissingClass" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-handwritten.svg" alt="Handwritten: 2.1 @ConditionalOnClass and @ConditionalOnMissingClass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-diagram.svg" alt="Diagram: 2.1 @ConditionalOnClass and @ConditionalOnMissingClass" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-diagram.svg" alt="Diagram: 2.1 @ConditionalOnClass and @ConditionalOnMissingClass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-sticky.svg" alt="Sticky Note: 2.1 @ConditionalOnClass and @ConditionalOnMissingClass" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-1-conditionalonclass-and-conditionalonmissingclass-sticky.svg" alt="Sticky Note: 2.1 @ConditionalOnClass and @ConditionalOnMissingClass" width="30%">
 </a>
 
 
@@ -342,14 +342,14 @@ public class PostgresConfiguration {
 
 ### 2.2 @ConditionalOnBean and @ConditionalOnMissingBean
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-handwritten.svg" alt="Handwritten: 2.2 @ConditionalOnBean and @ConditionalOnMissingBean" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-handwritten.svg" alt="Handwritten: 2.2 @ConditionalOnBean and @ConditionalOnMissingBean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-diagram.svg" alt="Diagram: 2.2 @ConditionalOnBean and @ConditionalOnMissingBean" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-diagram.svg" alt="Diagram: 2.2 @ConditionalOnBean and @ConditionalOnMissingBean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-sticky.svg" alt="Sticky Note: 2.2 @ConditionalOnBean and @ConditionalOnMissingBean" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-2-conditionalonbean-and-conditionalonmissingbean-sticky.svg" alt="Sticky Note: 2.2 @ConditionalOnBean and @ConditionalOnMissingBean" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ public class ComplexConditionalConfig {
 
 ### 2.3 @ConditionalOnProperty
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-handwritten.svg" alt="Handwritten: 2.3 @ConditionalOnProperty" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-handwritten.svg" alt="Handwritten: 2.3 @ConditionalOnProperty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-diagram.svg" alt="Diagram: 2.3 @ConditionalOnProperty" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-diagram.svg" alt="Diagram: 2.3 @ConditionalOnProperty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-sticky.svg" alt="Sticky Note: 2.3 @ConditionalOnProperty" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-3-conditionalonproperty-sticky.svg" alt="Sticky Note: 2.3 @ConditionalOnProperty" width="30%">
 </a>
 
 
@@ -521,14 +521,14 @@ The attributes:
 
 ### 2.4 @ConditionalOnResource
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-handwritten.svg" alt="Handwritten: 2.4 @ConditionalOnResource" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-handwritten.svg" alt="Handwritten: 2.4 @ConditionalOnResource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-diagram.svg" alt="Diagram: 2.4 @ConditionalOnResource" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-diagram.svg" alt="Diagram: 2.4 @ConditionalOnResource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-sticky.svg" alt="Sticky Note: 2.4 @ConditionalOnResource" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-4-conditionalonresource-sticky.svg" alt="Sticky Note: 2.4 @ConditionalOnResource" width="30%">
 </a>
 
 
@@ -560,14 +560,14 @@ class CustomLogger {
 
 ### 2.5 @ConditionalOnExpression
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-handwritten.svg" alt="Handwritten: 2.5 @ConditionalOnExpression" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-handwritten.svg" alt="Handwritten: 2.5 @ConditionalOnExpression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-diagram.svg" alt="Diagram: 2.5 @ConditionalOnExpression" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-diagram.svg" alt="Diagram: 2.5 @ConditionalOnExpression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-sticky.svg" alt="Sticky Note: 2.5 @ConditionalOnExpression" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-5-conditionalonexpression-sticky.svg" alt="Sticky Note: 2.5 @ConditionalOnExpression" width="30%">
 </a>
 
 
@@ -636,14 +636,14 @@ class ComputeIntensiveService {
 
 ### 2.6 @ConditionalOnCloudPlatform
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-handwritten.svg" alt="Handwritten: 2.6 @ConditionalOnCloudPlatform" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-handwritten.svg" alt="Handwritten: 2.6 @ConditionalOnCloudPlatform" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-diagram.svg" alt="Diagram: 2.6 @ConditionalOnCloudPlatform" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-diagram.svg" alt="Diagram: 2.6 @ConditionalOnCloudPlatform" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-sticky.svg" alt="Sticky Note: 2.6 @ConditionalOnCloudPlatform" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-6-conditionaloncloudplatform-sticky.svg" alt="Sticky Note: 2.6 @ConditionalOnCloudPlatform" width="30%">
 </a>
 
 
@@ -700,14 +700,14 @@ class HerokuService {
 
 ### 2.7 @ConditionalOnJndi
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-handwritten.svg" alt="Handwritten: 2.7 @ConditionalOnJndi" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-handwritten.svg" alt="Handwritten: 2.7 @ConditionalOnJndi" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-diagram.svg" alt="Diagram: 2.7 @ConditionalOnJndi" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-diagram.svg" alt="Diagram: 2.7 @ConditionalOnJndi" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-sticky.svg" alt="Sticky Note: 2.7 @ConditionalOnJndi" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-7-conditionalonjndi-sticky.svg" alt="Sticky Note: 2.7 @ConditionalOnJndi" width="30%">
 </a>
 
 
@@ -745,14 +745,14 @@ public class JndiDataSourceConfig {
 
 ### 2.8 @ConditionalOnJava
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-handwritten.svg" alt="Handwritten: 2.8 @ConditionalOnJava" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-handwritten.svg" alt="Handwritten: 2.8 @ConditionalOnJava" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-diagram.svg" alt="Diagram: 2.8 @ConditionalOnJava" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-diagram.svg" alt="Diagram: 2.8 @ConditionalOnJava" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-sticky.svg" alt="Sticky Note: 2.8 @ConditionalOnJava" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-8-conditionalonjava-sticky.svg" alt="Sticky Note: 2.8 @ConditionalOnJava" width="30%">
 </a>
 
 
@@ -818,14 +818,14 @@ class LegacyCompatibilityService {
 
 ### 2.9 @ConditionalOnSingleCandidate
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-handwritten.svg" alt="Handwritten: 2.9 @ConditionalOnSingleCandidate" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-handwritten.svg" alt="Handwritten: 2.9 @ConditionalOnSingleCandidate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-diagram.svg" alt="Diagram: 2.9 @ConditionalOnSingleCandidate" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-diagram.svg" alt="Diagram: 2.9 @ConditionalOnSingleCandidate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-sticky.svg" alt="Sticky Note: 2.9 @ConditionalOnSingleCandidate" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-9-conditionalonsinglecandidate-sticky.svg" alt="Sticky Note: 2.9 @ConditionalOnSingleCandidate" width="30%">
 </a>
 
 
@@ -873,14 +873,14 @@ class DataSourceMetrics {
 
 ### 2.10 @ConditionalOnWarDeployment
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-handwritten.svg" alt="Handwritten: 2.10 @ConditionalOnWarDeployment" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-handwritten.svg" alt="Handwritten: 2.10 @ConditionalOnWarDeployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-diagram.svg" alt="Diagram: 2.10 @ConditionalOnWarDeployment" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-diagram.svg" alt="Diagram: 2.10 @ConditionalOnWarDeployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-sticky.svg" alt="Sticky Note: 2.10 @ConditionalOnWarDeployment" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-10-conditionalonwardeployment-sticky.svg" alt="Sticky Note: 2.10 @ConditionalOnWarDeployment" width="30%">
 </a>
 
 
@@ -914,14 +914,14 @@ class JndiDataSourceProvider {
 
 ### 2.11 Custom @Conditional
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-handwritten.svg" alt="Handwritten: 2.11 Custom @Conditional" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-handwritten.svg" alt="Handwritten: 2.11 Custom @Conditional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-diagram.svg" alt="Diagram: 2.11 Custom @Conditional" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-diagram.svg" alt="Diagram: 2.11 Custom @Conditional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-sticky.svg" alt="Sticky Note: 2.11 Custom @Conditional" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/2-11-custom-conditional-sticky.svg" alt="Sticky Note: 2.11 Custom @Conditional" width="30%">
 </a>
 
 
@@ -1015,14 +1015,14 @@ Auto-configuration classes are `@Configuration` classes that declare beans that 
 
 ### 3.1 @AutoConfiguration vs @Configuration
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-handwritten.svg" alt="Handwritten: 3.1 @AutoConfiguration vs @Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-handwritten.svg" alt="Handwritten: 3.1 @AutoConfiguration vs @Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-diagram.svg" alt="Diagram: 3.1 @AutoConfiguration vs @Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-diagram.svg" alt="Diagram: 3.1 @AutoConfiguration vs @Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-sticky.svg" alt="Sticky Note: 3.1 @AutoConfiguration vs @Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-1-autoconfiguration-vs-configuration-sticky.svg" alt="Sticky Note: 3.1 @AutoConfiguration vs @Configuration" width="30%">
 </a>
 
 
@@ -1059,14 +1059,14 @@ class MyWebFilter {
 
 ### 3.2 Major Auto-Configuration Classes
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-handwritten.svg" alt="Handwritten: 3.2 Major Auto-Configuration Classes" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-handwritten.svg" alt="Handwritten: 3.2 Major Auto-Configuration Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-diagram.svg" alt="Diagram: 3.2 Major Auto-Configuration Classes" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-diagram.svg" alt="Diagram: 3.2 Major Auto-Configuration Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-sticky.svg" alt="Sticky Note: 3.2 Major Auto-Configuration Classes" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-2-major-auto-configuration-classes-sticky.svg" alt="Sticky Note: 3.2 Major Auto-Configuration Classes" width="30%">
 </a>
 
 
@@ -1118,14 +1118,14 @@ public class AutoConfigurationExamples {
 
 ### 3.3 Conditional Chain Evaluation
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-handwritten.svg" alt="Handwritten: 3.3 Conditional Chain Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-handwritten.svg" alt="Handwritten: 3.3 Conditional Chain Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-diagram.svg" alt="Diagram: 3.3 Conditional Chain Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-diagram.svg" alt="Diagram: 3.3 Conditional Chain Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-sticky.svg" alt="Sticky Note: 3.3 Conditional Chain Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-3-conditional-chain-evaluation-sticky.svg" alt="Sticky Note: 3.3 Conditional Chain Evaluation" width="30%">
 </a>
 
 
@@ -1157,14 +1157,14 @@ public class ConditionalChainExample {
 
 ### 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-handwritten.svg" alt="Handwritten: 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-handwritten.svg" alt="Handwritten: 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-diagram.svg" alt="Diagram: 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-diagram.svg" alt="Diagram: 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-sticky.svg" alt="Sticky Note: 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/3-4-autoconfigurebefore-autoconfigureafter-autoconfigureorder-sticky.svg" alt="Sticky Note: 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder" width="30%">
 </a>
 
 
@@ -1214,14 +1214,14 @@ The auto-configuration sorting algorithm combines these into a total order using
 
 ### 4.1 The Old Way: spring.factories (Spring Boot 2.x)
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-handwritten.svg" alt="Handwritten: 4.1 The Old Way: spring.factories (Spring Boot 2.x)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-handwritten.svg" alt="Handwritten: 4.1 The Old Way: spring.factories (Spring Boot 2.x)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-diagram.svg" alt="Diagram: 4.1 The Old Way: spring.factories (Spring Boot 2.x)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-diagram.svg" alt="Diagram: 4.1 The Old Way: spring.factories (Spring Boot 2.x)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-sticky.svg" alt="Sticky Note: 4.1 The Old Way: spring.factories (Spring Boot 2.x)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-1-the-old-way-spring-factories-spring-boot-2-x-sticky.svg" alt="Sticky Note: 4.1 The Old Way: spring.factories (Spring Boot 2.x)" width="30%">
 </a>
 
 
@@ -1236,14 +1236,14 @@ com.example.starter.autoconfigure.MyOtherAutoConfiguration
 
 ### 4.2 The New Way: AutoConfiguration.imports (Spring Boot 3.x)
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-handwritten.svg" alt="Handwritten: 4.2 The New Way: AutoConfiguration.imports (Spring Boot 3.x)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-handwritten.svg" alt="Handwritten: 4.2 The New Way: AutoConfiguration.imports (Spring Boot 3.x)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-diagram.svg" alt="Diagram: 4.2 The New Way: AutoConfiguration.imports (Spring Boot 3.x)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-diagram.svg" alt="Diagram: 4.2 The New Way: AutoConfiguration.imports (Spring Boot 3.x)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-sticky.svg" alt="Sticky Note: 4.2 The New Way: AutoConfiguration.imports (Spring Boot 3.x)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-2-the-new-way-autoconfiguration-imports-spring-boot-3-x-sticky.svg" alt="Sticky Note: 4.2 The New Way: AutoConfiguration.imports (Spring Boot 3.x)" width="30%">
 </a>
 
 
@@ -1259,14 +1259,14 @@ Each line is a fully-qualified auto-configuration class name. The file is read b
 
 ### 4.3 Listing Boot's Built-In Auto-Configurations
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-handwritten.svg" alt="Handwritten: 4.3 Listing Boot's Built-In Auto-Configurations" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-handwritten.svg" alt="Handwritten: 4.3 Listing Boot's Built-In Auto-Configurations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-diagram.svg" alt="Diagram: 4.3 Listing Boot's Built-In Auto-Configurations" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-diagram.svg" alt="Diagram: 4.3 Listing Boot's Built-In Auto-Configurations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-sticky.svg" alt="Sticky Note: 4.3 Listing Boot's Built-In Auto-Configurations" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/4-3-listing-boot-s-built-in-auto-configurations-sticky.svg" alt="Sticky Note: 4.3 Listing Boot's Built-In Auto-Configurations" width="30%">
 </a>
 
 
@@ -1314,14 +1314,14 @@ The convention is to use two modules:
 
 ### 5.1 Building a Greeting Starter
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-handwritten.svg" alt="Handwritten: 5.1 Building a Greeting Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-handwritten.svg" alt="Handwritten: 5.1 Building a Greeting Starter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-diagram.svg" alt="Diagram: 5.1 Building a Greeting Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-diagram.svg" alt="Diagram: 5.1 Building a Greeting Starter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-sticky.svg" alt="Sticky Note: 5.1 Building a Greeting Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-1-building-a-greeting-starter-sticky.svg" alt="Sticky Note: 5.1 Building a Greeting Starter" width="30%">
 </a>
 
 
@@ -1558,14 +1558,14 @@ public class GreetingConsumerApp {
 
 ### 5.2 Naming Conventions
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-handwritten.svg" alt="Handwritten: 5.2 Naming Conventions" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-handwritten.svg" alt="Handwritten: 5.2 Naming Conventions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-diagram.svg" alt="Diagram: 5.2 Naming Conventions" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-diagram.svg" alt="Diagram: 5.2 Naming Conventions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-sticky.svg" alt="Sticky Note: 5.2 Naming Conventions" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-2-naming-conventions-sticky.svg" alt="Sticky Note: 5.2 Naming Conventions" width="30%">
 </a>
 
 
@@ -1579,14 +1579,14 @@ Official Spring Boot starters follow strict naming conventions:
 
 ### 5.3 Auto-Configuration Conditionals in the Starter
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-handwritten.svg" alt="Handwritten: 5.3 Auto-Configuration Conditionals in the Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-handwritten.svg" alt="Handwritten: 5.3 Auto-Configuration Conditionals in the Starter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-diagram.svg" alt="Diagram: 5.3 Auto-Configuration Conditionals in the Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-diagram.svg" alt="Diagram: 5.3 Auto-Configuration Conditionals in the Starter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-sticky.svg" alt="Sticky Note: 5.3 Auto-Configuration Conditionals in the Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/5-3-auto-configuration-conditionals-in-the-starter-sticky.svg" alt="Sticky Note: 5.3 Auto-Configuration Conditionals in the Starter" width="30%">
 </a>
 
 
@@ -1633,14 +1633,14 @@ Spring Boot's type-safe configuration properties mechanism binds external config
 
 ### 6.1 @ConfigurationProperties(prefix)
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-handwritten.svg" alt="Handwritten: 6.1 @ConfigurationProperties(prefix)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-handwritten.svg" alt="Handwritten: 6.1 @ConfigurationProperties(prefix)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-diagram.svg" alt="Diagram: 6.1 @ConfigurationProperties(prefix)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-diagram.svg" alt="Diagram: 6.1 @ConfigurationProperties(prefix)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-sticky.svg" alt="Sticky Note: 6.1 @ConfigurationProperties(prefix)" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-1-configurationproperties-prefix-sticky.svg" alt="Sticky Note: 6.1 @ConfigurationProperties(prefix)" width="30%">
 </a>
 
 
@@ -1705,14 +1705,14 @@ public class MailProperties {
 
 ### 6.2 @EnableConfigurationProperties
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-handwritten.svg" alt="Handwritten: 6.2 @EnableConfigurationProperties" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-handwritten.svg" alt="Handwritten: 6.2 @EnableConfigurationProperties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-diagram.svg" alt="Diagram: 6.2 @EnableConfigurationProperties" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-diagram.svg" alt="Diagram: 6.2 @EnableConfigurationProperties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-sticky.svg" alt="Sticky Note: 6.2 @EnableConfigurationProperties" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-2-enableconfigurationproperties-sticky.svg" alt="Sticky Note: 6.2 @EnableConfigurationProperties" width="30%">
 </a>
 
 
@@ -1744,14 +1744,14 @@ public class MailConfiguration {
 
 ### 6.3 Relaxed Binding
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-handwritten.svg" alt="Handwritten: 6.3 Relaxed Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-handwritten.svg" alt="Handwritten: 6.3 Relaxed Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-diagram.svg" alt="Diagram: 6.3 Relaxed Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-diagram.svg" alt="Diagram: 6.3 Relaxed Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-sticky.svg" alt="Sticky Note: 6.3 Relaxed Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-3-relaxed-binding-sticky.svg" alt="Sticky Note: 6.3 Relaxed Binding" width="30%">
 </a>
 
 
@@ -1776,14 +1776,14 @@ Relaxed binding rules (all of these map to `mailProperties.hostname`):
 
 ### 6.4 @ConstructorBinding
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-handwritten.svg" alt="Handwritten: 6.4 @ConstructorBinding" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-handwritten.svg" alt="Handwritten: 6.4 @ConstructorBinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-diagram.svg" alt="Diagram: 6.4 @ConstructorBinding" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-diagram.svg" alt="Diagram: 6.4 @ConstructorBinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-sticky.svg" alt="Sticky Note: 6.4 @ConstructorBinding" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-4-constructorbinding-sticky.svg" alt="Sticky Note: 6.4 @ConstructorBinding" width="30%">
 </a>
 
 
@@ -1843,14 +1843,14 @@ public class CacheProperties {
 
 ### 6.5 Duration and DataSize Conversion
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-handwritten.svg" alt="Handwritten: 6.5 Duration and DataSize Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-handwritten.svg" alt="Handwritten: 6.5 Duration and DataSize Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-diagram.svg" alt="Diagram: 6.5 Duration and DataSize Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-diagram.svg" alt="Diagram: 6.5 Duration and DataSize Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-sticky.svg" alt="Sticky Note: 6.5 Duration and DataSize Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-5-duration-and-datasize-conversion-sticky.svg" alt="Sticky Note: 6.5 Duration and DataSize Conversion" width="30%">
 </a>
 
 
@@ -1919,14 +1919,14 @@ Valid data size formats:
 
 ### 6.6 @NestedConfigurationProperty
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-handwritten.svg" alt="Handwritten: 6.6 @NestedConfigurationProperty" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-handwritten.svg" alt="Handwritten: 6.6 @NestedConfigurationProperty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-diagram.svg" alt="Diagram: 6.6 @NestedConfigurationProperty" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-diagram.svg" alt="Diagram: 6.6 @NestedConfigurationProperty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-sticky.svg" alt="Sticky Note: 6.6 @NestedConfigurationProperty" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-6-nestedconfigurationproperty-sticky.svg" alt="Sticky Note: 6.6 @NestedConfigurationProperty" width="30%">
 </a>
 
 
@@ -1972,14 +1972,14 @@ public class DatabaseProperties {
 
 ### 6.7 Validation
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-handwritten.svg" alt="Handwritten: 6.7 Validation" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-handwritten.svg" alt="Handwritten: 6.7 Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-diagram.svg" alt="Diagram: 6.7 Validation" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-diagram.svg" alt="Diagram: 6.7 Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-sticky.svg" alt="Sticky Note: 6.7 Validation" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-7-validation-sticky.svg" alt="Sticky Note: 6.7 Validation" width="30%">
 </a>
 
 
@@ -2048,14 +2048,14 @@ public class ServiceProperties {
 
 ### 6.8 Configuration Properties in a Non-Spring-Boot Project
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-handwritten.svg" alt="Handwritten: 6.8 Configuration Properties in a Non-Spring-Boot Project" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-handwritten.svg" alt="Handwritten: 6.8 Configuration Properties in a Non-Spring-Boot Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-diagram.svg" alt="Diagram: 6.8 Configuration Properties in a Non-Spring-Boot Project" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-diagram.svg" alt="Diagram: 6.8 Configuration Properties in a Non-Spring-Boot Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-sticky.svg" alt="Sticky Note: 6.8 Configuration Properties in a Non-Spring-Boot Project" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/6-8-configuration-properties-in-a-non-spring-boot-project-sticky.svg" alt="Sticky Note: 6.8 Configuration Properties in a Non-Spring-Boot Project" width="30%">
 </a>
 
 
@@ -2098,14 +2098,14 @@ Spring Boot's configuration processor generates JSON metadata that IDEs use for 
 
 ### 7.1 Adding the Dependency
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-handwritten.svg" alt="Handwritten: 7.1 Adding the Dependency" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-handwritten.svg" alt="Handwritten: 7.1 Adding the Dependency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-diagram.svg" alt="Diagram: 7.1 Adding the Dependency" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-diagram.svg" alt="Diagram: 7.1 Adding the Dependency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-sticky.svg" alt="Sticky Note: 7.1 Adding the Dependency" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-1-adding-the-dependency-sticky.svg" alt="Sticky Note: 7.1 Adding the Dependency" width="30%">
 </a>
 
 
@@ -2125,14 +2125,14 @@ annotationProcessor 'org.springframework.boot:spring-boot-configuration-processo
 
 ### 7.2 What It Generates
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-handwritten.svg" alt="Handwritten: 7.2 What It Generates" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-handwritten.svg" alt="Handwritten: 7.2 What It Generates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-diagram.svg" alt="Diagram: 7.2 What It Generates" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-diagram.svg" alt="Diagram: 7.2 What It Generates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-sticky.svg" alt="Sticky Note: 7.2 What It Generates" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-2-what-it-generates-sticky.svg" alt="Sticky Note: 7.2 What It Generates" width="30%">
 </a>
 
 
@@ -2220,14 +2220,14 @@ During compilation, the annotation processor scans `@ConfigurationProperties` an
 
 ### 7.3 Providing Hints
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-handwritten.svg" alt="Handwritten: 7.3 Providing Hints" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-handwritten.svg" alt="Handwritten: 7.3 Providing Hints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-diagram.svg" alt="Diagram: 7.3 Providing Hints" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-diagram.svg" alt="Diagram: 7.3 Providing Hints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-sticky.svg" alt="Sticky Note: 7.3 Providing Hints" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/7-3-providing-hints-sticky.svg" alt="Sticky Note: 7.3 Providing Hints" width="30%">
 </a>
 
 
@@ -2277,14 +2277,14 @@ Place this file at `src/main/resources/META-INF/additional-spring-configuration-
 
 ### 8.1 Phase Ordering
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-handwritten.svg" alt="Handwritten: 8.1 Phase Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-handwritten.svg" alt="Handwritten: 8.1 Phase Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-diagram.svg" alt="Diagram: 8.1 Phase Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-diagram.svg" alt="Diagram: 8.1 Phase Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-sticky.svg" alt="Sticky Note: 8.1 Phase Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-1-phase-ordering-sticky.svg" alt="Sticky Note: 8.1 Phase Ordering" width="30%">
 </a>
 
 
@@ -2303,14 +2303,14 @@ The general informal phases are:
 
 ### 8.2 Conditional Chain
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-handwritten.svg" alt="Handwritten: 8.2 Conditional Chain" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-handwritten.svg" alt="Handwritten: 8.2 Conditional Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-diagram.svg" alt="Diagram: 8.2 Conditional Chain" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-diagram.svg" alt="Diagram: 8.2 Conditional Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-sticky.svg" alt="Sticky Note: 8.2 Conditional Chain" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-2-conditional-chain-sticky.svg" alt="Sticky Note: 8.2 Conditional Chain" width="30%">
 </a>
 
 
@@ -2360,14 +2360,14 @@ class MySimpleDataSourceFallback {
 
 ### 8.3 Preventing Auto-Configuration
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-handwritten.svg" alt="Handwritten: 8.3 Preventing Auto-Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-handwritten.svg" alt="Handwritten: 8.3 Preventing Auto-Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-diagram.svg" alt="Diagram: 8.3 Preventing Auto-Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-diagram.svg" alt="Diagram: 8.3 Preventing Auto-Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-sticky.svg" alt="Sticky Note: 8.3 Preventing Auto-Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-3-preventing-auto-configuration-sticky.svg" alt="Sticky Note: 8.3 Preventing Auto-Configuration" width="30%">
 </a>
 
 
@@ -2432,14 +2432,14 @@ This is useful when you want to exclude a class without modifying the source cod
 
 ### 8.4 Testing Exclusions
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-handwritten.svg" alt="Handwritten: 8.4 Testing Exclusions" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-handwritten.svg" alt="Handwritten: 8.4 Testing Exclusions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-diagram.svg" alt="Diagram: 8.4 Testing Exclusions" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-diagram.svg" alt="Diagram: 8.4 Testing Exclusions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-sticky.svg" alt="Sticky Note: 8.4 Testing Exclusions" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/8-4-testing-exclusions-sticky.svg" alt="Sticky Note: 8.4 Testing Exclusions" width="30%">
 </a>
 
 
@@ -2476,14 +2476,14 @@ class DataSourceExclusionTest {
 
 ### 9.1 Built-in FailureAnalyzers
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-handwritten.svg" alt="Handwritten: 9.1 Built-in FailureAnalyzers" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-handwritten.svg" alt="Handwritten: 9.1 Built-in FailureAnalyzers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-diagram.svg" alt="Diagram: 9.1 Built-in FailureAnalyzers" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-diagram.svg" alt="Diagram: 9.1 Built-in FailureAnalyzers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-sticky.svg" alt="Sticky Note: 9.1 Built-in FailureAnalyzers" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-1-built-in-failureanalyzers-sticky.svg" alt="Sticky Note: 9.1 Built-in FailureAnalyzers" width="30%">
 </a>
 
 
@@ -2511,14 +2511,14 @@ This comes from `DataSourceBeanCreationFailureAnalyzer`.
 
 ### 9.2 Custom FailureAnalyzer
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-handwritten.svg" alt="Handwritten: 9.2 Custom FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-handwritten.svg" alt="Handwritten: 9.2 Custom FailureAnalyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-diagram.svg" alt="Diagram: 9.2 Custom FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-diagram.svg" alt="Diagram: 9.2 Custom FailureAnalyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-sticky.svg" alt="Sticky Note: 9.2 Custom FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-2-custom-failureanalyzer-sticky.svg" alt="Sticky Note: 9.2 Custom FailureAnalyzer" width="30%">
 </a>
 
 
@@ -2568,14 +2568,14 @@ public class GreetingFailureAnalyzer implements FailureAnalyzer {
 
 ### 9.3 Registering the Custom FailureAnalyzer
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-handwritten.svg" alt="Handwritten: 9.3 Registering the Custom FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-handwritten.svg" alt="Handwritten: 9.3 Registering the Custom FailureAnalyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-diagram.svg" alt="Diagram: 9.3 Registering the Custom FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-diagram.svg" alt="Diagram: 9.3 Registering the Custom FailureAnalyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-sticky.svg" alt="Sticky Note: 9.3 Registering the Custom FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-3-registering-the-custom-failureanalyzer-sticky.svg" alt="Sticky Note: 9.3 Registering the Custom FailureAnalyzer" width="30%">
 </a>
 
 
@@ -2598,14 +2598,14 @@ The import file for Spring Boot 3.x is a simple one-per-line format identical to
 
 ### 9.4 Testing a FailureAnalyzer
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-handwritten.svg" alt="Handwritten: 9.4 Testing a FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-handwritten.svg" alt="Handwritten: 9.4 Testing a FailureAnalyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-diagram.svg" alt="Diagram: 9.4 Testing a FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-diagram.svg" alt="Diagram: 9.4 Testing a FailureAnalyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-sticky.svg" alt="Sticky Note: 9.4 Testing a FailureAnalyzer" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/9-4-testing-a-failureanalyzer-sticky.svg" alt="Sticky Note: 9.4 Testing a FailureAnalyzer" width="30%">
 </a>
 
 
@@ -2649,14 +2649,14 @@ class GreetingFailureAnalyzerTest {
 
 ### 10.1 Built-in: RandomValuePropertySource
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-handwritten.svg" alt="Handwritten: 10.1 Built-in: RandomValuePropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-handwritten.svg" alt="Handwritten: 10.1 Built-in: RandomValuePropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-diagram.svg" alt="Diagram: 10.1 Built-in: RandomValuePropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-diagram.svg" alt="Diagram: 10.1 Built-in: RandomValuePropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-sticky.svg" alt="Sticky Note: 10.1 Built-in: RandomValuePropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-1-built-in-randomvaluepropertysource-sticky.svg" alt="Sticky Note: 10.1 Built-in: RandomValuePropertySource" width="30%">
 </a>
 
 
@@ -2676,14 +2676,14 @@ The underlying implementation is `RandomValuePropertySource`, which registers it
 
 ### 10.2 Custom EnvironmentPostProcessor
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-handwritten.svg" alt="Handwritten: 10.2 Custom EnvironmentPostProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-handwritten.svg" alt="Handwritten: 10.2 Custom EnvironmentPostProcessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-diagram.svg" alt="Diagram: 10.2 Custom EnvironmentPostProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-diagram.svg" alt="Diagram: 10.2 Custom EnvironmentPostProcessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-sticky.svg" alt="Sticky Note: 10.2 Custom EnvironmentPostProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-2-custom-environmentpostprocessor-sticky.svg" alt="Sticky Note: 10.2 Custom EnvironmentPostProcessor" width="30%">
 </a>
 
 
@@ -2738,14 +2738,14 @@ public class ExternalConfigEnvironmentPostProcessor implements EnvironmentPostPr
 
 ### 10.3 Registering EnvironmentPostProcessor
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-handwritten.svg" alt="Handwritten: 10.3 Registering EnvironmentPostProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-handwritten.svg" alt="Handwritten: 10.3 Registering EnvironmentPostProcessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-diagram.svg" alt="Diagram: 10.3 Registering EnvironmentPostProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-diagram.svg" alt="Diagram: 10.3 Registering EnvironmentPostProcessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-sticky.svg" alt="Sticky Note: 10.3 Registering EnvironmentPostProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-3-registering-environmentpostprocessor-sticky.svg" alt="Sticky Note: 10.3 Registering EnvironmentPostProcessor" width="30%">
 </a>
 
 
@@ -2756,14 +2756,14 @@ com.example.envpost.ExternalConfigEnvironmentPostProcessor
 
 ### 10.4 Adding Custom Property Sources
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-handwritten.svg" alt="Handwritten: 10.4 Adding Custom Property Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-handwritten.svg" alt="Handwritten: 10.4 Adding Custom Property Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-diagram.svg" alt="Diagram: 10.4 Adding Custom Property Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-diagram.svg" alt="Diagram: 10.4 Adding Custom Property Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-sticky.svg" alt="Sticky Note: 10.4 Adding Custom Property Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-4-adding-custom-property-sources-sticky.svg" alt="Sticky Note: 10.4 Adding Custom Property Sources" width="30%">
 </a>
 
 
@@ -2824,14 +2824,14 @@ public class DatabasePropertySourcePostProcessor implements EnvironmentPostProce
 
 ### 10.5 @PropertySource Ordering
 
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-handwritten.svg" alt="Handwritten: 10.5 @PropertySource Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-handwritten.svg" alt="Handwritten: 10.5 @PropertySource Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-diagram.svg" alt="Diagram: 10.5 @PropertySource Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-diagram.svg" alt="Diagram: 10.5 @PropertySource Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-sticky.svg" alt="Sticky Note: 10.5 @PropertySource Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/11-auto-configuration/10-5-propertysource-ordering-sticky.svg" alt="Sticky Note: 10.5 @PropertySource Ordering" width="30%">
 </a>
 
 

@@ -64,14 +64,14 @@ flowchart LR
 
 ### 1. Consistent Hashing
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-handwritten.svg" alt="Handwritten: 1. Consistent Hashing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-handwritten.svg" alt="Handwritten: 1. Consistent Hashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-diagram.svg" alt="Diagram: 1. Consistent Hashing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-diagram.svg" alt="Diagram: 1. Consistent Hashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-sticky.svg" alt="Sticky Note: 1. Consistent Hashing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-sticky.svg" alt="Sticky Note: 1. Consistent Hashing" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ class ConsistentHashRing:
 
 ### 2. Rendezvous Hashing (HRW)
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-handwritten.svg" alt="Handwritten: 2. Rendezvous Hashing (HRW)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-handwritten.svg" alt="Handwritten: 2. Rendezvous Hashing (HRW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-diagram.svg" alt="Diagram: 2. Rendezvous Hashing (HRW)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-diagram.svg" alt="Diagram: 2. Rendezvous Hashing (HRW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-sticky.svg" alt="Sticky Note: 2. Rendezvous Hashing (HRW)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-sticky.svg" alt="Sticky Note: 2. Rendezvous Hashing (HRW)" width="30%">
 </a>
 
 
@@ -162,14 +162,14 @@ For large node sets, HRW can be accelerated with a tree-based grouping (hierarch
 
 ### 3. Merkle Trees
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-handwritten.svg" alt="Handwritten: 3. Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-handwritten.svg" alt="Handwritten: 3. Merkle Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-diagram.svg" alt="Diagram: 3. Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-diagram.svg" alt="Diagram: 3. Merkle Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-sticky.svg" alt="Sticky Note: 3. Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-sticky.svg" alt="Sticky Note: 3. Merkle Trees" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ Cassandra uses Merkle trees for read repair and hinted handoff reconciliation. T
 
 ### 4. Bloom Filters
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-handwritten.svg" alt="Handwritten: 4. Bloom Filters" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-handwritten.svg" alt="Handwritten: 4. Bloom Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-diagram.svg" alt="Diagram: 4. Bloom Filters" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-diagram.svg" alt="Diagram: 4. Bloom Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-sticky.svg" alt="Sticky Note: 4. Bloom Filters" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-sticky.svg" alt="Sticky Note: 4. Bloom Filters" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ A dynamic Bloom filter that grows as elements are added. Consists of a series of
 
 ### 5. Count-Min Sketch
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-handwritten.svg" alt="Handwritten: 5. Count-Min Sketch" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-handwritten.svg" alt="Handwritten: 5. Count-Min Sketch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-diagram.svg" alt="Diagram: 5. Count-Min Sketch" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-diagram.svg" alt="Diagram: 5. Count-Min Sketch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-sticky.svg" alt="Sticky Note: 5. Count-Min Sketch" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-sticky.svg" alt="Sticky Note: 5. Count-Min Sketch" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ class CountMinSketch:
 
 ### 6. HyperLogLog
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-handwritten.svg" alt="Handwritten: 6. HyperLogLog" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-handwritten.svg" alt="Handwritten: 6. HyperLogLog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-diagram.svg" alt="Diagram: 6. HyperLogLog" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-diagram.svg" alt="Diagram: 6. HyperLogLog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-sticky.svg" alt="Sticky Note: 6. HyperLogLog" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-sticky.svg" alt="Sticky Note: 6. HyperLogLog" width="30%">
 </a>
 
 
@@ -341,14 +341,14 @@ class HyperLogLog:
 
 ### 7. Cuckoo Filters
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-handwritten.svg" alt="Handwritten: 7. Cuckoo Filters" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-handwritten.svg" alt="Handwritten: 7. Cuckoo Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-diagram.svg" alt="Diagram: 7. Cuckoo Filters" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-diagram.svg" alt="Diagram: 7. Cuckoo Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-sticky.svg" alt="Sticky Note: 7. Cuckoo Filters" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-sticky.svg" alt="Sticky Note: 7. Cuckoo Filters" width="30%">
 </a>
 
 
@@ -363,14 +363,14 @@ Space ˜ (log2(1/p) + 3) / load_factor  bits per item
 
 ### 8. Quotient Filter and XOR Filter
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-handwritten.svg" alt="Handwritten: 8. Quotient Filter and XOR Filter" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-handwritten.svg" alt="Handwritten: 8. Quotient Filter and XOR Filter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-diagram.svg" alt="Diagram: 8. Quotient Filter and XOR Filter" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-diagram.svg" alt="Diagram: 8. Quotient Filter and XOR Filter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-sticky.svg" alt="Sticky Note: 8. Quotient Filter and XOR Filter" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-sticky.svg" alt="Sticky Note: 8. Quotient Filter and XOR Filter" width="30%">
 </a>
 
 
@@ -380,14 +380,14 @@ Space ˜ (log2(1/p) + 3) / load_factor  bits per item
 
 ### 9. Comparison Table
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-handwritten.svg" alt="Handwritten: 9. Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-handwritten.svg" alt="Handwritten: 9. Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-diagram.svg" alt="Diagram: 9. Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-diagram.svg" alt="Diagram: 9. Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-sticky.svg" alt="Sticky Note: 9. Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-sticky.svg" alt="Sticky Note: 9. Comparison Table" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ Space ˜ (log2(1/p) + 3) / load_factor  bits per item
 
 ### 10. Time-Series Data Structures
 
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-handwritten.svg" alt="Handwritten: 10. Time-Series Data Structures" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-handwritten.svg" alt="Handwritten: 10. Time-Series Data Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-diagram.svg" alt="Diagram: 10. Time-Series Data Structures" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-diagram.svg" alt="Diagram: 10. Time-Series Data Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-sticky.svg" alt="Sticky Note: 10. Time-Series Data Structures" width="30%">
+<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-sticky.svg" alt="Sticky Note: 10. Time-Series Data Structures" width="30%">
 </a>
 
 

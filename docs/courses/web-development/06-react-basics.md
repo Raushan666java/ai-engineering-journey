@@ -62,14 +62,14 @@ graph TD
 
 ### 6.1 JSX
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-handwritten.svg" alt="Handwritten: 6.1 JSX" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-handwritten.svg" alt="Handwritten: 6.1 JSX" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-diagram.svg" alt="Diagram: 6.1 JSX" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-diagram.svg" alt="Diagram: 6.1 JSX" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-sticky.svg" alt="Sticky Note: 6.1 JSX" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-1-jsx-sticky.svg" alt="Sticky Note: 6.1 JSX" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ const greeting = (
 
 ### 6.2 Components
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-2-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-2-components-handwritten.svg" alt="Handwritten: 6.2 Components" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-2-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-2-components-handwritten.svg" alt="Handwritten: 6.2 Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-2-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-2-components-diagram.svg" alt="Diagram: 6.2 Components" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-2-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-2-components-diagram.svg" alt="Diagram: 6.2 Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-2-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-2-components-sticky.svg" alt="Sticky Note: 6.2 Components" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-2-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-2-components-sticky.svg" alt="Sticky Note: 6.2 Components" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ class Welcome extends React.Component {
 
 ### 6.3 Props
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-3-props-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-3-props-handwritten.svg" alt="Handwritten: 6.3 Props" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-3-props-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-3-props-handwritten.svg" alt="Handwritten: 6.3 Props" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-3-props-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-3-props-diagram.svg" alt="Diagram: 6.3 Props" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-3-props-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-3-props-diagram.svg" alt="Diagram: 6.3 Props" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-3-props-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-3-props-sticky.svg" alt="Sticky Note: 6.3 Props" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-3-props-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-3-props-sticky.svg" alt="Sticky Note: 6.3 Props" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ function Button({ variant = 'primary', children, ...rest }) {
 
 ### 6.4 State (useState)
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-handwritten.svg" alt="Handwritten: 6.4 State (useState)" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-handwritten.svg" alt="Handwritten: 6.4 State (useState)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-diagram.svg" alt="Diagram: 6.4 State (useState)" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-diagram.svg" alt="Diagram: 6.4 State (useState)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-sticky.svg" alt="Sticky Note: 6.4 State (useState)" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-4-state-usestate-sticky.svg" alt="Sticky Note: 6.4 State (useState)" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ function UserForm() {
 
 ### 6.5 Effects (useEffect)
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-handwritten.svg" alt="Handwritten: 6.5 Effects (useEffect)" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-handwritten.svg" alt="Handwritten: 6.5 Effects (useEffect)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-diagram.svg" alt="Diagram: 6.5 Effects (useEffect)" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-diagram.svg" alt="Diagram: 6.5 Effects (useEffect)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-sticky.svg" alt="Sticky Note: 6.5 Effects (useEffect)" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-5-effects-useeffect-sticky.svg" alt="Sticky Note: 6.5 Effects (useEffect)" width="30%">
 </a>
 
 
@@ -327,14 +327,14 @@ function UserList() {
 
 ### 6.6 Conditional Rendering
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-handwritten.svg" alt="Handwritten: 6.6 Conditional Rendering" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-handwritten.svg" alt="Handwritten: 6.6 Conditional Rendering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-diagram.svg" alt="Diagram: 6.6 Conditional Rendering" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-diagram.svg" alt="Diagram: 6.6 Conditional Rendering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-sticky.svg" alt="Sticky Note: 6.6 Conditional Rendering" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-6-conditional-rendering-sticky.svg" alt="Sticky Note: 6.6 Conditional Rendering" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ function Dashboard({ user }) {
 
 ### 6.7 Lists and Keys
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-handwritten.svg" alt="Handwritten: 6.7 Lists and Keys" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-handwritten.svg" alt="Handwritten: 6.7 Lists and Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-diagram.svg" alt="Diagram: 6.7 Lists and Keys" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-diagram.svg" alt="Diagram: 6.7 Lists and Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-sticky.svg" alt="Sticky Note: 6.7 Lists and Keys" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-7-lists-and-keys-sticky.svg" alt="Sticky Note: 6.7 Lists and Keys" width="30%">
 </a>
 
 
@@ -405,14 +405,14 @@ function TodoList({ items }) {
 
 ### 6.8 Forms
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-handwritten.svg" alt="Handwritten: 6.8 Forms" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-handwritten.svg" alt="Handwritten: 6.8 Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-diagram.svg" alt="Diagram: 6.8 Forms" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-diagram.svg" alt="Diagram: 6.8 Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-sticky.svg" alt="Sticky Note: 6.8 Forms" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-8-forms-sticky.svg" alt="Sticky Note: 6.8 Forms" width="30%">
 </a>
 
 
@@ -511,14 +511,14 @@ function RegistrationForm() {
 
 ### 6.9 Lifting State Up
 
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-handwritten.svg" alt="Handwritten: 6.9 Lifting State Up" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-handwritten.svg" alt="Handwritten: 6.9 Lifting State Up" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-diagram.svg" alt="Diagram: 6.9 Lifting State Up" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-diagram.svg" alt="Diagram: 6.9 Lifting State Up" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-sticky.svg" alt="Sticky Note: 6.9 Lifting State Up" width="30%">
+<a href="../../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/06-react-basics/6-9-lifting-state-up-sticky.svg" alt="Sticky Note: 6.9 Lifting State Up" width="30%">
 </a>
 
 

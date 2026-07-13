@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. CPU Components
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-handwritten.svg" alt="Handwritten: 1. CPU Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-handwritten.svg" alt="Handwritten: 1. CPU Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-diagram.svg" alt="Diagram: 1. CPU Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-diagram.svg" alt="Diagram: 1. CPU Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-sticky.svg" alt="Sticky Note: 1. CPU Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/1-cpu-components-sticky.svg" alt="Sticky Note: 1. CPU Components" width="30%">
 </a>
 
 
@@ -56,14 +56,14 @@ The Central Processing Unit (CPU) has three primary functional units:
 
 ### 2. Instruction Cycle (Fetch-Decode-Execute)
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-handwritten.svg" alt="Handwritten: 2. Instruction Cycle (Fetch-Decode-Execute)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-handwritten.svg" alt="Handwritten: 2. Instruction Cycle (Fetch-Decode-Execute)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-diagram.svg" alt="Diagram: 2. Instruction Cycle (Fetch-Decode-Execute)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-diagram.svg" alt="Diagram: 2. Instruction Cycle (Fetch-Decode-Execute)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-sticky.svg" alt="Sticky Note: 2. Instruction Cycle (Fetch-Decode-Execute)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/2-instruction-cycle-fetch-decode-execute-sticky.svg" alt="Sticky Note: 2. Instruction Cycle (Fetch-Decode-Execute)" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ The CPU executes instructions in a repetitive cycle.
 
 ### 3. Instruction Formats
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-handwritten.svg" alt="Handwritten: 3. Instruction Formats" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-handwritten.svg" alt="Handwritten: 3. Instruction Formats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-diagram.svg" alt="Diagram: 3. Instruction Formats" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-diagram.svg" alt="Diagram: 3. Instruction Formats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-sticky.svg" alt="Sticky Note: 3. Instruction Formats" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/3-instruction-formats-sticky.svg" alt="Sticky Note: 3. Instruction Formats" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ MUL A, R1, D   // A ← R1 × D
 
 ### 4. Addressing Modes
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-handwritten.svg" alt="Handwritten: 4. Addressing Modes" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-handwritten.svg" alt="Handwritten: 4. Addressing Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-diagram.svg" alt="Diagram: 4. Addressing Modes" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-diagram.svg" alt="Diagram: 4. Addressing Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-sticky.svg" alt="Sticky Note: 4. Addressing Modes" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/4-addressing-modes-sticky.svg" alt="Sticky Note: 4. Addressing Modes" width="30%">
 </a>
 
 
@@ -284,14 +284,14 @@ R1 = Memory[2000] = 500
 
 ### 5. RISC vs CISC Architecture
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-handwritten.svg" alt="Handwritten: 5. RISC vs CISC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-handwritten.svg" alt="Handwritten: 5. RISC vs CISC Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-diagram.svg" alt="Diagram: 5. RISC vs CISC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-diagram.svg" alt="Diagram: 5. RISC vs CISC Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-sticky.svg" alt="Sticky Note: 5. RISC vs CISC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/5-risc-vs-cisc-architecture-sticky.svg" alt="Sticky Note: 5. RISC vs CISC Architecture" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ R1 = Memory[2000] = 500
 
 ### 6. Control Unit: Hardwired vs Microprogrammed
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-handwritten.svg" alt="Handwritten: 6. Control Unit: Hardwired vs Microprogrammed" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-handwritten.svg" alt="Handwritten: 6. Control Unit: Hardwired vs Microprogrammed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-diagram.svg" alt="Diagram: 6. Control Unit: Hardwired vs Microprogrammed" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-diagram.svg" alt="Diagram: 6. Control Unit: Hardwired vs Microprogrammed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-sticky.svg" alt="Sticky Note: 6. Control Unit: Hardwired vs Microprogrammed" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/6-control-unit-hardwired-vs-microprogrammed-sticky.svg" alt="Sticky Note: 6. Control Unit: Hardwired vs Microprogrammed" width="30%">
 </a>
 
 
@@ -357,14 +357,14 @@ R1 = Memory[2000] = 500
 
 ### 7. Micro-Operations
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-handwritten.svg" alt="Handwritten: 7. Micro-Operations" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-handwritten.svg" alt="Handwritten: 7. Micro-Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-diagram.svg" alt="Diagram: 7. Micro-Operations" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-diagram.svg" alt="Diagram: 7. Micro-Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-sticky.svg" alt="Sticky Note: 7. Micro-Operations" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/7-micro-operations-sticky.svg" alt="Sticky Note: 7. Micro-Operations" width="30%">
 </a>
 
 
@@ -402,14 +402,14 @@ T3: if R1 ≠ 0 then PC ← IR[address field] else continue
 
 ### 8. Processor Organization Types
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-handwritten.svg" alt="Handwritten: 8. Processor Organization Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-handwritten.svg" alt="Handwritten: 8. Processor Organization Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-diagram.svg" alt="Diagram: 8. Processor Organization Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-diagram.svg" alt="Diagram: 8. Processor Organization Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-sticky.svg" alt="Sticky Note: 8. Processor Organization Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/8-processor-organization-types-sticky.svg" alt="Sticky Note: 8. Processor Organization Types" width="30%">
 </a>
 
 
@@ -433,14 +433,14 @@ Push/pop operations. Used in JVM, HP calculators.
 
 ### 9. Important Exam Formulae
 
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-handwritten.svg" alt="Handwritten: 9. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-handwritten.svg" alt="Handwritten: 9. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-diagram.svg" alt="Diagram: 9. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-diagram.svg" alt="Diagram: 9. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-sticky.svg" alt="Sticky Note: 9. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/02-cpu-organization/9-important-exam-formulae-sticky.svg" alt="Sticky Note: 9. Important Exam Formulae" width="30%">
 </a>
 
 

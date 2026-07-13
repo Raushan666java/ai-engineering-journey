@@ -47,14 +47,14 @@ flowchart LR
 
 ### 9.1 Docker Fundamentals
 
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-handwritten.svg" alt="Handwritten: 9.1 Docker Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-handwritten.svg" alt="Handwritten: 9.1 Docker Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-diagram.svg" alt="Diagram: 9.1 Docker Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-diagram.svg" alt="Diagram: 9.1 Docker Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-sticky.svg" alt="Sticky Note: 9.1 Docker Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-1-docker-fundamentals-sticky.svg" alt="Sticky Note: 9.1 Docker Fundamentals" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ graph TB
 
 ### 9.2 Kubernetes Core Concepts
 
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-handwritten.svg" alt="Handwritten: 9.2 Kubernetes Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-handwritten.svg" alt="Handwritten: 9.2 Kubernetes Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-diagram.svg" alt="Diagram: 9.2 Kubernetes Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-diagram.svg" alt="Diagram: 9.2 Kubernetes Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-sticky.svg" alt="Sticky Note: 9.2 Kubernetes Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-2-kubernetes-core-concepts-sticky.svg" alt="Sticky Note: 9.2 Kubernetes Core Concepts" width="30%">
 </a>
 
 
@@ -186,14 +186,14 @@ spec:
 
 ### 9.3 Kubernetes Architecture
 
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-handwritten.svg" alt="Handwritten: 9.3 Kubernetes Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-handwritten.svg" alt="Handwritten: 9.3 Kubernetes Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-diagram.svg" alt="Diagram: 9.3 Kubernetes Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-diagram.svg" alt="Diagram: 9.3 Kubernetes Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-sticky.svg" alt="Sticky Note: 9.3 Kubernetes Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-3-kubernetes-architecture-sticky.svg" alt="Sticky Note: 9.3 Kubernetes Architecture" width="30%">
 </a>
 
 
@@ -234,14 +234,14 @@ graph TB
 
 ### 9.4 Auto-Scaling
 
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-handwritten.svg" alt="Handwritten: 9.4 Auto-Scaling" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-handwritten.svg" alt="Handwritten: 9.4 Auto-Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-diagram.svg" alt="Diagram: 9.4 Auto-Scaling" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-diagram.svg" alt="Diagram: 9.4 Auto-Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-sticky.svg" alt="Sticky Note: 9.4 Auto-Scaling" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-4-auto-scaling-sticky.svg" alt="Sticky Note: 9.4 Auto-Scaling" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ console.log("Desired replicas at 90% CPU:", calc.calculateDesiredReplicas(90));
 
 ### 9.5 Container Storage
 
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-handwritten.svg" alt="Handwritten: 9.5 Container Storage" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-handwritten.svg" alt="Handwritten: 9.5 Container Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-diagram.svg" alt="Diagram: 9.5 Container Storage" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-diagram.svg" alt="Diagram: 9.5 Container Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-sticky.svg" alt="Sticky Note: 9.5 Container Storage" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-5-container-storage-sticky.svg" alt="Sticky Note: 9.5 Container Storage" width="30%">
 </a>
 
 
@@ -349,14 +349,14 @@ spec:
 
 ### 9.6 Container Security
 
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-handwritten.svg" alt="Handwritten: 9.6 Container Security" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-handwritten.svg" alt="Handwritten: 9.6 Container Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-diagram.svg" alt="Diagram: 9.6 Container Security" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-diagram.svg" alt="Diagram: 9.6 Container Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-sticky.svg" alt="Sticky Note: 9.6 Container Security" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-6-container-security-sticky.svg" alt="Sticky Note: 9.6 Container Security" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ async function checkImage(): Promise&lt;void&gt; {
 
 ### 9.7 ECS vs EKS vs Fargate
 
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-handwritten.svg" alt="Handwritten: 9.7 ECS vs EKS vs Fargate" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-handwritten.svg" alt="Handwritten: 9.7 ECS vs EKS vs Fargate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-diagram.svg" alt="Diagram: 9.7 ECS vs EKS vs Fargate" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-diagram.svg" alt="Diagram: 9.7 ECS vs EKS vs Fargate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-sticky.svg" alt="Sticky Note: 9.7 ECS vs EKS vs Fargate" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/09-containerization/9-7-ecs-vs-eks-vs-fargate-sticky.svg" alt="Sticky Note: 9.7 ECS vs EKS vs Fargate" width="30%">
 </a>
 
 

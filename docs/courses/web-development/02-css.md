@@ -58,14 +58,14 @@ graph TD
 
 ### 2.1 Selectors
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-1-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-1-selectors-handwritten.svg" alt="Handwritten: 2.1 Selectors" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-1-selectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-1-selectors-handwritten.svg" alt="Handwritten: 2.1 Selectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-1-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-1-selectors-diagram.svg" alt="Diagram: 2.1 Selectors" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-1-selectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-1-selectors-diagram.svg" alt="Diagram: 2.1 Selectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-1-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-1-selectors-sticky.svg" alt="Sticky Note: 2.1 Selectors" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-1-selectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-1-selectors-sticky.svg" alt="Sticky Note: 2.1 Selectors" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ figure:has(img[alt]) {
 
 ### 2.2 Box Model
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-2-box-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-2-box-model-handwritten.svg" alt="Handwritten: 2.2 Box Model" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-2-box-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-2-box-model-handwritten.svg" alt="Handwritten: 2.2 Box Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-2-box-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-2-box-model-diagram.svg" alt="Diagram: 2.2 Box Model" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-2-box-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-2-box-model-diagram.svg" alt="Diagram: 2.2 Box Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-2-box-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-2-box-model-sticky.svg" alt="Sticky Note: 2.2 Box Model" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-2-box-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-2-box-model-sticky.svg" alt="Sticky Note: 2.2 Box Model" width="30%">
 </a>
 
 
@@ -162,14 +162,14 @@ By default, `width` and `height` apply only to the **content box**. Setting `box
 
 ### 2.3 Flexbox
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-3-flexbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-3-flexbox-handwritten.svg" alt="Handwritten: 2.3 Flexbox" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-3-flexbox-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-3-flexbox-handwritten.svg" alt="Handwritten: 2.3 Flexbox" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-3-flexbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-3-flexbox-diagram.svg" alt="Diagram: 2.3 Flexbox" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-3-flexbox-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-3-flexbox-diagram.svg" alt="Diagram: 2.3 Flexbox" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-3-flexbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-3-flexbox-sticky.svg" alt="Sticky Note: 2.3 Flexbox" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-3-flexbox-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-3-flexbox-sticky.svg" alt="Sticky Note: 2.3 Flexbox" width="30%">
 </a>
 
 
@@ -233,14 +233,14 @@ main {
 
 ### 2.4 CSS Grid
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-4-css-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-4-css-grid-handwritten.svg" alt="Handwritten: 2.4 CSS Grid" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-4-css-grid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-4-css-grid-handwritten.svg" alt="Handwritten: 2.4 CSS Grid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-4-css-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-4-css-grid-diagram.svg" alt="Diagram: 2.4 CSS Grid" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-4-css-grid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-4-css-grid-diagram.svg" alt="Diagram: 2.4 CSS Grid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-4-css-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-4-css-grid-sticky.svg" alt="Sticky Note: 2.4 CSS Grid" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-4-css-grid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-4-css-grid-sticky.svg" alt="Sticky Note: 2.4 CSS Grid" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ The `auto-fill`/`auto-fit` with `minmax()` pattern creates responsive grids with
 
 ### 2.5 Responsive Design
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-handwritten.svg" alt="Handwritten: 2.5 Responsive Design" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-handwritten.svg" alt="Handwritten: 2.5 Responsive Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-diagram.svg" alt="Diagram: 2.5 Responsive Design" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-diagram.svg" alt="Diagram: 2.5 Responsive Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-sticky.svg" alt="Sticky Note: 2.5 Responsive Design" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-5-responsive-design-sticky.svg" alt="Sticky Note: 2.5 Responsive Design" width="30%">
 </a>
 
 
@@ -361,14 +361,14 @@ body {
 
 ### 2.6 CSS Custom Properties
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-handwritten.svg" alt="Handwritten: 2.6 CSS Custom Properties" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-handwritten.svg" alt="Handwritten: 2.6 CSS Custom Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-diagram.svg" alt="Diagram: 2.6 CSS Custom Properties" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-diagram.svg" alt="Diagram: 2.6 CSS Custom Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-sticky.svg" alt="Sticky Note: 2.6 CSS Custom Properties" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-6-css-custom-properties-sticky.svg" alt="Sticky Note: 2.6 CSS Custom Properties" width="30%">
 </a>
 
 
@@ -407,14 +407,14 @@ Override variables for theming:
 
 ### 2.7 Transitions and Animations
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-handwritten.svg" alt="Handwritten: 2.7 Transitions and Animations" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-handwritten.svg" alt="Handwritten: 2.7 Transitions and Animations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-diagram.svg" alt="Diagram: 2.7 Transitions and Animations" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-diagram.svg" alt="Diagram: 2.7 Transitions and Animations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-sticky.svg" alt="Sticky Note: 2.7 Transitions and Animations" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-7-transitions-and-animations-sticky.svg" alt="Sticky Note: 2.7 Transitions and Animations" width="30%">
 </a>
 
 
@@ -457,14 +457,14 @@ The `animation` shorthand: `name duration timing-function delay iteration-count 
 
 ### 2.8 Container Queries
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-8-container-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-8-container-queries-handwritten.svg" alt="Handwritten: 2.8 Container Queries" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-8-container-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-8-container-queries-handwritten.svg" alt="Handwritten: 2.8 Container Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-8-container-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-8-container-queries-diagram.svg" alt="Diagram: 2.8 Container Queries" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-8-container-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-8-container-queries-diagram.svg" alt="Diagram: 2.8 Container Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-8-container-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-8-container-queries-sticky.svg" alt="Sticky Note: 2.8 Container Queries" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-8-container-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-8-container-queries-sticky.svg" alt="Sticky Note: 2.8 Container Queries" width="30%">
 </a>
 
 
@@ -514,14 +514,14 @@ Container queries allow styling based on a parent container's size rather than t
 
 ### 2.9 @font-face
 
-<a href="../../assets/images/diagrams/web-development/02-css/2-9-font-face-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-9-font-face-handwritten.svg" alt="Handwritten: 2.9 @font-face" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-9-font-face-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-9-font-face-handwritten.svg" alt="Handwritten: 2.9 @font-face" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-9-font-face-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-9-font-face-diagram.svg" alt="Diagram: 2.9 @font-face" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-9-font-face-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-9-font-face-diagram.svg" alt="Diagram: 2.9 @font-face" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/02-css/2-9-font-face-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/02-css/2-9-font-face-sticky.svg" alt="Sticky Note: 2.9 @font-face" width="30%">
+<a href="../../../assets/images/diagrams/web-development/02-css/2-9-font-face-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/02-css/2-9-font-face-sticky.svg" alt="Sticky Note: 2.9 @font-face" width="30%">
 </a>
 
 

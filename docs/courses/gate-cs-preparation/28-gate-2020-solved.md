@@ -48,14 +48,14 @@
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 The ratio of ages of A and B is 3:4. After 5 years, ratio becomes 4:5. What is A's present age?
@@ -86,14 +86,14 @@ console.log(findAge([3, 4], [4, 5], 5)); // 15
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 A number when divided by 7 leaves remainder 4. What is the remainder when twice the number is divided by 7?
@@ -122,14 +122,14 @@ console.log(doubleRemainder(7, 4)); // 1
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Verbal Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
 
 Choose the synonym of "BENEVOLENT":
@@ -151,14 +151,14 @@ Choose the synonym of "BENEVOLENT":
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Logical Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
 
 Which number replaces the question mark? 5, 9, 17, 33, ?
@@ -188,14 +188,14 @@ console.log(sequenceTerm(5)); // 65
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 If the price of sugar increases by 25%, by what percent must consumption be reduced to keep expenditure the same?
@@ -225,14 +225,14 @@ console.log(consumptionReduction(25)); // 20%
 
 ### Q6 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 A train running at 54 km/h crosses a pole in 12 seconds. The length of the train is:
@@ -262,14 +262,14 @@ console.log(trainLength(54, 12)); // 180
 
 ### Q7 [2 Marks] Ã¢â‚¬â€� Data Interpretation
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
 </a>
 
 Find the mean of: 12, 15, 18, 21, 24.
@@ -291,14 +291,14 @@ Sum = 12+15+18+21+24 = 90. Count = 5. Mean = 90/5 = 18.
 
 ### Q8 [2 Marks] Ã¢â‚¬â€� Logical Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
 </a>
 
 In a code language, WATER is coded as XBUFST. How is FIRE coded?
@@ -327,14 +327,14 @@ console.log(shiftCode('FIRE')); // GJSF
 
 ### Q9 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
 </a>
 
 How many 4-letter words can be formed from the letters of "GATE" without repetition?
@@ -363,14 +363,14 @@ console.log(factorial(4)); // 24
 
 ### Q10 [2 Marks] Ã¢â‚¬â€� Verbal Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-verbal-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
 </a>
 
 Choose the correct form: "Neither the students nor the teacher _____ present."
@@ -396,14 +396,14 @@ With "neither...nor", the verb agrees with the nearer subject. "Teacher" (singul
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 If A is a square matrix, then (A + AÃ¡Âµâ‚¬) is:
@@ -425,14 +425,14 @@ Let B = A + AÃ¡Âµâ‚¬. Then BÃ¡Âµâ‚¬ = (A+AÃ¡Âµâ‚¬)Ã¡Â
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 P(A) = 0.4, P(B) = 0.3, P(AÃ¢Ë†Â©B) = 0.1. P(AÃ¢Ë†ÂªB) =
@@ -454,14 +454,14 @@ P(AÃ¢Ë†ÂªB) = P(A) + P(B) - P(AÃ¢Ë†Â©B) = 0.4 + 0.3 - 0.1 = 0.6.
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 The best case for Insertion Sort occurs when the array is:
@@ -494,14 +494,14 @@ function insertionSort(arr: number[]): number[] {
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 A deadlock will occur if all four necessary conditions hold simultaneously. Which of the following is NOT one of them?
@@ -523,14 +523,14 @@ The necessary conditions are: Mutual Exclusion, Hold and Wait, No Preemption, Ci
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 The device that amplifies signals in a network is called:
@@ -552,14 +552,14 @@ A repeater amplifies and regenerates signals to extend the transmission distance
 
 ### Q6 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 Which of these is a tuple in a relational database?
@@ -581,14 +581,14 @@ In relational model, a tuple corresponds to a row, an attribute corresponds to a
 
 ### Q7 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 Which of the following is NOT a valid DFA state?
@@ -610,14 +610,14 @@ DFA states include start, accepting, and dead states. "Push state" is a concept 
 
 ### Q8 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 Which of the following is a combinational circuit?
@@ -639,14 +639,14 @@ Multiplexer is a combinational circuit (output depends only on current inputs). 
 
 ### Q9 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 Which of the following is an intermediate code representation?
@@ -668,14 +668,14 @@ Three-Address Code (TAC) is a common intermediate representation. Tokens are fro
 
 ### Q10 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
 </a>
 
 How many bits does a 7-segment display need to show decimal digits 0-9?
@@ -697,14 +697,14 @@ How many bits does a 7-segment display need to show decimal digits 0-9?
 
 ### Q11 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 Which data structure is used for BFS?
@@ -726,14 +726,14 @@ BFS uses a queue for level-order traversal. DFS uses a stack.
 
 ### Q12 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-operating-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 A critical section problem's solution must satisfy:
@@ -755,14 +755,14 @@ Three requirements: Mutual Exclusion (only one process in CS), Progress (if no o
 
 ### Q13 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-networks-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 Which of these uses the Go-Back-N protocol?
@@ -784,14 +784,14 @@ TCP uses a variant of Go-Back-N (or Selective Repeat) for reliable data transfer
 
 ### Q14 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-database-management-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 A lossless join decomposition ensures:
@@ -813,14 +813,14 @@ Lossless join decomposition guarantees that joining the decomposed relations yie
 
 ### Q15 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 The PDA transition ÃŽÂ´(q, a, Z) = (p, ÃŽÂ³) means:
@@ -842,14 +842,14 @@ Standard PDA transition: ÃŽÂ´(q, input, stack_top) = (new_state, new_stack_c
 
 ### Q16 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-compiler-design-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 Which parsing method is also called predictive parsing?
@@ -871,14 +871,14 @@ LL(1) is called predictive parsing because it predicts the production to use bas
 
 ### Q17 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-digital-logic-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 A 3-to-8 decoder has how many outputs?
@@ -900,14 +900,14 @@ A 3-to-8 decoder has 3 input lines and 2Ã‚Â³ = 8 output lines.
 
 ### Q18 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 In a pipelined processor, the stage that fetches instructions is:
@@ -929,14 +929,14 @@ Classic 5-stage pipeline: IF (Instruction Fetch), ID (Instruction Decode), EX (E
 
 ### Q19 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 Which of the following has the lowest time complexity for searching in a sorted array?
@@ -958,14 +958,14 @@ Binary search has O(log n) time. Interpolation has O(log log n) average but O(n)
 
 ### Q20 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/1-mark-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 What is the number of ways to choose 2 out of 5 students?
@@ -996,14 +996,14 @@ console.log(comb(5, 2)); // 10
 
 ### Q21 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 Value of lim_{xÃ¢â€ â€™0} (eÃ‹Â£ - 1 - x)/xÃ‚Â² is:
@@ -1032,14 +1032,14 @@ function limitExp(): number {
 
 ### Q22 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 A stack is implemented with an array of size 5. If the stack is empty and we push 1, 2, 3, 4, 5, then pop twice, the top element is:
@@ -1075,14 +1075,14 @@ console.log(s.top()); // 3
 
 ### Q23 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 A system has 3 processes and 4 instances of a resource. Each process needs at most 2 instances. Can deadlock occur?
@@ -1106,14 +1106,14 @@ Actually, more precisely: if each process requires 2 max, deadlock occurs only i
 
 ### Q24 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 Which of the following is true about a primary key?
@@ -1135,14 +1135,14 @@ Primary key is unique and NOT NULL. It uniquely identifies each row in a table.
 
 ### Q25 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 The maximum throughput of pure ALOHA is:
@@ -1172,14 +1172,14 @@ console.log(alohaThroughput(false)); // 0.184
 
 ### Q26 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 In a max-heap of n elements, the minimum element can be found in:
@@ -1201,14 +1201,14 @@ In a max-heap, the minimum element is always in a leaf node. With approximately 
 
 ### Q27 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which of the following is NOT a valid page size in Linux/x86?
@@ -1232,14 +1232,14 @@ The question is tricky. Standard page size is 4 KB. Huge pages support 2 MB on x
 
 ### Q28 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 A variable is live if:
@@ -1261,14 +1261,14 @@ A variable is live at a program point if its value will be referenced (used) in 
 
 ### Q29 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 The sum of two binary numbers 1011 and 1101 is:
@@ -1304,14 +1304,14 @@ console.log(sum.toString(2)); // 11000
 
 ### Q30 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
 </a>
 
 The complement of a CFL is:
@@ -1333,14 +1333,14 @@ CFLs are not closed under complementation. The complement of a CFL may not be a 
 
 ### Q31 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which schedule is allowed in conflict serializability?
@@ -1370,14 +1370,14 @@ So (B) is conflict serializable.
 
 ### Q32 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Consider the function: f(n) = 3nÃ‚Â² + 2n + 1. Which of the following is true?
@@ -1399,14 +1399,14 @@ f(n) = 3nÃ‚Â² + 2n + 1. The dominant term is nÃ‚Â². So f(n) = ÃŽËœ
 
 ### Q33 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 The subnet mask 255.255.255.0 corresponds to:
@@ -1428,14 +1428,14 @@ The subnet mask 255.255.255.0 corresponds to:
 
 ### Q34 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Given 3 processes with burst times: P1=4, P2=8, P3=3 (all arrive at 0). Using Round Robin with time quantum 3, the average waiting time is:
@@ -1531,14 +1531,14 @@ So P1=6, P2=4, P3=2, quantum=3 works.
 
 ### Q35 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 If the CPI of a processor is 2 and clock rate is 2 GHz, the MIPS rating is:
@@ -1567,14 +1567,14 @@ console.log(mipsRate(2, 2)); // 1000
 
 ### Q36 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 The variance of the random variable X with PDF f(x) = 2x for 0<x<1 is:
@@ -1606,14 +1606,14 @@ console.log(variancePDF()); // 0.0555... = 1/18
 
 ### Q37 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Greedy algorithms are optimal for which of the following?
@@ -1635,14 +1635,14 @@ Greedy (by value/weight ratio) is optimal for Fractional Knapsack. 0/1 Knapsack 
 
 ### Q38 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which of the following is NOT a decidable problem?
@@ -1664,14 +1664,14 @@ TM equivalence is undecidable. Membership and emptiness for regular languages an
 
 ### Q39 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which of the following is NOT a property of the relational model?
@@ -1693,14 +1693,14 @@ The relational model requires each relation to be a set of tuples (no duplicates
 
 ### Q40 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which of the following is true about persistent HTTP connections?
@@ -1722,14 +1722,14 @@ Persistent HTTP keeps the TCP connection open for multiple requests/responses, r
 
 ### Q41 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which of the following is the postfix form of (a+b)*c-(d/e)?
@@ -1768,14 +1768,14 @@ function evalPostfix(expr: string): number {
 
 ### Q42 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Suppose the memory access time is 100 ns and page fault overhead is 5 ms. If the effective access time is 150 ns, the page fault rate is:
@@ -1798,14 +1798,14 @@ EAT = (1-p) Ãƒâ€” 100 + p Ãƒâ€” 5Ãƒâ€”10Ã¢Â�Â¶ = 100
 
 ### Q43 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 A direct-mapped cache has 64 blocks with 16 bytes per block. The cache size is:
@@ -1834,14 +1834,14 @@ console.log(cacheSize(64, 16)); // 1024 bytes
 
 ### Q44 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 A circular queue is implemented using an array of size 5. The front is at index 2 and rear is at index 4. How many elements are in the queue?
@@ -1877,14 +1877,14 @@ console.log(circularQueueSize(2, 4, 5)); // 3
 
 ### Q45 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 The grammar S Ã¢â€ â€™ aS | ÃŽÂµ is:
@@ -1906,14 +1906,14 @@ S Ã¢â€ â€™ aS | ÃŽÂµ is a right-linear grammar (non-terminal at t
 
 ### Q46 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 A language accepted by a TM that halts on all inputs is:
@@ -1935,14 +1935,14 @@ A TM that halts on all inputs (always either accepts or rejects) decides a recur
 
 ### Q47 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Eigen vectors corresponding to distinct eigen values of a real symmetric matrix are:
@@ -1964,14 +1964,14 @@ Eigenvectors corresponding to distinct eigenvalues of a real symmetric matrix ar
 
 ### Q48 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 The number of binary strings of length 8 with exactly 4 ones is:
@@ -2002,14 +2002,14 @@ console.log(comb(8, 4)); // 70
 
 ### Q49 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which of the following is used for inter-process communication in UNIX?
@@ -2031,14 +2031,14 @@ UNIX supports multiple IPC mechanisms: pipes, FIFOs, shared memory, message queu
 
 ### Q50 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which is true about the outer join?
@@ -2060,14 +2060,14 @@ Outer join (LEFT, RIGHT, FULL) returns all rows from one or both tables, filling
 
 ### Q51 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which protocol is used to map IP addresses to physical addresses?
@@ -2089,14 +2089,14 @@ ARP (Address Resolution Protocol) resolves IP addresses to MAC (physical) addres
 
 ### Q52 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 The instruction that reads data from memory into a register is:
@@ -2118,14 +2118,14 @@ LOAD transfers data from memory to a register. STORE transfers from register to 
 
 ### Q53 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 CFL is closed under:
@@ -2147,14 +2147,14 @@ CFLs are closed under union, concatenation, Kleene star, and substitution. They 
 
 ### Q54 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 Which of the following is used in Huffman coding to build the optimal prefix code tree?
@@ -2186,14 +2186,14 @@ class HuffmanNode {
 
 ### Q55 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/2-marks-digital-logic-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
 </a>
 
 A master-slave flip-flop is used to avoid:
@@ -2284,14 +2284,14 @@ pie title "Difficulty Distribution - GATE CS 2020"
 
 ### Paper Analysis
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
 </a>
 
 
@@ -2299,14 +2299,14 @@ GATE 2020 Computer Science paper followed the established format of 65 questions
 
 ### Difficulty Trends
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
 </a>
 
 
@@ -2314,14 +2314,14 @@ GATE 2020 had a difficulty distribution of approximately 28% Easy, 50% Medium, a
 
 ### Key Concepts Tested
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
 </a>
 
 
@@ -2525,14 +2525,14 @@ Test your understanding of GATE 2020 concepts with these 5 questions.
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/28-gate-2020-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 

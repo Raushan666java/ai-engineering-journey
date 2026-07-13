@@ -50,14 +50,14 @@ flowchart LR
 
 ### What is Site Reliability Engineering (SRE)?
 
-<a href="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-handwritten.svg" alt="Handwritten: What is Site Reliability Engineering (SRE)?" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-handwritten.svg" alt="Handwritten: What is Site Reliability Engineering (SRE)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-diagram.svg" alt="Diagram: What is Site Reliability Engineering (SRE)?" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-diagram.svg" alt="Diagram: What is Site Reliability Engineering (SRE)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-sticky.svg" alt="Sticky Note: What is Site Reliability Engineering (SRE)?" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/what-is-site-reliability-engineering-sre-sticky.svg" alt="Sticky Note: What is Site Reliability Engineering (SRE)?" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 
 ### Reliability Metrics
 
-<a href="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-handwritten.svg" alt="Handwritten: Reliability Metrics" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-handwritten.svg" alt="Handwritten: Reliability Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-diagram.svg" alt="Diagram: Reliability Metrics" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-diagram.svg" alt="Diagram: Reliability Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-sticky.svg" alt="Sticky Note: Reliability Metrics" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/reliability-metrics-sticky.svg" alt="Sticky Note: Reliability Metrics" width="30%">
 </a>
 
 
@@ -95,14 +95,14 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 
 ### The Four Golden Signals
 
-<a href="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-handwritten.svg" alt="Handwritten: The Four Golden Signals" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-handwritten.svg" alt="Handwritten: The Four Golden Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-diagram.svg" alt="Diagram: The Four Golden Signals" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-diagram.svg" alt="Diagram: The Four Golden Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-sticky.svg" alt="Sticky Note: The Four Golden Signals" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/the-four-golden-signals-sticky.svg" alt="Sticky Note: The Four Golden Signals" width="30%">
 </a>
 
 
@@ -113,14 +113,14 @@ SRE is a discipline that incorporates aspects of software engineering and applie
 
 ### Error Budgets
 
-<a href="../../assets/images/diagrams/devops/10-monitoring/error-budgets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/error-budgets-handwritten.svg" alt="Handwritten: Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/error-budgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/error-budgets-handwritten.svg" alt="Handwritten: Error Budgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/error-budgets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/error-budgets-diagram.svg" alt="Diagram: Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/error-budgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/error-budgets-diagram.svg" alt="Diagram: Error Budgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/error-budgets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/error-budgets-sticky.svg" alt="Sticky Note: Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/error-budgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/error-budgets-sticky.svg" alt="Sticky Note: Error Budgets" width="30%">
 </a>
 
 
@@ -141,14 +141,14 @@ Error Budget = (1 - SLO) × Time Window
 
 ### Toil Elimination
 
-<a href="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-handwritten.svg" alt="Handwritten: Toil Elimination" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/toil-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/toil-elimination-handwritten.svg" alt="Handwritten: Toil Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-diagram.svg" alt="Diagram: Toil Elimination" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/toil-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/toil-elimination-diagram.svg" alt="Diagram: Toil Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/toil-elimination-sticky.svg" alt="Sticky Note: Toil Elimination" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/toil-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/toil-elimination-sticky.svg" alt="Sticky Note: Toil Elimination" width="30%">
 </a>
 
 
@@ -165,14 +165,14 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 
 ### Incident Management
 
-<a href="../../assets/images/diagrams/devops/10-monitoring/incident-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/incident-management-handwritten.svg" alt="Handwritten: Incident Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/incident-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/incident-management-handwritten.svg" alt="Handwritten: Incident Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/incident-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/incident-management-diagram.svg" alt="Diagram: Incident Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/incident-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/incident-management-diagram.svg" alt="Diagram: Incident Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/incident-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/incident-management-sticky.svg" alt="Sticky Note: Incident Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/incident-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/incident-management-sticky.svg" alt="Sticky Note: Incident Management" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 
 ### Monitoring Stack
 
-<a href="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-handwritten.svg" alt="Handwritten: Monitoring Stack" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-handwritten.svg" alt="Handwritten: Monitoring Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-diagram.svg" alt="Diagram: Monitoring Stack" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-diagram.svg" alt="Diagram: Monitoring Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-sticky.svg" alt="Sticky Note: Monitoring Stack" width="30%">
+<a href="../../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/10-monitoring/monitoring-stack-sticky.svg" alt="Sticky Note: Monitoring Stack" width="30%">
 </a>
 
 

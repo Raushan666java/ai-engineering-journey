@@ -55,14 +55,14 @@ flowchart LR
 
 ### 12.1 Why Indexes?
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-handwritten.svg" alt="Handwritten: 12.1 Why Indexes?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-handwritten.svg" alt="Handwritten: 12.1 Why Indexes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-diagram.svg" alt="Diagram: 12.1 Why Indexes?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-diagram.svg" alt="Diagram: 12.1 Why Indexes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-sticky.svg" alt="Sticky Note: 12.1 Why Indexes?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-sticky.svg" alt="Sticky Note: 12.1 Why Indexes?" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ flowchart LR
 
 ### 12.2 Index Types Overview
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-handwritten.svg" alt="Handwritten: 12.2 Index Types Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-handwritten.svg" alt="Handwritten: 12.2 Index Types Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-diagram.svg" alt="Diagram: 12.2 Index Types Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-diagram.svg" alt="Diagram: 12.2 Index Types Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-sticky.svg" alt="Sticky Note: 12.2 Index Types Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-sticky.svg" alt="Sticky Note: 12.2 Index Types Overview" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ flowchart LR
 
 ### 12.3 Ordered Indices: Primary (Clustering) vs Secondary
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-handwritten.svg" alt="Handwritten: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-handwritten.svg" alt="Handwritten: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-diagram.svg" alt="Diagram: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-diagram.svg" alt="Diagram: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-sticky.svg" alt="Sticky Note: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-sticky.svg" alt="Sticky Note: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ Search for name='Alice' in secondary index:
 
 ### 12.4 Dense vs Sparse Indices
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-handwritten.svg" alt="Handwritten: 12.4 Dense vs Sparse Indices" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-handwritten.svg" alt="Handwritten: 12.4 Dense vs Sparse Indices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-diagram.svg" alt="Diagram: 12.4 Dense vs Sparse Indices" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-diagram.svg" alt="Diagram: 12.4 Dense vs Sparse Indices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-sticky.svg" alt="Sticky Note: 12.4 Dense vs Sparse Indices" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-sticky.svg" alt="Sticky Note: 12.4 Dense vs Sparse Indices" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ Sparse Index:
 
 ### 12.5 B-Tree Indexes
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-handwritten.svg" alt="Handwritten: 12.5 B-Tree Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-handwritten.svg" alt="Handwritten: 12.5 B-Tree Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-diagram.svg" alt="Diagram: 12.5 B-Tree Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-diagram.svg" alt="Diagram: 12.5 B-Tree Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-sticky.svg" alt="Sticky Note: 12.5 B-Tree Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-sticky.svg" alt="Sticky Note: 12.5 B-Tree Indexes" width="30%">
 </a>
 
 
@@ -685,14 +685,14 @@ B-Tree internal nodes hold hundreds of keys (node size approx disk page). Binary
 
 ### 12.6 B+Tree Indexes
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-handwritten.svg" alt="Handwritten: 12.6 B+Tree Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-handwritten.svg" alt="Handwritten: 12.6 B+Tree Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-diagram.svg" alt="Diagram: 12.6 B+Tree Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-diagram.svg" alt="Diagram: 12.6 B+Tree Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-sticky.svg" alt="Sticky Note: 12.6 B+Tree Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-sticky.svg" alt="Sticky Note: 12.6 B+Tree Indexes" width="30%">
 </a>
 
 
@@ -1035,14 +1035,14 @@ class BPlusTree:
 
 ### 12.7 B-Tree vs B+Tree Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-handwritten.svg" alt="Handwritten: 12.7 B-Tree vs B+Tree Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-handwritten.svg" alt="Handwritten: 12.7 B-Tree vs B+Tree Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-diagram.svg" alt="Diagram: 12.7 B-Tree vs B+Tree Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-diagram.svg" alt="Diagram: 12.7 B-Tree vs B+Tree Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-sticky.svg" alt="Sticky Note: 12.7 B-Tree vs B+Tree Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-sticky.svg" alt="Sticky Note: 12.7 B-Tree vs B+Tree Comparison" width="30%">
 </a>
 
 
@@ -1071,14 +1071,14 @@ class BPlusTree:
 
 ### 12.8 B+Tree Order Calculation
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-handwritten.svg" alt="Handwritten: 12.8 B+Tree Order Calculation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-handwritten.svg" alt="Handwritten: 12.8 B+Tree Order Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-diagram.svg" alt="Diagram: 12.8 B+Tree Order Calculation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-diagram.svg" alt="Diagram: 12.8 B+Tree Order Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-sticky.svg" alt="Sticky Note: 12.8 B+Tree Order Calculation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-sticky.svg" alt="Sticky Note: 12.8 B+Tree Order Calculation" width="30%">
 </a>
 
 
@@ -1121,14 +1121,14 @@ For m = 500, n = 10^9:
 
 ### 12.9 ISAM (Indexed Sequential Access Method)
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-handwritten.svg" alt="Handwritten: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-handwritten.svg" alt="Handwritten: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-diagram.svg" alt="Diagram: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-diagram.svg" alt="Diagram: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-sticky.svg" alt="Sticky Note: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-sticky.svg" alt="Sticky Note: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
 </a>
 
 
@@ -1179,14 +1179,14 @@ ISAM Structure:
 
 ### 12.10 Hash Indexing
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-handwritten.svg" alt="Handwritten: 12.10 Hash Indexing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-handwritten.svg" alt="Handwritten: 12.10 Hash Indexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-diagram.svg" alt="Diagram: 12.10 Hash Indexing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-diagram.svg" alt="Diagram: 12.10 Hash Indexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-sticky.svg" alt="Sticky Note: 12.10 Hash Indexing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-sticky.svg" alt="Sticky Note: 12.10 Hash Indexing" width="30%">
 </a>
 
 
@@ -1352,14 +1352,14 @@ Search for 99:
 
 ### 12.11 Hash vs B+Tree vs Bitmap Index Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-handwritten.svg" alt="Handwritten: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-handwritten.svg" alt="Handwritten: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-diagram.svg" alt="Diagram: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-diagram.svg" alt="Diagram: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-sticky.svg" alt="Sticky Note: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-sticky.svg" alt="Sticky Note: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
 </a>
 
 
@@ -1379,14 +1379,14 @@ Search for 99:
 
 ### 12.12 Bitmap Indexing
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-handwritten.svg" alt="Handwritten: 12.12 Bitmap Indexing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-handwritten.svg" alt="Handwritten: 12.12 Bitmap Indexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-diagram.svg" alt="Diagram: 12.12 Bitmap Indexing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-diagram.svg" alt="Diagram: 12.12 Bitmap Indexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-sticky.svg" alt="Sticky Note: 12.12 Bitmap Indexing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-sticky.svg" alt="Sticky Note: 12.12 Bitmap Indexing" width="30%">
 </a>
 
 
@@ -1502,14 +1502,14 @@ print(f"Male rows: {bitmap_idx.query_between(male_bitmap)}")
 
 ### 12.13 Function-Based Indexes (Expression Indexes)
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-handwritten.svg" alt="Handwritten: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-handwritten.svg" alt="Handwritten: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-diagram.svg" alt="Diagram: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-diagram.svg" alt="Diagram: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-sticky.svg" alt="Sticky Note: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-sticky.svg" alt="Sticky Note: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
 </a>
 
 
@@ -1553,14 +1553,14 @@ CREATE INDEX idx_order_total ON orders(((items->>'total')::DECIMAL));
 
 ### 12.14 Composite Indexes and Covering Indexes
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-handwritten.svg" alt="Handwritten: 12.14 Composite Indexes and Covering Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-handwritten.svg" alt="Handwritten: 12.14 Composite Indexes and Covering Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-diagram.svg" alt="Diagram: 12.14 Composite Indexes and Covering Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-diagram.svg" alt="Diagram: 12.14 Composite Indexes and Covering Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-sticky.svg" alt="Sticky Note: 12.14 Composite Indexes and Covering Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-sticky.svg" alt="Sticky Note: 12.14 Composite Indexes and Covering Indexes" width="30%">
 </a>
 
 
@@ -1660,14 +1660,14 @@ WHERE dept_id = 10 AND last_name LIKE 'S%';
 
 ### 12.15 Clustered vs Non-Clustered Index Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-handwritten.svg" alt="Handwritten: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-handwritten.svg" alt="Handwritten: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-diagram.svg" alt="Diagram: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-diagram.svg" alt="Diagram: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-sticky.svg" alt="Sticky Note: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-sticky.svg" alt="Sticky Note: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
 </a>
 
 
@@ -1697,14 +1697,14 @@ WHERE dept_id = 10 AND last_name LIKE 'S%';
 
 ### 12.16 Index Selection
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-handwritten.svg" alt="Handwritten: 12.16 Index Selection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-handwritten.svg" alt="Handwritten: 12.16 Index Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-diagram.svg" alt="Diagram: 12.16 Index Selection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-diagram.svg" alt="Diagram: 12.16 Index Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-sticky.svg" alt="Sticky Note: 12.16 Index Selection" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-sticky.svg" alt="Sticky Note: 12.16 Index Selection" width="30%">
 </a>
 
 
@@ -1739,14 +1739,14 @@ WHERE idx_scan = 0 AND indexrelid NOT IN (
 
 ### 12.17 Index-Organized Tables (IOT)
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-handwritten.svg" alt="Handwritten: 12.17 Index-Organized Tables (IOT)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-handwritten.svg" alt="Handwritten: 12.17 Index-Organized Tables (IOT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-diagram.svg" alt="Diagram: 12.17 Index-Organized Tables (IOT)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-diagram.svg" alt="Diagram: 12.17 Index-Organized Tables (IOT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-sticky.svg" alt="Sticky Note: 12.17 Index-Organized Tables (IOT)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-sticky.svg" alt="Sticky Note: 12.17 Index-Organized Tables (IOT)" width="30%">
 </a>
 
 
@@ -1768,14 +1768,14 @@ CREATE TABLE employees (
 
 ### 12.18 Partial Indexes
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-handwritten.svg" alt="Handwritten: 12.18 Partial Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-handwritten.svg" alt="Handwritten: 12.18 Partial Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-diagram.svg" alt="Diagram: 12.18 Partial Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-diagram.svg" alt="Diagram: 12.18 Partial Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-sticky.svg" alt="Sticky Note: 12.18 Partial Indexes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-sticky.svg" alt="Sticky Note: 12.18 Partial Indexes" width="30%">
 </a>
 
 
@@ -1792,14 +1792,14 @@ SELECT * FROM orders WHERE status = 'pending';  -- Uses the partial index
 
 ### 12.19 B+Tree Order Calculation (Detailed)
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-handwritten.svg" alt="Handwritten: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-handwritten.svg" alt="Handwritten: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-diagram.svg" alt="Diagram: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-diagram.svg" alt="Diagram: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-sticky.svg" alt="Sticky Note: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-sticky.svg" alt="Sticky Note: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
 </a>
 
 
@@ -1845,14 +1845,14 @@ This is why a table with 100M rows needs only 3 I/Os for a lookup -- 2 internal 
 
 ### 12.20 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-handwritten.svg" alt="Handwritten: 12.20 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-handwritten.svg" alt="Handwritten: 12.20 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-diagram.svg" alt="Diagram: 12.20 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-diagram.svg" alt="Diagram: 12.20 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-sticky.svg" alt="Sticky Note: 12.20 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-sticky.svg" alt="Sticky Note: 12.20 Applications in Real Systems" width="30%">
 </a>
 
 
@@ -1917,14 +1917,14 @@ db.orders.find(
 
 ### 12.21 Interview Corner
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-handwritten.svg" alt="Handwritten: 12.21 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-handwritten.svg" alt="Handwritten: 12.21 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-diagram.svg" alt="Diagram: 12.21 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-diagram.svg" alt="Diagram: 12.21 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-sticky.svg" alt="Sticky Note: 12.21 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-sticky.svg" alt="Sticky Note: 12.21 Interview Corner" width="30%">
 </a>
 
 
@@ -2050,14 +2050,14 @@ SELECT * FROM employees WHERE salary > 100000;
 
 ### 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-handwritten.svg" alt="Handwritten: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-handwritten.svg" alt="Handwritten: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-diagram.svg" alt="Diagram: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-diagram.svg" alt="Diagram: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-sticky.svg" alt="Sticky Note: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-sticky.svg" alt="Sticky Note: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
 </a>
 
 
@@ -2178,14 +2178,14 @@ EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
 
 ### 12.12 TypeScript B+ Tree Index Simulator
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-handwritten.svg" alt="Handwritten: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-handwritten.svg" alt="Handwritten: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-diagram.svg" alt="Diagram: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-diagram.svg" alt="Diagram: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-sticky.svg" alt="Sticky Note: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-sticky.svg" alt="Sticky Note: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
 </a>
 
 
@@ -2357,14 +2357,14 @@ flowchart TD
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 
@@ -2398,14 +2398,14 @@ flowchart TD
 
 ### Pro Tips
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-handwritten.svg" alt="Handwritten: Pro Tips" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-handwritten.svg" alt="Handwritten: Pro Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-diagram.svg" alt="Diagram: Pro Tips" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-diagram.svg" alt="Diagram: Pro Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-sticky.svg" alt="Sticky Note: Pro Tips" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-sticky.svg" alt="Sticky Note: Pro Tips" width="30%">
 </a>
 
 
@@ -2420,14 +2420,14 @@ flowchart TD
 
 ### One-Sentence Takeaways
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-handwritten.svg" alt="Handwritten: One-Sentence Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-handwritten.svg" alt="Handwritten: One-Sentence Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-diagram.svg" alt="Diagram: One-Sentence Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-diagram.svg" alt="Diagram: One-Sentence Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-sticky.svg" alt="Sticky Note: One-Sentence Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-sticky.svg" alt="Sticky Note: One-Sentence Takeaways" width="30%">
 </a>
 
 
@@ -2576,14 +2576,14 @@ flowchart TD
 
 ### Summary
 
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-diagram.svg" alt="Diagram: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/12-indexing/summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/12-indexing/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
 </a>
 
 

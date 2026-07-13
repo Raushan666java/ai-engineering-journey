@@ -48,14 +48,14 @@ flowchart LR
 
 ### 15.1 Database as Code
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-handwritten.svg" alt="Handwritten: 15.1 Database as Code" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-handwritten.svg" alt="Handwritten: 15.1 Database as Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-diagram.svg" alt="Diagram: 15.1 Database as Code" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-diagram.svg" alt="Diagram: 15.1 Database as Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-sticky.svg" alt="Sticky Note: 15.1 Database as Code" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-1-database-as-code-sticky.svg" alt="Sticky Note: 15.1 Database as Code" width="30%">
 </a>
 
 
@@ -72,14 +72,14 @@ Database as Code stores schema definitions, migrations, and configuration in Git
 
 ### 15.2 Schema Migration Tools
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-handwritten.svg" alt="Handwritten: 15.2 Schema Migration Tools" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-handwritten.svg" alt="Handwritten: 15.2 Schema Migration Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-diagram.svg" alt="Diagram: 15.2 Schema Migration Tools" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-diagram.svg" alt="Diagram: 15.2 Schema Migration Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-sticky.svg" alt="Sticky Note: 15.2 Schema Migration Tools" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-2-schema-migration-tools-sticky.svg" alt="Sticky Note: 15.2 Schema Migration Tools" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ def downgrade():
 
 ### 15.3 Database CI/CD
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-handwritten.svg" alt="Handwritten: 15.3 Database CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-handwritten.svg" alt="Handwritten: 15.3 Database CI/CD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-diagram.svg" alt="Diagram: 15.3 Database CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-diagram.svg" alt="Diagram: 15.3 Database CI/CD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-sticky.svg" alt="Sticky Note: 15.3 Database CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-3-database-ci-cd-sticky.svg" alt="Sticky Note: 15.3 Database CI/CD" width="30%">
 </a>
 
 
@@ -221,14 +221,14 @@ jobs:
 
 ### 15.4 Blue-Green Database Deployments
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-handwritten.svg" alt="Handwritten: 15.4 Blue-Green Database Deployments" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-handwritten.svg" alt="Handwritten: 15.4 Blue-Green Database Deployments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-diagram.svg" alt="Diagram: 15.4 Blue-Green Database Deployments" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-diagram.svg" alt="Diagram: 15.4 Blue-Green Database Deployments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-sticky.svg" alt="Sticky Note: 15.4 Blue-Green Database Deployments" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-4-blue-green-database-deployments-sticky.svg" alt="Sticky Note: 15.4 Blue-Green Database Deployments" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ Database changes that are backward-compatible enable zero-downtime deployments:
 
 ### 15.5 Backup and Restore
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-handwritten.svg" alt="Handwritten: 15.5 Backup and Restore" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-handwritten.svg" alt="Handwritten: 15.5 Backup and Restore" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-diagram.svg" alt="Diagram: 15.5 Backup and Restore" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-diagram.svg" alt="Diagram: 15.5 Backup and Restore" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-sticky.svg" alt="Sticky Note: 15.5 Backup and Restore" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-5-backup-and-restore-sticky.svg" alt="Sticky Note: 15.5 Backup and Restore" width="30%">
 </a>
 
 
@@ -296,14 +296,14 @@ mongodump --uri="mongodb://prod-host:27017/mydb" --out /backup/$(date +%Y%m%d)
 
 ### 15.6 Point-in-Time Recovery (PITR)
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-handwritten.svg" alt="Handwritten: 15.6 Point-in-Time Recovery (PITR)" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-handwritten.svg" alt="Handwritten: 15.6 Point-in-Time Recovery (PITR)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-diagram.svg" alt="Diagram: 15.6 Point-in-Time Recovery (PITR)" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-diagram.svg" alt="Diagram: 15.6 Point-in-Time Recovery (PITR)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-sticky.svg" alt="Sticky Note: 15.6 Point-in-Time Recovery (PITR)" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-6-point-in-time-recovery-pitr-sticky.svg" alt="Sticky Note: 15.6 Point-in-Time Recovery (PITR)" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ PITR restores a database to a specific moment, not just the last backup. Require
 
 ### 15.7 Database Testing
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-handwritten.svg" alt="Handwritten: 15.7 Database Testing" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-handwritten.svg" alt="Handwritten: 15.7 Database Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-diagram.svg" alt="Diagram: 15.7 Database Testing" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-diagram.svg" alt="Diagram: 15.7 Database Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-sticky.svg" alt="Sticky Note: 15.7 Database Testing" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-7-database-testing-sticky.svg" alt="Sticky Note: 15.7 Database Testing" width="30%">
 </a>
 
 
@@ -379,14 +379,14 @@ services:
 
 ### 15.8 Migration Validation
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-handwritten.svg" alt="Handwritten: 15.8 Migration Validation" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-handwritten.svg" alt="Handwritten: 15.8 Migration Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-diagram.svg" alt="Diagram: 15.8 Migration Validation" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-diagram.svg" alt="Diagram: 15.8 Migration Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-sticky.svg" alt="Sticky Note: 15.8 Migration Validation" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-8-migration-validation-sticky.svg" alt="Sticky Note: 15.8 Migration Validation" width="30%">
 </a>
 
 
@@ -400,14 +400,14 @@ Validate migrations before production application:
 
 ### 15.9 Rollback Strategies
 
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-handwritten.svg" alt="Handwritten: 15.9 Rollback Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-handwritten.svg" alt="Handwritten: 15.9 Rollback Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-diagram.svg" alt="Diagram: 15.9 Rollback Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-diagram.svg" alt="Diagram: 15.9 Rollback Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-sticky.svg" alt="Sticky Note: 15.9 Rollback Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/15-database-devops/15-9-rollback-strategies-sticky.svg" alt="Sticky Note: 15.9 Rollback Strategies" width="30%">
 </a>
 
 

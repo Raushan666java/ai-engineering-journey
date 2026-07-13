@@ -24,14 +24,14 @@ By the end of this chapter, you will be able to:
 
 ### Chapter Map
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-handwritten.svg" alt="Handwritten: Chapter Map" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/chapter-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/chapter-map-handwritten.svg" alt="Handwritten: Chapter Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-diagram.svg" alt="Diagram: Chapter Map" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/chapter-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/chapter-map-diagram.svg" alt="Diagram: Chapter Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/chapter-map-sticky.svg" alt="Sticky Note: Chapter Map" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/chapter-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/chapter-map-sticky.svg" alt="Sticky Note: Chapter Map" width="30%">
 </a>
 
 
@@ -53,14 +53,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Information Security Governance Defined
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-handwritten.svg" alt="Handwritten: 1.1 Information Security Governance Defined" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-handwritten.svg" alt="Handwritten: 1.1 Information Security Governance Defined" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-diagram.svg" alt="Diagram: 1.1 Information Security Governance Defined" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-diagram.svg" alt="Diagram: 1.1 Information Security Governance Defined" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-sticky.svg" alt="Sticky Note: 1.1 Information Security Governance Defined" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-1-information-security-governance-defined-sticky.svg" alt="Sticky Note: 1.1 Information Security Governance Defined" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 
 ### 1.2 Organizational Structure
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-handwritten.svg" alt="Handwritten: 1.2 Organizational Structure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-handwritten.svg" alt="Handwritten: 1.2 Organizational Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-diagram.svg" alt="Diagram: 1.2 Organizational Structure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-diagram.svg" alt="Diagram: 1.2 Organizational Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-sticky.svg" alt="Sticky Note: 1.2 Organizational Structure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-2-organizational-structure-sticky.svg" alt="Sticky Note: 1.2 Organizational Structure" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 
 ### 1.3 Security Documentation Hierarchy
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-handwritten.svg" alt="Handwritten: 1.3 Security Documentation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-handwritten.svg" alt="Handwritten: 1.3 Security Documentation Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-diagram.svg" alt="Diagram: 1.3 Security Documentation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-diagram.svg" alt="Diagram: 1.3 Security Documentation Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-sticky.svg" alt="Sticky Note: 1.3 Security Documentation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-3-security-documentation-hierarchy-sticky.svg" alt="Sticky Note: 1.3 Security Documentation Hierarchy" width="30%">
 </a>
 
 
@@ -157,14 +157,14 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 
 ### 1.4 Policy Lifecycle
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-handwritten.svg" alt="Handwritten: 1.4 Policy Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-handwritten.svg" alt="Handwritten: 1.4 Policy Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-diagram.svg" alt="Diagram: 1.4 Policy Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-diagram.svg" alt="Diagram: 1.4 Policy Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-sticky.svg" alt="Sticky Note: 1.4 Policy Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-4-policy-lifecycle-sticky.svg" alt="Sticky Note: 1.4 Policy Lifecycle" width="30%">
 </a>
 
 
@@ -181,14 +181,14 @@ Governance answers the question: *"Are we doing the right things?"* while manage
 
 ### 1.5 Sample Policy: Acceptable Use Policy (AUP)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-handwritten.svg" alt="Handwritten: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-handwritten.svg" alt="Handwritten: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-diagram.svg" alt="Diagram: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-diagram.svg" alt="Diagram: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-sticky.svg" alt="Sticky Note: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-5-sample-policy-acceptable-use-policy-aup-sticky.svg" alt="Sticky Note: 1.5 Sample Policy: Acceptable Use Policy (AUP)" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ All users must sign an acknowledgment form annually.
 
 ### 1.6 Governance vs Risk vs Compliance
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-handwritten.svg" alt="Handwritten: 1.6 Governance vs Risk vs Compliance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-handwritten.svg" alt="Handwritten: 1.6 Governance vs Risk vs Compliance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-diagram.svg" alt="Diagram: 1.6 Governance vs Risk vs Compliance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-diagram.svg" alt="Diagram: 1.6 Governance vs Risk vs Compliance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-sticky.svg" alt="Sticky Note: 1.6 Governance vs Risk vs Compliance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/1-6-governance-vs-risk-vs-compliance-sticky.svg" alt="Sticky Note: 1.6 Governance vs Risk vs Compliance" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ All users must sign an acknowledgment form annually.
 
 ### 2.1 What is Risk?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-handwritten.svg" alt="Handwritten: 2.1 What is Risk?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-handwritten.svg" alt="Handwritten: 2.1 What is Risk?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-diagram.svg" alt="Diagram: 2.1 What is Risk?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-diagram.svg" alt="Diagram: 2.1 What is Risk?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-sticky.svg" alt="Sticky Note: 2.1 What is Risk?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-1-what-is-risk-sticky.svg" alt="Sticky Note: 2.1 What is Risk?" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ More completely:
 
 ### 2.2 Real-World Analogy: Home Security
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-handwritten.svg" alt="Handwritten: 2.2 Real-World Analogy: Home Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-handwritten.svg" alt="Handwritten: 2.2 Real-World Analogy: Home Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-diagram.svg" alt="Diagram: 2.2 Real-World Analogy: Home Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-diagram.svg" alt="Diagram: 2.2 Real-World Analogy: Home Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-sticky.svg" alt="Sticky Note: 2.2 Real-World Analogy: Home Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-2-real-world-analogy-home-security-sticky.svg" alt="Sticky Note: 2.2 Real-World Analogy: Home Security" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ More completely:
 
 ### 2.3 Risk Management Process (NIST RMF)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-handwritten.svg" alt="Handwritten: 2.3 Risk Management Process (NIST RMF)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-handwritten.svg" alt="Handwritten: 2.3 Risk Management Process (NIST RMF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-diagram.svg" alt="Diagram: 2.3 Risk Management Process (NIST RMF)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-diagram.svg" alt="Diagram: 2.3 Risk Management Process (NIST RMF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-sticky.svg" alt="Sticky Note: 2.3 Risk Management Process (NIST RMF)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-3-risk-management-process-nist-rmf-sticky.svg" alt="Sticky Note: 2.3 Risk Management Process (NIST RMF)" width="30%">
 </a>
 
 
@@ -356,14 +356,14 @@ The NIST Risk Management Framework (RMF) has 7 steps:
 
 ### 2.4 Risk Assessment Approaches
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-handwritten.svg" alt="Handwritten: 2.4 Risk Assessment Approaches" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-handwritten.svg" alt="Handwritten: 2.4 Risk Assessment Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-diagram.svg" alt="Diagram: 2.4 Risk Assessment Approaches" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-diagram.svg" alt="Diagram: 2.4 Risk Assessment Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-sticky.svg" alt="Sticky Note: 2.4 Risk Assessment Approaches" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-4-risk-assessment-approaches-sticky.svg" alt="Sticky Note: 2.4 Risk Assessment Approaches" width="30%">
 </a>
 
 
@@ -459,14 +459,14 @@ ROSI of 340% means every $1 spent on controls saves $3.40 → a strong business 
 
 ### 2.5 Risk Register
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-handwritten.svg" alt="Handwritten: 2.5 Risk Register" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-handwritten.svg" alt="Handwritten: 2.5 Risk Register" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-diagram.svg" alt="Diagram: 2.5 Risk Register" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-diagram.svg" alt="Diagram: 2.5 Risk Register" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-sticky.svg" alt="Sticky Note: 2.5 Risk Register" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-5-risk-register-sticky.svg" alt="Sticky Note: 2.5 Risk Register" width="30%">
 </a>
 
 
@@ -487,14 +487,14 @@ A risk register is the central repository for all identified risks, their assess
 
 ### 2.6 Risk Appetite and Risk Tolerance
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-handwritten.svg" alt="Handwritten: 2.6 Risk Appetite and Risk Tolerance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-handwritten.svg" alt="Handwritten: 2.6 Risk Appetite and Risk Tolerance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-diagram.svg" alt="Diagram: 2.6 Risk Appetite and Risk Tolerance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-diagram.svg" alt="Diagram: 2.6 Risk Appetite and Risk Tolerance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-sticky.svg" alt="Sticky Note: 2.6 Risk Appetite and Risk Tolerance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-6-risk-appetite-and-risk-tolerance-sticky.svg" alt="Sticky Note: 2.6 Risk Appetite and Risk Tolerance" width="30%">
 </a>
 
 
@@ -514,14 +514,14 @@ A risk register is the central repository for all identified risks, their assess
 
 ### 2.7 FAIR Model (Factor Analysis of Information Risk)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-handwritten.svg" alt="Handwritten: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-handwritten.svg" alt="Handwritten: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-diagram.svg" alt="Diagram: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-diagram.svg" alt="Diagram: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-sticky.svg" alt="Sticky Note: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-7-fair-model-factor-analysis-of-information-risk-sticky.svg" alt="Sticky Note: 2.7 FAIR Model (Factor Analysis of Information Risk)" width="30%">
 </a>
 
 
@@ -575,14 +575,14 @@ FAIR is the leading quantitative risk analysis model (now FAIR-TM, maintained by
 
 ### 2.8 Business Impact Analysis (BIA)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-handwritten.svg" alt="Handwritten: 2.8 Business Impact Analysis (BIA)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-handwritten.svg" alt="Handwritten: 2.8 Business Impact Analysis (BIA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-diagram.svg" alt="Diagram: 2.8 Business Impact Analysis (BIA)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-diagram.svg" alt="Diagram: 2.8 Business Impact Analysis (BIA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-sticky.svg" alt="Sticky Note: 2.8 Business Impact Analysis (BIA)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-8-business-impact-analysis-bia-sticky.svg" alt="Sticky Note: 2.8 Business Impact Analysis (BIA)" width="30%">
 </a>
 
 
@@ -636,14 +636,14 @@ A BIA identifies critical business functions, the impact of their disruption, an
 
 ### 2.9 Risk Response Options
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-handwritten.svg" alt="Handwritten: 2.9 Risk Response Options" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-handwritten.svg" alt="Handwritten: 2.9 Risk Response Options" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-diagram.svg" alt="Diagram: 2.9 Risk Response Options" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-diagram.svg" alt="Diagram: 2.9 Risk Response Options" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-sticky.svg" alt="Sticky Note: 2.9 Risk Response Options" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/2-9-risk-response-options-sticky.svg" alt="Sticky Note: 2.9 Risk Response Options" width="30%">
 </a>
 
 
@@ -658,14 +658,14 @@ A BIA identifies critical business functions, the impact of their disruption, an
 
 ### 3.1 What is Compliance?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-handwritten.svg" alt="Handwritten: 3.1 What is Compliance?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-handwritten.svg" alt="Handwritten: 3.1 What is Compliance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-diagram.svg" alt="Diagram: 3.1 What is Compliance?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-diagram.svg" alt="Diagram: 3.1 What is Compliance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-sticky.svg" alt="Sticky Note: 3.1 What is Compliance?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-1-what-is-compliance-sticky.svg" alt="Sticky Note: 3.1 What is Compliance?" width="30%">
 </a>
 
 
@@ -682,14 +682,14 @@ A BIA identifies critical business functions, the impact of their disruption, an
 
 ### 3.2 Major Regulations Overview
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-handwritten.svg" alt="Handwritten: 3.2 Major Regulations Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-handwritten.svg" alt="Handwritten: 3.2 Major Regulations Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-diagram.svg" alt="Diagram: 3.2 Major Regulations Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-diagram.svg" alt="Diagram: 3.2 Major Regulations Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-sticky.svg" alt="Sticky Note: 3.2 Major Regulations Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-2-major-regulations-overview-sticky.svg" alt="Sticky Note: 3.2 Major Regulations Overview" width="30%">
 </a>
 
 
@@ -708,14 +708,14 @@ A BIA identifies critical business functions, the impact of their disruption, an
 
 ### 3.3 GDPR → General Data Protection Regulation
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-handwritten.svg" alt="Handwritten: 3.3 GDPR → General Data Protection Regulation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-handwritten.svg" alt="Handwritten: 3.3 GDPR → General Data Protection Regulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-diagram.svg" alt="Diagram: 3.3 GDPR → General Data Protection Regulation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-diagram.svg" alt="Diagram: 3.3 GDPR → General Data Protection Regulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-sticky.svg" alt="Sticky Note: 3.3 GDPR → General Data Protection Regulation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-3-gdpr-general-data-protection-regulation-sticky.svg" alt="Sticky Note: 3.3 GDPR → General Data Protection Regulation" width="30%">
 </a>
 
 
@@ -834,14 +834,14 @@ Step 7: CLOSE
 
 ### 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-handwritten.svg" alt="Handwritten: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-handwritten.svg" alt="Handwritten: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-diagram.svg" alt="Diagram: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-diagram.svg" alt="Diagram: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-sticky.svg" alt="Sticky Note: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-4-pci-dss-4-0-payment-card-industry-data-security-standard-sticky.svg" alt="Sticky Note: 3.4 PCI DSS 4.0 → Payment Card Industry Data Security Standard" width="30%">
 </a>
 
 
@@ -902,14 +902,14 @@ Step 7: CLOSE
 
 ### 3.5 HIPAA → Health Insurance Portability and Accountability Act
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-handwritten.svg" alt="Handwritten: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-handwritten.svg" alt="Handwritten: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-diagram.svg" alt="Diagram: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-diagram.svg" alt="Diagram: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-sticky.svg" alt="Sticky Note: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-5-hipaa-health-insurance-portability-and-accountability-act-sticky.svg" alt="Sticky Note: 3.5 HIPAA → Health Insurance Portability and Accountability Act" width="30%">
 </a>
 
 
@@ -953,14 +953,14 @@ Step 7: CLOSE
 
 ### 3.6 SOC 2 → Service Organization Control 2
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-handwritten.svg" alt="Handwritten: 3.6 SOC 2 → Service Organization Control 2" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-handwritten.svg" alt="Handwritten: 3.6 SOC 2 → Service Organization Control 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-diagram.svg" alt="Diagram: 3.6 SOC 2 → Service Organization Control 2" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-diagram.svg" alt="Diagram: 3.6 SOC 2 → Service Organization Control 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-sticky.svg" alt="Sticky Note: 3.6 SOC 2 → Service Organization Control 2" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-6-soc-2-service-organization-control-2-sticky.svg" alt="Sticky Note: 3.6 SOC 2 → Service Organization Control 2" width="30%">
 </a>
 
 
@@ -993,14 +993,14 @@ Step 7: CLOSE
 
 ### 3.7 FedRAMP → Federal Risk and Authorization Management Program
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-handwritten.svg" alt="Handwritten: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-handwritten.svg" alt="Handwritten: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-diagram.svg" alt="Diagram: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-diagram.svg" alt="Diagram: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-sticky.svg" alt="Sticky Note: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-7-fedramp-federal-risk-and-authorization-management-program-sticky.svg" alt="Sticky Note: 3.7 FedRAMP → Federal Risk and Authorization Management Program" width="30%">
 </a>
 
 
@@ -1021,14 +1021,14 @@ Step 7: CLOSE
 
 ### 3.8 SOX → Sarbanes-Oxley Act
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-handwritten.svg" alt="Handwritten: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-handwritten.svg" alt="Handwritten: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-diagram.svg" alt="Diagram: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-diagram.svg" alt="Diagram: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-sticky.svg" alt="Sticky Note: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-8-sox-sarbanes-oxley-act-sticky.svg" alt="Sticky Note: 3.8 SOX → Sarbanes-Oxley Act" width="30%">
 </a>
 
 
@@ -1051,14 +1051,14 @@ Step 7: CLOSE
 
 ### 3.9 Breach Notification Laws → International Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-handwritten.svg" alt="Handwritten: 3.9 Breach Notification Laws → International Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-handwritten.svg" alt="Handwritten: 3.9 Breach Notification Laws → International Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-diagram.svg" alt="Diagram: 3.9 Breach Notification Laws → International Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-diagram.svg" alt="Diagram: 3.9 Breach Notification Laws → International Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-sticky.svg" alt="Sticky Note: 3.9 Breach Notification Laws → International Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-9-breach-notification-laws-international-comparison-sticky.svg" alt="Sticky Note: 3.9 Breach Notification Laws → International Comparison" width="30%">
 </a>
 
 
@@ -1077,14 +1077,14 @@ Step 7: CLOSE
 
 ### 3.10 Data Classification
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-handwritten.svg" alt="Handwritten: 3.10 Data Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-handwritten.svg" alt="Handwritten: 3.10 Data Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-diagram.svg" alt="Diagram: 3.10 Data Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-diagram.svg" alt="Diagram: 3.10 Data Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-sticky.svg" alt="Sticky Note: 3.10 Data Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-10-data-classification-sticky.svg" alt="Sticky Note: 3.10 Data Classification" width="30%">
 </a>
 
 
@@ -1112,14 +1112,14 @@ Data classification is the process of categorizing data based on its sensitivity
 
 ### 3.11 Data Privacy (Beyond GDPR)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-handwritten.svg" alt="Handwritten: 3.11 Data Privacy (Beyond GDPR)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-handwritten.svg" alt="Handwritten: 3.11 Data Privacy (Beyond GDPR)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-diagram.svg" alt="Diagram: 3.11 Data Privacy (Beyond GDPR)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-diagram.svg" alt="Diagram: 3.11 Data Privacy (Beyond GDPR)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-sticky.svg" alt="Sticky Note: 3.11 Data Privacy (Beyond GDPR)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/3-11-data-privacy-beyond-gdpr-sticky.svg" alt="Sticky Note: 3.11 Data Privacy (Beyond GDPR)" width="30%">
 </a>
 
 
@@ -1152,14 +1152,14 @@ Data classification is the process of categorizing data based on its sensitivity
 
 ### 4.1 NIST CSF 2.0 (Cybersecurity Framework)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-handwritten.svg" alt="Handwritten: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-handwritten.svg" alt="Handwritten: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-diagram.svg" alt="Diagram: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-diagram.svg" alt="Diagram: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-sticky.svg" alt="Sticky Note: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-1-nist-csf-2-0-cybersecurity-framework-sticky.svg" alt="Sticky Note: 4.1 NIST CSF 2.0 (Cybersecurity Framework)" width="30%">
 </a>
 
 
@@ -1261,14 +1261,14 @@ Data classification is the process of categorizing data based on its sensitivity
 
 ### 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-handwritten.svg" alt="Handwritten: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-handwritten.svg" alt="Handwritten: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-diagram.svg" alt="Diagram: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-diagram.svg" alt="Diagram: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-sticky.svg" alt="Sticky Note: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-2-iso-iec-27001-information-security-management-system-isms-sticky.svg" alt="Sticky Note: 4.2 ISO/IEC 27001 → Information Security Management System (ISMS)" width="30%">
 </a>
 
 
@@ -1408,14 +1408,14 @@ ISMS context    operate controls  review ISMS        improve ISMS
 
 ### 4.3 COBIT → Control Objectives for Information and Related Technologies
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-handwritten.svg" alt="Handwritten: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-handwritten.svg" alt="Handwritten: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-diagram.svg" alt="Diagram: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-diagram.svg" alt="Diagram: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-sticky.svg" alt="Sticky Note: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-3-cobit-control-objectives-for-information-and-related-technologies-sticky.svg" alt="Sticky Note: 4.3 COBIT → Control Objectives for Information and Related Technologies" width="30%">
 </a>
 
 
@@ -1448,14 +1448,14 @@ ISMS context    operate controls  review ISMS        improve ISMS
 
 ### 4.4 CIS Controls
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-handwritten.svg" alt="Handwritten: 4.4 CIS Controls" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-handwritten.svg" alt="Handwritten: 4.4 CIS Controls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-diagram.svg" alt="Diagram: 4.4 CIS Controls" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-diagram.svg" alt="Diagram: 4.4 CIS Controls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-sticky.svg" alt="Sticky Note: 4.4 CIS Controls" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-4-cis-controls-sticky.svg" alt="Sticky Note: 4.4 CIS Controls" width="30%">
 </a>
 
 
@@ -1496,14 +1496,14 @@ CIS Controls are 18 prioritized safeguards (reduced from 20 in v7) mapped to com
 
 ### 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-handwritten.svg" alt="Handwritten: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-handwritten.svg" alt="Handwritten: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-diagram.svg" alt="Diagram: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-diagram.svg" alt="Diagram: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-sticky.svg" alt="Sticky Note: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-5-framework-comparison-nist-csf-vs-iso-27001-vs-cis-controls-vs-pci-dss-sticky.svg" alt="Sticky Note: 4.5 Framework Comparison: NIST CSF vs ISO 27001 vs CIS Controls vs PCI DSS" width="30%">
 </a>
 
 
@@ -1524,14 +1524,14 @@ CIS Controls are 18 prioritized safeguards (reduced from 20 in v7) mapped to com
 
 ### 4.6 Framework Selection → Decision Tree
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-handwritten.svg" alt="Handwritten: 4.6 Framework Selection → Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-handwritten.svg" alt="Handwritten: 4.6 Framework Selection → Decision Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-diagram.svg" alt="Diagram: 4.6 Framework Selection → Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-diagram.svg" alt="Diagram: 4.6 Framework Selection → Decision Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-sticky.svg" alt="Sticky Note: 4.6 Framework Selection → Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-6-framework-selection-decision-tree-sticky.svg" alt="Sticky Note: 4.6 Framework Selection → Decision Tree" width="30%">
 </a>
 
 
@@ -1551,14 +1551,14 @@ Q: Do you need certification? (customer requirement, RFP)
 
 ### 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-handwritten.svg" alt="Handwritten: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-handwritten.svg" alt="Handwritten: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-diagram.svg" alt="Diagram: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-diagram.svg" alt="Diagram: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-sticky.svg" alt="Sticky Note: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/4-7-nist-csf-2-0-vs-iso-27001-detailed-comparison-sticky.svg" alt="Sticky Note: 4.7 NIST CSF 2.0 vs ISO 27001 Detailed Comparison" width="30%">
 </a>
 
 
@@ -1577,14 +1577,14 @@ Q: Do you need certification? (customer requirement, RFP)
 
 ### 5.1 BCP vs DR → Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-handwritten.svg" alt="Handwritten: 5.1 BCP vs DR → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-handwritten.svg" alt="Handwritten: 5.1 BCP vs DR → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-diagram.svg" alt="Diagram: 5.1 BCP vs DR → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-diagram.svg" alt="Diagram: 5.1 BCP vs DR → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-sticky.svg" alt="Sticky Note: 5.1 BCP vs DR → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-1-bcp-vs-dr-comparison-sticky.svg" alt="Sticky Note: 5.1 BCP vs DR → Comparison" width="30%">
 </a>
 
 
@@ -1605,14 +1605,14 @@ Real-world analogy: **BCP** is the escape plan you keep in your nightstand → w
 
 ### 5.2 BCP Process
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-handwritten.svg" alt="Handwritten: 5.2 BCP Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-handwritten.svg" alt="Handwritten: 5.2 BCP Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-diagram.svg" alt="Diagram: 5.2 BCP Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-diagram.svg" alt="Diagram: 5.2 BCP Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-sticky.svg" alt="Sticky Note: 5.2 BCP Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-2-bcp-process-sticky.svg" alt="Sticky Note: 5.2 BCP Process" width="30%">
 </a>
 
 
@@ -1646,14 +1646,14 @@ Phase 7: Testing & Maintenance
 
 ### 5.3 DR Strategies
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-handwritten.svg" alt="Handwritten: 5.3 DR Strategies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-handwritten.svg" alt="Handwritten: 5.3 DR Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-diagram.svg" alt="Diagram: 5.3 DR Strategies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-diagram.svg" alt="Diagram: 5.3 DR Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-sticky.svg" alt="Sticky Note: 5.3 DR Strategies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-3-dr-strategies-sticky.svg" alt="Sticky Note: 5.3 DR Strategies" width="30%">
 </a>
 
 
@@ -1668,14 +1668,14 @@ Phase 7: Testing & Maintenance
 
 ### 5.4 DR Plan Structure (NIST SP 800-34)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-handwritten.svg" alt="Handwritten: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-handwritten.svg" alt="Handwritten: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-diagram.svg" alt="Diagram: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-diagram.svg" alt="Diagram: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-sticky.svg" alt="Sticky Note: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-4-dr-plan-structure-nist-sp-800-34-sticky.svg" alt="Sticky Note: 5.4 DR Plan Structure (NIST SP 800-34)" width="30%">
 </a>
 
 
@@ -1690,14 +1690,14 @@ Phase 7: Testing & Maintenance
 
 ### 5.5 DR Testing Types
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-handwritten.svg" alt="Handwritten: 5.5 DR Testing Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-handwritten.svg" alt="Handwritten: 5.5 DR Testing Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-diagram.svg" alt="Diagram: 5.5 DR Testing Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-diagram.svg" alt="Diagram: 5.5 DR Testing Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-sticky.svg" alt="Sticky Note: 5.5 DR Testing Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/5-5-dr-testing-types-sticky.svg" alt="Sticky Note: 5.5 DR Testing Types" width="30%">
 </a>
 
 
@@ -1716,14 +1716,14 @@ Phase 7: Testing & Maintenance
 
 ### 6.1 TPRM Lifecycle
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-handwritten.svg" alt="Handwritten: 6.1 TPRM Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-handwritten.svg" alt="Handwritten: 6.1 TPRM Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-diagram.svg" alt="Diagram: 6.1 TPRM Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-diagram.svg" alt="Diagram: 6.1 TPRM Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-sticky.svg" alt="Sticky Note: 6.1 TPRM Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/6-1-tprm-lifecycle-sticky.svg" alt="Sticky Note: 6.1 TPRM Lifecycle" width="30%">
 </a>
 
 
@@ -1762,14 +1762,14 @@ Phase 5: Offboarding
 
 ### 6.2 Vendor Risk Assessment Questionnaire Template
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-handwritten.svg" alt="Handwritten: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-handwritten.svg" alt="Handwritten: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-diagram.svg" alt="Diagram: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-diagram.svg" alt="Diagram: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-sticky.svg" alt="Sticky Note: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/6-2-vendor-risk-assessment-questionnaire-template-sticky.svg" alt="Sticky Note: 6.2 Vendor Risk Assessment Questionnaire Template" width="30%">
 </a>
 
 
@@ -1824,14 +1824,14 @@ Phase 5: Offboarding
 
 ### 7.1 Why Security Awareness?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-handwritten.svg" alt="Handwritten: 7.1 Why Security Awareness?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-handwritten.svg" alt="Handwritten: 7.1 Why Security Awareness?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-diagram.svg" alt="Diagram: 7.1 Why Security Awareness?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-diagram.svg" alt="Diagram: 7.1 Why Security Awareness?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-sticky.svg" alt="Sticky Note: 7.1 Why Security Awareness?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-1-why-security-awareness-sticky.svg" alt="Sticky Note: 7.1 Why Security Awareness?" width="30%">
 </a>
 
 
@@ -1839,14 +1839,14 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 
 ### 7.2 Training Plan Outline
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-handwritten.svg" alt="Handwritten: 7.2 Training Plan Outline" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-handwritten.svg" alt="Handwritten: 7.2 Training Plan Outline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-diagram.svg" alt="Diagram: 7.2 Training Plan Outline" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-diagram.svg" alt="Diagram: 7.2 Training Plan Outline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-sticky.svg" alt="Sticky Note: 7.2 Training Plan Outline" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-2-training-plan-outline-sticky.svg" alt="Sticky Note: 7.2 Training Plan Outline" width="30%">
 </a>
 
 
@@ -1882,14 +1882,14 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 
 ### 7.3 Phishing Simulation Results Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-handwritten.svg" alt="Handwritten: 7.3 Phishing Simulation Results Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-handwritten.svg" alt="Handwritten: 7.3 Phishing Simulation Results Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-diagram.svg" alt="Diagram: 7.3 Phishing Simulation Results Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-diagram.svg" alt="Diagram: 7.3 Phishing Simulation Results Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-sticky.svg" alt="Sticky Note: 7.3 Phishing Simulation Results Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/7-3-phishing-simulation-results-analysis-sticky.svg" alt="Sticky Note: 7.3 Phishing Simulation Results Analysis" width="30%">
 </a>
 
 
@@ -1919,14 +1919,14 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 
 ### 8.1 Internal vs External Audits
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-handwritten.svg" alt="Handwritten: 8.1 Internal vs External Audits" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-handwritten.svg" alt="Handwritten: 8.1 Internal vs External Audits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-diagram.svg" alt="Diagram: 8.1 Internal vs External Audits" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-diagram.svg" alt="Diagram: 8.1 Internal vs External Audits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-sticky.svg" alt="Sticky Note: 8.1 Internal vs External Audits" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-1-internal-vs-external-audits-sticky.svg" alt="Sticky Note: 8.1 Internal vs External Audits" width="30%">
 </a>
 
 
@@ -1942,14 +1942,14 @@ Humans are the #1 attack vector → 74% of breaches involve the human element (V
 
 ### 8.2 Audit Process
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-handwritten.svg" alt="Handwritten: 8.2 Audit Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-handwritten.svg" alt="Handwritten: 8.2 Audit Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-diagram.svg" alt="Diagram: 8.2 Audit Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-diagram.svg" alt="Diagram: 8.2 Audit Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-sticky.svg" alt="Sticky Note: 8.2 Audit Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-2-audit-process-sticky.svg" alt="Sticky Note: 8.2 Audit Process" width="30%">
 </a>
 
 
@@ -1984,14 +1984,14 @@ Phase 4: Remediation Verification
 
 ### 8.3 Internal Audit Checklist Example
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-handwritten.svg" alt="Handwritten: 8.3 Internal Audit Checklist Example" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-handwritten.svg" alt="Handwritten: 8.3 Internal Audit Checklist Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-diagram.svg" alt="Diagram: 8.3 Internal Audit Checklist Example" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-diagram.svg" alt="Diagram: 8.3 Internal Audit Checklist Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-sticky.svg" alt="Sticky Note: 8.3 Internal Audit Checklist Example" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/8-3-internal-audit-checklist-example-sticky.svg" alt="Sticky Note: 8.3 Internal Audit Checklist Example" width="30%">
 </a>
 
 
@@ -2026,14 +2026,14 @@ Phase 4: Remediation Verification
 
 ### 9.1 Metrics Framework (SMART)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-handwritten.svg" alt="Handwritten: 9.1 Metrics Framework (SMART)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-handwritten.svg" alt="Handwritten: 9.1 Metrics Framework (SMART)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-diagram.svg" alt="Diagram: 9.1 Metrics Framework (SMART)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-diagram.svg" alt="Diagram: 9.1 Metrics Framework (SMART)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-sticky.svg" alt="Sticky Note: 9.1 Metrics Framework (SMART)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-1-metrics-framework-smart-sticky.svg" alt="Sticky Note: 9.1 Metrics Framework (SMART)" width="30%">
 </a>
 
 
@@ -2046,14 +2046,14 @@ Phase 4: Remediation Verification
 
 ### 9.2 Key Performance Indicators (KPIs)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-handwritten.svg" alt="Handwritten: 9.2 Key Performance Indicators (KPIs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-handwritten.svg" alt="Handwritten: 9.2 Key Performance Indicators (KPIs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-diagram.svg" alt="Diagram: 9.2 Key Performance Indicators (KPIs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-diagram.svg" alt="Diagram: 9.2 Key Performance Indicators (KPIs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-sticky.svg" alt="Sticky Note: 9.2 Key Performance Indicators (KPIs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-2-key-performance-indicators-kpis-sticky.svg" alt="Sticky Note: 9.2 Key Performance Indicators (KPIs)" width="30%">
 </a>
 
 
@@ -2074,14 +2074,14 @@ Phase 4: Remediation Verification
 
 ### 9.3 Key Risk Indicators (KRIs)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-handwritten.svg" alt="Handwritten: 9.3 Key Risk Indicators (KRIs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-handwritten.svg" alt="Handwritten: 9.3 Key Risk Indicators (KRIs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-diagram.svg" alt="Diagram: 9.3 Key Risk Indicators (KRIs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-diagram.svg" alt="Diagram: 9.3 Key Risk Indicators (KRIs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-sticky.svg" alt="Sticky Note: 9.3 Key Risk Indicators (KRIs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-3-key-risk-indicators-kris-sticky.svg" alt="Sticky Note: 9.3 Key Risk Indicators (KRIs)" width="30%">
 </a>
 
 
@@ -2099,14 +2099,14 @@ KRIs are leading indicators that predict an increased risk of a negative event.
 
 ### 9.4 Board-Level Dashboard (Sample)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-handwritten.svg" alt="Handwritten: 9.4 Board-Level Dashboard (Sample)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-handwritten.svg" alt="Handwritten: 9.4 Board-Level Dashboard (Sample)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-diagram.svg" alt="Diagram: 9.4 Board-Level Dashboard (Sample)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-diagram.svg" alt="Diagram: 9.4 Board-Level Dashboard (Sample)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-sticky.svg" alt="Sticky Note: 9.4 Board-Level Dashboard (Sample)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/9-4-board-level-dashboard-sample-sticky.svg" alt="Sticky Note: 9.4 Board-Level Dashboard (Sample)" width="30%">
 </a>
 
 
@@ -2128,14 +2128,14 @@ KRIs are leading indicators that predict an increased risk of a negative event.
 
 ### Case Study 1: Equifax (2017) → GRC Failure on Every Front
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-handwritten.svg" alt="Handwritten: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-handwritten.svg" alt="Handwritten: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-diagram.svg" alt="Diagram: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-diagram.svg" alt="Diagram: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-sticky.svg" alt="Sticky Note: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-1-equifax-2017-grc-failure-on-every-front-sticky.svg" alt="Sticky Note: Case Study 1: Equifax (2017) → GRC Failure on Every Front" width="30%">
 </a>
 
 
@@ -2184,14 +2184,14 @@ Equifax had **policies** but no **enforcement.** The infosec policy required pat
 
 ### Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-handwritten.svg" alt="Handwritten: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-handwritten.svg" alt="Handwritten: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-diagram.svg" alt="Diagram: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-diagram.svg" alt="Diagram: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-sticky.svg" alt="Sticky Note: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-2-marriott-starwood-2018-gdpr-article-32-failure-sticky.svg" alt="Sticky Note: Case Study 2: Marriott/Starwood (2018) → GDPR Article 32 Failure" width="30%">
 </a>
 
 
@@ -2236,14 +2236,14 @@ Equifax had **policies** but no **enforcement.** The infosec policy required pat
 
 ### Case Study 3: TikTok (2023) → GDPR Children's Data Violations
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-handwritten.svg" alt="Handwritten: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-handwritten.svg" alt="Handwritten: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-diagram.svg" alt="Diagram: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-diagram.svg" alt="Diagram: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-sticky.svg" alt="Sticky Note: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-3-tiktok-2023-gdpr-children-s-data-violations-sticky.svg" alt="Sticky Note: Case Study 3: TikTok (2023) → GDPR Children's Data Violations" width="30%">
 </a>
 
 
@@ -2274,14 +2274,14 @@ TikTok's **Data Protection Impact Assessment (DPIA)** was inadequate → it iden
 
 ### Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-handwritten.svg" alt="Handwritten: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-handwritten.svg" alt="Handwritten: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-diagram.svg" alt="Diagram: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-diagram.svg" alt="Diagram: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-sticky.svg" alt="Sticky Note: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-4-wells-fargo-2016-2020-governance-failure-sticky.svg" alt="Sticky Note: Case Study 4: Wells Fargo (2016â€“2020) → Governance Failure" width="30%">
 </a>
 
 
@@ -2323,14 +2323,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Case Study Summary Matrix
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-handwritten.svg" alt="Handwritten: Case Study Summary Matrix" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-handwritten.svg" alt="Handwritten: Case Study Summary Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-diagram.svg" alt="Diagram: Case Study Summary Matrix" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-diagram.svg" alt="Diagram: Case Study Summary Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-sticky.svg" alt="Sticky Note: Case Study Summary Matrix" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/case-study-summary-matrix-sticky.svg" alt="Sticky Note: Case Study Summary Matrix" width="30%">
 </a>
 
 
@@ -2347,14 +2347,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 11.1 GDPR vs CCPA vs LGPD vs PIPEDA
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-handwritten.svg" alt="Handwritten: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-handwritten.svg" alt="Handwritten: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-diagram.svg" alt="Diagram: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-diagram.svg" alt="Diagram: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-sticky.svg" alt="Sticky Note: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-1-gdpr-vs-ccpa-vs-lgpd-vs-pipeda-sticky.svg" alt="Sticky Note: 11.1 GDPR vs CCPA vs LGPD vs PIPEDA" width="30%">
 </a>
 
 
@@ -2373,14 +2373,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 11.2 Data Classification Levels (Enterprise)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-handwritten.svg" alt="Handwritten: 11.2 Data Classification Levels (Enterprise)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-handwritten.svg" alt="Handwritten: 11.2 Data Classification Levels (Enterprise)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-diagram.svg" alt="Diagram: 11.2 Data Classification Levels (Enterprise)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-diagram.svg" alt="Diagram: 11.2 Data Classification Levels (Enterprise)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-sticky.svg" alt="Sticky Note: 11.2 Data Classification Levels (Enterprise)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-2-data-classification-levels-enterprise-sticky.svg" alt="Sticky Note: 11.2 Data Classification Levels (Enterprise)" width="30%">
 </a>
 
 
@@ -2394,14 +2394,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 11.3 BCP vs DR (Detailed)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-handwritten.svg" alt="Handwritten: 11.3 BCP vs DR (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-handwritten.svg" alt="Handwritten: 11.3 BCP vs DR (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-diagram.svg" alt="Diagram: 11.3 BCP vs DR (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-diagram.svg" alt="Diagram: 11.3 BCP vs DR (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-sticky.svg" alt="Sticky Note: 11.3 BCP vs DR (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/11-3-bcp-vs-dr-detailed-sticky.svg" alt="Sticky Note: 11.3 BCP vs DR (Detailed)" width="30%">
 </a>
 
 
@@ -2424,14 +2424,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q1: What is GRC and why is it important?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is GRC and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is GRC and why is it important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-diagram.svg" alt="Diagram: What is GRC and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-diagram.svg" alt="Diagram: What is GRC and why is it important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is GRC and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-grc-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is GRC and why is it important?" width="30%">
 </a>
 
 
@@ -2439,14 +2439,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q2: What is the difference between a security policy, a standard, a procedure, and a guideline?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-handwritten.svg" alt="Handwritten: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-handwritten.svg" alt="Handwritten: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-diagram.svg" alt="Diagram: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-diagram.svg" alt="Diagram: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-sticky.svg" alt="Sticky Note: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-policy-a-standard-a-procedure-and-a-guideline-sticky.svg" alt="Sticky Note: What is the difference between a security policy, a standard, a procedure, and a guideline?" width="30%">
 </a>
 
 
@@ -2454,14 +2454,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q3: Explain the NIST CSF 2.0 functions.
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-handwritten.svg" alt="Handwritten: Explain the NIST CSF 2.0 functions." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-handwritten.svg" alt="Handwritten: Explain the NIST CSF 2.0 functions." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-diagram.svg" alt="Diagram: Explain the NIST CSF 2.0 functions." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-diagram.svg" alt="Diagram: Explain the NIST CSF 2.0 functions." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-sticky.svg" alt="Sticky Note: Explain the NIST CSF 2.0 functions." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-nist-csf-2-0-functions-sticky.svg" alt="Sticky Note: Explain the NIST CSF 2.0 functions." width="30%">
 </a>
 
 
@@ -2469,14 +2469,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q4: What is the difference between qualitative and quantitative risk assessment?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" alt="Handwritten: What is the difference between qualitative and quantitative risk assessment?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-handwritten.svg" alt="Handwritten: What is the difference between qualitative and quantitative risk assessment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" alt="Diagram: What is the difference between qualitative and quantitative risk assessment?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-diagram.svg" alt="Diagram: What is the difference between qualitative and quantitative risk assessment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" alt="Sticky Note: What is the difference between qualitative and quantitative risk assessment?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-qualitative-and-quantitative-risk-assessment-sticky.svg" alt="Sticky Note: What is the difference between qualitative and quantitative risk assessment?" width="30%">
 </a>
 
 
@@ -2484,14 +2484,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q5: What is a risk register and what should it contain?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-handwritten.svg" alt="Handwritten: What is a risk register and what should it contain?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-handwritten.svg" alt="Handwritten: What is a risk register and what should it contain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-diagram.svg" alt="Diagram: What is a risk register and what should it contain?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-diagram.svg" alt="Diagram: What is a risk register and what should it contain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-sticky.svg" alt="Sticky Note: What is a risk register and what should it contain?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-risk-register-and-what-should-it-contain-sticky.svg" alt="Sticky Note: What is a risk register and what should it contain?" width="30%">
 </a>
 
 
@@ -2499,14 +2499,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q6: What is the difference between risk appetite and risk tolerance?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-handwritten.svg" alt="Handwritten: What is the difference between risk appetite and risk tolerance?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-handwritten.svg" alt="Handwritten: What is the difference between risk appetite and risk tolerance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-diagram.svg" alt="Diagram: What is the difference between risk appetite and risk tolerance?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-diagram.svg" alt="Diagram: What is the difference between risk appetite and risk tolerance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-sticky.svg" alt="Sticky Note: What is the difference between risk appetite and risk tolerance?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-risk-appetite-and-risk-tolerance-sticky.svg" alt="Sticky Note: What is the difference between risk appetite and risk tolerance?" width="30%">
 </a>
 
 
@@ -2514,14 +2514,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q7: How does GDPR define a personal data breach and what are the notification requirements?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-handwritten.svg" alt="Handwritten: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-handwritten.svg" alt="Handwritten: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-diagram.svg" alt="Diagram: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-diagram.svg" alt="Diagram: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-sticky.svg" alt="Sticky Note: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-does-gdpr-define-a-personal-data-breach-and-what-are-the-notification-requirements-sticky.svg" alt="Sticky Note: How does GDPR define a personal data breach and what are the notification requirements?" width="30%">
 </a>
 
 
@@ -2529,14 +2529,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q8: What is the difference between NIST CSF and ISO 27001?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-handwritten.svg" alt="Handwritten: What is the difference between NIST CSF and ISO 27001?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-handwritten.svg" alt="Handwritten: What is the difference between NIST CSF and ISO 27001?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-diagram.svg" alt="Diagram: What is the difference between NIST CSF and ISO 27001?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-diagram.svg" alt="Diagram: What is the difference between NIST CSF and ISO 27001?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-sticky.svg" alt="Sticky Note: What is the difference between NIST CSF and ISO 27001?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-nist-csf-and-iso-27001-sticky.svg" alt="Sticky Note: What is the difference between NIST CSF and ISO 27001?" width="30%">
 </a>
 
 
@@ -2544,14 +2544,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q9: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-handwritten.svg" alt="Handwritten: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-handwritten.svg" alt="Handwritten: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-diagram.svg" alt="Diagram: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-diagram.svg" alt="Diagram: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-sticky.svg" alt="Sticky Note: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-business-impact-analysis-bia-and-how-do-you-determine-rto-and-rpo-sticky.svg" alt="Sticky Note: What is a Business Impact Analysis (BIA) and how do you determine RTO and RPO?" width="30%">
 </a>
 
 
@@ -2559,14 +2559,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q10: What is the FAIR model?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-handwritten.svg" alt="Handwritten: What is the FAIR model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-handwritten.svg" alt="Handwritten: What is the FAIR model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-diagram.svg" alt="Diagram: What is the FAIR model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-diagram.svg" alt="Diagram: What is the FAIR model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-sticky.svg" alt="Sticky Note: What is the FAIR model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-fair-model-sticky.svg" alt="Sticky Note: What is the FAIR model?" width="30%">
 </a>
 
 
@@ -2574,14 +2574,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q11: What are the 12 PCI DSS 4.0 requirements?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-handwritten.svg" alt="Handwritten: What are the 12 PCI DSS 4.0 requirements?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-handwritten.svg" alt="Handwritten: What are the 12 PCI DSS 4.0 requirements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-diagram.svg" alt="Diagram: What are the 12 PCI DSS 4.0 requirements?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-diagram.svg" alt="Diagram: What are the 12 PCI DSS 4.0 requirements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-sticky.svg" alt="Sticky Note: What are the 12 PCI DSS 4.0 requirements?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-12-pci-dss-4-0-requirements-sticky.svg" alt="Sticky Note: What are the 12 PCI DSS 4.0 requirements?" width="30%">
 </a>
 
 
@@ -2589,14 +2589,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q12: What is a DPIA and when is it mandatory under GDPR?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-handwritten.svg" alt="Handwritten: What is a DPIA and when is it mandatory under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-handwritten.svg" alt="Handwritten: What is a DPIA and when is it mandatory under GDPR?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-diagram.svg" alt="Diagram: What is a DPIA and when is it mandatory under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-diagram.svg" alt="Diagram: What is a DPIA and when is it mandatory under GDPR?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-sticky.svg" alt="Sticky Note: What is a DPIA and when is it mandatory under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-dpia-and-when-is-it-mandatory-under-gdpr-sticky.svg" alt="Sticky Note: What is a DPIA and when is it mandatory under GDPR?" width="30%">
 </a>
 
 
@@ -2604,14 +2604,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q13: What is the difference between SOC 2 Type I and Type II?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-handwritten.svg" alt="Handwritten: What is the difference between SOC 2 Type I and Type II?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-handwritten.svg" alt="Handwritten: What is the difference between SOC 2 Type I and Type II?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-diagram.svg" alt="Diagram: What is the difference between SOC 2 Type I and Type II?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-diagram.svg" alt="Diagram: What is the difference between SOC 2 Type I and Type II?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-sticky.svg" alt="Sticky Note: What is the difference between SOC 2 Type I and Type II?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-soc-2-type-i-and-type-ii-sticky.svg" alt="Sticky Note: What is the difference between SOC 2 Type I and Type II?" width="30%">
 </a>
 
 
@@ -2619,14 +2619,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q14: How do you calculate ROSI (Return on Security Investment)?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-handwritten.svg" alt="Handwritten: How do you calculate ROSI (Return on Security Investment)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-handwritten.svg" alt="Handwritten: How do you calculate ROSI (Return on Security Investment)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-diagram.svg" alt="Diagram: How do you calculate ROSI (Return on Security Investment)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-diagram.svg" alt="Diagram: How do you calculate ROSI (Return on Security Investment)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-sticky.svg" alt="Sticky Note: How do you calculate ROSI (Return on Security Investment)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-calculate-rosi-return-on-security-investment-sticky.svg" alt="Sticky Note: How do you calculate ROSI (Return on Security Investment)?" width="30%">
 </a>
 
 
@@ -2634,14 +2634,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q15: What are the key elements of an effective security awareness program?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-handwritten.svg" alt="Handwritten: What are the key elements of an effective security awareness program?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-handwritten.svg" alt="Handwritten: What are the key elements of an effective security awareness program?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-diagram.svg" alt="Diagram: What are the key elements of an effective security awareness program?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-diagram.svg" alt="Diagram: What are the key elements of an effective security awareness program?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-sticky.svg" alt="Sticky Note: What are the key elements of an effective security awareness program?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-elements-of-an-effective-security-awareness-program-sticky.svg" alt="Sticky Note: What are the key elements of an effective security awareness program?" width="30%">
 </a>
 
 
@@ -2653,14 +2653,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.1 GRC in Cloud Environments
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-handwritten.svg" alt="Handwritten: 13.1 GRC in Cloud Environments" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-handwritten.svg" alt="Handwritten: 13.1 GRC in Cloud Environments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-diagram.svg" alt="Diagram: 13.1 GRC in Cloud Environments" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-diagram.svg" alt="Diagram: 13.1 GRC in Cloud Environments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-sticky.svg" alt="Sticky Note: 13.1 GRC in Cloud Environments" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-1-grc-in-cloud-environments-sticky.svg" alt="Sticky Note: 13.1 GRC in Cloud Environments" width="30%">
 </a>
 
 
@@ -2678,14 +2678,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.2 GRC in Application Security (DevSecOps)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-handwritten.svg" alt="Handwritten: 13.2 GRC in Application Security (DevSecOps)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-handwritten.svg" alt="Handwritten: 13.2 GRC in Application Security (DevSecOps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-diagram.svg" alt="Diagram: 13.2 GRC in Application Security (DevSecOps)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-diagram.svg" alt="Diagram: 13.2 GRC in Application Security (DevSecOps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-sticky.svg" alt="Sticky Note: 13.2 GRC in Application Security (DevSecOps)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-2-grc-in-application-security-devsecops-sticky.svg" alt="Sticky Note: 13.2 GRC in Application Security (DevSecOps)" width="30%">
 </a>
 
 
@@ -2700,14 +2700,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.3 GRC in Healthcare
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-handwritten.svg" alt="Handwritten: 13.3 GRC in Healthcare" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-handwritten.svg" alt="Handwritten: 13.3 GRC in Healthcare" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-diagram.svg" alt="Diagram: 13.3 GRC in Healthcare" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-diagram.svg" alt="Diagram: 13.3 GRC in Healthcare" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-sticky.svg" alt="Sticky Note: 13.3 GRC in Healthcare" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-3-grc-in-healthcare-sticky.svg" alt="Sticky Note: 13.3 GRC in Healthcare" width="30%">
 </a>
 
 
@@ -2720,14 +2720,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.4 GRC in Financial Services
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-handwritten.svg" alt="Handwritten: 13.4 GRC in Financial Services" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-handwritten.svg" alt="Handwritten: 13.4 GRC in Financial Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-diagram.svg" alt="Diagram: 13.4 GRC in Financial Services" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-diagram.svg" alt="Diagram: 13.4 GRC in Financial Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-sticky.svg" alt="Sticky Note: 13.4 GRC in Financial Services" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-4-grc-in-financial-services-sticky.svg" alt="Sticky Note: 13.4 GRC in Financial Services" width="30%">
 </a>
 
 
@@ -2741,14 +2741,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.5 GRC in Government / Defense
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-handwritten.svg" alt="Handwritten: 13.5 GRC in Government / Defense" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-handwritten.svg" alt="Handwritten: 13.5 GRC in Government / Defense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-diagram.svg" alt="Diagram: 13.5 GRC in Government / Defense" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-diagram.svg" alt="Diagram: 13.5 GRC in Government / Defense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-sticky.svg" alt="Sticky Note: 13.5 GRC in Government / Defense" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-5-grc-in-government-defense-sticky.svg" alt="Sticky Note: 13.5 GRC in Government / Defense" width="30%">
 </a>
 
 
@@ -2762,14 +2762,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 13.6 GRC Tools Landscape
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-handwritten.svg" alt="Handwritten: 13.6 GRC Tools Landscape" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-handwritten.svg" alt="Handwritten: 13.6 GRC Tools Landscape" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-diagram.svg" alt="Diagram: 13.6 GRC Tools Landscape" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-diagram.svg" alt="Diagram: 13.6 GRC Tools Landscape" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-sticky.svg" alt="Sticky Note: 13.6 GRC Tools Landscape" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/13-6-grc-tools-landscape-sticky.svg" alt="Sticky Note: 13.6 GRC Tools Landscape" width="30%">
 </a>
 
 
@@ -2877,27 +2877,27 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### 15.1 Expanded Interview Corner → Additional 15 Q&As
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-handwritten.svg" alt="Handwritten: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-handwritten.svg" alt="Handwritten: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-diagram.svg" alt="Diagram: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-diagram.svg" alt="Diagram: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-sticky.svg" alt="Sticky Note: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-1-expanded-interview-corner-additional-15-q-as-sticky.svg" alt="Sticky Note: 15.1 Expanded Interview Corner → Additional 15 Q&As" width="30%">
 </a>
 
 
 ### Q16: What is the principle of "Privacy by Design" and how do you implement it?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-principle-of-privacy-by-design-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is the principle of "Privacy by Design" and how do you implement it?" width="30%">
 </a>
 
 
@@ -2905,14 +2905,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q17: Explain the difference between a vulnerability, a threat, and a risk.
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" alt="Handwritten: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-handwritten.svg" alt="Handwritten: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" alt="Diagram: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-diagram.svg" alt="Diagram: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" alt="Sticky Note: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-difference-between-a-vulnerability-a-threat-and-a-risk-sticky.svg" alt="Sticky Note: Explain the difference between a vulnerability, a threat, and a risk." width="30%">
 </a>
 
 
@@ -2920,14 +2920,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q18: What is a "Statement of Applicability" (SoA) in ISO 27001?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-handwritten.svg" alt="Handwritten: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-handwritten.svg" alt="Handwritten: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-diagram.svg" alt="Diagram: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-diagram.svg" alt="Diagram: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-sticky.svg" alt="Sticky Note: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-statement-of-applicability-soa-in-iso-27001-sticky.svg" alt="Sticky Note: What is a "Statement of Applicability" (SoA) in ISO 27001?" width="30%">
 </a>
 
 
@@ -2935,14 +2935,14 @@ The governance structure at Wells Fargo allowed **sales incentives to override a
 
 ### Q19: What is the "shared responsibility model" in cloud security?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-handwritten.svg" alt="Handwritten: What is the "shared responsibility model" in cloud security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-handwritten.svg" alt="Handwritten: What is the "shared responsibility model" in cloud security?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-diagram.svg" alt="Diagram: What is the "shared responsibility model" in cloud security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-diagram.svg" alt="Diagram: What is the "shared responsibility model" in cloud security?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-sticky.svg" alt="Sticky Note: What is the "shared responsibility model" in cloud security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-shared-responsibility-model-in-cloud-security-sticky.svg" alt="Sticky Note: What is the "shared responsibility model" in cloud security?" width="30%">
 </a>
 
 
@@ -2960,14 +2960,14 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q20: How does SOX Section 404 apply to IT?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-handwritten.svg" alt="Handwritten: How does SOX Section 404 apply to IT?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-handwritten.svg" alt="Handwritten: How does SOX Section 404 apply to IT?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-diagram.svg" alt="Diagram: How does SOX Section 404 apply to IT?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-diagram.svg" alt="Diagram: How does SOX Section 404 apply to IT?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-sticky.svg" alt="Sticky Note: How does SOX Section 404 apply to IT?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-does-sox-section-404-apply-to-it-sticky.svg" alt="Sticky Note: How does SOX Section 404 apply to IT?" width="30%">
 </a>
 
 
@@ -2975,14 +2975,14 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q21: What is a "control objective" and give an example?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-handwritten.svg" alt="Handwritten: What is a "control objective" and give an example?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-handwritten.svg" alt="Handwritten: What is a "control objective" and give an example?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-diagram.svg" alt="Diagram: What is a "control objective" and give an example?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-diagram.svg" alt="Diagram: What is a "control objective" and give an example?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-sticky.svg" alt="Sticky Note: What is a "control objective" and give an example?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-control-objective-and-give-an-example-sticky.svg" alt="Sticky Note: What is a "control objective" and give an example?" width="30%">
 </a>
 
 
@@ -2990,14 +2990,14 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q22: What are compensating controls in PCI DSS?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-handwritten.svg" alt="Handwritten: What are compensating controls in PCI DSS?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-handwritten.svg" alt="Handwritten: What are compensating controls in PCI DSS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-diagram.svg" alt="Diagram: What are compensating controls in PCI DSS?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-diagram.svg" alt="Diagram: What are compensating controls in PCI DSS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-sticky.svg" alt="Sticky Note: What are compensating controls in PCI DSS?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-compensating-controls-in-pci-dss-sticky.svg" alt="Sticky Note: What are compensating controls in PCI DSS?" width="30%">
 </a>
 
 
@@ -3005,14 +3005,14 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q23: What is the role of the Data Protection Officer (DPO) under GDPR?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-handwritten.svg" alt="Handwritten: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-handwritten.svg" alt="Handwritten: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-diagram.svg" alt="Diagram: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-diagram.svg" alt="Diagram: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-sticky.svg" alt="Sticky Note: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-role-of-the-data-protection-officer-dpo-under-gdpr-sticky.svg" alt="Sticky Note: What is the role of the Data Protection Officer (DPO) under GDPR?" width="30%">
 </a>
 
 
@@ -3020,14 +3020,14 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q24: What is the difference between a Security Incident and a Security Event?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-handwritten.svg" alt="Handwritten: What is the difference between a Security Incident and a Security Event?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-handwritten.svg" alt="Handwritten: What is the difference between a Security Incident and a Security Event?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-diagram.svg" alt="Diagram: What is the difference between a Security Incident and a Security Event?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-diagram.svg" alt="Diagram: What is the difference between a Security Incident and a Security Event?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-sticky.svg" alt="Sticky Note: What is the difference between a Security Incident and a Security Event?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-a-security-incident-and-a-security-event-sticky.svg" alt="Sticky Note: What is the difference between a Security Incident and a Security Event?" width="30%">
 </a>
 
 
@@ -3035,14 +3035,14 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q25: Explain the concept of "defense in depth" and how it maps to GRC.
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-handwritten.svg" alt="Handwritten: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-handwritten.svg" alt="Handwritten: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-diagram.svg" alt="Diagram: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-diagram.svg" alt="Diagram: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-sticky.svg" alt="Sticky Note: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/explain-the-concept-of-defense-in-depth-and-how-it-maps-to-grc-sticky.svg" alt="Sticky Note: Explain the concept of "defense in depth" and how it maps to GRC." width="30%">
 </a>
 
 
@@ -3050,14 +3050,14 @@ The most common GRC failure in cloud is assuming the provider handles something 
 
 ### Q26: What is the "three lines of defense" model?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-handwritten.svg" alt="Handwritten: What is the "three lines of defense" model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-handwritten.svg" alt="Handwritten: What is the "three lines of defense" model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-diagram.svg" alt="Diagram: What is the "three lines of defense" model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-diagram.svg" alt="Diagram: What is the "three lines of defense" model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-sticky.svg" alt="Sticky Note: What is the "three lines of defense" model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-three-lines-of-defense-model-sticky.svg" alt="Sticky Note: What is the "three lines of defense" model?" width="30%">
 </a>
 
 
@@ -3073,14 +3073,14 @@ External audit, regulators, and independent assessors sit outside the model but 
 
 ### Q27: What is a "materiality threshold" in the context of risk?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-handwritten.svg" alt="Handwritten: What is a "materiality threshold" in the context of risk?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-handwritten.svg" alt="Handwritten: What is a "materiality threshold" in the context of risk?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-diagram.svg" alt="Diagram: What is a "materiality threshold" in the context of risk?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-diagram.svg" alt="Diagram: What is a "materiality threshold" in the context of risk?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-sticky.svg" alt="Sticky Note: What is a "materiality threshold" in the context of risk?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-a-materiality-threshold-in-the-context-of-risk-sticky.svg" alt="Sticky Note: What is a "materiality threshold" in the context of risk?" width="30%">
 </a>
 
 
@@ -3088,14 +3088,14 @@ External audit, regulators, and independent assessors sit outside the model but 
 
 ### Q28: How do you build a business case for security investment?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-handwritten.svg" alt="Handwritten: How do you build a business case for security investment?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-handwritten.svg" alt="Handwritten: How do you build a business case for security investment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-diagram.svg" alt="Diagram: How do you build a business case for security investment?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-diagram.svg" alt="Diagram: How do you build a business case for security investment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-sticky.svg" alt="Sticky Note: How do you build a business case for security investment?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/how-do-you-build-a-business-case-for-security-investment-sticky.svg" alt="Sticky Note: How do you build a business case for security investment?" width="30%">
 </a>
 
 
@@ -3103,14 +3103,14 @@ External audit, regulators, and independent assessors sit outside the model but 
 
 ### Q29: What is the difference between an Information Security Policy and an ISMS Scope?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-handwritten.svg" alt="Handwritten: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-handwritten.svg" alt="Handwritten: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-diagram.svg" alt="Diagram: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-diagram.svg" alt="Diagram: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-sticky.svg" alt="Sticky Note: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-is-the-difference-between-an-information-security-policy-and-an-isms-scope-sticky.svg" alt="Sticky Note: What is the difference between an Information Security Policy and an ISMS Scope?" width="30%">
 </a>
 
 
@@ -3118,14 +3118,14 @@ External audit, regulators, and independent assessors sit outside the model but 
 
 ### Q30: What are the key considerations for international data transfers under GDPR?
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-handwritten.svg" alt="Handwritten: What are the key considerations for international data transfers under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-handwritten.svg" alt="Handwritten: What are the key considerations for international data transfers under GDPR?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-diagram.svg" alt="Diagram: What are the key considerations for international data transfers under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-diagram.svg" alt="Diagram: What are the key considerations for international data transfers under GDPR?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-sticky.svg" alt="Sticky Note: What are the key considerations for international data transfers under GDPR?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/what-are-the-key-considerations-for-international-data-transfers-under-gdpr-sticky.svg" alt="Sticky Note: What are the key considerations for international data transfers under GDPR?" width="30%">
 </a>
 
 
@@ -3133,14 +3133,14 @@ External audit, regulators, and independent assessors sit outside the model but 
 
 ### 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-handwritten.svg" alt="Handwritten: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-handwritten.svg" alt="Handwritten: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-diagram.svg" alt="Diagram: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-diagram.svg" alt="Diagram: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-sticky.svg" alt="Sticky Note: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-2-expanded-dry-run-full-risk-assessment-walkthrough-sticky.svg" alt="Sticky Note: 15.2 Expanded Dry Run: Full Risk Assessment Walkthrough" width="30%">
 </a>
 
 
@@ -3238,14 +3238,14 @@ Risk reduction: 66%
 
 ### 15.3 Expanded Privacy: DSAR Response Template
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-handwritten.svg" alt="Handwritten: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-handwritten.svg" alt="Handwritten: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-diagram.svg" alt="Diagram: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-diagram.svg" alt="Diagram: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-sticky.svg" alt="Sticky Note: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-3-expanded-privacy-dsar-response-template-sticky.svg" alt="Sticky Note: 15.3 Expanded Privacy: DSAR Response Template" width="30%">
 </a>
 
 
@@ -3302,14 +3302,14 @@ Data Protection Officer
 
 ### 15.4 Expanded Metrics: Security Scorecard
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-handwritten.svg" alt="Handwritten: 15.4 Expanded Metrics: Security Scorecard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-handwritten.svg" alt="Handwritten: 15.4 Expanded Metrics: Security Scorecard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-diagram.svg" alt="Diagram: 15.4 Expanded Metrics: Security Scorecard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-diagram.svg" alt="Diagram: 15.4 Expanded Metrics: Security Scorecard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-sticky.svg" alt="Sticky Note: 15.4 Expanded Metrics: Security Scorecard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-4-expanded-metrics-security-scorecard-sticky.svg" alt="Sticky Note: 15.4 Expanded Metrics: Security Scorecard" width="30%">
 </a>
 
 
@@ -3368,14 +3368,14 @@ APPROVED BY: [CISO SIGNATURE] | [DATE]
 
 ### 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-handwritten.svg" alt="Handwritten: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-handwritten.svg" alt="Handwritten: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-diagram.svg" alt="Diagram: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-diagram.svg" alt="Diagram: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-sticky.svg" alt="Sticky Note: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-5-expanded-frameworks-cobit-2019-governance-objectives-detailed-sticky.svg" alt="Sticky Note: 15.5 Expanded Frameworks: COBIT 2019 Governance Objectives (Detailed)" width="30%">
 </a>
 
 
@@ -3397,14 +3397,14 @@ APPROVED BY: [CISO SIGNATURE] | [DATE]
 
 ### 15.6 Expanded Regulations: Key Compliance Deadlines Calendar
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-handwritten.svg" alt="Handwritten: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-handwritten.svg" alt="Handwritten: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-diagram.svg" alt="Diagram: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-diagram.svg" alt="Diagram: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-sticky.svg" alt="Sticky Note: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-6-expanded-regulations-key-compliance-deadlines-calendar-sticky.svg" alt="Sticky Note: 15.6 Expanded Regulations: Key Compliance Deadlines Calendar" width="30%">
 </a>
 
 
@@ -3429,14 +3429,14 @@ APPROVED BY: [CISO SIGNATURE] | [DATE]
 
 ### 15.7 Expanded Exercises: Additional Challenge Problems
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-handwritten.svg" alt="Handwritten: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-handwritten.svg" alt="Handwritten: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-diagram.svg" alt="Diagram: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-diagram.svg" alt="Diagram: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-sticky.svg" alt="Sticky Note: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-7-expanded-exercises-additional-challenge-problems-sticky.svg" alt="Sticky Note: 15.7 Expanded Exercises: Additional Challenge Problems" width="30%">
 </a>
 
 
@@ -3451,14 +3451,14 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 
 ### 15.8 Expanded Applications: GRC in Emerging Technologies
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-handwritten.svg" alt="Handwritten: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-handwritten.svg" alt="Handwritten: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-diagram.svg" alt="Diagram: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-diagram.svg" alt="Diagram: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-sticky.svg" alt="Sticky Note: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-8-expanded-applications-grc-in-emerging-technologies-sticky.svg" alt="Sticky Note: 15.8 Expanded Applications: GRC in Emerging Technologies" width="30%">
 </a>
 
 
@@ -3489,14 +3489,14 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 
 ### 15.9 Common GRC Pitfalls and How to Avoid Them
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-handwritten.svg" alt="Handwritten: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-handwritten.svg" alt="Handwritten: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-diagram.svg" alt="Diagram: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-diagram.svg" alt="Diagram: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-sticky.svg" alt="Sticky Note: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-9-common-grc-pitfalls-and-how-to-avoid-them-sticky.svg" alt="Sticky Note: 15.9 Common GRC Pitfalls and How to Avoid Them" width="30%">
 </a>
 
 
@@ -3514,14 +3514,14 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 | **Shadow IT unknown** | SaaS apps and cloud resources outside IT's visibility | CASB discovery, cloud access inventory, security champion program in each business unit. |
 ### 15.10 GRC Implementation Roadmap (12-Month Example)
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-handwritten.svg" alt="Handwritten: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-handwritten.svg" alt="Handwritten: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-diagram.svg" alt="Diagram: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-diagram.svg" alt="Diagram: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-sticky.svg" alt="Sticky Note: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-10-grc-implementation-roadmap-12-month-example-sticky.svg" alt="Sticky Note: 15.10 GRC Implementation Roadmap (12-Month Example)" width="30%">
 </a>
 
 
@@ -3542,14 +3542,14 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 
 ### 15.11 Glossary of Key GRC Terms
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-handwritten.svg" alt="Handwritten: 15.11 Glossary of Key GRC Terms" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-handwritten.svg" alt="Handwritten: 15.11 Glossary of Key GRC Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-diagram.svg" alt="Diagram: 15.11 Glossary of Key GRC Terms" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-diagram.svg" alt="Diagram: 15.11 Glossary of Key GRC Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-sticky.svg" alt="Sticky Note: 15.11 Glossary of Key GRC Terms" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-11-glossary-of-key-grc-terms-sticky.svg" alt="Sticky Note: 15.11 Glossary of Key GRC Terms" width="30%">
 </a>
 
 
@@ -3601,14 +3601,14 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 
 ### 15.12 Exam Tips & Tricks
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-handwritten.svg" alt="Handwritten: 15.12 Exam Tips & Tricks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-handwritten.svg" alt="Handwritten: 15.12 Exam Tips & Tricks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-diagram.svg" alt="Diagram: 15.12 Exam Tips & Tricks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-diagram.svg" alt="Diagram: 15.12 Exam Tips & Tricks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-sticky.svg" alt="Sticky Note: 15.12 Exam Tips & Tricks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-12-exam-tips-tricks-sticky.svg" alt="Sticky Note: 15.12 Exam Tips & Tricks" width="30%">
 </a>
 
 
@@ -3649,14 +3649,14 @@ Your organization needs to achieve PCI DSS 4.0 compliance for the first time (mo
 
 ### 15.13 Case Study: Quick Reference Checklist
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-handwritten.svg" alt="Handwritten: 15.13 Case Study: Quick Reference Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-handwritten.svg" alt="Handwritten: 15.13 Case Study: Quick Reference Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-diagram.svg" alt="Diagram: 15.13 Case Study: Quick Reference Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-diagram.svg" alt="Diagram: 15.13 Case Study: Quick Reference Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-sticky.svg" alt="Sticky Note: 15.13 Case Study: Quick Reference Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/15-13-case-study-quick-reference-checklist-sticky.svg" alt="Sticky Note: 15.13 Case Study: Quick Reference Checklist" width="30%">
 </a>
 
 
@@ -3742,14 +3742,14 @@ The four case studies (Equifax, Marriott, TikTok, Wells Fargo) demonstrate that 
 
 ### Compliance Checker Engine
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-handwritten.svg" alt="Handwritten: Compliance Checker Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-handwritten.svg" alt="Handwritten: Compliance Checker Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-diagram.svg" alt="Diagram: Compliance Checker Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-diagram.svg" alt="Diagram: Compliance Checker Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-sticky.svg" alt="Sticky Note: Compliance Checker Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/compliance-checker-engine-sticky.svg" alt="Sticky Note: Compliance Checker Engine" width="30%">
 </a>
 
 
@@ -4013,14 +4013,14 @@ console.log(`Passed: ${isoReport.passed}/${isoReport.totalControls}`);
 
 ### Policy Document Analyzer
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-handwritten.svg" alt="Handwritten: Policy Document Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-handwritten.svg" alt="Handwritten: Policy Document Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-diagram.svg" alt="Diagram: Policy Document Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-diagram.svg" alt="Diagram: Policy Document Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-sticky.svg" alt="Sticky Note: Policy Document Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/policy-document-analyzer-sticky.svg" alt="Sticky Note: Policy Document Analyzer" width="30%">
 </a>
 
 
@@ -4284,14 +4284,14 @@ gdprChecks.forEach(c =>
 
 ### Governance Framework Hierarchy
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-handwritten.svg" alt="Handwritten: Governance Framework Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-handwritten.svg" alt="Handwritten: Governance Framework Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-diagram.svg" alt="Diagram: Governance Framework Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-diagram.svg" alt="Diagram: Governance Framework Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-sticky.svg" alt="Sticky Note: Governance Framework Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/governance-framework-hierarchy-sticky.svg" alt="Sticky Note: Governance Framework Hierarchy" width="30%">
 </a>
 
 
@@ -4322,14 +4322,14 @@ flowchart TD
 
 ### Risk Treatment Process
 
-<a href="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-handwritten.svg" alt="Handwritten: Risk Treatment Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-handwritten.svg" alt="Handwritten: Risk Treatment Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-diagram.svg" alt="Diagram: Risk Treatment Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-diagram.svg" alt="Diagram: Risk Treatment Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-sticky.svg" alt="Sticky Note: Risk Treatment Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/09-grc/risk-treatment-process-sticky.svg" alt="Sticky Note: Risk Treatment Process" width="30%">
 </a>
 
 

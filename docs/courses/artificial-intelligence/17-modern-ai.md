@@ -56,14 +56,14 @@ flowchart TD
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -71,14 +71,14 @@ Think of teaching a child to identify animals. **Traditional machine learning** 
 
 ### What is Deep Learning?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-handwritten.svg" alt="Handwritten: What is Deep Learning?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-handwritten.svg" alt="Handwritten: What is Deep Learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-diagram.svg" alt="Diagram: What is Deep Learning?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-diagram.svg" alt="Diagram: What is Deep Learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-sticky.svg" alt="Sticky Note: What is Deep Learning?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-deep-learning-sticky.svg" alt="Sticky Note: What is Deep Learning?" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ Deep learning uses multi-layer artificial neural networks to model complex patte
 
 ### Algorithm: Training a Neural Network via Gradient Descent
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-handwritten.svg" alt="Handwritten: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-handwritten.svg" alt="Handwritten: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-diagram.svg" alt="Diagram: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-diagram.svg" alt="Diagram: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-sticky.svg" alt="Sticky Note: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-training-a-neural-network-via-gradient-descent-sticky.svg" alt="Sticky Note: Algorithm: Training a Neural Network via Gradient Descent" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ Deep learning uses multi-layer artificial neural networks to model complex patte
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ FUNCTION TRAIN_NEURAL_NETWORK(X, y, hidden_size, learning_rate, epochs):
 
 ### Dry Run Trace Table: Forward Pass
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Forward Pass" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Forward Pass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-diagram.svg" alt="Diagram: Dry Run Trace Table: Forward Pass" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-diagram.svg" alt="Diagram: Dry Run Trace Table: Forward Pass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Forward Pass" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-forward-pass-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Forward Pass" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ The model predicts class 1 with 37% confidence (correct class has highest probab
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ nn.train(X, y, epochs=100)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -303,14 +303,14 @@ nn.train(X, y, epochs=100)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ nn.train(X, y, epochs=100)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -350,14 +350,14 @@ nn.train(X, y, epochs=100)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ Imagine a composer who has listened to every symphony ever written. When asked t
 
 ### What is Generative AI?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-handwritten.svg" alt="Handwritten: What is Generative AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-handwritten.svg" alt="Handwritten: What is Generative AI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-diagram.svg" alt="Diagram: What is Generative AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-diagram.svg" alt="Diagram: What is Generative AI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-sticky.svg" alt="Sticky Note: What is Generative AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-generative-ai-sticky.svg" alt="Sticky Note: What is Generative AI?" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ Key paradigm: instead of predicting a label, predict the next piece of data — 
 
 ### Algorithm: Autoregressive Text Generation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-handwritten.svg" alt="Handwritten: Algorithm: Autoregressive Text Generation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-handwritten.svg" alt="Handwritten: Algorithm: Autoregressive Text Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-diagram.svg" alt="Diagram: Algorithm: Autoregressive Text Generation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-diagram.svg" alt="Diagram: Algorithm: Autoregressive Text Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-sticky.svg" alt="Sticky Note: Algorithm: Autoregressive Text Generation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autoregressive-text-generation-sticky.svg" alt="Sticky Note: Algorithm: Autoregressive Text Generation" width="30%">
 </a>
 
 
@@ -413,14 +413,14 @@ Key paradigm: instead of predicting a label, predict the next piece of data — 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -458,14 +458,14 @@ FUNCTION GENERATE_TEXT(prompt, model, temperature, max_length, top_k):
 
 ### Dry Run Trace Table: Generating "The cat"
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Generating "The cat"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Generating "The cat"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-diagram.svg" alt="Diagram: Dry Run Trace Table: Generating "The cat"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-diagram.svg" alt="Diagram: Dry Run Trace Table: Generating "The cat"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Generating "The cat"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-generating-the-cat-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Generating "The cat"" width="30%">
 </a>
 
 
@@ -501,14 +501,14 @@ FUNCTION GENERATE_TEXT(prompt, model, temperature, max_length, top_k):
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -564,14 +564,14 @@ print("Generated tokens:", output)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ print("Generated tokens:", output)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -607,14 +607,14 @@ print("Generated tokens:", output)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -633,14 +633,14 @@ print("Generated tokens:", output)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -648,14 +648,14 @@ Imagine a librarian who has read every book ever published — novels, textbooks
 
 ### What are Large Language Models?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-handwritten.svg" alt="Handwritten: What are Large Language Models?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-handwritten.svg" alt="Handwritten: What are Large Language Models?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-diagram.svg" alt="Diagram: What are Large Language Models?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-diagram.svg" alt="Diagram: What are Large Language Models?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-sticky.svg" alt="Sticky Note: What are Large Language Models?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-large-language-models-sticky.svg" alt="Sticky Note: What are Large Language Models?" width="30%">
 </a>
 
 
@@ -669,14 +669,14 @@ LLMs are transformer-based neural networks with billions of parameters trained o
 
 ### Algorithm: Next-Token Prediction Training (GPT-style)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-handwritten.svg" alt="Handwritten: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-handwritten.svg" alt="Handwritten: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-diagram.svg" alt="Diagram: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-diagram.svg" alt="Diagram: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-sticky.svg" alt="Sticky Note: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-next-token-prediction-training-gpt-style-sticky.svg" alt="Sticky Note: Algorithm: Next-Token Prediction Training (GPT-style)" width="30%">
 </a>
 
 
@@ -703,14 +703,14 @@ LLMs are transformer-based neural networks with billions of parameters trained o
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -746,14 +746,14 @@ FUNCTION TRAIN_GPT(corpus, vocab_size, d_model, num_layers, num_heads, batch_siz
 
 ### Dry Run Trace Table: Self-Attention for "I love AI"
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-diagram.svg" alt="Diagram: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-diagram.svg" alt="Diagram: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-self-attention-for-i-love-ai-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Self-Attention for "I love AI"" width="30%">
 </a>
 
 
@@ -783,14 +783,14 @@ FUNCTION TRAIN_GPT(corpus, vocab_size, d_model, num_layers, num_heads, batch_siz
 
 ### Python Implementation: Single-Head Self-Attention
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-handwritten.svg" alt="Handwritten: Python Implementation: Single-Head Self-Attention" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-handwritten.svg" alt="Handwritten: Python Implementation: Single-Head Self-Attention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-diagram.svg" alt="Diagram: Python Implementation: Single-Head Self-Attention" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-diagram.svg" alt="Diagram: Python Implementation: Single-Head Self-Attention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-sticky.svg" alt="Sticky Note: Python Implementation: Single-Head Self-Attention" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-single-head-self-attention-sticky.svg" alt="Sticky Note: Python Implementation: Single-Head Self-Attention" width="30%">
 </a>
 
 
@@ -841,14 +841,14 @@ print("Output shape:", output.shape)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -863,14 +863,14 @@ print("Output shape:", output.shape)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -885,14 +885,14 @@ print("Output shape:", output.shape)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -910,14 +910,14 @@ print("Output shape:", output.shape)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -925,14 +925,14 @@ A foundation model is like a Swiss Army knife that starts as a plain block of st
 
 ### What are Foundation Models?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-handwritten.svg" alt="Handwritten: What are Foundation Models?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-handwritten.svg" alt="Handwritten: What are Foundation Models?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-diagram.svg" alt="Diagram: What are Foundation Models?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-diagram.svg" alt="Diagram: What are Foundation Models?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-sticky.svg" alt="Sticky Note: What are Foundation Models?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-foundation-models-sticky.svg" alt="Sticky Note: What are Foundation Models?" width="30%">
 </a>
 
 
@@ -946,14 +946,14 @@ A **foundation model** (Bommasani et al., 2021) is a large neural network pre-tr
 
 ### Algorithm: Pre-train → Fine-tune → RLHF Pipeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-handwritten.svg" alt="Handwritten: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-handwritten.svg" alt="Handwritten: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-diagram.svg" alt="Diagram: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-diagram.svg" alt="Diagram: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-sticky.svg" alt="Sticky Note: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-pre-train-fine-tune-rlhf-pipeline-sticky.svg" alt="Sticky Note: Algorithm: Pre-train → Fine-tune → RLHF Pipeline" width="30%">
 </a>
 
 
@@ -985,14 +985,14 @@ A **foundation model** (Bommasani et al., 2021) is a large neural network pre-tr
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1059,14 +1059,14 @@ FUNCTION RLHF(model, reward_model, prompts, ppo_epochs=4):
 
 ### Dry Run Trace Table: Pre-training Loss over Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-handwritten.svg" alt="Handwritten: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-diagram.svg" alt="Diagram: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-diagram.svg" alt="Diagram: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-pre-training-loss-over-steps-sticky.svg" alt="Sticky Note: Dry Run Trace Table: Pre-training Loss over Steps" width="30%">
 </a>
 
 
@@ -1084,14 +1084,14 @@ FUNCTION RLHF(model, reward_model, prompts, ppo_epochs=4):
 
 ### Python Implementation: Simplified Fine-tuning Loop
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-handwritten.svg" alt="Handwritten: Python Implementation: Simplified Fine-tuning Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-handwritten.svg" alt="Handwritten: Python Implementation: Simplified Fine-tuning Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-diagram.svg" alt="Diagram: Python Implementation: Simplified Fine-tuning Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-diagram.svg" alt="Diagram: Python Implementation: Simplified Fine-tuning Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-sticky.svg" alt="Sticky Note: Python Implementation: Simplified Fine-tuning Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-fine-tuning-loop-sticky.svg" alt="Sticky Note: Python Implementation: Simplified Fine-tuning Loop" width="30%">
 </a>
 
 
@@ -1153,14 +1153,14 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1174,14 +1174,14 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1195,14 +1195,14 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1219,14 +1219,14 @@ fine_tuned, losses = simple_fine_tune(base_weights, train_examples)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1234,14 +1234,14 @@ Imagine a person who speaks English and also understands visual language — the
 
 ### What is Multimodal AI?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-handwritten.svg" alt="Handwritten: What is Multimodal AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-handwritten.svg" alt="Handwritten: What is Multimodal AI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-diagram.svg" alt="Diagram: What is Multimodal AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-diagram.svg" alt="Diagram: What is Multimodal AI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-sticky.svg" alt="Sticky Note: What is Multimodal AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-multimodal-ai-sticky.svg" alt="Sticky Note: What is Multimodal AI?" width="30%">
 </a>
 
 
@@ -1257,14 +1257,14 @@ Multimodal models process and generate content across multiple data types. Key a
 
 ### Algorithm: CLIP Contrastive Pre-training
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-handwritten.svg" alt="Handwritten: Algorithm: CLIP Contrastive Pre-training" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-handwritten.svg" alt="Handwritten: Algorithm: CLIP Contrastive Pre-training" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-diagram.svg" alt="Diagram: Algorithm: CLIP Contrastive Pre-training" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-diagram.svg" alt="Diagram: Algorithm: CLIP Contrastive Pre-training" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-sticky.svg" alt="Sticky Note: Algorithm: CLIP Contrastive Pre-training" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-clip-contrastive-pre-training-sticky.svg" alt="Sticky Note: Algorithm: CLIP Contrastive Pre-training" width="30%">
 </a>
 
 
@@ -1288,14 +1288,14 @@ Multimodal models process and generate content across multiple data types. Key a
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1329,14 +1329,14 @@ FUNCTION CLIP_TRAIN_BATCH(images, texts, img_encoder, txt_encoder, tau):
 
 ### Dry Run Trace Table: CLIP Contrastive Loss
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-handwritten.svg" alt="Handwritten: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-handwritten.svg" alt="Handwritten: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-diagram.svg" alt="Diagram: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-diagram.svg" alt="Diagram: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-sticky.svg" alt="Sticky Note: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-clip-contrastive-loss-sticky.svg" alt="Sticky Note: Dry Run Trace Table: CLIP Contrastive Loss" width="30%">
 </a>
 
 
@@ -1369,14 +1369,14 @@ If off-diagonal entries were higher (e.g., "dog" matched "cat" text), loss would
 
 ### Python Implementation: CLIP-style Contrastive Loss
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-handwritten.svg" alt="Handwritten: Python Implementation: CLIP-style Contrastive Loss" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-handwritten.svg" alt="Handwritten: Python Implementation: CLIP-style Contrastive Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-diagram.svg" alt="Diagram: Python Implementation: CLIP-style Contrastive Loss" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-diagram.svg" alt="Diagram: Python Implementation: CLIP-style Contrastive Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-sticky.svg" alt="Sticky Note: Python Implementation: CLIP-style Contrastive Loss" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-clip-style-contrastive-loss-sticky.svg" alt="Sticky Note: Python Implementation: CLIP-style Contrastive Loss" width="30%">
 </a>
 
 
@@ -1429,14 +1429,14 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1451,14 +1451,14 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1472,14 +1472,14 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1497,14 +1497,14 @@ print(f"Contrastive loss (shuffled): {loss_bad:.4f}")
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1512,14 +1512,14 @@ A **personal assistant** doesn't just answer questions — they pick up the phon
 
 ### What are AI Agents?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-handwritten.svg" alt="Handwritten: What are AI Agents?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-handwritten.svg" alt="Handwritten: What are AI Agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-diagram.svg" alt="Diagram: What are AI Agents?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-diagram.svg" alt="Diagram: What are AI Agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-sticky.svg" alt="Sticky Note: What are AI Agents?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-ai-agents-sticky.svg" alt="Sticky Note: What are AI Agents?" width="30%">
 </a>
 
 
@@ -1537,14 +1537,14 @@ An AI agent is a system where an LLM controls the execution loop: it perceives c
 
 ### Algorithm: ReAct (Reason + Act)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-handwritten.svg" alt="Handwritten: Algorithm: ReAct (Reason + Act)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-handwritten.svg" alt="Handwritten: Algorithm: ReAct (Reason + Act)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-diagram.svg" alt="Diagram: Algorithm: ReAct (Reason + Act)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-diagram.svg" alt="Diagram: Algorithm: ReAct (Reason + Act)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-sticky.svg" alt="Sticky Note: Algorithm: ReAct (Reason + Act)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-react-reason-act-sticky.svg" alt="Sticky Note: Algorithm: ReAct (Reason + Act)" width="30%">
 </a>
 
 
@@ -1566,14 +1566,14 @@ An AI agent is a system where an LLM controls the execution loop: it perceives c
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1606,14 +1606,14 @@ FUNCTION REACT_AGENT(query, tools, llm, max_iter=10):
 
 ### Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-handwritten.svg" alt="Handwritten: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-handwritten.svg" alt="Handwritten: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-diagram.svg" alt="Diagram: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-diagram.svg" alt="Diagram: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-sticky.svg" alt="Sticky Note: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-what-is-the-current-population-of-tokyo-and-what-is-its-area-sticky.svg" alt="Sticky Note: Dry Run Trace Table: "What is the current population of Tokyo and what is its area?"" width="30%">
 </a>
 
 
@@ -1634,14 +1634,14 @@ FUNCTION REACT_AGENT(query, tools, llm, max_iter=10):
 
 ### Python Implementation: Simple ReAct Agent
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-handwritten.svg" alt="Handwritten: Python Implementation: Simple ReAct Agent" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-handwritten.svg" alt="Handwritten: Python Implementation: Simple ReAct Agent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-diagram.svg" alt="Diagram: Python Implementation: Simple ReAct Agent" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-diagram.svg" alt="Diagram: Python Implementation: Simple ReAct Agent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-sticky.svg" alt="Sticky Note: Python Implementation: Simple ReAct Agent" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simple-react-agent-sticky.svg" alt="Sticky Note: Python Implementation: Simple ReAct Agent" width="30%">
 </a>
 
 
@@ -1718,14 +1718,14 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1740,14 +1740,14 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1761,14 +1761,14 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1787,14 +1787,14 @@ result = react_agent("What is the population of Tokyo and its area?")
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1802,14 +1802,14 @@ USB-C is a universal connector standard — any USB-C device can plug into any U
 
 ### What is MCP?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-handwritten.svg" alt="Handwritten: What is MCP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-handwritten.svg" alt="Handwritten: What is MCP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-diagram.svg" alt="Diagram: What is MCP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-diagram.svg" alt="Diagram: What is MCP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-sticky.svg" alt="Sticky Note: What is MCP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-mcp-sticky.svg" alt="Sticky Note: What is MCP?" width="30%">
 </a>
 
 
@@ -1830,14 +1830,14 @@ MCP (Model Context Protocol), introduced by Anthropic, is an open protocol that 
 
 ### Algorithm: MCP Tool Call Lifecycle
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-handwritten.svg" alt="Handwritten: Algorithm: MCP Tool Call Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-handwritten.svg" alt="Handwritten: Algorithm: MCP Tool Call Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-diagram.svg" alt="Diagram: Algorithm: MCP Tool Call Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-diagram.svg" alt="Diagram: Algorithm: MCP Tool Call Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-sticky.svg" alt="Sticky Note: Algorithm: MCP Tool Call Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-mcp-tool-call-lifecycle-sticky.svg" alt="Sticky Note: Algorithm: MCP Tool Call Lifecycle" width="30%">
 </a>
 
 
@@ -1859,14 +1859,14 @@ MCP (Model Context Protocol), introduced by Anthropic, is an open protocol that 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1918,14 +1918,14 @@ FUNCTION MCP_CLIENT(llm, server_url):
 
 ### Dry Run Trace Table: MCP Communication Flow
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-handwritten.svg" alt="Handwritten: Dry Run Trace Table: MCP Communication Flow" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-handwritten.svg" alt="Handwritten: Dry Run Trace Table: MCP Communication Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-diagram.svg" alt="Diagram: Dry Run Trace Table: MCP Communication Flow" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-diagram.svg" alt="Diagram: Dry Run Trace Table: MCP Communication Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-sticky.svg" alt="Sticky Note: Dry Run Trace Table: MCP Communication Flow" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-mcp-communication-flow-sticky.svg" alt="Sticky Note: Dry Run Trace Table: MCP Communication Flow" width="30%">
 </a>
 
 
@@ -1946,14 +1946,14 @@ FUNCTION MCP_CLIENT(llm, server_url):
 
 ### Python Implementation: Minimal MCP Server
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-handwritten.svg" alt="Handwritten: Python Implementation: Minimal MCP Server" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-handwritten.svg" alt="Handwritten: Python Implementation: Minimal MCP Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-diagram.svg" alt="Diagram: Python Implementation: Minimal MCP Server" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-diagram.svg" alt="Diagram: Python Implementation: Minimal MCP Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-sticky.svg" alt="Sticky Note: Python Implementation: Minimal MCP Server" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-server-sticky.svg" alt="Sticky Note: Python Implementation: Minimal MCP Server" width="30%">
 </a>
 
 
@@ -2028,14 +2028,14 @@ if __name__ == "__main__":
 
 ### Python Implementation: Minimal MCP Client
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-handwritten.svg" alt="Handwritten: Python Implementation: Minimal MCP Client" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-handwritten.svg" alt="Handwritten: Python Implementation: Minimal MCP Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-diagram.svg" alt="Diagram: Python Implementation: Minimal MCP Client" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-diagram.svg" alt="Diagram: Python Implementation: Minimal MCP Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-sticky.svg" alt="Sticky Note: Python Implementation: Minimal MCP Client" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-minimal-mcp-client-sticky.svg" alt="Sticky Note: Python Implementation: Minimal MCP Client" width="30%">
 </a>
 
 
@@ -2079,14 +2079,14 @@ class MCPClient:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2101,14 +2101,14 @@ class MCPClient:
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2122,14 +2122,14 @@ class MCPClient:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2149,14 +2149,14 @@ class MCPClient:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2164,14 +2164,14 @@ Imagine a **startup founder** who has a big goal ("build a profitable SaaS busin
 
 ### What are AutoGPT / Autonomous Agent Systems?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-handwritten.svg" alt="Handwritten: What are AutoGPT / Autonomous Agent Systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-handwritten.svg" alt="Handwritten: What are AutoGPT / Autonomous Agent Systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-diagram.svg" alt="Diagram: What are AutoGPT / Autonomous Agent Systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-diagram.svg" alt="Diagram: What are AutoGPT / Autonomous Agent Systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-sticky.svg" alt="Sticky Note: What are AutoGPT / Autonomous Agent Systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-autogpt-autonomous-agent-systems-sticky.svg" alt="Sticky Note: What are AutoGPT / Autonomous Agent Systems?" width="30%">
 </a>
 
 
@@ -2186,14 +2186,14 @@ AutoGPT, BabyAGI, and similar systems are **autonomous AI agents** that operate 
 
 ### Algorithm: Autonomous Agent Loop
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-handwritten.svg" alt="Handwritten: Algorithm: Autonomous Agent Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-handwritten.svg" alt="Handwritten: Algorithm: Autonomous Agent Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-diagram.svg" alt="Diagram: Algorithm: Autonomous Agent Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-diagram.svg" alt="Diagram: Algorithm: Autonomous Agent Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-sticky.svg" alt="Sticky Note: Algorithm: Autonomous Agent Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/algorithm-autonomous-agent-loop-sticky.svg" alt="Sticky Note: Algorithm: Autonomous Agent Loop" width="30%">
 </a>
 
 
@@ -2216,14 +2216,14 @@ AutoGPT, BabyAGI, and similar systems are **autonomous AI agents** that operate 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2269,14 +2269,14 @@ FUNCTION AUTONOMOUS_AGENT(goal, tools, max_steps=20):
 
 ### Dry Run Trace Table: "Plan a birthday party"
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-handwritten.svg" alt="Handwritten: Dry Run Trace Table: "Plan a birthday party"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-handwritten.svg" alt="Handwritten: Dry Run Trace Table: "Plan a birthday party"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-diagram.svg" alt="Diagram: Dry Run Trace Table: "Plan a birthday party"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-diagram.svg" alt="Diagram: Dry Run Trace Table: "Plan a birthday party"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-sticky.svg" alt="Sticky Note: Dry Run Trace Table: "Plan a birthday party"" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/dry-run-trace-table-plan-a-birthday-party-sticky.svg" alt="Sticky Note: Dry Run Trace Table: "Plan a birthday party"" width="30%">
 </a>
 
 
@@ -2296,14 +2296,14 @@ FUNCTION AUTONOMOUS_AGENT(goal, tools, max_steps=20):
 
 ### Python Implementation: Simplified AutoGPT
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-handwritten.svg" alt="Handwritten: Python Implementation: Simplified AutoGPT" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-handwritten.svg" alt="Handwritten: Python Implementation: Simplified AutoGPT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-diagram.svg" alt="Diagram: Python Implementation: Simplified AutoGPT" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-diagram.svg" alt="Diagram: Python Implementation: Simplified AutoGPT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-sticky.svg" alt="Sticky Note: Python Implementation: Simplified AutoGPT" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/python-implementation-simplified-autogpt-sticky.svg" alt="Sticky Note: Python Implementation: Simplified AutoGPT" width="30%">
 </a>
 
 
@@ -2395,14 +2395,14 @@ print("\n" + final)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2418,14 +2418,14 @@ print("\n" + final)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2439,14 +2439,14 @@ print("\n" + final)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2475,14 +2475,14 @@ print("\n" + final)
 
 ### Detailed Comparison Dimensions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-handwritten.svg" alt="Handwritten: Detailed Comparison Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-handwritten.svg" alt="Handwritten: Detailed Comparison Dimensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-diagram.svg" alt="Diagram: Detailed Comparison Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-diagram.svg" alt="Diagram: Detailed Comparison Dimensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-sticky.svg" alt="Sticky Note: Detailed Comparison Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/detailed-comparison-dimensions-sticky.svg" alt="Sticky Note: Detailed Comparison Dimensions" width="30%">
 </a>
 
 
@@ -2518,14 +2518,14 @@ print("\n" + final)
 
 ### Key Architectural Differences Explained
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-handwritten.svg" alt="Handwritten: Key Architectural Differences Explained" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-handwritten.svg" alt="Handwritten: Key Architectural Differences Explained" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-diagram.svg" alt="Diagram: Key Architectural Differences Explained" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-diagram.svg" alt="Diagram: Key Architectural Differences Explained" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-sticky.svg" alt="Sticky Note: Key Architectural Differences Explained" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/key-architectural-differences-explained-sticky.svg" alt="Sticky Note: Key Architectural Differences Explained" width="30%">
 </a>
 
 
@@ -2541,14 +2541,14 @@ print("\n" + final)
 
 ### Q1: What is prompt engineering and what are the key techniques?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-handwritten.svg" alt="Handwritten: What is prompt engineering and what are the key techniques?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-handwritten.svg" alt="Handwritten: What is prompt engineering and what are the key techniques?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-diagram.svg" alt="Diagram: What is prompt engineering and what are the key techniques?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-diagram.svg" alt="Diagram: What is prompt engineering and what are the key techniques?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-sticky.svg" alt="Sticky Note: What is prompt engineering and what are the key techniques?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-is-prompt-engineering-and-what-are-the-key-techniques-sticky.svg" alt="Sticky Note: What is prompt engineering and what are the key techniques?" width="30%">
 </a>
 
 
@@ -2567,14 +2567,14 @@ print("\n" + final)
 
 ### Q2: Explain RAG (Retrieval-Augmented Generation) patterns.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-handwritten.svg" alt="Handwritten: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-handwritten.svg" alt="Handwritten: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-diagram.svg" alt="Diagram: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-diagram.svg" alt="Diagram: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-sticky.svg" alt="Sticky Note: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/explain-rag-retrieval-augmented-generation-patterns-sticky.svg" alt="Sticky Note: Explain RAG (Retrieval-Augmented Generation) patterns." width="30%">
 </a>
 
 
@@ -2615,14 +2615,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### Q3: How do you design an AI agent system for production?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-handwritten.svg" alt="Handwritten: How do you design an AI agent system for production?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-handwritten.svg" alt="Handwritten: How do you design an AI agent system for production?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-diagram.svg" alt="Diagram: How do you design an AI agent system for production?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-diagram.svg" alt="Diagram: How do you design an AI agent system for production?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-sticky.svg" alt="Sticky Note: How do you design an AI agent system for production?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-do-you-design-an-ai-agent-system-for-production-sticky.svg" alt="Sticky Note: How do you design an AI agent system for production?" width="30%">
 </a>
 
 
@@ -2650,14 +2650,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### Q4: What are safety considerations in modern AI systems?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-handwritten.svg" alt="Handwritten: What are safety considerations in modern AI systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-handwritten.svg" alt="Handwritten: What are safety considerations in modern AI systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-diagram.svg" alt="Diagram: What are safety considerations in modern AI systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-diagram.svg" alt="Diagram: What are safety considerations in modern AI systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-sticky.svg" alt="Sticky Note: What are safety considerations in modern AI systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/what-are-safety-considerations-in-modern-ai-systems-sticky.svg" alt="Sticky Note: What are safety considerations in modern AI systems?" width="30%">
 </a>
 
 
@@ -2692,14 +2692,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 1. ChatGPT (OpenAI)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-handwritten.svg" alt="Handwritten: 1. ChatGPT (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-handwritten.svg" alt="Handwritten: 1. ChatGPT (OpenAI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-diagram.svg" alt="Diagram: 1. ChatGPT (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-diagram.svg" alt="Diagram: 1. ChatGPT (OpenAI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-sticky.svg" alt="Sticky Note: 1. ChatGPT (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/1-chatgpt-openai-sticky.svg" alt="Sticky Note: 1. ChatGPT (OpenAI)" width="30%">
 </a>
 
 
@@ -2716,14 +2716,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 2. GitHub Copilot (Microsoft/GitHub)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-handwritten.svg" alt="Handwritten: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-handwritten.svg" alt="Handwritten: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-diagram.svg" alt="Diagram: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-diagram.svg" alt="Diagram: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-sticky.svg" alt="Sticky Note: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/2-github-copilot-microsoft-github-sticky.svg" alt="Sticky Note: 2. GitHub Copilot (Microsoft/GitHub)" width="30%">
 </a>
 
 
@@ -2740,14 +2740,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 3. Midjourney
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-handwritten.svg" alt="Handwritten: 3. Midjourney" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-handwritten.svg" alt="Handwritten: 3. Midjourney" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-diagram.svg" alt="Diagram: 3. Midjourney" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-diagram.svg" alt="Diagram: 3. Midjourney" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-sticky.svg" alt="Sticky Note: 3. Midjourney" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/3-midjourney-sticky.svg" alt="Sticky Note: 3. Midjourney" width="30%">
 </a>
 
 
@@ -2765,14 +2765,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 4. AutoGPT (Significant Gravitas)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-handwritten.svg" alt="Handwritten: 4. AutoGPT (Significant Gravitas)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-handwritten.svg" alt="Handwritten: 4. AutoGPT (Significant Gravitas)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-diagram.svg" alt="Diagram: 4. AutoGPT (Significant Gravitas)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-diagram.svg" alt="Diagram: 4. AutoGPT (Significant Gravitas)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-sticky.svg" alt="Sticky Note: 4. AutoGPT (Significant Gravitas)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/4-autogpt-significant-gravitas-sticky.svg" alt="Sticky Note: 4. AutoGPT (Significant Gravitas)" width="30%">
 </a>
 
 
@@ -2789,14 +2789,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### 5. Claude (Anthropic)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-handwritten.svg" alt="Handwritten: 5. Claude (Anthropic)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-handwritten.svg" alt="Handwritten: 5. Claude (Anthropic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-diagram.svg" alt="Diagram: 5. Claude (Anthropic)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-diagram.svg" alt="Diagram: 5. Claude (Anthropic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-sticky.svg" alt="Sticky Note: 5. Claude (Anthropic)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/5-claude-anthropic-sticky.svg" alt="Sticky Note: 5. Claude (Anthropic)" width="30%">
 </a>
 
 
@@ -2813,14 +2813,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### How These Systems Use Modern AI Concepts
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-handwritten.svg" alt="Handwritten: How These Systems Use Modern AI Concepts" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-handwritten.svg" alt="Handwritten: How These Systems Use Modern AI Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-diagram.svg" alt="Diagram: How These Systems Use Modern AI Concepts" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-diagram.svg" alt="Diagram: How These Systems Use Modern AI Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-sticky.svg" alt="Sticky Note: How These Systems Use Modern AI Concepts" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/how-these-systems-use-modern-ai-concepts-sticky.svg" alt="Sticky Note: How These Systems Use Modern AI Concepts" width="30%">
 </a>
 
 
@@ -2998,14 +2998,14 @@ Query → Agent → (Search → Critic → Refine) loop → Answer
 
 ### Research Questions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-handwritten.svg" alt="Handwritten: Research Questions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-handwritten.svg" alt="Handwritten: Research Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-diagram.svg" alt="Diagram: Research Questions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-diagram.svg" alt="Diagram: Research Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-sticky.svg" alt="Sticky Note: Research Questions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/17-modern-ai/research-questions-sticky.svg" alt="Sticky Note: Research Questions" width="30%">
 </a>
 
 

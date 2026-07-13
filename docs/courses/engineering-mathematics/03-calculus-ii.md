@@ -41,14 +41,14 @@ flowchart LR
 
 ### 3.1 Functions of Several Variables
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-handwritten.svg" alt="Handwritten: 3.1 Functions of Several Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-handwritten.svg" alt="Handwritten: 3.1 Functions of Several Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-diagram.svg" alt="Diagram: 3.1 Functions of Several Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-diagram.svg" alt="Diagram: 3.1 Functions of Several Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-sticky.svg" alt="Sticky Note: 3.1 Functions of Several Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-sticky.svg" alt="Sticky Note: 3.1 Functions of Several Variables" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ A function $f: \mathbb{R}^n \to \mathbb{R}$ assigns a real number to each point 
 
 ### 3.2 Partial Derivatives
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-handwritten.svg" alt="Handwritten: 3.2 Partial Derivatives" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-handwritten.svg" alt="Handwritten: 3.2 Partial Derivatives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-diagram.svg" alt="Diagram: 3.2 Partial Derivatives" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-diagram.svg" alt="Diagram: 3.2 Partial Derivatives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-sticky.svg" alt="Sticky Note: 3.2 Partial Derivatives" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-sticky.svg" alt="Sticky Note: 3.2 Partial Derivatives" width="30%">
 </a>
 
 
@@ -95,14 +95,14 @@ $$\frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 f}{\partial y \p
 
 ### 3.3 Gradient and Directional Derivatives
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-handwritten.svg" alt="Handwritten: 3.3 Gradient and Directional Derivatives" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-handwritten.svg" alt="Handwritten: 3.3 Gradient and Directional Derivatives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-diagram.svg" alt="Diagram: 3.3 Gradient and Directional Derivatives" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-diagram.svg" alt="Diagram: 3.3 Gradient and Directional Derivatives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-sticky.svg" alt="Sticky Note: 3.3 Gradient and Directional Derivatives" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-sticky.svg" alt="Sticky Note: 3.3 Gradient and Directional Derivatives" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ This is maximized when $\mathbf{u}$ is parallel to $\nabla f$, giving $D_{\mathb
 
 ### 3.4 Chain Rule for Multivariable Functions
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-handwritten.svg" alt="Handwritten: 3.4 Chain Rule for Multivariable Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-handwritten.svg" alt="Handwritten: 3.4 Chain Rule for Multivariable Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-diagram.svg" alt="Diagram: 3.4 Chain Rule for Multivariable Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-diagram.svg" alt="Diagram: 3.4 Chain Rule for Multivariable Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-sticky.svg" alt="Sticky Note: 3.4 Chain Rule for Multivariable Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-sticky.svg" alt="Sticky Note: 3.4 Chain Rule for Multivariable Functions" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ $$\frac{\partial z}{\partial t} = \frac{\partial f}{\partial x} \frac{\partial x
 
 ### 3.5 Tangent Planes and Linear Approximation
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-handwritten.svg" alt="Handwritten: 3.5 Tangent Planes and Linear Approximation" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-handwritten.svg" alt="Handwritten: 3.5 Tangent Planes and Linear Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-diagram.svg" alt="Diagram: 3.5 Tangent Planes and Linear Approximation" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-diagram.svg" alt="Diagram: 3.5 Tangent Planes and Linear Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-sticky.svg" alt="Sticky Note: 3.5 Tangent Planes and Linear Approximation" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-sticky.svg" alt="Sticky Note: 3.5 Tangent Planes and Linear Approximation" width="30%">
 </a>
 
 
@@ -167,14 +167,14 @@ $$z - f(a,b) = f_x(a,b)(x - a) + f_y(a,b)(y - b)$$
 
 ### 3.6 Multivariable Optimization
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-handwritten.svg" alt="Handwritten: 3.6 Multivariable Optimization" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-handwritten.svg" alt="Handwritten: 3.6 Multivariable Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-diagram.svg" alt="Diagram: 3.6 Multivariable Optimization" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-diagram.svg" alt="Diagram: 3.6 Multivariable Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-sticky.svg" alt="Sticky Note: 3.6 Multivariable Optimization" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-sticky.svg" alt="Sticky Note: 3.6 Multivariable Optimization" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ where $\lambda$ is the Lagrange multiplier. This gives a system of 3 equations i
 
 ### 3.7 Double Integrals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-handwritten.svg" alt="Handwritten: 3.7 Double Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-handwritten.svg" alt="Handwritten: 3.7 Double Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-diagram.svg" alt="Diagram: 3.7 Double Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-diagram.svg" alt="Diagram: 3.7 Double Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-sticky.svg" alt="Sticky Note: 3.7 Double Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-sticky.svg" alt="Sticky Note: 3.7 Double Integrals" width="30%">
 </a>
 
 
@@ -229,14 +229,14 @@ $$\iint_R f(x,y)\,dA = \int_a^b \int_c^d f(x,y)\,dy\,dx = \int_c^d \int_a^b f(x,
 
 ### 3.8 Triple Integrals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-handwritten.svg" alt="Handwritten: 3.8 Triple Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-handwritten.svg" alt="Handwritten: 3.8 Triple Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-diagram.svg" alt="Diagram: 3.8 Triple Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-diagram.svg" alt="Diagram: 3.8 Triple Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-sticky.svg" alt="Sticky Note: 3.8 Triple Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-sticky.svg" alt="Sticky Note: 3.8 Triple Integrals" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@ $$\iint_R f(x,y)\,dA = \int_a^b \int_c^d f(x,y)\,dy\,dx = \int_c^d \int_a^b f(x,
 
 ### 3.9 Change of Variables (Coordinate Transformations)
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-handwritten.svg" alt="Handwritten: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-handwritten.svg" alt="Handwritten: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-diagram.svg" alt="Diagram: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-diagram.svg" alt="Diagram: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-sticky.svg" alt="Sticky Note: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-sticky.svg" alt="Sticky Note: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ The Jacobian determinant gives the factor by which area/volume scales under the 
 
 ### 3.10 Vector Fields
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-handwritten.svg" alt="Handwritten: 3.10 Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-handwritten.svg" alt="Handwritten: 3.10 Vector Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-diagram.svg" alt="Diagram: 3.10 Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-diagram.svg" alt="Diagram: 3.10 Vector Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-sticky.svg" alt="Sticky Note: 3.10 Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-sticky.svg" alt="Sticky Note: 3.10 Vector Fields" width="30%">
 </a>
 
 
@@ -331,14 +331,14 @@ $$\nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k
 
 ### 3.11 Line Integrals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-handwritten.svg" alt="Handwritten: 3.11 Line Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-handwritten.svg" alt="Handwritten: 3.11 Line Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-diagram.svg" alt="Diagram: 3.11 Line Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-diagram.svg" alt="Diagram: 3.11 Line Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-sticky.svg" alt="Sticky Note: 3.11 Line Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-sticky.svg" alt="Sticky Note: 3.11 Line Integrals" width="30%">
 </a>
 
 
@@ -362,14 +362,14 @@ The integral depends only on endpoints, not the path.
 
 ### 3.12 Surface Integrals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-handwritten.svg" alt="Handwritten: 3.12 Surface Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-handwritten.svg" alt="Handwritten: 3.12 Surface Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-diagram.svg" alt="Diagram: 3.12 Surface Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-diagram.svg" alt="Diagram: 3.12 Surface Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-sticky.svg" alt="Sticky Note: 3.12 Surface Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-sticky.svg" alt="Sticky Note: 3.12 Surface Integrals" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ where $\mathbf{n}$ is the unit normal vector.
 
 ### 3.13 Fundamental Theorems of Vector Calculus
 
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-handwritten.svg" alt="Handwritten: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-handwritten.svg" alt="Handwritten: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-diagram.svg" alt="Diagram: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-diagram.svg" alt="Diagram: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-sticky.svg" alt="Sticky Note: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-sticky.svg" alt="Sticky Note: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
 </a>
 
 

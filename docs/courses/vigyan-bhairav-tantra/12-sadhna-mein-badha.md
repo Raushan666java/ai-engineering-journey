@@ -74,14 +74,14 @@ flowchart TB
 
 ### "आलस्य को दबाओ मत — उसे समझो"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ flowchart TB
 
 ### ओशो की आलस्य-समाधान विधि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की आलस्य-समाधान विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की आलस्य-समाधान विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की आलस्य-समाधान विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की आलस्य-समाधान विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की आलस्य-समाधान विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की आलस्य-समाधान विधि" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ flowchart TB
 
 ### एक कहानी — मुल्ला नसरुद्दीन और आलस्य
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ flowchart TB
 
 ### "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
 </a>
 
 
@@ -173,14 +173,14 @@ flowchart TB
 
 ### ओशो की संदेह-समाधान विधि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की संदेह-समाधान विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की संदेह-समाधान विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की संदेह-समाधान विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की संदेह-समाधान विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की संदेह-समाधान विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की संदेह-समाधान विधि" width="30%">
 </a>
 
 
@@ -197,14 +197,14 @@ flowchart TB
 
 ### एक सूफी कहानी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक सूफी कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक सूफी कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक सूफी कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक सूफी कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक सूफी कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक सूफी कहानी" width="30%">
 </a>
 
 
@@ -222,14 +222,14 @@ flowchart TB
 
 ### "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
 </a>
 
 
@@ -247,14 +247,14 @@ flowchart TB
 
 ### ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ flowchart TB
 
 ### एक ज़ेन कहानी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक ज़ेन कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी" width="30%">
 </a>
 
 
@@ -293,14 +293,14 @@ flowchart TB
 
 ### "साधना को व्यवसाय मत बनाओ"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "साधना को व्यवसाय मत बनाओ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "साधना को व्यवसाय मत बनाओ"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "साधना को व्यवसाय मत बनाओ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "साधना को व्यवसाय मत बनाओ"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "साधना को व्यवसाय मत बनाओ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "साधना को व्यवसाय मत बनाओ"" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ flowchart TB
 
 ### ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ flowchart TB
 
 ### एक कहानी — महात्मा बुद्ध और तानपूरा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
 </a>
 
 
@@ -396,14 +396,14 @@ flowchart TB
 
 ### "अनुभवों को मत पकड़ो — उन्हें जाने दो"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
 </a>
 
 
@@ -422,14 +422,14 @@ flowchart TB
 
 ### ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
 </a>
 
 
@@ -448,14 +448,14 @@ flowchart TB
 
 ### एक ज़ेन कहानी — दसवाँ बैल
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
 </a>
 
 
@@ -473,14 +473,14 @@ flowchart TB
 
 ### पाँचों बाधाओं का एक ही समाधान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: पाँचों बाधाओं का एक ही समाधान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: पाँचों बाधाओं का एक ही समाधान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: पाँचों बाधाओं का एक ही समाधान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: पाँचों बाधाओं का एक ही समाधान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: पाँचों बाधाओं का एक ही समाधान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: पाँचों बाधाओं का एक ही समाधान" width="30%">
 </a>
 
 
@@ -515,14 +515,14 @@ flowchart TB
 
 ### ओशो की "देखो" कहानी — एक आदमी और उसका गधा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
 </a>
 
 
@@ -1137,14 +1137,14 @@ demonstrateSadhanaObstacleTool();
 
 ### अभ्यास १: अपनी मुख्य बाधा पहचानें
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
 </a>
 
 
@@ -1152,14 +1152,14 @@ demonstrateSadhanaObstacleTool();
 
 ### अभ्यास २: पाँच मिनट का नियम — ७ दिन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
 </a>
 
 
@@ -1167,14 +1167,14 @@ demonstrateSadhanaObstacleTool();
 
 ### अभ्यास ३: चेतन निद्रा — ७ दिन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
 </a>
 
 
@@ -1182,14 +1182,14 @@ demonstrateSadhanaObstacleTool();
 
 ### अभ्यास ४: साधना से छुट्टी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ४: साधना से छुट्टी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ४: साधना से छुट्टी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ४: साधना से छुट्टी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ४: साधना से छुट्टी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ४: साधना से छुट्टी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ४: साधना से छुट्टी" width="30%">
 </a>
 
 
@@ -1197,14 +1197,14 @@ demonstrateSadhanaObstacleTool();
 
 ### अभ्यास ५: अनुभव-साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ५: अनुभव-साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ५: अनुभव-साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ५: अनुभव-साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ५: अनुभव-साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ५: अनुभव-साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ५: अनुभव-साक्षी" width="30%">
 </a>
 
 
@@ -1212,14 +1212,14 @@ demonstrateSadhanaObstacleTool();
 
 ### अभ्यास ६: समूह चर्चा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
 
 

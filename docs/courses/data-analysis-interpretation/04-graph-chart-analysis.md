@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 4.1 Advanced Graph Types — Overview
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-handwritten.svg" alt="Handwritten: 4.1 Advanced Graph Types — Overview" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-handwritten.svg" alt="Handwritten: 4.1 Advanced Graph Types — Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-diagram.svg" alt="Diagram: 4.1 Advanced Graph Types — Overview" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-diagram.svg" alt="Diagram: 4.1 Advanced Graph Types — Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-sticky.svg" alt="Sticky Note: 4.1 Advanced Graph Types — Overview" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-1-advanced-graph-types-overview-sticky.svg" alt="Sticky Note: 4.1 Advanced Graph Types — Overview" width="30%">
 </a>
 
 
@@ -54,14 +54,14 @@ mindmap
 
 ### 4.2 Radar / Spider Charts
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-handwritten.svg" alt="Handwritten: 4.2 Radar / Spider Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-handwritten.svg" alt="Handwritten: 4.2 Radar / Spider Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-diagram.svg" alt="Diagram: 4.2 Radar / Spider Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-diagram.svg" alt="Diagram: 4.2 Radar / Spider Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-sticky.svg" alt="Sticky Note: 4.2 Radar / Spider Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-2-radar-spider-charts-sticky.svg" alt="Sticky Note: 4.2 Radar / Spider Charts" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ A radar chart displays multivariate data on axes starting from the same point. E
 
 ### 4.3 Bubble Charts
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-handwritten.svg" alt="Handwritten: 4.3 Bubble Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-handwritten.svg" alt="Handwritten: 4.3 Bubble Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-diagram.svg" alt="Diagram: 4.3 Bubble Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-diagram.svg" alt="Diagram: 4.3 Bubble Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-sticky.svg" alt="Sticky Note: 4.3 Bubble Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-3-bubble-charts-sticky.svg" alt="Sticky Note: 4.3 Bubble Charts" width="30%">
 </a>
 
 
@@ -107,14 +107,14 @@ A bubble chart displays three dimensions of data: x-axis (horizontal), y-axis (v
 
 ### 4.4 Waterfall Charts
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-handwritten.svg" alt="Handwritten: 4.4 Waterfall Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-handwritten.svg" alt="Handwritten: 4.4 Waterfall Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-diagram.svg" alt="Diagram: 4.4 Waterfall Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-diagram.svg" alt="Diagram: 4.4 Waterfall Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-sticky.svg" alt="Sticky Note: 4.4 Waterfall Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-4-waterfall-charts-sticky.svg" alt="Sticky Note: 4.4 Waterfall Charts" width="30%">
 </a>
 
 
@@ -133,14 +133,14 @@ A waterfall chart shows how an initial value is affected by a series of positive
 
 ### 4.5 Gantt Charts
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-handwritten.svg" alt="Handwritten: 4.5 Gantt Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-handwritten.svg" alt="Handwritten: 4.5 Gantt Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-diagram.svg" alt="Diagram: 4.5 Gantt Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-diagram.svg" alt="Diagram: 4.5 Gantt Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-sticky.svg" alt="Sticky Note: 4.5 Gantt Charts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-5-gantt-charts-sticky.svg" alt="Sticky Note: 4.5 Gantt Charts" width="30%">
 </a>
 
 
@@ -159,14 +159,14 @@ A Gantt chart shows a project schedule with tasks listed vertically and time rep
 
 ### 4.6 Heat Maps
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-handwritten.svg" alt="Handwritten: 4.6 Heat Maps" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-handwritten.svg" alt="Handwritten: 4.6 Heat Maps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-diagram.svg" alt="Diagram: 4.6 Heat Maps" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-diagram.svg" alt="Diagram: 4.6 Heat Maps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-sticky.svg" alt="Sticky Note: 4.6 Heat Maps" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-6-heat-maps-sticky.svg" alt="Sticky Note: 4.6 Heat Maps" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ A heat map uses colour intensity to represent data values in a matrix format.
 
 ### 4.7 Box Plots
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-handwritten.svg" alt="Handwritten: 4.7 Box Plots" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-handwritten.svg" alt="Handwritten: 4.7 Box Plots" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-diagram.svg" alt="Diagram: 4.7 Box Plots" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-diagram.svg" alt="Diagram: 4.7 Box Plots" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-sticky.svg" alt="Sticky Note: 4.7 Box Plots" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-7-box-plots-sticky.svg" alt="Sticky Note: 4.7 Box Plots" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ flowchart LR
 
 ### 4.8 Scatter Plots with Trend Lines
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-handwritten.svg" alt="Handwritten: 4.8 Scatter Plots with Trend Lines" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-handwritten.svg" alt="Handwritten: 4.8 Scatter Plots with Trend Lines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-diagram.svg" alt="Diagram: 4.8 Scatter Plots with Trend Lines" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-diagram.svg" alt="Diagram: 4.8 Scatter Plots with Trend Lines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-sticky.svg" alt="Sticky Note: 4.8 Scatter Plots with Trend Lines" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-8-scatter-plots-with-trend-lines-sticky.svg" alt="Sticky Note: 4.8 Scatter Plots with Trend Lines" width="30%">
 </a>
 
 
@@ -258,14 +258,14 @@ A scatter plot shows the relationship between two continuous variables. A trend 
 
 ### 4.9 Logarithmic Scales
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-handwritten.svg" alt="Handwritten: 4.9 Logarithmic Scales" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-handwritten.svg" alt="Handwritten: 4.9 Logarithmic Scales" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-diagram.svg" alt="Diagram: 4.9 Logarithmic Scales" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-diagram.svg" alt="Diagram: 4.9 Logarithmic Scales" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-sticky.svg" alt="Sticky Note: 4.9 Logarithmic Scales" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-9-logarithmic-scales-sticky.svg" alt="Sticky Note: 4.9 Logarithmic Scales" width="30%">
 </a>
 
 
@@ -286,14 +286,14 @@ A logarithmic scale uses powers of 10 (or other base) instead of linear incremen
 
 ### 4.10 Index Numbers and Base Year Shifts
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-handwritten.svg" alt="Handwritten: 4.10 Index Numbers and Base Year Shifts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-handwritten.svg" alt="Handwritten: 4.10 Index Numbers and Base Year Shifts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-diagram.svg" alt="Diagram: 4.10 Index Numbers and Base Year Shifts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-diagram.svg" alt="Diagram: 4.10 Index Numbers and Base Year Shifts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-sticky.svg" alt="Sticky Note: 4.10 Index Numbers and Base Year Shifts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-10-index-numbers-and-base-year-shifts-sticky.svg" alt="Sticky Note: 4.10 Index Numbers and Base Year Shifts" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ A logarithmic scale uses powers of 10 (or other base) instead of linear incremen
 
 ### 4.11 Line + Bar Combo Charts with Dual Axes
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-handwritten.svg" alt="Handwritten: 4.11 Line + Bar Combo Charts with Dual Axes" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-handwritten.svg" alt="Handwritten: 4.11 Line + Bar Combo Charts with Dual Axes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-diagram.svg" alt="Diagram: 4.11 Line + Bar Combo Charts with Dual Axes" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-diagram.svg" alt="Diagram: 4.11 Line + Bar Combo Charts with Dual Axes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-sticky.svg" alt="Sticky Note: 4.11 Line + Bar Combo Charts with Dual Axes" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-11-line-bar-combo-charts-with-dual-axes-sticky.svg" alt="Sticky Note: 4.11 Line + Bar Combo Charts with Dual Axes" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ Combo charts combine a bar graph (usually for volume/frequency) with a line char
 
 ### 4.12 Matching Graphs to Data Descriptions
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-handwritten.svg" alt="Handwritten: 4.12 Matching Graphs to Data Descriptions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-handwritten.svg" alt="Handwritten: 4.12 Matching Graphs to Data Descriptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-diagram.svg" alt="Diagram: 4.12 Matching Graphs to Data Descriptions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-diagram.svg" alt="Diagram: 4.12 Matching Graphs to Data Descriptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-sticky.svg" alt="Sticky Note: 4.12 Matching Graphs to Data Descriptions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/04-graph-chart-analysis/4-12-matching-graphs-to-data-descriptions-sticky.svg" alt="Sticky Note: 4.12 Matching Graphs to Data Descriptions" width="30%">
 </a>
 
 
@@ -1216,4 +1216,4 @@ class LineChartTrendAnalyzer {
 
 
 ## Summary Data Interpretation*
-
+

@@ -90,14 +90,14 @@ flowchart TD
 
 ### 1.1 Docker Compose
 
-<a href="../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-handwritten.svg" alt="Handwritten: 1.1 Docker Compose" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-handwritten.svg" alt="Handwritten: 1.1 Docker Compose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-diagram.svg" alt="Diagram: 1.1 Docker Compose" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-diagram.svg" alt="Diagram: 1.1 Docker Compose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-sticky.svg" alt="Sticky Note: 1.1 Docker Compose" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-1-docker-compose-sticky.svg" alt="Sticky Note: 1.1 Docker Compose" width="30%">
 </a>
 
 
@@ -172,14 +172,14 @@ Keycloak will be available at `http://localhost:8080`. Log in to the admin conso
 
 ### 1.2 Realm Configuration
 
-<a href="../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-handwritten.svg" alt="Handwritten: 1.2 Realm Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-handwritten.svg" alt="Handwritten: 1.2 Realm Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-diagram.svg" alt="Diagram: 1.2 Realm Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-diagram.svg" alt="Diagram: 1.2 Realm Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-sticky.svg" alt="Sticky Note: 1.2 Realm Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-2-realm-configuration-sticky.svg" alt="Sticky Note: 1.2 Realm Configuration" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ Save as `keycloak-data/realms/demo-engineering-realm.json` for auto-import on st
 
 ### 1.3 Client Configuration
 
-<a href="../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-handwritten.svg" alt="Handwritten: 1.3 Client Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-handwritten.svg" alt="Handwritten: 1.3 Client Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-diagram.svg" alt="Diagram: 1.3 Client Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-diagram.svg" alt="Diagram: 1.3 Client Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-sticky.svg" alt="Sticky Note: 1.3 Client Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-3-client-configuration-sticky.svg" alt="Sticky Note: 1.3 Client Configuration" width="30%">
 </a>
 
 
@@ -296,14 +296,14 @@ A **client** represents an application or service that requests authentication.
 
 ### 1.4 Users, Roles, and Groups
 
-<a href="../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-handwritten.svg" alt="Handwritten: 1.4 Users, Roles, and Groups" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-handwritten.svg" alt="Handwritten: 1.4 Users, Roles, and Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-diagram.svg" alt="Diagram: 1.4 Users, Roles, and Groups" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-diagram.svg" alt="Diagram: 1.4 Users, Roles, and Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-sticky.svg" alt="Sticky Note: 1.4 Users, Roles, and Groups" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-4-users-roles-and-groups-sticky.svg" alt="Sticky Note: 1.4 Users, Roles, and Groups" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ Realm Roles:
 
 ### 1.5 Groups
 
-<a href="../../assets/images/diagrams/java/28-keycloak/1-5-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-5-groups-handwritten.svg" alt="Handwritten: 1.5 Groups" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-5-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-5-groups-handwritten.svg" alt="Handwritten: 1.5 Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-5-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-5-groups-diagram.svg" alt="Diagram: 1.5 Groups" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-5-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-5-groups-diagram.svg" alt="Diagram: 1.5 Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-5-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-5-groups-sticky.svg" alt="Sticky Note: 1.5 Groups" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-5-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-5-groups-sticky.svg" alt="Sticky Note: 1.5 Groups" width="30%">
 </a>
 
 
@@ -448,14 +448,14 @@ Realm Roles:
 
 ### 1.6 Keycloak Admin REST API
 
-<a href="../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-handwritten.svg" alt="Handwritten: 1.6 Keycloak Admin REST API" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-handwritten.svg" alt="Handwritten: 1.6 Keycloak Admin REST API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-diagram.svg" alt="Diagram: 1.6 Keycloak Admin REST API" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-diagram.svg" alt="Diagram: 1.6 Keycloak Admin REST API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-sticky.svg" alt="Sticky Note: 1.6 Keycloak Admin REST API" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/1-6-keycloak-admin-rest-api-sticky.svg" alt="Sticky Note: 1.6 Keycloak Admin REST API" width="30%">
 </a>
 
 
@@ -629,14 +629,14 @@ Keycloak provides a dedicated Spring Boot adapter. Note: the adapter is deprecat
 
 ### 2.1 Maven Dependencies
 
-<a href="../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-handwritten.svg" alt="Handwritten: 2.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-handwritten.svg" alt="Handwritten: 2.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-diagram.svg" alt="Diagram: 2.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-diagram.svg" alt="Diagram: 2.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-sticky.svg" alt="Sticky Note: 2.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-1-maven-dependencies-sticky.svg" alt="Sticky Note: 2.1 Maven Dependencies" width="30%">
 </a>
 
 
@@ -676,14 +676,14 @@ Keycloak provides a dedicated Spring Boot adapter. Note: the adapter is deprecat
 
 ### 2.2 Application Properties
 
-<a href="../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-handwritten.svg" alt="Handwritten: 2.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-handwritten.svg" alt="Handwritten: 2.2 Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-diagram.svg" alt="Diagram: 2.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-diagram.svg" alt="Diagram: 2.2 Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-sticky.svg" alt="Sticky Note: 2.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-2-application-properties-sticky.svg" alt="Sticky Note: 2.2 Application Properties" width="30%">
 </a>
 
 
@@ -721,14 +721,14 @@ keycloak:
 
 ### 2.3 KeycloakWebSecurityConfigurerAdapter (Deprecated)
 
-<a href="../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-handwritten.svg" alt="Handwritten: 2.3 KeycloakWebSecurityConfigurerAdapter (Deprecated)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-handwritten.svg" alt="Handwritten: 2.3 KeycloakWebSecurityConfigurerAdapter (Deprecated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-diagram.svg" alt="Diagram: 2.3 KeycloakWebSecurityConfigurerAdapter (Deprecated)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-diagram.svg" alt="Diagram: 2.3 KeycloakWebSecurityConfigurerAdapter (Deprecated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-sticky.svg" alt="Sticky Note: 2.3 KeycloakWebSecurityConfigurerAdapter (Deprecated)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-3-keycloakwebsecurityconfigureradapter-deprecated-sticky.svg" alt="Sticky Note: 2.3 KeycloakWebSecurityConfigurerAdapter (Deprecated)" width="30%">
 </a>
 
 
@@ -790,14 +790,14 @@ public class LegacySecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 
 ### 2.4 Modern Security Config (Spring Security OAuth2 Resource Server)
 
-<a href="../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-handwritten.svg" alt="Handwritten: 2.4 Modern Security Config (Spring Security OAuth2 Resource Server)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-handwritten.svg" alt="Handwritten: 2.4 Modern Security Config (Spring Security OAuth2 Resource Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-diagram.svg" alt="Diagram: 2.4 Modern Security Config (Spring Security OAuth2 Resource Server)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-diagram.svg" alt="Diagram: 2.4 Modern Security Config (Spring Security OAuth2 Resource Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-sticky.svg" alt="Sticky Note: 2.4 Modern Security Config (Spring Security OAuth2 Resource Server)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-4-modern-security-config-spring-security-oauth2-resource-server-sticky.svg" alt="Sticky Note: 2.4 Modern Security Config (Spring Security OAuth2 Resource Server)" width="30%">
 </a>
 
 
@@ -880,14 +880,14 @@ public class OAuth2ResourceServerConfig {
 
 ### 2.5 Application Properties for OAuth2 Resource Server
 
-<a href="../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-handwritten.svg" alt="Handwritten: 2.5 Application Properties for OAuth2 Resource Server" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-handwritten.svg" alt="Handwritten: 2.5 Application Properties for OAuth2 Resource Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-diagram.svg" alt="Diagram: 2.5 Application Properties for OAuth2 Resource Server" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-diagram.svg" alt="Diagram: 2.5 Application Properties for OAuth2 Resource Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-sticky.svg" alt="Sticky Note: 2.5 Application Properties for OAuth2 Resource Server" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-5-application-properties-for-oauth2-resource-server-sticky.svg" alt="Sticky Note: 2.5 Application Properties for OAuth2 Resource Server" width="30%">
 </a>
 
 
@@ -907,14 +907,14 @@ server:
 
 ### 2.6 Securing REST Endpoints
 
-<a href="../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-handwritten.svg" alt="Handwritten: 2.6 Securing REST Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-handwritten.svg" alt="Handwritten: 2.6 Securing REST Endpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-diagram.svg" alt="Diagram: 2.6 Securing REST Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-diagram.svg" alt="Diagram: 2.6 Securing REST Endpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-sticky.svg" alt="Sticky Note: 2.6 Securing REST Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/2-6-securing-rest-endpoints-sticky.svg" alt="Sticky Note: 2.6 Securing REST Endpoints" width="30%">
 </a>
 
 
@@ -1012,14 +1012,14 @@ Token exchange allows one client or user to exchange a token for another token t
 
 ### 3.1 Token Exchange Overview
 
-<a href="../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-handwritten.svg" alt="Handwritten: 3.1 Token Exchange Overview" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-handwritten.svg" alt="Handwritten: 3.1 Token Exchange Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-diagram.svg" alt="Diagram: 3.1 Token Exchange Overview" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-diagram.svg" alt="Diagram: 3.1 Token Exchange Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-sticky.svg" alt="Sticky Note: 3.1 Token Exchange Overview" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-1-token-exchange-overview-sticky.svg" alt="Sticky Note: 3.1 Token Exchange Overview" width="30%">
 </a>
 
 
@@ -1040,14 +1040,14 @@ Token exchange allows one client or user to exchange a token for another token t
 
 ### 3.2 Token Exchange Between Clients
 
-<a href="../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-handwritten.svg" alt="Handwritten: 3.2 Token Exchange Between Clients" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-handwritten.svg" alt="Handwritten: 3.2 Token Exchange Between Clients" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-diagram.svg" alt="Diagram: 3.2 Token Exchange Between Clients" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-diagram.svg" alt="Diagram: 3.2 Token Exchange Between Clients" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-sticky.svg" alt="Sticky Note: 3.2 Token Exchange Between Clients" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-2-token-exchange-between-clients-sticky.svg" alt="Sticky Note: 3.2 Token Exchange Between Clients" width="30%">
 </a>
 
 
@@ -1245,14 +1245,14 @@ public class TokenExchangeService {
 
 ### 3.3 Delegation Pattern with Token Exchange
 
-<a href="../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-handwritten.svg" alt="Handwritten: 3.3 Delegation Pattern with Token Exchange" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-handwritten.svg" alt="Handwritten: 3.3 Delegation Pattern with Token Exchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-diagram.svg" alt="Diagram: 3.3 Delegation Pattern with Token Exchange" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-diagram.svg" alt="Diagram: 3.3 Delegation Pattern with Token Exchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-sticky.svg" alt="Sticky Note: 3.3 Delegation Pattern with Token Exchange" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-3-delegation-pattern-with-token-exchange-sticky.svg" alt="Sticky Note: 3.3 Delegation Pattern with Token Exchange" width="30%">
 </a>
 
 
@@ -1338,14 +1338,14 @@ public class DelegationService {
 
 ### 3.4 Enabling Token Exchange in Keycloak
 
-<a href="../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-handwritten.svg" alt="Handwritten: 3.4 Enabling Token Exchange in Keycloak" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-handwritten.svg" alt="Handwritten: 3.4 Enabling Token Exchange in Keycloak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-diagram.svg" alt="Diagram: 3.4 Enabling Token Exchange in Keycloak" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-diagram.svg" alt="Diagram: 3.4 Enabling Token Exchange in Keycloak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-sticky.svg" alt="Sticky Note: 3.4 Enabling Token Exchange in Keycloak" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/3-4-enabling-token-exchange-in-keycloak-sticky.svg" alt="Sticky Note: 3.4 Enabling Token Exchange in Keycloak" width="30%">
 </a>
 
 
@@ -1381,14 +1381,14 @@ Identity brokering allows Keycloak to delegate authentication to external identi
 
 ### 4.1 Social Login Ã¢â‚¬â€ Google
 
-<a href="../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-handwritten.svg" alt="Handwritten: 4.1 Social Login Ã¢â‚¬â€ Google" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-handwritten.svg" alt="Handwritten: 4.1 Social Login Ã¢â‚¬â€ Google" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-diagram.svg" alt="Diagram: 4.1 Social Login Ã¢â‚¬â€ Google" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-diagram.svg" alt="Diagram: 4.1 Social Login Ã¢â‚¬â€ Google" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-sticky.svg" alt="Sticky Note: 4.1 Social Login Ã¢â‚¬â€ Google" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-1-social-login-google-sticky.svg" alt="Sticky Note: 4.1 Social Login Ã¢â‚¬â€ Google" width="30%">
 </a>
 
 
@@ -1470,14 +1470,14 @@ public class IdentityProviderConfig {
 
 ### 4.2 Social Login Ã¢â‚¬â€ GitHub
 
-<a href="../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-handwritten.svg" alt="Handwritten: 4.2 Social Login Ã¢â‚¬â€ GitHub" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-handwritten.svg" alt="Handwritten: 4.2 Social Login Ã¢â‚¬â€ GitHub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-diagram.svg" alt="Diagram: 4.2 Social Login Ã¢â‚¬â€ GitHub" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-diagram.svg" alt="Diagram: 4.2 Social Login Ã¢â‚¬â€ GitHub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-sticky.svg" alt="Sticky Note: 4.2 Social Login Ã¢â‚¬â€ GitHub" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-2-social-login-github-sticky.svg" alt="Sticky Note: 4.2 Social Login Ã¢â‚¬â€ GitHub" width="30%">
 </a>
 
 
@@ -1501,14 +1501,14 @@ public class IdentityProviderConfig {
 
 ### 4.3 Social Login Ã¢â‚¬â€ Facebook
 
-<a href="../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-handwritten.svg" alt="Handwritten: 4.3 Social Login Ã¢â‚¬â€ Facebook" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-handwritten.svg" alt="Handwritten: 4.3 Social Login Ã¢â‚¬â€ Facebook" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-diagram.svg" alt="Diagram: 4.3 Social Login Ã¢â‚¬â€ Facebook" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-diagram.svg" alt="Diagram: 4.3 Social Login Ã¢â‚¬â€ Facebook" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-sticky.svg" alt="Sticky Note: 4.3 Social Login Ã¢â‚¬â€ Facebook" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-3-social-login-facebook-sticky.svg" alt="Sticky Note: 4.3 Social Login Ã¢â‚¬â€ Facebook" width="30%">
 </a>
 
 
@@ -1541,14 +1541,14 @@ public IdentityProviderRepresentation createFacebookIdp() {
 
 ### 4.4 SAML Identity Provider
 
-<a href="../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-handwritten.svg" alt="Handwritten: 4.4 SAML Identity Provider" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-handwritten.svg" alt="Handwritten: 4.4 SAML Identity Provider" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-diagram.svg" alt="Diagram: 4.4 SAML Identity Provider" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-diagram.svg" alt="Diagram: 4.4 SAML Identity Provider" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-sticky.svg" alt="Sticky Note: 4.4 SAML Identity Provider" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-4-saml-identity-provider-sticky.svg" alt="Sticky Note: 4.4 SAML Identity Provider" width="30%">
 </a>
 
 
@@ -1580,14 +1580,14 @@ Keycloak can act as a SAML service provider or identity provider.
 
 ### 4.5 Custom Identity Provider SPI
 
-<a href="../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-handwritten.svg" alt="Handwritten: 4.5 Custom Identity Provider SPI" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-handwritten.svg" alt="Handwritten: 4.5 Custom Identity Provider SPI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-diagram.svg" alt="Diagram: 4.5 Custom Identity Provider SPI" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-diagram.svg" alt="Diagram: 4.5 Custom Identity Provider SPI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-sticky.svg" alt="Sticky Note: 4.5 Custom Identity Provider SPI" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-5-custom-identity-provider-spi-sticky.svg" alt="Sticky Note: 4.5 Custom Identity Provider SPI" width="30%">
 </a>
 
 
@@ -1691,14 +1691,14 @@ public class CustomIdentityProvider implements SocialIdentityProvider<CustomIden
 
 ### 4.6 First Broker Login Flow
 
-<a href="../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-handwritten.svg" alt="Handwritten: 4.6 First Broker Login Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-handwritten.svg" alt="Handwritten: 4.6 First Broker Login Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-diagram.svg" alt="Diagram: 4.6 First Broker Login Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-diagram.svg" alt="Diagram: 4.6 First Broker Login Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-sticky.svg" alt="Sticky Note: 4.6 First Broker Login Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/4-6-first-broker-login-flow-sticky.svg" alt="Sticky Note: 4.6 First Broker Login Flow" width="30%">
 </a>
 
 
@@ -1789,14 +1789,14 @@ User federation allows Keycloak to integrate with external user stores such as L
 
 ### 5.1 LDAP Federation Provider
 
-<a href="../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-handwritten.svg" alt="Handwritten: 5.1 LDAP Federation Provider" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-handwritten.svg" alt="Handwritten: 5.1 LDAP Federation Provider" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-diagram.svg" alt="Diagram: 5.1 LDAP Federation Provider" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-diagram.svg" alt="Diagram: 5.1 LDAP Federation Provider" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-sticky.svg" alt="Sticky Note: 5.1 LDAP Federation Provider" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-1-ldap-federation-provider-sticky.svg" alt="Sticky Note: 5.1 LDAP Federation Provider" width="30%">
 </a>
 
 
@@ -1914,14 +1914,14 @@ public class LdapFederationConfig {
 
 ### 5.2 LDAP Mappers
 
-<a href="../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-handwritten.svg" alt="Handwritten: 5.2 LDAP Mappers" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-handwritten.svg" alt="Handwritten: 5.2 LDAP Mappers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-diagram.svg" alt="Diagram: 5.2 LDAP Mappers" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-diagram.svg" alt="Diagram: 5.2 LDAP Mappers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-sticky.svg" alt="Sticky Note: 5.2 LDAP Mappers" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-2-ldap-mappers-sticky.svg" alt="Sticky Note: 5.2 LDAP Mappers" width="30%">
 </a>
 
 
@@ -1966,14 +1966,14 @@ public UserFederationMapperRepresentation createGroupMapper() {
 
 ### 5.3 Periodic Sync
 
-<a href="../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-handwritten.svg" alt="Handwritten: 5.3 Periodic Sync" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-handwritten.svg" alt="Handwritten: 5.3 Periodic Sync" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-diagram.svg" alt="Diagram: 5.3 Periodic Sync" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-diagram.svg" alt="Diagram: 5.3 Periodic Sync" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-sticky.svg" alt="Sticky Note: 5.3 Periodic Sync" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-3-periodic-sync-sticky.svg" alt="Sticky Note: 5.3 Periodic Sync" width="30%">
 </a>
 
 
@@ -2077,14 +2077,14 @@ public class LdapSyncScheduler {
 
 ### 5.4 Kerberos Authentication
 
-<a href="../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-handwritten.svg" alt="Handwritten: 5.4 Kerberos Authentication" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-handwritten.svg" alt="Handwritten: 5.4 Kerberos Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-diagram.svg" alt="Diagram: 5.4 Kerberos Authentication" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-diagram.svg" alt="Diagram: 5.4 Kerberos Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-sticky.svg" alt="Sticky Note: 5.4 Kerberos Authentication" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-4-kerberos-authentication-sticky.svg" alt="Sticky Note: 5.4 Kerberos Authentication" width="30%">
 </a>
 
 
@@ -2125,14 +2125,14 @@ public class KerberosConfig {
 
 ### 5.5 User Storage SPI (Custom Federation Provider)
 
-<a href="../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-handwritten.svg" alt="Handwritten: 5.5 User Storage SPI (Custom Federation Provider)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-handwritten.svg" alt="Handwritten: 5.5 User Storage SPI (Custom Federation Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-diagram.svg" alt="Diagram: 5.5 User Storage SPI (Custom Federation Provider)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-diagram.svg" alt="Diagram: 5.5 User Storage SPI (Custom Federation Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-sticky.svg" alt="Sticky Note: 5.5 User Storage SPI (Custom Federation Provider)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/5-5-user-storage-spi-custom-federation-provider-sticky.svg" alt="Sticky Note: 5.5 User Storage SPI (Custom Federation Provider)" width="30%">
 </a>
 
 
@@ -2351,14 +2351,14 @@ Keycloak Authorization Services provides resource-based, scope-based, and policy
 
 ### 6.1 Authorization Concepts
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-handwritten.svg" alt="Handwritten: 6.1 Authorization Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-handwritten.svg" alt="Handwritten: 6.1 Authorization Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-diagram.svg" alt="Diagram: 6.1 Authorization Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-diagram.svg" alt="Diagram: 6.1 Authorization Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-sticky.svg" alt="Sticky Note: 6.1 Authorization Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-1-authorization-concepts-sticky.svg" alt="Sticky Note: 6.1 Authorization Concepts" width="30%">
 </a>
 
 
@@ -2380,14 +2380,14 @@ Resource Server (Keycloak)
 
 ### 6.2 Enabling Authorization Services
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-handwritten.svg" alt="Handwritten: 6.2 Enabling Authorization Services" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-handwritten.svg" alt="Handwritten: 6.2 Enabling Authorization Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-diagram.svg" alt="Diagram: 6.2 Enabling Authorization Services" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-diagram.svg" alt="Diagram: 6.2 Enabling Authorization Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-sticky.svg" alt="Sticky Note: 6.2 Enabling Authorization Services" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-2-enabling-authorization-services-sticky.svg" alt="Sticky Note: 6.2 Enabling Authorization Services" width="30%">
 </a>
 
 
@@ -2397,14 +2397,14 @@ Resource Server (Keycloak)
 
 ### 6.3 Defining Resources
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-handwritten.svg" alt="Handwritten: 6.3 Defining Resources" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-handwritten.svg" alt="Handwritten: 6.3 Defining Resources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-diagram.svg" alt="Diagram: 6.3 Defining Resources" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-diagram.svg" alt="Diagram: 6.3 Defining Resources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-sticky.svg" alt="Sticky Note: 6.3 Defining Resources" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-3-defining-resources-sticky.svg" alt="Sticky Note: 6.3 Defining Resources" width="30%">
 </a>
 
 
@@ -2453,14 +2453,14 @@ Resource Server (Keycloak)
 
 ### 6.4 Defining Policies
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-handwritten.svg" alt="Handwritten: 6.4 Defining Policies" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-handwritten.svg" alt="Handwritten: 6.4 Defining Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-diagram.svg" alt="Diagram: 6.4 Defining Policies" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-diagram.svg" alt="Diagram: 6.4 Defining Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-sticky.svg" alt="Sticky Note: 6.4 Defining Policies" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-4-defining-policies-sticky.svg" alt="Sticky Note: 6.4 Defining Policies" width="30%">
 </a>
 
 
@@ -2550,14 +2550,14 @@ if (resource === 'confidential' && !identity.hasRealmRole('admin')) {
 
 ### 6.5 Defining Permissions
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-handwritten.svg" alt="Handwritten: 6.5 Defining Permissions" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-handwritten.svg" alt="Handwritten: 6.5 Defining Permissions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-diagram.svg" alt="Diagram: 6.5 Defining Permissions" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-diagram.svg" alt="Diagram: 6.5 Defining Permissions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-sticky.svg" alt="Sticky Note: 6.5 Defining Permissions" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-5-defining-permissions-sticky.svg" alt="Sticky Note: 6.5 Defining Permissions" width="30%">
 </a>
 
 
@@ -2598,14 +2598,14 @@ if (resource === 'confidential' && !identity.hasRealmRole('admin')) {
 
 ### 6.6 Resource Server Configuration (Policy Enforcer)
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-handwritten.svg" alt="Handwritten: 6.6 Resource Server Configuration (Policy Enforcer)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-handwritten.svg" alt="Handwritten: 6.6 Resource Server Configuration (Policy Enforcer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-diagram.svg" alt="Diagram: 6.6 Resource Server Configuration (Policy Enforcer)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-diagram.svg" alt="Diagram: 6.6 Resource Server Configuration (Policy Enforcer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-sticky.svg" alt="Sticky Note: 6.6 Resource Server Configuration (Policy Enforcer)" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-6-resource-server-configuration-policy-enforcer-sticky.svg" alt="Sticky Note: 6.6 Resource Server Configuration (Policy Enforcer)" width="30%">
 </a>
 
 
@@ -2681,14 +2681,14 @@ public class PolicyEnforcerConfig {
 
 ### 6.7 UMA 2.0 Ã¢â‚¬â€ User-Managed Access
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-handwritten.svg" alt="Handwritten: 6.7 UMA 2.0 Ã¢â‚¬â€ User-Managed Access" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-handwritten.svg" alt="Handwritten: 6.7 UMA 2.0 Ã¢â‚¬â€ User-Managed Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-diagram.svg" alt="Diagram: 6.7 UMA 2.0 Ã¢â‚¬â€ User-Managed Access" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-diagram.svg" alt="Diagram: 6.7 UMA 2.0 Ã¢â‚¬â€ User-Managed Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-sticky.svg" alt="Sticky Note: 6.7 UMA 2.0 Ã¢â‚¬â€ User-Managed Access" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-7-uma-2-0-user-managed-access-sticky.svg" alt="Sticky Note: 6.7 UMA 2.0 Ã¢â‚¬â€ User-Managed Access" width="30%">
 </a>
 
 
@@ -2910,14 +2910,14 @@ public class UmaService {
 
 ### 6.8 Evaluating Permissions with Authorization API
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-handwritten.svg" alt="Handwritten: 6.8 Evaluating Permissions with Authorization API" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-handwritten.svg" alt="Handwritten: 6.8 Evaluating Permissions with Authorization API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-diagram.svg" alt="Diagram: 6.8 Evaluating Permissions with Authorization API" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-diagram.svg" alt="Diagram: 6.8 Evaluating Permissions with Authorization API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-sticky.svg" alt="Sticky Note: 6.8 Evaluating Permissions with Authorization API" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-8-evaluating-permissions-with-authorization-api-sticky.svg" alt="Sticky Note: 6.8 Evaluating Permissions with Authorization API" width="30%">
 </a>
 
 
@@ -3094,14 +3094,14 @@ public class AuthorizationApiController {
 
 ### 6.9 UMA-Protected Resource Server
 
-<a href="../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-handwritten.svg" alt="Handwritten: 6.9 UMA-Protected Resource Server" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-handwritten.svg" alt="Handwritten: 6.9 UMA-Protected Resource Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-diagram.svg" alt="Diagram: 6.9 UMA-Protected Resource Server" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-diagram.svg" alt="Diagram: 6.9 UMA-Protected Resource Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-sticky.svg" alt="Sticky Note: 6.9 UMA-Protected Resource Server" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/6-9-uma-protected-resource-server-sticky.svg" alt="Sticky Note: 6.9 UMA-Protected Resource Server" width="30%">
 </a>
 
 
@@ -3255,14 +3255,14 @@ A full Spring Boot application with Keycloak OAuth2 resource server, identity br
 
 ### 7.1 Application Entry Point
 
-<a href="../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-handwritten.svg" alt="Handwritten: 7.1 Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-handwritten.svg" alt="Handwritten: 7.1 Application Entry Point" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-diagram.svg" alt="Diagram: 7.1 Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-diagram.svg" alt="Diagram: 7.1 Application Entry Point" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-sticky.svg" alt="Sticky Note: 7.1 Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-1-application-entry-point-sticky.svg" alt="Sticky Note: 7.1 Application Entry Point" width="30%">
 </a>
 
 
@@ -3285,14 +3285,14 @@ public class KeycloakApplication {
 
 ### 7.2 Full Security Configuration
 
-<a href="../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-handwritten.svg" alt="Handwritten: 7.2 Full Security Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-handwritten.svg" alt="Handwritten: 7.2 Full Security Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-diagram.svg" alt="Diagram: 7.2 Full Security Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-diagram.svg" alt="Diagram: 7.2 Full Security Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-sticky.svg" alt="Sticky Note: 7.2 Full Security Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-2-full-security-configuration-sticky.svg" alt="Sticky Note: 7.2 Full Security Configuration" width="30%">
 </a>
 
 
@@ -3414,14 +3414,14 @@ public class FullSecurityConfig {
 
 ### 7.3 Service Layer with Authorization
 
-<a href="../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-handwritten.svg" alt="Handwritten: 7.3 Service Layer with Authorization" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-handwritten.svg" alt="Handwritten: 7.3 Service Layer with Authorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-diagram.svg" alt="Diagram: 7.3 Service Layer with Authorization" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-diagram.svg" alt="Diagram: 7.3 Service Layer with Authorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-sticky.svg" alt="Sticky Note: 7.3 Service Layer with Authorization" width="30%">
+<a href="../../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/28-keycloak/7-3-service-layer-with-authorization-sticky.svg" alt="Sticky Note: 7.3 Service Layer with Authorization" width="30%">
 </a>
 
 

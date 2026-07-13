@@ -72,14 +72,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Three Pillars of Observability
 
-<a href="../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 1.1 Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 1.1 Three Pillars of Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-diagram.svg" alt="Diagram: 1.1 Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-diagram.svg" alt="Diagram: 1.1 Three Pillars of Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 1.1 Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/1-1-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 1.1 Three Pillars of Observability" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ This chapter covers **Metrics** and **Logging**. Tracing is covered in a dedicat
 
 ### 2.1 Setup
 
-<a href="../../assets/images/diagrams/java/55-observability/2-1-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-1-setup-handwritten.svg" alt="Handwritten: 2.1 Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-1-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-1-setup-handwritten.svg" alt="Handwritten: 2.1 Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-1-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-1-setup-diagram.svg" alt="Diagram: 2.1 Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-1-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-1-setup-diagram.svg" alt="Diagram: 2.1 Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-1-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-1-setup-sticky.svg" alt="Sticky Note: 2.1 Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-1-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-1-setup-sticky.svg" alt="Sticky Note: 2.1 Setup" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ management:
 
 ### 2.2 MeterRegistry
 
-<a href="../../assets/images/diagrams/java/55-observability/2-2-meterregistry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-2-meterregistry-handwritten.svg" alt="Handwritten: 2.2 MeterRegistry" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-2-meterregistry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-2-meterregistry-handwritten.svg" alt="Handwritten: 2.2 MeterRegistry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-2-meterregistry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-2-meterregistry-diagram.svg" alt="Diagram: 2.2 MeterRegistry" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-2-meterregistry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-2-meterregistry-diagram.svg" alt="Diagram: 2.2 MeterRegistry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-2-meterregistry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-2-meterregistry-sticky.svg" alt="Sticky Note: 2.2 MeterRegistry" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-2-meterregistry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-2-meterregistry-sticky.svg" alt="Sticky Note: 2.2 MeterRegistry" width="30%">
 </a>
 
 
@@ -197,14 +197,14 @@ public class MetricsRegistry {
 
 ### 2.3 Counter
 
-<a href="../../assets/images/diagrams/java/55-observability/2-3-counter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-3-counter-handwritten.svg" alt="Handwritten: 2.3 Counter" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-3-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-3-counter-handwritten.svg" alt="Handwritten: 2.3 Counter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-3-counter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-3-counter-diagram.svg" alt="Diagram: 2.3 Counter" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-3-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-3-counter-diagram.svg" alt="Diagram: 2.3 Counter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-3-counter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-3-counter-sticky.svg" alt="Sticky Note: 2.3 Counter" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-3-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-3-counter-sticky.svg" alt="Sticky Note: 2.3 Counter" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ public class OrderCounter {
 
 ### 2.4 Gauge
 
-<a href="../../assets/images/diagrams/java/55-observability/2-4-gauge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-4-gauge-handwritten.svg" alt="Handwritten: 2.4 Gauge" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-4-gauge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-4-gauge-handwritten.svg" alt="Handwritten: 2.4 Gauge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-4-gauge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-4-gauge-diagram.svg" alt="Diagram: 2.4 Gauge" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-4-gauge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-4-gauge-diagram.svg" alt="Diagram: 2.4 Gauge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-4-gauge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-4-gauge-sticky.svg" alt="Sticky Note: 2.4 Gauge" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-4-gauge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-4-gauge-sticky.svg" alt="Sticky Note: 2.4 Gauge" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ public class QueueGauge {
 
 ### 2.5 Timer
 
-<a href="../../assets/images/diagrams/java/55-observability/2-5-timer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-5-timer-handwritten.svg" alt="Handwritten: 2.5 Timer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-5-timer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-5-timer-handwritten.svg" alt="Handwritten: 2.5 Timer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-5-timer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-5-timer-diagram.svg" alt="Diagram: 2.5 Timer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-5-timer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-5-timer-diagram.svg" alt="Diagram: 2.5 Timer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-5-timer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-5-timer-sticky.svg" alt="Sticky Note: 2.5 Timer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-5-timer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-5-timer-sticky.svg" alt="Sticky Note: 2.5 Timer" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ public class PerformanceTimer {
 
 ### 2.6 DistributionSummary
 
-<a href="../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-handwritten.svg" alt="Handwritten: 2.6 DistributionSummary" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-handwritten.svg" alt="Handwritten: 2.6 DistributionSummary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-diagram.svg" alt="Diagram: 2.6 DistributionSummary" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-diagram.svg" alt="Diagram: 2.6 DistributionSummary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-sticky.svg" alt="Sticky Note: 2.6 DistributionSummary" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-6-distributionsummary-sticky.svg" alt="Sticky Note: 2.6 DistributionSummary" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ public class OrderValueSummary {
 
 ### 2.7 LongTaskTimer
 
-<a href="../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-handwritten.svg" alt="Handwritten: 2.7 LongTaskTimer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-handwritten.svg" alt="Handwritten: 2.7 LongTaskTimer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-diagram.svg" alt="Diagram: 2.7 LongTaskTimer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-diagram.svg" alt="Diagram: 2.7 LongTaskTimer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-sticky.svg" alt="Sticky Note: 2.7 LongTaskTimer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-7-longtasktimer-sticky.svg" alt="Sticky Note: 2.7 LongTaskTimer" width="30%">
 </a>
 
 
@@ -521,14 +521,14 @@ public class BatchProcessorTimer {
 
 ### 2.8 FunctionCounter and FunctionTimer
 
-<a href="../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-handwritten.svg" alt="Handwritten: 2.8 FunctionCounter and FunctionTimer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-handwritten.svg" alt="Handwritten: 2.8 FunctionCounter and FunctionTimer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-diagram.svg" alt="Diagram: 2.8 FunctionCounter and FunctionTimer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-diagram.svg" alt="Diagram: 2.8 FunctionCounter and FunctionTimer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-sticky.svg" alt="Sticky Note: 2.8 FunctionCounter and FunctionTimer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-8-functioncounter-and-functiontimer-sticky.svg" alt="Sticky Note: 2.8 FunctionCounter and FunctionTimer" width="30%">
 </a>
 
 
@@ -571,14 +571,14 @@ public class FunctionMetrics {
 
 ### 2.9 @Counted and @Timed Annotations
 
-<a href="../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-handwritten.svg" alt="Handwritten: 2.9 @Counted and @Timed Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-handwritten.svg" alt="Handwritten: 2.9 @Counted and @Timed Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-diagram.svg" alt="Diagram: 2.9 @Counted and @Timed Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-diagram.svg" alt="Diagram: 2.9 @Counted and @Timed Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-sticky.svg" alt="Sticky Note: 2.9 @Counted and @Timed Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-9-counted-and-timed-annotations-sticky.svg" alt="Sticky Note: 2.9 @Counted and @Timed Annotations" width="30%">
 </a>
 
 
@@ -631,14 +631,14 @@ public class OrderService {
 
 ### 2.10 Custom Tags
 
-<a href="../../assets/images/diagrams/java/55-observability/2-10-custom-tags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-10-custom-tags-handwritten.svg" alt="Handwritten: 2.10 Custom Tags" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-10-custom-tags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-10-custom-tags-handwritten.svg" alt="Handwritten: 2.10 Custom Tags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-10-custom-tags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-10-custom-tags-diagram.svg" alt="Diagram: 2.10 Custom Tags" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-10-custom-tags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-10-custom-tags-diagram.svg" alt="Diagram: 2.10 Custom Tags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-10-custom-tags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-10-custom-tags-sticky.svg" alt="Sticky Note: 2.10 Custom Tags" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-10-custom-tags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-10-custom-tags-sticky.svg" alt="Sticky Note: 2.10 Custom Tags" width="30%">
 </a>
 
 
@@ -692,14 +692,14 @@ public class TagManager {
 
 ### 2.11 Global Tags via MeterFilter
 
-<a href="../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-handwritten.svg" alt="Handwritten: 2.11 Global Tags via MeterFilter" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-handwritten.svg" alt="Handwritten: 2.11 Global Tags via MeterFilter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-diagram.svg" alt="Diagram: 2.11 Global Tags via MeterFilter" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-diagram.svg" alt="Diagram: 2.11 Global Tags via MeterFilter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-sticky.svg" alt="Sticky Note: 2.11 Global Tags via MeterFilter" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-11-global-tags-via-meterfilter-sticky.svg" alt="Sticky Note: 2.11 Global Tags via MeterFilter" width="30%">
 </a>
 
 
@@ -779,14 +779,14 @@ public class GlobalMetricsConfiguration {
 
 ### 2.12 Custom MeterRegistry Binder
 
-<a href="../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-handwritten.svg" alt="Handwritten: 2.12 Custom MeterRegistry Binder" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-handwritten.svg" alt="Handwritten: 2.12 Custom MeterRegistry Binder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-diagram.svg" alt="Diagram: 2.12 Custom MeterRegistry Binder" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-diagram.svg" alt="Diagram: 2.12 Custom MeterRegistry Binder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-sticky.svg" alt="Sticky Note: 2.12 Custom MeterRegistry Binder" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-12-custom-meterregistry-binder-sticky.svg" alt="Sticky Note: 2.12 Custom MeterRegistry Binder" width="30%">
 </a>
 
 
@@ -877,14 +877,14 @@ public class CustomSystemMetrics implements MeterBinder {
 
 ### 2.13 @Observation API
 
-<a href="../../assets/images/diagrams/java/55-observability/2-13-observation-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-13-observation-api-handwritten.svg" alt="Handwritten: 2.13 @Observation API" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-13-observation-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-13-observation-api-handwritten.svg" alt="Handwritten: 2.13 @Observation API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-13-observation-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-13-observation-api-diagram.svg" alt="Diagram: 2.13 @Observation API" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-13-observation-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-13-observation-api-diagram.svg" alt="Diagram: 2.13 @Observation API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-13-observation-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-13-observation-api-sticky.svg" alt="Sticky Note: 2.13 @Observation API" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-13-observation-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-13-observation-api-sticky.svg" alt="Sticky Note: 2.13 @Observation API" width="30%">
 </a>
 
 
@@ -961,14 +961,14 @@ public class ObservedOrderService {
 
 ### 2.14 ObservationHandler
 
-<a href="../../assets/images/diagrams/java/55-observability/2-14-observationhandler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-14-observationhandler-handwritten.svg" alt="Handwritten: 2.14 ObservationHandler" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-14-observationhandler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-14-observationhandler-handwritten.svg" alt="Handwritten: 2.14 ObservationHandler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-14-observationhandler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-14-observationhandler-diagram.svg" alt="Diagram: 2.14 ObservationHandler" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-14-observationhandler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-14-observationhandler-diagram.svg" alt="Diagram: 2.14 ObservationHandler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/2-14-observationhandler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/2-14-observationhandler-sticky.svg" alt="Sticky Note: 2.14 ObservationHandler" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/2-14-observationhandler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/2-14-observationhandler-sticky.svg" alt="Sticky Note: 2.14 ObservationHandler" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ public class CustomObservationHandler implements ObservationHandler<Observation.
 
 ### 3.1 Prometheus Endpoint
 
-<a href="../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-handwritten.svg" alt="Handwritten: 3.1 Prometheus Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-handwritten.svg" alt="Handwritten: 3.1 Prometheus Endpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-diagram.svg" alt="Diagram: 3.1 Prometheus Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-diagram.svg" alt="Diagram: 3.1 Prometheus Endpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-sticky.svg" alt="Sticky Note: 3.1 Prometheus Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-1-prometheus-endpoint-sticky.svg" alt="Sticky Note: 3.1 Prometheus Endpoint" width="30%">
 </a>
 
 
@@ -1100,14 +1100,14 @@ orders_created_total{type="standard",} 42.0
 
 ### 3.2 Prometheus Configuration
 
-<a href="../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-handwritten.svg" alt="Handwritten: 3.2 Prometheus Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-handwritten.svg" alt="Handwritten: 3.2 Prometheus Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-diagram.svg" alt="Diagram: 3.2 Prometheus Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-diagram.svg" alt="Diagram: 3.2 Prometheus Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-sticky.svg" alt="Sticky Note: 3.2 Prometheus Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-2-prometheus-configuration-sticky.svg" alt="Sticky Note: 3.2 Prometheus Configuration" width="30%">
 </a>
 
 
@@ -1158,14 +1158,14 @@ scrape_configs:
 
 ### 3.3 Docker Compose with Prometheus
 
-<a href="../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-handwritten.svg" alt="Handwritten: 3.3 Docker Compose with Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-handwritten.svg" alt="Handwritten: 3.3 Docker Compose with Prometheus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-diagram.svg" alt="Diagram: 3.3 Docker Compose with Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-diagram.svg" alt="Diagram: 3.3 Docker Compose with Prometheus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-sticky.svg" alt="Sticky Note: 3.3 Docker Compose with Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-3-docker-compose-with-prometheus-sticky.svg" alt="Sticky Note: 3.3 Docker Compose with Prometheus" width="30%">
 </a>
 
 
@@ -1202,14 +1202,14 @@ volumes:
 
 ### 3.4 Prometheus Query Examples
 
-<a href="../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-handwritten.svg" alt="Handwritten: 3.4 Prometheus Query Examples" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-handwritten.svg" alt="Handwritten: 3.4 Prometheus Query Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-diagram.svg" alt="Diagram: 3.4 Prometheus Query Examples" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-diagram.svg" alt="Diagram: 3.4 Prometheus Query Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-sticky.svg" alt="Sticky Note: 3.4 Prometheus Query Examples" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/3-4-prometheus-query-examples-sticky.svg" alt="Sticky Note: 3.4 Prometheus Query Examples" width="30%">
 </a>
 
 
@@ -1264,14 +1264,14 @@ rate(jvm_gc_pause_seconds_sum[5m])
 
 ### 4.1 Docker Compose with Grafana
 
-<a href="../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-handwritten.svg" alt="Handwritten: 4.1 Docker Compose with Grafana" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-handwritten.svg" alt="Handwritten: 4.1 Docker Compose with Grafana" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-diagram.svg" alt="Diagram: 4.1 Docker Compose with Grafana" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-diagram.svg" alt="Diagram: 4.1 Docker Compose with Grafana" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-sticky.svg" alt="Sticky Note: 4.1 Docker Compose with Grafana" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-1-docker-compose-with-grafana-sticky.svg" alt="Sticky Note: 4.1 Docker Compose with Grafana" width="30%">
 </a>
 
 
@@ -1296,14 +1296,14 @@ volumes:
 
 ### 4.2 Grafana Data Source Provisioning
 
-<a href="../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-handwritten.svg" alt="Handwritten: 4.2 Grafana Data Source Provisioning" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-handwritten.svg" alt="Handwritten: 4.2 Grafana Data Source Provisioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-diagram.svg" alt="Diagram: 4.2 Grafana Data Source Provisioning" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-diagram.svg" alt="Diagram: 4.2 Grafana Data Source Provisioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-sticky.svg" alt="Sticky Note: 4.2 Grafana Data Source Provisioning" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-2-grafana-data-source-provisioning-sticky.svg" alt="Sticky Note: 4.2 Grafana Data Source Provisioning" width="30%">
 </a>
 
 
@@ -1336,14 +1336,14 @@ datasources:
 
 ### 4.3 Grafana Dashboard Provisioning
 
-<a href="../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-handwritten.svg" alt="Handwritten: 4.3 Grafana Dashboard Provisioning" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-handwritten.svg" alt="Handwritten: 4.3 Grafana Dashboard Provisioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-diagram.svg" alt="Diagram: 4.3 Grafana Dashboard Provisioning" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-diagram.svg" alt="Diagram: 4.3 Grafana Dashboard Provisioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-sticky.svg" alt="Sticky Note: 4.3 Grafana Dashboard Provisioning" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-3-grafana-dashboard-provisioning-sticky.svg" alt="Sticky Note: 4.3 Grafana Dashboard Provisioning" width="30%">
 </a>
 
 
@@ -1368,14 +1368,14 @@ providers:
 
 ### 4.4 JVM Dashboard JSON Model
 
-<a href="../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-handwritten.svg" alt="Handwritten: 4.4 JVM Dashboard JSON Model" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-handwritten.svg" alt="Handwritten: 4.4 JVM Dashboard JSON Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-diagram.svg" alt="Diagram: 4.4 JVM Dashboard JSON Model" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-diagram.svg" alt="Diagram: 4.4 JVM Dashboard JSON Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-sticky.svg" alt="Sticky Note: 4.4 JVM Dashboard JSON Model" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-4-jvm-dashboard-json-model-sticky.svg" alt="Sticky Note: 4.4 JVM Dashboard JSON Model" width="30%">
 </a>
 
 
@@ -1528,14 +1528,14 @@ providers:
 
 ### 4.5 Spring Boot Dashboard
 
-<a href="../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-handwritten.svg" alt="Handwritten: 4.5 Spring Boot Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-handwritten.svg" alt="Handwritten: 4.5 Spring Boot Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-diagram.svg" alt="Diagram: 4.5 Spring Boot Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-diagram.svg" alt="Diagram: 4.5 Spring Boot Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-sticky.svg" alt="Sticky Note: 4.5 Spring Boot Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-5-spring-boot-dashboard-sticky.svg" alt="Sticky Note: 4.5 Spring Boot Dashboard" width="30%">
 </a>
 
 
@@ -1676,14 +1676,14 @@ providers:
 
 ### 4.6 Custom Business Metrics Dashboard
 
-<a href="../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-handwritten.svg" alt="Handwritten: 4.6 Custom Business Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-handwritten.svg" alt="Handwritten: 4.6 Custom Business Metrics Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-diagram.svg" alt="Diagram: 4.6 Custom Business Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-diagram.svg" alt="Diagram: 4.6 Custom Business Metrics Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-sticky.svg" alt="Sticky Note: 4.6 Custom Business Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-6-custom-business-metrics-dashboard-sticky.svg" alt="Sticky Note: 4.6 Custom Business Metrics Dashboard" width="30%">
 </a>
 
 
@@ -1760,14 +1760,14 @@ providers:
 
 ### 4.7 Grafana Alerting Rules
 
-<a href="../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-handwritten.svg" alt="Handwritten: 4.7 Grafana Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-handwritten.svg" alt="Handwritten: 4.7 Grafana Alerting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-diagram.svg" alt="Diagram: 4.7 Grafana Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-diagram.svg" alt="Diagram: 4.7 Grafana Alerting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-sticky.svg" alt="Sticky Note: 4.7 Grafana Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/4-7-grafana-alerting-rules-sticky.svg" alt="Sticky Note: 4.7 Grafana Alerting Rules" width="30%">
 </a>
 
 
@@ -1807,14 +1807,14 @@ providers:
 
 ### 5.1 Business Metrics Service
 
-<a href="../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-handwritten.svg" alt="Handwritten: 5.1 Business Metrics Service" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-handwritten.svg" alt="Handwritten: 5.1 Business Metrics Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-diagram.svg" alt="Diagram: 5.1 Business Metrics Service" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-diagram.svg" alt="Diagram: 5.1 Business Metrics Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-sticky.svg" alt="Sticky Note: 5.1 Business Metrics Service" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-1-business-metrics-service-sticky.svg" alt="Sticky Note: 5.1 Business Metrics Service" width="30%">
 </a>
 
 
@@ -1947,14 +1947,14 @@ public class BusinessMetricsService {
 
 ### 5.2 Using Business Metrics in Services
 
-<a href="../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-handwritten.svg" alt="Handwritten: 5.2 Using Business Metrics in Services" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-handwritten.svg" alt="Handwritten: 5.2 Using Business Metrics in Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-diagram.svg" alt="Diagram: 5.2 Using Business Metrics in Services" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-diagram.svg" alt="Diagram: 5.2 Using Business Metrics in Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-sticky.svg" alt="Sticky Note: 5.2 Using Business Metrics in Services" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-2-using-business-metrics-in-services-sticky.svg" alt="Sticky Note: 5.2 Using Business Metrics in Services" width="30%">
 </a>
 
 
@@ -2046,14 +2046,14 @@ public class BusinessOrderService {
 
 ### 5.3 Custom Micrometer Binder for Database Pool
 
-<a href="../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-handwritten.svg" alt="Handwritten: 5.3 Custom Micrometer Binder for Database Pool" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-handwritten.svg" alt="Handwritten: 5.3 Custom Micrometer Binder for Database Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-diagram.svg" alt="Diagram: 5.3 Custom Micrometer Binder for Database Pool" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-diagram.svg" alt="Diagram: 5.3 Custom Micrometer Binder for Database Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-sticky.svg" alt="Sticky Note: 5.3 Custom Micrometer Binder for Database Pool" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/5-3-custom-micrometer-binder-for-database-pool-sticky.svg" alt="Sticky Note: 5.3 Custom Micrometer Binder for Database Pool" width="30%">
 </a>
 
 
@@ -2138,14 +2138,14 @@ public class DatabasePoolMetrics implements MeterBinder {
 
 ### 6.1 Logstash Logback Encoder
 
-<a href="../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-handwritten.svg" alt="Handwritten: 6.1 Logstash Logback Encoder" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-handwritten.svg" alt="Handwritten: 6.1 Logstash Logback Encoder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-diagram.svg" alt="Diagram: 6.1 Logstash Logback Encoder" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-diagram.svg" alt="Diagram: 6.1 Logstash Logback Encoder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-sticky.svg" alt="Sticky Note: 6.1 Logstash Logback Encoder" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-1-logstash-logback-encoder-sticky.svg" alt="Sticky Note: 6.1 Logstash Logback Encoder" width="30%">
 </a>
 
 
@@ -2159,14 +2159,14 @@ public class DatabasePoolMetrics implements MeterBinder {
 
 ### 6.2 logback-spring.xml
 
-<a href="../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-handwritten.svg" alt="Handwritten: 6.2 logback-spring.xml" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-handwritten.svg" alt="Handwritten: 6.2 logback-spring.xml" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-diagram.svg" alt="Diagram: 6.2 logback-spring.xml" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-diagram.svg" alt="Diagram: 6.2 logback-spring.xml" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-sticky.svg" alt="Sticky Note: 6.2 logback-spring.xml" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-2-logback-spring-xml-sticky.svg" alt="Sticky Note: 6.2 logback-spring.xml" width="30%">
 </a>
 
 
@@ -2249,14 +2249,14 @@ public class DatabasePoolMetrics implements MeterBinder {
 
 ### 6.3 JSON Log Output Example
 
-<a href="../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-handwritten.svg" alt="Handwritten: 6.3 JSON Log Output Example" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-handwritten.svg" alt="Handwritten: 6.3 JSON Log Output Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-diagram.svg" alt="Diagram: 6.3 JSON Log Output Example" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-diagram.svg" alt="Diagram: 6.3 JSON Log Output Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-sticky.svg" alt="Sticky Note: 6.3 JSON Log Output Example" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-3-json-log-output-example-sticky.svg" alt="Sticky Note: 6.3 JSON Log Output Example" width="30%">
 </a>
 
 
@@ -2283,14 +2283,14 @@ public class DatabasePoolMetrics implements MeterBinder {
 
 ### 6.4 MDC Filter for Correlation ID
 
-<a href="../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-handwritten.svg" alt="Handwritten: 6.4 MDC Filter for Correlation ID" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-handwritten.svg" alt="Handwritten: 6.4 MDC Filter for Correlation ID" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-diagram.svg" alt="Diagram: 6.4 MDC Filter for Correlation ID" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-diagram.svg" alt="Diagram: 6.4 MDC Filter for Correlation ID" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-sticky.svg" alt="Sticky Note: 6.4 MDC Filter for Correlation ID" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-4-mdc-filter-for-correlation-id-sticky.svg" alt="Sticky Note: 6.4 MDC Filter for Correlation ID" width="30%">
 </a>
 
 
@@ -2348,14 +2348,14 @@ public class CorrelationIdFilter implements Filter {
 
 ### 6.5 RestTemplate Correlation ID Interceptor
 
-<a href="../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-handwritten.svg" alt="Handwritten: 6.5 RestTemplate Correlation ID Interceptor" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-handwritten.svg" alt="Handwritten: 6.5 RestTemplate Correlation ID Interceptor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-diagram.svg" alt="Diagram: 6.5 RestTemplate Correlation ID Interceptor" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-diagram.svg" alt="Diagram: 6.5 RestTemplate Correlation ID Interceptor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-sticky.svg" alt="Sticky Note: 6.5 RestTemplate Correlation ID Interceptor" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-5-resttemplate-correlation-id-interceptor-sticky.svg" alt="Sticky Note: 6.5 RestTemplate Correlation ID Interceptor" width="30%">
 </a>
 
 
@@ -2396,14 +2396,14 @@ public class CorrelationIdInterceptor implements ClientHttpRequestInterceptor {
 
 ### 6.6 Structured Logging Service
 
-<a href="../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-handwritten.svg" alt="Handwritten: 6.6 Structured Logging Service" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-handwritten.svg" alt="Handwritten: 6.6 Structured Logging Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-diagram.svg" alt="Diagram: 6.6 Structured Logging Service" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-diagram.svg" alt="Diagram: 6.6 Structured Logging Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-sticky.svg" alt="Sticky Note: 6.6 Structured Logging Service" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/6-6-structured-logging-service-sticky.svg" alt="Sticky Note: 6.6 Structured Logging Service" width="30%">
 </a>
 
 
@@ -2476,14 +2476,14 @@ public class StructuredLogger {
 
 ### 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)
 
-<a href="../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-handwritten.svg" alt="Handwritten: 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-handwritten.svg" alt="Handwritten: 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-diagram.svg" alt="Diagram: 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-diagram.svg" alt="Diagram: 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-sticky.svg" alt="Sticky Note: 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-1-elk-stack-filebeat-logstash-elasticsearch-kibana-sticky.svg" alt="Sticky Note: 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)" width="30%">
 </a>
 
 
@@ -2551,14 +2551,14 @@ volumes:
 
 ### 7.2 Filebeat Configuration
 
-<a href="../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-handwritten.svg" alt="Handwritten: 7.2 Filebeat Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-handwritten.svg" alt="Handwritten: 7.2 Filebeat Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-diagram.svg" alt="Diagram: 7.2 Filebeat Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-diagram.svg" alt="Diagram: 7.2 Filebeat Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-sticky.svg" alt="Sticky Note: 7.2 Filebeat Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-2-filebeat-configuration-sticky.svg" alt="Sticky Note: 7.2 Filebeat Configuration" width="30%">
 </a>
 
 
@@ -2598,14 +2598,14 @@ logging.level: warning
 
 ### 7.3 Logstash Configuration
 
-<a href="../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-handwritten.svg" alt="Handwritten: 7.3 Logstash Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-handwritten.svg" alt="Handwritten: 7.3 Logstash Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-diagram.svg" alt="Diagram: 7.3 Logstash Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-diagram.svg" alt="Diagram: 7.3 Logstash Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-sticky.svg" alt="Sticky Note: 7.3 Logstash Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-3-logstash-configuration-sticky.svg" alt="Sticky Note: 7.3 Logstash Configuration" width="30%">
 </a>
 
 
@@ -2662,14 +2662,14 @@ output {
 
 ### 7.4 Loki Stack (Promtail → Loki → Grafana)
 
-<a href="../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-handwritten.svg" alt="Handwritten: 7.4 Loki Stack (Promtail → Loki → Grafana)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-handwritten.svg" alt="Handwritten: 7.4 Loki Stack (Promtail → Loki → Grafana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-diagram.svg" alt="Diagram: 7.4 Loki Stack (Promtail → Loki → Grafana)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-diagram.svg" alt="Diagram: 7.4 Loki Stack (Promtail → Loki → Grafana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-sticky.svg" alt="Sticky Note: 7.4 Loki Stack (Promtail → Loki → Grafana)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-4-loki-stack-promtail-loki-grafana-sticky.svg" alt="Sticky Note: 7.4 Loki Stack (Promtail → Loki → Grafana)" width="30%">
 </a>
 
 
@@ -2721,14 +2721,14 @@ volumes:
 
 ### 7.5 Promtail Configuration
 
-<a href="../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-handwritten.svg" alt="Handwritten: 7.5 Promtail Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-handwritten.svg" alt="Handwritten: 7.5 Promtail Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-diagram.svg" alt="Diagram: 7.5 Promtail Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-diagram.svg" alt="Diagram: 7.5 Promtail Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-sticky.svg" alt="Sticky Note: 7.5 Promtail Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-5-promtail-configuration-sticky.svg" alt="Sticky Note: 7.5 Promtail Configuration" width="30%">
 </a>
 
 
@@ -2791,14 +2791,14 @@ scrape_configs:
 
 ### 7.6 Loki Configuration
 
-<a href="../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-handwritten.svg" alt="Handwritten: 7.6 Loki Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-handwritten.svg" alt="Handwritten: 7.6 Loki Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-diagram.svg" alt="Diagram: 7.6 Loki Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-diagram.svg" alt="Diagram: 7.6 Loki Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-sticky.svg" alt="Sticky Note: 7.6 Loki Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-6-loki-configuration-sticky.svg" alt="Sticky Note: 7.6 Loki Configuration" width="30%">
 </a>
 
 
@@ -2841,14 +2841,14 @@ compactor:
 
 ### 7.7 LogQL Queries
 
-<a href="../../assets/images/diagrams/java/55-observability/7-7-logql-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-7-logql-queries-handwritten.svg" alt="Handwritten: 7.7 LogQL Queries" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-7-logql-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-7-logql-queries-handwritten.svg" alt="Handwritten: 7.7 LogQL Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-7-logql-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-7-logql-queries-diagram.svg" alt="Diagram: 7.7 LogQL Queries" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-7-logql-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-7-logql-queries-diagram.svg" alt="Diagram: 7.7 LogQL Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/7-7-logql-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/7-7-logql-queries-sticky.svg" alt="Sticky Note: 7.7 LogQL Queries" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/7-7-logql-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/7-7-logql-queries-sticky.svg" alt="Sticky Note: 7.7 LogQL Queries" width="30%">
 </a>
 
 
@@ -2905,14 +2905,14 @@ sum by (level) (count_over_time({job="myapp"}[1h]))
 
 ### 8.1 Definitions
 
-<a href="../../assets/images/diagrams/java/55-observability/8-1-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-1-definitions-handwritten.svg" alt="Handwritten: 8.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-1-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-1-definitions-handwritten.svg" alt="Handwritten: 8.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/8-1-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-1-definitions-diagram.svg" alt="Diagram: 8.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-1-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-1-definitions-diagram.svg" alt="Diagram: 8.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/8-1-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-1-definitions-sticky.svg" alt="Sticky Note: 8.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-1-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-1-definitions-sticky.svg" alt="Sticky Note: 8.1 Definitions" width="30%">
 </a>
 
 
@@ -2924,14 +2924,14 @@ sum by (level) (count_over_time({job="myapp"}[1h]))
 
 ### 8.2 SLI Implementation with Micrometer
 
-<a href="../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-handwritten.svg" alt="Handwritten: 8.2 SLI Implementation with Micrometer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-handwritten.svg" alt="Handwritten: 8.2 SLI Implementation with Micrometer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-diagram.svg" alt="Diagram: 8.2 SLI Implementation with Micrometer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-diagram.svg" alt="Diagram: 8.2 SLI Implementation with Micrometer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-sticky.svg" alt="Sticky Note: 8.2 SLI Implementation with Micrometer" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-2-sli-implementation-with-micrometer-sticky.svg" alt="Sticky Note: 8.2 SLI Implementation with Micrometer" width="30%">
 </a>
 
 
@@ -3010,14 +3010,14 @@ public class ServiceLevelIndicators {
 
 ### 8.3 SLO Burn Rate Alert
 
-<a href="../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-handwritten.svg" alt="Handwritten: 8.3 SLO Burn Rate Alert" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-handwritten.svg" alt="Handwritten: 8.3 SLO Burn Rate Alert" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-diagram.svg" alt="Diagram: 8.3 SLO Burn Rate Alert" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-diagram.svg" alt="Diagram: 8.3 SLO Burn Rate Alert" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-sticky.svg" alt="Sticky Note: 8.3 SLO Burn Rate Alert" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/8-3-slo-burn-rate-alert-sticky.svg" alt="Sticky Note: 8.3 SLO Burn Rate Alert" width="30%">
 </a>
 
 
@@ -3078,14 +3078,14 @@ groups:
 
 ### 9.1 Prometheus Alerting Rules
 
-<a href="../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-handwritten.svg" alt="Handwritten: 9.1 Prometheus Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-handwritten.svg" alt="Handwritten: 9.1 Prometheus Alerting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-diagram.svg" alt="Diagram: 9.1 Prometheus Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-diagram.svg" alt="Diagram: 9.1 Prometheus Alerting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-sticky.svg" alt="Sticky Note: 9.1 Prometheus Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-1-prometheus-alerting-rules-sticky.svg" alt="Sticky Note: 9.1 Prometheus Alerting Rules" width="30%">
 </a>
 
 
@@ -3200,14 +3200,14 @@ groups:
 
 ### 9.2 Alertmanager Configuration
 
-<a href="../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-handwritten.svg" alt="Handwritten: 9.2 Alertmanager Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-handwritten.svg" alt="Handwritten: 9.2 Alertmanager Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-diagram.svg" alt="Diagram: 9.2 Alertmanager Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-diagram.svg" alt="Diagram: 9.2 Alertmanager Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-sticky.svg" alt="Sticky Note: 9.2 Alertmanager Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-2-alertmanager-configuration-sticky.svg" alt="Sticky Note: 9.2 Alertmanager Configuration" width="30%">
 </a>
 
 
@@ -3304,14 +3304,14 @@ templates:
 
 ### 9.3 Alert Templates
 
-<a href="../../assets/images/diagrams/java/55-observability/9-3-alert-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-3-alert-templates-handwritten.svg" alt="Handwritten: 9.3 Alert Templates" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-3-alert-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-3-alert-templates-handwritten.svg" alt="Handwritten: 9.3 Alert Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-3-alert-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-3-alert-templates-diagram.svg" alt="Diagram: 9.3 Alert Templates" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-3-alert-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-3-alert-templates-diagram.svg" alt="Diagram: 9.3 Alert Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-3-alert-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-3-alert-templates-sticky.svg" alt="Sticky Note: 9.3 Alert Templates" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-3-alert-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-3-alert-templates-sticky.svg" alt="Sticky Note: 9.3 Alert Templates" width="30%">
 </a>
 
 
@@ -3358,14 +3358,14 @@ templates:
 
 ### 9.4 Grafana Alerting (Alternative)
 
-<a href="../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-handwritten.svg" alt="Handwritten: 9.4 Grafana Alerting (Alternative)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-handwritten.svg" alt="Handwritten: 9.4 Grafana Alerting (Alternative)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-diagram.svg" alt="Diagram: 9.4 Grafana Alerting (Alternative)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-diagram.svg" alt="Diagram: 9.4 Grafana Alerting (Alternative)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-sticky.svg" alt="Sticky Note: 9.4 Grafana Alerting (Alternative)" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-4-grafana-alerting-alternative-sticky.svg" alt="Sticky Note: 9.4 Grafana Alerting (Alternative)" width="30%">
 </a>
 
 
@@ -3406,14 +3406,14 @@ groups:
 
 ### 9.5 PagerDuty Integration
 
-<a href="../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-handwritten.svg" alt="Handwritten: 9.5 PagerDuty Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-handwritten.svg" alt="Handwritten: 9.5 PagerDuty Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-diagram.svg" alt="Diagram: 9.5 PagerDuty Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-diagram.svg" alt="Diagram: 9.5 PagerDuty Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-sticky.svg" alt="Sticky Note: 9.5 PagerDuty Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-5-pagerduty-integration-sticky.svg" alt="Sticky Note: 9.5 PagerDuty Integration" width="30%">
 </a>
 
 
@@ -3437,14 +3437,14 @@ receivers:
 
 ### 9.6 Slack Integration
 
-<a href="../../assets/images/diagrams/java/55-observability/9-6-slack-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-6-slack-integration-handwritten.svg" alt="Handwritten: 9.6 Slack Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-6-slack-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-6-slack-integration-handwritten.svg" alt="Handwritten: 9.6 Slack Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-6-slack-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-6-slack-integration-diagram.svg" alt="Diagram: 9.6 Slack Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-6-slack-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-6-slack-integration-diagram.svg" alt="Diagram: 9.6 Slack Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/55-observability/9-6-slack-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/55-observability/9-6-slack-integration-sticky.svg" alt="Sticky Note: 9.6 Slack Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/55-observability/9-6-slack-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/55-observability/9-6-slack-integration-sticky.svg" alt="Sticky Note: 9.6 Slack Integration" width="30%">
 </a>
 
 

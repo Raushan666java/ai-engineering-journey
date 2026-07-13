@@ -43,14 +43,14 @@
 
 ### १.१ साक्षी भाव क्या है?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: १.१ साक्षी भाव क्या है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: १.१ साक्षी भाव क्या है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: १.१ साक्षी भाव क्या है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: १.१ साक्षी भाव क्या है?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: १.१ साक्षी भाव क्या है?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: १.१ साक्षी भाव क्या है?" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ flowchart TD
 
 ### १.२ ओशो के तीन स्तरों का साक्ष्य
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: १.२ ओशो के तीन स्तरों का साक्ष्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: १.२ ओशो के तीन स्तरों का साक्ष्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: १.२ ओशो के तीन स्तरों का साक्ष्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: १.२ ओशो के तीन स्तरों का साक्ष्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: १.२ ओशो के तीन स्तरों का साक्ष्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: १.२ ओशो के तीन स्तरों का साक्ष्य" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ flowchart TD
 
 ### २.1 ओशो का वर्गीकरण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-handwritten.svg" alt="Handwritten: २.1 ओशो का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-handwritten.svg" alt="Handwritten: २.1 ओशो का वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-diagram.svg" alt="Diagram: २.1 ओशो का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-diagram.svg" alt="Diagram: २.1 ओशो का वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-sticky.svg" alt="Sticky Note: २.1 ओशो का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/1-sticky.svg" alt="Sticky Note: २.1 ओशो का वर्गीकरण" width="30%">
 </a>
 
 
@@ -160,14 +160,14 @@ mindmap
 
 ### २.2 प्रमुख तकनीकें — साक्षी भाव की ओशो की व्याख्या
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-handwritten.svg" alt="Handwritten: २.2 प्रमुख तकनीकें — साक्षी भाव की ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-handwritten.svg" alt="Handwritten: २.2 प्रमुख तकनीकें — साक्षी भाव की ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-diagram.svg" alt="Diagram: २.2 प्रमुख तकनीकें — साक्षी भाव की ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-diagram.svg" alt="Diagram: २.2 प्रमुख तकनीकें — साक्षी भाव की ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-sticky.svg" alt="Sticky Note: २.2 प्रमुख तकनीकें — साक्षी भाव की ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/2-sticky.svg" alt="Sticky Note: २.2 प्रमुख तकनीकें — साक्षी भाव की ओशो की व्याख्या" width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ mindmap
 
 ### ३.१ जाग्रत का साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ३.१ जाग्रत का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ३.१ जाग्रत का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ३.१ जाग्रत का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ३.१ जाग्रत का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ३.१ जाग्रत का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ३.१ जाग्रत का साक्षी" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ mindmap
 
 ### ३.२ स्वप्न का साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ३.२ स्वप्न का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ३.२ स्वप्न का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ३.२ स्वप्न का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ३.२ स्वप्न का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ३.२ स्वप्न का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ३.२ स्वप्न का साक्षी" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ mindmap
 
 ### ३.३ सुषुप्ति का साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ३.३ सुषुप्ति का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ३.३ सुषुप्ति का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ३.३ सुषुप्ति का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ३.३ सुषुप्ति का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ३.३ सुषुप्ति का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ३.३ सुषुप्ति का साक्षी" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ flowchart TD
 
 ### ४.१ पाँच प्रमुख बाधाएँ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ४.१ पाँच प्रमुख बाधाएँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ४.१ पाँच प्रमुख बाधाएँ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ४.१ पाँच प्रमुख बाधाएँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ४.१ पाँच प्रमुख बाधाएँ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ४.१ पाँच प्रमुख बाधाएँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ४.१ पाँच प्रमुख बाधाएँ" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ flowchart TD
 
 ### ४.२ ओशो का सबसे महत्वपूर्ण सूत्र
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ४.२ ओशो का सबसे महत्वपूर्ण सूत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ४.२ ओशो का सबसे महत्वपूर्ण सूत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ४.२ ओशो का सबसे महत्वपूर्ण सूत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ४.२ ओशो का सबसे महत्वपूर्ण सूत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ४.२ ओशो का सबसे महत्वपूर्ण सूत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ४.२ ओशो का सबसे महत्वपूर्ण सूत्र" width="30%">
 </a>
 
 
@@ -296,14 +296,14 @@ flowchart TD
 
 ### ५.१ एक दिन का साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ५.१ एक दिन का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ५.१ एक दिन का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ५.१ एक दिन का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ५.१ एक दिन का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ५.१ एक दिन का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ५.१ एक दिन का साक्षी" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ flowchart LR
 
 ### ५.२ "रिमाइंडर तकनीक" — ओशो की सबसे सरल विधि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ५.२ "रिमाइंडर तकनीक" — ओशो की सबसे सरल विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: ५.२ "रिमाइंडर तकनीक" — ओशो की सबसे सरल विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ५.२ "रिमाइंडर तकनीक" — ओशो की सबसे सरल विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: ५.२ "रिमाइंडर तकनीक" — ओशो की सबसे सरल विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ५.२ "रिमाइंडर तकनीक" — ओशो की सबसे सरल विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: ५.२ "रिमाइंडर तकनीक" — ओशो की सबसे सरल विधि" width="30%">
 </a>
 
 
@@ -777,98 +777,98 @@ export {
 
 ### सूत्र १: बस देखो — कुछ मत करो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र १: बस देखो — कुछ मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र १: बस देखो — कुछ मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र १: बस देखो — कुछ मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र १: बस देखो — कुछ मत करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र १: बस देखो — कुछ मत करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र १: बस देखो — कुछ मत करो" width="30%">
 </a>
 
 > *"देखना कोई क्रिया नहीं है। तुम कुछ नहीं कर रहे हो — तुम बस हो रहे हो। और इस होने में, देखना अपने आप होता है।"*
 
 ### सूत्र २: न तो दबाओ, न व्यक्त करो — बस देखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र २: न तो दबाओ, न व्यक्त करो — बस देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र २: न तो दबाओ, न व्यक्त करो — बस देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र २: न तो दबाओ, न व्यक्त करो — बस देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र २: न तो दबाओ, न व्यक्त करो — बस देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र २: न तो दबाओ, न व्यक्त करो — बस देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र २: न तो दबाओ, न व्यक्त करो — बस देखो" width="30%">
 </a>
 
 > *"क्रोध आए — न उसे दबाओ, न उसे व्यक्त करो। बस देखो। देखते-देखते वह गायब हो जाएगा — और तुम कुछ गहरा सीखोगे।"*
 
 ### सूत्र ३: भूलना स्वाभाविक है — घबराओ मत
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ३: भूलना स्वाभाविक है — घबराओ मत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ३: भूलना स्वाभाविक है — घबराओ मत" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ३: भूलना स्वाभाविक है — घबराओ मत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ३: भूलना स्वाभाविक है — घबराओ मत" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ३: भूलना स्वाभाविक है — घबराओ मत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ३: भूलना स्वाभाविक है — घबराओ मत" width="30%">
 </a>
 
 > *"तुम हजारों बार भूलोगे। यह स्वाभाविक है। हर बार जब याद आए, बस देखो। भूलना कोई समस्या नहीं है। समस्या है तो यह सोचना कि भूलना समस्या है।"*
 
 ### सूत्र ४: देखने वाले को मत पकड़ो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ४: देखने वाले को मत पकड़ो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ४: देखने वाले को मत पकड़ो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ४: देखने वाले को मत पकड़ो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ४: देखने वाले को मत पकड़ो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ४: देखने वाले को मत पकड़ो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ४: देखने वाले को मत पकड़ो" width="30%">
 </a>
 
 > *"जब तुम साक्षी भाव में सफल होने लगते हो, तो अहंकार कहता है — 'मैं साक्षी हूँ।' इस विचार को भी देखो। यह भी एक विचार है।"*
 
 ### सूत्र ५: साक्षी भाव कोई गंभीर बात नहीं है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ५: साक्षी भाव कोई गंभीर बात नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ५: साक्षी भाव कोई गंभीर बात नहीं है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ५: साक्षी भाव कोई गंभीर बात नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ५: साक्षी भाव कोई गंभीर बात नहीं है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ५: साक्षी भाव कोई गंभीर बात नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ५: साक्षी भाव कोई गंभीर बात नहीं है" width="30%">
 </a>
 
 > *"इसे बहुत गंभीर मत लो। खेलो, हँसो, मज़े करो — और देखते रहो। गंभीरता अहंकार को पोषित करती है।"*
 
 ### सूत्र ६: हर चीज़ — एक अवसर है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ६: हर चीज़ — एक अवसर है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ६: हर चीज़ — एक अवसर है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ६: हर चीज़ — एक अवसर है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ६: हर चीज़ — एक अवसर है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ६: हर चीज़ — एक अवसर है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ६: हर चीज़ — एक अवसर है" width="30%">
 </a>
 
 > *"दर्द भी, सुख भी, क्रोध भी, प्रेम भी — हर चीज़ देखने का एक अवसर है। कुछ भी बेकार नहीं जाता।"*
 
 ### सूत्र ७: अंत में, साक्षी को भी छोड़ दो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ७: अंत में, साक्षी को भी छोड़ दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: सूत्र ७: अंत में, साक्षी को भी छोड़ दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ७: अंत में, साक्षी को भी छोड़ दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: सूत्र ७: अंत में, साक्षी को भी छोड़ दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ७: अंत में, साक्षी को भी छोड़ दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: सूत्र ७: अंत में, साक्षी को भी छोड़ दो" width="30%">
 </a>
 
 > *"एक दिन — साक्षी भी गायब हो जाता है। सिर्फ साक्षित्व बचता है। कोई 'मैं' नहीं बचता — सिर्फ देखना है। यही अंतिम अवस्था है।"*
@@ -879,56 +879,56 @@ export {
 
 ### अभ्यास १: एक दिन — पूरा साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास १: एक दिन — पूरा साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास १: एक दिन — पूरा साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास १: एक दिन — पूरा साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास १: एक दिन — पूरा साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास १: एक दिन — पूरा साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास १: एक दिन — पूरा साक्षी" width="30%">
 </a>
 
 कल पूरे दिन — हर घंटे, एक मिनट के लिए रुको। देखो कि तुम कहाँ हो, क्या कर रहे हो, कौन देख रहा है।
 
 ### अभ्यास २: भावना का साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास २: भावना का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास २: भावना का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास २: भावना का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास २: भावना का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास २: भावना का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास २: भावना का साक्षी" width="30%">
 </a>
 
 जब भी कोई तीव्र भावना उठे — क्रोध, उदासी, आनंद — तुरंत रुको। उसे देखो। उससे पहचान मत बनाओ। बस देखो — वह आई, वह गई।
 
 ### अभ्यास ३: सोते समय साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास ३: सोते समय साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास ३: सोते समय साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास ३: सोते समय साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास ३: सोते समय साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास ३: सोते समय साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास ३: सोते समय साक्षी" width="30%">
 </a>
 
 सोने से पहले, पीठ के बल लेटो। शरीर को ढीला छोड़ दो। नींद को आते देखो — कैसे शरीर सो रहा है, लेकिन तुम जाग रहे हो। जितनी देर रह सको, देखते रहो।
 
 ### अभ्यास ४: कोडिंग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/16-osho-ki-sakshaat-vidhi/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
 </a>
 
 `WitnessingTracker` में एक नई मेथड जोड़ो जो साक्षी भाव की प्रगति को एक ग्राफ़ के रूप में दिखाए — कैसे शरीर के साक्षी से मन के साक्षी, फिर आगे बढ़ते हो।

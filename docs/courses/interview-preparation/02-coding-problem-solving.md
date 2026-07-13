@@ -34,14 +34,14 @@ flowchart TD
 
 ### UMPIRE Method
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-handwritten.svg" alt="Handwritten: UMPIRE Method" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-handwritten.svg" alt="Handwritten: UMPIRE Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-diagram.svg" alt="Diagram: UMPIRE Method" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-diagram.svg" alt="Diagram: UMPIRE Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-sticky.svg" alt="Sticky Note: UMPIRE Method" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/umpire-method-sticky.svg" alt="Sticky Note: UMPIRE Method" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ flowchart TD
 
 ### Problem 1: Two Sum
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-handwritten.svg" alt="Handwritten: Problem 1: Two Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-handwritten.svg" alt="Handwritten: Problem 1: Two Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-diagram.svg" alt="Diagram: Problem 1: Two Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-diagram.svg" alt="Diagram: Problem 1: Two Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-sticky.svg" alt="Sticky Note: Problem 1: Two Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-1-two-sum-sticky.svg" alt="Sticky Note: Problem 1: Two Sum" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ function twoSum(nums: number[], target: number): number[] {
 
 ### Problem 2: Contains Duplicate
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-handwritten.svg" alt="Handwritten: Problem 2: Contains Duplicate" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-handwritten.svg" alt="Handwritten: Problem 2: Contains Duplicate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-diagram.svg" alt="Diagram: Problem 2: Contains Duplicate" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-diagram.svg" alt="Diagram: Problem 2: Contains Duplicate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-sticky.svg" alt="Sticky Note: Problem 2: Contains Duplicate" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-2-contains-duplicate-sticky.svg" alt="Sticky Note: Problem 2: Contains Duplicate" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ function containsDuplicate(nums: number[]): boolean {
 
 ### Problem 3: Maximum Subarray (Kadane's Algorithm)
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" alt="Diagram: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" alt="Diagram: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ function maxSubArrayWithElements(nums: number[]): number[] {
 
 ### Problem 4: Product of Array Except Self
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-handwritten.svg" alt="Handwritten: Problem 4: Product of Array Except Self" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-handwritten.svg" alt="Handwritten: Problem 4: Product of Array Except Self" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-diagram.svg" alt="Diagram: Problem 4: Product of Array Except Self" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-diagram.svg" alt="Diagram: Problem 4: Product of Array Except Self" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-sticky.svg" alt="Sticky Note: Problem 4: Product of Array Except Self" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-4-product-of-array-except-self-sticky.svg" alt="Sticky Note: Problem 4: Product of Array Except Self" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ function productExceptSelf(nums: number[]): number[] {
 
 ### Problem 5: Best Time to Buy and Sell Stock
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-handwritten.svg" alt="Handwritten: Problem 5: Best Time to Buy and Sell Stock" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-handwritten.svg" alt="Handwritten: Problem 5: Best Time to Buy and Sell Stock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-diagram.svg" alt="Diagram: Problem 5: Best Time to Buy and Sell Stock" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-diagram.svg" alt="Diagram: Problem 5: Best Time to Buy and Sell Stock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-sticky.svg" alt="Sticky Note: Problem 5: Best Time to Buy and Sell Stock" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-5-best-time-to-buy-and-sell-stock-sticky.svg" alt="Sticky Note: Problem 5: Best Time to Buy and Sell Stock" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ function maxProfit(prices: number[]): number {
 
 ### Problem 6: Move Zeroes
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-handwritten.svg" alt="Handwritten: Problem 6: Move Zeroes" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-handwritten.svg" alt="Handwritten: Problem 6: Move Zeroes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-diagram.svg" alt="Diagram: Problem 6: Move Zeroes" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-diagram.svg" alt="Diagram: Problem 6: Move Zeroes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-sticky.svg" alt="Sticky Note: Problem 6: Move Zeroes" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-6-move-zeroes-sticky.svg" alt="Sticky Note: Problem 6: Move Zeroes" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ function moveZeroesSwap(nums: number[]): void {
 
 ### Problem 7: Three Sum
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-handwritten.svg" alt="Handwritten: Problem 7: Three Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-handwritten.svg" alt="Handwritten: Problem 7: Three Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-diagram.svg" alt="Diagram: Problem 7: Three Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-diagram.svg" alt="Diagram: Problem 7: Three Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-sticky.svg" alt="Sticky Note: Problem 7: Three Sum" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-7-three-sum-sticky.svg" alt="Sticky Note: Problem 7: Three Sum" width="30%">
 </a>
 
 
@@ -521,14 +521,14 @@ function threeSum(nums: number[]): number[][] {
 
 ### Problem 8: Container With Most Water
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-handwritten.svg" alt="Handwritten: Problem 8: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-handwritten.svg" alt="Handwritten: Problem 8: Container With Most Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-diagram.svg" alt="Diagram: Problem 8: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-diagram.svg" alt="Diagram: Problem 8: Container With Most Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-sticky.svg" alt="Sticky Note: Problem 8: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-8-container-with-most-water-sticky.svg" alt="Sticky Note: Problem 8: Container With Most Water" width="30%">
 </a>
 
 
@@ -569,14 +569,14 @@ function maxArea(height: number[]): number {
 
 ### Problem 9: Find Minimum in Rotated Sorted Array
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Problem 9: Find Minimum in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Problem 9: Find Minimum in Rotated Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-diagram.svg" alt="Diagram: Problem 9: Find Minimum in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-diagram.svg" alt="Diagram: Problem 9: Find Minimum in Rotated Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Problem 9: Find Minimum in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-9-find-minimum-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Problem 9: Find Minimum in Rotated Sorted Array" width="30%">
 </a>
 
 
@@ -615,14 +615,14 @@ function findMin(nums: number[]): number {
 
 ### Problem 10: Merge Intervals
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-handwritten.svg" alt="Handwritten: Problem 10: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-handwritten.svg" alt="Handwritten: Problem 10: Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-diagram.svg" alt="Diagram: Problem 10: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-diagram.svg" alt="Diagram: Problem 10: Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-sticky.svg" alt="Sticky Note: Problem 10: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-10-merge-intervals-sticky.svg" alt="Sticky Note: Problem 10: Merge Intervals" width="30%">
 </a>
 
 
@@ -666,14 +666,14 @@ function merge(intervals: number[][]): number[][] {
 
 ### Problem 11: Valid Palindrome
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-handwritten.svg" alt="Handwritten: Problem 11: Valid Palindrome" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-handwritten.svg" alt="Handwritten: Problem 11: Valid Palindrome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-diagram.svg" alt="Diagram: Problem 11: Valid Palindrome" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-diagram.svg" alt="Diagram: Problem 11: Valid Palindrome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-sticky.svg" alt="Sticky Note: Problem 11: Valid Palindrome" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-11-valid-palindrome-sticky.svg" alt="Sticky Note: Problem 11: Valid Palindrome" width="30%">
 </a>
 
 
@@ -715,14 +715,14 @@ function isAlphanumeric(ch: string): boolean {
 
 ### Problem 12: Longest Substring Without Repeating Characters
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Problem 12: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Problem 12: Longest Substring Without Repeating Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Problem 12: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Problem 12: Longest Substring Without Repeating Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Problem 12: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-12-longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Problem 12: Longest Substring Without Repeating Characters" width="30%">
 </a>
 
 
@@ -780,14 +780,14 @@ function lengthOfLongestSubstring(s: string): number {
 
 ### Problem 13: Valid Anagram
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-handwritten.svg" alt="Handwritten: Problem 13: Valid Anagram" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-handwritten.svg" alt="Handwritten: Problem 13: Valid Anagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-diagram.svg" alt="Diagram: Problem 13: Valid Anagram" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-diagram.svg" alt="Diagram: Problem 13: Valid Anagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-sticky.svg" alt="Sticky Note: Problem 13: Valid Anagram" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-13-valid-anagram-sticky.svg" alt="Sticky Note: Problem 13: Valid Anagram" width="30%">
 </a>
 
 
@@ -829,14 +829,14 @@ function isAnagram(s: string, t: string): boolean {
 
 ### Problem 14: Group Anagrams
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-handwritten.svg" alt="Handwritten: Problem 14: Group Anagrams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-handwritten.svg" alt="Handwritten: Problem 14: Group Anagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-diagram.svg" alt="Diagram: Problem 14: Group Anagrams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-diagram.svg" alt="Diagram: Problem 14: Group Anagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-sticky.svg" alt="Sticky Note: Problem 14: Group Anagrams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-14-group-anagrams-sticky.svg" alt="Sticky Note: Problem 14: Group Anagrams" width="30%">
 </a>
 
 
@@ -889,14 +889,14 @@ function groupAnagramsOptimized(strs: string[]): string[][] {
 
 ### Problem 15: Longest Palindromic Substring
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-handwritten.svg" alt="Handwritten: Problem 15: Longest Palindromic Substring" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-handwritten.svg" alt="Handwritten: Problem 15: Longest Palindromic Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-diagram.svg" alt="Diagram: Problem 15: Longest Palindromic Substring" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-diagram.svg" alt="Diagram: Problem 15: Longest Palindromic Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-sticky.svg" alt="Sticky Note: Problem 15: Longest Palindromic Substring" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-15-longest-palindromic-substring-sticky.svg" alt="Sticky Note: Problem 15: Longest Palindromic Substring" width="30%">
 </a>
 
 
@@ -961,14 +961,14 @@ function longestPalindrome(s: string): string {
 
 ### Problem 16: First Unique Character in a String
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-handwritten.svg" alt="Handwritten: Problem 16: First Unique Character in a String" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-handwritten.svg" alt="Handwritten: Problem 16: First Unique Character in a String" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-diagram.svg" alt="Diagram: Problem 16: First Unique Character in a String" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-diagram.svg" alt="Diagram: Problem 16: First Unique Character in a String" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-sticky.svg" alt="Sticky Note: Problem 16: First Unique Character in a String" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-16-first-unique-character-in-a-string-sticky.svg" alt="Sticky Note: Problem 16: First Unique Character in a String" width="30%">
 </a>
 
 
@@ -1002,14 +1002,14 @@ function firstUniqChar(s: string): number {
 
 ### Problem 17: Reverse a Linked List
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-handwritten.svg" alt="Handwritten: Problem 17: Reverse a Linked List" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-handwritten.svg" alt="Handwritten: Problem 17: Reverse a Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-diagram.svg" alt="Diagram: Problem 17: Reverse a Linked List" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-diagram.svg" alt="Diagram: Problem 17: Reverse a Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-sticky.svg" alt="Sticky Note: Problem 17: Reverse a Linked List" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-17-reverse-a-linked-list-sticky.svg" alt="Sticky Note: Problem 17: Reverse a Linked List" width="30%">
 </a>
 
 
@@ -1060,14 +1060,14 @@ function reverseListRecursive<T>(head: ListNode<T> | null): ListNode<T> | null {
 
 ### Problem 18: Detect Cycle in Linked List
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-handwritten.svg" alt="Handwritten: Problem 18: Detect Cycle in Linked List" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-handwritten.svg" alt="Handwritten: Problem 18: Detect Cycle in Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-diagram.svg" alt="Diagram: Problem 18: Detect Cycle in Linked List" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-diagram.svg" alt="Diagram: Problem 18: Detect Cycle in Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-sticky.svg" alt="Sticky Note: Problem 18: Detect Cycle in Linked List" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-18-detect-cycle-in-linked-list-sticky.svg" alt="Sticky Note: Problem 18: Detect Cycle in Linked List" width="30%">
 </a>
 
 
@@ -1125,14 +1125,14 @@ function detectCycle<T>(head: ListNode<T> | null): ListNode<T> | null {
 
 ### Problem 19: Merge Two Sorted Lists
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-handwritten.svg" alt="Handwritten: Problem 19: Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-handwritten.svg" alt="Handwritten: Problem 19: Merge Two Sorted Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-diagram.svg" alt="Diagram: Problem 19: Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-diagram.svg" alt="Diagram: Problem 19: Merge Two Sorted Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-sticky.svg" alt="Sticky Note: Problem 19: Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-19-merge-two-sorted-lists-sticky.svg" alt="Sticky Note: Problem 19: Merge Two Sorted Lists" width="30%">
 </a>
 
 
@@ -1191,14 +1191,14 @@ function mergeTwoListsRecursive<T extends number | string>(
 
 ### Problem 20: Remove Nth Node From End
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-handwritten.svg" alt="Handwritten: Problem 20: Remove Nth Node From End" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-handwritten.svg" alt="Handwritten: Problem 20: Remove Nth Node From End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-diagram.svg" alt="Diagram: Problem 20: Remove Nth Node From End" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-diagram.svg" alt="Diagram: Problem 20: Remove Nth Node From End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-sticky.svg" alt="Sticky Note: Problem 20: Remove Nth Node From End" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-20-remove-nth-node-from-end-sticky.svg" alt="Sticky Note: Problem 20: Remove Nth Node From End" width="30%">
 </a>
 
 
@@ -1262,14 +1262,14 @@ function removeNthFromEndOnePass<T>(head: ListNode<T> | null, n: number): ListNo
 
 ### Problem 21: Maximum Depth of Binary Tree
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Problem 21: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Problem 21: Maximum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-diagram.svg" alt="Diagram: Problem 21: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-diagram.svg" alt="Diagram: Problem 21: Maximum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Problem 21: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-21-maximum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Problem 21: Maximum Depth of Binary Tree" width="30%">
 </a>
 
 
@@ -1321,14 +1321,14 @@ function maxDepthBFS<T>(root: TreeNode<T> | null): number {
 
 ### Problem 22: Invert Binary Tree
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-handwritten.svg" alt="Handwritten: Problem 22: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-handwritten.svg" alt="Handwritten: Problem 22: Invert Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-diagram.svg" alt="Diagram: Problem 22: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-diagram.svg" alt="Diagram: Problem 22: Invert Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-sticky.svg" alt="Sticky Note: Problem 22: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-22-invert-binary-tree-sticky.svg" alt="Sticky Note: Problem 22: Invert Binary Tree" width="30%">
 </a>
 
 
@@ -1370,14 +1370,14 @@ function invertTreeIterative<T>(root: TreeNode<T> | null): TreeNode<T> | null {
 
 ### Problem 23: Validate Binary Search Tree
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-handwritten.svg" alt="Handwritten: Problem 23: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-handwritten.svg" alt="Handwritten: Problem 23: Validate Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-diagram.svg" alt="Diagram: Problem 23: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-diagram.svg" alt="Diagram: Problem 23: Validate Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-sticky.svg" alt="Sticky Note: Problem 23: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-23-validate-binary-search-tree-sticky.svg" alt="Sticky Note: Problem 23: Validate Binary Search Tree" width="30%">
 </a>
 
 
@@ -1417,14 +1417,14 @@ function isValidBSTRange(root: TreeNode<number> | null, min = -Infinity, max = I
 
 ### Problem 24: Binary Tree Level Order Traversal
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 24: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Problem 24: Binary Tree Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Problem 24: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Problem 24: Binary Tree Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 24: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-24-binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Problem 24: Binary Tree Level Order Traversal" width="30%">
 </a>
 
 
@@ -1461,14 +1461,14 @@ function levelOrder<T>(root: TreeNode<T> | null): T[][] {
 
 ### Problem 25: Lowest Common Ancestor of BST
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-handwritten.svg" alt="Handwritten: Problem 25: Lowest Common Ancestor of BST" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-handwritten.svg" alt="Handwritten: Problem 25: Lowest Common Ancestor of BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-diagram.svg" alt="Diagram: Problem 25: Lowest Common Ancestor of BST" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-diagram.svg" alt="Diagram: Problem 25: Lowest Common Ancestor of BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-sticky.svg" alt="Sticky Note: Problem 25: Lowest Common Ancestor of BST" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-25-lowest-common-ancestor-of-bst-sticky.svg" alt="Sticky Note: Problem 25: Lowest Common Ancestor of BST" width="30%">
 </a>
 
 
@@ -1522,14 +1522,14 @@ function lowestCommonAncestorIterative(
 
 ### Problem 26: Number of Islands
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-handwritten.svg" alt="Handwritten: Problem 26: Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-handwritten.svg" alt="Handwritten: Problem 26: Number of Islands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-diagram.svg" alt="Diagram: Problem 26: Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-diagram.svg" alt="Diagram: Problem 26: Number of Islands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-sticky.svg" alt="Sticky Note: Problem 26: Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-26-number-of-islands-sticky.svg" alt="Sticky Note: Problem 26: Number of Islands" width="30%">
 </a>
 
 
@@ -1586,14 +1586,14 @@ function numIslands(grid: string[][]): number {
 
 ### Problem 27: Clone Graph
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-handwritten.svg" alt="Handwritten: Problem 27: Clone Graph" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-handwritten.svg" alt="Handwritten: Problem 27: Clone Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-diagram.svg" alt="Diagram: Problem 27: Clone Graph" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-diagram.svg" alt="Diagram: Problem 27: Clone Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-sticky.svg" alt="Sticky Note: Problem 27: Clone Graph" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-27-clone-graph-sticky.svg" alt="Sticky Note: Problem 27: Clone Graph" width="30%">
 </a>
 
 
@@ -1637,14 +1637,14 @@ function cloneGraph(node: GraphNode | null): GraphNode | null {
 
 ### Problem 28: Course Schedule (Topological Sort)
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-handwritten.svg" alt="Handwritten: Problem 28: Course Schedule (Topological Sort)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-handwritten.svg" alt="Handwritten: Problem 28: Course Schedule (Topological Sort)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-diagram.svg" alt="Diagram: Problem 28: Course Schedule (Topological Sort)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-diagram.svg" alt="Diagram: Problem 28: Course Schedule (Topological Sort)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-sticky.svg" alt="Sticky Note: Problem 28: Course Schedule (Topological Sort)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-28-course-schedule-topological-sort-sticky.svg" alt="Sticky Note: Problem 28: Course Schedule (Topological Sort)" width="30%">
 </a>
 
 
@@ -1694,14 +1694,14 @@ function canFinish(numCourses: number, prerequisites: number[][]): boolean {
 
 ### Problem 29: Word Ladder
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-handwritten.svg" alt="Handwritten: Problem 29: Word Ladder" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-handwritten.svg" alt="Handwritten: Problem 29: Word Ladder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-diagram.svg" alt="Diagram: Problem 29: Word Ladder" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-diagram.svg" alt="Diagram: Problem 29: Word Ladder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-sticky.svg" alt="Sticky Note: Problem 29: Word Ladder" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-29-word-ladder-sticky.svg" alt="Sticky Note: Problem 29: Word Ladder" width="30%">
 </a>
 
 
@@ -1752,14 +1752,14 @@ function ladderLength(beginWord: string, endWord: string, wordList: string[]): n
 
 ### Problem 30: Rotting Oranges
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-handwritten.svg" alt="Handwritten: Problem 30: Rotting Oranges" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-handwritten.svg" alt="Handwritten: Problem 30: Rotting Oranges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-diagram.svg" alt="Diagram: Problem 30: Rotting Oranges" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-diagram.svg" alt="Diagram: Problem 30: Rotting Oranges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-sticky.svg" alt="Sticky Note: Problem 30: Rotting Oranges" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-30-rotting-oranges-sticky.svg" alt="Sticky Note: Problem 30: Rotting Oranges" width="30%">
 </a>
 
 
@@ -1820,14 +1820,14 @@ function orangesRotting(grid: number[][]): number {
 
 ### Problem 31: Fibonacci Number
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-handwritten.svg" alt="Handwritten: Problem 31: Fibonacci Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-handwritten.svg" alt="Handwritten: Problem 31: Fibonacci Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-diagram.svg" alt="Diagram: Problem 31: Fibonacci Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-diagram.svg" alt="Diagram: Problem 31: Fibonacci Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-sticky.svg" alt="Sticky Note: Problem 31: Fibonacci Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-31-fibonacci-number-sticky.svg" alt="Sticky Note: Problem 31: Fibonacci Number" width="30%">
 </a>
 
 
@@ -1877,14 +1877,14 @@ function fib(n: number): number {
 
 ### Problem 32: Climbing Stairs
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-handwritten.svg" alt="Handwritten: Problem 32: Climbing Stairs" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-handwritten.svg" alt="Handwritten: Problem 32: Climbing Stairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-diagram.svg" alt="Diagram: Problem 32: Climbing Stairs" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-diagram.svg" alt="Diagram: Problem 32: Climbing Stairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-sticky.svg" alt="Sticky Note: Problem 32: Climbing Stairs" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-32-climbing-stairs-sticky.svg" alt="Sticky Note: Problem 32: Climbing Stairs" width="30%">
 </a>
 
 
@@ -1917,14 +1917,14 @@ function climbStairs(n: number): number {
 
 ### Problem 33: Coin Change
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-handwritten.svg" alt="Handwritten: Problem 33: Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-handwritten.svg" alt="Handwritten: Problem 33: Coin Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-diagram.svg" alt="Diagram: Problem 33: Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-diagram.svg" alt="Diagram: Problem 33: Coin Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-sticky.svg" alt="Sticky Note: Problem 33: Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-33-coin-change-sticky.svg" alt="Sticky Note: Problem 33: Coin Change" width="30%">
 </a>
 
 
@@ -1957,14 +1957,14 @@ function coinChange(coins: number[], amount: number): number {
 
 ### Problem 34: Longest Increasing Subsequence (LIS)
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-handwritten.svg" alt="Handwritten: Problem 34: Longest Increasing Subsequence (LIS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-handwritten.svg" alt="Handwritten: Problem 34: Longest Increasing Subsequence (LIS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-diagram.svg" alt="Diagram: Problem 34: Longest Increasing Subsequence (LIS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-diagram.svg" alt="Diagram: Problem 34: Longest Increasing Subsequence (LIS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-sticky.svg" alt="Sticky Note: Problem 34: Longest Increasing Subsequence (LIS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-34-longest-increasing-subsequence-lis-sticky.svg" alt="Sticky Note: Problem 34: Longest Increasing Subsequence (LIS)" width="30%">
 </a>
 
 
@@ -2029,14 +2029,14 @@ function lengthOfLISOptimized(nums: number[]): number {
 
 ### Problem 35: Maximum Product Subarray
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-handwritten.svg" alt="Handwritten: Problem 35: Maximum Product Subarray" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-handwritten.svg" alt="Handwritten: Problem 35: Maximum Product Subarray" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-diagram.svg" alt="Diagram: Problem 35: Maximum Product Subarray" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-diagram.svg" alt="Diagram: Problem 35: Maximum Product Subarray" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-sticky.svg" alt="Sticky Note: Problem 35: Maximum Product Subarray" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-35-maximum-product-subarray-sticky.svg" alt="Sticky Note: Problem 35: Maximum Product Subarray" width="30%">
 </a>
 
 
@@ -2070,14 +2070,14 @@ function maxProduct(nums: number[]): number {
 
 ### Problem 36: Edit Distance (Levenshtein Distance)
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-handwritten.svg" alt="Handwritten: Problem 36: Edit Distance (Levenshtein Distance)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-handwritten.svg" alt="Handwritten: Problem 36: Edit Distance (Levenshtein Distance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-diagram.svg" alt="Diagram: Problem 36: Edit Distance (Levenshtein Distance)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-diagram.svg" alt="Diagram: Problem 36: Edit Distance (Levenshtein Distance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-sticky.svg" alt="Sticky Note: Problem 36: Edit Distance (Levenshtein Distance)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-36-edit-distance-levenshtein-distance-sticky.svg" alt="Sticky Note: Problem 36: Edit Distance (Levenshtein Distance)" width="30%">
 </a>
 
 
@@ -2118,14 +2118,14 @@ function minDistance(word1: string, word2: string): number {
 
 ### Problem 37: 0/1 Knapsack
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-handwritten.svg" alt="Handwritten: Problem 37: 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-handwritten.svg" alt="Handwritten: Problem 37: 0/1 Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-diagram.svg" alt="Diagram: Problem 37: 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-diagram.svg" alt="Diagram: Problem 37: 0/1 Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-sticky.svg" alt="Sticky Note: Problem 37: 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-37-0-1-knapsack-sticky.svg" alt="Sticky Note: Problem 37: 0/1 Knapsack" width="30%">
 </a>
 
 
@@ -2172,14 +2172,14 @@ function knapsackOptimized(weights: number[], values: number[], capacity: number
 
 ### Problem 38: Unique Paths
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-handwritten.svg" alt="Handwritten: Problem 38: Unique Paths" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-handwritten.svg" alt="Handwritten: Problem 38: Unique Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-diagram.svg" alt="Diagram: Problem 38: Unique Paths" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-diagram.svg" alt="Diagram: Problem 38: Unique Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-sticky.svg" alt="Sticky Note: Problem 38: Unique Paths" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-38-unique-paths-sticky.svg" alt="Sticky Note: Problem 38: Unique Paths" width="30%">
 </a>
 
 
@@ -2220,14 +2220,14 @@ function uniquePathsMath(m: number, n: number): number {
 
 ### Problem 39: Longest Common Subsequence (LCS)
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: Problem 39: Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: Problem 39: Longest Common Subsequence (LCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: Problem 39: Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: Problem 39: Longest Common Subsequence (LCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: Problem 39: Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-39-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: Problem 39: Longest Common Subsequence (LCS)" width="30%">
 </a>
 
 
@@ -2293,14 +2293,14 @@ function getLCS(text1: string, text2: string): string {
 
 ### Problem 40: House Robber
 
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-handwritten.svg" alt="Handwritten: Problem 40: House Robber" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-handwritten.svg" alt="Handwritten: Problem 40: House Robber" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-diagram.svg" alt="Diagram: Problem 40: House Robber" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-diagram.svg" alt="Diagram: Problem 40: House Robber" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-sticky.svg" alt="Sticky Note: Problem 40: House Robber" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/02-coding-problem-solving/problem-40-house-robber-sticky.svg" alt="Sticky Note: Problem 40: House Robber" width="30%">
 </a>
 
 

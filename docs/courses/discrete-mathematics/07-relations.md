@@ -54,14 +54,14 @@ flowchart LR
 
 ### 7.1 Definition
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-handwritten.svg" alt="Handwritten: 7.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-handwritten.svg" alt="Handwritten: 7.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-diagram.svg" alt="Diagram: 7.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-diagram.svg" alt="Diagram: 7.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-sticky.svg" alt="Sticky Note: 7.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-sticky.svg" alt="Sticky Note: 7.1 Definition" width="30%">
 </a>
 
 
@@ -71,14 +71,14 @@ A **binary relation** $R$ from set $A$ to set $B$ is a subset of $A \times B$. W
 
 ### 7.2 Representations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-handwritten.svg" alt="Handwritten: 7.2 Representations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-handwritten.svg" alt="Handwritten: 7.2 Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-diagram.svg" alt="Diagram: 7.2 Representations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-diagram.svg" alt="Diagram: 7.2 Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-sticky.svg" alt="Sticky Note: 7.2 Representations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-sticky.svg" alt="Sticky Note: 7.2 Representations" width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ function power(R: RelationMatrix, n: number): RelationMatrix {
 
 ### 7.3 Properties of Relations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-handwritten.svg" alt="Handwritten: 7.3 Properties of Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-handwritten.svg" alt="Handwritten: 7.3 Properties of Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-diagram.svg" alt="Diagram: 7.3 Properties of Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-diagram.svg" alt="Diagram: 7.3 Properties of Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-sticky.svg" alt="Sticky Note: 7.3 Properties of Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-sticky.svg" alt="Sticky Note: 7.3 Properties of Relations" width="30%">
 </a>
 
 
@@ -179,14 +179,14 @@ function isTransitive(M: RelationMatrix): boolean {
 
 ### 7.4 Combining Relations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-handwritten.svg" alt="Handwritten: 7.4 Combining Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-handwritten.svg" alt="Handwritten: 7.4 Combining Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-diagram.svg" alt="Diagram: 7.4 Combining Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-diagram.svg" alt="Diagram: 7.4 Combining Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-sticky.svg" alt="Sticky Note: 7.4 Combining Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-sticky.svg" alt="Sticky Note: 7.4 Combining Relations" width="30%">
 </a>
 
 
@@ -204,14 +204,14 @@ $R$ and $S$ can be combined via set operations ($R \cup S$, $R \cap S$, $R \setm
 
 ### 7.5 Closures
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-handwritten.svg" alt="Handwritten: 7.5 Closures" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-handwritten.svg" alt="Handwritten: 7.5 Closures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-diagram.svg" alt="Diagram: 7.5 Closures" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-diagram.svg" alt="Diagram: 7.5 Closures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-sticky.svg" alt="Sticky Note: 7.5 Closures" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-sticky.svg" alt="Sticky Note: 7.5 Closures" width="30%">
 </a>
 
 
@@ -262,14 +262,14 @@ console.log(warshall(R));
 
 ### 7.6 Equivalence Relations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-handwritten.svg" alt="Handwritten: 7.6 Equivalence Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-handwritten.svg" alt="Handwritten: 7.6 Equivalence Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-diagram.svg" alt="Diagram: 7.6 Equivalence Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-diagram.svg" alt="Diagram: 7.6 Equivalence Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-sticky.svg" alt="Sticky Note: 7.6 Equivalence Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-sticky.svg" alt="Sticky Note: 7.6 Equivalence Relations" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@ function computeEquivalenceClasses(set: number[], relation: RelationMatrix): num
 
 ### 7.7 Partial Orders
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-handwritten.svg" alt="Handwritten: 7.7 Partial Orders" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-handwritten.svg" alt="Handwritten: 7.7 Partial Orders" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-diagram.svg" alt="Diagram: 7.7 Partial Orders" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-diagram.svg" alt="Diagram: 7.7 Partial Orders" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-sticky.svg" alt="Sticky Note: 7.7 Partial Orders" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-sticky.svg" alt="Sticky Note: 7.7 Partial Orders" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ console.log(topologicalSort(6, deps)); // e.g., [0, 1, 2, 3, 4, 5]
 
 ### 7.8 n-ary Relations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-handwritten.svg" alt="Handwritten: 7.8 n-ary Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-handwritten.svg" alt="Handwritten: 7.8 n-ary Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-diagram.svg" alt="Diagram: 7.8 n-ary Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-diagram.svg" alt="Diagram: 7.8 n-ary Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-sticky.svg" alt="Sticky Note: 7.8 n-ary Relations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-sticky.svg" alt="Sticky Note: 7.8 n-ary Relations" width="30%">
 </a>
 
 

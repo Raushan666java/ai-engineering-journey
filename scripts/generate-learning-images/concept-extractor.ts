@@ -196,7 +196,7 @@ function extractWorkflow(text: string): { step: number; description: string; det
   const stepPatterns = [
     /^\d+[.)]\s+(.+)/,
     /^Step\s+(\d+)[:\u2014\-]\s*(.+)/i,
-    /^-\s*(?:Step\s+(\d+)[:\u2014\-]\s*)?(.+)/i,
+    /^-\s+(?:Step\s+(\d+)[:\u2014\-]\s*)?(.+)/i,
   ];
 
   for (const line of lines) {
@@ -204,9 +204,11 @@ function extractWorkflow(text: string): { step: number; description: string; det
     for (const pattern of stepPatterns) {
       const m = trimmed.match(pattern);
       if (m) {
-        stepCount++;
         const desc = (m[2] || m[1]).replace(/\*\*/g, '').trim();
-        if (desc.length > 5) result.push({ step: stepCount, description: desc.slice(0, 150) });
+        if (desc.length > 5) {
+          stepCount++;
+          result.push({ step: stepCount, description: desc.slice(0, 150) });
+        }
         break;
       }
     }

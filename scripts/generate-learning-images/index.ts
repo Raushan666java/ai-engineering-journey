@@ -50,8 +50,21 @@ async function svgToWebp(svgContent: string, outputPath: string): Promise<void> 
 
 function getChapterFiles(courseDir: string): string[] {
   if (!fs.existsSync(courseDir)) return [];
+  const nonChapter = new Set([
+    'index.md',
+    'archive-complete-reference.md',
+    'quick-reference-112.md',
+    'shloka-index.md',
+    'abhyas-diary.md',
+    'chapter-mindmaps.md',
+    'common-mistakes-faq.md',
+    'osho-glossary.md',
+    'personality-technique-matcher.md',
+    'sadhna-yojana.md',
+    'TEMPLATE.md',
+  ]);
   return fs.readdirSync(courseDir)
-    .filter((f: string) => f.endsWith('.md') && f !== 'index.md')
+    .filter((f: string) => f.endsWith('.md') && !nonChapter.has(f.toLowerCase()))
     .sort();
 }
 

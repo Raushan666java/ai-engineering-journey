@@ -61,6 +61,24 @@
   <text x="42" y="148" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">AI: the *concept of</text>
   <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">written communication* →</text>
   <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">any method of...</text>
+  <text x="42" y="190" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">AI vs ML vs DL: AI is the</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">field; ML learns from</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">data; DL uses deep</text>
+  <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">neural...</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">AI Applications: AI powers</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">recommendations, fraud</text>
+  <text x="42" y="271" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">detection, computer...</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">The AI Pipeline: Seven</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">stages from data to</text>
+  <text x="42" y="313" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">deployment and monitoring</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Data Collection &amp;</text>
+  <text x="42" y="342" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Prep: Data quality</text>
+  <text x="42" y="355" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">determines model quality</text>
+  <text x="42" y="371" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Model Deployment: Convert</text>
+  <text x="42" y="384" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">trained model to</text>
+  <text x="42" y="397" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">production service</text>
+  <text x="42" y="413" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Responsible AI: Ethics,</text>
+  <text x="42" y="426" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">fairness, and safety are</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

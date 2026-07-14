@@ -85,9 +85,9 @@
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="166" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="169" x2="160" y2="169" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">composition</tspan>: g \circ fa = gfa</text>
-    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">inverse</tspan>: f^-1b = a \iff fa = b</text>
-    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Little-o:</tspan>: 1 \prec \log n \prec \sqrtn \prec n \prec n \log n \prec n^2 \prec n^3 \prec 2^n \prec n!</text>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Bijective (one-to-one correspondence):</tspan>: g \circ fa = gfa</text>
+    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: n\log n - n + 1 \leq \logn! \leq n+1\logn+1 - n</text>
+    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \Omega</text>
     <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> $A$ is the domain, $B$ is the codomain.</text>
@@ -95,6 +95,6 @@
     <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> If $f(a) = b$, $b$ is the image of $a$, and $a$ is a preimage of...</text>
     <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> If $f$ and $g$ are injective, then $g \circ f$ is injective.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Functions map each input to exactly one output.
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Functions map each input to exactly one output.
 - Injective: one-to-one....</text>
 </svg>

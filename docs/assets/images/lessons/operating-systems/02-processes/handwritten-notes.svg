@@ -98,17 +98,12 @@
     <text x="65" y="410" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Rule of thumb</tspan>: Prefer shared memory</text>
     <text x="80" y="432" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">for maximum throughput and large data.</text>
     <text x="80" y="454" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Prefer pipes or...</text>
-    <text x="60" y="482" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="485" x2="160" y2="485" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: ps -eo pid,ppid,comm,state,wchan PID PPID COMMAND S WCHAN 1 0 systemd S - 345 1 sshd S poll_schedule_timeout 678 345 bas</text>
-    <text x="65" y="528" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: pid created priority=</text>
-    <text x="65" y="550" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: burstTime`; this.admitProcesspid; return pid; private admitProcesspid: number: void const proc = this.processes.getpid; </text>
-    <text x="60" y="578" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="581" x2="160" y2="581" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="602" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Text section: Contains compiled binary code. Read-only to prevent...</text>
-    <text x="65" y="624" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Data section: Global and static variables (BSS for uninitialized...</text>
-    <text x="65" y="646" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Heap: Dynamically allocated memory → grows upward toward higher...</text>
-    <text x="65" y="668" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">6.</tspan> Stack: Function call frames, local variables → grows downward.</text>
+    <text x="60" y="482" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="485" x2="160" y2="485" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Text section: Contains compiled binary code. Read-only to prevent...</text>
+    <text x="65" y="528" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Data section: Global and static variables (BSS for uninitialized...</text>
+    <text x="65" y="550" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Heap: Dynamically allocated memory → grows upward toward higher...</text>
+    <text x="65" y="572" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">6.</tspan> Stack: Function call frames, local variables → grows downward.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - A process is an active instance of a program, containing text, data, heap, and...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 A process is an active instance of a program, containing text, data, heap, and stack...</text>
 </svg>

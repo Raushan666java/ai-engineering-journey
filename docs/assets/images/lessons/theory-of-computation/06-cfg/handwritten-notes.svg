@@ -95,15 +95,13 @@
     <text x="80" y="344" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Grammars are how we *specify*...</text>
     <text x="60" y="372" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="375" x2="160" y2="375" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: varCounter++`; // Step 1: Add new start const start = productions.findp =&gt; p.lhs === &apos;S&apos;!; result.push lhs: &apos;S0&apos;, rhs: &apos;</text>
-    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: \\: 1. Start by pushing \S\</text>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: &quot;| q q --&gt;|&quot;e, A ? a&lt;br/&gt;for each A ? a&quot;| q q --&gt;|&quot;a, a ? e&lt;br/&gt;for each a ? S&quot;| q end ``` The PDA nondeterministically </text>
-    <text x="60" y="468" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="471" x2="160" y2="471" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> A set of variables (non-terminals) representing syntactic...</text>
-    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> A set of terminals representing the basic symbols of the language.</text>
-    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Production rules showing how a variable can be replaced by a string...</text>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> A designated start variable.</text>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Replace terminals in mixed productions:</tspan>: \ onto the stack. 2. For each production \A \to \alpha\, add a transition that pops \A\ and pushes \\alpha\. 3. For each</text>
+    <text x="60" y="424" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="427" x2="160" y2="427" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> A set of variables (non-terminals) representing syntactic...</text>
+    <text x="65" y="470" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> A set of terminals representing the basic symbols of the language.</text>
+    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Production rules showing how a variable can be replaced by a string...</text>
+    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> A designated start variable.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Chomsky Normal Form; pushdown automata</text>
 </svg>

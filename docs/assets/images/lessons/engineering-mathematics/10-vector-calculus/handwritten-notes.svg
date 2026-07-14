@@ -86,9 +86,9 @@
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Curl of Vector Field:</tspan>: \nabla \times \mathbfF = \beginvmatrix \mathbfi &amp; \mathbfj &amp; \mathbfk \\ \frac\partial\partial x &amp; \frac\partial\partial</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Scalar Line Integral:</tspan>: \int_C f\,ds = \int_a^b f\mathbfrt \|\mathbfr&apos;t\|\,dt</text>
-    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Vector Line Integral (Work):</tspan>: \int_C \mathbfF \cdot d\mathbfr = \int_a^b \mathbfF\mathbfrt \cdot \mathbfr&apos;t\,dt</text>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: **Laplacian:**</text>
+    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: ### 10.2 Line Integrals **Scalar Line Integral:**</text>
+    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Laplacian:</tspan>: Used to integrate a scalar function along a curve e.g., mass of a wire. **Vector Line Integral Work:**</text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> $\int_{-C} \mathbf{F} \cdot d\mathbf{r} = -\int_C \mathbf{F} \cdot...</text>
@@ -96,5 +96,5 @@
     <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> $\nabla \times \mathbf{F} = 0$ (in simply connected domain)</text>
     <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> $\oint_C \mathbf{F} \cdot d\mathbf{r} = 0$ for any closed curve $C$</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Line integrals measure accumulation along curves; Green&apos;s theorem links them to...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Line integrals measure accumulation along curves; Green&apos;s theorem links them to area...</text>
 </svg>

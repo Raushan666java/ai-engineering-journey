@@ -85,9 +85,9 @@
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="166" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="169" x2="160" y2="169" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: .title&quot;.value&quot;Order Not Found&quot; .andExpectjsonPath&quot;</text>
-    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: .type&quot;.value&quot;https://api.example.com/errors/order-not-found&quot;; @Test void testValidationReturnsFieldErrors throws Excepti</text>
-    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: .errors.total&quot;.exists; */ // === Common error response formats compared === /* Format Example RFC ──────────────────────</text>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: .openapi&quot;.value&quot;3.0.1&quot; .andExpectjsonPath&quot;</text>
+    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: .errors.customerId&quot;.exists .andExpectjsonPath&quot;</text>
+    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: .errors.total0&quot; .value&quot;Total must be positive&quot; .andExpectjsonPath&quot;</text>
     <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Use lowercase, kebab-case: order-items (not OrderItems, orderItems)</text>

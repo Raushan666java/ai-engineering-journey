@@ -94,17 +94,12 @@
     <text x="65" y="322" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Ostrich algorithm</tspan>: the most common</text>
     <text x="80" y="344" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">deadlock strategy: ignore the problem.</text>
     <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">The name comes from the...</text>
-    <text x="60" y="394" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="397" x2="160" y2="397" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Detecting Deadlock with jstack:</tspan>: jstack -l &lt;pid&gt; Found one Java-level deadlock: ============================= &quot;Thread-1&quot;: waiting to lock monitor 0x00007</text>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 1JavaDeadlockExample.java:24 - waiting to own &lt;0x000000076b5f6d10&gt; a java.lang.Object - locked &lt;0x000000076b5f6d20&gt; a ja</text>
-    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 0JavaDeadlockExample.java:13 - waiting to own &lt;0x000000076b5f6d20&gt; a java.lang.Object - locked &lt;0x000000076b5f6d10&gt; a ja</text>
-    <text x="60" y="490" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="493" x2="160" y2="493" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Car A holds the north-bound lane and needs the east-bound lane...</text>
-    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Car B holds the east-bound lane and needs the south-bound lane...</text>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Car C holds the south-bound lane and needs the west-bound lane...</text>
-    <text x="65" y="580" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Car D holds the west-bound lane and needs the north-bound lane...</text>
+    <text x="60" y="394" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="397" x2="160" y2="397" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Car A holds the north-bound lane and needs the east-bound lane...</text>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Car B holds the east-bound lane and needs the south-bound lane...</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Car C holds the south-bound lane and needs the west-bound lane...</text>
+    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Car D holds the west-bound lane and needs the north-bound lane...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

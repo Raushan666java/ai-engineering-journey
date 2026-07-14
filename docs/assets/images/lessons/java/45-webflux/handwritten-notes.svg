@@ -88,17 +88,12 @@
     <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">WebClient</tspan>: the reactive HTTP client</text>
     <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">supporting request/response,</text>
     <text x="80" y="234" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">streaming, server-sent...</text>
-    <text x="60" y="262" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="265" x2="160" y2="265" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: .name&quot;.isEqualTo&quot;Test Product&quot; .jsonPath&quot;</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: .price&quot;.isEqualTo99.99; @Test void getProductById_notFound_shouldReturn404 webTestClient.get .uri&quot;/api/products/nonexist</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: .id&quot;.isNotEmpty; @Test void updateProduct_shouldReturnUpdated Product update = new Product null, &quot;Updated Product&quot;, &quot;Ele</text>
-    <text x="60" y="358" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="361" x2="160" y2="361" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Compare Spring MVC and Spring WebFlux architectures and choose the...</text>
-    <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Build reactive REST APIs using annotated controllers with...</text>
-    <text x="65" y="426" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Implement functional routing with `RouterFunction` and...</text>
-    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use `WebClient` for reactive inter-service communication</text>
+    <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Compare Spring MVC and Spring WebFlux architectures and choose the...</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Build reactive REST APIs using annotated controllers with...</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Implement functional routing with `RouterFunction` and...</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use `WebClient` for reactive inter-service communication</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 WebFlux architecture; Annotated controllers; Functional routing</text>
 </svg>

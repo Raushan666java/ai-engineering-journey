@@ -97,9 +97,9 @@
     <text x="80" y="400" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Predict via voting....</text>
     <text x="60" y="428" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="431" x2="160" y2="431" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Functional margin</tspan>: \hat\gamma^i = y^i\mathbfw^T\mathbfx^i + b</text>
-    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Geometric margin</tspan>: \gamma^i = \fracy^i\mathbfw^T\mathbfx^i + b\|\mathbfw\| = \frac\hat\gamma^i\|\mathbfw\|</text>
-    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \min_\mathbfw, b \frac12\|\mathbfw\|^2</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: \gamma</text>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Why maximum margin?</tspan>: The functional margin is positive if the point is correctly classified. Its magnitude is a confidence measure ? larger v</text>
+    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: The margin of the hyperplane is the minimum geometric margin over all training examples. ### Hard-Margin SVM Primal Form</text>
     <text x="60" y="524" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="527" x2="160" y2="527" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Larger margins correlate with better generalization (lower VC...</text>

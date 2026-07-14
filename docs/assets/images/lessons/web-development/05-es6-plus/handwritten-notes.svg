@@ -90,11 +90,6 @@
     <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Set</tspan>: unique values:</text>
     <text x="65" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">WeakMap</tspan>: keys must be objects, held</text>
     <text x="80" y="278" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">weakly (no memory leak):</text>
-    <text x="60" y="306" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="309" x2="160" y2="309" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: name and I am</text>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: const price = 29.99; const formatted = `Total:</text>
-    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: price * 1.08.toFixed2`; // Multi-line const html = ` &lt;div class=&quot;card&quot;&gt; &lt;h2&gt;</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 One-Sentence Takeaway:</text>
 </svg>

@@ -114,11 +114,12 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif"></text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">this-&gt;hasManyListing::class;</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">// Listing model</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">public function</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">offers: HasMany return</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">/sqft adjustments,</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">feature premiums pool,</text>
+    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">garage, renovated</text>
+    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">kitchen, and location</text>
+    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">factors. 3. **Weight</text>
+    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">comparables** → M</text>
     </g>
 
 <g transform="rotate(0 312.5 287.5)" filter="url(#shadowMd)">
@@ -128,14 +129,15 @@
       <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif"></text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">this-&gt;hasManyShowing::class;</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">``` Additional</text>
-    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">supporting entities</text>
-    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">include `Inspection`,</text>
-    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">`Document` deeds,</text>
-    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">disclosures, `Tr</text>
+    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Identify</text>
+    <text x="239" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">comparables</text>
+    <text x="239" y="280" font-size="10" fill="#64748b" font-family="Arial, sans-serif"></text>
+    <text x="239" y="294" font-size="10" fill="#64748b" font-family="Arial, sans-serif">schedule-&gt;job...-&gt;dailyAt&apos;06:00&apos;`</text>
+    <text x="239" y="308" font-size="10" fill="#64748b" font-family="Arial, sans-serif">and couple it with</text>
+    <text x="239" y="322" font-size="10" fill="#64748b" font-family="Arial, sans-serif">notification channels</text>
+    <text x="239" y="336" font-size="10" fill="#64748b" font-family="Arial, sans-serif">for receipts,</text>
+    <text x="239" y="350" font-size="10" fill="#64748b" font-family="Arial, sans-serif">reminders, and</text>
+    <text x="239" y="364" font-size="10" fill="#64748b" font-family="Arial, sans-serif">escalation alert</text>
     </g>
 
 <g transform="rotate(-4 507.5 107.5)" filter="url(#shadowMd)">
@@ -182,7 +184,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

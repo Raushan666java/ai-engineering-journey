@@ -98,15 +98,12 @@
     <text x="65" y="422" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Cached Thread Pool</tspan>: Threads are</text>
     <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">created on demand and cached for</text>
     <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">reuse. Idle threads are terminated...</text>
-    <text x="60" y="494" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="497" x2="160" y2="497" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: this.name received:`, msg; ``` ### TypeScript: Thread Pool with Worker Threads and Shutdown ```typescript class WorkerTh</text>
-    <text x="60" y="546" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="549" x2="160" y2="549" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Mutual Exclusion: at least one resource is non-sharable.</text>
-    <text x="65" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Hold and Wait: a thread holds at least one resource while waiting...</text>
-    <text x="65" y="614" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> No Preemption: resources cannot be forcibly taken from a thread.</text>
-    <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Circular Wait: a cycle of threads exists where each holds a...</text>
+    <text x="60" y="494" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="497" x2="160" y2="497" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Mutual Exclusion: at least one resource is non-sharable.</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Hold and Wait: a thread holds at least one resource while waiting...</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> No Preemption: resources cannot be forcibly taken from a thread.</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Circular Wait: a cycle of threads exists where each holds a...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Race conditions require mutual exclusion: use mutex, semaphore, or read-write...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Race conditions require mutual exclusion: use mutex, semaphore, or read-write locks...</text>
 </svg>

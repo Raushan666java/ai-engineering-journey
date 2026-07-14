@@ -67,7 +67,7 @@
   <circle cx="980" cy="280" r="44" fill="#059669" opacity="0.08"/>
   <circle cx="980" cy="280" r="44" fill="none" stroke="#059669" stroke-width="1.5" opacity="0.25"/>
   <circle cx="980" cy="280" r="36" fill="#059669" opacity="0.10"/>
-  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">0</text>
   <text x="980" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Formulas</text>
   <circle cx="1110" cy="280" r="44" fill="#7c3aed" opacity="0.08"/>
   <circle cx="1110" cy="280" r="44" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.25"/>
@@ -79,14 +79,14 @@
     <text x="123" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">complexity</text>
   <rect x="192" y="408" width="72" height="20" rx="10" fill="#059669" opacity="0.12"/>
     <text x="228" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">cohesion</text>
-  <rect x="288" y="408" width="86" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="331" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Violation:</text>
-  <rect x="400" y="408" width="93" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="446.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Refactored:</text>
-  <rect x="520" y="408" width="72" height="20" rx="10" fill="#db2777" opacity="0.12"/>
-    <text x="556" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">Coupling</text>
-  <rect x="616" y="408" width="114" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="673" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Preconditions:</text>
+  <rect x="288" y="408" width="79" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="327.5" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Violation</text>
+  <rect x="392" y="408" width="86" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="435" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Refactored</text>
+  <rect x="504" y="408" width="72" height="20" rx="10" fill="#db2777" opacity="0.12"/>
+    <text x="540" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">Coupling</text>
+  <rect x="600" y="408" width="107" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="653.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Preconditions</text>
   <text x="1120" y="590" font-size="13" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif">github.com/ai-engineering-journey</text>
   <text x="80" y="590" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif">concept</text>
   <rect x="700" y="0" width="500" height="630" fill="url(#dotGrid)" opacity="0.3"/>

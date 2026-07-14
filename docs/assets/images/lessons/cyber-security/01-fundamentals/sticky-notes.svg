@@ -131,8 +131,13 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">sle.toLocaleString`;</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">console.log`ALE:</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">10,000. One employee</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">cannot unilaterally</text>
+    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">move large sums.</text>
+    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">**Examples in</text>
+    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Security:** | Scenario</text>
+    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| Single Entity</text>
+    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Violation</text>
     </g>
 
 <g transform="rotate(-4 312.5 287.5)" filter="url(#shadowMd)">
@@ -143,9 +148,10 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif"></text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">sim.mean.toLocaleString,</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">P10:</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">500 | 0.2 | Medium WAF</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">logs show bypass</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">attempts | | SSH brute</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">force | Medium |</text>
     </g>
 
 <g transform="rotate(3 507.5 107.5)" filter="url(#shadowMd)">
@@ -195,7 +201,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prereq:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prereq</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
@@ -206,7 +212,7 @@
       <path d="M778,390 L790,402 L790,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Next:</text>
+    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Target Audience</text>
     <text x="629" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

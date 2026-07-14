@@ -90,9 +90,9 @@
     <text x="80" y="234" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">set of strings. Regular...</text>
     <text x="60" y="262" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="265" x2="160" y2="265" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: pattern</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: \overliner</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \Sigma^* - Lr</text>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: \Sigma^* - Lr</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: r \cap s</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: Lr \cap Ls</text>
     <text x="60" y="358" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="361" x2="160" y2="361" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Îµ is a regular expression denoting L(Îµ) = {Îµ} (the set...</text>

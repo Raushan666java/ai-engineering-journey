@@ -86,7 +86,7 @@
   <!-- Title -->
   <text x="60" y="120" font-size="32" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Introduction to Spring &amp; Spring Boot</text>
   <!-- Subtitle -->
-  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Previous: [Gradle Deep Dive](./08-gradle.md) | Next: [Dependency Injection &amp; IoC Container](./10-di-container.md)</text>
+  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Spring Ecosystem; Inversion of Control &amp; Dependency Injection; Spring Boot Philosophy</text>
   <!-- Divider -->
   <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
   <!-- Stats row -->
@@ -96,23 +96,23 @@
     <rect x="215" y="255" width="100" height="20" rx="10" fill="#059669" opacity="0.12"/>
     <text x="265" y="269" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">4 Algorithms</text>
     <rect x="370" y="255" width="86" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="413" y="269" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">6 Formulas</text>
+    <text x="413" y="269" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">0 Formulas</text>
     <rect x="525" y="255" width="65" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
     <text x="557.5" y="269" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">8 Steps</text>
   </g>
   <!-- Keyword tags -->
       <rect x="60" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Previous:</text>
+     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Previous</text>
     <rect x="190" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Pro Tip:</text>
+     <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">&quot;Expert One-on-O</text>
     <rect x="320" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="380" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">&quot;Expert One-on-O</text>
+     <text x="380" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">plain Java objec</text>
     <rect x="450" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">plain Java objec</text>
+     <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">family of projec</text>
     <rect x="580" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">family of projec</text>
+     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">POJO-centric, an</text>
     <rect x="710" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">POJO-centric, an</text>
+     <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Spring Framework</text>
   <!-- Brand watermark -->
   <text x="1180" y="388" font-size="10" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif" opacity="0.5">ai-engineering-journey</text>
 </svg>

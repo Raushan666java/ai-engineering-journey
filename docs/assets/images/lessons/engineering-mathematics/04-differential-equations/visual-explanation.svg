@@ -98,8 +98,8 @@
     <line x1="82" y1="308" x2="82" y2="316" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="332" x2="82" y2="340" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="324" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Integrating Factor:: \mu \fracdydx + \mu P y = \mu Q  |  Formula 2:</text>
-  <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">\fracddx\mu y = \mu Q  |  Formula 3: a_n...</text>
+  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: X&apos;&apos; + \lambda X = 0, \quad T&apos; + \alpha \lambda</text>
+  <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">T = 0  |  Formula 2: dy/dx = fx,y  |  Formula 3:...</text>
   <line x1="500" y1="378" x2="500" y2="388" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="398" width="880" height="68" rx="8" fill="#fce7f3"/>
@@ -120,7 +120,7 @@
   </g>
   <polygon points="82,500 76,512 80.08,512 79.12,524 85.6,510.8 81.52,510.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="512" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="530" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- First-order ODEs are classified into separable, linear, exact,</text>
+  <text x="104" y="530" font-size="12" fill="#64748b" font-family="Arial, sans-serif">First-order ODEs are classified into separable, linear, exact,</text>
   <text x="104" y="548" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Bernoulli, and homogeneous types
 -...</text>
   <rect x="840" y="496" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

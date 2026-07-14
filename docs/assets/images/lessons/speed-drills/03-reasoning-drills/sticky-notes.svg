@@ -112,7 +112,7 @@
       <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
+    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Your Score:</text>
     <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">R - B P % R - C P @ R</text>
     <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">- D P # R 2. M % N, N</text>
     <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&amp; O, O</text>

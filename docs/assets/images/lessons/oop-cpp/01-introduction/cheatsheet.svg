@@ -69,20 +69,6 @@
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>
   <text x="318" y="134" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formulas & Tips</text>
     <line x1="318" y1="137" x2="418" y2="137" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-  <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 1</text>
-  <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">&quot; &lt;&lt; amount</text>
-  <text x="322" y="173" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">&lt;&lt; &quot; from</text>
-  <text x="322" y="185" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">&quot; &lt;&lt; location_</text>
-  <text x="322" y="197" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">&lt;&lt;...</text>
-  <text x="322" y="213" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Output:</text>
-  <text x="322" y="226" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">2000 from Main Street</text>
-  <text x="322" y="238" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">Branch Dispensed</text>
-  <text x="322" y="254" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
-  <text x="322" y="267" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">800 ``` **Complexity</text>
-  <text x="322" y="279" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">Analysis of ATM...</text>
-  <text x="322" y="295" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Output:</text>
-  <text x="322" y="308" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">55000 Invalid age: 150 Age</text>
-  <text x="322" y="320" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">remains: 30...</text>
   <line x1="38" y1="462" x2="562" y2="462" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
   <g filter="url(#shadowSm)"><rect x="28" y="470" width="264" height="386" rx="8" fill="#dc2626" opacity="0.06"/>
     <rect x="28" y="470" width="4" height="386" rx="2" fill="#dc2626"/>

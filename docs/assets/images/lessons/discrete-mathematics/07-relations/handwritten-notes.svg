@@ -103,6 +103,6 @@
     <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> $M_{S \circ R} = M_R \cdot M_S$ (Boolean matrix multiplication)</text>
     <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Reflexive: $a R a$ for all $a \in A$.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Relations are sets of ordered pairs. They can be matrices or digraphs.
--...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Relations are sets of ordered pairs. They can be matrices or digraphs.
+- Reflexive,...</text>
 </svg>

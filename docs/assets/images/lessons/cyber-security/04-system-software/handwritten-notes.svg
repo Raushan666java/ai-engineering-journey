@@ -91,9 +91,9 @@
     <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">handler addresses...</text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: false # Enable cloud-delivered protection Set-MpPreference -MAPSReporting Advanced # Set scan parameters Set-MpPreferenc</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: rule2 = New-AppLockerPolicy -RuleType Exe -User Everyone -Path &quot;%WINDIR%\*&quot; -Action Allow</text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: policy -Merge # Audit only before full enforcement Set-AppLockerPolicy -Policy</text>
+    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Propagation:</tspan>: 100M+ for response **Lessons:** - Code signing â‰ trust - Build environment must be zero-trust secured - Software Bill o</text>
+    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Example:</tspan>: 10B+ total damages - Maersk global shipping:</text>
+    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 870M damage, halted vaccine production - FedEx subsidiary TNT Express:</text>
     <text x="60" y="392" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="395" x2="160" y2="395" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="416" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Analyze and exploit stack/heap/SEH buffer overflows at the assembly...</text>

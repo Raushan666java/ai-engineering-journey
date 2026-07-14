@@ -100,13 +100,13 @@
     <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">many times...</text>
     <text x="60" y="494" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="497" x2="160" y2="497" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: name</text>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: name ?? &apos;Guest&apos; -- Unescaped only for trusted HTML -- !!</text>
-    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: score &gt;= 90 &lt;span&gt;A&lt;/span&gt; @elseif</text>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: loop` Variable &gt; **Pro Tip:** The `</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: loop`: Properties: `</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: loop-&gt;iteration` 1-based, `</text>
     <text x="60" y="590" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="593" x2="160" y2="593" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="614" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> &gt;merge([&apos;class&apos; =&gt; &apos;w-full rounded border-gray-300&apos;]) }}&gt;</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Blade compiles to cached PHP with zero runtime overhead
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Blade compiles to cached PHP with zero runtime overhead
 - `{{ }}` escapes output;...</text>
 </svg>

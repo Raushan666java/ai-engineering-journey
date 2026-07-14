@@ -113,14 +113,7 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">A = \beginpmatrix a_11</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&amp; a_12 &amp;</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\cdots &amp; a_1n \\</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">a_21 &amp; a_22 &amp;</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\cdots &amp; a_2n \\</text>
-    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\vdots &amp; \vdots</text>
-    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&amp; \ddots &amp;</text>
-    <text x="44" y="360" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\vdots \\ a_m</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\vdots</text>
     </g>
 
 <g transform="rotate(0 312.5 287.5)" filter="url(#shadowMd)">
@@ -130,8 +123,11 @@
       <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Matrix Addition:</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">A + Bi,j = a_ij + b_ij</text>
+    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">c_1 v_1 + c_2 v_2 +</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\cdots + c_k v_k = 0</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\implies c_1 = c_2 =</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\cdots = c_k = 0</text>
     </g>
 
 <g transform="rotate(-4 507.5 467.5)" filter="url(#shadowMd)">
@@ -141,7 +137,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

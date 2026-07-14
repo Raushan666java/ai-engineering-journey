@@ -59,7 +59,7 @@
   </g>
   <polygon points="82,124 76,136 80.08,136 79.12,148 85.6,134.8 81.52,134.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="136" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="154" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- A trie stores strings as paths in a tree, with characters on edges.
+  <text x="104" y="154" font-size="12" fill="#64748b" font-family="Arial, sans-serif">A trie stores strings as paths in a tree, with characters on edges.
 -</text>
   <text x="104" y="172" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Operations run in O(L) time...</text>
   <rect x="840" y="120" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

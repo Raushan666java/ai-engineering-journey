@@ -84,6 +84,6 @@
     <line x1="60" y1="138" x2="550" y2="138" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - A trie stores strings as paths in a tree, with characters on edges.
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 A trie stores strings as paths in a tree, with characters on edges.
 - Operations...</text>
 </svg>

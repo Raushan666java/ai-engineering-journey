@@ -86,7 +86,7 @@
   <!-- Title -->
   <text x="60" y="120" font-size="32" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Chapter 12: Smart Pointers</text>
   <!-- Subtitle -->
-  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Previous: [11-file-io](./11-file-io.md) | Next: [13-move-semantics](./13-move-semantics.md)</text>
+  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
   <!-- Divider -->
   <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
   <!-- Stats row -->
@@ -102,7 +102,7 @@
   </g>
   <!-- Keyword tags -->
       <rect x="60" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Previous:</text>
+     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Previous</text>
     <rect x="190" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
      <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Order of Volatil</text>
     <rect x="320" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
@@ -110,7 +110,7 @@
     <rect x="450" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
      <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Analogy — House </text>
     <rect x="580" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Output:</text>
+     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Output</text>
     <rect x="710" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
      <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Dry Run — Move O</text>
   <!-- Brand watermark -->

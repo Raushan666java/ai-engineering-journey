@@ -86,9 +86,9 @@
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Law of Total Probability:</tspan>: PA = \sum_i=1^n PA|B_iPB_i</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">discrete random variable</tspan>: PX = x_k = p_k, \quad \sum_k p_k = 1</text>
-    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">has a</tspan>: Pa \leq X \leq b = \int_a^b fx\,dx</text>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Combinations (order irrelevant):</tspan>: PX = x_k = p_k, \quad \sum_k p_k = 1</text>
+    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: Pa \leq X \leq b = \int_a^b fx\,dx</text>
+    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: Y_i = \beta_0 + \beta_1 X_i + \epsilon_i, \quad \epsilon_i \sim N0, \sigma^2</text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> $0 \leq P(E) \leq 1$ for any event $E$</text>
@@ -96,6 +96,6 @@
     <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> For mutually exclusive events $E_1, E_2, \ldots$,...</text>
     <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> $P(\emptyset) = 0$</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Probability quantifies uncertainty via Kolmogorov&apos;s axioms
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Probability quantifies uncertainty via Kolmogorov&apos;s axioms
 - Bayes&apos; theorem...</text>
 </svg>

@@ -91,5 +91,5 @@
     <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> These edge cases make every join type produce distinct, instructive...</text>
     <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Start with the first row of the left table (employees)</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - INNER JOIN returns only matched rows; OUTER JOINs preserve unmatched rows with...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 INNER JOIN returns only matched rows; OUTER JOINs preserve unmatched rows with...</text>
 </svg>

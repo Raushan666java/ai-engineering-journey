@@ -114,7 +114,7 @@
     <line x1="82" y1="426" x2="82" y2="434" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="418" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
   <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: 1000. Two ATMs process simultaneous withdrawals of  |</text>
-  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 2: 1000 ├── Check balance:  |...</text>
+  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 2: 800, but the final balance is  |...</text>
   <line x1="500" y1="472" x2="500" y2="482" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="492" width="880" height="60" rx="8" fill="#eff6ff"/>

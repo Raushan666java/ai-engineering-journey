@@ -101,9 +101,9 @@
     <text x="80" y="488" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">resources and...</text>
     <text x="60" y="516" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="519" x2="160" y2="519" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 5,000&quot; | | Risk Appetite | &quot;I&apos;m OK with leaving windows open on the 2nd floor&quot; vs &quot;I need bars on every window&quot; | | Miti</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Question</tspan>: 5,000&quot; | | Risk Appetite | &quot;I&apos;m OK with leaving windows open on the 2nd floor&quot; vs &quot;I need bars on every window&quot; | | Miti</text>
     <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 4.5M. -&gt; Severe 5 Step 4: Calculate risk score → 4 x 5 = 20 Critical Step 5: Determine risk response → Mitigate: Apply v</text>
-    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 2,000,000 x 0.60 =</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">5x5 Risk Matrix (enterprise-grade):</tspan>: 2,000,000 x 0.60 =</text>
     <text x="60" y="612" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="615" x2="160" y2="615" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Define the three pillars of GRC and explain how they interconnect.</text>

@@ -98,17 +98,12 @@
     <text x="65" y="422" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">nested class</tspan>: a class defined inside</text>
     <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">another class. There are four</text>
     <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">categories: static nested,...</text>
-    <text x="60" y="494" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="497" x2="160" y2="497" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: &quot; + amount; ``` ```java public class CreditCardPayment extends Payment @Override public void processPaymentdouble amount</text>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: &quot; + amount; ``` ```java public class PolymorphismDemo public static void mainString args Payment payments = new CreditCa</text>
-    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 100.0 Processing generic payment of</text>
-    <text x="60" y="590" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="593" x2="160" y2="593" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="614" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Define classes and instantiate objects with fields, methods, and...</text>
-    <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply encapsulation using access modifiers and the JavaBeans naming...</text>
-    <text x="65" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Build inheritance hierarchies using `extends`, `super`, and method...</text>
-    <text x="65" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Distinguish compile-time polymorphism (overloading) from runtime...</text>
+    <text x="60" y="494" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="497" x2="160" y2="497" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Define classes and instantiate objects with fields, methods, and...</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply encapsulation using access modifiers and the JavaBeans naming...</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Build inheritance hierarchies using `extends`, `super`, and method...</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Distinguish compile-time polymorphism (overloading) from runtime...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Classes and objects; Encapsulation; Inheritance</text>
 </svg>

@@ -83,17 +83,28 @@
     <text x="65" y="100" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 5: Loops (Comprehensive)</text>
     <line x1="60" y1="138" x2="550" y2="138" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
-    <text x="60" y="166" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="169" x2="160" y2="169" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Write iterative code using `for`, `while`, and `do-while` loops</text>
-    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Choose the appropriate loop construct for a given problem</text>
-    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Control loop execution with `break`, `continue`, and `goto`</text>
-    <text x="65" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Construct nested loops and analyze their complexity</text>
-    <rect x="55" y="280" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="280" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="298" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="318" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the difference between `for` and</text>
-    <text x="68" y="334" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">`while` in C?</text>
+    <text x="60" y="166" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Definitions</text>
+    <line x1="60" y1="169" x2="160" y2="169" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">for Loop</tspan>: Iterate with init,</text>
+    <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">condition, and increment in one line</text>
+    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">while Loop</tspan>: Repeat while a condition</text>
+    <text x="80" y="256" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">holds</text>
+    <text x="65" y="278" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">do-while Loop</tspan>: Executes body at least</text>
+    <text x="80" y="300" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">once before checking condition</text>
+    <text x="65" y="322" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">break, continue, goto</tspan>: break exits the</text>
+    <text x="80" y="344" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">loop; continue skips an iteration;</text>
+    <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">goto jumps anywhere</text>
+    <text x="60" y="394" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="397" x2="160" y2="397" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Write iterative code using `for`, `while`, and `do-while` loops</text>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Choose the appropriate loop construct for a given problem</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Control loop execution with `break`, `continue`, and `goto`</text>
+    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Construct nested loops and analyze their complexity</text>
+    <rect x="55" y="508" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="508" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="526" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="546" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the difference between `for` and</text>
+    <text x="68" y="562" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">`while` in C?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - `while` loops check the condition before each iteration; `do-while` checks after,...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 `while` loops check the condition before each iteration; `do-while` checks after,...</text>
 </svg>

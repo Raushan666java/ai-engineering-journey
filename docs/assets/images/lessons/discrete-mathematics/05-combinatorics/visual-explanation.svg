@@ -98,8 +98,8 @@
     <line x1="82" y1="308" x2="82" y2="316" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="332" x2="82" y2="340" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="324" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: Pn, r = \fracn!n-r! = nn-1n-2\cdotsn-r+1  |  combination:</text>
-  <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">\binomnr = Cn, r = \fracn!r!n-r!  |...</text>
+  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: x+y^n  |  Formula 2: Pn,r  |  Formula 3: n &gt; m  |  Formula</text>
+  <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">4: N/k  |  Formula 5: m + n  |  Formula...</text>
   <line x1="500" y1="378" x2="500" y2="388" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="398" width="880" height="68" rx="8" fill="#eff6ff"/>
@@ -108,7 +108,7 @@
   </g>
   <polygon points="82,406 76,418 80.08,418 79.12,430 85.6,416.8 81.52,416.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="418" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- Product rule for sequential choices; sum rule for disjoint</text>
+  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Product rule for sequential choices; sum rule for disjoint</text>
   <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">alternatives.
 - Permutations are ordered...</text>
   <rect x="840" y="402" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

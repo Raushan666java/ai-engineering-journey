@@ -88,5 +88,5 @@
   <text x="608.0106382435728" y="430.9545322482755" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">Formula 2</text>
   <line x1="585.119446294824" y1="417.37796823515674" x2="632.1040773341194" y2="434.47897540144015" stroke="#d97706" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
   <circle cx="632.1040773341194" cy="434.47897540144015" r="3" fill="#d97706" filter="url(#shadowSm)"/>
-  <text x="628.6838759008627" y="438.47897540144015" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">Odds</text>
+  <text x="628.6838759008627" y="438.47897540144015" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">Non-convex loss</text>
 </svg>

@@ -99,17 +99,12 @@
     <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">parameters (:param) instead of</text>
     <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">positional (?). MapSqlParameterSource</text>
     <text x="80" y="488" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">for...</text>
-    <text x="60" y="516" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="519" x2="160" y2="519" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: // BEGIN // UPDATE accounts SET balance = balance - p_amount WHERE id = p_from_account; // UPDATE accounts SET balance =</text>
-    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: // BEGIN // RETURN SELECT SUMquantity * unit_price FROM order_items WHERE order_id = p_order_id; // END;</text>
-    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: ; public String transferFundslong fromAccount, long toAccount, BigDecimal amount throws SQLException String sql = &quot;CALL </text>
-    <text x="60" y="612" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="615" x2="160" y2="615" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Establish database connections using DriverManager and DataSource</text>
-    <text x="65" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Execute SQL queries with Statement, PreparedStatement, and...</text>
-    <text x="65" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Prevent SQL injection attacks using parameterized queries</text>
-    <text x="65" y="702" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Navigate result sets and extract metadata from queries and database...</text>
-    <line x1="60" y1="726" x2="550" y2="726" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="746" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 JDBC Core; DataSource &amp; HikariCP; JdbcTemplate</text>
+    <text x="60" y="516" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="519" x2="160" y2="519" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Establish database connections using DriverManager and DataSource</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Execute SQL queries with Statement, PreparedStatement, and...</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Prevent SQL injection attacks using parameterized queries</text>
+    <text x="65" y="606" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Navigate result sets and extract metadata from queries and database...</text>
+    <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 JDBC Core; DataSource &amp; HikariCP; JdbcTemplate</text>
 </svg>

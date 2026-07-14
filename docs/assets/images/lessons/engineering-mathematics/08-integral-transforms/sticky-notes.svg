@@ -100,13 +100,8 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ft = a_0 +</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\sum_n=1^\infty</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\lefta_n</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\cos\left\frac2\pi</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ntT\right + b_n</text>
-    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\sin\left\frac2\pi</text>
-    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ntT\right\right</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">s^2Y - s\cdot1 - 2 +</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">3sY - 1 + 2Y = 0</text>
     </g>
 
 <g transform="rotate(4 312.5 287.5)" filter="url(#shadowMd)">
@@ -117,8 +112,8 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">a_0 = \frac1T \int_0^T</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ft\,dt</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">s^2 + 3s + 2Y - s - 2</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">- 3 = 0</text>
     </g>
 
 <g transform="rotate(0 507.5 467.5)" filter="url(#shadowMd)">
@@ -128,7 +123,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
@@ -140,9 +135,8 @@
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
     <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Complex</text>
-    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Exponential</text>
-    <text x="629" y="458" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Form:</text>
-    <text x="629" y="478" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Exponential Form</text>
+    <text x="629" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
   <!-- Coffee mug (bottom-right) -->

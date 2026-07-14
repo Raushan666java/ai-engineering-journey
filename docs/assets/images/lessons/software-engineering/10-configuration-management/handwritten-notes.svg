@@ -83,17 +83,12 @@
     <text x="65" y="100" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Configuration Management</text>
     <line x1="60" y1="138" x2="550" y2="138" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
-    <text x="60" y="166" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="169" x2="160" y2="169" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Artifact versioning:</tspan>: buildNumber` - **Release candidates:** `1.0.0-rc.1` - **Stable releases:** `1.0.0` - **Hotfix releases:** `1.0.1` ### Re</text>
-    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: versionString`; return major: parseIntmatch1, 10, minor: parseIntmatch2, 10, patch: parseIntmatch3, 10, prerelease: matc</text>
-    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: minor.</text>
-    <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Traceability: Every change can be traced back to a requirement,...</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Reproducibility: Any past version of the system can be rebuilt...</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Collaboration: Multiple developers work simultaneously without...</text>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Compliance: Regulatory standards (IEC 62304, DO-178C, FDA 21 CFR...</text>
+    <text x="60" y="166" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="169" x2="160" y2="169" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Traceability: Every change can be traced back to a requirement,...</text>
+    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Reproducibility: Any past version of the system can be rebuilt...</text>
+    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Collaboration: Multiple developers work simultaneously without...</text>
+    <text x="65" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Compliance: Regulatory standards (IEC 62304, DO-178C, FDA 21 CFR...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Software Configuration Management is the backbone of disciplined software...</text>
 </svg>

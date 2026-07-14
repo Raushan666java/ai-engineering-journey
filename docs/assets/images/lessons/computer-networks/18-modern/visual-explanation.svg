@@ -113,8 +113,8 @@
     <line x1="82" y1="402" x2="82" y2="410" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="426" x2="82" y2="434" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="418" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: hex.slice0, 4:  |  Formula 2: ipv6`; return ipv4, ipv6,</text>
-  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">translated: v6 ; case &apos;nat64&apos;: // NAT64:...</text>
+  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">PCRF (Policy and Charging Rules Function):: 600 dish |  |  QoS policy,</text>
+  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">credit control.: 50K/km trenching |  |...</text>
   <line x1="500" y1="472" x2="500" y2="482" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="492" width="880" height="60" rx="8" fill="#eff6ff"/>

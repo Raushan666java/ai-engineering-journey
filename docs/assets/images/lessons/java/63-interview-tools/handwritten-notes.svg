@@ -94,22 +94,17 @@
     <text x="65" y="334" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Extends</tspan>: share common configuration:</text>
     <text x="65" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">PersistentVolume (PV)</tspan>: cluster storage</text>
     <text x="80" y="378" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">resource provisioned by an admin:</text>
-    <text x="60" y="406" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="409" x2="160" y2="409" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: github.sha ``` Stages: Checkout → Compile → Unit tests → Integration tests → Static analysis → Package → Docker build → </text>
-    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: features.new-payment-flow:false&quot; private boolean newPaymentFlowEnabled; public PaymentResult processPaymentPaymentReques</text>
-    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: SPRING_PROFILES_ACTIVE:-dev networks: - backend # docker-compose.yml &gt; **Previous:** Testing Interview Q&amp;amp;A./62-inter</text>
-    <text x="60" y="502" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="505" x2="160" y2="505" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Convention over configuration — a standard project layout...</text>
-    <text x="65" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Declarative dependency management — dependencies are declared in...</text>
-    <text x="65" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">10.</tspan> Use specific base image tags — never `:latest`. Pin to specific...</text>
-    <text x="65" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">11.</tspan> Leverage layer caching — order commands from least to most...</text>
-    <rect x="55" y="616" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="616" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="634" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="654" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is Maven and what problem does it</text>
-    <text x="68" y="670" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">solve?</text>
+    <text x="60" y="406" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="409" x2="160" y2="409" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Convention over configuration — a standard project layout...</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Declarative dependency management — dependencies are declared in...</text>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">10.</tspan> Use specific base image tags — never `:latest`. Pin to specific...</text>
+    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">11.</tspan> Leverage layer caching — order commands from least to most...</text>
+    <rect x="55" y="520" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="520" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="538" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="558" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is Maven and what problem does it</text>
+    <text x="68" y="574" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">solve?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

@@ -85,20 +85,19 @@
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="166" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="169" x2="160" y2="169" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: &lt;/span&gt;&lt;span class=&quot;amount&quot;&gt;29.99&lt;/span&gt;&lt;/p&gt; &lt;/div&gt; ``` ### Q14: Why is a logical heading hierarchy important for SEO? *</text>
-    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: latitude.toFixed6&lt;/p&gt; &lt;p&gt;Longitude:</text>
-    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: position.coords.accuracym&lt;/p&gt; &lt;a href=&quot;https://maps.google.com/?q=</text>
-    <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">11.</tspan> A) &lt;header&gt;</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">12.</tspan> B) &lt;main&gt;</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">13.</tspan> C) &lt;section&gt;</text>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">14.</tspan> D) &lt;article&gt;</text>
-    <rect x="55" y="376" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="376" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="394" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="414" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the difference between semantic</text>
-    <text x="68" y="430" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">and non-semantic HTML elements?</text>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: errors` variable is always available in Blade views. For grouped errors, use `</text>
+    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: loop` variable provides iteration metadata index, first, last, count, etc.. ### Q68: How do you use form model binding w</text>
+    <text x="60" y="240" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="243" x2="160" y2="243" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="264" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">11.</tspan> A) &lt;header&gt;</text>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">12.</tspan> B) &lt;main&gt;</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">13.</tspan> C) &lt;section&gt;</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">14.</tspan> D) &lt;article&gt;</text>
+    <rect x="55" y="354" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="354" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="372" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="392" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the difference between semantic</text>
+    <text x="68" y="408" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">and non-semantic HTML elements?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

@@ -93,7 +93,7 @@
     <text x="80" y="300" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">and right).</text>
     <text x="60" y="328" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="331" x2="160" y2="331" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Theorem 10.1 (Basic tree properties).</tspan>: T = V, E</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: T = V, E</text>
     <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: |E| = n - 1</text>
     <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: n \geq 2</text>
     <text x="60" y="424" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
@@ -103,6 +103,6 @@
     <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Adding any edge creates exactly one cycle.</text>
     <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Removing any edge disconnects the graph.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - A tree is a connected acyclic graph with $n$ vertices and $n-1$ edges.
-- Rooting...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 A tree is a connected acyclic graph with $n$ vertices and $n-1$ edges.
+- Rooting a...</text>
 </svg>

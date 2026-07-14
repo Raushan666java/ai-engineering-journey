@@ -88,11 +88,6 @@
     <line x1="60" y1="203" x2="160" y2="203" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">कुल श्लोक</tspan>: ५५ श्रेणियाँ: १० अध्याय: १४</text>
     <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">(१-१८ में से)</text>
-    <text x="60" y="274" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="277" x2="160" y2="277" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="298" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: Strings.id.padStart2 |</text>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: s.chapter |</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">कुल श्लोक</tspan>: this.shlokas.length\n\n`; for const s of this.shlokas md += `##</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

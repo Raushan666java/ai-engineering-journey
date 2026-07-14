@@ -85,20 +85,18 @@
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="166" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="169" x2="160" y2="169" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Cross-region peering</tspan>: 0.01-0.02/GB data transfer cost. Minimize cross-region traffic for chatty protocols. **TypeScript Implementation: VPCNet</text>
-    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: subnetIPnum &gt;&gt;&gt; 24 &amp; 0xFF.</text>
-    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: subnetIPnum &gt;&gt;&gt; 8 &amp; 0xFF.</text>
-    <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Describe the architecture of Virtual Private Clouds and network...</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Compare load balancer types: Application Load Balancer, Network...</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Explain content delivery network operation and its impact on...</text>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Analyze cloud DNS management including routing policies.</text>
-    <rect x="55" y="376" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="376" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="394" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="414" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">How does cloud networking differ from</text>
-    <text x="68" y="430" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">on-premises networking?</text>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 0.01-0.02/GB data transfer cost. Minimize cross-region traffic for chatty protocols. **TypeScript Implementation: VPCNet</text>
+    <text x="60" y="218" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="221" x2="160" y2="221" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="242" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Describe the architecture of Virtual Private Clouds and network...</text>
+    <text x="65" y="264" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Compare load balancer types: Application Load Balancer, Network...</text>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Explain content delivery network operation and its impact on...</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Analyze cloud DNS management including routing policies.</text>
+    <rect x="55" y="332" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="332" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="350" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="370" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">How does cloud networking differ from</text>
+    <text x="68" y="386" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">on-premises networking?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Cloud networking delivers software-defined network constructs → VPCs, subnets, route...</text>
 </svg>

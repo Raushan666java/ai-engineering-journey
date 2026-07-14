@@ -93,7 +93,7 @@
     <text x="80" y="300" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">(Ïƒ), projection (Ï€),...</text>
     <text x="60" y="328" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="331" x2="160" y2="331" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: lookup** aggregation stage â€” equivalent to LEFT OUTER JOIN - **ACID transactions** â€” multi-document atomicity - **Sc</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Turing complete</tspan>: lookup** aggregation stage â€” equivalent to LEFT OUTER JOIN - **ACID transactions** â€” multi-document atomicity - **Sc</text>
     <text x="60" y="380" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="383" x2="160" y2="383" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Data independence: Physical storage is decoupled from logical...</text>

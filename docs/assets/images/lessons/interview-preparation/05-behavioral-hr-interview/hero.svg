@@ -104,17 +104,17 @@
   </g>
   <!-- Keyword tags -->
       <rect x="60" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Situation:</text>
+     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Situation</text>
     <rect x="190" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Task:</text>
+     <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Task</text>
     <rect x="320" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="380" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Action:</text>
+     <text x="380" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Action</text>
     <rect x="450" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Result:</text>
+     <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Result</text>
     <rect x="580" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Tip:</text>
+     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Real Experience</text>
     <rect x="710" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Real Experience:</text>
+     <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Learning</text>
   <!-- Brand watermark -->
   <text x="1180" y="388" font-size="10" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif" opacity="0.5">ai-engineering-journey</text>
 </svg>

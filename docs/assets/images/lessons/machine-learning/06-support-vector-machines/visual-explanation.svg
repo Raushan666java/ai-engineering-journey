@@ -113,8 +113,8 @@
     <line x1="82" y1="402" x2="82" y2="410" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="426" x2="82" y2="434" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="418" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Functional margin: \hat\gamma^i = y^i\mathbfw^T\mathbfx^i + b  |</text>
-  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Geometric margin: \gamma^i =...</text>
+  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: \gamma  |  Why maximum margin?: The functional margin is</text>
+  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">positive if the point is correctly...</text>
   <line x1="500" y1="472" x2="500" y2="482" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="492" width="880" height="60" rx="8" fill="#fce7f3"/>

@@ -100,8 +100,12 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PA|B = \fracPA \cap</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">BPB</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">### Algorithm →</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Computing Conditional</text>
+    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Probability **Input:**</text>
+    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Joint distribution PX,</text>
+    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Y, values x, y</text>
+    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">**Output:** PX=x | Y=</text>
     </g>
 
 <g transform="rotate(4 312.5 287.5)" filter="url(#shadowMd)">
@@ -112,8 +116,13 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PA|B = \fracPB|A \cdot</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PAPB</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">**Applications in</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ML:** Naive Bayes</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Classifier text</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">classification, spam</text>
+    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">filtering, Bayesian</text>
+    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Linear Regression,</text>
+    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Gaussian</text>
     </g>
 
 <g transform="rotate(0 507.5 107.5)" filter="url(#shadowMd)">
@@ -150,7 +159,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

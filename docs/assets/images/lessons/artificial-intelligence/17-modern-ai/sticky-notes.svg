@@ -116,13 +116,13 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">4.21 trillion&quot;` |</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Client | — | | 8 |</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Client | Feeds</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">observation to LLM | —</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| — | | 9 | LLM |</text>
-    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Synthesizes final</text>
-    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">answer |</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">500, outdoor BBQ</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">theme&quot; | Research</text>
+    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">venues, Plan menu,</text>
+    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Guest list, Budget</text>
+    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">breakdown |</text>
+    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Research:1, Menu:2,</text>
+    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Guest:2, Budget</text>
     </g>
 
 <g transform="rotate(0 312.5 287.5)" filter="url(#shadowMd)">
@@ -133,15 +133,13 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">4.21 trillion&quot;,</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;tokyo</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">population&quot;:</text>
-    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;Tokyo</text>
-    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">population: 14.0</text>
-    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">million&quot;, return</text>
-    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">results.getquery.lower,</text>
-    <text x="239" y="360" font-size="10" fill="#64748b" font-family="Arial, sans-serif">f&quot;Searched for:</text>
-    <text x="239" y="374" font-size="10" fill="#64748b" font-family="Arial, sans-serif">que</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">120 total&quot; |</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Create shopping list |</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Guest:2, Decor:2,</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">RainPlan:2, Shopping:3</text>
+    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| | 6 | Guest list |</text>
+    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;20 names → send</text>
+    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">invit</text>
     </g>
 
 <g transform="rotate(-4 507.5 107.5)" filter="url(#shadowMd)">
@@ -177,7 +175,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
@@ -189,7 +187,7 @@
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
     <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Real-World</text>
-    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Analogy:</text>
+    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Analogy</text>
     <text x="629" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

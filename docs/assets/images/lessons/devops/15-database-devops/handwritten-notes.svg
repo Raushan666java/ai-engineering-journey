@@ -94,17 +94,12 @@
     <text x="80" y="322" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">tool for SQLAlchemy:</text>
     <text x="65" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Full Backup</tspan>: Complete copy of the</text>
     <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">database:</text>
-    <text x="60" y="394" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="397" x2="160" y2="397" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: date +%Y%m%d -X stream # MySQL: mysqldump mysqldump -h prod-host -u app -p mydb &gt; backup.sql # MongoDB: mongodump mongod</text>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: version`; return issues; generateReport: string let report = &apos;# Migration Status Report\n\n&apos;; report += `Applied:</text>
-    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: this.state.pending.length\n`; report += `Failed:</text>
-    <text x="60" y="490" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="493" x2="160" y2="493" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Every schema change is a version-controlled migration file</text>
-    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Migrations are immutable after creation (never edit an applied...</text>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Forward migrations are additive when possible</text>
-    <text x="65" y="580" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Destructive operations require explicit approval</text>
+    <text x="60" y="394" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="397" x2="160" y2="397" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Every schema change is a version-controlled migration file</text>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Migrations are immutable after creation (never edit an applied...</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Forward migrations are additive when possible</text>
+    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Destructive operations require explicit approval</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Database DevOps applies engineering discipline to schema management. Migration tools...</text>
 </svg>

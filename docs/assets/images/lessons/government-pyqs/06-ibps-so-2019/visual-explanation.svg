@@ -97,8 +97,8 @@
     <line x1="82" y1="300" x2="82" y2="308" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="324" x2="82" y2="332" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="316" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Directions:: B means A &gt;= B, A % B means A &lt;= B, A &amp; B means A</text>
-  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">= B. **Statement:** P % Q @ R # S  |  Formula...</text>
+  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: B means A &gt;= B, A % B means A &lt;= B, A &amp; B means A =</text>
+  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">B. **Statement:** P % Q @ R # S  |  Formula 2:...</text>
   <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="390" width="880" height="60" rx="8" fill="#fce7f3"/>

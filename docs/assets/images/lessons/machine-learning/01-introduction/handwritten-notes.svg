@@ -94,9 +94,9 @@
     <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">hypothesis over another...</text>
     <text x="60" y="362" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="365" x2="160" y2="365" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: h \in \mathcalH</text>
-    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">hypothesis space</tspan>: \mathcalH</text>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: x, y</text>
+    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Inductive Bias</tspan>: x, y</text>
+    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: f: X \to Y</text>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \pis \to a</text>
     <text x="60" y="458" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="461" x2="160" y2="461" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="482" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Task $T$: What the system should do (e.g., classify emails as...</text>

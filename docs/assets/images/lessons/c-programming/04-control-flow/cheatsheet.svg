@@ -58,6 +58,26 @@
     <rect x="28" y="114" width="264" height="340" rx="8" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.15"/></g>
   <text x="38" y="134" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Concepts</text>
     <line x1="38" y1="137" x2="138" y2="137" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <text x="42" y="148" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">if-else Statements:</text>
+  <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Conditional branching</text>
+  <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">based on boolean</text>
+  <text x="42" y="187" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">expressions</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">switch-case: Multi-way</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">branch on integer</text>
+  <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">expressions</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Ternary Operator: Inline</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">conditional expression</text>
+  <text x="42" y="271" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">condition ? true : false</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">goto Statement:</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Unconditional jump to a</text>
+  <text x="42" y="313" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">labeled statement</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">break vs continue: Loop</text>
+  <text x="42" y="342" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">control vs skip iteration</text>
+  <text x="42" y="358" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">return vs exit(): Function</text>
+  <text x="42" y="371" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">return vs program</text>
+  <text x="42" y="384" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">termination</text>
+  <text x="42" y="400" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Short-Circuit Evaluation:</text>
+  <text x="42" y="413" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">&amp;&amp; and</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

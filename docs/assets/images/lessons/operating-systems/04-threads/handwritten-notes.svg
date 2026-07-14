@@ -90,17 +90,12 @@
     <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">pthreads</tspan>: the standard POSIX API;</text>
     <text x="80" y="256" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">std::thread is C++11&apos;s portable</text>
     <text x="80" y="278" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">wrapper; Python...</text>
-    <text x="60" y="306" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="309" x2="160" y2="309" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: this.time Worker</text>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: task.id duration=</text>
-    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: task.type`; // Advance time by minimum remaining work const minWork = Math.min...workerLoads.filterl =&gt; l &gt; 0; if minWor</text>
-    <text x="60" y="402" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="405" x2="160" y2="405" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="426" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Thread ID — unique identifier</text>
-    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Program Counter (PC) — points to the next instruction to execute</text>
-    <text x="65" y="470" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Register Set — CPU register state</text>
-    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Stack — local variables and function call frames</text>
+    <text x="60" y="306" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="309" x2="160" y2="309" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Thread ID — unique identifier</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Program Counter (PC) — points to the next instruction to execute</text>
+    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Register Set — CPU register state</text>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Stack — local variables and function call frames</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 thread; Why threads matter; User-level threads</text>
 </svg>

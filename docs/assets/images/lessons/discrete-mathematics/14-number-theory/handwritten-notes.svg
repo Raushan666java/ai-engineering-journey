@@ -94,8 +94,8 @@
     <text x="60" y="328" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="331" x2="160" y2="331" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: a = q \cdot m + r,\quad 0 \leq r &amp;lt; m</text>
-    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Theorem 14.5 (Euclidean algorithm).</tspan>: \gcda,b = \gcdb, a \bmod b</text>
-    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: x \equiv a_1 \pmodm_1,\; x \equiv a_2 \pmodm_2,\; \dots,\; x \equiv a_n \pmodm_n</text>
+    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Theorem 14.3 (GCD-LCM product).</tspan>: \gcda,b = \gcdb, a \bmod b</text>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: a \mid b</text>
     <text x="60" y="424" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="427" x2="160" y2="427" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> If $a \mid b$ and $b \mid c$, then $a \mid c$ (transitivity).</text>
@@ -103,5 +103,5 @@
     <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> If $a \mid b$, then $a \mid b \cdot c$ for any integer $c$.</text>
     <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> If $a \mid b$ and $b \neq 0$, then $|a| \leq |b|$.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Divisibility $a \mid b$ is the foundational concept; the division algorithm gives...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Divisibility $a \mid b$ is the foundational concept; the division algorithm gives...</text>
 </svg>

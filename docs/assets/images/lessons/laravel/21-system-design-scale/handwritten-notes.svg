@@ -86,9 +86,9 @@
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: request // Read from local replica low latency</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: request-&gt;user-&gt;id -&gt;get; return response-&gt;json</text>
-    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: request // Write to primary cross-region</text>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 25,000 | -- | | Auto-scaling on-demand |</text>
+    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 11,700 | 53% | | Spot instances workers |</text>
+    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 15,000 | 40% | #### CDN Cost Savings --- &gt; **Remember:** The most expensive query is the one you don&apos;t cache. Always mea</text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> &gt;table(&apos;subscriptions&apos;)</text>
@@ -96,5 +96,5 @@
     <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> &gt;get();</text>
     <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> &gt;table(&apos;subscriptions&apos;)</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Enterprise-scale Laravel requires quantitative estimation: 10M users generates...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Enterprise-scale Laravel requires quantitative estimation: 10M users generates 3,700...</text>
 </svg>

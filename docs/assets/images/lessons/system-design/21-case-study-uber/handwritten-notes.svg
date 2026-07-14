@@ -102,5 +102,5 @@
     <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Design a real-time location pipeline handling 30M+ GPS updates per...</text>
     <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Evaluate the dispatch and matching algorithm as a minimum-weight...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Uber&apos;s architecture evolved from a Python monolith with a single MySQL database to...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Uber&apos;s architecture evolved from a Python monolith with a single MySQL database to a...</text>
 </svg>

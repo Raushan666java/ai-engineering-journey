@@ -100,15 +100,13 @@
     <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Warm/hot (20%...</text>
     <text x="60" y="494" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="497" x2="160" y2="497" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 500M over 5 years. **Streaming File Download** When a user downloads a file, the client requests the file&apos;s block list f</text>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: Math.random.toString36.slice2`; const chunks: string = ; for let i = 0; i &lt; content.length; i += this.chunkSize const ci</text>
-    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: i / this.chunkSize`; this.chunks.setcid, content.slicei, i + this.chunkSize; chunks.pushcid; this.files.setid, id, name,</text>
-    <text x="60" y="590" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="593" x2="160" y2="593" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="614" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Design a block-level sync engine using content-defined chunking...</text>
-    <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Understand the client-server sync architecture including file...</text>
-    <text x="65" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Evaluate deduplication strategies at block level using SHA-256...</text>
-    <text x="65" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Analyze the evolution from Amazon S3 to custom object storage...</text>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 161/month × 12 =</text>
+    <text x="60" y="546" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="549" x2="160" y2="549" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Design a block-level sync engine using content-defined chunking...</text>
+    <text x="65" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Understand the client-server sync architecture including file...</text>
+    <text x="65" y="614" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Evaluate deduplication strategies at block level using SHA-256...</text>
+    <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Analyze the evolution from Amazon S3 to custom object storage...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Dropbox&apos;s sync engine uses a three-state state machine (local, remote, desired) to...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Dropbox&apos;s sync engine uses a three-state state machine (local, remote, desired) to...</text>
 </svg>

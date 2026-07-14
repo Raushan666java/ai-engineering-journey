@@ -86,7 +86,7 @@
   <!-- Title -->
   <text x="60" y="120" font-size="32" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Chapter 53: JavaScript Interview Q&amp;A</text>
   <!-- Subtitle -->
-  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Previous: [CSS Interview Q&amp;A](./52-interview-css.md) | Next: [AI/ML Interview Q&amp;A](./54-interview-ai-ml.md)</text>
+  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">JavaScript is the language of the web browser and an essential skill for any full-stack Laravel developer. This chapter...</text>
   <!-- Divider -->
   <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
   <!-- Stats row -->
@@ -102,17 +102,17 @@
   </g>
   <!-- Keyword tags -->
       <rect x="60" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Previous:</text>
+     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Previous</text>
     <rect x="190" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Answer:</text>
+     <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Core JavaScript </text>
     <rect x="320" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="380" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Core JavaScript </text>
+     <text x="380" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">ES6+ features</text>
     <rect x="450" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">ES6+ features</text>
+     <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Asynchronous pat</text>
     <rect x="580" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Asynchronous pat</text>
+     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">DOM and Fetch AP</text>
     <rect x="710" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">DOM and Fetch AP</text>
+     <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Alpine.js</text>
   <!-- Brand watermark -->
   <text x="1180" y="388" font-size="10" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif" opacity="0.5">ai-engineering-journey</text>
 </svg>

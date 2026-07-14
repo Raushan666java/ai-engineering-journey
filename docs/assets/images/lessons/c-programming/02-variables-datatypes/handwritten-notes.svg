@@ -89,20 +89,26 @@
     <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">variable</tspan>: a named storage location in</text>
     <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">memory that holds a value of a</text>
     <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">specific type. Think...</text>
-    <text x="60" y="296" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="299" x2="160" y2="299" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">No</tspan>: amount` | **No** | Dollar sign not allowed | | `__internal` | Technically yes | But reserved for compiler — undefined be</text>
-    <text x="60" y="348" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="351" x2="160" y2="351" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="372" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Distinguish between variable declaration, definition, and...</text>
-    <text x="65" y="394" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Declare and initialize variables of all fundamental C types with...</text>
-    <text x="65" y="416" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Understand type modifiers (short, long, signed, unsigned) and their...</text>
-    <text x="65" y="438" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Master implicit type promotion rules and explicit casting with...</text>
-    <rect x="55" y="462" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="462" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="480" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="500" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What does sizeof return? Is it a function</text>
-    <text x="68" y="516" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">or an operator?</text>
+    <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Variable Declarations</tspan>: Must declare</text>
+    <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">type before use; identifiers are</text>
+    <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">case-sensitive</text>
+    <text x="65" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Fundamental Types</tspan>: char, int, float,</text>
+    <text x="80" y="378" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">double with short/long/unsigned</text>
+    <text x="80" y="400" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">modifiers</text>
+    <text x="65" y="422" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Type Modifiers</tspan>:</text>
+    <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">short/long/signed/unsigned combine</text>
+    <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">with integer types in a matrix</text>
+    <text x="60" y="494" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="497" x2="160" y2="497" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Distinguish between variable declaration, definition, and...</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Declare and initialize variables of all fundamental C types with...</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Understand type modifiers (short, long, signed, unsigned) and their...</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Master implicit type promotion rules and explicit casting with...</text>
+    <rect x="55" y="608" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="608" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="626" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="646" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What does sizeof return? Is it a function</text>
+    <text x="68" y="662" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">or an operator?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Declaration; definition; initialization</text>
 </svg>

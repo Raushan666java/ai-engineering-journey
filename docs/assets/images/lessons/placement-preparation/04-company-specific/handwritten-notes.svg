@@ -86,7 +86,7 @@
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Compensation</tspan>: 180K junior to</text>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 180K junior to</text>
     <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 50K/day. - **Task:** I needed to identify affected users, restore transactions, and prevent recurrence → all within 24 h</text>
     <text x="60" y="274" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="277" x2="160" y2="277" stroke="#059669" stroke-width="2" stroke-linecap="round"/>

@@ -88,18 +88,13 @@
     <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Casper FFG (Friendly Finality Gadget)</tspan>:</text>
     <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">the PoS finality mechanism used by</text>
     <text x="80" y="234" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Ethereum. It provides:</text>
-    <text x="60" y="262" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="265" x2="160" y2="265" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 5-10B Bitcoin | 51% hash rate | Economic disincentive | | PoS | 33% of staked value | 51% stake | Slashing | | DPoS | Ma</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: msg.view:</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: msg.value`; const prepareCount = this.log.filter m =&gt; m.type === &quot;PREPARE&quot; &amp;&amp; m.view === msg.view &amp;&amp; m.seq === msg.seq &amp;</text>
-    <text x="60" y="358" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="361" x2="160" y2="361" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Agreement: All loyal generals must agree on the same plan.</text>
-    <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Validity: The plan must be reasonable (not based on traitor...</text>
-    <text x="65" y="426" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Termination: The generals must eventually reach a decision.</text>
-    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> You need `2f+1` honest nodes to outvote `f` traitors</text>
+    <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Agreement: All loyal generals must agree on the same plan.</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Validity: The plan must be reasonable (not based on traitor...</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Termination: The generals must eventually reach a decision.</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> You need `2f+1` honest nodes to outvote `f` traitors</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Consensus mechanisms enable distributed nodes to agree on the state of a ledger.
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Consensus mechanisms enable distributed nodes to agree on the state of a ledger.
 -...</text>
 </svg>

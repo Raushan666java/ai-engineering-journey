@@ -83,16 +83,26 @@
     <text x="65" y="100" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 18: Advanced Topics</text>
     <line x1="60" y1="138" x2="550" y2="138" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
-    <text x="60" y="166" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="169" x2="160" y2="169" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 1 per day or buy them for</text>
-    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Real-world analogy:</tspan>: 50/month or pay per visit</text>
-    <text x="60" y="240" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="243" x2="160" y2="243" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="264" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> LRU (Least Recently Used): Evict the page that was used longest ago.</text>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> FIFO (First In, First Out): Evict the page that has been in the...</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> LFU (Least Frequently Used): Evict the page with the fewest...</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> On page request:</text>
+    <text x="60" y="166" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Definitions</text>
+    <line x1="60" y1="169" x2="160" y2="169" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Online Algorithms</tspan>: Irrevocable</text>
+    <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">decisions without future knowledge</text>
+    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Paging</tspan>: LRU is k-competitive</text>
+    <text x="65" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Ski Rental</tspan>: Buy vs rent decision under</text>
+    <text x="80" y="278" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">uncertainty</text>
+    <text x="65" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Streaming Algorithms</tspan>: Single-pass</text>
+    <text x="80" y="322" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">processing with limited memory</text>
+    <text x="60" y="350" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
+    <line x1="60" y1="353" x2="160" y2="353" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Complexity Analysis:</tspan>: 1 per day or buy them for</text>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">| Minimum possible |
+|</tspan>: 50/month or pay per visit</text>
+    <text x="60" y="424" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="427" x2="160" y2="427" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> LRU (Least Recently Used): Evict the page that was used longest ago.</text>
+    <text x="65" y="470" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> FIFO (First In, First Out): Evict the page that has been in the...</text>
+    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> LFU (Least Frequently Used): Evict the page with the fewest...</text>
+    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> On page request:</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Online algorithms; Bloom filters; Skip lists</text>
 </svg>

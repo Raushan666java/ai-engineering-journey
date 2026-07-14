@@ -99,17 +99,13 @@
       <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Modular Crypt</text>
-    <text x="44" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Format:</text>
-    <text x="44" y="280" font-size="10" fill="#64748b" font-family="Arial, sans-serif"></text>
-    <text x="44" y="294" font-size="10" fill="#64748b" font-family="Arial, sans-serif">22-char-salt31-char-hash`</text>
-    <text x="44" y="308" font-size="10" fill="#64748b" font-family="Arial, sans-serif">**Dry Run:** ```</text>
-    <text x="44" y="322" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Password:</text>
-    <text x="44" y="336" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;hunter2&quot;</text>
-    <text x="44" y="350" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Salt:</text>
-    <text x="44" y="364" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;abcdefghijklmnopqrstuv&quot;</text>
-    <text x="44" y="378" font-size="10" fill="#64748b" font-family="Arial, sans-serif">22 chars base64 Cost:</text>
-    <text x="44" y="392" font-size="10" fill="#64748b" font-family="Arial, sans-serif">12 2</text>
+    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">10 | Good type 6</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">digits | Yes | Yes | |</text>
+    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">**Push** | Partial |</text>
+    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Free | Best tap</text>
+    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">approve | No | No | |</text>
+    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">**SMS** | No SIM swap</text>
     </g>
 
 <g transform="rotate(4 312.5 287.5)" filter="url(#shadowMd)">
@@ -119,8 +115,13 @@
       <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">argon2id</text>
+    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Edge Cases:</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">50 | Medium press</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">button | Yes | Yes |</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">**Edge Cases:** Device</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">loss, SIM swap</text>
+    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">attacks, backup codes</text>
+    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">store hashed, MFA for</text>
     </g>
 
 <g transform="rotate(0 507.5 107.5)" filter="url(#shadowMd)">
@@ -156,7 +157,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prereq:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prereq</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
@@ -167,8 +168,9 @@
       <path d="M778,390 L790,402 L790,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Next:</text>
-    <text x="629" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Real-World</text>
+    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Analogy</text>
+    <text x="629" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
   <!-- Coffee mug (bottom-right) -->

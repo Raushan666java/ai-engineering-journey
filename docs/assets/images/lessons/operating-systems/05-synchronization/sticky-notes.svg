@@ -153,8 +153,8 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">1000 ├── Check</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">balance:</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">800, but the final</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">balance is</text>
     </g>
 
 <g transform="rotate(-1 507.5 107.5)" filter="url(#shadowMd)">

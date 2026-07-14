@@ -57,7 +57,7 @@
   <text x="80" y="60" font-size="14" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="500">AI Engineering Journey</text>
   <circle cx="70" cy="55" r="3" fill="#2563eb" opacity="0.5"/>
   <text x="80" y="180" font-size="46" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif" letter-spacing="-0.5">आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण</text>
-  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">&quot;११२ तकनीकें — ११२ प्रकार के लोगों के लिए। हो सकता है कि तुम्हारे पड़ोसी के लिए जो काम करे, वह तुम्हारे लिए न...</text>
+  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">&lt;!-- Image Gallery --&gt;</text>
   <line x1="80" y1="280" x2="280" y2="280" stroke="url(#gBlue)" stroke-width="5" stroke-linecap="round"/>
   <circle cx="850" cy="280" r="44" fill="#2563eb" opacity="0.08"/>
   <circle cx="850" cy="280" r="44" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.25"/>
@@ -67,7 +67,7 @@
   <circle cx="980" cy="280" r="44" fill="#059669" opacity="0.08"/>
   <circle cx="980" cy="280" r="44" fill="none" stroke="#059669" stroke-width="1.5" opacity="0.25"/>
   <circle cx="980" cy="280" r="36" fill="#059669" opacity="0.10"/>
-  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">0</text>
   <text x="980" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Formulas</text>
   <circle cx="1110" cy="280" r="44" fill="#7c3aed" opacity="0.08"/>
   <circle cx="1110" cy="280" r="44" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.25"/>
@@ -79,12 +79,12 @@
     <text x="98.5" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">ओशो</text>
   <rect x="136" y="408" width="198" height="20" rx="10" fill="#059669" opacity="0.12"/>
     <text x="235" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">व्यक्तित्व-आधारित वर्गीकरण</text>
-  <rect x="376" y="408" width="163" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="457.5" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">इस परीक्षण के बाद आप:</text>
-  <rect x="576" y="408" width="79" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="615.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">ओशो वाणी:</text>
-  <rect x="680" y="408" width="72" height="20" rx="10" fill="#db2777" opacity="0.12"/>
-    <text x="716" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">निर्देश:</text>
+  <rect x="376" y="408" width="156" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="454" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">इस परीक्षण के बाद आप</text>
+  <rect x="568" y="408" width="72" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="604" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">ओशो वाणी</text>
+  <rect x="664" y="408" width="65" height="20" rx="10" fill="#db2777" opacity="0.12"/>
+    <text x="696.5" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">निर्देश</text>
   <text x="1120" y="590" font-size="13" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif">github.com/ai-engineering-journey</text>
   <text x="80" y="590" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif">concept</text>
   <rect x="700" y="0" width="500" height="630" fill="url(#dotGrid)" opacity="0.3"/>

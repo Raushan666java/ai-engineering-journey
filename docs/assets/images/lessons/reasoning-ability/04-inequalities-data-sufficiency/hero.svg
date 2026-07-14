@@ -86,7 +86,7 @@
   <!-- Title -->
   <text x="60" y="120" font-size="32" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Inequalities and Data Sufficiency</text>
   <!-- Subtitle -->
-  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">- Direct inequalities use symbols &gt;, &lt;, ≥, ≤, =; transitive property applies for chains in the same direction
+  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Direct inequalities use symbols &gt;, &lt;, ≥, ≤, =; transitive property applies for chains in the same direction
 - Coded...</text>
   <!-- Divider -->
   <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
@@ -111,7 +111,7 @@
     <rect x="450" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
      <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Rule 4: Combinin</text>
     <rect x="580" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
-     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Example Chain:</text>
+     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Example Chain</text>
     <rect x="710" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
      <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Case 1: Multiple</text>
   <!-- Brand watermark -->

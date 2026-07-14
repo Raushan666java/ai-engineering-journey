@@ -63,6 +63,20 @@
   <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">(PTAS): an algorithm that,</text>
   <text x="42" y="187" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">for any fixed \( \epsilon</text>
   <text x="42" y="200" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">&gt; 0 \),...</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Approximation Ratio: ALG /</text>
+  <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">OPT ≤ c (minimization)</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Vertex Cover: Pick both</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">endpoints of uncovered</text>
+  <text x="42" y="271" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">edge</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">TSP (Metric): MST-based</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">tour + shortcutting</text>
+  <text x="42" y="316" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Set Cover: Pick set with</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">best cost-per-new-element</text>
+  <text x="42" y="345" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">MAX-CUT: Random assignment</text>
+  <text x="42" y="358" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">cuts at least half the</text>
+  <text x="42" y="371" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">edges</text>
+  <text x="42" y="387" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Knapsack PTAS: Round</text>
+  <text x="42" y="400" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">profits, run DP</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

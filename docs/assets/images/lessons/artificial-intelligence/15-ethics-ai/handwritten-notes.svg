@@ -86,14 +86,13 @@
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 30,000&quot; was the primary factor — but it might also reveal that &quot;zip code&quot; a proxy for race was influential. ### 15.2.3 S</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: true_salaries.mean:.2f&quot; for eps in 0.01, 0.1, 0.5, 1.0, 5.0: private_mean, true = dp_simple_meantrue_salaries, eps error</text>
-    <text x="60" y="274" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="277" x2="160" y2="277" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="298" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Bias amplification: Models that learn and magnify historical...</text>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Opacity: Black-box decisions that cannot be questioned or appealed</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Privacy erosion: Systems that memorize and expose sensitive data</text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Accountability gaps: No one takes responsibility when AI causes harm</text>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Transparency requirements</tspan>: 30,000&quot; was the primary factor — but it might also reveal that &quot;zip code&quot; a proxy for race was influential. ### 15.2.3 S</text>
+    <text x="60" y="252" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="255" x2="160" y2="255" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="276" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Bias amplification: Models that learn and magnify historical...</text>
+    <text x="65" y="298" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Opacity: Black-box decisions that cannot be questioned or appealed</text>
+    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Privacy erosion: Systems that memorize and expose sensitive data</text>
+    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Accountability gaps: No one takes responsibility when AI causes harm</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Key takeaways:; Bias is everywhere; Interpretability is a prerequisite for trust</text>
 </svg>

@@ -85,17 +85,12 @@
     <text x="65" y="168" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Revision</text>
     <line x1="60" y1="206" x2="550" y2="206" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="60" y1="210" x2="400" y2="210" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
-    <text x="60" y="234" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="237" x2="160" y2="237" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="258" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: $ | Cache | +----------+ | +----------+ | L3 | 10-40 ns, ~8 MB,</text>
-    <text x="65" y="280" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: +----------+ | +----------+ | L1 | 0.5-2 ns, ~32 KB,</text>
-    <text x="65" y="302" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: | Cache | +----------+ | +----------+ | L2 | 5-10 ns, ~256 KB,</text>
-    <text x="60" y="330" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="333" x2="160" y2="333" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="354" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Convert between number systems (binary, octal, decimal,...</text>
-    <text x="65" y="376" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply Boolean algebra laws and simplify logic expressions</text>
-    <text x="65" y="398" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Identify CPU components and register types with their functions</text>
-    <text x="65" y="420" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Trace instruction cycle phases (fetch, decode, execute, memory...</text>
+    <text x="60" y="234" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="237" x2="160" y2="237" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="258" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Convert between number systems (binary, octal, decimal,...</text>
+    <text x="65" y="280" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply Boolean algebra laws and simplify logic expressions</text>
+    <text x="65" y="302" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Identify CPU components and register types with their functions</text>
+    <text x="65" y="324" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Trace instruction cycle phases (fetch, decode, execute, memory...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Number systems:; Boolean algebra:; CPU:</text>
 </svg>

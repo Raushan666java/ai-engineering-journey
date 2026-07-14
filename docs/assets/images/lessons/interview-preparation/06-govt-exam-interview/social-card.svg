@@ -75,16 +75,14 @@
   <text x="1110" y="286" font-size="28" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">4</text>
   <text x="1110" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Algorithms</text>
   <text x="80" y="400" font-size="11" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="600">KEYWORDS</text>
-  <rect x="80" y="408" width="65" height="20" rx="10" fill="#2563eb" opacity="0.12"/>
-    <text x="112.5" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Answer:</text>
-  <rect x="168" y="408" width="191" height="20" rx="10" fill="#059669" opacity="0.12"/>
-    <text x="263.5" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Core Banking System (CBS)</text>
-  <rect x="400" y="408" width="142" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="471" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Network Management</text>
-  <rect x="576" y="408" width="72" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="612" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Security</text>
-  <rect x="672" y="408" width="128" height="20" rx="10" fill="#db2777" opacity="0.12"/>
-    <text x="736" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">Digital Channels</text>
+  <rect x="80" y="408" width="191" height="20" rx="10" fill="#2563eb" opacity="0.12"/>
+    <text x="175.5" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Core Banking System (CBS)</text>
+  <rect x="312" y="408" width="142" height="20" rx="10" fill="#059669" opacity="0.12"/>
+    <text x="383" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Network Management</text>
+  <rect x="488" y="408" width="72" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="524" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Security</text>
+  <rect x="584" y="408" width="128" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="648" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Digital Channels</text>
   <text x="1120" y="590" font-size="13" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif">github.com/ai-engineering-journey</text>
   <text x="80" y="590" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif">concept</text>
   <rect x="700" y="0" width="500" height="630" fill="url(#dotGrid)" opacity="0.3"/>

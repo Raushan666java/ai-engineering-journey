@@ -51,19 +51,40 @@
   <!-- Column divider (dashed vertical) -->
   <line x1="300" y1="110" x2="300" y2="860" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
     <text x="300" y="68" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="0.5">Chapter 1: Fundamentals of Algorithm...</text>
-  <rect x="265.5" y="82" width="69" height="20" rx="10" fill="#2563eb" opacity="0.10"/>
-      <text x="300" y="96" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">concept</text>
+  <rect x="258.5" y="82" width="83" height="20" rx="10" fill="#2563eb" opacity="0.10"/>
+      <text x="300" y="96" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">algorithm</text>
   <g filter="url(#shadowSm)"><rect x="28" y="114" width="264" height="340" rx="8" fill="#2563eb" opacity="0.06"/>
     <rect x="28" y="114" width="4" height="340" rx="2" fill="#2563eb"/>
     <rect x="28" y="114" width="264" height="340" rx="8" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.15"/></g>
   <text x="38" y="134" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Concepts</text>
     <line x1="38" y1="137" x2="138" y2="137" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <text x="42" y="148" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Asymptotic Notation:</text>
+  <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Big-O, Θ, Ω describe</text>
+  <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">upper, tight, and lower</text>
+  <text x="42" y="187" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">bounds</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Recurrence Relations:</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Recursive algorithms</text>
+  <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">modeled as T(n) = aT(n/b)</text>
+  <text x="42" y="242" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">+ f(n)</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Substitution Method: Guess</text>
+  <text x="42" y="271" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">+ induction proves</text>
+  <text x="42" y="284" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">asymptotic bounds</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Recursion-Tree Method:</text>
+  <text x="42" y="313" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Visualize recursion as</text>
+  <text x="42" y="326" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">levels with per-level</text>
+  <text x="42" y="339" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">costs</text>
+  <text x="42" y="355" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Master Theorem: Three</text>
+  <text x="42" y="368" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">cases covering polynomial</text>
+  <text x="42" y="381" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">comparisons</text>
+  <text x="42" y="397" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Amortized Analysis:</text>
+  <text x="42" y="410" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Average cost per operation</text>
+  <text x="42" y="423" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">over a sequence</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>
   <text x="318" y="134" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formulas & Tips</text>
     <line x1="318" y1="137" x2="418" y2="137" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-  <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Real-World Analogy (Netflix Subscription):</text>
+  <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 1</text>
   <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">15/month regardless of how</text>
   <text x="322" y="173" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">many movies...</text>
   <text x="322" y="189" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>

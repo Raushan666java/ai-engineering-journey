@@ -92,17 +92,12 @@
     <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">प्रश्न ३</tspan>: &quot;गुरु एक बीमारी</text>
     <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">है&quot; — ओशो ने यह किस संदर्भ में</text>
     <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">कहा?</text>
-    <text x="60" y="362" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="365" x2="160" y2="365" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: d.titleHindi】—</text>
-    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: primary.discourseNumber में बात की। उनका मुख्य संदेश: &quot;</text>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: ref.nearestDiscourse?.titleHindi`; console.log` ओशो का संदेश:</text>
-    <text x="60" y="458" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="461" x2="160" y2="461" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="482" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> ओशो के &quot;गुरु&quot; की अवधारणा को समझना — गुरु एक उपस्थिति है, शिक्षक नहीं</text>
-    <text x="65" y="504" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> पारंपरिक गुरु-शिष्य संबंधों पर ओशो की अनोखी आलोचना को आत्मसात करना</text>
-    <text x="65" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> दीक्षा (initiation) को ओशो के नज़रिए से देखना — बिना स्पर्श के संचरण</text>
-    <text x="65" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> गुरु को एक उत्प्रेरक (catalytic agent) के रूप में समझना</text>
+    <text x="60" y="362" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="365" x2="160" y2="365" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> ओशो के &quot;गुरु&quot; की अवधारणा को समझना — गुरु एक उपस्थिति है, शिक्षक नहीं</text>
+    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> पारंपरिक गुरु-शिष्य संबंधों पर ओशो की अनोखी आलोचना को आत्मसात करना</text>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> दीक्षा (initiation) को ओशो के नज़रिए से देखना — बिना स्पर्श के संचरण</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> गुरु को एक उत्प्रेरक (catalytic agent) के रूप में समझना</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

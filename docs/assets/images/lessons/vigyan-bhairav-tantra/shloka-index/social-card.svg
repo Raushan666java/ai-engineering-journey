@@ -57,7 +57,7 @@
   <text x="80" y="60" font-size="14" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="500">AI Engineering Journey</text>
   <circle cx="70" cy="55" r="3" fill="#2563eb" opacity="0.5"/>
   <text x="80" y="180" font-size="46" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif" letter-spacing="-0.5">संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)</text>
-  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">&quot;ये श्लोक केवल शब्द नहीं हैं — ये ऊर्जा के स्पंदन हैं। जितनी गहराई से तुम इन्हें समझोगे, उतनी ही गहराई से तुम...</text>
+  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">&lt;!-- Image Gallery --&gt;</text>
   <line x1="80" y1="280" x2="280" y2="280" stroke="url(#gBlue)" stroke-width="5" stroke-linecap="round"/>
   <circle cx="850" cy="280" r="44" fill="#2563eb" opacity="0.08"/>
   <circle cx="850" cy="280" r="44" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.25"/>
@@ -67,7 +67,7 @@
   <circle cx="980" cy="280" r="44" fill="#059669" opacity="0.08"/>
   <circle cx="980" cy="280" r="44" fill="none" stroke="#059669" stroke-width="1.5" opacity="0.25"/>
   <circle cx="980" cy="280" r="36" fill="#059669" opacity="0.10"/>
-  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">0</text>
   <text x="980" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Formulas</text>
   <circle cx="1110" cy="280" r="44" fill="#7c3aed" opacity="0.08"/>
   <circle cx="1110" cy="280" r="44" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.25"/>
@@ -79,14 +79,14 @@
     <text x="98.5" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">ओशो</text>
   <rect x="136" y="408" width="198" height="20" rx="10" fill="#059669" opacity="0.12"/>
     <text x="235" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">५५ सबसे महत्वपूर्ण श्लोकों</text>
-  <rect x="376" y="408" width="79" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="415.5" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">ओशो वाणी:</text>
-  <rect x="480" y="408" width="79" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="519.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">मूल विधि:</text>
-  <rect x="584" y="408" width="79" height="20" rx="10" fill="#db2777" opacity="0.12"/>
-    <text x="623.5" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">कुल श्लोक</text>
-  <rect x="688" y="408" width="58" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="717" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">अध्याय</text>
+  <rect x="376" y="408" width="72" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="412" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">ओशो वाणी</text>
+  <rect x="472" y="408" width="72" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="508" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">मूल विधि</text>
+  <rect x="568" y="408" width="79" height="20" rx="10" fill="#db2777" opacity="0.12"/>
+    <text x="607.5" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">कुल श्लोक</text>
+  <rect x="672" y="408" width="58" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="701" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">अध्याय</text>
   <text x="1120" y="590" font-size="13" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif">github.com/ai-engineering-journey</text>
   <text x="80" y="590" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif">concept</text>
   <rect x="700" y="0" width="500" height="630" fill="url(#dotGrid)" opacity="0.3"/>

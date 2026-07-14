@@ -100,14 +100,7 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif"></text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">metrics.duplicateBlocks</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">duplicate code blocks</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">via Extract Method`;</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">if</text>
-    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">metrics.dependencyCycles</text>
-    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&gt; 0</text>
-    <text x="44" y="360" font-size="10" fill="#64748b" font-family="Arial, sans-serif">recommendations.push`</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">1.2M/year. If a</text>
     </g>
 
 <g transform="rotate(4 312.5 287.5)" filter="url(#shadowMd)">
@@ -118,12 +111,8 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">metrics.deadFunctions</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">unused functions after</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">verifying callers`; if</text>
-    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">metrics.commentedOutCode</text>
-    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&gt; 5</text>
-    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">recommendations.push&apos;Re</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">1.2M/year - Current</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">change rate: 15% →</text>
     </g>
 
 <g transform="rotate(0 507.5 467.5)" filter="url(#shadowMd)">
@@ -134,9 +123,8 @@
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
     <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Contributors to</text>
-    <text x="434" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">software</text>
-    <text x="434" y="458" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">entropy:</text>
-    <text x="434" y="478" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="434" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">software entropy</text>
+    <text x="434" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
 <g transform="rotate(-4 702.5 467.5)" filter="url(#shadowMd)">
@@ -147,7 +135,7 @@
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
     <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Accumulated</text>
-    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">quick fixes:</text>
+    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">quick fixes</text>
     <text x="629" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

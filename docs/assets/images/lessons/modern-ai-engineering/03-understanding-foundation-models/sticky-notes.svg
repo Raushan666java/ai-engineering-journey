@@ -141,8 +141,13 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">month.cost.toFixed2</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">cost,</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">1/hr for 70B on A100 |</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| **Latency** |</text>
+    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Managed</text>
+    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">infrastructure,</text>
+    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">predictable | Variable</text>
+    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">based on hardware, can</text>
+    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">be optimize</text>
     </g>
 
 <g transform="rotate(3 312.5 287.5)" filter="url(#shadowMd)">
@@ -153,13 +158,13 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">1/hr for 70B on A100 |</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| **Latency** |</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Managed</text>
-    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">infrastructure,</text>
-    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">predictable | Variable</text>
-    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">based on hardware, can</text>
-    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">be optimize</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">0.05/query | |</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">State-of-the-art</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">reasoning | Closed</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">GPT-5 | Currently</text>
+    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">~5-10% better on</text>
+    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">complex reasoning | |</text>
+    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Specialized</text>
     </g>
 
 <g transform="rotate(-1 507.5 467.5)" filter="url(#shadowMd)">

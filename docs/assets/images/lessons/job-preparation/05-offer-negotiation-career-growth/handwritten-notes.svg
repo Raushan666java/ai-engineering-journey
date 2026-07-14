@@ -92,17 +92,12 @@
     <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Decision Rule</tspan>: Add weighted scores.</text>
     <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">The highest total suggests the best</text>
     <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">fit for your...</text>
-    <text x="60" y="362" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="365" x2="160" y2="365" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: offerA.company offers Rs.</text>
-    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: offerB.company offers Rs.</text>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: a.company vs</text>
-    <text x="60" y="458" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="461" x2="160" y2="461" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="482" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Understand and analyze the complete CTC structure for private...</text>
-    <text x="65" y="504" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Negotiate salary effectively using proven scripts and strategies</text>
-    <text x="65" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Decode government pay scales (7th Pay Commission, PSU pay...</text>
-    <text x="65" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Plan your career progression with horizontal and vertical growth...</text>
+    <text x="60" y="362" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="365" x2="160" y2="365" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Understand and analyze the complete CTC structure for private...</text>
+    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Negotiate salary effectively using proven scripts and strategies</text>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Decode government pay scales (7th Pay Commission, PSU pay...</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Plan your career progression with horizontal and vertical growth...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Salary negotiation and career growth planning require a strategic approach. For...</text>
 </svg>

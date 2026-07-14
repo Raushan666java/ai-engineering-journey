@@ -96,7 +96,7 @@
     <text x="80" y="378" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">humans *intend* (not what...</text>
     <text x="60" y="406" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="409" x2="160" y2="409" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">XCON</tspan>: 40M/year. - The &quot;knowledge bottleneck&quot; emerged: extracting knowledge from human experts was slow, expensive, and brittle</text>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 40M/year. - The &quot;knowledge bottleneck&quot; emerged: extracting knowledge from human experts was slow, expensive, and brittle</text>
     <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 1B+ annually in churn reduction | | **Tesla Autopilot** | Computer vision 8 cameras, 360° view, transformer-based occupa</text>
     <text x="60" y="480" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="483" x2="160" y2="483" stroke="#059669" stroke-width="2" stroke-linecap="round"/>

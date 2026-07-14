@@ -114,8 +114,8 @@
     <line x1="82" y1="420" x2="82" y2="428" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="444" x2="82" y2="452" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="436" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: app = require_once __DIR__.&apos;/../bootstrap/app.php&apos;;</text>
-  <text x="104" y="472" font-size="12" fill="#64748b" font-family="Arial, sans-serif">|  Formula 2:...</text>
+  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: user|Must match -&gt;name| |Inject request|public function</text>
+  <text x="104" y="472" font-size="12" fill="#64748b" font-family="Arial, sans-serif">storeRequest \  |  Formula 2: data` and...</text>
   <line x1="500" y1="490" x2="500" y2="500" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="510" width="880" height="68" rx="8" fill="#fce7f3"/>
@@ -136,8 +136,8 @@
   </g>
   <polygon points="82,612 76,624 80.08,624 79.12,636 85.6,622.8 81.52,622.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="624" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="642" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- The HTTP request lifecycle follows `index.php` → `bootstrap/app.php` →</text>
-  <text x="104" y="660" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Kernel → Service Providers → Router...</text>
+  <text x="104" y="642" font-size="12" fill="#64748b" font-family="Arial, sans-serif">The HTTP request lifecycle follows `index.php` → `bootstrap/app.php` →</text>
+  <text x="104" y="660" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Kernel → Service Providers → Router →...</text>
   <rect x="840" y="608" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>
     <text x="886.5" y="622" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">⭐ Important</text>
   <!-- Footer -->

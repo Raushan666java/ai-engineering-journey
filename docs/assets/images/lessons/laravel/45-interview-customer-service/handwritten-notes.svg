@@ -92,15 +92,13 @@
     <text x="80" y="302" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">the issue was resolved in a single...</text>
     <text x="60" y="330" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="333" x2="160" y2="333" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="354" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: pipeline, protected Agent</text>
-    <text x="65" y="376" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: ticket: void</text>
-    <text x="65" y="398" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: this-&gt;classifier -&gt;withInput&apos;subject&apos; =&gt;</text>
-    <text x="60" y="426" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="429" x2="160" y2="429" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="450" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> First Response Time (FRT): Time from ticket creation to first agent...</text>
-    <text x="65" y="472" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Resolution Time (RT): Time to close or resolve the ticket. Often...</text>
-    <text x="65" y="494" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> SLA Compliance Rate: Percentage of tickets meeting their SLA...</text>
-    <text x="65" y="516" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Backlog Aging: Distribution of open tickets by time buckets (e.g.,...</text>
+    <text x="65" y="354" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: query, 3600, fn =&gt; Str::toEmbeddings</text>
+    <text x="60" y="382" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="385" x2="160" y2="385" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="406" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> First Response Time (FRT): Time from ticket creation to first agent...</text>
+    <text x="65" y="428" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Resolution Time (RT): Time to close or resolve the ticket. Often...</text>
+    <text x="65" y="450" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> SLA Compliance Rate: Percentage of tickets meeting their SLA...</text>
+    <text x="65" y="472" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Backlog Aging: Distribution of open tickets by time buckets (e.g.,...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 This chapter covered 25+ interview questions spanning the full customer service and...</text>
 </svg>

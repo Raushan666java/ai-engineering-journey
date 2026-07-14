@@ -90,9 +90,9 @@
     <text x="80" y="234" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">or members. If...</text>
     <text x="60" y="262" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="265" x2="160" y2="265" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: A = \1, 2, 3, 4, 5\</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: B = \x \mid x \in \mathbbN,\; x \text is even,\; x \leq 20\</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">subset</tspan>: A \subseteq B \iff \forall x\,x \in A \implies x \in B</text>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: A \subseteq B \iff \forall x\,x \in A \implies x \in B</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: \mu_A: U \to 0,1</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: A \cap B_1 \cup B_2 \cup \cdots \cup B_n = A \cap B_1 \cup A \cap B_2 \cup \cdots \cup A \cap B_n</text>
     <text x="60" y="358" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="361" x2="160" y2="361" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$ ? natural numbers</text>

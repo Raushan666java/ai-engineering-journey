@@ -67,7 +67,7 @@
   <circle cx="980" cy="280" r="44" fill="#059669" opacity="0.08"/>
   <circle cx="980" cy="280" r="44" fill="none" stroke="#059669" stroke-width="1.5" opacity="0.25"/>
   <circle cx="980" cy="280" r="36" fill="#059669" opacity="0.10"/>
-  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">0</text>
   <text x="980" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Formulas</text>
   <circle cx="1110" cy="280" r="44" fill="#7c3aed" opacity="0.08"/>
   <circle cx="1110" cy="280" r="44" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.25"/>
@@ -75,14 +75,14 @@
   <text x="1110" y="286" font-size="28" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">4</text>
   <text x="1110" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Algorithms</text>
   <text x="80" y="400" font-size="11" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="600">KEYWORDS</text>
-  <rect x="80" y="408" width="128" height="20" rx="10" fill="#2563eb" opacity="0.12"/>
-    <text x="144" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Essay Structure:</text>
-  <rect x="240" y="408" width="177" height="20" rx="10" fill="#059669" opacity="0.12"/>
-    <text x="328.5" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Sample Essay Paragraph:</text>
-  <rect x="456" y="408" width="142" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="527" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Report Components:</text>
-  <rect x="632" y="408" width="156" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="710" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Sample Report Start:</text>
+  <rect x="80" y="408" width="121" height="20" rx="10" fill="#2563eb" opacity="0.12"/>
+    <text x="140.5" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Essay Structure</text>
+  <rect x="232" y="408" width="170" height="20" rx="10" fill="#059669" opacity="0.12"/>
+    <text x="317" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Sample Essay Paragraph</text>
+  <rect x="440" y="408" width="135" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="507.5" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Report Components</text>
+  <rect x="608" y="408" width="149" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="682.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Sample Report Start</text>
   <text x="1120" y="590" font-size="13" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif">github.com/ai-engineering-journey</text>
   <text x="80" y="590" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif">concept</text>
   <rect x="700" y="0" width="500" height="630" fill="url(#dotGrid)" opacity="0.3"/>

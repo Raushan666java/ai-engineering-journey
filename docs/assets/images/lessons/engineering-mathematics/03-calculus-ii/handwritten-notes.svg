@@ -86,9 +86,9 @@
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Definition:</tspan>: \frac\partial f\partial xa,b = \lim_h \to 0 \fracfa+h, b - fa,bh</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Higher-Order Partial Derivatives:</tspan>: \frac\partial^2 f\partial x^2 = \frac\partial\partial x\left\frac\partial f\partial x\right, \quad \frac\partial^2 f\par</text>
-    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Clairaut&apos;s Theorem (Equality of Mixed Partials):</tspan>: \frac\partial^2 f\partial x \partial y = \frac\partial^2 f\partial y \partial x</text>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: z - fa,b = f_xa,bx - a + f_ya,by - b</text>
+    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Meaning of $\lambda$:</tspan>: \iint_R fx,y\,dA = \int_a^b \int_c^d fx,y\,dy\,dx = \int_c^d \int_a^b fx,y\,dx\,dy</text>
+    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Definition:</tspan>: x = r\cos\theta, \quad y = r\sin\theta</text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> $\nabla f$ points in the direction of steepest increase of $f$</text>
@@ -96,5 +96,5 @@
     <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> $\nabla f$ is perpendicular to level curves/surfaces ($\nabla f...</text>
     <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> $-\nabla f$ points in the direction of steepest decrease (used in...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Partial derivatives compute rates of change with respect to one variable at a time...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Partial derivatives compute rates of change with respect to one variable at a time...</text>
 </svg>

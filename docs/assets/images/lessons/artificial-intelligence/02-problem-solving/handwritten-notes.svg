@@ -94,11 +94,10 @@
     <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">\mathcal{E})$ where:</text>
     <text x="60" y="362" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="365" x2="160" y2="365" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: \mathcalS</text>
-    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">The state from which the agent starts.
-3.</tspan>: \textActionss</text>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">The set of actions available in state $s$.
-4.</tspan>: \textResults, a</text>
+    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">The state from which the agent starts.
+3.</tspan>: cs, a, s&apos;</text>
+    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: Ob^m</text>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: Obm</text>
     <text x="60" y="458" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="461" x2="160" y2="461" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="482" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Initial state: New York City (where you start)</text>

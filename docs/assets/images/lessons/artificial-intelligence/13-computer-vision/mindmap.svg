@@ -72,7 +72,7 @@
   <text x="608.0106382435728" y="430.9545322482755" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">Formula 2</text>
   <line x1="585.119446294824" y1="417.37796823515674" x2="632.1040773341194" y2="434.47897540144015" stroke="#d97706" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
   <circle cx="632.1040773341194" cy="434.47897540144015" r="3" fill="#d97706" filter="url(#shadowSm)"/>
-  <text x="628.6838759008627" y="438.47897540144015" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">convolution</text>
+  <text x="628.6838759008627" y="438.47897540144015" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">Formula 3</text>
   <!-- Branch: Interview -->
     <path d="M392.2431388954584,381.87823033893585 Q343.4487911863114,451.6746295740804 384.3119663054215,529.3150456565143" fill="none" stroke="#7c3aed" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
   <rect x="324.3119663054215" y="514.3150456565143" width="120" height="30" rx="15" fill="#7c3aed" opacity="0.1" stroke="#7c3aed" stroke-width="2" filter="url(#shadowSm)"/>

@@ -99,7 +99,7 @@
       <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Directions:</text>
+    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
     <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">B means A &gt;= B, A %</text>
     <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">B means A &lt;= B, A</text>
     <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&amp; B means A = B.</text>
@@ -152,7 +152,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Directions:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Directions</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
@@ -163,7 +163,7 @@
       <path d="M778,390 L790,402 L790,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Answer:</text>
+    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Explanation</text>
     <text x="629" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

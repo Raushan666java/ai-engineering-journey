@@ -88,22 +88,27 @@
     <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">switch</tspan>: a multi-port bridge with a</text>
     <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">high-speed backplane and dedicated</text>
     <text x="80" y="234" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">per-port buffer...</text>
-    <text x="60" y="262" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="265" x2="160" y2="265" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: mac → port</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: ingressPort`; if egressPort === ingressPort return `FILTER destination on same port</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: egressPort`; private evictOldest: void let oldest: MacEntry | null = null; for const entry of this.table.values if !olde</text>
-    <text x="60" y="358" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="361" x2="160" y2="361" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Parse and explain every field of the Ethernet frame format.</text>
-    <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Trace the evolution of Ethernet from 10 Mbps shared media to 400...</text>
-    <text x="65" y="426" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Explain the operation of learning bridges and transparent switching...</text>
-    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Describe the Spanning Tree Protocol port state machine and its role...</text>
-    <rect x="55" y="472" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="472" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="490" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="510" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">STP vs RSTP → What Are the Key</text>
-    <text x="68" y="526" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Differences?</text>
+    <text x="65" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Ethernet Frame Format</tspan>: 7-field</text>
+    <text x="80" y="278" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">structure unchanged since 1980</text>
+    <text x="65" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Ethernet Evolution</tspan>: 10 Mbps coaxial →</text>
+    <text x="80" y="322" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">400 Gbps full-duplex switched</text>
+    <text x="65" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Learning Bridges</tspan>: Automatically build</text>
+    <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">MAC tables by observing source</text>
+    <text x="80" y="388" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">addresses</text>
+    <text x="60" y="416" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
+    <line x1="60" y1="419" x2="160" y2="419" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 15-30 |</text>
+    <text x="60" y="468" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="471" x2="160" y2="471" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Parse and explain every field of the Ethernet frame format.</text>
+    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Trace the evolution of Ethernet from 10 Mbps shared media to 400...</text>
+    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Explain the operation of learning bridges and transparent switching...</text>
+    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Describe the Spanning Tree Protocol port state machine and its role...</text>
+    <rect x="55" y="582" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="582" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="600" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="620" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">STP vs RSTP → What Are the Key</text>
+    <text x="68" y="636" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Differences?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Frame format stability; Transparent switching; Loop prevention vs. redundancy</text>
 </svg>

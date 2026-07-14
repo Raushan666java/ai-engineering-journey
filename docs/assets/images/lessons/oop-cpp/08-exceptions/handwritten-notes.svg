@@ -87,16 +87,12 @@
     <line x1="60" y1="169" x2="160" y2="169" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">copy-and-swap idiom</tspan>: the classic</text>
     <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">approach:</text>
-    <text x="60" y="240" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="243" x2="160" y2="243" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="264" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: &quot; &lt;&lt; alice.balance &lt;&lt; &quot;, Bob:</text>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Output:</tspan>: 800, Bob:</text>
-    <text x="60" y="314" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="317" x2="160" y2="317" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="338" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Write exception-safe code using try/catch/throw with proper...</text>
-    <text x="65" y="360" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Understand stack unwinding and its interaction with destructors...</text>
-    <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Apply RAII for deterministic resource management in the presence of...</text>
-    <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use `noexcept` correctly in function declarations and understand...</text>
+    <text x="60" y="240" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="243" x2="160" y2="243" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="264" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Write exception-safe code using try/catch/throw with proper...</text>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Understand stack unwinding and its interaction with destructors...</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Apply RAII for deterministic resource management in the presence of...</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use `noexcept` correctly in function declarations and understand...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Catching by value; Swallowing exceptions; Throwing from destructors</text>
 </svg>

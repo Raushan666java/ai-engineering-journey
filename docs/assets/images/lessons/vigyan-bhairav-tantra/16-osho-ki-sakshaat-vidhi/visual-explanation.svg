@@ -100,42 +100,26 @@
   <text x="104" y="344" font-size="12" fill="#64748b" font-family="Arial, sans-serif">एकमात्र ध्यान है&quot; | Step 2: सभी ११२ तकनीकों...</text>
   <line x1="500" y1="362" x2="500" y2="372" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
-    <rect x="60" y="382" width="880" height="86" rx="8" fill="#f3e8ff"/>
-    <rect x="60" y="382" width="6" height="86" rx="3" fill="#7c3aed"/>
-    <rect x="60" y="382" width="880" height="86" rx="8" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.2"/>
+    <rect x="60" y="382" width="880" height="60" rx="8" fill="#fce7f3"/>
+    <rect x="60" y="382" width="6" height="60" rx="3" fill="#db2777"/>
+    <rect x="60" y="382" width="880" height="60" rx="8" fill="none" stroke="#db2777" stroke-width="0.5" opacity="0.2"/>
   </g>
-  <rect x="72" y="392" width="20" height="20" rx="3" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
-    <rect x="76" y="396" width="12" height="12" rx="2" fill="#7c3aed" opacity="0.15"/>
-    <line x1="70" y1="398" x2="70" y2="406" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="94" y1="398" x2="94" y2="406" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="82" y1="386" x2="82" y2="394" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="82" y1="410" x2="82" y2="418" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-  <text x="104" y="402" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="420" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: Date.now_  |  Formula 2:</text>
-  <text x="104" y="438" font-size="12" fill="#64748b" font-family="Arial, sans-serif">WITNESS_INSTRUCTIONScurrentLevel.instruction से आगे बढ़ो।  |  Formula</text>
-  <text x="104" y="456" font-size="12" fill="#64748b" font-family="Arial, sans-serif">3:...</text>
-  <line x1="500" y1="474" x2="500" y2="484" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
-  <g filter="url(#shadowSm)">
-    <rect x="60" y="494" width="880" height="60" rx="8" fill="#fce7f3"/>
-    <rect x="60" y="494" width="6" height="60" rx="3" fill="#db2777"/>
-    <rect x="60" y="494" width="880" height="60" rx="8" fill="none" stroke="#db2777" stroke-width="0.5" opacity="0.2"/>
-  </g>
-  <g transform="translate(70,502)">
+  <g transform="translate(70,390)">
     <path d="M7.199999999999999,16.799999999999997 A4.800000000000001,4.800000000000001 0 0,1 10.8,8.399999999999999 A6,6 0 0,1 18,9.600000000000001 A3.5999999999999996,3.5999999999999996 0 0,1 20.4,16.799999999999997 Z" fill="#db2777" opacity="0.15" stroke="#db2777" stroke-width="1.2"/>
   </g>
-  <text x="104" y="514" font-size="14" font-weight="bold" fill="#db2777" font-family="Arial, sans-serif">Real-world Example</text>
-  <text x="104" y="532" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Code Example 1: mermaid</text>
-  <line x1="500" y1="560" x2="500" y2="570" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <text x="104" y="402" font-size="14" font-weight="bold" fill="#db2777" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="104" y="420" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Code Example 1: mermaid</text>
+  <line x1="500" y1="448" x2="500" y2="458" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
-    <rect x="60" y="580" width="880" height="60" rx="8" fill="#eff6ff"/>
-    <rect x="60" y="580" width="6" height="60" rx="3" fill="#1e40af"/>
-    <rect x="60" y="580" width="880" height="60" rx="8" fill="none" stroke="#1e40af" stroke-width="0.5" opacity="0.2"/>
+    <rect x="60" y="468" width="880" height="60" rx="8" fill="#eff6ff"/>
+    <rect x="60" y="468" width="6" height="60" rx="3" fill="#1e40af"/>
+    <rect x="60" y="468" width="880" height="60" rx="8" fill="none" stroke="#1e40af" stroke-width="0.5" opacity="0.2"/>
   </g>
-  <polygon points="82,588 76,600 80.08,600 79.12,612 85.6,598.8 81.52,598.8" fill="#1e40af" opacity="0.7"/>
-  <text x="104" y="600" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="618" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
-  <rect x="840" y="584" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>
-    <text x="886.5" y="598" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">⭐ Important</text>
+  <polygon points="82,476 76,488 80.08,488 79.12,500 85.6,486.8 81.52,486.8" fill="#1e40af" opacity="0.7"/>
+  <text x="104" y="488" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="104" y="506" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
+  <rect x="840" y="472" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>
+    <text x="886.5" y="486" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">⭐ Important</text>
   <!-- Spacer -->
   <!-- Footer -->
   <text x="500" y="688" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">अध्याय १६: ओशो की साक्षात् विधि: गवाही का विज्ञान · Visual Explanation</text>

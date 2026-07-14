@@ -66,7 +66,7 @@
   <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 1</text>
   <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">Q means P &lt;= Q - P % Q</text>
   <text x="322" y="173" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">means P &lt; Q - P...</text>
-  <text x="322" y="189" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Statement:</text>
+  <text x="322" y="189" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>
   <text x="322" y="202" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">E 3. B % D A Only 1 is</text>
   <text x="322" y="214" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">true B Only 2 is...</text>
   <line x1="38" y1="462" x2="562" y2="462" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>

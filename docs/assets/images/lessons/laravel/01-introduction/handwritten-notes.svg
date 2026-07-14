@@ -99,16 +99,11 @@
     <text x="65" y="444" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">AI-Native Workflows</tspan>: Laravel 13</text>
     <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">introduces first-class support for</text>
     <text x="80" y="488" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">AI-assisted development. The...</text>
-    <text x="60" y="516" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="519" x2="160" y2="519" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: name = env&apos;APP_NAME&apos;; // works but not recommended outside config/ // The config helper works anywhere</text>
-    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: dbHost = config&apos;database.connections.mysql.host&apos;;</text>
-    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: all = config-&gt;all; ``` #### Environment Detection ```php</text>
-    <text x="60" y="612" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="615" x2="160" y2="615" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Elegant Syntax: Laravel code reads like well-written prose....</text>
-    <text x="65" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Expressive: Common web development tasks → database queries, email...</text>
-    <text x="65" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Convention over Configuration: Laravel ships with sensible...</text>
+    <text x="60" y="516" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="519" x2="160" y2="519" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Elegant Syntax: Laravel code reads like well-written prose....</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Expressive: Common web development tasks → database queries, email...</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Convention over Configuration: Laravel ships with sensible...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Scaffold; Configure; Model</text>
 </svg>

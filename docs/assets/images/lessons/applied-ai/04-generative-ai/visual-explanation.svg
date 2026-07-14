@@ -53,24 +53,39 @@
     <rect x="40" y="40" width="920" height="56" rx="10" fill="url(#gBlue)" filter="url(#shadowMd)"/>
   <text x="500" y="76" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 4: Generative AI</text>
   <g filter="url(#shadowSm)">
-    <rect x="60" y="116" width="880" height="60" rx="8" fill="#d1fae5"/>
-    <rect x="60" y="116" width="6" height="60" rx="3" fill="#059669"/>
-    <rect x="60" y="116" width="880" height="60" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.2"/>
+    <rect x="60" y="116" width="880" height="68" rx="8" fill="#eff6ff"/>
+    <rect x="60" y="116" width="6" height="68" rx="3" fill="#2563eb"/>
+    <rect x="60" y="116" width="880" height="68" rx="8" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.2"/>
   </g>
   <g transform="translate(70,124)">
+    <ellipse cx="8.399999999999999" cy="12" rx="4.800000000000001" ry="7.199999999999999" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <ellipse cx="15.600000000000001" cy="12" rx="4.800000000000001" ry="7.199999999999999" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <path d="M8.399999999999999,6 Q12,3.5999999999999996 15.600000000000001,6" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <path d="M8.399999999999999,18 Q12,20.4 15.600000000000001,18" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+  </g>
+  <text x="104" y="136" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="104" y="154" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Overview of Generative Models: GANs, VAEs, and diffusion models use</text>
+  <text x="104" y="172" font-size="12" fill="#64748b" font-family="Arial, sans-serif">different strategies to learn data distributions</text>
+  <line x1="500" y1="190" x2="500" y2="200" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="210" width="880" height="60" rx="8" fill="#d1fae5"/>
+    <rect x="60" y="210" width="6" height="60" rx="3" fill="#059669"/>
+    <rect x="60" y="210" width="880" height="60" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <g transform="translate(70,218)">
     <ellipse cx="12" cy="6" rx="9.600000000000001" ry="2.88" fill="#059669" opacity="0.3"/>
     <path d="M2.4000000000000004,6 L2.4000000000000004,18 C2.4000000000000004,20.4 21.6,20.4 21.6,18 L21.6,6" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
     <path d="M2.4000000000000004,12 C2.4000000000000004,14.399999999999999 21.6,14.399999999999999 21.6,12" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
   </g>
-  <text x="104" y="136" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Architecture</text>
-  <text x="104" y="154" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Setup: → Why? → Setup: → Why? → Setup: → Forward Process — Training:</text>
-  <line x1="500" y1="182" x2="500" y2="192" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <text x="104" y="230" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Architecture</text>
+  <text x="104" y="248" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Setup: → Why? → Setup: → Why? → Setup: → Forward Process — Training:</text>
+  <line x1="500" y1="276" x2="500" y2="286" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
-    <rect x="60" y="202" width="880" height="68" rx="8" fill="#fef3c7"/>
-    <rect x="60" y="202" width="6" height="68" rx="3" fill="#d97706"/>
-    <rect x="60" y="202" width="880" height="68" rx="8" fill="none" stroke="#d97706" stroke-width="0.5" opacity="0.2"/>
+    <rect x="60" y="296" width="880" height="68" rx="8" fill="#fef3c7"/>
+    <rect x="60" y="296" width="6" height="68" rx="3" fill="#d97706"/>
+    <rect x="60" y="296" width="880" height="68" rx="8" fill="none" stroke="#d97706" stroke-width="0.5" opacity="0.2"/>
   </g>
-  <g transform="translate(82,222)">
+  <g transform="translate(82,316)">
     <circle cx="0" cy="0" r="4.199999999999999" fill="none" stroke="#d97706" stroke-width="2"/>
     <rect x="4" y="-3" width="4" height="6" rx="1" fill="#d97706" transform="rotate(0 6 0)"/>
     <rect x="2.2426406871192857" y="1.2426406871192848" width="4" height="6" rx="1" fill="#d97706" transform="rotate(45 4.242640687119286 4.242640687119285)"/>
@@ -81,35 +96,35 @@
     <rect x="-2.000000000000001" y="-9" width="4" height="6" rx="1" fill="#d97706" transform="rotate(270 -1.102182119232618e-15 -6)"/>
     <rect x="2.242640687119284" y="-7.242640687119286" width="4" height="6" rx="1" fill="#d97706" transform="rotate(315 4.242640687119284 -4.242640687119286)"/>
   </g>
-  <text x="104" y="222" font-size="14" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">Workflow</text>
-  <text x="104" y="240" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 1: Explain the architecture of GANs, VAEs, and diffusion models |</text>
-  <text x="104" y="258" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 2: Generate images with GANs and...</text>
-  <line x1="500" y1="276" x2="500" y2="286" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
-  <g filter="url(#shadowSm)">
-    <rect x="60" y="296" width="880" height="68" rx="8" fill="#f3e8ff"/>
-    <rect x="60" y="296" width="6" height="68" rx="3" fill="#7c3aed"/>
-    <rect x="60" y="296" width="880" height="68" rx="8" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.2"/>
-  </g>
-  <rect x="72" y="306" width="20" height="20" rx="3" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
-    <rect x="76" y="310" width="12" height="12" rx="2" fill="#7c3aed" opacity="0.15"/>
-    <line x1="70" y1="312" x2="70" y2="320" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="94" y1="312" x2="94" y2="320" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="82" y1="300" x2="82" y2="308" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="82" y1="324" x2="82" y2="332" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
-  <text x="104" y="316" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: PY|X  |  Discriminate real:: -\log Dx  |  Discriminate fake::</text>
-  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">-\log1 - DGz  |  Generate new...</text>
+  <text x="104" y="316" font-size="14" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">Workflow</text>
+  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 1: Explain the architecture of GANs, VAEs, and diffusion models |</text>
+  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 2: Generate images with GANs and...</text>
   <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
-    <rect x="60" y="390" width="880" height="60" rx="8" fill="#eff6ff"/>
-    <rect x="60" y="390" width="6" height="60" rx="3" fill="#1e40af"/>
-    <rect x="60" y="390" width="880" height="60" rx="8" fill="none" stroke="#1e40af" stroke-width="0.5" opacity="0.2"/>
+    <rect x="60" y="390" width="880" height="68" rx="8" fill="#f3e8ff"/>
+    <rect x="60" y="390" width="6" height="68" rx="3" fill="#7c3aed"/>
+    <rect x="60" y="390" width="880" height="68" rx="8" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.2"/>
   </g>
-  <polygon points="82,398 76,410 80.08,410 79.12,422 85.6,408.8 81.52,408.8" fill="#1e40af" opacity="0.7"/>
-  <text x="104" y="410" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">GANs; VAEs; Diffusion models</text>
-  <rect x="840" y="394" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>
-    <text x="886.5" y="408" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">⭐ Important</text>
+  <rect x="72" y="400" width="20" height="20" rx="3" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+    <rect x="76" y="404" width="12" height="12" rx="2" fill="#7c3aed" opacity="0.15"/>
+    <line x1="70" y1="406" x2="70" y2="414" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="94" y1="406" x2="94" y2="414" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="82" y1="394" x2="82" y2="402" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="82" y1="418" x2="82" y2="426" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="104" y="410" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
+  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: PY|X  |  Formula 2: -\log Dx  |  Formula 3: -\log1 - DGz  |</text>
+  <text x="104" y="446" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Discriminator (D):: -\log DGz  |...</text>
+  <line x1="500" y1="464" x2="500" y2="474" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="484" width="880" height="60" rx="8" fill="#eff6ff"/>
+    <rect x="60" y="484" width="6" height="60" rx="3" fill="#1e40af"/>
+    <rect x="60" y="484" width="880" height="60" rx="8" fill="none" stroke="#1e40af" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <polygon points="82,492 76,504 80.08,504 79.12,516 85.6,502.8 81.52,502.8" fill="#1e40af" opacity="0.7"/>
+  <text x="104" y="504" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="104" y="522" font-size="12" fill="#64748b" font-family="Arial, sans-serif">GANs; VAEs; Diffusion models</text>
+  <rect x="840" y="488" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>
+    <text x="886.5" y="502" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">⭐ Important</text>
   <!-- Spacer -->
   <!-- Footer -->
   <text x="500" y="688" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 4: Generative AI · Visual Explanation</text>

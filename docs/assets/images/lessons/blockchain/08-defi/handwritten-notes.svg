@@ -91,9 +91,9 @@
     <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">smart contracts and token voting.</text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: result.hodl.toFixed2`; console.log`LP:</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Key metrics (2024-2025):</tspan>: 50-100B+ - Daily DEX volume:</text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 2000&quot; Sellers&quot;Sellers: Ask</text>
+    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 50-100B+ - Daily DEX volume:</text>
+    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 69M, Bored Ape Yacht Club - **Music:** Royalty splits, concert tickets - **Gaming:** In-game items, characters, land - *</text>
+    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 115M | TWAP oracles, multiple sources | | Flash Loan Attack | Unc collateralized manipulation | Cream Finance</text>
     <text x="60" y="392" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="395" x2="160" y2="395" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="416" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Total Value Locked (TVL): $50-100B+</text>
@@ -101,6 +101,6 @@
     <text x="65" y="460" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Active DeFi users: 5-10M+</text>
     <text x="65" y="482" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Major chains: Ethereum, Solana, Arbitrum, Optimism, Base</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - DeFi provides financial services without intermediaries through smart contracts.
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 DeFi provides financial services without intermediaries through smart contracts.
 -...</text>
 </svg>

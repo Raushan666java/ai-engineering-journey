@@ -99,17 +99,12 @@
     <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">When the ConfigMap is updated,</text>
     <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Kubernetes updates the files. Spring</text>
     <text x="80" y="488" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Boot can be...</text>
-    <text x="60" y="516" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="519" x2="160" y2="519" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: DB_PASSWORD app.theme.color=blue app.theme.font-size=14px ``` **application.yml** → A hierarchical YAML format that redu</text>
-    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: DB_USER password:</text>
-    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: JWT_SECRET expiration-ms: 3600000 ``` #### 1.4.5 Lists and Maps in @ConfigurationProperties ```java @Component @Configur</text>
-    <text x="60" y="612" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="615" x2="160" y2="615" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Configure Spring Boot applications using `application.properties`...</text>
-    <text x="65" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Bind configuration properties to type-safe Java beans using...</text>
-    <text x="65" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Inject individual property values with `@Value`</text>
-    <text x="65" y="702" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Load custom property files with `@PropertySource`</text>
-    <line x1="60" y1="726" x2="550" y2="726" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="746" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 File formats; Type-safe binding; Property injection</text>
+    <text x="60" y="516" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="519" x2="160" y2="519" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Configure Spring Boot applications using `application.properties`...</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Bind configuration properties to type-safe Java beans using...</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Inject individual property values with `@Value`</text>
+    <text x="65" y="606" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Load custom property files with `@PropertySource`</text>
+    <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 File formats; Type-safe binding; Property injection</text>
 </svg>

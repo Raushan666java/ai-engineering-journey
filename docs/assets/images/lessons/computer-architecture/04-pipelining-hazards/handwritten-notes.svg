@@ -89,17 +89,12 @@
     <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">last): same for short loops! But for N</text>
     <text x="80" y="234" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">≥ 2: 1-bit has 2 mispredictions, 2-bit</text>
     <text x="80" y="256" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">has 1...</text>
-    <text x="60" y="284" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="287" x2="160" y2="287" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: this.instrToStringcurrent →</text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: current.rd\n`; hazardCount++; this.stats.rawHazards++; if current.opcode === &apos;LW&apos; result += ` → Load-use hazard: require</text>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: this.instrToStringnext R</text>
-    <text x="60" y="380" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="383" x2="160" y2="383" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Separate instruction cache (I-cache) and data cache (D-cache) —...</text>
-    <text x="65" y="426" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Stall the pipeline until resource is available</text>
-    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Add more hardware resources (e.g., multiple ALUs)</text>
-    <text x="65" y="470" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> RAW is a true dependency — cannot be eliminated by renaming; must...</text>
+    <text x="60" y="284" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="287" x2="160" y2="287" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Separate instruction cache (I-cache) and data cache (D-cache) —...</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Stall the pipeline until resource is available</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Add more hardware resources (e.g., multiple ALUs)</text>
+    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> RAW is a true dependency — cannot be eliminated by renaming; must...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Pipelining overlaps instruction execution across stages. A k-stage pipeline...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Pipelining overlaps instruction execution across stages. A k-stage pipeline ideally...</text>
 </svg>

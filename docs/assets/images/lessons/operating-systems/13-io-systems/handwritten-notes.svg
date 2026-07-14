@@ -93,17 +93,12 @@
     <text x="65" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Answer</tspan>: PIO (Programmed I/O) is</text>
     <text x="80" y="322" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">simpler with lower per-transfer</text>
     <text x="80" y="344" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">overhead for small...</text>
-    <text x="60" y="372" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="375" x2="160" y2="375" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: r.method.padEnd12 |</text>
-    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: Stringr.cpuBusyTimeMs.padStart11 |</text>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: Stringr.totalTimeMs.padStart9 |</text>
-    <text x="60" y="468" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="471" x2="160" y2="471" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Port-mapped I/O: Special CPU instructions (`IN`, `OUT` on x86)...</text>
-    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Memory-mapped I/O: Device registers appear in the memory address...</text>
-    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Hybrid: Some devices use port I/O for control and memory-mapped for...</text>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> CPU executes `store` instruction targeting device register address.</text>
+    <text x="60" y="372" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="375" x2="160" y2="375" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Port-mapped I/O: Special CPU instructions (`IN`, `OUT` on x86)...</text>
+    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Memory-mapped I/O: Device registers appear in the memory address...</text>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Hybrid: Some devices use port I/O for control and memory-mapped for...</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> CPU executes `store` instruction targeting device register address.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

@@ -94,17 +94,12 @@
     <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">वाले को देखना&quot; का क्या अर्थ है?</text>
     <text x="65" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">प्रश्न ४</tspan>: चेतना की चार अवस्थाओं में</text>
     <text x="80" y="378" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">साक्षी भाव कहाँ स्थित है?</text>
-    <text x="60" y="406" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="409" x2="160" y2="409" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: Date.now_</text>
-    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: WITNESS_INSTRUCTIONScurrentLevel.instruction से आगे बढ़ो।</text>
-    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: session.date.toLocaleTimeString&apos;hi-IN&apos; — स्तर:</text>
-    <text x="60" y="502" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="505" x2="160" y2="505" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> ओशो की सबसे महत्वपूर्ण शिक्षा को समझना — &quot;साक्षी भाव ही एकमात्र...</text>
-    <text x="65" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> सभी ११२ तकनीकों को साक्षी भाव के विभिन्न रूपों में देखना</text>
-    <text x="65" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> &quot;द रॉयल रोड टू एनलाइटनमेंट&quot; — गवाही का विज्ञान सीखना</text>
-    <text x="65" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> चेतना की तीन अवस्थाओं (जाग्रत, स्वप्न, सुषुप्ति) के साक्षी होने का...</text>
+    <text x="60" y="406" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="409" x2="160" y2="409" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> ओशो की सबसे महत्वपूर्ण शिक्षा को समझना — &quot;साक्षी भाव ही एकमात्र...</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> सभी ११२ तकनीकों को साक्षी भाव के विभिन्न रूपों में देखना</text>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> &quot;द रॉयल रोड टू एनलाइटनमेंट&quot; — गवाही का विज्ञान सीखना</text>
+    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> चेतना की तीन अवस्थाओं (जाग्रत, स्वप्न, सुषुप्ति) के साक्षी होने का...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

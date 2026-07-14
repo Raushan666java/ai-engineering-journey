@@ -96,9 +96,9 @@
     <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">high-income individuals based...</text>
     <text x="60" y="394" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="397" x2="160" y2="397" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: \gammaz_nk = \frac\pi_k \mathcalNx_n \mid \mu_k, \Sigma_k\sum_j=1^K \pi_j \mathcalNx_n \mid \mu_j, \Sigma_j</text>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: si = \fracbi - ai\maxai, bi</text>
-    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Davies-Bouldin Index</tspan>: DB = \frac1K \sum_i=1^K \max_j \neq i \frac\sigma_i + \sigma_jd\mu_i, \mu_j</text>
+    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Update</tspan>: Dx^2</text>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: \epsilon</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \mu_k</text>
     <text x="60" y="490" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="493" x2="160" y2="493" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Initialize: Choose $K$ initial centroids.</text>
@@ -106,6 +106,6 @@
     <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Update: Calculate the mean of all points assigned to each cluster...</text>
     <text x="65" y="580" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Repeat: Steps 2 and 3 until the centroids no longer move...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Unsupervised learning finds patterns in unlabeled data.
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Unsupervised learning finds patterns in unlabeled data.
 - K-means is an iterative...</text>
 </svg>

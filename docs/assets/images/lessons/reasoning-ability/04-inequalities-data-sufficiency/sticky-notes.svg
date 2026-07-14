@@ -155,11 +155,13 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Q means P ≥ Q P % Q</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">means P ≤ Q P &amp; Q</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">means P = Q ``` Then a</text>
-    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">statement like &quot;A</text>
-    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">@ B, B</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| % | &amp; |</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">|----------|---|---|---|---|---|</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| Pattern A | &gt; |</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&lt; | ≥ | ≤ | = | |</text>
+    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Pattern B | &lt; |</text>
+    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&gt; | ≤ | ≥ | = | |</text>
+    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Pattern</text>
     </g>
 
 <g transform="rotate(-1 507.5 467.5)" filter="url(#shadowMd)">

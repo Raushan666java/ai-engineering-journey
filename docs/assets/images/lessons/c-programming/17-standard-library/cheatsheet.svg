@@ -58,6 +58,27 @@
     <rect x="28" y="114" width="264" height="340" rx="8" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.15"/></g>
   <text x="38" y="134" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Concepts</text>
     <line x1="38" y1="137" x2="138" y2="137" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <text x="42" y="148" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">`&lt;stdio.h&gt;`:</text>
+  <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Input/output: printf,</text>
+  <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">scanf, fopen, fclose,</text>
+  <text x="42" y="187" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">fread, fwrite</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">`&lt;stdlib.h&gt;`: Memory</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">allocation, random</text>
+  <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">numbers, sorting, atoi</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">`&lt;string.h&gt;`: String</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">manipulation: strlen,</text>
+  <text x="42" y="271" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">strcpy, strcmp, memcpy</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">`&lt;math.h&gt;`:</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Floating-point math: sin,</text>
+  <text x="42" y="313" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">cos, sqrt, pow, fabs</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">`&lt;ctype.h&gt;`:</text>
+  <text x="42" y="342" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Character classification:</text>
+  <text x="42" y="355" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">isalpha, isdigit,</text>
+  <text x="42" y="368" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">tolower,...</text>
+  <text x="42" y="384" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">`&lt;time.h&gt;`: Time</text>
+  <text x="42" y="397" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">functions: time, clock,</text>
+  <text x="42" y="410" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">difftime, strftime</text>
+  <text x="42" y="426" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">`&lt;assert.h&gt;`:</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

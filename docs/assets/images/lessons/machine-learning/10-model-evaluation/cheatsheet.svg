@@ -68,20 +68,18 @@
   <text x="318" y="134" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formulas & Tips</text>
     <line x1="318" y1="137" x2="418" y2="137" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
   <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 1</text>
-  <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\beginaligned Ey - \hatf^2</text>
-  <text x="322" y="173" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">&amp;= Ef +...</text>
-  <text x="322" y="189" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>
-  <text x="322" y="202" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\textMacro-F1 =</text>
-  <text x="322" y="214" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\frac1C\sum_i=1^C F1_i</text>
-  <text x="322" y="230" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
-  <text x="322" y="243" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\textMicro-F1 = \frac2</text>
-  <text x="322" y="255" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\cdot...</text>
-  <text x="322" y="271" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 4</text>
-  <text x="322" y="284" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\textWeighted-F1 =</text>
-  <text x="322" y="296" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\sum_i=1^C w_i \cdot...</text>
-  <text x="322" y="312" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 5</text>
-  <text x="322" y="325" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">\textCost = \sum_i=1^n</text>
-  <text x="322" y="337" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">w_y_i \cdot...</text>
+  <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">y = fx + \epsilon</text>
+  <text x="322" y="177" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>
+  <text x="322" y="190" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">Where: - **Bias?**:</text>
+  <text x="322" y="206" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
+  <text x="322" y="219" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">? how far the average</text>
+  <text x="322" y="231" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">prediction...</text>
+  <text x="322" y="247" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 4</text>
+  <text x="322" y="260" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">? how much predictions</text>
+  <text x="322" y="272" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">fluctuate across...</text>
+  <text x="322" y="288" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 5</text>
+  <text x="322" y="301" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">? noise inherent in the</text>
+  <text x="322" y="313" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">data that no...</text>
   <line x1="38" y1="462" x2="562" y2="462" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
   <g filter="url(#shadowSm)"><rect x="28" y="470" width="264" height="386" rx="8" fill="#dc2626" opacity="0.06"/>
     <rect x="28" y="470" width="4" height="386" rx="2" fill="#dc2626"/>

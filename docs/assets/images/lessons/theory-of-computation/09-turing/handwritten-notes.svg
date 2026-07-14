@@ -93,17 +93,12 @@
     <text x="80" y="300" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">includes blank symbol â£).</text>
     <text x="65" y="322" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Î´: Q Ã— Î“ → Q Ã— Î“ Ã— {L, R}</tspan>: the</text>
     <text x="80" y="344" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">transition function.</text>
-    <text x="60" y="372" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="375" x2="160" y2="375" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: state,</text>
-    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: /, &quot;&quot; ; // Binary incrementer TM static binaryIncrementer: TuringMachine const states = new Set&quot;q0&quot;, &quot;q1&quot;, &quot;q2&quot;, &quot;qAccep</text>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: symbol`; const trans = transitions.getkey; if !trans // No transition = halt const ones = ...tape.values.filterv =&gt; v ==</text>
-    <text x="60" y="468" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="471" x2="160" y2="471" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> An infinite tape divided into cells, each containing a symbol from...</text>
-    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> A tape head that can read and write symbols and move left or right.</text>
-    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> A finite control (states) that determines the machine&apos;s behavior.</text>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Q is a finite set of states.</text>
+    <text x="60" y="372" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="375" x2="160" y2="375" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> An infinite tape divided into cells, each containing a symbol from...</text>
+    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> A tape head that can read and write symbols and move left or right.</text>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> A finite control (states) that determines the machine&apos;s behavior.</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Q is a finite set of states.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Turing machines have infinite tape, read/write capability, and bidirectional head...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Turing machines have infinite tape, read/write capability, and bidirectional head...</text>
 </svg>

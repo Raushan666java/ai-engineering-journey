@@ -61,6 +61,13 @@
   <text x="42" y="148" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Merge sort: the algorithm</text>
   <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">of choice when stability</text>
   <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">is required and...</text>
+  <text x="42" y="190" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Lower Bound: Decision</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">trees prove \( \Omega(n</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">\log n) \) comparisons...</text>
+  <text x="42" y="232" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Quick Sort: Partition</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">around pivot, recurse</text>
+  <text x="42" y="261" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Heap Sort: Build max-heap,</text>
+  <text x="42" y="274" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">extract repeatedly</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

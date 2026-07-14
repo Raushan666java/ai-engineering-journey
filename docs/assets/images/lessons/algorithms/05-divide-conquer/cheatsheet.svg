@@ -51,8 +51,8 @@
   <!-- Column divider (dashed vertical) -->
   <line x1="300" y1="110" x2="300" y2="860" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,4"/>
     <text x="300" y="68" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="0.5">Chapter 5: Divide and Conquer</text>
-  <rect x="265.5" y="82" width="69" height="20" rx="10" fill="#2563eb" opacity="0.10"/>
-      <text x="300" y="96" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">concept</text>
+  <rect x="258.5" y="82" width="83" height="20" rx="10" fill="#2563eb" opacity="0.10"/>
+      <text x="300" y="96" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">algorithm</text>
   <g filter="url(#shadowSm)"><rect x="28" y="114" width="264" height="340" rx="8" fill="#2563eb" opacity="0.06"/>
     <rect x="28" y="114" width="4" height="340" rx="2" fill="#2563eb"/>
     <rect x="28" y="114" width="264" height="340" rx="8" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.15"/></g>

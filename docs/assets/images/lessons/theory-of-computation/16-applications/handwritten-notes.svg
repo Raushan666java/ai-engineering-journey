@@ -92,17 +92,12 @@
     <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Model checking</tspan>: an automated technique</text>
     <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">for verifying that a system satisfies</text>
     <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">a given...</text>
-    <text x="60" y="362" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="365" x2="160" y2="365" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: TokenTypet.type: &quot;</text>
-    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: t.pos` ; ``` ### TypeScript 15.2: Aho-Corasick Multi-Pattern Matcher ```typescript // Aho-Corasick automaton for multi-p</text>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: positions.join&quot;, &quot;`; // &quot;she&quot; at 1, &quot;he&quot; at 2, &quot;hers&quot; at 2 ``` ### TypeScript 15.3: HMM for Part-of-Speech Tagging Viter</text>
-    <text x="60" y="458" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="461" x2="160" y2="461" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="482" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Each token type (IDENTIFIER, NUMBER, WHITESPACE, etc.) is described...</text>
-    <text x="65" y="504" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Each regular expression is converted to an NFA and then to a DFA.</text>
-    <text x="65" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> The DFAs are combined into a single DFA that recognizes all token...</text>
-    <text x="65" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> The lexer simulates this DFA on the input, tracking the longest...</text>
+    <text x="60" y="362" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="365" x2="160" y2="365" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Each token type (IDENTIFIER, NUMBER, WHITESPACE, etc.) is described...</text>
+    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Each regular expression is converted to an NFA and then to a DFA.</text>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> The DFAs are combined into a single DFA that recognizes all token...</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> The lexer simulates this DFA on the input, tracking the longest...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Finite automata power lexical analysis, pattern matching, and network intrusion...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Finite automata power lexical analysis, pattern matching, and network intrusion...</text>
 </svg>

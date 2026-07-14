@@ -126,15 +126,9 @@
       <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">cust_id&quot; ,</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">status:</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;delivered&quot;</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">, $project: total: 1,</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">created_at: 1 , $sort:</text>
-    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">created_at: -1 ,</text>
-    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">$limit: 5 , as:</text>
-    <text x="44" y="360" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;recent_ord</text>
+    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">MongoDB Query</text>
+    <text x="44" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Language</text>
+    <text x="44" y="280" font-size="10" fill="#64748b" font-family="Arial, sans-serif">match,</text>
     </g>
 
 <g transform="rotate(-4 312.5 287.5)" filter="url(#shadowMd)">
@@ -146,7 +140,7 @@
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">MongoDB Query</text>
     <text x="239" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Language</text>
-    <text x="239" y="280" font-size="10" fill="#64748b" font-family="Arial, sans-serif">match,</text>
+    <text x="239" y="280" font-size="10" fill="#64748b" font-family="Arial, sans-serif">sort,</text>
     </g>
 
 <g transform="rotate(3 117.5 467.5)" filter="url(#shadowMd)">
@@ -170,7 +164,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prev:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prev</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

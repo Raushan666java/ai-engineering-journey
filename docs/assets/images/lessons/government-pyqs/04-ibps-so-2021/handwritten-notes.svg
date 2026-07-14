@@ -86,9 +86,9 @@
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Directions:</tspan>: Q means P &gt;= Q, P % Q means P &lt;= Q, P &amp; Q means P = Q. **Statement:** A</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Statement:</tspan>: E **Conclusions:** 1. A @ C 2. B # E 3. C % A A Only 1 B Only 2 C Only 3 D Only 1 and 3 E All &lt;details&gt; &lt;summary&gt;Show An</text>
-    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 30 billion by 2025, representing a CAGR of 38%. The growth has been fueled by increasing internet penetration, the rise </text>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: Q means P &gt;= Q, P % Q means P &lt;= Q, P &amp; Q means P = Q. **Statement:** A</text>
+    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: E **Conclusions:** 1. A @ C 2. B # E 3. C % A A Only 1 B Only 2 C Only 3 D Only 1 and 3 E All &lt;details&gt; &lt;summary&gt;Show An</text>
+    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Q59. Primary driver of digital payments?</tspan>: 30 billion by 2025, representing a CAGR of 38%. The growth has been fueled by increasing internet penetration, the rise </text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> A belongs to Delhi and sits second to the left of the person from...</text>

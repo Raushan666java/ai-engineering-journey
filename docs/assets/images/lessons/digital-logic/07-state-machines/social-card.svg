@@ -57,7 +57,7 @@
   <text x="80" y="60" font-size="14" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="500">AI Engineering Journey</text>
   <circle cx="70" cy="55" r="3" fill="#2563eb" opacity="0.5"/>
   <text x="80" y="180" font-size="46" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif" letter-spacing="-0.5">Chapter 7: State Machines</text>
-  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">Prereq: Chapter 6 (Sequential Circuits) ? flip-flops provide the state memory for state machines.</text>
+  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">Finite state machines provide the theoretical framework for sequential control in digital systems. This...</text>
   <line x1="80" y1="280" x2="280" y2="280" stroke="url(#gBlue)" stroke-width="5" stroke-linecap="round"/>
   <circle cx="850" cy="280" r="44" fill="#2563eb" opacity="0.08"/>
   <circle cx="850" cy="280" r="44" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.25"/>
@@ -67,7 +67,7 @@
   <circle cx="980" cy="280" r="44" fill="#059669" opacity="0.08"/>
   <circle cx="980" cy="280" r="44" fill="none" stroke="#059669" stroke-width="1.5" opacity="0.25"/>
   <circle cx="980" cy="280" r="36" fill="#059669" opacity="0.10"/>
-  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">3</text>
+  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">0</text>
   <text x="980" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Formulas</text>
   <circle cx="1110" cy="280" r="44" fill="#7c3aed" opacity="0.08"/>
   <circle cx="1110" cy="280" r="44" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.25"/>
@@ -75,16 +75,16 @@
   <text x="1110" y="286" font-size="28" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">0</text>
   <text x="1110" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Algorithms</text>
   <text x="80" y="400" font-size="11" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="600">KEYWORDS</text>
-  <rect x="80" y="408" width="65" height="20" rx="10" fill="#2563eb" opacity="0.12"/>
-    <text x="112.5" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Prereq:</text>
-  <rect x="168" y="408" width="51" height="20" rx="10" fill="#059669" opacity="0.12"/>
-    <text x="193.5" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Next:</text>
-  <rect x="240" y="408" width="198" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="339" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">finite state machine (FSM)</text>
-  <rect x="480" y="408" width="135" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="547.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Word description:</text>
-  <rect x="648" y="408" width="114" height="20" rx="10" fill="#db2777" opacity="0.12"/>
-    <text x="705" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">State diagram:</text>
+  <rect x="80" y="408" width="58" height="20" rx="10" fill="#2563eb" opacity="0.12"/>
+    <text x="109" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Prereq</text>
+  <rect x="160" y="408" width="198" height="20" rx="10" fill="#059669" opacity="0.12"/>
+    <text x="259" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">finite state machine (FSM)</text>
+  <rect x="400" y="408" width="128" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="464" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Word description</text>
+  <rect x="560" y="408" width="107" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="613.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">State diagram</text>
+  <rect x="696" y="408" width="93" height="20" rx="10" fill="#db2777" opacity="0.12"/>
+    <text x="742.5" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">State table</text>
   <text x="1120" y="590" font-size="13" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif">github.com/ai-engineering-journey</text>
   <text x="80" y="590" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif">concept</text>
   <rect x="700" y="0" width="500" height="630" fill="url(#dotGrid)" opacity="0.3"/>

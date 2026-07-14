@@ -139,7 +139,7 @@
       <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
+    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Objects</text>
     <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">P \Rightarrow Q</text>
     </g>
 
@@ -150,8 +150,13 @@
       <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">P \models Q</text>
+    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">| None | âˆ€</text>
+    <text x="239" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">(for all), âˆƒ</text>
+    <text x="239" y="278" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">(there exists)</text>
+    <text x="239" y="296" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">|
+|</text>
+    <text x="239" y="316" font-size="10" fill="#64748b" font-family="Arial, sans-serif">A \wedge B \Rightarrow</text>
+    <text x="239" y="330" font-size="10" fill="#64748b" font-family="Arial, sans-serif">C</text>
     </g>
 
 <g transform="rotate(-1 507.5 467.5)" filter="url(#shadowMd)">
@@ -161,7 +166,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

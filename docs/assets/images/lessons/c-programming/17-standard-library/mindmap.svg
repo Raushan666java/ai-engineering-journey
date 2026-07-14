@@ -47,6 +47,22 @@
   <!-- Center node -->
   <rect x="315" y="322" width="170" height="56" rx="28" fill="url(#gBlue)" filter="url(#shadowMd)"/>
   <text x="400" y="355" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 17: The C Standard Library</text>
+  <!-- Branch: Concepts -->
+    <path d="M348.9516971647569,323.78713458275223 Q359.715811303789,237.35894366956978 296.7562414568117,202.55263202798145" fill="none" stroke="#2563eb" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+  <rect x="236.75624145681172" y="187.55263202798145" width="120" height="30" rx="15" fill="#2563eb" opacity="0.1" stroke="#2563eb" stroke-width="2" filter="url(#shadowSm)"/>
+    <text x="296.7562414568117" y="207.55263202798145" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Concepts</text>
+  <line x1="287.00544203884397" y1="188.62704727506858" x2="283.56398342073766" y2="183.71213500933465" stroke="#2563eb" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="283.56398342073766" cy="183.71213500933465" r="3" fill="#2563eb" filter="url(#shadowSm)"/>
+  <text x="275.37246297784776" y="187.71213500933465" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">`&lt;stdio.h&gt;`</text>
+  <line x1="287.00544203884397" y1="188.62704727506858" x2="270.94530182101465" y2="165.6907900349768" stroke="#2563eb" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="270.94530182101465" cy="165.6907900349768" r="3" fill="#2563eb" filter="url(#shadowSm)"/>
+  <text x="262.75378137812476" y="169.6907900349768" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">`&lt;stdlib.h&gt;`</text>
+  <line x1="287.00544203884397" y1="188.62704727506858" x2="258.32662022129165" y2="147.66944506061898" stroke="#2563eb" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="258.32662022129165" cy="147.66944506061898" r="3" fill="#2563eb" filter="url(#shadowSm)"/>
+  <text x="250.13509977840172" y="151.66944506061898" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">`&lt;string.h&gt;`</text>
+  <line x1="287.00544203884397" y1="188.62704727506858" x2="245.70793862156864" y2="129.64810008626114" stroke="#2563eb" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="245.70793862156864" cy="129.64810008626114" r="3" fill="#2563eb" filter="url(#shadowSm)"/>
+  <text x="237.51641817867872" y="133.64810008626114" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">`&lt;math.h&gt;`</text>
   <!-- Branch: Workflow -->
     <path d="M457.208097262102,325.4865778201927 Q520.9269334431935,297.72473146528256 515.7017697435771,212.11200023858396" fill="none" stroke="#059669" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
   <rect x="455.7017697435771" y="197.11200023858396" width="120" height="30" rx="15" fill="#059669" opacity="0.1" stroke="#059669" stroke-width="2" filter="url(#shadowSm)"/>

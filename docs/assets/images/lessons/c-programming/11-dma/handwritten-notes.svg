@@ -84,17 +84,27 @@
     <text x="65" y="134" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Allocation</text>
     <line x1="60" y1="172" x2="550" y2="172" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
-    <text x="60" y="200" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="203" x2="160" y2="203" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Distinguish between static, automatic, and dynamic memory allocation</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Understand the complete memory layout of a C program (text, data,...</text>
-    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Allocate memory at runtime using `malloc`, `calloc`, and `realloc`</text>
-    <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Release memory with `free` to prevent leaks</text>
-    <rect x="55" y="314" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="314" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="332" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="352" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the difference between `malloc`</text>
-    <text x="68" y="368" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">and `calloc`?</text>
+    <text x="60" y="200" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Definitions</text>
+    <line x1="60" y1="203" x2="160" y2="203" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Static vs Dynamic</tspan>: Static: fixed at</text>
+    <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">compile time; Dynamic:</text>
+    <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">runtime-controlled</text>
+    <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Memory Layout</tspan>: Text(Code) + Data + BSS</text>
+    <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">+ Heap + Stack</text>
+    <text x="65" y="334" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">malloc</tspan>: Allocates uninitialized raw</text>
+    <text x="80" y="356" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">bytes from heap</text>
+    <text x="65" y="378" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">calloc</tspan>: Allocates + zero-initializes</text>
+    <text x="60" y="406" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="409" x2="160" y2="409" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Distinguish between static, automatic, and dynamic memory allocation</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Understand the complete memory layout of a C program (text, data,...</text>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Allocate memory at runtime using `malloc`, `calloc`, and `realloc`</text>
+    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Release memory with `free` to prevent leaks</text>
+    <rect x="55" y="520" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="520" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="538" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="558" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the difference between `malloc`</text>
+    <text x="68" y="574" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">and `calloc`?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Master the core concepts covered in this chapter</text>
 </svg>

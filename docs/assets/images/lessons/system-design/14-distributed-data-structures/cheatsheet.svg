@@ -84,13 +84,6 @@
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>
   <text x="318" y="134" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formulas & Tips</text>
     <line x1="318" y1="137" x2="418" y2="137" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-  <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 1</text>
-  <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">node:v</text>
-  <text x="322" y="177" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>
-  <text x="322" y="190" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">i`; for let i = 25000; i</text>
-  <text x="322" y="202" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">&lt; 75000; i++...</text>
-  <text x="322" y="218" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
-  <text x="322" y="231" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">item:</text>
   <line x1="38" y1="462" x2="562" y2="462" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
   <g filter="url(#shadowSm)"><rect x="28" y="470" width="264" height="386" rx="8" fill="#dc2626" opacity="0.06"/>
     <rect x="28" y="470" width="4" height="386" rx="2" fill="#dc2626"/>

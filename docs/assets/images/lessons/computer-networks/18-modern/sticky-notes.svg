@@ -113,8 +113,10 @@
       <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">hex.slice0, 4:</text>
+    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">PCRF (Policy and</text>
+    <text x="44" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Charging Rules</text>
+    <text x="44" y="278" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Function):</text>
+    <text x="44" y="298" font-size="10" fill="#64748b" font-family="Arial, sans-serif">600 dish |</text>
     </g>
 
 <g transform="rotate(0 312.5 287.5)" filter="url(#shadowMd)">
@@ -124,14 +126,9 @@
       <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ipv6`; return ipv4,</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ipv6, translated: v6 ;</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">case</text>
-    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&apos;nat64&apos;: //</text>
-    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">NAT64: synthesize IPv6</text>
-    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">from IPv4 using</text>
-    <text x="239" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">well-known prefix 64:</text>
+    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">QoS policy,</text>
+    <text x="239" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">credit control.</text>
+    <text x="239" y="280" font-size="10" fill="#64748b" font-family="Arial, sans-serif">50K/km trenching |</text>
     </g>
 
 <g transform="rotate(-4 507.5 107.5)" filter="url(#shadowMd)">
@@ -167,7 +164,7 @@
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
     <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Real-World</text>
-    <text x="434" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Analogy:</text>
+    <text x="434" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Analogy</text>
     <text x="434" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
@@ -178,7 +175,7 @@
       <path d="M778,390 L790,402 L790,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Key benefits:</text>
+    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Key benefits</text>
     <text x="629" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

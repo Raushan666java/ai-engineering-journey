@@ -97,8 +97,8 @@
     <line x1="82" y1="300" x2="82" y2="308" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="324" x2="82" y2="332" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="316" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: PA|B = \fracPA \cap BPB  |  Formula 2: PA|B = \fracPB|A \cdot</text>
-  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">PAPB  |  Formula 3: PH|E = \fracPE|H...</text>
+  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: ### Algorithm → Computing Conditional Probability **Input:**</text>
+  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Joint distribution PX, Y, values x, y...</text>
   <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="390" width="880" height="68" rx="8" fill="#eff6ff"/>
@@ -107,7 +107,7 @@
   </g>
   <polygon points="82,398 76,410 80.08,410 79.12,422 85.6,408.8 81.52,408.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="410" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- Probability theory provides a formal framework for reasoning under</text>
+  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Probability theory provides a formal framework for reasoning under</text>
   <text x="104" y="446" font-size="12" fill="#64748b" font-family="Arial, sans-serif">uncertainty.
 - Bayes&apos; Rule is a...</text>
   <rect x="840" y="394" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

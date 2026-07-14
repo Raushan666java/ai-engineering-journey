@@ -95,9 +95,9 @@
     <text x="80" y="356" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">independent causes become dependent...</text>
     <text x="60" y="384" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="387" x2="160" y2="387" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: PA \mid B = \fracPA \land BPB, \quad PB &gt; 0</text>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Bayes&apos; rule</tspan>: PA \mid B = \fracPB \mid A \, PAPB</text>
-    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">posterior</tspan>: PH \mid E = \fracPE \mid H \, PHPE</text>
+    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Bayes&apos; rule</tspan>: PA \land B \mid C = PA \mid C PB \mid C</text>
+    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: PB, E, A, J, M = PB PE PA \mid B, E PJ \mid A PM \mid A</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \Omega</text>
     <text x="60" y="480" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="483" x2="160" y2="483" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="504" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Prior knowledge: Flu is common in winter (~10% of patients)....</text>

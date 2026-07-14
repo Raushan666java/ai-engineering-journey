@@ -113,8 +113,8 @@
     <line x1="82" y1="402" x2="82" y2="410" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="426" x2="82" y2="434" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="418" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: A = \beginpmatrix a_11 &amp; a_12 &amp; \cdots &amp; a_1n \\</text>
-  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">a_21 &amp; a_22 &amp; \cdots &amp; a_2n \\ \vdots &amp; \vdots &amp;...</text>
+  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: \vdots  |  Formula 2: c_1 v_1 + c_2 v_2 + \cdots + c_k v_k =</text>
+  <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">0 \implies c_1 = c_2 = \cdots = c_k =...</text>
   <line x1="500" y1="472" x2="500" y2="482" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="492" width="880" height="68" rx="8" fill="#fce7f3"/>
@@ -135,7 +135,7 @@
   </g>
   <polygon points="82,594 76,606 80.08,606 79.12,618 85.6,604.8 81.52,604.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="606" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="624" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- A matrix is a linear transformation; matrix multiplication composes</text>
+  <text x="104" y="624" font-size="12" fill="#64748b" font-family="Arial, sans-serif">A matrix is a linear transformation; matrix multiplication composes</text>
   <text x="104" y="642" font-size="12" fill="#64748b" font-family="Arial, sans-serif">transformations
 - The determinant...</text>
   <rect x="840" y="590" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

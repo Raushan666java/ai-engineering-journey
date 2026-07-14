@@ -130,48 +130,18 @@
     <text x="434" y="96" font-size="10" fill="#64748b" font-family="Arial, sans-serif">by GitHub:</text>
     </g>
 
-<g transform="rotate(-4 117.5 287.5)" filter="url(#shadowMd)">
-      <rect x="30" y="210" width="175" height="155" rx="3" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.8" opacity="0.96"/>
-      <!-- Subtle gradient overlay for paper texture -->
-      <rect x="30" y="210" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
-      <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
-      <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
-          <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PASSWORD =</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&quot;...&quot; -</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">metavariable-regex:</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">metavariable:</text>
-    </g>
-
-<g transform="rotate(3 312.5 287.5)" filter="url(#shadowMd)">
-      <rect x="225" y="210" width="175" height="155" rx="3" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.8" opacity="0.96"/>
-      <!-- Subtle gradient overlay for paper texture -->
-      <rect x="225" y="210" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
-      <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
-      <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
-          <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">pwd:/zap/wrk</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">owasp/zap2docker-stable</text>
-    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\ zap-full-scan.py -t</text>
-    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">https://staging.example.com</text>
-    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\ -r zap_report.html</text>
-    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">``` **Burp S</text>
-    </g>
-
-<g transform="rotate(-1 507.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-4 507.5 467.5)" filter="url(#shadowMd)">
       <rect x="420" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="420" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
-<g transform="rotate(-5 702.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(3 702.5 467.5)" filter="url(#shadowMd)">
       <rect x="615" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="615" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -181,7 +151,7 @@
     <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">The Cost of</text>
     <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Finding</text>
     <text x="629" y="458" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Vulnerabilities</text>
-    <text x="629" y="476" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Later:</text>
+    <text x="629" y="476" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Later</text>
     <text x="629" y="496" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

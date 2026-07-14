@@ -97,8 +97,8 @@
     <text x="60" y="406" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="409" x2="160" y2="409" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: , %, &amp; are used to represent mathematical inequality relations. The question provides a legend mapping symbols to their </text>
-    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: Q means P ≥ Q P % Q means P ≤ Q P &amp; Q means P = Q ``` Then a statement like &quot;A @ B, B</text>
-    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: | % | &amp; | |----------|---|---|---|---|---| | Pattern A | &gt; | &lt; | ≥ | ≤ | = | | Pattern B | &lt; | &gt; | ≤ | ≥ | = | | Pattern</text>
+    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: | % | &amp; | |----------|---|---|---|---|---| | Pattern A | &gt; | &lt; | ≥ | ≤ | = | | Pattern B | &lt; | &gt; | ≤ | ≥ | = | | Pattern</text>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: Q means P ≥ Q - P % Q means P &lt; Q - P &amp; Q means P ≤ Q Statements: A @ B, B # C, C</text>
     <text x="60" y="502" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="505" x2="160" y2="505" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Write all inequalities in a single chain from left to right</text>
@@ -106,5 +106,5 @@
     <text x="65" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Apply the transitive property to combine adjacent terms</text>
     <text x="65" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> For &quot;≥&quot; or &quot;≤&quot; at the end of a chain, check if the conclusion uses...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Direct inequalities use symbols &gt;, &lt;, ≥, ≤, =; transitive property applies for...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Direct inequalities use symbols &gt;, &lt;, ≥, ≤, =; transitive property applies for...</text>
 </svg>

@@ -86,7 +86,7 @@
   <!-- Title -->
   <text x="60" y="120" font-size="32" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Puzzles — Floor, Box, and Scheduling</text>
   <!-- Subtitle -->
-  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">- Puzzles form the highest-weightage topic in IBPS SO IT Officer Prelims Reasoning Ability section, contributing 10–15...</text>
+  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Puzzles form the highest-weightage topic in IBPS SO IT Officer Prelims Reasoning Ability section, contributing 10–15...</text>
   <!-- Divider -->
   <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
   <!-- Stats row -->

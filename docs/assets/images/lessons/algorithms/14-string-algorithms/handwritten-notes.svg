@@ -88,17 +88,21 @@
     <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Aho-Corasick</tspan>: the primary algorithm</text>
     <text x="80" y="212" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">used — it matches all signatures in a</text>
     <text x="80" y="234" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">single pass over...</text>
-    <text x="60" y="262" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="265" x2="160" y2="265" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Pattern matching:</tspan>: + T\, compute Z-array. Every \Zi = m\ means a match at position \i - m - 1\ in the original text. ### Dry Run **Pattern:</text>
-    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: | 3&gt;2=✗ | 0 | S3≠S0 ✗ | 0 | 1 | 2 | | 4 | a | 4&gt;2=✗ | 0 | S4==S0 ✓, S5==S1 ✓, S6==S2 ✓, S7≠S3 ✗ | 3 | 4 | 6 | | 5 | a | </text>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: &quot; + T Z = compute_zS m = lenP return i - m - 1 for i in rangem + 1, lenZ if Zi == m ``` ```java // Java import java.util</text>
-    <text x="60" y="358" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="361" x2="160" y2="361" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Implement and analyze KMP, Rabin-Karp, and Z-algorithm for pattern...</text>
-    <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Use Manacher&apos;s algorithm to find all palindromic substrings in...</text>
-    <text x="65" y="426" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Construct a suffix array and LCP array in \( O(n \log n) \) time.</text>
-    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Apply suffix arrays to solve substring queries, pattern matching,...</text>
+    <text x="65" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Naive Pattern Search</tspan>: Brute-force</text>
+    <text x="80" y="278" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">sliding window</text>
+    <text x="65" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">KMP</tspan>: Prefix function avoids</text>
+    <text x="80" y="322" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">re-scanning</text>
+    <text x="65" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Rabin-Karp</tspan>: Rolling hash comparison</text>
+    <text x="60" y="372" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
+    <line x1="60" y1="375" x2="160" y2="375" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: + T\, compute Z-array. Every \Zi = m\ means a match at position \i - m - 1\ in the original text. ### Dry Run **Pattern:</text>
+    <text x="65" y="418" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: | 3&gt;2=✗ | 0 | S3≠S0 ✗ | 0 | 1 | 2 | | 4 | a | 4&gt;2=✗ | 0 | S4==S0 ✓, S5==S1 ✓, S6==S2 ✓, S7≠S3 ✗ | 3 | 4 | 6 | | 5 | a | </text>
+    <text x="60" y="446" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="449" x2="160" y2="449" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="470" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Implement and analyze KMP, Rabin-Karp, and Z-algorithm for pattern...</text>
+    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Use Manacher&apos;s algorithm to find all palindromic substrings in...</text>
+    <text x="65" y="514" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Construct a suffix array and LCP array in \( O(n \log n) \) time.</text>
+    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Apply suffix arrays to solve substring queries, pattern matching,...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 | Algorithm | Problem | Time | Space |
 |-----------|---------|------|-------|

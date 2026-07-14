@@ -95,17 +95,12 @@
     <text x="65" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">lock-up state</tspan>: an unused state that</text>
     <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">the FSM enters (due to noise or</text>
     <text x="80" y="388" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">power-up) and cannot leave...</text>
-    <text x="60" y="416" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="419" x2="160" y2="419" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: s may be a lock-up state`; return issues; ``` ## 7.9 Glitch-Free Outputs Mealy machines can produce output glitches when</text>
-    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: input`; const t = this.transitions.getkey; if t this.current = t.to; return state: this.current, output: t.output ; retu</text>
-    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: seq.stepb`.join&apos;, &apos;; const vending = new VendingMachineFSM; console.log&apos;\nVending Machine:&apos;; 10, 5, 25.forEachc =&gt; conso</text>
-    <text x="60" y="512" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="515" x2="160" y2="515" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Distinguish between Mealy and Moore state machine models</text>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Construct state diagrams and state tables from informal...</text>
-    <text x="65" y="580" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Design state machines using D, JK, and T flip-flops</text>
-    <text x="65" y="602" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Minimise state tables using implication charts and partitioning</text>
+    <text x="60" y="416" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="419" x2="160" y2="419" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Distinguish between Mealy and Moore state machine models</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Construct state diagrams and state tables from informal...</text>
+    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Design state machines using D, JK, and T flip-flops</text>
+    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Minimise state tables using implication charts and partitioning</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Finite state machines provide the theoretical framework for sequential control in...</text>
 </svg>

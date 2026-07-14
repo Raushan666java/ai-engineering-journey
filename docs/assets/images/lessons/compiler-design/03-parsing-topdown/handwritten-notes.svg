@@ -90,17 +90,18 @@
     <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Synchronizing token sets</tspan>: For each</text>
     <text x="80" y="256" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">nonterminal A, the synchronizing set</text>
     <text x="80" y="278" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">is FOLLOW(A). Additional tokens...</text>
-    <text x="60" y="306" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="309" x2="160" y2="309" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: , | | E&apos; | +, e |</text>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: , | | T&apos; | *, e | +,</text>
-    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: , | ### LL1 Parsing Tables An **LL1 parser** reads input left-to-right, produces a leftmost derivation, and uses one tok</text>
-    <text x="60" y="402" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="405" x2="160" y2="405" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="426" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> `V` is a finite set of nonterminal symbols</text>
-    <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> `T` is a finite set of terminal symbols disjoint from V</text>
-    <text x="65" y="470" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> `P` is a finite set of productions `A ? a` where `A ? V` and `a ?...</text>
-    <text x="65" y="492" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> `S ? V` is the start symbol</text>
+    <text x="65" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Context-Free Grammars</tspan>: Formal</text>
+    <text x="80" y="322" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">definition and role in syntax</text>
+    <text x="80" y="344" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">specification</text>
+    <text x="65" y="366" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Derivations and Parse Trees</tspan>: Leftmost</text>
+    <text x="80" y="388" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">and rightmost derivations, parse tree</text>
+    <text x="80" y="410" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">construction</text>
+    <text x="60" y="438" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="441" x2="160" y2="441" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> `V` is a finite set of nonterminal symbols</text>
+    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> `T` is a finite set of terminal symbols disjoint from V</text>
+    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> `P` is a finite set of productions `A ? a` where `A ? V` and `a ?...</text>
+    <text x="65" y="528" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> `S ? V` is the start symbol</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Top-down parsing constructs a derivation from the root (start symbol) toward the...</text>
 </svg>

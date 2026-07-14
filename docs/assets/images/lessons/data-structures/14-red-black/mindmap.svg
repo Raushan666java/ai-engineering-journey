@@ -67,13 +67,6 @@
   <line x1="526.6291591082482" y1="199.08924470556133" x2="558.7685395925752" y2="160.78702254961243" stroke="#059669" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
   <circle cx="558.7685395925752" cy="160.78702254961243" r="3" fill="#059669" filter="url(#shadowSm)"/>
   <text x="566.428984023765" y="164.78702254961243" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">Implement insertion with</text>
-  <!-- Branch: Formulas -->
-    <path d="M483.63264324994583,360.9446445864214 Q510.9977510460496,428.5403031278868 569.1446717414635,411.56362579862036" fill="none" stroke="#d97706" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
-  <rect x="509.1446717414635" y="396.56362579862036" width="120" height="30" rx="15" fill="#d97706" opacity="0.1" stroke="#d97706" stroke-width="2" filter="url(#shadowSm)"/>
-    <text x="569.1446717414635" y="416.56362579862036" font-size="12" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Formulas</text>
-  <line x1="585.119446294824" y1="417.37796823515674" x2="590.7576020195394" y2="419.43008909511076" stroke="#d97706" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
-  <circle cx="590.7576020195394" cy="419.43008909511076" r="3" fill="#d97706" filter="url(#shadowSm)"/>
-  <text x="587.3374005862827" y="423.43008909511076" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">Formula 1</text>
   <!-- Branch: Interview -->
     <path d="M392.2431388954584,381.87823033893585 Q343.4487911863114,451.6746295740804 384.3119663054215,529.3150456565143" fill="none" stroke="#7c3aed" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
   <rect x="324.3119663054215" y="514.3150456565143" width="120" height="30" rx="15" fill="#7c3aed" opacity="0.1" stroke="#7c3aed" stroke-width="2" filter="url(#shadowSm)"/>

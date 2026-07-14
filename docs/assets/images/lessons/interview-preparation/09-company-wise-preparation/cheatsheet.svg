@@ -72,7 +72,7 @@
   <text x="322" y="230" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
   <text x="322" y="243" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">6.4 billion | | Focus |</text>
   <text x="322" y="255" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">Telecom,...</text>
-  <text x="322" y="271" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 4</text>
+  <text x="322" y="271" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Core Java:</text>
   <text x="322" y="284" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">340 billion | | Products |</text>
   <text x="322" y="296" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">Search,...</text>
   <line x1="38" y1="462" x2="562" y2="462" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>

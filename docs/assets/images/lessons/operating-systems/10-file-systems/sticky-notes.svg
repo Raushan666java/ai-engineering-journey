@@ -137,15 +137,14 @@
       <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ino not found`; const</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">permMap = p:</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Permission: boolean</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">=&gt;</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">p.includesrequested;</text>
-    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">if uid ===</text>
-    <text x="44" y="346" font-size="10" fill="#64748b" font-family="Arial, sans-serif">inode.ownerUid return</text>
-    <text x="44" y="360" font-size="10" fill="#64748b" font-family="Arial, sans-serif">permMapi</text>
+    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world</text>
+    <text x="44" y="260" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">analogy:</text>
+    <text x="44" y="280" font-size="10" fill="#64748b" font-family="Arial, sans-serif">MFT** — a relational</text>
+    <text x="44" y="294" font-size="10" fill="#64748b" font-family="Arial, sans-serif">database of file</text>
+    <text x="44" y="308" font-size="10" fill="#64748b" font-family="Arial, sans-serif">records - Features:</text>
+    <text x="44" y="322" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Alternate data streams</text>
+    <text x="44" y="336" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ADS, compression,</text>
+    <text x="44" y="350" font-size="10" fill="#64748b" font-family="Arial, sans-serif">encryption EFS, disk</text>
     </g>
 
 <g transform="rotate(3 312.5 287.5)" filter="url(#shadowMd)">
@@ -156,7 +155,12 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">t.desc:</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">LogFile | No | Yes CoW</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">journal | Yes metadata</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">only | | **Extents** |</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Yes | Yes runs | No |</text>
+    <text x="239" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Yes | Yes | | **Inline</text>
+    <text x="239" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Data**</text>
     </g>
 
 <g transform="rotate(-1 507.5 467.5)" filter="url(#shadowMd)">

@@ -101,8 +101,9 @@
     <text x="80" y="488" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">L(atency) or C(onsistency).</text>
     <text x="60" y="516" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="519" x2="160" y2="519" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 1000 to Bob HSBC London: 1. **Prepare phase**: Both banks check if accounts exist and have sufficient balance 2. **Commi</text>
-    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 500, logs PREPARED | Executes T1 locally credit</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">| Low | Medium | High |
+|</tspan>: 1000 to Bob HSBC London: 1. **Prepare phase**: Both banks check if accounts exist and have sufficient balance 2. **Commi</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Pseudocode</tspan>: 500, logs PREPARED | Executes T1 locally credit</text>
     <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 500, Account B: +</text>
     <text x="60" y="612" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="615" x2="160" y2="615" stroke="#059669" stroke-width="2" stroke-linecap="round"/>

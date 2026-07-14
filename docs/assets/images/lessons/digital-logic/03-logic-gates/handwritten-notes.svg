@@ -95,18 +95,13 @@
     <text x="65" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Wired-AND connection</tspan>: Multiple</text>
     <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">open-drain outputs connected to a</text>
     <text x="80" y="388" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">common pull-up resistor implement a...</text>
-    <text x="60" y="416" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="419" x2="160" y2="419" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: i`; return values.geti!; ; let output: boolean; switch gate.type case &quot;AND&quot;: output = inputVals.everyv =&gt; v; break; case</text>
-    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: header`; console.log`</text>
-    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: args.join&quot; | &quot; |</text>
-    <text x="60" y="512" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="515" x2="160" y2="515" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="536" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> NOT: Connect both inputs together: A&apos; = (A?A)&apos;</text>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> AND: Complement the output of NAND: A?B = [(A?B)&apos;]&apos;</text>
-    <text x="65" y="580" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> OR: Apply De Morgan&apos;s theorem: A + B = (A&apos;?B&apos;)&apos;</text>
-    <text x="65" y="602" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> NOT: Connect both inputs together: A&apos; = (A + A)&apos;</text>
+    <text x="60" y="416" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="419" x2="160" y2="419" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="440" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> NOT: Connect both inputs together: A&apos; = (A?A)&apos;</text>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> AND: Complement the output of NAND: A?B = [(A?B)&apos;]&apos;</text>
+    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> OR: Apply De Morgan&apos;s theorem: A + B = (A&apos;?B&apos;)&apos;</text>
+    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> NOT: Connect both inputs together: A&apos; = (A + A)&apos;</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Seven fundamental gates exist: AND, OR, NOT, NAND, NOR, XOR, and XNOR.
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Seven fundamental gates exist: AND, OR, NOT, NAND, NOR, XOR, and XNOR.
 - NAND and...</text>
 </svg>

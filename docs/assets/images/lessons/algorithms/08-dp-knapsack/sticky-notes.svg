@@ -92,7 +92,44 @@
     <rect x="2.242640687119284" y="-7.242640687119286" width="4" height="6" rx="1" fill="#1e40af" transform="rotate(315 4.242640687119284 -4.242640687119286)"/>
   </g>
   <!-- Sticky notes -->
-  <g transform="rotate(-3 117.5 287.5)" filter="url(#shadowMd)">
+  <g transform="rotate(-3 117.5 107.5)" filter="url(#shadowMd)">
+      <rect x="30" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="30" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M193,30 L205,42 L205,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="42" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="191" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="44" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">0/1 Knapsack</text>
+    <text x="44" y="82" font-size="10" fill="#64748b" font-family="Arial, sans-serif">max(skip, take) —</text>
+    <text x="44" y="96" font-size="10" fill="#64748b" font-family="Arial, sans-serif">backward capacity loop</text>
+    </g>
+
+<g transform="rotate(4 312.5 107.5)" filter="url(#shadowMd)">
+      <rect x="225" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="225" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M388,30 L400,42 L400,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="237" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="386" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="239" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Fractional</text>
+    <text x="239" y="80" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Knapsack</text>
+    <text x="239" y="100" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Greedy by value/weight</text>
+    <text x="239" y="114" font-size="10" fill="#64748b" font-family="Arial, sans-serif">ratio</text>
+    </g>
+
+<g transform="rotate(0 507.5 107.5)" filter="url(#shadowMd)">
+      <rect x="420" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="420" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M583,30 L595,42 L595,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="432" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="581" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="434" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Bounded Knapsack</text>
+    <text x="434" y="82" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Multiple copies per</text>
+    <text x="434" y="96" font-size="10" fill="#64748b" font-family="Arial, sans-serif">item, expand to 0/1</text>
+    </g>
+
+<g transform="rotate(-4 117.5 287.5)" filter="url(#shadowMd)">
       <rect x="30" y="210" width="175" height="155" rx="3" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="30" y="210" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -103,7 +140,7 @@
     <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">10, sleeping bag 2 kg,</text>
     </g>
 
-<g transform="rotate(4 312.5 287.5)" filter="url(#shadowMd)">
+<g transform="rotate(3 312.5 287.5)" filter="url(#shadowMd)">
       <rect x="225" y="210" width="175" height="155" rx="3" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="225" y="210" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -115,26 +152,28 @@
     <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">kg,</text>
     </g>
 
-<g transform="rotate(0 507.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-1 507.5 467.5)" filter="url(#shadowMd)">
       <rect x="420" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="420" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prerequisites:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">knapsack problem</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
-<g transform="rotate(-4 702.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-5 702.5 467.5)" filter="url(#shadowMd)">
       <rect x="615" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="615" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
       <path d="M778,390 L790,402 L790,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">knapsack problem</text>
-    <text x="629" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif"></text>
+    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">resource-constrained</text>
+    <text x="629" y="458" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">optimization</text>
+    <text x="629" y="478" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
   <!-- Coffee mug (bottom-right) -->

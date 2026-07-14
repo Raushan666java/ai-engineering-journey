@@ -96,17 +96,12 @@
     <text x="65" y="366" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Lease Renewal</tspan>: At 50% lease time,</text>
     <text x="80" y="388" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">client unicasts DHCPREQUEST to renew.</text>
     <text x="80" y="410" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Server responds with...</text>
-    <text x="60" y="438" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="441" x2="160" y2="441" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: neededHostBits + neededSubnetBits, available</text>
-    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: s.prefix</text>
-    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: s.lastHost bcast=</text>
-    <text x="60" y="534" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="537" x2="160" y2="537" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="558" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Describe the IPv4 datagram format and explain the function of each...</text>
-    <text x="65" y="580" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Perform IP fragmentation and reassembly calculations.</text>
-    <text x="65" y="602" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Design IP addressing schemes using classful addressing, subnetting,...</text>
-    <text x="65" y="624" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Explain the operation of NAT and its implications for end-to-end...</text>
+    <text x="60" y="438" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="441" x2="160" y2="441" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Describe the IPv4 datagram format and explain the function of each...</text>
+    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Perform IP fragmentation and reassembly calculations.</text>
+    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Design IP addressing schemes using classful addressing, subnetting,...</text>
+    <text x="65" y="528" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Explain the operation of NAT and its implications for end-to-end...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 The network layer provides host-to-host delivery through logical addressing and...</text>
 </svg>

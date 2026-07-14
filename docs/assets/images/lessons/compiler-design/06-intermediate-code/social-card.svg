@@ -57,7 +57,7 @@
   <text x="80" y="60" font-size="14" fill="#94a3b8" font-family="Arial, sans-serif" font-weight="500">AI Engineering Journey</text>
   <circle cx="70" cy="55" r="3" fill="#2563eb" opacity="0.5"/>
   <text x="80" y="180" font-size="46" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif" letter-spacing="-0.5">Chapter 6: Intermediate Code Generation</text>
-  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">? Previous: [Chapter 5: Syntax-Directed Translation](05-sdt.md) | Next: [Chapter 7: Type...</text>
+  <text x="80" y="240" font-size="22" fill="#64748b" font-family="Arial, sans-serif" font-weight="400">Intermediate code generation translates the annotated parse tree into an IR independent of both source...</text>
   <line x1="80" y1="280" x2="280" y2="280" stroke="url(#gBlue)" stroke-width="5" stroke-linecap="round"/>
   <circle cx="850" cy="280" r="44" fill="#2563eb" opacity="0.08"/>
   <circle cx="850" cy="280" r="44" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.25"/>
@@ -67,7 +67,7 @@
   <circle cx="980" cy="280" r="44" fill="#059669" opacity="0.08"/>
   <circle cx="980" cy="280" r="44" fill="none" stroke="#059669" stroke-width="1.5" opacity="0.25"/>
   <circle cx="980" cy="280" r="36" fill="#059669" opacity="0.10"/>
-  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+  <text x="980" y="286" font-size="28" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">0</text>
   <text x="980" y="344" font-size="11" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif" font-weight="500">Formulas</text>
   <circle cx="1110" cy="280" r="44" fill="#7c3aed" opacity="0.08"/>
   <circle cx="1110" cy="280" r="44" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.25"/>

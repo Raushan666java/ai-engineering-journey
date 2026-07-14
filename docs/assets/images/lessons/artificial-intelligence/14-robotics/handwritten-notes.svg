@@ -93,9 +93,9 @@
     <text x="80" y="300" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">(position and orientation) given...</text>
     <text x="60" y="328" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="331" x2="160" y2="331" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: ut = K_p et + K_i \int_0^t e\tau d\tau + K_d \fracdetdt</text>
-    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: u_t:t+H^* = \arg\min_u \sum_k=t^t+H \left \|x_k - x_k^\textref\|_Q + \|u_k\|_R \right</text>
-    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \textsubject to x_k+1 = fx_k, u_k, \quad x_k \in \mathcalX, \quad u_k \in \mathcalU</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: x_t = x_t^- + K z_t - H x_t^-</text>
+    <text x="65" y="374" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: P_t = I - K H P_t^-</text>
+    <text x="65" y="396" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">MCL:</tspan>: where</text>
     <text x="60" y="424" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="427" x2="160" y2="427" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="448" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Sense: Read raw sensor data (camera image, LIDAR scan, IMU reading).</text>

@@ -64,23 +64,26 @@
   <text x="42" y="190" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">SYN flood: a DoS attack</text>
   <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">where the attacker sends</text>
   <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">many SYN segments...</text>
+  <text x="42" y="232" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">UDP: 8-byte header,</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">connectionless, no</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">reliability</text>
+  <text x="42" y="274" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">TCP: 20-byte header,</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">connection-oriented,</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">reliable</text>
+  <text x="42" y="316" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Ports: 16-bit (0-65535):</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">well-known, registered,</text>
+  <text x="42" y="342" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">dynamic</text>
+  <text x="42" y="358" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Flow Control: Sliding</text>
+  <text x="42" y="371" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">window prevents receiver</text>
+  <text x="42" y="384" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">overflow</text>
+  <text x="42" y="400" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">State Machine: 11 states</text>
+  <text x="42" y="413" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">from CLOSED to TIME_WAIT</text>
+  <text x="42" y="429" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">SCTP: Message-oriented,</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>
   <text x="318" y="134" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formulas & Tips</text>
     <line x1="318" y1="137" x2="418" y2="137" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-  <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 1</text>
-  <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">valid`; // false</text>
-  <text x="322" y="173" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">simplified...</text>
-  <text x="322" y="189" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>
-  <text x="322" y="202" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">TCPEvent.PASSIVE_OPEN`,...</text>
-  <text x="322" y="218" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
-  <text x="322" y="231" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">TCPEvent.ACTIVE_OPEN`,...</text>
-  <text x="322" y="247" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 4</text>
-  <text x="322" y="260" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">TCPEvent.RECV_SYN`,</text>
-  <text x="322" y="272" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">TCPState.SYN_RCVD, `</text>
-  <text x="322" y="288" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 5</text>
-  <text x="322" y="301" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">TCPEvent.RECV_SYN_ACK`,...</text>
   <line x1="38" y1="462" x2="562" y2="462" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
   <g filter="url(#shadowSm)"><rect x="28" y="470" width="264" height="386" rx="8" fill="#dc2626" opacity="0.06"/>
     <rect x="28" y="470" width="4" height="386" rx="2" fill="#dc2626"/>

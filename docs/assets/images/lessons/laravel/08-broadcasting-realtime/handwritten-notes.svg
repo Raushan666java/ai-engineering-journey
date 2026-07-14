@@ -90,14 +90,9 @@
     <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Build a real-time document</text>
     <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">collaboration platform with Reverb +</text>
     <text x="80" y="290" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Redis scaling,...</text>
-    <text x="60" y="318" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="321" x2="160" y2="321" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: listen = OrderShipped::class =&gt; SendShipmentNotification::class, ; ``` An event class holds data: ```php class OrderShip</text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: event: void Notification::send</text>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: event-&gt;order; ``` **Event contracts:** | Contract | Purpose | |-----------------------|---------------------------------</text>
-    <text x="60" y="414" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="417" x2="160" y2="417" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="438" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> &gt;whereNull(&apos;read_at&apos;)-&gt;get();</text>
+    <text x="60" y="318" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="321" x2="160" y2="321" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> &gt;whereNull(&apos;read_at&apos;)-&gt;get();</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Laravel&apos;s event system provides an observer pattern using `EventServiceProvider`,...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Laravel&apos;s event system provides an observer pattern using `EventServiceProvider`,...</text>
 </svg>

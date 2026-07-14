@@ -87,7 +87,7 @@
     <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: Q means P &lt;= Q - P % Q means P &lt; Q - P &amp; Q means P = Q **Statement:** A @ B # C</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Statement:</tspan>: E 3. B % D A Only 1 is true B Only 2 is true C Only 1 and 2 are true D Only 2 and 3 are true E All are true &lt;details&gt; &lt;s</text>
+    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: E 3. B % D A Only 1 is true B Only 2 is true C Only 1 and 2 are true D Only 2 and 3 are true E All are true &lt;details&gt; &lt;s</text>
     <text x="60" y="274" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="277" x2="160" y2="277" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="298" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> The person who works in TCS sits third to the left of B.</text>

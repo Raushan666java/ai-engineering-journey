@@ -86,7 +86,7 @@
   <!-- Title -->
   <text x="60" y="120" font-size="32" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Verbal Ability Speed Drills</text>
   <!-- Subtitle -->
-  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Master synonyms, antonyms, sentence completion, error spotting, para jumbles, cloze tests, and reading comprehension...</text>
+  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">title Verbal Ability Accuracy Progression</text>
   <!-- Divider -->
   <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
   <!-- Stats row -->

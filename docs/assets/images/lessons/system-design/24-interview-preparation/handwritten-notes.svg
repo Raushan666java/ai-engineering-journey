@@ -101,17 +101,12 @@
     <text x="80" y="488" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">parking lot system.&quot; These</text>
     <text x="80" y="510" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">questions focus on object-oriented</text>
     <text x="80" y="532" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">design,...</text>
-    <text x="60" y="560" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="563" x2="160" y2="563" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 440M in 45 minutes due to a flawed system design deployment. The incident illustrates every system design antipattern fr</text>
-    <text x="65" y="606" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: c.score/</text>
-    <text x="65" y="628" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: c.feedback` if pct &gt;= 90 return level: &apos;Strong&apos;, readyFor: &apos;E6+ Staff/Principal&apos;, gaps if pct &gt;= 70 return level: &apos;Solid</text>
-    <text x="60" y="656" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="659" x2="160" y2="659" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Master the structured six-phase answer framework for any system...</text>
-    <text x="65" y="702" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Internalize estimation heuristics for traffic, storage, bandwidth,...</text>
-    <text x="65" y="724" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Catalog company-specific question patterns for FAANG and top-tier...</text>
-    <text x="65" y="746" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Understand the evaluation rubric at each engineering level (E3/E4...</text>
-    <line x1="60" y1="770" x2="550" y2="770" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="790" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - The six-phase framework (Requirements ? Estimation ? HLD ? Data Model ? Deep Dive...</text>
+    <text x="60" y="560" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="563" x2="160" y2="563" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Master the structured six-phase answer framework for any system...</text>
+    <text x="65" y="606" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Internalize estimation heuristics for traffic, storage, bandwidth,...</text>
+    <text x="65" y="628" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Catalog company-specific question patterns for FAANG and top-tier...</text>
+    <text x="65" y="650" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Understand the evaluation rubric at each engineering level (E3/E4...</text>
+    <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 The six-phase framework (Requirements ? Estimation ? HLD ? Data Model ? Deep Dive ?...</text>
 </svg>

@@ -88,9 +88,9 @@
     <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">event</tspan>: a subset $E \subseteq S$.</text>
     <text x="60" y="218" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="221" x2="160" y2="221" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="242" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">event</tspan>: PE = \frac|E||S|</text>
-    <text x="65" y="264" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">conditional probability</tspan>: PA \mid B = \fracPA \cap BPB</text>
-    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">mutually independent</tspan>: PA_i_1 \cap \dots \cap A_i_k = PA_i_1 \cdots PA_i_k</text>
+    <text x="65" y="242" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: PA \cup B \cup C = PA + PB + PC - PA\cap B - PA\cap C - PB\cap C + PA \cap B \cap C</text>
+    <text x="65" y="264" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: PA = PA \cap B_1 + PA \cap B_2 + \cdots + PA \cap B_n = \sum_i PA \mid B_i PB_i</text>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: EX \mid Y = y = \sum_x x \cdot PX = x \mid Y = y</text>
     <text x="60" y="314" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="317" x2="160" y2="317" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="338" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> $E \cup F$: at least one occurs.</text>
@@ -98,5 +98,5 @@
     <text x="65" y="382" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> $E&apos;$ (or $\overline{E}$): $E$ does not occur.</text>
     <text x="65" y="404" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> $E$ and $F$ are mutually exclusive (disjoint) if $E \cap F =...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Probability measures likelihood from 0 to 1; all rules derive from Kolmogorov&apos;s...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Probability measures likelihood from 0 to 1; all rules derive from Kolmogorov&apos;s...</text>
 </svg>

@@ -99,9 +99,9 @@
     <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Kullback?Leibler divergence:</text>
     <text x="60" y="472" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="475" x2="160" y2="475" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: \Sigma = \frac1n-1 X^T X</text>
-    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: \mathbfv_1 = \underset\|\mathbfv\|=1\arg\max \; \textVarX\mathbfv = \underset\|\mathbfv\|=1\arg\max \; \mathbfv^T \Sigma</text>
-    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: X_\textreduced = X W_k</text>
+    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: X = U \Sigma V^T</text>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: X^T X = U \Sigma V^T^T U \Sigma V^T = V \Sigma^T \Sigma V^T = V \Lambda V^T</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: \min_w \|y - Xw\|_2^2 + \alpha \|w\|_1</text>
     <text x="60" y="568" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="571" x2="160" y2="571" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Center the Data: Subtract the mean from each feature.</text>
@@ -109,5 +109,5 @@
     <text x="65" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Eigen-decomposition: Find the eigenvectors and eigenvalues of the...</text>
     <text x="65" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Eigenvectors represent the directions of the new feature space.</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Dimensionality reduction mitigates the curse of dimensionality and improves model...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Dimensionality reduction mitigates the curse of dimensionality and improves model...</text>
 </svg>

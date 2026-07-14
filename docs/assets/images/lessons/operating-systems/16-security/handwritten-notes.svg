@@ -96,16 +96,11 @@
     <text x="80" y="366" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">the caller.</text>
     <text x="65" y="388" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Fix</tspan>: Use open() with flags, not a</text>
     <text x="80" y="410" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">separate check:</text>
-    <text x="60" y="438" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="441" x2="160" y2="441" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="462" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: costFactor</text>
-    <text x="65" y="484" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: pgrep httpd sesearch --allow --source httpd_t --target shadow_t ``` #### AppArmor AppArmor uses path-based not label-bas</text>
-    <text x="65" y="506" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: capsh --print Current: = cap_chown,cap_dac_override,...+ep Bounding set = cap_chown,cap_dac_override,...+eip # Grant onl</text>
-    <rect x="55" y="530" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="530" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="548" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="568" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is ASLR and how does it work?</text>
+    <rect x="55" y="434" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="434" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="452" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="472" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is ASLR and how does it work?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - OS security goals: confidentiality, integrity, availability, authentication
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 OS security goals: confidentiality, integrity, availability, authentication
 -...</text>
 </svg>

@@ -112,8 +112,8 @@
     <line x1="82" y1="394" x2="82" y2="402" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="418" x2="82" y2="426" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="410" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: ino not found`; const permMap = p: Permission: boolean =&gt;</text>
-  <text x="104" y="446" font-size="12" fill="#64748b" font-family="Arial, sans-serif">p.includesrequested; if uid ===...</text>
+  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Real-world analogy:: MFT** — a relational database of file records -</text>
+  <text x="104" y="446" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Features: Alternate data streams ADS,...</text>
   <line x1="500" y1="464" x2="500" y2="474" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="484" width="880" height="60" rx="8" fill="#fce7f3"/>
@@ -133,7 +133,7 @@
   </g>
   <polygon points="82,578 76,590 80.08,590 79.12,602 85.6,588.8 81.52,588.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="590" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="608" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- A file is the OS&apos;s primary abstraction for persistent storage —</text>
+  <text x="104" y="608" font-size="12" fill="#64748b" font-family="Arial, sans-serif">A file is the OS&apos;s primary abstraction for persistent storage —</text>
   <text x="104" y="626" font-size="12" fill="#64748b" font-family="Arial, sans-serif">named, typed, protected
 - File operations:...</text>
   <rect x="840" y="574" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

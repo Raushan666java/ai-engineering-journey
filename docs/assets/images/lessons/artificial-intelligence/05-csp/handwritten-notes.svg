@@ -98,9 +98,10 @@
     <text x="80" y="422" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">value to a variable, prunes the...</text>
     <text x="60" y="450" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="453" x2="160" y2="453" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Constraint Satisfaction Problem (CSP)</tspan>: X, D, C</text>
-    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Constraint Satisfaction Problem (CSP)</tspan>: X = \X_1, X_2, ..., X_n\</text>
-    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">$X = \{X_1, X_2, ..., X_n\}$</tspan>: D = \D_1, D_2, ..., D_n\</text>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">domains</tspan>: X, D, C</text>
+    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">assignment</tspan>: WA \neq Red</text>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">is:
+-</tspan>: WA \neq NT</text>
     <text x="60" y="546" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="549" x2="160" y2="549" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Define a Constraint Satisfaction Problem (CSP) in terms of...</text>

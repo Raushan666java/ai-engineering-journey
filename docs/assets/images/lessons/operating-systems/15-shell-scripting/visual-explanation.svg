@@ -92,8 +92,8 @@
     <line x1="82" y1="300" x2="82" y2="308" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="324" x2="82" y2="332" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="316" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: &quot; # 1234 current script PID echo &quot;Last BG PID:</text>
-  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">$!&quot; # 1235 last background process PID echo...</text>
+  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Variables: ? for exit status | | **Conditionals** | if-then-else, case;</text>
+  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">test command and | | **Loops** | for,...</text>
   <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="390" width="880" height="68" rx="8" fill="#fce7f3"/>
@@ -114,7 +114,7 @@
   </g>
   <polygon points="82,492 76,504 80.08,504 79.12,516 85.6,502.8 81.52,502.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="504" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="522" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- The shell is both an interactive command interpreter and script</text>
+  <text x="104" y="522" font-size="12" fill="#64748b" font-family="Arial, sans-serif">The shell is both an interactive command interpreter and script</text>
   <text x="104" y="540" font-size="12" fill="#64748b" font-family="Arial, sans-serif">interpreter
 - Shebang (`#!/bin/bash`)...</text>
   <rect x="840" y="488" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

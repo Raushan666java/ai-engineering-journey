@@ -104,8 +104,8 @@
     <text x="60" y="560" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="563" x2="160" y2="563" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: P_r \propto P_t / d^2</text>
-    <text x="65" y="606" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: this.ssid&quot; BSSID=</text>
-    <text x="65" y="628" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: this.channel</text>
+    <text x="65" y="606" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: O\log_2 M</text>
+    <text x="65" y="628" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: B = 0</text>
     <text x="60" y="656" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="659" x2="160" y2="659" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Compare the 802.11 physical-layer standards and their performance...</text>

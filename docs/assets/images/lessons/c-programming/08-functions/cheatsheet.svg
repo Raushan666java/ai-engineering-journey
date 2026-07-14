@@ -62,6 +62,23 @@
   <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">reusable block of code</text>
   <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">that performs a</text>
   <text x="42" y="187" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">specific...</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Function Declaration:</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Tells compiler signature</text>
+  <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">before use</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Function Definition:</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Actual body with code</text>
+  <text x="42" y="274" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Function Call: Transfer</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">control + arguments</text>
+  <text x="42" y="303" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Formal vs Actual Params:</text>
+  <text x="42" y="316" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Parameters vs arguments</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">passed</text>
+  <text x="42" y="345" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Pass by Value: Copy made;</text>
+  <text x="42" y="358" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">original unchanged</text>
+  <text x="42" y="374" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Pass by Pointer: Address</text>
+  <text x="42" y="387" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">copied; dereference to</text>
+  <text x="42" y="400" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">modify</text>
+  <text x="42" y="416" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Return Values: Value sent</text>
+  <text x="42" y="429" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">back to caller via return</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

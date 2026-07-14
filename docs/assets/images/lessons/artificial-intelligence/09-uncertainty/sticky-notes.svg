@@ -139,10 +139,9 @@
       <path d="M193,210 L205,222 L205,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PA \mid B = \fracPA</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\land BPB, \quad PB</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&gt; 0</text>
+    <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Bayes&apos; rule</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PA \land B \mid C = PA</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\mid C PB \mid C</text>
     </g>
 
 <g transform="rotate(3 312.5 287.5)" filter="url(#shadowMd)">
@@ -152,9 +151,10 @@
       <path d="M388,210 L400,222 L400,210 Z" fill="#DBEAFE" stroke="#3b82f6" stroke-width="0.3" opacity="0.6"/>
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
-    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Bayes&apos; rule</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PA \mid B = \fracPB</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">\mid A \, PAPB</text>
+    <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PB, E, A, J, M = PB PE</text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PA \mid B, E PJ \mid A</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">PM \mid A</text>
     </g>
 
 <g transform="rotate(-1 507.5 107.5)" filter="url(#shadowMd)">
@@ -190,7 +190,7 @@
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous:</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Previous</text>
     <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 

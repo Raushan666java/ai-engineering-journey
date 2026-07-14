@@ -92,6 +92,6 @@
     <text x="68" y="254" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
     <text x="68" y="274" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Explain AVL Rotations Visually</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - AVL trees maintain height balance via the balance factor (-1, 0, 1).
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 AVL trees maintain height balance via the balance factor (-1, 0, 1).
 - Four...</text>
 </svg>

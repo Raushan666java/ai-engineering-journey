@@ -79,14 +79,14 @@
     <text x="133.5" y="422" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">question stem</text>
   <rect x="216" y="408" width="114" height="20" rx="10" fill="#059669" opacity="0.12"/>
     <text x="273" y="422" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Two statements</text>
-  <rect x="360" y="408" width="86" height="20" rx="10" fill="#d97706" opacity="0.12"/>
-    <text x="403" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Your task:</text>
-  <rect x="472" y="408" width="37" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="490.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">(A)</text>
-  <rect x="528" y="408" width="37" height="20" rx="10" fill="#db2777" opacity="0.12"/>
-    <text x="546.5" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">(B)</text>
-  <rect x="584" y="408" width="37" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
-    <text x="602.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">(C)</text>
+  <rect x="360" y="408" width="79" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="399.5" y="422" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Your task</text>
+  <rect x="464" y="408" width="37" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="482.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">(A)</text>
+  <rect x="520" y="408" width="37" height="20" rx="10" fill="#db2777" opacity="0.12"/>
+    <text x="538.5" y="422" font-size="10" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">(B)</text>
+  <rect x="576" y="408" width="37" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="594.5" y="422" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">(C)</text>
   <text x="1120" y="590" font-size="13" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif">github.com/ai-engineering-journey</text>
   <text x="80" y="590" font-size="12" fill="#94a3b8" font-family="Arial, sans-serif">concept</text>
   <rect x="700" y="0" width="500" height="630" fill="url(#dotGrid)" opacity="0.3"/>

@@ -104,7 +104,7 @@
   </g>
   <polygon points="82,398 76,410 80.08,410 79.12,422 85.6,408.8 81.52,408.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="410" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- Database failures are classified as transaction, system, media, or</text>
+  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Database failures are classified as transaction, system, media, or</text>
   <text x="104" y="446" font-size="12" fill="#64748b" font-family="Arial, sans-serif">catastrophic.
 - The buffer management...</text>
   <rect x="840" y="394" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

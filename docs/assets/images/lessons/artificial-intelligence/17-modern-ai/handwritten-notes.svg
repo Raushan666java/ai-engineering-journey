@@ -91,9 +91,9 @@
     <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">protocol that lets any LLM...</text>
     <text x="60" y="296" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
     <line x1="60" y1="299" x2="160" y2="299" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 4.21 trillion&quot;` | Client | — | | 8 | Client | Feeds observation to LLM | — | — | | 9 | LLM | Synthesizes final answer | </text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 4.21 trillion&quot;, &quot;tokyo population&quot;: &quot;Tokyo population: 14.0 million&quot;, return results.getquery.lower, f&quot;Searched for: que</text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 50, backyard: free&quot; | Check weather, Buy decorations | Budget:1, CheckWeather:1, Menu:2, Guest:2, Decor:2 | | 3 | Check </text>
+    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: 500, outdoor BBQ theme&quot; | Research venues, Plan menu, Guest list, Budget breakdown | Research:1, Menu:2, Guest:2, Budget</text>
+    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: 120 total&quot; | Create shopping list | Guest:2, Decor:2, RainPlan:2, Shopping:3 | | 6 | Guest list | &quot;20 names → send invit</text>
+    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: 1-10M |</text>
     <text x="60" y="392" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
     <line x1="60" y1="395" x2="160" y2="395" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="416" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Layer 1: Detects edges and corners</text>

@@ -79,7 +79,7 @@
   </g>
   <polygon points="82,218 76,230 80.08,230 79.12,242 85.6,228.8 81.52,228.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="230" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="248" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- Singly linked lists excel at head insertions and deletions (O(1)) but</text>
+  <text x="104" y="248" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Singly linked lists excel at head insertions and deletions (O(1)) but</text>
   <text x="104" y="266" font-size="12" fill="#64748b" font-family="Arial, sans-serif">pay O(n) for indexed access.
 -...</text>
   <rect x="840" y="214" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

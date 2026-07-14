@@ -88,17 +88,12 @@
     <line x1="60" y1="203" x2="160" y2="203" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
     <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">monad</tspan>: a design pattern that wraps a</text>
     <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">value and provides two operations:</text>
-    <text x="60" y="274" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="277" x2="160" y2="277" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="298" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: &quot; ? Validation.validvalue : Validation.invalid&quot;Invalid email format&quot;; Function&lt;Integer, Validation&lt;String, Integer&gt;&gt; min</text>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: &quot; + amount + &quot; to card ending &quot; + last4; case PayPalvar email -&gt; &quot;PayPal payment of</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: %.0f -</text>
-    <text x="60" y="370" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="373" x2="160" y2="373" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="394" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Apply advanced stream operations including `mapMulti`, custom...</text>
-    <text x="65" y="416" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Design custom `Collector` implementations using all five components...</text>
-    <text x="65" y="438" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Recognize and construct monad patterns with `Optional`,...</text>
-    <text x="65" y="460" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use specialized functional interfaces (`IntFunction`,...</text>
+    <text x="60" y="274" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="277" x2="160" y2="277" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="298" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Apply advanced stream operations including `mapMulti`, custom...</text>
+    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Design custom `Collector` implementations using all five components...</text>
+    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Recognize and construct monad patterns with `Optional`,...</text>
+    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use specialized functional interfaces (`IntFunction`,...</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Advanced Stream Operations; Custom Collectors; Monad Patterns</text>
 </svg>

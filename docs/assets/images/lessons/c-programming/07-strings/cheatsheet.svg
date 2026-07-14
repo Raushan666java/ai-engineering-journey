@@ -61,6 +61,24 @@
   <text x="42" y="148" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">string: a sequence of</text>
   <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">characters terminated by a</text>
   <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">null character...</text>
+  <text x="42" y="190" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">String Fundamentals: C</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">strings are</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">null-terminated char</text>
+  <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">arrays</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">String Literals: String</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">literals are read-only and</text>
+  <text x="42" y="271" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">stored in a static data...</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">String Functions: strlen,</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">strcpy, strcat, strcmp</text>
+  <text x="42" y="313" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">from &lt;string.h&gt;</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">String Input/Output: gets</text>
+  <text x="42" y="342" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">is dangerous and removed -</text>
+  <text x="42" y="355" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">use fgets or scanf with...</text>
+  <text x="42" y="371" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">String to Number: atoi is</text>
+  <text x="42" y="384" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">error-prone; strtol</text>
+  <text x="42" y="397" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">provides error detection</text>
+  <text x="42" y="413" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Character Functions:</text>
+  <text x="42" y="426" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">&lt;ctype.h&gt; provides</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

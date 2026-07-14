@@ -98,8 +98,8 @@
     <line x1="82" y1="308" x2="82" y2="316" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="82" y1="332" x2="82" y2="340" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
   <text x="104" y="324" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
-  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: this.config.maxCostPerRequest exceeded`; return approved:</text>
-  <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">false, model, reason: &quot;Request budget...</text>
+  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: 0.50 per task, 10,000 tokens per request. Every LLM call</text>
+  <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">deducts from the budget. The governor...</text>
   <line x1="500" y1="378" x2="500" y2="388" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">
     <rect x="60" y="398" width="880" height="68" rx="8" fill="#fce7f3"/>

@@ -100,12 +100,12 @@
       <circle cx="42" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="191" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="44" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 1</text>
-    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">fillable =</text>
-    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&apos;title&apos;,</text>
-    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&apos;body&apos;,</text>
-    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&apos;published_at&apos;;</text>
-    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">public function author</text>
-    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">return</text>
+    <text x="44" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">errors` variable</text>
+    <text x="44" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">provides per-field</text>
+    <text x="44" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">error messages. ###</text>
+    <text x="44" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Complete Blade Form</text>
+    <text x="44" y="318" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Example ### 12.4 Blade</text>
+    <text x="44" y="332" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Form Helper Reference</text>
     </g>
 
 <g transform="rotate(4 312.5 287.5)" filter="url(#shadowMd)">
@@ -116,8 +116,10 @@
       <circle cx="237" cy="222" r="4" fill="#3b82f6" opacity="0.4"/>
           <circle cx="386" cy="224" r="6" fill="#3b82f6" opacity="0.3"/>
     <text x="239" y="242" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Formula 2</text>
-    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif">1,500&lt;/td&gt;</text>
-    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">&lt;td&gt;</text>
+    <text x="239" y="262" font-size="10" fill="#64748b" font-family="Arial, sans-serif"></text>
+    <text x="239" y="276" font-size="10" fill="#64748b" font-family="Arial, sans-serif">errors-&gt;has&apos;field&apos;`</text>
+    <text x="239" y="290" font-size="10" fill="#64748b" font-family="Arial, sans-serif">| Boolean check for</text>
+    <text x="239" y="304" font-size="10" fill="#64748b" font-family="Arial, sans-serif">error existence | | `</text>
     </g>
 
 <g transform="rotate(0 507.5 467.5)" filter="url(#shadowMd)">

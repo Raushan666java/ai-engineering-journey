@@ -120,7 +120,7 @@
   </g>
   <polygon points="82,500 76,512 80.08,512 79.12,524 85.6,510.8 81.52,510.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="512" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="530" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- Cloud compute provides virtualized hardware (IaaS) through VMs.
+  <text x="104" y="530" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Cloud compute provides virtualized hardware (IaaS) through VMs.
 -</text>
   <text x="104" y="548" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Compute resources are organized into...</text>
   <rect x="840" y="496" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

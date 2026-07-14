@@ -67,10 +67,10 @@
   <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">B means A &gt; B A % B</text>
   <text x="322" y="173" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">means A &lt; B A &amp;</text>
   <text x="322" y="185" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">B...</text>
-  <text x="322" y="201" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>
+  <text x="322" y="201" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Your Score:</text>
   <text x="322" y="214" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">R - B P % R - C P @ R - D</text>
   <text x="322" y="226" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">P # R 2. M %...</text>
-  <text x="322" y="242" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
+  <text x="322" y="242" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Accuracy:</text>
   <text x="322" y="255" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">P - B M % P - C M @ P - D</text>
   <text x="322" y="267" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">Cannot...</text>
   <text x="322" y="283" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 4</text>

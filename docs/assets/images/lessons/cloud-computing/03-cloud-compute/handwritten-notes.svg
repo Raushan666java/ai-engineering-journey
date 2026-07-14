@@ -96,6 +96,6 @@
     <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Reserved / Committed Use: Discount for committing to 1- or 3-year...</text>
     <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Dedicated Hardware: Physical servers dedicated to a single tenant....</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Cloud compute provides virtualized hardware (IaaS) through VMs.
-- Compute...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Cloud compute provides virtualized hardware (IaaS) through VMs.
+- Compute resources...</text>
 </svg>

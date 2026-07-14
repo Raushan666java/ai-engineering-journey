@@ -105,7 +105,7 @@
   </g>
   <polygon points="82,406 76,418 80.08,418 79.12,430 85.6,416.8 81.52,416.8" fill="#1e40af" opacity="0.7"/>
   <text x="104" y="418" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">- SQL queries go through: parsing -&gt; preprocessing -&gt; optimization</text>
+  <text x="104" y="436" font-size="12" fill="#64748b" font-family="Arial, sans-serif">SQL queries go through: parsing -&gt; preprocessing -&gt; optimization</text>
   <text x="104" y="454" font-size="12" fill="#64748b" font-family="Arial, sans-serif">-&gt; execution.
 - The parser converts SQL...</text>
   <rect x="840" y="402" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>

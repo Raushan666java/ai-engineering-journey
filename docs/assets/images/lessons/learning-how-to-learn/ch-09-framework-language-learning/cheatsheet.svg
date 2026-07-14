@@ -58,20 +58,34 @@
     <rect x="28" y="114" width="264" height="340" rx="8" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.15"/></g>
   <text x="38" y="134" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Concepts</text>
     <line x1="38" y1="137" x2="138" y2="137" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+  <text x="42" y="148" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Universal Blueprint: Five</text>
+  <text x="42" y="161" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">phases: Docs ? Tutorial ?</text>
+  <text x="42" y="174" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Build ? Refactor ? Teach</text>
+  <text x="42" y="190" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">MVP Pattern: Build a</text>
+  <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">User/Post/Comment CRUD app</text>
+  <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">to learn any framework</text>
+  <text x="42" y="232" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">T-Model: 70-20-10 split:</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">primary depth, secondary</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">support,...</text>
+  <text x="42" y="274" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Tutorial Trap: Passive</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">consumption that feels</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">productive but produces</text>
+  <text x="42" y="313" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">no...</text>
+  <text x="42" y="329" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Debugging Protocol:</text>
+  <text x="42" y="342" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Reproduce ? Isolate ?</text>
+  <text x="42" y="355" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Search ? Understand root</text>
+  <text x="42" y="368" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">cause</text>
+  <text x="42" y="384" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Building in Public:</text>
+  <text x="42" y="397" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Contributing to open</text>
+  <text x="42" y="410" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">source compounds your</text>
+  <text x="42" y="423" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">learning...</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>
   <text x="318" y="134" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formulas & Tips</text>
     <line x1="318" y1="137" x2="418" y2="137" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
   <text x="322" y="148" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 1</text>
-  <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">request Post::create</text>
-  <text x="322" y="177" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 2</text>
-  <text x="322" y="190" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">app-&gt;bind`, `</text>
-  <text x="322" y="206" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 3</text>
-  <text x="322" y="219" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">p.x,</text>
-  <text x="322" y="235" font-size="9" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Formula 4</text>
-  <text x="322" y="248" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">random_id.suffix.hex&quot;</text>
-  <text x="322" y="260" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">acl =...</text>
+  <text x="322" y="161" font-size="8" fill="#64748b" font-family="Arial, sans-serif" font-style="italic">app-&gt;bind`, `</text>
   <line x1="38" y1="462" x2="562" y2="462" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
   <g filter="url(#shadowSm)"><rect x="28" y="470" width="264" height="386" rx="8" fill="#dc2626" opacity="0.06"/>
     <rect x="28" y="470" width="4" height="386" rx="2" fill="#dc2626"/>

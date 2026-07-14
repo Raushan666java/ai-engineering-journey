@@ -89,22 +89,24 @@
     <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">protégé effect</tspan>: a psychological</text>
     <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">phenomenon where teaching someone else</text>
     <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">— or even expecting to...</text>
-    <text x="60" y="296" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="299" x2="160" y2="299" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: index + 1:</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: index + 1: You assume the if-condition is the only path — what happens otherwise?` ; // Pattern 2: Method calls with no </text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: line.trim.split&apos;.&apos;0&apos; exists` ; // Pattern 3: Magic numbers if /\b\d2,\b/.testline &amp;&amp; !line.includes&apos;const&apos; &amp;&amp; !line.incl</text>
-    <text x="60" y="392" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="395" x2="160" y2="395" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="416" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Explain the protégé effect and why teaching doubles learning...</text>
-    <text x="65" y="438" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply the Feynman technique across multiple skill levels</text>
-    <text x="65" y="460" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Write clear technical explanations using structured frameworks</text>
-    <text x="65" y="482" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use rubber duck debugging and pair programming as teaching tools</text>
-    <rect x="55" y="506" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="506" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="524" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="544" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Why does teaching accelerate your own</text>
-    <text x="68" y="560" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">learning more than studying?</text>
+    <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Feynman Technique</tspan>: &quot;If you</text>
+    <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">can&apos;t explain it simply, you</text>
+    <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">don&apos;t understand it&quot;</text>
+    <text x="65" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Rubber Duck Debugging</tspan>: Verbalizing</text>
+    <text x="80" y="378" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">code reveals assumptions</text>
+    <text x="65" y="400" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Code Review as Teaching</tspan>: Reviewing</text>
+    <text x="80" y="422" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">code teaches patterns to both parties</text>
+    <text x="60" y="450" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="453" x2="160" y2="453" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Explain the protégé effect and why teaching doubles learning...</text>
+    <text x="65" y="496" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply the Feynman technique across multiple skill levels</text>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Write clear technical explanations using structured frameworks</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use rubber duck debugging and pair programming as teaching tools</text>
+    <rect x="55" y="564" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="564" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="582" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="602" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Why does teaching accelerate your own</text>
+    <text x="68" y="618" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">learning more than studying?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - The protégé effect means preparing to teach improves your learning more than...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 The protégé effect means preparing to teach improves your learning more than...</text>
 </svg>

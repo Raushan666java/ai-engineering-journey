@@ -52,38 +52,78 @@
   <!-- Subtitle if comparison table named -->
   
   <!-- Table wrapper shadow -->
-  <rect x="15" y="74" width="870" height="80" rx="10" fill="none" filter="url(#shadowSm)"/>
-  <rect x="15" y="74" width="870" height="80" rx="10" fill="#ffffff"/>
+  <rect x="15" y="74" width="870" height="224" rx="10" fill="none" filter="url(#shadowSm)"/>
+  <rect x="15" y="74" width="870" height="224" rx="10" fill="#ffffff"/>
   <clipPath id="tClip">
-    <rect x="15" y="74" width="870" height="80" rx="10"/>
+    <rect x="15" y="74" width="870" height="224" rx="10"/>
   </clipPath>
   <g clip-path="url(#tClip)">
-  <!-- Header: Feature -->
+  <!-- Header: Aspect -->
     <rect x="15" y="74" width="170" height="44" fill="url(#gBlue)"/>
-    <text x="100" y="101" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Feature</text>
-  <!-- Header: Concept A -->
+    <text x="100" y="101" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Aspect</text>
+  <!-- Header: 3-Pass Method -->
     <rect x="185" y="74" width="350" height="44" fill="url(#gBlue)"/>
-    <text x="360" y="101" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Concept A</text>
-  <!-- Header: Concept B -->
+    <text x="360" y="101" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">3-Pass Method</text>
+  <!-- Header: Pattern Classification -->
     <rect x="535" y="74" width="350" height="44" fill="url(#gBlue)"/>
-    <text x="710" y="101" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Concept B</text>
+    <text x="710" y="101" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Pattern Classification</text>
   <line x1="15" y1="118" x2="885" y2="118" stroke="#e2e8f0" stroke-width="1"/>
   <!-- Row 1, Col 1 -->
     <rect x="15" y="118" width="170" height="36" fill="#f8fafc"/>
-    <text x="29" y="140" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Arial, sans-serif">Coming Soon</text>
+    <text x="29" y="140" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Arial, sans-serif">Definition</text>
   <!-- Row 1, Col 2 -->
     <rect x="185" y="118" width="350" height="36" fill="#f8fafc"/>
-    <text x="360" y="140" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Content being generated</text>
+    <text x="360" y="140" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Understand ? Plan ? Code replaces...</text>
   <!-- Row 1, Col 3 -->
     <rect x="535" y="118" width="350" height="36" fill="#f8fafc"/>
-    <text x="710" y="140" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">—</text>
-  <line x1="15" y1="154" x2="885" y2="154" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="710" y="140" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">~500 LeetCode problems reduce to...</text>
+  <line x1="15" y1="154" x2="885" y2="154" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <!-- Row 2, Col 1 -->
+    <rect x="15" y="154" width="170" height="36" fill="#ffffff"/>
+    <text x="29" y="176" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Arial, sans-serif">Category</text>
+  <!-- Row 2, Col 2 -->
+    <rect x="185" y="154" width="350" height="36" fill="#ffffff"/>
+    <text x="360" y="176" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">concept</text>
+  <!-- Row 2, Col 3 -->
+    <rect x="535" y="154" width="350" height="36" fill="#ffffff"/>
+    <text x="710" y="176" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">concept</text>
+  <line x1="15" y1="190" x2="885" y2="190" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <!-- Row 3, Col 1 -->
+    <rect x="15" y="190" width="170" height="36" fill="#f8fafc"/>
+    <text x="29" y="212" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Arial, sans-serif">Key Feature</text>
+  <!-- Row 3, Col 2 -->
+    <rect x="185" y="190" width="350" height="36" fill="#f8fafc"/>
+    <text x="360" y="212" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Pass 3: Code &amp; Test</text>
+  <!-- Row 3, Col 3 -->
+    <rect x="535" y="190" width="350" height="36" fill="#f8fafc"/>
+    <text x="710" y="212" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">The 20 Essential Patterns</text>
+  <line x1="15" y1="226" x2="885" y2="226" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <!-- Row 4, Col 1 -->
+    <rect x="15" y="226" width="170" height="36" fill="#ffffff"/>
+    <text x="29" y="248" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Arial, sans-serif">Use Case</text>
+  <!-- Row 4, Col 2 -->
+    <rect x="185" y="226" width="350" height="36" fill="#ffffff"/>
+    <text x="360" y="248" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">The 20 Essential Patterns</text>
+  <!-- Row 4, Col 3 -->
+    <rect x="535" y="226" width="350" height="36" fill="#ffffff"/>
+    <text x="710" y="248" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">DSA Card Types</text>
+  <line x1="15" y1="262" x2="885" y2="262" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <!-- Row 5, Col 1 -->
+    <rect x="15" y="262" width="170" height="36" fill="#f8fafc"/>
+    <text x="29" y="284" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="start" font-family="Arial, sans-serif">Advantage</text>
+  <!-- Row 5, Col 2 -->
+    <rect x="185" y="262" width="350" height="36" fill="#f8fafc"/>
+    <text x="360" y="284" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">DSA Card Types</text>
+  <!-- Row 5, Col 3 -->
+    <rect x="535" y="262" width="350" height="36" fill="#f8fafc"/>
+    <text x="710" y="284" font-size="10" font-weight="normal" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Type 4: Code Snippet ? Identify...</text>
+  <line x1="15" y1="298" x2="885" y2="298" stroke="#e2e8f0" stroke-width="1"/>
   </g>
   <!-- Corner accents -->
   <path d="M27,74 L15,74 L15,86" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
   <path d="M873,74 L885,74 L885,86" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
-  <path d="M27,154 L15,154 L15,142" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
-  <path d="M873,154 L885,154 L885,142" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M27,298 L15,298 L15,286" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M873,298 L885,298 L885,286" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
   <rect x="893" y="82" width="40" height="20" rx="10" fill="#dbeafe"/>
-  <text x="913" y="96" font-size="9" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">1 rows</text>
+  <text x="913" y="96" font-size="9" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">5 rows</text>
 </svg>

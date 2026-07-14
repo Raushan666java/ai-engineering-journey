@@ -92,7 +92,47 @@
     <rect x="2.242640687119284" y="-7.242640687119286" width="4" height="6" rx="1" fill="#1e40af" transform="rotate(315 4.242640687119284 -4.242640687119286)"/>
   </g>
   <!-- Sticky notes -->
-  <g transform="rotate(-3 507.5 107.5)" filter="url(#shadowMd)">
+  <g transform="rotate(-3 117.5 107.5)" filter="url(#shadowMd)">
+      <rect x="30" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="30" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M193,30 L205,42 L205,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="42" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="191" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="44" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">3-Pass Method</text>
+    <text x="44" y="82" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Understand ? Plan ?</text>
+    <text x="44" y="96" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Code replaces panic</text>
+    <text x="44" y="110" font-size="10" fill="#64748b" font-family="Arial, sans-serif">with process</text>
+    </g>
+
+<g transform="rotate(4 312.5 107.5)" filter="url(#shadowMd)">
+      <rect x="225" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="225" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M388,30 L400,42 L400,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="237" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="386" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="239" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Pattern</text>
+    <text x="239" y="80" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Classification</text>
+    <text x="239" y="100" font-size="10" fill="#64748b" font-family="Arial, sans-serif">~500 LeetCode problems</text>
+    <text x="239" y="114" font-size="10" fill="#64748b" font-family="Arial, sans-serif">reduce to ~20</text>
+    <text x="239" y="128" font-size="10" fill="#64748b" font-family="Arial, sans-serif">recurring patterns</text>
+    </g>
+
+<g transform="rotate(0 507.5 107.5)" filter="url(#shadowMd)">
+      <rect x="420" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="420" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M583,30 L595,42 L595,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="432" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="581" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="434" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">DSA Anki Decks</text>
+    <text x="434" y="82" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Four card types test</text>
+    <text x="434" y="96" font-size="10" fill="#64748b" font-family="Arial, sans-serif">pattern recognition,</text>
+    <text x="434" y="110" font-size="10" fill="#64748b" font-family="Arial, sans-serif">not solution...</text>
+    </g>
+
+<g transform="rotate(-4 507.5 107.5)" filter="url(#shadowMd)">
       <rect x="420" y="30" width="175" height="155" rx="3" fill="#FCE7F3" stroke="#ec4899" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="420" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -105,7 +145,7 @@
     <text x="434" y="110" font-size="10" fill="#64748b" font-family="Arial, sans-serif">problems,...</text>
     </g>
 
-<g transform="rotate(4 702.5 107.5)" filter="url(#shadowMd)">
+<g transform="rotate(3 702.5 107.5)" filter="url(#shadowMd)">
       <rect x="615" y="30" width="175" height="155" rx="3" fill="#FCE7F3" stroke="#ec4899" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="615" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -118,7 +158,7 @@
     <text x="629" y="110" font-size="10" fill="#64748b" font-family="Arial, sans-serif">patterns?</text>
     </g>
 
-<g transform="rotate(0 117.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-1 117.5 467.5)" filter="url(#shadowMd)">
       <rect x="30" y="390" width="175" height="155" rx="3" fill="#FFEDD5" stroke="#f97316" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="30" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -131,7 +171,7 @@
     <text x="44" y="470" font-size="10" fill="#64748b" font-family="Arial, sans-serif">(state ?...</text>
     </g>
 
-<g transform="rotate(-4 312.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-5 312.5 467.5)" filter="url(#shadowMd)">
       <rect x="225" y="390" width="175" height="155" rx="3" fill="#FFEDD5" stroke="#f97316" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="225" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -145,26 +185,29 @@
     <text x="239" y="484" font-size="10" fill="#64748b" font-family="Arial, sans-serif">reading...</text>
     </g>
 
-<g transform="rotate(3 507.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(2 507.5 467.5)" filter="url(#shadowMd)">
       <rect x="420" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="420" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prerequisites:</text>
-    <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Pass 1:</text>
+    <text x="434" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Understand &amp;</text>
+    <text x="434" y="458" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Explore</text>
+    <text x="434" y="478" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
-<g transform="rotate(-1 702.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-2 702.5 467.5)" filter="url(#shadowMd)">
       <rect x="615" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="615" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
       <path d="M778,390 L790,402 L790,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Next:</text>
-    <text x="629" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Pass 2: Plan</text>
+    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">&amp; Verify</text>
+    <text x="629" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
   <!-- Coffee mug (bottom-right) -->

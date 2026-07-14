@@ -84,22 +84,32 @@
     <text x="65" y="134" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Language Learning</text>
     <line x1="60" y1="172" x2="550" y2="172" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
     <line x1="60" y1="176" x2="400" y2="176" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
-    <text x="60" y="200" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
-    <line x1="60" y1="203" x2="160" y2="203" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: request Post::create</text>
-    <text x="65" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: app-&gt;bind`, `</text>
-    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: p.x,</text>
-    <text x="60" y="296" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="299" x2="160" y2="299" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Apply the universal learning blueprint (Docs ? Tutorial ? Build ?...</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Learn Java with the right priority order using this repo&apos;s course...</text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Learn Python with the right priority order using this repo&apos;s course...</text>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Learn DevOps fundamentals with the right priority order using this...</text>
-    <rect x="55" y="410" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="410" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="428" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="448" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the universal framework learning</text>
-    <text x="68" y="464" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">blueprint?</text>
+    <text x="60" y="200" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Key Definitions</text>
+    <line x1="60" y1="203" x2="160" y2="203" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Universal Blueprint</tspan>: Five phases: Docs</text>
+    <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">? Tutorial ? Build ? Refactor ? Teach</text>
+    <text x="65" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">MVP Pattern</tspan>: Build a User/Post/Comment</text>
+    <text x="80" y="290" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">CRUD app to learn any framework</text>
+    <text x="65" y="312" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">T-Model</tspan>: 70-20-10 split: primary</text>
+    <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">depth, secondary support, exploratory</text>
+    <text x="80" y="356" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">breadth</text>
+    <text x="65" y="378" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Tutorial Trap</tspan>: Passive consumption</text>
+    <text x="80" y="400" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">that feels productive but produces no</text>
+    <text x="80" y="422" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">durable skill</text>
+    <text x="60" y="450" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
+    <line x1="60" y1="453" x2="160" y2="453" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="474" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: app-&gt;bind`, `</text>
+    <text x="60" y="502" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="505" x2="160" y2="505" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Apply the universal learning blueprint (Docs ? Tutorial ? Build ?...</text>
+    <text x="65" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Learn Java with the right priority order using this repo&apos;s course...</text>
+    <text x="65" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Learn Python with the right priority order using this repo&apos;s course...</text>
+    <text x="65" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Learn DevOps fundamentals with the right priority order using this...</text>
+    <rect x="55" y="616" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="616" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="634" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="654" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the universal framework learning</text>
+    <text x="68" y="670" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">blueprint?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - The universal learning blueprint (Docs ? Tutorial ? Build ? Refactor ? Teach)...</text>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 The universal learning blueprint (Docs ? Tutorial ? Build ? Refactor ? Teach)...</text>
 </svg>

@@ -89,18 +89,27 @@
     <text x="65" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">master cheat sheet</tspan>: a single A4 page</text>
     <text x="80" y="246" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">(front and back) that compresses all</text>
     <text x="80" y="268" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">GATE subjects into visual...</text>
-    <text x="60" y="296" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="299" x2="160" y2="299" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="320" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Balance theory preparation with coding practice using a dual-track...</text>
-    <text x="65" y="342" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Build and use effective formula cheat sheets</text>
-    <text x="65" y="364" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Interlink related theory subjects to strengthen understanding</text>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Analyze previous year questions (PYQs) to identify patterns</text>
-    <rect x="55" y="410" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="410" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="428" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="448" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">How should I balance theory preparation</text>
-    <text x="68" y="464" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">with coding practice for exams like GATE</text>
-    <text x="68" y="480" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">CS?</text>
+    <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Dual-Track Schedule</tspan>: Track 1 (breadth)</text>
+    <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">covers all subjects; Track 2 (depth)</text>
+    <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">focuses on weak areas</text>
+    <text x="65" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Cheat Sheet Method</tspan>: Creating a</text>
+    <text x="80" y="378" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">one-page cheat sheet forces conceptual</text>
+    <text x="80" y="400" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">compression</text>
+    <text x="65" y="422" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Subject Interlinking</tspan>: Cross-subject</text>
+    <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">connections deepen understanding of</text>
+    <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">each topic</text>
+    <text x="60" y="494" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="497" x2="160" y2="497" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Balance theory preparation with coding practice using a dual-track...</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Build and use effective formula cheat sheets</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Interlink related theory subjects to strengthen understanding</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Analyze previous year questions (PYQs) to identify patterns</text>
+    <rect x="55" y="608" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="608" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="626" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="646" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">How should I balance theory preparation</text>
+    <text x="68" y="662" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">with coding practice for exams like GATE</text>
+    <text x="68" y="678" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">CS?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Balance theory and coding; Use cheat sheets, memory palaces, and diagrams; Apply the...</text>
 </svg>

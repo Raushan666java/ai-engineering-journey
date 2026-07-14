@@ -91,17 +91,25 @@
     <text x="80" y="280" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">comprehension check — if you</text>
     <text x="80" y="302" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">can&apos;t explain it simply, you</text>
     <text x="80" y="324" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">haven&apos;t...</text>
-    <text x="60" y="352" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="355" x2="160" y2="355" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="376" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Use the Pomodoro Technique to maintain deep focus during coding...</text>
-    <text x="65" y="398" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply interleaving to DSA and GATE preparation for stronger...</text>
-    <text x="65" y="420" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Explain any concept using the Feynman Technique in plain language</text>
-    <text x="65" y="442" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use rubber duck debugging to uncover gaps in your own understanding</text>
-    <rect x="55" y="466" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="466" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="484" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="504" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the Pomodoro Technique and why</text>
-    <text x="68" y="520" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">does it work?</text>
+    <text x="65" y="346" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Pomodoro Technique</tspan>: Structured focus</text>
+    <text x="80" y="368" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">intervals (25-50 min) that leverage</text>
+    <text x="80" y="390" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">the Zeigarnik effect</text>
+    <text x="65" y="412" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Zeigarnik Effect</tspan>: Your brain remembers</text>
+    <text x="80" y="434" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">unfinished tasks better than completed</text>
+    <text x="80" y="456" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">ones</text>
+    <text x="65" y="478" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Interleaving</tspan>: Mixing different topics</text>
+    <text x="80" y="500" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">or problem types in one study session</text>
+    <text x="60" y="528" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="531" x2="160" y2="531" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="552" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Use the Pomodoro Technique to maintain deep focus during coding...</text>
+    <text x="65" y="574" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Apply interleaving to DSA and GATE preparation for stronger...</text>
+    <text x="65" y="596" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Explain any concept using the Feynman Technique in plain language</text>
+    <text x="65" y="618" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use rubber duck debugging to uncover gaps in your own understanding</text>
+    <rect x="55" y="642" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="642" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="660" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="680" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the Pomodoro Technique and why</text>
+    <text x="68" y="696" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">does it work?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 The Pomodoro Technique; Interleaving; The Feynman Technique</text>
 </svg>

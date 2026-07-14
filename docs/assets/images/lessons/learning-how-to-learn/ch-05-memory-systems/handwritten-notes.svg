@@ -92,17 +92,23 @@
     <text x="65" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Context-dependent memory</tspan>: a specific</text>
     <text x="80" y="312" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">form of encoding specificity where the</text>
     <text x="80" y="334" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">physical environment...</text>
-    <text x="60" y="362" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
-    <line x1="60" y1="365" x2="160" y2="365" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
-    <text x="65" y="386" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Build and navigate a memory palace to store and recall ordered...</text>
-    <text x="65" y="408" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Apply visual mnemonics to encode abstract concepts as vivid,...</text>
-    <text x="65" y="430" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use the chaining system to remember sequences of arbitrary items</text>
-    <text x="65" y="452" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Implement the peg system for numbered recall (bones of the arm,...</text>
-    <rect x="55" y="476" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
-    <rect x="55" y="476" width="4" height="50" rx="2" fill="#db2777"/>
-    <text x="68" y="494" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
-    <text x="68" y="514" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the method of loci (memory</text>
-    <text x="68" y="530" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">palace), and how do I build one?</text>
+    <text x="65" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Memory Palace</tspan>: Leveraging spatial</text>
+    <text x="80" y="378" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">memory to store ordered information</text>
+    <text x="80" y="400" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">along familiar routes</text>
+    <text x="65" y="422" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#2563eb">Visual Mnemonics</tspan>: Translating abstract</text>
+    <text x="80" y="444" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">information into concrete, bizarre,</text>
+    <text x="80" y="466" font-size="12" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">multisensory images</text>
+    <text x="60" y="494" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="497" x2="160" y2="497" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="518" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> Build and navigate a memory palace to store and recall ordered...</text>
+    <text x="65" y="540" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> Apply visual mnemonics to encode abstract concepts as vivid,...</text>
+    <text x="65" y="562" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> Use the chaining system to remember sequences of arbitrary items</text>
+    <text x="65" y="584" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">5.</tspan> Implement the peg system for numbered recall (bones of the arm,...</text>
+    <rect x="55" y="608" width="490" height="50" rx="8" fill="#fce7f3" stroke="#db2777" stroke-width="0.5" filter="url(#shadowSm)"/>
+    <rect x="55" y="608" width="4" height="50" rx="2" fill="#db2777"/>
+    <text x="68" y="626" font-size="12" font-weight="bold" fill="#db2777" font-family="'Segoe Print', 'Comic Sans MS', cursive">Interview Tip</text>
+    <text x="68" y="646" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">What is the method of loci (memory</text>
+    <text x="68" y="662" font-size="11" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">palace), and how do I build one?</text>
     <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
     <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 Memory palaces (method of loci); Visual mnemonics, chaining, and peg systems;...</text>
 </svg>

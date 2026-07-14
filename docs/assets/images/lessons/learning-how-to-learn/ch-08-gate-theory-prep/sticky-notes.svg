@@ -106,7 +106,35 @@
     <text x="44" y="128" font-size="10" fill="#64748b" font-family="Arial, sans-serif">compresses all GATE...</text>
     </g>
 
-<g transform="rotate(4 507.5 107.5)" filter="url(#shadowMd)">
+<g transform="rotate(4 312.5 107.5)" filter="url(#shadowMd)">
+      <rect x="225" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="225" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M388,30 L400,42 L400,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="237" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="386" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="239" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Dual-Track</text>
+    <text x="239" y="80" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Schedule</text>
+    <text x="239" y="100" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Track 1 (breadth)</text>
+    <text x="239" y="114" font-size="10" fill="#64748b" font-family="Arial, sans-serif">covers all subjects;</text>
+    <text x="239" y="128" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Track 2 (depth)...</text>
+    </g>
+
+<g transform="rotate(0 507.5 107.5)" filter="url(#shadowMd)">
+      <rect x="420" y="30" width="175" height="155" rx="3" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.8" opacity="0.96"/>
+      <!-- Subtle gradient overlay for paper texture -->
+      <rect x="420" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
+      <path d="M583,30 L595,42 L595,30 Z" fill="#FEF3C7" stroke="#f59e0b" stroke-width="0.3" opacity="0.6"/>
+      <circle cx="432" cy="42" r="4" fill="#f59e0b" opacity="0.4"/>
+          <circle cx="581" cy="44" r="6" fill="#f59e0b" opacity="0.3"/>
+    <text x="434" y="62" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Cheat Sheet</text>
+    <text x="434" y="80" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Method</text>
+    <text x="434" y="100" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Creating a one-page</text>
+    <text x="434" y="114" font-size="10" fill="#64748b" font-family="Arial, sans-serif">cheat sheet forces</text>
+    <text x="434" y="128" font-size="10" fill="#64748b" font-family="Arial, sans-serif">conceptual...</text>
+    </g>
+
+<g transform="rotate(-4 507.5 107.5)" filter="url(#shadowMd)">
       <rect x="420" y="30" width="175" height="155" rx="3" fill="#FCE7F3" stroke="#ec4899" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="420" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -119,7 +147,7 @@
     <text x="434" y="110" font-size="10" fill="#64748b" font-family="Arial, sans-serif">with coding...</text>
     </g>
 
-<g transform="rotate(0 702.5 107.5)" filter="url(#shadowMd)">
+<g transform="rotate(3 702.5 107.5)" filter="url(#shadowMd)">
       <rect x="615" y="30" width="175" height="155" rx="3" fill="#FCE7F3" stroke="#ec4899" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="615" y="30" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -133,7 +161,7 @@
     <text x="629" y="124" font-size="10" fill="#64748b" font-family="Arial, sans-serif">GATE...</text>
     </g>
 
-<g transform="rotate(-4 117.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-1 117.5 467.5)" filter="url(#shadowMd)">
       <rect x="30" y="390" width="175" height="155" rx="3" fill="#FFEDD5" stroke="#f97316" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="30" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -146,7 +174,7 @@
     <text x="44" y="470" font-size="10" fill="#64748b" font-family="Arial, sans-serif">conceptual...</text>
     </g>
 
-<g transform="rotate(3 312.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-5 312.5 467.5)" filter="url(#shadowMd)">
       <rect x="225" y="390" width="175" height="155" rx="3" fill="#FFEDD5" stroke="#f97316" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="225" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
@@ -159,26 +187,29 @@
     <text x="239" y="470" font-size="10" fill="#64748b" font-family="Arial, sans-serif">Common Pitfall �...</text>
     </g>
 
-<g transform="rotate(-1 507.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(2 507.5 467.5)" filter="url(#shadowMd)">
       <rect x="420" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="420" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
       <path d="M583,390 L595,402 L595,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="432" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="581" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prerequisites:</text>
-    <text x="434" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="434" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">coding</text>
+    <text x="434" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">reinforces</text>
+    <text x="434" y="458" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">theory</text>
+    <text x="434" y="478" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
-<g transform="rotate(-5 702.5 467.5)" filter="url(#shadowMd)">
+<g transform="rotate(-2 702.5 467.5)" filter="url(#shadowMd)">
       <rect x="615" y="390" width="175" height="155" rx="3" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.8" opacity="0.96"/>
       <!-- Subtle gradient overlay for paper texture -->
       <rect x="615" y="390" width="175" height="155" rx="3" fill="url(#gBg)" opacity="0.08"/>
       <path d="M778,390 L790,402 L790,390 Z" fill="#F3E8FF" stroke="#a855f7" stroke-width="0.3" opacity="0.6"/>
       <circle cx="627" cy="402" r="4" fill="#a855f7" opacity="0.4"/>
           <circle cx="776" cy="404" r="6" fill="#a855f7" opacity="0.3"/>
-    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Next:</text>
-    <text x="629" y="442" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
+    <text x="629" y="422" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">compressed</text>
+    <text x="629" y="440" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">mental model</text>
+    <text x="629" y="460" font-size="10" fill="#64748b" font-family="Arial, sans-serif">concept</text>
     </g>
 
   <!-- Coffee mug (bottom-right) -->

@@ -65,6 +65,20 @@
   <text x="42" y="203" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">a specific form of</text>
   <text x="42" y="216" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">encoding specificity where</text>
   <text x="42" y="229" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">the...</text>
+  <text x="42" y="245" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Memory Palace: Leveraging</text>
+  <text x="42" y="258" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">spatial memory to store</text>
+  <text x="42" y="271" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">ordered information...</text>
+  <text x="42" y="287" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Visual Mnemonics:</text>
+  <text x="42" y="300" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Translating abstract</text>
+  <text x="42" y="313" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">information into concrete,</text>
+  <text x="42" y="326" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">bizarre,...</text>
+  <text x="42" y="342" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Chaining: Linking items</text>
+  <text x="42" y="355" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">into an unforgettable</text>
+  <text x="42" y="368" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">narrative sequence</text>
+  <text x="42" y="384" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Peg System: Rhyming pegs</text>
+  <text x="42" y="397" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">(bun=1, shoe=2, tree=3)</text>
+  <text x="42" y="410" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">for numbered recall</text>
+  <text x="42" y="426" font-size="9" fill="#1e293b" font-family="Arial, sans-serif">Generation Effect:</text>
   <g filter="url(#shadowSm)"><rect x="308" y="114" width="264" height="340" rx="8" fill="#059669" opacity="0.06"/>
     <rect x="308" y="114" width="4" height="340" rx="2" fill="#059669"/>
     <rect x="308" y="114" width="264" height="340" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.15"/></g>

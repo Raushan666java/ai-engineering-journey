@@ -51,43 +51,81 @@
   <!-- Extra subtle decorative accent -->
   <rect x="0" y="4" width="600" height="1" fill="#1e40af" opacity="0.06"/>
     <text x="300" y="64" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="0.3">Chapter 13: Learning Analytics &amp;...</text>
-  <text x="300" y="88" font-size="12" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Self-Test Quiz — 3 Questions</text>
+  <text x="300" y="88" font-size="12" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Self-Test Quiz — 4 Questions</text>
   <rect x="265.5" y="96" width="69" height="18" rx="9" fill="#dbeafe"/>
       <text x="300" y="108" font-size="9" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">concept</text>
   <g filter="url(#shadowMd)">
-        <rect x="30" y="124" width="540" height="180" rx="10" fill="#ffffff"/>
-        <rect x="30" y="124" width="540" height="180" rx="10" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+        <rect x="30" y="124" width="540" height="178" rx="10" fill="#ffffff"/>
+        <rect x="30" y="124" width="540" height="178" rx="10" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
       </g>
-  <rect x="48" y="136" width="28" height="20" rx="10" fill="#dbeafe"/>
-        <text x="62" y="150" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q1</text>
+  <rect x="48" y="136" width="30" height="20" rx="10" fill="#dbeafe"/>
+        <text x="63" y="150" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q1</text>
   <rect x="506" y="134" width="44" height="18" rx="9" fill="#059669" opacity="0.10"/>
         <text x="528" y="147" font-size="8" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Easy</text>
-  <text x="78" y="160" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">What are the five core learning metrics you should</text>
-  <text x="78" y="176" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">track?</text>
-  <line x1="48" y1="282" x2="552" y2="282" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="3,2"/>
-        <text x="48" y="290" font-size="10" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">✓ </text>
+  <text x="80" y="160" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">A learner tracks 30 study hours this week but</text>
+  <text x="80" y="176" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">their 7-day recall is only 40%. What&apos;s the</text>
+  <text x="80" y="192" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">most likely issue?</text>
+  <text x="80" y="210" font-size="10" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">A.</tspan> A) They need to study more hours
+        </text>
+  <text x="80" y="224" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">B.</tspan> B) They&apos;re using low-ROI methods (passive...
+        </text>
+  <text x="80" y="238" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">C.</tspan> C) They&apos;re studying topics that are too hard
+        </text>
+  <text x="80" y="252" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">D.</tspan> D) Their tracking system is broken
+        </text>
+  <line x1="48" y1="274" x2="552" y2="274" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="48" y="282" font-size="10" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">✓ A.  Answer: B — High hours with low retention is the...</text>
   <g filter="url(#shadowMd)">
-        <rect x="30" y="344" width="540" height="180" rx="10" fill="#ffffff"/>
-        <rect x="30" y="344" width="540" height="180" rx="10" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+        <rect x="30" y="319" width="540" height="178" rx="10" fill="#ffffff"/>
+        <rect x="30" y="319" width="540" height="178" rx="10" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
       </g>
-  <rect x="48" y="356" width="28" height="20" rx="10" fill="#dbeafe"/>
-        <text x="62" y="370" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q2</text>
-  <rect x="492" y="354" width="58" height="18" rx="9" fill="#d97706" opacity="0.10"/>
-        <text x="521" y="367" font-size="8" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Medium</text>
-  <text x="78" y="380" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">How do you detect learning plateaus before they</text>
-  <text x="78" y="396" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">derail you?</text>
-  <line x1="48" y1="502" x2="552" y2="502" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="3,2"/>
-        <text x="48" y="510" font-size="10" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">✓ </text>
+  <rect x="48" y="331" width="30" height="20" rx="10" fill="#dbeafe"/>
+        <text x="63" y="345" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q2</text>
+  <rect x="506" y="329" width="44" height="18" rx="9" fill="#059669" opacity="0.10"/>
+        <text x="528" y="342" font-size="8" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Easy</text>
+  <text x="80" y="355" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">A student&apos;s weekly velocity has been flat at</text>
+  <text x="80" y="371" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">3 concepts/day for 5 weeks despite 1 hour/day of</text>
+  <text x="80" y="387" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">study. What should they do?</text>
+  <text x="80" y="405" font-size="10" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">A.</tspan> A) Increase to 2 hours/day
+        </text>
+  <text x="80" y="419" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">B.</tspan> B) Switch to a different topic for 3 days,...
+        </text>
+  <text x="80" y="433" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">C.</tspan> C) This is normal — continue as-is
+        </text>
+  <text x="80" y="447" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">D.</tspan> D) Give up on the topic
+        </text>
+  <line x1="48" y1="469" x2="552" y2="469" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="48" y="477" font-size="10" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">✓ A.  Answer: B — A 5-week plateau with consistent...</text>
   <g filter="url(#shadowMd)">
-        <rect x="30" y="564" width="540" height="180" rx="10" fill="#ffffff"/>
-        <rect x="30" y="564" width="540" height="180" rx="10" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
+        <rect x="30" y="514" width="540" height="170" rx="10" fill="#ffffff"/>
+        <rect x="30" y="514" width="540" height="170" rx="10" fill="none" stroke="#e2e8f0" stroke-width="0.5"/>
       </g>
-  <rect x="48" y="576" width="28" height="20" rx="10" fill="#dbeafe"/>
-        <text x="62" y="590" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q3</text>
-  <rect x="506" y="574" width="44" height="18" rx="9" fill="#dc2626" opacity="0.10"/>
-        <text x="528" y="587" font-size="8" font-weight="bold" fill="#dc2626" text-anchor="middle" font-family="Arial, sans-serif">Hard</text>
-  <text x="78" y="600" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">How do you measure knowledge coverage against a</text>
-  <text x="78" y="616" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">syllabus?</text>
-  <line x1="48" y1="722" x2="552" y2="722" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="3,2"/>
-        <text x="48" y="730" font-size="10" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">✓ </text>
+  <rect x="48" y="526" width="30" height="20" rx="10" fill="#dbeafe"/>
+        <text x="63" y="540" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q3</text>
+  <rect x="492" y="524" width="58" height="18" rx="9" fill="#d97706" opacity="0.10"/>
+        <text x="521" y="537" font-size="8" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">Medium</text>
+  <text x="80" y="550" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">Which combination of metrics best validates</text>
+  <text x="80" y="566" font-size="11" fill="#1e293b" font-family="Arial, sans-serif" font-weight="600">genuine learning?</text>
+  <text x="80" y="584" font-size="10" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">A.</tspan> A) High velocity + long streak
+        </text>
+  <text x="80" y="598" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">B.</tspan> B) High hours + many highlights
+        </text>
+  <text x="80" y="612" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">C.</tspan> C) High velocity + high 7-day recall rate
+        </text>
+  <text x="80" y="626" font-size="10" fill="#64748b" font-weight="normal" font-family="Arial, sans-serif">
+          <tspan font-weight="bold" fill="#1e293b">D.</tspan> D) Long streak + many problems solved
+        </text>
+  <line x1="48" y1="656" x2="552" y2="656" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="48" y="664" font-size="10" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">✓ A.  Answer: C — Velocity measures pace, and 7-day...</text>
 </svg>

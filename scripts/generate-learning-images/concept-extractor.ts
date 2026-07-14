@@ -37,13 +37,20 @@ function extractTitle(markdown: string): string {
 function extractSubtitle(markdown: string): string {
   const lines = markdown.split('\n');
   let afterTitle = false;
+  let foundPrereqs = false;
   for (const line of lines) {
     if (line.startsWith('# ')) { afterTitle = true; continue; }
-    if (afterTitle && line.trim() && !line.startsWith('#')) {
-      const clean = line.replace(/^>\s*/, '').replace(/\*\*/g, '').trim();
-      if (clean.length > 10) return clean.slice(0, 200);
-    }
     if (afterTitle && line.startsWith('##')) break;
+    if (afterTitle && line.trim()) {
+      // Skip blockquoted prerequisite/next lines
+      if (line.trim().startsWith('>')) { foundPrereqs = true; continue; }
+      // Skip empty lines after prereqs
+      if (foundPrereqs && !line.trim()) continue;
+      // First non-empty, non-blockquote, non-heading line — this is the overview paragraph
+      if (foundPrereqs && line.trim().length > 10) {
+        return line.replace(/\*\*/g, '').trim().slice(0, 200);
+      }
+    }
   }
   return '';
 }
@@ -126,8 +133,13 @@ function extractFormulas(text: string): { name: string; expression: string; desc
   const result: { name: string; expression: string; description: string }[] = [];
   const seen = new Set<string>();
 
+  // Remove code blocks before formula detection to avoid JS template literals ${...} false positives
+  const cleanText = text.replace(/```[\s\S]*?```/g, '');
+
   function addExpr(expr: string, beforeText: string, nameDefault: string) {
-    const clean = expr.replace(/[\[\]{}()]/g, '').replace(/\s+/g, ' ').trim();
+    // Skip template literal patterns (${...}) and anything with curly braces
+    if (expr.includes('{') || expr.includes('}')) return;
+    const clean = expr.replace(/[\[\]()]/g, '').replace(/\s+/g, ' ').trim();
     if (clean.length < 3 || seen.has(clean)) return;
     const nameMatch = beforeText.match(/\*\*([^*]+)\*\*/);
     const name = nameMatch ? nameMatch[1].replace(/\*\*/g, '').trim() : nameDefault;
@@ -138,14 +150,14 @@ function extractFormulas(text: string): { name: string; expression: string; desc
 
   const displayMath = /\$\$([\s\S]*?)\$\$/g;
   let m: RegExpExecArray | null;
-  while ((m = displayMath.exec(text)) !== null) {
+  while ((m = displayMath.exec(cleanText)) !== null) {
     addExpr(m[1], text.slice(Math.max(0, m.index - 120), m.index), `Formula ${result.length + 1}`);
   }
 
   const inlineMath = /\$([^$]+)\$/g;
-  while ((m = inlineMath.exec(text)) !== null) {
+  while ((m = inlineMath.exec(cleanText)) !== null) {
     const expr = m[1].trim();
-    if (expr.length > 4 && /[=\\^_/\{\}\(\)\sum\int\bar\sim]/.test(expr)) {
+    if (expr.length > 4 && /[=\\^_/\sum\int\bar\sim]/.test(expr)) {
       addExpr(expr, text.slice(Math.max(0, m.index - 80), m.index), `Formula ${result.length + 1}`);
     }
   }
@@ -449,17 +461,25 @@ function extractExamples(text: string): { title: string; description: string; co
 
 function extractKeywords(text: string): { term: string; category: string }[] {
   const terms = extractBoldTerms(text);
-  const categories = ['concept', 'definition', 'algorithm', 'tool', 'technique'];
   const keywords: { term: string; category: string }[] = [];
 
+  const genericLabels = new Set([
+    'prerequisites', 'next', 'answer', 'pro tip', 'try this', 'one-sentence takeaway',
+    'remember', 'warning', 'mistake', 'caution', 'common mistake', 'note', 'tip',
+    'key insight', 'practical', 'source', 'topic', 'feature', 'concept', 'definition',
+  ]);
+
   for (const term of terms) {
-    const lower = term.toLowerCase();
+    const lower = term.toLowerCase().trim().replace(/:$/, '');
+    if (genericLabels.has(lower) || lower.length < 3) continue;
+    // Skip Q-number labels like "q1", "q2", etc.
+    if (/^q\d+$/.test(lower)) continue;
     let category = 'concept';
     if (lower.includes('algorithm') || lower.includes('sort') || lower.includes('search')) category = 'algorithm';
     else if (lower.includes('function') || lower.includes('method') || lower.includes('api')) category = 'technique';
     else if (lower.includes('tool') || lower.includes('framework') || lower.includes('library')) category = 'tool';
     else if (lower.includes('definition') || lower.includes('principle') || lower.includes('law')) category = 'definition';
-    keywords.push({ term: term.slice(0, 50), category });
+    keywords.push({ term: term.replace(/:$/, '').slice(0, 50), category });
   }
 
   return [...new Map(keywords.map(k => [k.term, k])).values()].slice(0, 20);
@@ -467,50 +487,101 @@ function extractKeywords(text: string): { term: string; category: string }[] {
 
 function extractQuiz(text: string): { question: string; options: string[]; answerIndex: number; explanation: string }[] {
   const result: { question: string; options: string[]; answerIndex: number; explanation: string }[] = [];
-  const quizSection = text.match(/##\s+Chapter Quiz[\s\S]*?(?=\n##\s|$)/);
-  if (!quizSection) return result;
 
-  const lines = quizSection[0].split('\n');
-  let currentQ = '';
-  let currentOptions: string[] = [];
-  let currentAnswer = '';
-  let currentExplanation = '';
+  function parseQALines(lines: string[]): void {
+    let currentQ = '';
+    let currentOptions: string[] = [];
+    let currentExplanation = '';
+    let inDetails = false;
 
-  for (const line of lines) {
-    const trimmed = line.trim();
-    if (/^\d+[.)]\s+/.test(trimmed) && !trimmed.startsWith('-') && trimmed.length > 10) {
-      if (currentQ && currentOptions.length > 0) {
-        const answerIdx = currentOptions.findIndex(o => o.startsWith('✓') || o.startsWith('*'));
-        result.push({
-          question: currentQ,
-          options: currentOptions.map(o => o.replace(/^[✓*]\s*/, '')),
-          answerIndex: answerIdx >= 0 ? answerIdx : 0,
-          explanation: currentExplanation.slice(0, 200),
-        });
+    for (const line of lines) {
+      const trimmed = line.trim();
+
+      // Handle <details> / <summary> HTML tags (MkDocs pattern)
+      if (trimmed.startsWith('<details>')) { inDetails = true; continue; }
+      if (trimmed.startsWith('</details>')) { inDetails = false; continue; }
+      if (trimmed.startsWith('<summary>')) continue;
+
+      // Detect **Q1:**, **Q2:**, etc. pattern (colon is inside the bold markers)
+      const qMatch = trimmed.match(/^\*\*Q(\d+):\*\*\s*(.+)/);
+      if (qMatch) {
+        if (currentQ && currentOptions.length > 0) {
+          const answerIdx = currentOptions.findIndex(o => /^[✓*✔]/.test(o));
+          result.push({
+            question: currentQ,
+            options: currentOptions.map(o => o.replace(/^[✓*✔]\s*/, '')),
+            answerIndex: answerIdx >= 0 ? answerIdx : 0,
+            explanation: currentExplanation.slice(0, 200),
+          });
+        }
+        currentQ = qMatch[2];
+        currentOptions = [];
+        currentExplanation = '';
+        continue;
       }
-      currentQ = trimmed.replace(/^\d+[.)]\s+/, '');
-      currentOptions = [];
-      currentAnswer = '';
-      currentExplanation = '';
-    } else if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
-      const optText = trimmed.replace(/^[-*]\s+/, '');
-      currentOptions.push(optText);
-    } else if (trimmed.startsWith('**Answer:') || trimmed.startsWith('**Answer**')) {
-      currentAnswer = trimmed.replace(/^\*\*Answer\*\*:?\s*/i, '').replace(/\*\*/g, '');
-      currentExplanation = currentAnswer;
+
+      // Detect 1. or 1) pattern
+      const numMatch = trimmed.match(/^(\d+)[.)]\s+(.+)/);
+      if (numMatch && !trimmed.startsWith('-') && trimmed.length > 10) {
+        if (currentQ && currentOptions.length > 0) {
+          const answerIdx = currentOptions.findIndex(o => /^[✓*✔]/.test(o));
+          result.push({
+            question: currentQ,
+            options: currentOptions.map(o => o.replace(/^[✓*✔]\s*/, '')),
+            answerIndex: answerIdx >= 0 ? answerIdx : 0,
+            explanation: currentExplanation.slice(0, 200),
+          });
+        }
+        currentQ = numMatch[2];
+        currentOptions = [];
+        currentExplanation = '';
+        continue;
+      }
+
+      // Detect options: - A) ... or - ... or * ...
+      if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+        currentOptions.push(trimmed.replace(/^[-*]\s+/, ''));
+        continue;
+      }
+
+      // Detect answer inside or outside details
+      if (/^\*\*Answer\*\*:?\s*/i.test(trimmed) || trimmed.startsWith('**Answer**')) {
+        currentExplanation = trimmed.replace(/^\*\*Answer\*\*:?\s*/i, '').replace(/\*\*/g, '');
+        continue;
+      }
+
+      // If inside <details> and not an option, accumulate explanation
+      if (inDetails && trimmed && !trimmed.startsWith('```')) {
+        currentExplanation += ' ' + trimmed.replace(/\*\*/g, '');
+      }
+    }
+
+    // Push last question
+    if (currentQ && currentOptions.length > 0) {
+      const answerIdx = currentOptions.findIndex(o => /^[✓*✔]/.test(o));
+      result.push({
+        question: currentQ,
+        options: currentOptions.map(o => o.replace(/^[✓*✔]\s*/, '')),
+        answerIndex: answerIdx >= 0 ? answerIdx : 0,
+        explanation: currentExplanation.slice(0, 200),
+      });
     }
   }
 
-  if (currentQ && currentOptions.length > 0) {
-    const answerIdx = currentOptions.findIndex(o => o.startsWith('✓') || o.startsWith('*'));
-    result.push({
-      question: currentQ,
-      options: currentOptions.map(o => o.replace(/^[✓*]\s*/, '')),
-      answerIndex: answerIdx >= 0 ? answerIdx : 0,
-      explanation: currentExplanation.slice(0, 200),
-    });
+  // If text already starts with quiz content (no header), process directly
+  // Matches: **Q1:**, **1.**, or plain 1. at the start
+  if (/^\s*(?:\*\*)?(?:Q\d+:\s*|\d+[.)]\s+)/.test(text)) {
+    parseQALines(text.split('\n'));
+    return result.slice(0, 5);
   }
 
+  // Otherwise, try to match the section header in the full text
+  const quizSection = text.match(/(?<!#)##\s+(?:Chapter Quiz|Self-Assessment Quiz|Quiz)[\s\S]*?(?=\n##\s|$)/);
+  if (!quizSection) return result;
+
+  parseQALines(quizSection[0].split('\n'));
+
+  // Fallback: extract from comparison table
   if (result.length === 0) {
     const qTable = extractTables(quizSection[0]);
     for (const table of qTable) {
@@ -558,6 +629,29 @@ export function extractConcepts(markdown: string): ConceptData {
     }
   }
 
+  // Fallback: extract concepts from "Chapter at a Glance" table (first col = term, second col = definition)
+  if (safeTerms.length < 3) {
+    const glanceMatch = markdown.match(/### Chapter at a Glance\s*\n([\s\S]*?)(?=\n#{1,3}\s|\n---|$)/i);
+    if (glanceMatch) {
+      const tableLines = glanceMatch[1].split('\n').filter(l => l.trim().startsWith('|') && !l.includes('---'));
+      // Skip header row (first line after filter), process data rows
+      for (let i = 1; i < tableLines.length; i++) {
+        const cells = tableLines[i].split('|').filter((_, idx) => idx > 0 && idx < 4).map(c => c.trim());
+        if (cells.length >= 2) {
+          const term = cells[0];
+          const def = cells[1];
+          if (term.length > 2 && term.length < 60 && def.length > 5 && def.length < 300) {
+            const key = term.toLowerCase();
+            if (!seen.has(key)) {
+              seen.add(key);
+              safeTerms.push({ term, definition: cleanMd(def) });
+            }
+          }
+        }
+      }
+    }
+  }
+
   const learningObjectivesSec = sections.get('Learning Objectives') || sections.get('learning objectives') || '';
   const summarySec = sections.get('Summary') || sections.get('Chapter Summary') || sections.get('summary') || '';
   const theorySec = sections.get('Theory') || '';
@@ -579,6 +673,6 @@ export function extractConcepts(markdown: string): ConceptData {
     examples: extractExamples(fullText).slice(0, 4),
     comparisonTables: extractTables(fullText).slice(0, 3),
     quizQuestions: extractQuiz(quizSec || fullText).slice(0, 5),
-    mainTakeaway: extractBoldTerms(summarySec).slice(0, 3).join('; ') || summarySec.replace(/\*\*/g, '').trim().slice(0, 200) || 'Master the core concepts covered in this chapter',
+    mainTakeaway: extractBoldTerms(summarySec).slice(0, 3).join('; ') || summarySec.replace(/\*\*/g, '').trim().replace(/^- /, '').slice(0, 200) || 'Master the core concepts covered in this chapter',
   };
 }

@@ -5,44 +5,6 @@
 
 ---
 
-<!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/hero.svg" alt="Chapter Banner: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/handwritten-notes.svg" alt="Handwritten Notes: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/sticky-notes.svg" alt="Sticky Notes: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/visual-explanation.svg" alt="Visual Explanation: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/architecture.svg" alt="Architecture: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/workflow.svg" alt="Workflow: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/mindmap.svg" alt="Mind Map: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/comparison.svg" alt="Comparison: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/cheatsheet.svg" alt="Cheat Sheet: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/interview-quiz.svg" alt="Quiz Card: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/social-card.svg" alt="Social Card: साधना योजना: ११२ दिनों में ११२ तकनीकें (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
-<!-- End Image Gallery -->
-
 ## इस योजना का उपयोग कैसे करें
 
 यह योजना विज्ञान भैरव तंत्र की ११२ तकनीकों को व्यवस्थित रूप से सीखने और अभ्यास करने के लिए बनाई गई है। इसमें चार स्तरों पर योजनाएँ दी गई हैं — ७ दिन, २१ दिन, ४० दिन और ११२ दिन।
@@ -981,3 +943,4 @@ export { SadhanaPlanner, SadhanaPlan, DailySession, SadhanaProgressStats, UserPr
 
 **अंतिम शब्द:**
 > "चुनो। कोई भी योजना चुनो। लेकिन आज से शुरू करो। कल का इंतज़ार मत करो। समय बीत रहा है — और तुम अभी भी वहीं हो जहाँ कल थे। उठो। एक तकनीक चुनो। और शुरू करो।" — ओशो
+

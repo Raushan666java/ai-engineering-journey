@@ -5,44 +5,6 @@
 
 ---
 
-<!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/hero.svg" alt="Chapter Banner: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/handwritten-notes.svg" alt="Handwritten Notes: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/sticky-notes.svg" alt="Sticky Notes: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/visual-explanation.svg" alt="Visual Explanation: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/architecture.svg" alt="Architecture: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/workflow.svg" alt="Workflow: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/mindmap.svg" alt="Mind Map: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/comparison.svg" alt="Comparison: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/cheatsheet.svg" alt="Cheat Sheet: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/interview-quiz.svg" alt="Quiz Card: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/personality-technique-matcher/social-card.svg" alt="Social Card: आपकी प्रकृति के अनुसार तकनीक: व्यक्तित्व परीक्षण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
-<!-- End Image Gallery -->
-
 ## इस परीक्षण का उद्देश्य
 
 यह परीक्षण ओशो के **व्यक्तित्व-आधारित वर्गीकरण** पर आधारित है। ओशो ने अपने प्रवचनों में स्पष्ट किया कि सभी ११२ तकनीकें सभी के लिए नहीं हैं — हर व्यक्ति की अपनी प्रकृति होती है, और उसी प्रकृति के अनुसार तकनीक चुननी चाहिए।
@@ -924,3 +886,4 @@ runPersonalityTestDemo();
 | **मिश्रित प्रकृति** | यदि दो या अधिक प्रकार बराबर हों — दोनों से मिलाएँ |
 | **सात दिन का नियम** | एक तकनीक को ७ दिन आज़माएँ — फिर तय करें |
 | **ओशो का आग्रह** | तकनीक को भी छोड़ना सीखें — नाव को पार उतरने पर |
+

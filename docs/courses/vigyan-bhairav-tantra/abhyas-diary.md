@@ -4,44 +4,6 @@
 
 ---
 
-<!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/hero.svg" alt="Chapter Banner: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/handwritten-notes.svg" alt="Handwritten Notes: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/sticky-notes.svg" alt="Sticky Notes: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/visual-explanation.svg" alt="Visual Explanation: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/architecture.svg" alt="Architecture: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/workflow.svg" alt="Workflow: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/mindmap.svg" alt="Mind Map: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/comparison.svg" alt="Comparison: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/cheatsheet.svg" alt="Cheat Sheet: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/interview-quiz.svg" alt="Quiz Card: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/social-card.svg" alt="Social Card: साधना डायरी: 112 दिनों का अभ्यास पत्रिका" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
-<!-- End Image Gallery -->
-
 ## विषय-सूची
 
 | क्र. | अनुभाग | पृष्ठ |
@@ -1629,3 +1591,4 @@ export { SadhnaDiary, DailyEntry, WeeklyReview, MonthlyProgress, TechniqueRecord
 **✿ साधना डायरी समाप्त ✿**
 
 इस डायरी का प्रत्येक पृष्ठ आपकी यात्रा का एक कदम है। इसे संभाल कर रखें। वर्षों बाद जब आप इसे पलटेंगे, तो आप अपने विकास को स्वयं देख सकेंगे। यही सबसे बड़ा गुरु है — आपका अपना अनुभव।
+

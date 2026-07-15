@@ -5,44 +5,6 @@
 
 ---
 
-<!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/hero.svg" alt="Chapter Banner: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/handwritten-notes.svg" alt="Handwritten Notes: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/sticky-notes.svg" alt="Sticky Notes: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/visual-explanation.svg" alt="Visual Explanation: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/architecture.svg" alt="Architecture: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/workflow.svg" alt="Workflow: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/mindmap.svg" alt="Mind Map: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/comparison.svg" alt="Comparison: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/cheatsheet.svg" alt="Cheat Sheet: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/interview-quiz.svg" alt="Quiz Card: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/social-card.svg" alt="Social Card: संस्कृत श्लोक सूची: विज्ञान भैरव तंत्र (ओशो की व्याख्या के साथ)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
-<!-- End Image Gallery -->
-
 ## इस सूची का उपयोग कैसे करें
 
 यह सूची विज्ञान भैरव तंत्र के **५५ सबसे महत्वपूर्ण श्लोकों** का संग्रह है — जिन पर ओशो ने अपने प्रवचनों में सबसे अधिक जोर दिया। प्रत्येक श्लोक के साथ दी गई है:
@@ -1580,3 +1542,4 @@ console.log('Stats:', index.getStats());
 > **नोट**: यह श्लोक सूची विज्ञान भैरव तंत्र (ओशो) के ११२ ध्यान विधियों में से ५५ प्रमुख श्लोकों का संकलन है। प्रत्येक श्लोक के लिए संस्कृत मूल, पदच्छेद, शब्दार्थ, ओशो की व्याख्या, अध्याय और श्रेणी दी गई है। TypeScript `ShlokaIndex` क्लास प्रोग्रामेटिक एक्सेस, सर्च, फिल्टरिंग और विश्लेषण की सुविधा प्रदान करता है।
 
 **कुल श्लोक**: ५५ | **श्रेणियाँ**: १० | **अध्याय**: १४ (१-१८ में से)
+

@@ -5,44 +5,6 @@
 
 ---
 
-<!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/hero.svg" alt="Chapter Banner: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/handwritten-notes.svg" alt="Handwritten Notes: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/sticky-notes.svg" alt="Sticky Notes: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/visual-explanation.svg" alt="Visual Explanation: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/architecture.svg" alt="Architecture: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/workflow.svg" alt="Workflow: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/mindmap.svg" alt="Mind Map: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/comparison.svg" alt="Comparison: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/cheatsheet.svg" alt="Cheat Sheet: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/interview-quiz.svg" alt="Quiz Card: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/quick-reference-112/social-card.svg" alt="Social Card: ११२ ध्यान तकनीकों की त्वरित संदर्शिका (ओशो के अनुसार)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
-<!-- End Image Gallery -->
-
 ## इस संदर्शिका का उपयोग कैसे करें
 
 यह संदर्शिका विज्ञान भैरव तंत्र की सभी ११२ ध्यान तकनीकों का एक त्वरित संदर्भ है — ओशो के प्रवचनों के अनुसार। प्रत्येक तकनीक का संस्कृत नाम, हिंदी विवरण, श्रेणी, कठिनाई स्तर, अनुशंसित समय और ओशो का मुख्य निर्देश दिया गया है।
@@ -850,3 +812,4 @@ export { QuickReferenceFilter, QuickCategory, QuickDifficulty, QuickTechniqueRec
 | **कठिनाई** | ★ (सरल) से ★★★★★ (परम) तक |
 | **समय** | 🕐 ५-१० मिनट से 🕓 ३०+ मिनट तक |
 | **अंतिम संदेश** | विधि ११२ — सब तकनीकों का अंत: "कुछ मत करो, बस हो" |
+

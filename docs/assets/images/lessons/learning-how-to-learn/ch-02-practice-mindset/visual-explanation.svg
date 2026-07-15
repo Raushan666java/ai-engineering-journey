@@ -98,7 +98,7 @@
     <rect x="2.242640687119284" y="-7.242640687119286" width="4" height="6" rx="1" fill="#d97706" transform="rotate(315 4.242640687119284 -4.242640687119286)"/>
   </g>
   <text x="104" y="324" font-size="14" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">Workflow</text>
-  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 2: Apply deliberate practice principles to any skill by identifying</text>
+  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 1: Apply deliberate practice principles to any skill by identifying</text>
   <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">the performance edge, getting...</text>
   <line x1="500" y1="378" x2="500" y2="388" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">

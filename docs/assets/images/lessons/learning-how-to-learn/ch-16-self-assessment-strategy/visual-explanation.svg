@@ -97,7 +97,7 @@
     <rect x="2.242640687119284" y="-7.242640687119286" width="4" height="6" rx="1" fill="#d97706" transform="rotate(315 4.242640687119284 -4.242640687119286)"/>
   </g>
   <text x="104" y="316" font-size="14" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">Workflow</text>
-  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 2: Conduct a comprehensive self-assessment to identify your current</text>
+  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 1: Conduct a comprehensive self-assessment to identify your current</text>
   <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">skill level across any subject |...</text>
   <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">

@@ -47,14 +47,14 @@
   <!-- Title -->
   <text x="400" y="40" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Practice, Mindset &amp; Performance</text>
   <rect x="375" y="50" width="50" height="3" rx="1.5" fill="#2563eb"/>
-  <!-- Step 2: Apply deliberate practice principles to any skill by identifying the performance edge, getting immediate feedback, and working with a coach or role mo -->
+  <!-- Step 1: Apply deliberate practice principles to any skill by identifying the performance edge, getting immediate feedback, and working with a coach or role mo -->
     <rect x="5" y="100" width="130" height="80" rx="40" fill="url(#gBlue)" filter="url(#shadowMd)"/>
   <circle cx="70" cy="126" r="15" fill="#ffffff" opacity="0.25"/>
-      <text x="70" y="131" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">2</text>
+      <text x="70" y="131" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">1</text>
   <text x="70" y="160" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Apply deliberate...</text>
-  <!-- Arrow 2 → 3 -->
+  <!-- Arrow 1 → 2 -->
     <line x1="139" y1="140" x2="166" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
-  <!-- Description for step 2 -->
+  <!-- Description for step 1 -->
     <rect x="9" y="202" width="122" height="128" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
     <rect x="9" y="202" width="122" height="128" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="19" y1="212" x2="121" y2="212" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
@@ -68,11 +68,11 @@
   <rect x="170" y="100" width="130" height="80" rx="40" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" filter="url(#shadowSm)"/>
   <circle cx="235" cy="126" r="15" fill="#2563eb" opacity="0.1"/>
       <circle cx="235" cy="126" r="15" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
-      <text x="235" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">3</text>
+      <text x="235" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">2</text>
   <text x="235" y="160" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Recognize illusions...</text>
-  <!-- Arrow 3 → 4 -->
+  <!-- Arrow 2 → 3 -->
     <line x1="304" y1="140" x2="331" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
-  <!-- Description for step 3 -->
+  <!-- Description for step 2 -->
     <rect x="174" y="202" width="122" height="128" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
     <rect x="174" y="202" width="122" height="128" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="184" y1="212" x2="286" y2="212" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
@@ -86,11 +86,11 @@
   <rect x="335" y="100" width="130" height="80" rx="40" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" filter="url(#shadowSm)"/>
   <circle cx="400" cy="126" r="15" fill="#2563eb" opacity="0.1"/>
       <circle cx="400" cy="126" r="15" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
-      <text x="400" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">4</text>
+      <text x="400" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">3</text>
   <text x="400" y="160" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Distinguish recall...</text>
-  <!-- Arrow 4 → 5 -->
+  <!-- Arrow 3 → 4 -->
     <line x1="469" y1="140" x2="496" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
-  <!-- Description for step 4 -->
+  <!-- Description for step 3 -->
     <rect x="339" y="202" width="122" height="96" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
     <rect x="339" y="202" width="122" height="96" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="349" y1="212" x2="451" y2="212" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
@@ -102,11 +102,11 @@
   <rect x="500" y="100" width="130" height="80" rx="40" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" filter="url(#shadowSm)"/>
   <circle cx="565" cy="126" r="15" fill="#2563eb" opacity="0.1"/>
       <circle cx="565" cy="126" r="15" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
-      <text x="565" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">5</text>
+      <text x="565" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">4</text>
   <text x="565" y="160" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Understand the...</text>
-  <!-- Arrow 5 → 6 -->
+  <!-- Arrow 4 → 5 -->
     <line x1="634" y1="140" x2="661" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
-  <!-- Description for step 5 -->
+  <!-- Description for step 4 -->
     <rect x="504" y="202" width="122" height="128" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
     <rect x="504" y="202" width="122" height="128" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="514" y1="212" x2="616" y2="212" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
@@ -119,9 +119,9 @@
   <text x="565" y="322" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">break out of ruts</text>
   <rect x="665" y="100" width="130" height="80" rx="40" fill="url(#gGreen)" filter="url(#shadowMd)"/>
   <circle cx="730" cy="126" r="15" fill="#ffffff" opacity="0.25"/>
-      <text x="730" y="131" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+      <text x="730" y="131" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">5</text>
   <text x="730" y="160" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Explain knowledge...</text>
-  <!-- Description for step 6 -->
+  <!-- Description for step 5 -->
     <rect x="669" y="202" width="122" height="96" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
     <rect x="669" y="202" width="122" height="96" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
     <line x1="679" y1="212" x2="781" y2="212" stroke="#059669" stroke-width="2" stroke-linecap="round" opacity="0.35"/>

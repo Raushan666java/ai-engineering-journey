@@ -42,7 +42,7 @@
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
     </pattern>
   </defs>
-  <!-- Paper background -- warm cream -->
+  <!--- -->
   <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
   <rect width="600" height="800" fill="url(#lineGrid)" opacity="0.3"/>
   <!-- Red margin line -->

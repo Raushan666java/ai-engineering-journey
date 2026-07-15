@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/handwritten-notes.svg" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/02-arrays/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/.png" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-structures/02-arrays/.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/sticky-notes.svg" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/02-arrays/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/.png" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-structures/02-arrays/.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/visual-explanation.svg" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/02-arrays/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/.png" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-structures/02-arrays/.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

@@ -95,7 +95,7 @@
     <path d="M7.199999999999999,16.799999999999997 A4.800000000000001,4.800000000000001 0 0,1 10.8,8.399999999999999 A6,6 0 0,1 18,9.600000000000001 A3.5999999999999996,3.5999999999999996 0 0,1 20.4,16.799999999999997 Z" fill="#db2777" opacity="0.15" stroke="#db2777" stroke-width="1.2"/>
   </g>
   <text x="104" y="324" font-size="14" font-weight="bold" fill="#db2777" font-family="Arial, sans-serif">Real-world Example</text>
-  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Example 6.1: VPC with Public and Private Subnets:  \\\ash aws ec2</text>
+  <text x="104" y="342" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Example 6.1: VPC with Public and Private Subnets:  \\\ash aws ec2</text>
   <text x="104" y="360" font-size="12" fill="#64748b" font-family="Arial, sans-serif">create-vpc --cidr-block...</text>
   <line x1="500" y1="378" x2="500" y2="388" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
   <g filter="url(#shadowSm)">

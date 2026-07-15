@@ -5,41 +5,21 @@
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/hero.svg" alt="Chapter Banner: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/handwritten-notes.svg" alt="Handwritten Notes: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/sticky-notes.svg" alt="Sticky Notes: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/visual-explanation.svg" alt="Visual Explanation: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/architecture.svg" alt="Architecture: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/workflow.svg" alt="Workflow: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/mindmap.svg" alt="Mind Map: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/comparison.svg" alt="Comparison: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/cheatsheet.svg" alt="Cheat Sheet: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/interview-quiz.svg" alt="Quiz Card: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/social-card.svg" alt="Social Card: Government Job Portal & Notification Tracker" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/job-preparation/06-govt-job-portal-notification-tracker/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 - Navigate all major government job portals and understand their notification patterns

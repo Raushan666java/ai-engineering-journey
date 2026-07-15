@@ -15,41 +15,21 @@ By the end of this chapter, you will be able to:
 - Design effective event payloads, implement event batching, and evaluate event sourcing basics
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/34-async-events/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/hero.svg" alt="Chapter Banner: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/handwritten-notes.svg" alt="Handwritten Notes: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/sticky-notes.svg" alt="Sticky Notes: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/visual-explanation.svg" alt="Visual Explanation: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/architecture.svg" alt="Architecture: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/workflow.svg" alt="Workflow: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/mindmap.svg" alt="Mind Map: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/comparison.svg" alt="Comparison: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/cheatsheet.svg" alt="Cheat Sheet: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/interview-quiz.svg" alt="Quiz Card: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/34-async-events/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/34-async-events/social-card.svg" alt="Social Card: Async Processing & Spring Events" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/34-async-events/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/34-async-events/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/34-async-events/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/34-async-events/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/34-async-events/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/34-async-events/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

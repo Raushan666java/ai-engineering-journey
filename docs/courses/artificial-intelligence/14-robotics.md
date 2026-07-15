@@ -7,41 +7,21 @@
 By the conclusion of this chapter, the student will be able to: (1) describe the hardware components of a robotic system; (2) implement Monte Carlo localization; (3) explain the SLAM problem and its solution approaches; (4) apply motion planning algorithms including RRT; (5) understand control theory fundamentals; (6) compare localization methods and select appropriate techniques; (7) analyze real-world robotics systems from Roomba to Boston Dynamics; (8) answer interview questions on SLAM, sensor fusion, and control theory.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/hero.svg" alt="Chapter Banner: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/architecture.svg" alt="Architecture: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/workflow.svg" alt="Workflow: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/mindmap.svg" alt="Mind Map: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/comparison.svg" alt="Comparison: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/interview-quiz.svg" alt="Quiz Card: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/14-robotics/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/social-card.svg" alt="Social Card: Chapter 14: Robotics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/14-robotics/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/14-robotics/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/14-robotics/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/14-robotics/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

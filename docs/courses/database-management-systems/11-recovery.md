@@ -15,41 +15,21 @@
 - Analyze shadow paging and its trade-offs
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/hero.svg" alt="Chapter Banner: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/sticky-notes.svg" alt="Sticky Notes: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/visual-explanation.svg" alt="Visual Explanation: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/architecture.svg" alt="Architecture: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/workflow.svg" alt="Workflow: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/mindmap.svg" alt="Mind Map: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/comparison.svg" alt="Comparison: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/interview-quiz.svg" alt="Quiz Card: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/11-recovery/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/11-recovery/social-card.svg" alt="Social Card: Chapter 11: Recovery System" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/11-recovery/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/database-management-systems/11-recovery/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/11-recovery/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/database-management-systems/11-recovery/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/11-recovery/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/database-management-systems/11-recovery/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

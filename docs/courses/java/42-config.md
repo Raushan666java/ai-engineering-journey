@@ -5,41 +5,21 @@
 ## Learning Objectives
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/42-config/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/hero.svg" alt="Chapter Banner: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/handwritten-notes.svg" alt="Handwritten Notes: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/sticky-notes.svg" alt="Sticky Notes: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/visual-explanation.svg" alt="Visual Explanation: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/architecture.svg" alt="Architecture: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/workflow.svg" alt="Workflow: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/mindmap.svg" alt="Mind Map: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/comparison.svg" alt="Comparison: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/cheatsheet.svg" alt="Cheat Sheet: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/interview-quiz.svg" alt="Quiz Card: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/42-config/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/42-config/social-card.svg" alt="Social Card: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/42-config/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/42-config/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/42-config/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/42-config/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/42-config/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/42-config/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Chapter at a Glance

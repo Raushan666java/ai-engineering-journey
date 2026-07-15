@@ -5,41 +5,21 @@
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/hero.svg" alt="Chapter Banner: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/handwritten-notes.svg" alt="Handwritten Notes: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/sticky-notes.svg" alt="Sticky Notes: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/visual-explanation.svg" alt="Visual Explanation: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/architecture.svg" alt="Architecture: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/workflow.svg" alt="Workflow: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/mindmap.svg" alt="Mind Map: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/comparison.svg" alt="Comparison: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/cheatsheet.svg" alt="Cheat Sheet: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/interview-quiz.svg" alt="Quiz Card: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/social-card.svg" alt="Social Card: HR Interview, Group Discussion & Soft Skills → Complete Campus Placement Guide" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/placement-preparation/06-hr-gd-soft-skills/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Chapter at a Glance

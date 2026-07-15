@@ -1,17 +1,9 @@
 import { ConceptData, IMAGE_TYPES, ImageType } from './types';
 
 const IMAGE_LABELS: Record<ImageType, { label: string; category: string; desc: string }> = {
-  'hero': { label: 'Chapter Banner', category: 'Overview', desc: 'Chapter title, subtitle, and key stats at a glance' },
   'handwritten-notes': { label: 'Handwritten Notes', category: 'Study', desc: 'Notebook-style condensed notes with definitions and formulas' },
   'sticky-notes': { label: 'Sticky Notes', category: 'Study', desc: 'Quick-revision sticky board with color-coded concepts' },
   'visual-explanation': { label: 'Visual Explanation', category: 'Learn', desc: 'Step-by-step infographic connecting all key ideas' },
-  'architecture': { label: 'Architecture', category: 'Technical', desc: 'System layers and component relationships' },
-  'workflow': { label: 'Workflow', category: 'Technical', desc: 'Process flow with numbered steps and decision points' },
-  'mindmap': { label: 'Mind Map', category: 'Study', desc: 'Concept map showing relationships between topics' },
-  'comparison': { label: 'Comparison', category: 'Technical', desc: 'Side-by-side comparison of related concepts' },
-  'cheatsheet': { label: 'Cheat Sheet', category: 'Practice', desc: 'Single-page quick reference for interviews' },
-  'interview-quiz': { label: 'Quiz Card', category: 'Practice', desc: 'Self-test questions with answer key' },
-  'social-card': { label: 'Social Card', category: 'Overview', desc: 'Open Graph preview for sharing' },
 };
 
 const CATEGORY_LABELS: Record<string, string> = {

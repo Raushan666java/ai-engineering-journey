@@ -7,41 +7,21 @@
 By the conclusion of this chapter, the student will be able to: (1) construct Bayesian networks to model probabilistic relationships from domain knowledge; (2) analyze conditional independence using d-separation rules; (3) implement exact inference via variable elimination; (4) implement approximate inference using Gibbs sampling and likelihood weighting; (5) apply probabilistic reasoning to real-world systems such as medical diagnosis, fault analysis, and bioinformatics.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/hero.svg" alt="Chapter Banner: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/architecture.svg" alt="Architecture: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/workflow.svg" alt="Workflow: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/mindmap.svg" alt="Mind Map: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/comparison.svg" alt="Comparison: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/interview-quiz.svg" alt="Quiz Card: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/social-card.svg" alt="Social Card: Chapter 10: Probabilistic Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

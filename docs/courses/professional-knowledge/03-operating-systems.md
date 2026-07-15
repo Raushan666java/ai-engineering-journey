@@ -10,41 +10,21 @@
 - Calculate disk scheduling seek time for various algorithms
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/hero.svg" alt="Chapter Banner: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/architecture.svg" alt="Architecture: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/workflow.svg" alt="Workflow: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/mindmap.svg" alt="Mind Map: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/comparison.svg" alt="Comparison: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/interview-quiz.svg" alt="Quiz Card: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/social-card.svg" alt="Social Card: Chapter 3: Operating Systems — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/03-operating-systems/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/professional-knowledge/03-operating-systems/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ---

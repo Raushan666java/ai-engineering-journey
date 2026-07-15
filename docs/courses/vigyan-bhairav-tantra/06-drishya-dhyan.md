@@ -18,41 +18,21 @@
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/hero.svg" alt="Chapter Banner: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/handwritten-notes.svg" alt="Handwritten Notes: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/sticky-notes.svg" alt="Sticky Notes: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/visual-explanation.svg" alt="Visual Explanation: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/architecture.svg" alt="Architecture: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/workflow.svg" alt="Workflow: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/mindmap.svg" alt="Mind Map: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/comparison.svg" alt="Comparison: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/cheatsheet.svg" alt="Cheat Sheet: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/interview-quiz.svg" alt="Quiz Card: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/social-card.svg" alt="Social Card: अध्याय ६: दृश्य ध्यान — ओशो की दृश्य तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/06-drishya-dhyan/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## सीखने के उद्देश्य (Learning Objectives)

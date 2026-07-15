@@ -35,7 +35,7 @@ EXAMPLES: ${data.examples.map(e => e.title).join(', ')}
 QUIZ: ${data.quizQuestions.map(q => q.question).join(' | ')}
 `;
 
-  const typePrompts: Record<ImageType, string> = {
+  const typePrompts: Record<string, string> = {
     'hero': `IMAGE TYPE: Chapter Hero Banner
 
 Purpose: Represent the lesson visually as a documentation-style banner.
@@ -184,7 +184,7 @@ ${lessonContext}`,
 }
 
 export function buildAllBriefs(data: ConceptData): ImageBrief[] {
-  return (['hero', 'handwritten-notes', 'sticky-notes', 'visual-explanation', 'architecture', 'workflow', 'mindmap', 'comparison', 'cheatsheet', 'interview-quiz', 'social-card'] as ImageType[]).map(type => ({
+  return (['handwritten-notes', 'sticky-notes', 'visual-explanation'] as ImageType[]).map(type => ({
     type,
     prompt: buildBrief(data, type),
   }));

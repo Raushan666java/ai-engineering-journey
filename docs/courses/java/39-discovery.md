@@ -6,41 +6,21 @@
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/39-discovery/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/hero.svg" alt="Chapter Banner: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/handwritten-notes.svg" alt="Handwritten Notes: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/sticky-notes.svg" alt="Sticky Notes: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/visual-explanation.svg" alt="Visual Explanation: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/architecture.svg" alt="Architecture: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/workflow.svg" alt="Workflow: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/mindmap.svg" alt="Mind Map: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/comparison.svg" alt="Comparison: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/cheatsheet.svg" alt="Cheat Sheet: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/interview-quiz.svg" alt="Quiz Card: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/39-discovery/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/39-discovery/social-card.svg" alt="Social Card: Service Discovery & Load Balancing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/39-discovery/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/39-discovery/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/39-discovery/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/39-discovery/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/39-discovery/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/39-discovery/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

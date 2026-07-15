@@ -7,41 +7,21 @@
 > **One-Sentence Takeaway:** Node.js uses a single-threaded event loop with six phases for async I/O processing.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/web-development/08-node-express/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/hero.svg" alt="Chapter Banner: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/handwritten-notes.svg" alt="Handwritten Notes: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/sticky-notes.svg" alt="Sticky Notes: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/visual-explanation.svg" alt="Visual Explanation: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/architecture.svg" alt="Architecture: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/workflow.svg" alt="Workflow: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/mindmap.svg" alt="Mind Map: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/comparison.svg" alt="Comparison: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/cheatsheet.svg" alt="Cheat Sheet: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/interview-quiz.svg" alt="Quiz Card: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/web-development/08-node-express/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/web-development/08-node-express/social-card.svg" alt="Social Card: Chapter 8 → Node.js and Express" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/08-node-express/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/web-development/08-node-express/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/08-node-express/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/web-development/08-node-express/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/08-node-express/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/web-development/08-node-express/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

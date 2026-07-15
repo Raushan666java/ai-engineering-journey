@@ -12,41 +12,21 @@
 | LO6 | Identify key challenges in production AI systems and their mitigation strategies |
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/hero.svg" alt="Chapter Banner: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/architecture.svg" alt="Architecture: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/workflow.svg" alt="Workflow: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/mindmap.svg" alt="Mind Map: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/comparison.svg" alt="Comparison: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/interview-quiz.svg" alt="Quiz Card: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/social-card.svg" alt="Social Card: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## 1.1 What is AI Engineering?

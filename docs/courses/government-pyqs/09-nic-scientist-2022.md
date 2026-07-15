@@ -5,41 +5,21 @@
 ---
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/hero.svg" alt="Chapter Banner: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/handwritten-notes.svg" alt="Handwritten Notes: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/sticky-notes.svg" alt="Sticky Notes: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/visual-explanation.svg" alt="Visual Explanation: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/architecture.svg" alt="Architecture: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/workflow.svg" alt="Workflow: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/mindmap.svg" alt="Mind Map: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/comparison.svg" alt="Comparison: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/cheatsheet.svg" alt="Cheat Sheet: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/interview-quiz.svg" alt="Quiz Card: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/social-card.svg" alt="Social Card: NIC Scientist B 2022 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Exam Pattern

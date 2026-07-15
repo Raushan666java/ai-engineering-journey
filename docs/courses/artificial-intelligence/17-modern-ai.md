@@ -7,41 +7,21 @@
 By the conclusion of this chapter, the student will be able to: (1) describe the transformer architecture and its significance; (2) explain foundation models and their emergent abilities; (3) implement in-context learning and prompt engineering; (4) understand multimodal model architectures; (5) describe AI agent architectures including ReAct, MCP, and AutoGPT; (6) implement generative AI algorithms from scratch; (7) design autonomous agent systems; (8) evaluate modern AI systems across real-world applications.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/hero.svg" alt="Chapter Banner: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.svg" alt="Handwritten Notes: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.svg" alt="Sticky Notes: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.svg" alt="Visual Explanation: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/architecture.svg" alt="Architecture: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/workflow.svg" alt="Workflow: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/mindmap.svg" alt="Mind Map: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/comparison.svg" alt="Comparison: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/cheatsheet.svg" alt="Cheat Sheet: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/interview-quiz.svg" alt="Quiz Card: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/social-card.svg" alt="Social Card: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

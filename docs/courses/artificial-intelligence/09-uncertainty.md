@@ -7,41 +7,21 @@
 By the conclusion of this chapter, the student will be able to: (1) apply probability theory to represent uncertain knowledge; (2) construct and query Bayesian networks; (3) analyze conditional independence using d-separation; (4) implement exact and approximate inference in Bayesian networks; (5) model temporal processes using dynamic Bayesian networks and hidden Markov models.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/hero.svg" alt="Chapter Banner: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/architecture.svg" alt="Architecture: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/workflow.svg" alt="Workflow: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/mindmap.svg" alt="Mind Map: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/comparison.svg" alt="Comparison: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/interview-quiz.svg" alt="Quiz Card: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/social-card.svg" alt="Social Card: Chapter 9: Reasoning Under Uncertainty" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/09-uncertainty/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

@@ -16,41 +16,21 @@ This chapter shows you how to use the **blank page method**, how **Anki** implem
 ![Active Recall & Spaced Repetition](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition-dg1.png)
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/hero.svg" alt="Chapter Banner: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/architecture.svg" alt="Architecture: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/workflow.svg" alt="Workflow: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/mindmap.svg" alt="Mind Map: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/comparison.svg" alt="Comparison: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/interview-quiz.svg" alt="Quiz Card: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/social-card.svg" alt="Social Card: Chapter 3: Active Recall & Spaced Repetition" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-03-active-recall-spaced-repetition/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

@@ -14,41 +14,21 @@
 - Compare ACID with BASE in distributed contexts
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/hero.svg" alt="Chapter Banner: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/architecture.svg" alt="Architecture: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/workflow.svg" alt="Workflow: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/mindmap.svg" alt="Mind Map: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/comparison.svg" alt="Comparison: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/interview-quiz.svg" alt="Quiz Card: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/database-management-systems/09-transactions/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/database-management-systems/09-transactions/social-card.svg" alt="Social Card: Chapter 9: Transactions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/09-transactions/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/database-management-systems/09-transactions/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/09-transactions/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/database-management-systems/09-transactions/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/09-transactions/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/database-management-systems/09-transactions/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

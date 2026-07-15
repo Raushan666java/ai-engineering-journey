@@ -17,41 +17,21 @@ Every example in this chapter is complete and compilable. Create a Maven project
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/11-auto-configuration/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/hero.svg" alt="Chapter Banner: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/handwritten-notes.svg" alt="Handwritten Notes: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/sticky-notes.svg" alt="Sticky Notes: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/visual-explanation.svg" alt="Visual Explanation: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/architecture.svg" alt="Architecture: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/workflow.svg" alt="Workflow: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/mindmap.svg" alt="Mind Map: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/comparison.svg" alt="Comparison: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/cheatsheet.svg" alt="Cheat Sheet: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/interview-quiz.svg" alt="Quiz Card: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/11-auto-configuration/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/11-auto-configuration/social-card.svg" alt="Social Card: Auto-Configuration & Starters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/11-auto-configuration/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/11-auto-configuration/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/11-auto-configuration/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/11-auto-configuration/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/11-auto-configuration/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/11-auto-configuration/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

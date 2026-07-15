@@ -5,41 +5,21 @@
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/hero.svg" alt="Chapter Banner: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.svg" alt="Handwritten Notes: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.svg" alt="Sticky Notes: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.svg" alt="Visual Explanation: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/architecture.svg" alt="Architecture: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/workflow.svg" alt="Workflow: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/mindmap.svg" alt="Mind Map: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/comparison.svg" alt="Comparison: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/cheatsheet.svg" alt="Cheat Sheet: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/interview-quiz.svg" alt="Quiz Card: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/social-card.svg" alt="Social Card: Chapter 8: Sports, Awards & International Organizations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 - Recall winners of major sports tournaments — Olympics, Cricket World Cup, FIFA, Asian Games, Commonwealth Games

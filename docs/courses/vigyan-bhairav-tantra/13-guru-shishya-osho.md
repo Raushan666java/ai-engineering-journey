@@ -1,41 +1,21 @@
 # अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/hero.svg" alt="Chapter Banner: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/handwritten-notes.svg" alt="Handwritten Notes: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/sticky-notes.svg" alt="Sticky Notes: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/visual-explanation.svg" alt="Visual Explanation: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/architecture.svg" alt="Architecture: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/workflow.svg" alt="Workflow: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/mindmap.svg" alt="Mind Map: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/comparison.svg" alt="Comparison: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/cheatsheet.svg" alt="Cheat Sheet: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/interview-quiz.svg" alt="Quiz Card: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/social-card.svg" alt="Social Card: अध्याय १३: गुरु-शिष्य: ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/13-guru-shishya-osho/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## सीखने के उद्देश्य (Learning Objectives)

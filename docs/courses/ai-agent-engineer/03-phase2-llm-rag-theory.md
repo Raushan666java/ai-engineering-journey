@@ -7,41 +7,21 @@
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/hero.svg" alt="Chapter Banner: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/handwritten-notes.svg" alt="Handwritten Notes: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/sticky-notes.svg" alt="Sticky Notes: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/visual-explanation.svg" alt="Visual Explanation: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/architecture.svg" alt="Architecture: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/workflow.svg" alt="Workflow: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/mindmap.svg" alt="Mind Map: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/comparison.svg" alt="Comparison: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/cheatsheet.svg" alt="Cheat Sheet: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/interview-quiz.svg" alt="Quiz Card: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/social-card.svg" alt="Social Card: Phase 2 — LLM Fundamentals + RAG Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Topic Table

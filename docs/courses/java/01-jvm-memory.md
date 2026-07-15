@@ -7,41 +7,21 @@
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/01-jvm-memory/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/hero.svg" alt="Chapter Banner: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/handwritten-notes.svg" alt="Handwritten Notes: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/sticky-notes.svg" alt="Sticky Notes: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/visual-explanation.svg" alt="Visual Explanation: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/architecture.svg" alt="Architecture: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/workflow.svg" alt="Workflow: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/mindmap.svg" alt="Mind Map: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/comparison.svg" alt="Comparison: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/cheatsheet.svg" alt="Cheat Sheet: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/interview-quiz.svg" alt="Quiz Card: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/01-jvm-memory/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/01-jvm-memory/social-card.svg" alt="Social Card: JVM Architecture & Memory Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/01-jvm-memory/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/01-jvm-memory/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/01-jvm-memory/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/01-jvm-memory/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/01-jvm-memory/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/01-jvm-memory/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

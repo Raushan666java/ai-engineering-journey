@@ -16,41 +16,21 @@
 ---
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/hero.svg" alt="Chapter Banner: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/handwritten-notes.svg" alt="Handwritten Notes: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/sticky-notes.svg" alt="Sticky Notes: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/visual-explanation.svg" alt="Visual Explanation: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/architecture.svg" alt="Architecture: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/workflow.svg" alt="Workflow: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/mindmap.svg" alt="Mind Map: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/comparison.svg" alt="Comparison: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/cheatsheet.svg" alt="Cheat Sheet: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/interview-quiz.svg" alt="Quiz Card: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/19-architecture-patterns/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/social-card.svg" alt="Social Card: Chapter 19: Laravel Application Architecture Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/19-architecture-patterns/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/19-architecture-patterns/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/19-architecture-patterns/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/19-architecture-patterns/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

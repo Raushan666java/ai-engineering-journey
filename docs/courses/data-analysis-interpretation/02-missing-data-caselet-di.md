@@ -11,41 +11,21 @@ By the end of this chapter, you will be able to:
 - Distinguish between solvable and unsolvable missing data scenarios
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/hero.svg" alt="Chapter Banner: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/architecture.svg" alt="Architecture: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/workflow.svg" alt="Workflow: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/mindmap.svg" alt="Mind Map: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/comparison.svg" alt="Comparison: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/interview-quiz.svg" alt="Quiz Card: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/social-card.svg" alt="Social Card: Chapter 2: Missing Data and Caselet DI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ---

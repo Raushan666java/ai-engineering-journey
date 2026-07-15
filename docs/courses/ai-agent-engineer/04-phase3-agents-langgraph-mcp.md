@@ -7,41 +7,21 @@
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/hero.svg" alt="Chapter Banner: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/handwritten-notes.svg" alt="Handwritten Notes: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sticky-notes.svg" alt="Sticky Notes: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/visual-explanation.svg" alt="Visual Explanation: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/architecture.svg" alt="Architecture: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/workflow.svg" alt="Workflow: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/mindmap.svg" alt="Mind Map: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/comparison.svg" alt="Comparison: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/cheatsheet.svg" alt="Cheat Sheet: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/interview-quiz.svg" alt="Quiz Card: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/social-card.svg" alt="Social Card: Phase 3 — AI Agents: LangGraph, CrewAI, MCP" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/ai-agent-engineer/04-phase3-agents-langgraph-mcp/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Topic Table

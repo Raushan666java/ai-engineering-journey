@@ -7,41 +7,21 @@
 By the conclusion of this chapter, the student will be able to: (1) formulate a problem as a state-space search; (2) implement and analyze uninformed search algorithms; (3) evaluate search algorithm performance using completeness, optimality, time complexity, and space complexity; (4) distinguish problem types by observability, determinism, and dynamics; (5) select appropriate search strategies for given problem classes.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/hero.svg" alt="Chapter Banner: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/architecture.svg" alt="Architecture: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/workflow.svg" alt="Workflow: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/mindmap.svg" alt="Mind Map: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/comparison.svg" alt="Comparison: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/interview-quiz.svg" alt="Quiz Card: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/social-card.svg" alt="Social Card: Chapter 2: Problem-Solving by Search" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

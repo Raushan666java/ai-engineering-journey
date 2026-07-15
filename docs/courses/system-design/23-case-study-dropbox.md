@@ -13,41 +13,21 @@
 - Understand the metadata store sharding pattern and the streaming download architecture for large files
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/hero.svg" alt="Chapter Banner: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/handwritten-notes.svg" alt="Handwritten Notes: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/sticky-notes.svg" alt="Sticky Notes: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/visual-explanation.svg" alt="Visual Explanation: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/architecture.svg" alt="Architecture: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/workflow.svg" alt="Workflow: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/mindmap.svg" alt="Mind Map: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/comparison.svg" alt="Comparison: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/cheatsheet.svg" alt="Cheat Sheet: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/interview-quiz.svg" alt="Quiz Card: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/23-case-study-dropbox/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/social-card.svg" alt="Social Card: Chapter 23: Case Study — Dropbox and File Storage" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/23-case-study-dropbox/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/23-case-study-dropbox/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/23-case-study-dropbox/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/system-design/23-case-study-dropbox/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

@@ -15,41 +15,21 @@ This chapter covers common interview questions for Laravel developer roles at lo
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/hero.svg" alt="Chapter Banner: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/handwritten-notes.svg" alt="Handwritten Notes: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/sticky-notes.svg" alt="Sticky Notes: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/visual-explanation.svg" alt="Visual Explanation: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/architecture.svg" alt="Architecture: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/workflow.svg" alt="Workflow: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/mindmap.svg" alt="Mind Map: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/comparison.svg" alt="Comparison: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/cheatsheet.svg" alt="Cheat Sheet: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/interview-quiz.svg" alt="Quiz Card: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/42-interview-logistics/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/42-interview-logistics/social-card.svg" alt="Social Card: Chapter 42: Logistics & Supply Chain → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/42-interview-logistics/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/42-interview-logistics/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/42-interview-logistics/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/42-interview-logistics/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/42-interview-logistics/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/42-interview-logistics/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Chapter at a Glance

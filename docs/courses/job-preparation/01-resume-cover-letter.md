@@ -5,41 +5,21 @@
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/hero.svg" alt="Chapter Banner: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/handwritten-notes.svg" alt="Handwritten Notes: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/sticky-notes.svg" alt="Sticky Notes: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/visual-explanation.svg" alt="Visual Explanation: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/architecture.svg" alt="Architecture: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/workflow.svg" alt="Workflow: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/mindmap.svg" alt="Mind Map: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/comparison.svg" alt="Comparison: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/cheatsheet.svg" alt="Cheat Sheet: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/interview-quiz.svg" alt="Quiz Card: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/social-card.svg" alt="Social Card: Resume and Cover Letter Mastery for Indian IT Jobs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 - Craft a professional, ATS-optimized resume tailored to Indian IT recruitment standards

@@ -16,41 +16,21 @@ dataset "Inequalities" [65, 72, 78, 84, 90]
 ---
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/hero.svg" alt="Chapter Banner: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/handwritten-notes.svg" alt="Handwritten Notes: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/sticky-notes.svg" alt="Sticky Notes: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/visual-explanation.svg" alt="Visual Explanation: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/architecture.svg" alt="Architecture: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/workflow.svg" alt="Workflow: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/mindmap.svg" alt="Mind Map: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/comparison.svg" alt="Comparison: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/cheatsheet.svg" alt="Cheat Sheet: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/interview-quiz.svg" alt="Quiz Card: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/social-card.svg" alt="Social Card: Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/speed-drills/03-reasoning-drills/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/speed-drills/03-reasoning-drills/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Coding-Decoding Drills

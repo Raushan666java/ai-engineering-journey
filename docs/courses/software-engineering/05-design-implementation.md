@@ -14,41 +14,21 @@
 ```
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/hero.svg" alt="Chapter Banner: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/handwritten-notes.svg" alt="Handwritten Notes: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/sticky-notes.svg" alt="Sticky Notes: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/visual-explanation.svg" alt="Visual Explanation: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/architecture.svg" alt="Architecture: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/workflow.svg" alt="Workflow: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/mindmap.svg" alt="Mind Map: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/comparison.svg" alt="Comparison: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/cheatsheet.svg" alt="Cheat Sheet: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/interview-quiz.svg" alt="Quiz Card: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/05-design-implementation/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/social-card.svg" alt="Social Card: Design and Implementation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/05-design-implementation/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/05-design-implementation/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/05-design-implementation/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/05-design-implementation/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Theory

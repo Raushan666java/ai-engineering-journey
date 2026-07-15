@@ -13,41 +13,21 @@
 - Solve interview problems involving stacks and queues
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/hero.svg" alt="Chapter Banner: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/architecture.svg" alt="Architecture: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/workflow.svg" alt="Workflow: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/mindmap.svg" alt="Mind Map: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/comparison.svg" alt="Comparison: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/interview-quiz.svg" alt="Quiz Card: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/c-programming/16-stacks-queues/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/social-card.svg" alt="Social Card: Chapter 16: Stacks and Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/16-stacks-queues/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/16-stacks-queues/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/16-stacks-queues/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/c-programming/16-stacks-queues/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

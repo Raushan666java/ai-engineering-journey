@@ -3,41 +3,21 @@
 ## Learning Objectives
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/p2-java-oop/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/hero.svg" alt="Chapter Banner: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/handwritten-notes.svg" alt="Handwritten Notes: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/sticky-notes.svg" alt="Sticky Notes: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/visual-explanation.svg" alt="Visual Explanation: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/architecture.svg" alt="Architecture: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/workflow.svg" alt="Workflow: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/mindmap.svg" alt="Mind Map: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/comparison.svg" alt="Comparison: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/cheatsheet.svg" alt="Cheat Sheet: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/interview-quiz.svg" alt="Quiz Card: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/p2-java-oop/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/p2-java-oop/social-card.svg" alt="Social Card: Object-Oriented Programming in Java" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/p2-java-oop/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/p2-java-oop/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/p2-java-oop/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/p2-java-oop/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/p2-java-oop/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/p2-java-oop/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Chapter at a Glance

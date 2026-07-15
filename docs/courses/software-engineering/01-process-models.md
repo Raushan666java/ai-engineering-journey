@@ -20,41 +20,21 @@
 > - Evaluate hybrid and custom process models for real-world projects
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/hero.svg" alt="Chapter Banner: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/handwritten-notes.svg" alt="Handwritten Notes: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/sticky-notes.svg" alt="Sticky Notes: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/visual-explanation.svg" alt="Visual Explanation: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/architecture.svg" alt="Architecture: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/workflow.svg" alt="Workflow: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/mindmap.svg" alt="Mind Map: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/comparison.svg" alt="Comparison: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/cheatsheet.svg" alt="Cheat Sheet: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/interview-quiz.svg" alt="Quiz Card: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/01-process-models/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/01-process-models/social-card.svg" alt="Social Card: Software Process Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/01-process-models/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/01-process-models/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/01-process-models/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/01-process-models/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/01-process-models/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/01-process-models/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Theory

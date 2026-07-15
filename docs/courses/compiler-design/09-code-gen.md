@@ -7,41 +7,21 @@
 After completing this chapter, students will be able to: model the target machine for code generation; compute basic blocks and construct flow graphs; determine next-use information via backward scanning; allocate registers within basic blocks using farthest-next-use heuristics; implement graph-coloring register allocation; select instructions via tree-pattern matching with dynamic programming; generate code for procedures with calling conventions; and implement a complete code generator in TypeScript that translates TAC to a simplified assembly.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/hero.svg" alt="Chapter Banner: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/architecture.svg" alt="Architecture: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/workflow.svg" alt="Workflow: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/mindmap.svg" alt="Mind Map: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/comparison.svg" alt="Comparison: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/interview-quiz.svg" alt="Quiz Card: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/compiler-design/09-code-gen/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/compiler-design/09-code-gen/social-card.svg" alt="Social Card: Chapter 9: Code Generation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/09-code-gen/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/compiler-design/09-code-gen/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/09-code-gen/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/compiler-design/09-code-gen/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/09-code-gen/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/compiler-design/09-code-gen/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

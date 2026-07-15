@@ -16,41 +16,21 @@
 > - Develop a state machine engine with guards, actions, and nested states
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/hero.svg" alt="Chapter Banner: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/handwritten-notes.svg" alt="Handwritten Notes: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/sticky-notes.svg" alt="Sticky Notes: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/visual-explanation.svg" alt="Visual Explanation: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/architecture.svg" alt="Architecture: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/workflow.svg" alt="Workflow: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/mindmap.svg" alt="Mind Map: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/comparison.svg" alt="Comparison: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/cheatsheet.svg" alt="Cheat Sheet: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/interview-quiz.svg" alt="Quiz Card: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/software-engineering/03-system-modeling/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/social-card.svg" alt="Social Card: System Modelling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/03-system-modeling/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/03-system-modeling/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/03-system-modeling/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/software-engineering/03-system-modeling/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Theory

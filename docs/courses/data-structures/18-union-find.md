@@ -13,41 +13,21 @@
 - Recognize real-world applications — social networks, image segmentation, percolation.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/data-structures/18-union-find/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/hero.svg" alt="Chapter Banner: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/handwritten-notes.svg" alt="Handwritten Notes: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/sticky-notes.svg" alt="Sticky Notes: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/visual-explanation.svg" alt="Visual Explanation: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/architecture.svg" alt="Architecture: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/workflow.svg" alt="Workflow: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/mindmap.svg" alt="Mind Map: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/comparison.svg" alt="Comparison: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/cheatsheet.svg" alt="Cheat Sheet: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/interview-quiz.svg" alt="Quiz Card: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/data-structures/18-union-find/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/data-structures/18-union-find/social-card.svg" alt="Social Card: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/18-union-find/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-structures/18-union-find/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/18-union-find/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-structures/18-union-find/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/18-union-find/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/data-structures/18-union-find/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

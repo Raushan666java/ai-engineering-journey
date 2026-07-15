@@ -11,41 +11,21 @@
 ---
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/hero.svg" alt="Chapter Banner: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/handwritten-notes.svg" alt="Handwritten Notes: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/sticky-notes.svg" alt="Sticky Notes: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/visual-explanation.svg" alt="Visual Explanation: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/architecture.svg" alt="Architecture: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/workflow.svg" alt="Workflow: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/mindmap.svg" alt="Mind Map: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/comparison.svg" alt="Comparison: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/cheatsheet.svg" alt="Cheat Sheet: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/interview-quiz.svg" alt="Quiz Card: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/social-card.svg" alt="Social Card: अध्याय २: ओशो की तंत्र दृष्टि — तंत्र क्या है, ओशो के अनुसार" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/02-osho-tantra-drishti/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## सीखने के उद्देश्य (Learning Objectives)

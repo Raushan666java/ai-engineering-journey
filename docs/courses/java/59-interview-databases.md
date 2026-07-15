@@ -10,41 +10,21 @@
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/59-interview-databases/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/hero.svg" alt="Chapter Banner: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/handwritten-notes.svg" alt="Handwritten Notes: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/sticky-notes.svg" alt="Sticky Notes: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/visual-explanation.svg" alt="Visual Explanation: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/architecture.svg" alt="Architecture: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/workflow.svg" alt="Workflow: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/mindmap.svg" alt="Mind Map: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/comparison.svg" alt="Comparison: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/cheatsheet.svg" alt="Cheat Sheet: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/interview-quiz.svg" alt="Quiz Card: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases/social-card.svg" alt="Social Card: Chapter 59: Database Interview Q&A for Java & Spring Boot Developers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/59-interview-databases/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/59-interview-databases/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/59-interview-databases/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Chapter at a Glance

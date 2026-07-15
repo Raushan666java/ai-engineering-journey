@@ -11,41 +11,21 @@ This chapter covers the most frequently asked HTML interview questions, organize
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/laravel/51-interview-html/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/hero.svg" alt="Chapter Banner: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/handwritten-notes.svg" alt="Handwritten Notes: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/sticky-notes.svg" alt="Sticky Notes: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/visual-explanation.svg" alt="Visual Explanation: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/architecture.svg" alt="Architecture: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/workflow.svg" alt="Workflow: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/mindmap.svg" alt="Mind Map: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/comparison.svg" alt="Comparison: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/cheatsheet.svg" alt="Cheat Sheet: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/interview-quiz.svg" alt="Quiz Card: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/laravel/51-interview-html/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/laravel/51-interview-html/social-card.svg" alt="Social Card: HTML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/51-interview-html/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/51-interview-html/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/51-interview-html/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/51-interview-html/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/51-interview-html/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/laravel/51-interview-html/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Chapter at a Glance

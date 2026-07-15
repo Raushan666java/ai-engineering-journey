@@ -8,41 +8,21 @@
 By the conclusion of this chapter, the student shall be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/hero.svg" alt="Chapter Banner: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/architecture.svg" alt="Architecture: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/workflow.svg" alt="Workflow: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/mindmap.svg" alt="Mind Map: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/comparison.svg" alt="Comparison: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/interview-quiz.svg" alt="Quiz Card: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/digital-logic/12-hdl/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/digital-logic/12-hdl/social-card.svg" alt="Social Card: Chapter 12: Hardware Description Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/12-hdl/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/digital-logic/12-hdl/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/12-hdl/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/digital-logic/12-hdl/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/12-hdl/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/digital-logic/12-hdl/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

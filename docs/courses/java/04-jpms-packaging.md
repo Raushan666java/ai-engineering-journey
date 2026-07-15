@@ -15,41 +15,21 @@ All examples are written for **Java 21+** and are fully compilable.
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/hero.svg" alt="Chapter Banner: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/handwritten-notes.svg" alt="Handwritten Notes: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/sticky-notes.svg" alt="Sticky Notes: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/visual-explanation.svg" alt="Visual Explanation: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/architecture.svg" alt="Architecture: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/workflow.svg" alt="Workflow: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/mindmap.svg" alt="Mind Map: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/comparison.svg" alt="Comparison: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/cheatsheet.svg" alt="Cheat Sheet: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/interview-quiz.svg" alt="Quiz Card: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/04-jpms-packaging/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/04-jpms-packaging/social-card.svg" alt="Social Card: Java Modules (JPMS) & Packaging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/04-jpms-packaging/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/04-jpms-packaging/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/04-jpms-packaging/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/04-jpms-packaging/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/04-jpms-packaging/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/04-jpms-packaging/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

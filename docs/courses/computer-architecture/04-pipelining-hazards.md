@@ -13,41 +13,21 @@ By the end of this chapter, you will be able to:
 - Differentiate superscalar, VLIW, and multi-threading concepts
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/hero.svg" alt="Chapter Banner: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/handwritten-notes.svg" alt="Handwritten Notes: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/sticky-notes.svg" alt="Sticky Notes: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/visual-explanation.svg" alt="Visual Explanation: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/architecture.svg" alt="Architecture: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/workflow.svg" alt="Workflow: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/mindmap.svg" alt="Mind Map: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/comparison.svg" alt="Comparison: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/cheatsheet.svg" alt="Cheat Sheet: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/interview-quiz.svg" alt="Quiz Card: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/social-card.svg" alt="Social Card: Pipelining and Hazards" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/computer-architecture/04-pipelining-hazards/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ---

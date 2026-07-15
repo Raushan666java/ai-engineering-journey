@@ -5,41 +5,21 @@
 By the end of this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/hero.svg" alt="Chapter Banner: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/handwritten-notes.svg" alt="Handwritten Notes: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/sticky-notes.svg" alt="Sticky Notes: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/visual-explanation.svg" alt="Visual Explanation: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/architecture.svg" alt="Architecture: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/workflow.svg" alt="Workflow: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/mindmap.svg" alt="Mind Map: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/comparison.svg" alt="Comparison: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/cheatsheet.svg" alt="Cheat Sheet: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/interview-quiz.svg" alt="Quiz Card: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/social-card.svg" alt="Social Card: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 - Explain the Account Aggregator (AA) framework and its consent artefact mechanism

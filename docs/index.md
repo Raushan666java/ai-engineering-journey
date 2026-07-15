@@ -7,9 +7,11 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="home-hero">
 
+<p class="hero-kicker">BUILDING IN PUBLIC · 2026</p>
+
 # AI Engineering Journey
 
-<p class="hero-tagline">Laravel developer → AI Automation Engineer. 850+ lessons across 45+ courses, one documented transition at a time.</p>
+<p class="hero-tagline">From Laravel developer to AI Automation Engineer — a practical, project-led roadmap for building real systems.</p>
 
 <div class="hero-stats">
   <span class="hero-stat"><strong>46+</strong> Courses</span>
@@ -28,13 +30,15 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="current-focus-banner">
 
-**Current Focus — Phase 10:** LLMs From Scratch (Tokenizers → Pretraining → SFT → DPO) · **Phase 14:** Agent Engineering (LangGraph, MCP, multi-agent)
+<span class="focus-label">NOW BUILDING</span> <strong>Phase 10:</strong> LLMs From Scratch (Tokenizers → Pretraining → SFT → DPO) <span class="focus-divider">·</span> <strong>Phase 14:</strong> Agent Engineering (LangGraph, MCP, multi-agent)
 
 </div>
 
 ---
 
 ## AI Engineering Path
+
+<p class="section-intro">Follow the sequence, build as you learn, and leave with an evidence-backed portfolio.</p>
 
 <div class="grid cards" markdown>
 
@@ -76,7 +80,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <h2 id="course-catalog">Complete Course Catalog</h2>
 
-<p class="section-subtitle">45+ courses across programming, CS theory, AI, infrastructure, exam preparation, and career readiness — each with Mermaid diagrams, TypeScript code examples, MCQs, and exercises.</p>
+<p class="section-subtitle">A searchable library across programming, core CS, AI, infrastructure, exam preparation, and career readiness. Each course is designed for active learning with diagrams, TypeScript examples, quizzes, and exercises.</p>
 
 ### Languages & Frameworks
 

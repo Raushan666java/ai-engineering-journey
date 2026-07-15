@@ -2,41 +2,21 @@
 
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/hero.svg" alt="Chapter Banner: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/handwritten-notes.svg" alt="Handwritten Notes: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/sticky-notes.svg" alt="Sticky Notes: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/visual-explanation.svg" alt="Visual Explanation: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/architecture.svg" alt="Architecture: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/workflow.svg" alt="Workflow: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/mindmap.svg" alt="Mind Map: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/comparison.svg" alt="Comparison: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/cheatsheet.svg" alt="Cheat Sheet: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/interview-quiz.svg" alt="Quiz Card: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/59-interview-databases-d/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/59-interview-databases-d/social-card.svg" alt="Social Card: Best practice: Make LAZY the global default" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases-d/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/59-interview-databases-d/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases-d/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/59-interview-databases-d/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases-d/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/59-interview-databases-d/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ## Chapter at a Glance

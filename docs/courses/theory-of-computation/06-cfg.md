@@ -15,41 +15,21 @@
 - Understand the relationship between CFGs and pushdown automata (preview).
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/hero.svg" alt="Chapter Banner: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/architecture.svg" alt="Architecture: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/workflow.svg" alt="Workflow: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/mindmap.svg" alt="Mind Map: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/comparison.svg" alt="Comparison: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/interview-quiz.svg" alt="Quiz Card: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/06-cfg/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/social-card.svg" alt="Social Card: Chapter 6: Context-Free Grammars" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/06-cfg/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/06-cfg/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/06-cfg/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/theory-of-computation/06-cfg/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

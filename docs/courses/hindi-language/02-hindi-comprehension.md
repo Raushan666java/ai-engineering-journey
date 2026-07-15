@@ -10,41 +10,21 @@ By the end of this chapter, you will be able to:
 - Apply the SQ3R method specifically adapted for Hindi passages
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/hero.svg" alt="Chapter Banner: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/sticky-notes.svg" alt="Sticky Notes: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/visual-explanation.svg" alt="Visual Explanation: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/architecture.svg" alt="Architecture: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/workflow.svg" alt="Workflow: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/mindmap.svg" alt="Mind Map: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/comparison.svg" alt="Comparison: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/interview-quiz.svg" alt="Quiz Card: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/social-card.svg" alt="Social Card: Chapter 2: अपठित गद्यांश (Unseen Passage Comprehension)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/hindi-language/02-hindi-comprehension/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ---

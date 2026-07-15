@@ -7,41 +7,21 @@
 After completing this chapter, you will be able to:
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/hero.svg" alt="Chapter Banner: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.svg" alt="Handwritten Notes: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.svg" alt="Sticky Notes: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.svg" alt="Visual Explanation: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/architecture.svg" alt="Architecture: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/workflow.svg" alt="Workflow: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/mindmap.svg" alt="Mind Map: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/comparison.svg" alt="Comparison: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/cheatsheet.svg" alt="Cheat Sheet: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/interview-quiz.svg" alt="Quiz Card: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/java/14-logging-error-i18n/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/social-card.svg" alt="Social Card: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

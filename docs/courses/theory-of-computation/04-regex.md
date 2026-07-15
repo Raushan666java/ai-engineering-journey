@@ -15,41 +15,21 @@
 - Understand the limitations of regular expressions.
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/hero.svg" alt="Chapter Banner: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/architecture.svg" alt="Architecture: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/workflow.svg" alt="Workflow: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/mindmap.svg" alt="Mind Map: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/comparison.svg" alt="Comparison: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/interview-quiz.svg" alt="Quiz Card: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/theory-of-computation/04-regex/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/social-card.svg" alt="Social Card: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/04-regex/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/theory-of-computation/04-regex/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/04-regex/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/theory-of-computation/04-regex/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/04-regex/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/theory-of-computation/04-regex/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

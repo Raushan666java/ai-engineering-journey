@@ -29,31 +29,15 @@ export interface ImageFile {
 }
 
 export const IMAGE_TYPES = [
-  'hero',
   'handwritten-notes',
   'sticky-notes',
   'visual-explanation',
-  'architecture',
-  'workflow',
-  'mindmap',
-  'comparison',
-  'cheatsheet',
-  'interview-quiz',
-  'social-card',
 ] as const;
 
 export type ImageType = typeof IMAGE_TYPES[number];
 
 export const IMAGE_SIZES: Record<ImageType, { w: number; h: number }> = {
-  'hero': { w: 1200, h: 400 },
   'handwritten-notes': { w: 600, h: 800 },
   'sticky-notes': { w: 800, h: 600 },
   'visual-explanation': { w: 1000, h: 700 },
-  'architecture': { w: 800, h: 600 },
-  'workflow': { w: 800, h: 600 },
-  'mindmap': { w: 800, h: 700 },
-  'comparison': { w: 900, h: 600 },
-  'cheatsheet': { w: 600, h: 900 },
-  'interview-quiz': { w: 600, h: 800 },
-  'social-card': { w: 1200, h: 630 },
 };

@@ -4,17 +4,9 @@ import sharp from 'sharp';
 import { ALL_COURSE_SLUGS, COURSES_DIR, LESSON_IMAGES_DIR } from './config';
 import { listMarkdownFiles, readFile, writeFile, ensureDir, chapterSlug } from './utils';
 import { extractConcepts } from './concept-extractor';
-import { generateHeroBanner } from './generators/hero-banner';
 import { generateHandwrittenNotes } from './generators/handwritten-notes';
 import { generateStickyNotes } from './generators/sticky-notes';
 import { generateVisualExplanation } from './generators/visual-explanation';
-import { generateArchitecture } from './generators/architecture';
-import { generateWorkflow } from './generators/workflow';
-import { generateMindmap } from './generators/mindmap';
-import { generateComparison } from './generators/comparison';
-import { generateCheatsheet } from './generators/cheatsheet';
-import { generateQuizCard } from './generators/quiz-card';
-import { generateSocialCard } from './generators/social-card';
 import { injectLessonImages } from './injector';
 import { ConceptData, IMAGE_TYPES } from './types';
 
@@ -27,17 +19,9 @@ interface Stats {
 }
 
 const GENERATORS: Record<string, (d: ConceptData) => string> = {
-  'hero': generateHeroBanner,
   'handwritten-notes': generateHandwrittenNotes,
   'sticky-notes': generateStickyNotes,
   'visual-explanation': generateVisualExplanation,
-  'architecture': generateArchitecture,
-  'workflow': generateWorkflow,
-  'mindmap': generateMindmap,
-  'comparison': generateComparison,
-  'cheatsheet': generateCheatsheet,
-  'interview-quiz': generateQuizCard,
-  'social-card': generateSocialCard,
 };
 
 async function svgToWebp(svgContent: string, outputPath: string): Promise<void> {

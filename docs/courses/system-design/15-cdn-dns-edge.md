@@ -12,41 +12,21 @@
 - Formulate DDoS mitigation strategies at the edge: rate limiting, WAF, scrubbing, anycast absorption
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/hero.svg" alt="Chapter Banner: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/handwritten-notes.svg" alt="Handwritten Notes: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/sticky-notes.svg" alt="Sticky Notes: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/visual-explanation.svg" alt="Visual Explanation: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/architecture.svg" alt="Architecture: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/workflow.svg" alt="Workflow: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/mindmap.svg" alt="Mind Map: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/comparison.svg" alt="Comparison: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/cheatsheet.svg" alt="Cheat Sheet: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/interview-quiz.svg" alt="Quiz Card: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/social-card.svg" alt="Social Card: Chapter 15: CDN, DNS, and Edge Computing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/15-cdn-dns-edge/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/system-design/15-cdn-dns-edge/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 

@@ -14,41 +14,21 @@ By the end of this chapter, you will be able to:
 - Reconstruct the full arrangement from partial seating information
 
 <!-- Image Gallery -->
-<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/hero.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/hero.svg" alt="Chapter Banner: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/handwritten-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/handwritten-notes.svg" alt="Handwritten Notes: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/sticky-notes.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/sticky-notes.svg" alt="Sticky Notes: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/visual-explanation.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/visual-explanation.svg" alt="Visual Explanation: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/architecture.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/architecture.svg" alt="Architecture: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/workflow.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/workflow.svg" alt="Workflow: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/mindmap.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/mindmap.svg" alt="Mind Map: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/comparison.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/comparison.svg" alt="Comparison: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/cheatsheet.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/cheatsheet.svg" alt="Cheat Sheet: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/interview-quiz.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/interview-quiz.svg" alt="Quiz Card: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-<a href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/social-card.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/social-card.svg" alt="Social Card: Seating Arrangements — Circular, Linear, and Double Row" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
-</a>
-</div>
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/handwritten-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/handwritten-notes.svg" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/sticky-notes.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/sticky-notes.svg" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/visual-explanation.svg" target="_blank" rel="noopener">
+    <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/visual-explanation.svg" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
 <!-- End Image Gallery -->
 
 ---

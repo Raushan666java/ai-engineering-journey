@@ -590,6 +590,116 @@ a.md-content__button:hover {
 [data-md-color-scheme="slate"] .hero-btn-ghost,
 [data-md-color-scheme="slate"] .cta-secondary { background: #1c2730; color: #e6edf3 !important; }
 
+/* --- Hero subsection links --- */
+.hero-subsection {
+  margin: -1.8rem 0 2.7rem;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.82rem;
+  color: var(--tp-text-soft);
+}
+
+.hero-subsection a {
+  color: var(--tp-green) !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-subsection a:hover {
+  text-decoration: underline;
+}
+
+/* --- Focus mode: better chapter reading experience --- */
+.md-typeset h2 {
+  margin-top: 2rem !important;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--tp-border);
+}
+
+.md-typeset h2:first-of-type {
+  border-top: none;
+  margin-top: 1.5rem !important;
+}
+
+.md-typeset h3 {
+  margin-top: 1.5rem !important;
+}
+
+.md-typeset blockquote {
+  border-left: 4px solid var(--tp-green) !important;
+  background: var(--tp-surface) !important;
+  border-radius: 0 6px 6px 0 !important;
+  padding: 0.8rem 1.2rem !important;
+  margin: 1.2rem 0 !important;
+}
+
+.md-typeset blockquote p {
+  margin: 0 !important;
+}
+
+/* --- Learning path cards on chapter pages --- */
+.tp-path-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--tp-border);
+  border-left: 4px solid var(--tp-green);
+  border-radius: 0.75rem;
+  background: var(--tp-surface);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.tp-path-card:hover {
+  border-color: var(--tp-green);
+  transform: translateX(3px);
+}
+
+.tp-path-card-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.tp-path-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.tp-path-card-body strong {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 0.2rem;
+  color: var(--tp-text);
+}
+
+.tp-path-card-body span {
+  font-size: 0.8rem;
+  color: var(--tp-text-soft);
+  line-height: 1.5;
+}
+
+.tp-path-card-body a {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* --- Category accent colors for course grids --- */
+.course-grid[data-category="languages"] .course-chaps { background: #dbeafe; color: #1e40af; }
+.course-grid[data-category="cs-core"] .course-chaps { background: #fef3c7; color: #92400e; }
+.course-grid[data-category="ai-ml"] .course-chaps { background: #dcfce7; color: #166534; }
+.course-grid[data-category="infra"] .course-chaps { background: #f3e8ff; color: #6b21a8; }
+.course-grid[data-category="practice"] .course-chaps { background: #fce7f3; color: #9d174d; }
+.course-grid[data-category="career"] .course-chaps { background: #e0f2fe; color: #075985; }
+
+[data-md-color-scheme="slate"] .course-grid[data-category="languages"] .course-chaps { background: rgba(30,64,175,0.25); color: #93c5fd; }
+[data-md-color-scheme="slate"] .course-grid[data-category="cs-core"] .course-chaps { background: rgba(146,64,14,0.25); color: #fcd34d; }
+[data-md-color-scheme="slate"] .course-grid[data-category="ai-ml"] .course-chaps { background: rgba(22,101,52,0.25); color: #86efac; }
+[data-md-color-scheme="slate"] .course-grid[data-category="infra"] .course-chaps { background: rgba(107,33,168,0.25); color: #c4b5fd; }
+[data-md-color-scheme="slate"] .course-grid[data-category="practice"] .course-chaps { background: rgba(157,23,77,0.25); color: #f9a8d4; }
+[data-md-color-scheme="slate"] .course-grid[data-category="career"] .course-chaps { background: rgba(7,89,133,0.25); color: #7dd3fc; }
+
 @media screen and (max-width: 44.9375em) {
   .home-hero { margin-top: .4rem; border-radius: 1rem; }
   .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); }

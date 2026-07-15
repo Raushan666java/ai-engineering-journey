@@ -101,126 +101,332 @@ nav:
   - "📄 Resume": resume.md
   - "🗺️ Roadmap": roadmap.md
   - "🔥 Trending": trending.md
-  - "📋 Government Exams":
-    - Overview: courses/government-exams/index.md
-    - 📘 English Language:
-      - Overview: courses/english-language/index.md
-      - Reading Comprehension: courses/english-language/01-reading-comprehension.md
-      - Grammar Essentials: courses/english-language/02-grammar-essentials.md
-      - Vocabulary & Word Usage: courses/english-language/03-vocabulary-word-usage.md
-      - Verbal Ability: courses/english-language/04-verbal-ability.md
-      - Descriptive English: courses/english-language/05-descriptive-english.md
-    - 🧩 Reasoning Ability:
-      - Overview: courses/reasoning-ability/index.md
-      - Puzzles: courses/reasoning-ability/01-puzzles.md
-      - Seating Arrangements: courses/reasoning-ability/02-seating-arrangements.md
-      - Syllogism & Coding-Decoding: courses/reasoning-ability/03-syllogism-coding-decoding.md
-      - Inequalities & Data Sufficiency: courses/reasoning-ability/04-inequalities-data-sufficiency.md
-      - Blood Relations & Direction Sense: courses/reasoning-ability/05-blood-relations-direction-sense.md
-      - Logical Reasoning & Input-Output: courses/reasoning-ability/06-logical-reasoning-input-output.md
-    - 🔢 Quantitative Aptitude:
-      - Overview: courses/quantitative-aptitude/index.md
-      - Arithmetic Foundation: courses/quantitative-aptitude/01-arithmetic-foundation.md
-      - Advanced Arithmetic: courses/quantitative-aptitude/02-advanced-arithmetic.md
-      - Data Interpretation: courses/quantitative-aptitude/03-data-interpretation.md
-      - Number Series: courses/quantitative-aptitude/04-number-series.md
-      - Quadratic Equations & Simplification: courses/quantitative-aptitude/05-quadratic-equations-simplification.md
-      - Permutation, Combination & Probability: courses/quantitative-aptitude/06-permutation-combination-probability.md
-    - 💾 Professional Knowledge Recap:
-      - Overview: courses/professional-knowledge/index.md
-      - DBMS: courses/professional-knowledge/01-dbms.md
-      - Computer Networks: courses/professional-knowledge/02-computer-networks.md
-      - Operating Systems: courses/professional-knowledge/03-operating-systems.md
-      - Data Structures: courses/professional-knowledge/04-data-structures.md
-      - OOPs Concepts: courses/professional-knowledge/05-oops-concepts.md
-      - Software Engineering: courses/professional-knowledge/06-software-engineering.md
-      - Web Technologies: courses/professional-knowledge/07-web-technologies.md
-      - Cloud Computing: courses/professional-knowledge/08-cloud-computing.md
-      - Information Security: courses/professional-knowledge/09-information-security.md
-      - Computer Architecture: courses/professional-knowledge/10-computer-architecture.md
-    - 🏦 Banking Technology:
-      - Overview: courses/banking-technology/index.md
-      - Core Banking Solutions: courses/banking-technology/01-core-banking-solutions.md
-      - Digital Payment Systems: courses/banking-technology/02-digital-payment-systems.md
-      - Banking Security & RBI Guidelines: courses/banking-technology/03-banking-security-guidelines.md
-      - Fintech & Emerging Trends: courses/banking-technology/04-fintech-emerging-trends.md
-    - 🔐 Information Security:
-      - Cryptography Fundamentals: courses/information-security/01-cryptography-fundamentals.md
-      - Network Security: courses/information-security/02-network-security.md
-      - Cyber Threats & Attacks: courses/information-security/03-cyber-threats-attacks.md
-      - Digital Signatures & PKI: courses/information-security/04-digital-signatures-pki.md
-      - Banking & Payment Security: courses/information-security/05-banking-payment-security.md
-    - ⚙️ Computer Architecture:
-      - Number Systems & Boolean Algebra: courses/computer-architecture/01-number-systems.md
-      - CPU Organization: courses/computer-architecture/02-cpu-organization.md
-      - Memory Hierarchy & Cache: courses/computer-architecture/03-memory-hierarchy.md
-      - Pipelining & Hazards: courses/computer-architecture/04-pipelining-hazards.md
-      - IO Organization & DMA: courses/computer-architecture/05-io-organization.md
-    - 🎤 Interview Preparation:
-      - Overview: courses/interview-preparation/index.md
-      - Technical Interview Core CS: courses/interview-preparation/01-technical-interview-core-cs.md
-      - Coding Problem Solving: courses/interview-preparation/02-coding-problem-solving.md
-      - System Design Interview: courses/interview-preparation/03-system-design-interview.md
-      - Database & SQL Interview: courses/interview-preparation/04-database-sql-interview.md
-      - Behavioral & HR Interview: courses/interview-preparation/05-behavioral-hr-interview.md
-      - Govt Exam Interview: courses/interview-preparation/06-govt-exam-interview.md
-      - Resume, LinkedIn & Portfolio: courses/interview-preparation/07-resume-linkedin-portfolio.md
-      - Mock Interview Scenarios: courses/interview-preparation/08-mock-interview-scenarios.md
-      - Company-Wise Preparation: courses/interview-preparation/09-company-wise-preparation.md
-      - Aptitude, Logical & Speed: courses/interview-preparation/10-aptitude-logical-reasoning-speed.md
-      - TCS NQT: courses/interview-preparation/11-company-tcs-nqt.md
-      - Infosys SP: courses/interview-preparation/12-company-infosys-sp.md
-      - Amazon SDE: courses/interview-preparation/13-company-amazon-sde.md
-      - Google SWE: courses/interview-preparation/14-company-google-swe.md
-      - Microsoft SDE: courses/interview-preparation/15-company-microsoft-sde.md
-      - Wipro/HCL/TechM: courses/interview-preparation/16-company-wipro-hcl-techm.md
-      - PSUs & Govt: courses/interview-preparation/17-company-psus-govt.md
-    - 💼 Job Preparation:
-      - Overview: courses/job-preparation/index.md
-      - Resume & Cover Letter: courses/job-preparation/01-resume-cover-letter.md
-      - Job Search Strategy: courses/job-preparation/02-job-search-strategy.md
-      - Aptitude Test Preparation: courses/job-preparation/03-aptitude-test-preparation.md
-      - Group Discussion & Case Study: courses/job-preparation/04-group-discussion-case-study.md
-      - Offer Negotiation & Career Growth: courses/job-preparation/05-offer-negotiation-career-growth.md
-      - Govt Job Portal & Notification Tracker: courses/job-preparation/06-govt-job-portal-notification-tracker.md
-    - 🌍 General Awareness & Current Affairs:
-      - Overview: courses/general-awareness/index.md
-      - Indian Polity & Constitution: courses/general-awareness/01-indian-polity.md
-      - Indian Geography & Environment: courses/general-awareness/02-indian-geography.md
-      - Indian History & Culture: courses/general-awareness/03-indian-history.md
-      - Indian Economy & Planning: courses/general-awareness/04-indian-economy.md
-      - General Science & Technology: courses/general-awareness/05-general-science.md
-      - Current Affairs 2024: courses/general-awareness/06-current-affairs-2024.md
-      - Current Affairs 2025–2026: courses/general-awareness/07-current-affairs-2025-2026.md
-      - Sports, Awards & International Organizations: courses/general-awareness/08-sports-awards-international.md
-    - 🏦 Banking & Financial Awareness:
-      - Overview: courses/banking-financial-awareness/index.md
-      - RBI & Monetary Policy: courses/banking-financial-awareness/01-rbi-monetary-policy.md
-      - Banking System & Regulations: courses/banking-financial-awareness/02-banking-system-regulations.md
-      - Financial Markets & Instruments: courses/banking-financial-awareness/03-financial-markets-instruments.md
-      - Govt Schemes & Budget: courses/banking-financial-awareness/04-government-schemes-budget.md
-      - Banking Terminology & Acts: courses/banking-financial-awareness/05-banking-terminology-acts.md
-    - 🔤 Hindi Language:
-      - Overview: courses/hindi-language/index.md
-      - हिंदी व्याकरण (Grammar): courses/hindi-language/01-hindi-grammar.md
-      - अपठित गद्यांश (Comprehension): courses/hindi-language/02-hindi-comprehension.md
-      - शब्दावली (Vocabulary): courses/hindi-language/03-hindi-vocabulary.md
-      - लेखन कौशल (Writing): courses/hindi-language/04-hindi-writing.md
-      - अनुवाद (Translation): courses/hindi-language/05-hindi-translation.md
-    - 📊 Marketing Aptitude:
-      - Overview: courses/marketing-aptitude/index.md
-      - Marketing Concepts: courses/marketing-aptitude/01-marketing-concepts.md
-      - Sales & Distribution: courses/marketing-aptitude/02-sales-distribution.md
-      - Brand Management & Digital Marketing: courses/marketing-aptitude/03-brand-management-digital.md
-      - Banking Marketing: courses/marketing-aptitude/04-banking-marketing.md
-    - 📈 Data Analysis & Interpretation:
-      - Overview: courses/data-analysis-interpretation/index.md
-      - Advanced Data Interpretation: courses/data-analysis-interpretation/01-advanced-data-interpretation.md
-      - Missing Data & Caselet DI: courses/data-analysis-interpretation/02-missing-data-caselet-di.md
-      - Data Sufficiency: courses/data-analysis-interpretation/03-data-sufficiency.md
-      - Graph & Chart Analysis: courses/data-analysis-interpretation/04-graph-chart-analysis.md
-      - Mixed Data Interpretation: courses/data-analysis-interpretation/05-mixed-data-interpretation.md
-  - "📝 Practice":
+  - "⚡ Modern AI Engineering":
+    - Overview: courses/modern-ai-engineering/index.md
+    - '01 - Intro to AI Engineering': courses/modern-ai-engineering/01-introduction-to-ai-engineering.md
+    - '02 - Data Engineering for AI': courses/modern-ai-engineering/02-data-engineering-for-ai.md
+    - '03 - Understanding Foundation Models': courses/modern-ai-engineering/03-understanding-foundation-models.md
+    - '04 - Evaluation of AI Systems': courses/modern-ai-engineering/04-evaluation-of-ai-systems.md
+    - '05 - Prompt Engineering': courses/modern-ai-engineering/05-prompt-engineering.md
+    - '06 - Retrieval-Augmented Generation': courses/modern-ai-engineering/06-retrieval-augmented-generation.md
+    - '07 - Fine-Tuning': courses/modern-ai-engineering/07-fine-tuning.md
+    - '08 - AI Agents & Tool Use': courses/modern-ai-engineering/08-ai-agents-and-tool-use.md
+    - '09 - Safety, Alignment, Guardrails': courses/modern-ai-engineering/09-safety-alignment-guardrails.md
+    - '10 - Production AI Systems': courses/modern-ai-engineering/10-production-ai-systems.md
+    - '11 - MLOps for AI Engineering': courses/modern-ai-engineering/11-mlops-for-ai-engineering.md
+    - '12 - Capstone: AI Support Platform': courses/modern-ai-engineering/12-capstone-customer-support-platform.md
+  - "🤖 AI Agent Engineer":
+    - Overview: courses/ai-agent-engineer/00-index.md
+    - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md
+    - Phase 1 - Python FastAPI Async: courses/ai-agent-engineer/02-phase1-python-fastapi-async.md
+    - Phase 2 - LLM RAG Theory: courses/ai-agent-engineer/03-phase2-llm-rag-theory.md
+    - Phase 3 - Agents LangGraph MCP: courses/ai-agent-engineer/04-phase3-agents-langgraph-mcp.md
+    - Phase 4 - Production Hardening: courses/ai-agent-engineer/05-phase4-production-hardening.md
+    - Phase 5 - Portfolio & Positioning: courses/ai-agent-engineer/06-phase5-portfolio-positioning.md
+    - Day-by-Day Plan: courses/ai-agent-engineer/07-day-by-day-plan.md
+    - Job Search Playbook: courses/ai-agent-engineer/08-job-search-playbook.md
+    - '09 - AI System Design': courses/ai-agent-engineer/09-ai-system-design.md
+    - '10 - Prompt Engineering Mastery': courses/ai-agent-engineer/10-prompt-engineering-mastery.md
+    - '11 - AI Testing & Evaluation': courses/ai-agent-engineer/11-ai-testing-evaluation.md
+    - '12 - AI Observability & Debugging': courses/ai-agent-engineer/12-ai-observability-debugging.md
+    - '13 - Advanced Vector Search': courses/ai-agent-engineer/13-advanced-vector-search.md
+  - "🤖 AI Engineering":
+    - Overview: ai-engineering-from-scratch/README.md
+    - About: references/ai-engineering/about.md
+    - Lesson Catalog: references/ai-engineering/catalog.md
+    - Roadmap: references/ai-engineering/roadmap.md
+    - Glossary: references/ai-engineering/glossary.md
+    - 📊 Big Data: courses/big-data/index.md
+    - 🧠 Applied AI: courses/applied-ai/index.md
+    - 🎯 GATE CS:
+      - Overview: courses/gate-cs-preparation/index.md
+      - General Aptitude: courses/gate-cs-preparation/01-general-aptitude.md
+      - Discrete Maths & TOC: courses/gate-cs-preparation/02-theory-of-computation.md
+      - Compiler Design: courses/gate-cs-preparation/03-compiler-design.md
+      - Digital Logic: courses/gate-cs-preparation/04-digital-logic.md
+      - Engineering Maths: courses/gate-cs-preparation/06-engineering-mathematics.md
+      - OS: courses/gate-cs-preparation/07-operating-systems.md
+      - DBMS: courses/gate-cs-preparation/08-database-management-systems.md
+      - Computer Networks: courses/gate-cs-preparation/09-computer-networks.md
+      - DS & Algorithms: courses/gate-cs-preparation/10-data-structures-algorithms.md
+      - Computer Architecture: courses/gate-cs-preparation/11-computer-architecture.md
+      - GATE 2025 Solved: courses/gate-cs-preparation/23-gate-2025-solved.md
+      - GATE 2024 Solved: courses/gate-cs-preparation/24-gate-2024-solved.md
+      - GATE 2023 Solved: courses/gate-cs-preparation/25-gate-2023-solved.md
+      - GATE 2022 Solved: courses/gate-cs-preparation/26-gate-2022-solved.md
+      - GATE 2021 Solved: courses/gate-cs-preparation/27-gate-2021-solved.md
+      - GATE 2020 Solved: courses/gate-cs-preparation/28-gate-2020-solved.md
+      - GATE 2019 Solved: courses/gate-cs-preparation/29-gate-2019-solved.md
+    - 💼 Placement: courses/placement-preparation/index.md
+
+
+    - 'Phase 0 - Setup And Tooling':
+        - Overview: ai-engineering-from-scratch/phases/00-setup-and-tooling/README.md
+        - '01 - Dev Environment': ai-engineering-from-scratch/phases/00-setup-and-tooling/01-dev-environment/docs/en.md
+        - '02 - Git And Collaboration': ai-engineering-from-scratch/phases/00-setup-and-tooling/02-git-and-collaboration/docs/en.md
+        - '03 - Gpu Setup And Cloud': ai-engineering-from-scratch/phases/00-setup-and-tooling/03-gpu-setup-and-cloud/docs/en.md
+        - '04 - Apis And Keys': ai-engineering-from-scratch/phases/00-setup-and-tooling/04-apis-and-keys/docs/en.md
+        - '05 - Jupyter Notebooks': ai-engineering-from-scratch/phases/00-setup-and-tooling/05-jupyter-notebooks/docs/en.md
+        - '06 - Python Environments': ai-engineering-from-scratch/phases/00-setup-and-tooling/06-python-environments/docs/en.md
+        - '07 - Docker For Ai': ai-engineering-from-scratch/phases/00-setup-and-tooling/07-docker-for-ai/docs/en.md
+        - '08 - Editor Setup': ai-engineering-from-scratch/phases/00-setup-and-tooling/08-editor-setup/docs/en.md
+        - '09 - Data Management': ai-engineering-from-scratch/phases/00-setup-and-tooling/09-data-management/docs/en.md
+        - '10 - Terminal And Shell': ai-engineering-from-scratch/phases/00-setup-and-tooling/10-terminal-and-shell/docs/en.md
+        - '11 - Linux For Ai': ai-engineering-from-scratch/phases/00-setup-and-tooling/11-linux-for-ai/docs/en.md
+        - '12 - Debugging And Profiling': ai-engineering-from-scratch/phases/00-setup-and-tooling/12-debugging-and-profiling/docs/en.md
+
+    - 'Phase 1 - Math Foundations':
+        - Overview: ai-engineering-from-scratch/phases/01-math-foundations/README.md
+        - '01 - Linear Algebra Intuition': ai-engineering-from-scratch/phases/01-math-foundations/01-linear-algebra-intuition/docs/en.md
+        - '02 - Vectors Matrices Operations': ai-engineering-from-scratch/phases/01-math-foundations/02-vectors-matrices-operations/docs/en.md
+        - '03 - Matrix Transformations': ai-engineering-from-scratch/phases/01-math-foundations/03-matrix-transformations/docs/en.md
+        - '04 - Calculus For Ml': ai-engineering-from-scratch/phases/01-math-foundations/04-calculus-for-ml/docs/en.md
+        - '05 - Chain Rule And Autodiff': ai-engineering-from-scratch/phases/01-math-foundations/05-chain-rule-and-autodiff/docs/en.md
+        - '06 - Probability And Distributions': ai-engineering-from-scratch/phases/01-math-foundations/06-probability-and-distributions/docs/en.md
+        - '07 - Bayes Theorem': ai-engineering-from-scratch/phases/01-math-foundations/07-bayes-theorem/docs/en.md
+        - '08 - Optimization': ai-engineering-from-scratch/phases/01-math-foundations/08-optimization/docs/en.md
+        - '09 - Information Theory': ai-engineering-from-scratch/phases/01-math-foundations/09-information-theory/docs/en.md
+        - '10 - Dimensionality Reduction': ai-engineering-from-scratch/phases/01-math-foundations/10-dimensionality-reduction/docs/en.md
+        - '11 - Singular Value Decomposition': ai-engineering-from-scratch/phases/01-math-foundations/11-singular-value-decomposition/docs/en.md
+        - '12 - Tensor Operations': ai-engineering-from-scratch/phases/01-math-foundations/12-tensor-operations/docs/en.md
+        - '13 - Numerical Stability': ai-engineering-from-scratch/phases/01-math-foundations/13-numerical-stability/docs/en.md
+        - '14 - Norms And Distances': ai-engineering-from-scratch/phases/01-math-foundations/14-norms-and-distances/docs/en.md
+        - '15 - Statistics For Ml': ai-engineering-from-scratch/phases/01-math-foundations/15-statistics-for-ml/docs/en.md
+        - '16 - Sampling Methods': ai-engineering-from-scratch/phases/01-math-foundations/16-sampling-methods/docs/en.md
+        - '17 - Linear Systems': ai-engineering-from-scratch/phases/01-math-foundations/17-linear-systems/docs/en.md
+        - '18 - Convex Optimization': ai-engineering-from-scratch/phases/01-math-foundations/18-convex-optimization/docs/en.md
+        - '19 - Complex Numbers': ai-engineering-from-scratch/phases/01-math-foundations/19-complex-numbers/docs/en.md
+        - '20 - Fourier Transform': ai-engineering-from-scratch/phases/01-math-foundations/20-fourier-transform/docs/en.md
+        - '21 - Graph Theory': ai-engineering-from-scratch/phases/01-math-foundations/21-graph-theory/docs/en.md
+        - '22 - Stochastic Processes': ai-engineering-from-scratch/phases/01-math-foundations/22-stochastic-processes/docs/en.md
+
+    - 'Phase 2 - Ml Fundamentals':
+        - Overview: ai-engineering-from-scratch/phases/02-ml-fundamentals/README.md
+        - '01 - What Is Machine Learning': ai-engineering-from-scratch/phases/02-ml-fundamentals/01-what-is-machine-learning/docs/en.md
+        - '02 - Linear Regression': ai-engineering-from-scratch/phases/02-ml-fundamentals/02-linear-regression/docs/en.md
+        - '03 - Logistic Regression': ai-engineering-from-scratch/phases/02-ml-fundamentals/03-logistic-regression/docs/en.md
+        - '04 - Decision Trees': ai-engineering-from-scratch/phases/02-ml-fundamentals/04-decision-trees/docs/en.md
+        - '05 - Support Vector Machines': ai-engineering-from-scratch/phases/02-ml-fundamentals/05-support-vector-machines/docs/en.md
+        - '06 - Knn And Distances': ai-engineering-from-scratch/phases/02-ml-fundamentals/06-knn-and-distances/docs/en.md
+        - '07 - Unsupervised Learning': ai-engineering-from-scratch/phases/02-ml-fundamentals/07-unsupervised-learning/docs/en.md
+        - '08 - Feature Engineering': ai-engineering-from-scratch/phases/02-ml-fundamentals/08-feature-engineering/docs/en.md
+        - '09 - Model Evaluation': ai-engineering-from-scratch/phases/02-ml-fundamentals/09-model-evaluation/docs/en.md
+        - '10 - Bias Variance': ai-engineering-from-scratch/phases/02-ml-fundamentals/10-bias-variance/docs/en.md
+        - '11 - Ensemble Methods': ai-engineering-from-scratch/phases/02-ml-fundamentals/11-ensemble-methods/docs/en.md
+        - '12 - Hyperparameter Tuning': ai-engineering-from-scratch/phases/02-ml-fundamentals/12-hyperparameter-tuning/docs/en.md
+        - '13 - Ml Pipelines': ai-engineering-from-scratch/phases/02-ml-fundamentals/13-ml-pipelines/docs/en.md
+        - '14 - Naive Bayes': ai-engineering-from-scratch/phases/02-ml-fundamentals/14-naive-bayes/docs/en.md
+        - '15 - Time Series': ai-engineering-from-scratch/phases/02-ml-fundamentals/15-time-series/docs/en.md
+        - '16 - Anomaly Detection': ai-engineering-from-scratch/phases/02-ml-fundamentals/16-anomaly-detection/docs/en.md
+        - '17 - Imbalanced Data': ai-engineering-from-scratch/phases/02-ml-fundamentals/17-imbalanced-data/docs/en.md
+        - '18 - Feature Selection': ai-engineering-from-scratch/phases/02-ml-fundamentals/18-feature-selection/docs/en.md
+
+    - 'Phase 3 - Deep Learning Core':
+        - Overview: ai-engineering-from-scratch/phases/03-deep-learning-core/README.md
+        - '01 - The Perceptron': ai-engineering-from-scratch/phases/03-deep-learning-core/01-the-perceptron/docs/en.md
+        - '02 - Multi Layer Networks': ai-engineering-from-scratch/phases/03-deep-learning-core/02-multi-layer-networks/docs/en.md
+        - '03 - Backpropagation': ai-engineering-from-scratch/phases/03-deep-learning-core/03-backpropagation/docs/en.md
+        - '04 - Activation Functions': ai-engineering-from-scratch/phases/03-deep-learning-core/04-activation-functions/docs/en.md
+        - '05 - Loss Functions': ai-engineering-from-scratch/phases/03-deep-learning-core/05-loss-functions/docs/en.md
+        - '06 - Optimizers': ai-engineering-from-scratch/phases/03-deep-learning-core/06-optimizers/docs/en.md
+        - '07 - Regularization': ai-engineering-from-scratch/phases/03-deep-learning-core/07-regularization/docs/en.md
+        - '08 - Weight Initialization': ai-engineering-from-scratch/phases/03-deep-learning-core/08-weight-initialization/docs/en.md
+        - '09 - Learning Rate Schedules': ai-engineering-from-scratch/phases/03-deep-learning-core/09-learning-rate-schedules/docs/en.md
+        - '10 - Mini Framework': ai-engineering-from-scratch/phases/03-deep-learning-core/10-mini-framework/docs/en.md
+        - '11 - Intro To Pytorch': ai-engineering-from-scratch/phases/03-deep-learning-core/11-intro-to-pytorch/docs/en.md
+        - '12 - Intro To Jax': ai-engineering-from-scratch/phases/03-deep-learning-core/12-intro-to-jax/docs/en.md
+        - '13 - Debugging Neural Networks': ai-engineering-from-scratch/phases/03-deep-learning-core/13-debugging-neural-networks/docs/en.md
+
+    - 'Phase 4 - Computer Vision':
+        - Overview: ai-engineering-from-scratch/phases/04-computer-vision/README.md
+        - '01 - Image Fundamentals': ai-engineering-from-scratch/phases/04-computer-vision/01-image-fundamentals/docs/en.md
+        - '02 - Convolutions From Scratch': ai-engineering-from-scratch/phases/04-computer-vision/02-convolutions-from-scratch/docs/en.md
+        - '03 - Cnns Lenet To Resnet': ai-engineering-from-scratch/phases/04-computer-vision/03-cnns-lenet-to-resnet/docs/en.md
+        - '04 - Image Classification': ai-engineering-from-scratch/phases/04-computer-vision/04-image-classification/docs/en.md
+        - '05 - Transfer Learning': ai-engineering-from-scratch/phases/04-computer-vision/05-transfer-learning/docs/en.md
+        - '06 - Object Detection Yolo': ai-engineering-from-scratch/phases/04-computer-vision/06-object-detection-yolo/docs/en.md
+        - '07 - Semantic Segmentation Unet': ai-engineering-from-scratch/phases/04-computer-vision/07-semantic-segmentation-unet/docs/en.md
+        - '08 - Instance Segmentation Mask Rcnn': ai-engineering-from-scratch/phases/04-computer-vision/08-instance-segmentation-mask-rcnn/docs/en.md
+        - '09 - Image Generation Gans': ai-engineering-from-scratch/phases/04-computer-vision/09-image-generation-gans/docs/en.md
+        - '10 - Image Generation Diffusion': ai-engineering-from-scratch/phases/04-computer-vision/10-image-generation-diffusion/docs/en.md
+        - '11 - Stable Diffusion': ai-engineering-from-scratch/phases/04-computer-vision/11-stable-diffusion/docs/en.md
+        - '12 - Video Understanding': ai-engineering-from-scratch/phases/04-computer-vision/12-video-understanding/docs/en.md
+        - '13 - 3D Vision Nerf': ai-engineering-from-scratch/phases/04-computer-vision/13-3d-vision-nerf/docs/en.md
+        - '14 - Vision Transformers': ai-engineering-from-scratch/phases/04-computer-vision/14-vision-transformers/docs/en.md
+        - '15 - Real Time Edge': ai-engineering-from-scratch/phases/04-computer-vision/15-real-time-edge/docs/en.md
+        - '16 - Vision Pipeline Capstone': ai-engineering-from-scratch/phases/04-computer-vision/16-vision-pipeline-capstone/docs/en.md
+        - '17 - Self Supervised Vision': ai-engineering-from-scratch/phases/04-computer-vision/17-self-supervised-vision/docs/en.md
+        - '18 - Open Vocab Clip': ai-engineering-from-scratch/phases/04-computer-vision/18-open-vocab-clip/docs/en.md
+        - '19 - Ocr Document Understanding': ai-engineering-from-scratch/phases/04-computer-vision/19-ocr-document-understanding/docs/en.md
+        - '20 - Image Retrieval Metric': ai-engineering-from-scratch/phases/04-computer-vision/20-image-retrieval-metric/docs/en.md
+        - '21 - Keypoint Pose': ai-engineering-from-scratch/phases/04-computer-vision/21-keypoint-pose/docs/en.md
+        - '22 - 3D Gaussian Splatting': ai-engineering-from-scratch/phases/04-computer-vision/22-3d-gaussian-splatting/docs/en.md
+        - '23 - Diffusion Transformers Rectified Flow': ai-engineering-from-scratch/phases/04-computer-vision/23-diffusion-transformers-rectified-flow/docs/en.md
+        - '24 - Sam3 Open Vocab Segmentation': ai-engineering-from-scratch/phases/04-computer-vision/24-sam3-open-vocab-segmentation/docs/en.md
+        - '25 - Vision Language Models': ai-engineering-from-scratch/phases/04-computer-vision/25-vision-language-models/docs/en.md
+        - '26 - Monocular Depth': ai-engineering-from-scratch/phases/04-computer-vision/26-monocular-depth/docs/en.md
+        - '27 - Multi Object Tracking': ai-engineering-from-scratch/phases/04-computer-vision/27-multi-object-tracking/docs/en.md
+        - '28 - World Models Video Diffusion': ai-engineering-from-scratch/phases/04-computer-vision/28-world-models-video-diffusion/docs/en.md
+
+    - 'Phase 5 - Nlp Foundations To Advanced':
+        - Overview: ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/README.md
+        - '01 - Text Processing': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/01-text-processing/docs/en.md
+        - '02 - Bag Of Words Tfidf': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/02-bag-of-words-tfidf/docs/en.md
+        - '03 - Word Embeddings Word2vec': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/03-word-embeddings-word2vec/docs/en.md
+        - '04 - Glove Fasttext Subword': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/04-glove-fasttext-subword/docs/en.md
+        - '05 - Sentiment Analysis': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/05-sentiment-analysis/docs/en.md
+        - '06 - Named Entity Recognition': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/06-named-entity-recognition/docs/en.md
+        - '07 - Pos Tagging Parsing': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/07-pos-tagging-parsing/docs/en.md
+        - '08 - Cnns Rnns For Text': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/08-cnns-rnns-for-text/docs/en.md
+        - '09 - Sequence To Sequence': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/09-sequence-to-sequence/docs/en.md
+        - '10 - Attention Mechanism': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/10-attention-mechanism/docs/en.md
+        - '11 - Machine Translation': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/11-machine-translation/docs/en.md
+        - '12 - Text Summarization': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/12-text-summarization/docs/en.md
+        - '13 - Question Answering': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/13-question-answering/docs/en.md
+        - '14 - Information Retrieval Search': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/14-information-retrieval-search/docs/en.md
+        - '15 - Topic Modeling': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/15-topic-modeling/docs/en.md
+        - '16 - Text Generation Pre Transformer': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/16-text-generation-pre-transformer/docs/en.md
+        - '17 - Chatbots Rule To Neural': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/17-chatbots-rule-to-neural/docs/en.md
+        - '18 - Multilingual Nlp': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/18-multilingual-nlp/docs/en.md
+        - '19 - Subword Tokenization': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/19-subword-tokenization/docs/en.md
+        - '20 - Structured Outputs Constrained Decoding': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/20-structured-outputs-constrained-decoding/docs/en.md
+        - '21 - Nli Textual Entailment': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/21-nli-textual-entailment/docs/en.md
+        - '22 - Embedding Models Deep Dive': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/22-embedding-models-deep-dive/docs/en.md
+        - '23 - Chunking Strategies Rag': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/23-chunking-strategies-rag/docs/en.md
+        - '24 - Coreference Resolution': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/24-coreference-resolution/docs/en.md
+        - '25 - Entity Linking': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/25-entity-linking/docs/en.md
+        - '26 - Relation Extraction Kg': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/26-relation-extraction-kg/docs/en.md
+        - '27 - Llm Evaluation Frameworks': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/27-llm-evaluation-frameworks/docs/en.md
+        - '28 - Long Context Evaluation': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/28-long-context-evaluation/docs/en.md
+        - '29 - Dialogue State Tracking': ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/29-dialogue-state-tracking/docs/en.md
+
+    - 'Phase 6 - Speech And Audio':
+        - Overview: ai-engineering-from-scratch/phases/06-speech-and-audio/README.md
+        - '01 - Audio Fundamentals': ai-engineering-from-scratch/phases/06-speech-and-audio/01-audio-fundamentals/docs/en.md
+        - '02 - Spectrograms Mel Features': ai-engineering-from-scratch/phases/06-speech-and-audio/02-spectrograms-mel-features/docs/en.md
+        - '03 - Audio Classification': ai-engineering-from-scratch/phases/06-speech-and-audio/03-audio-classification/docs/en.md
+        - '04 - Speech Recognition Asr': ai-engineering-from-scratch/phases/06-speech-and-audio/04-speech-recognition-asr/docs/en.md
+        - '05 - Whisper Architecture Finetuning': ai-engineering-from-scratch/phases/06-speech-and-audio/05-whisper-architecture-finetuning/docs/en.md
+        - '06 - Speaker Recognition Verification': ai-engineering-from-scratch/phases/06-speech-and-audio/06-speaker-recognition-verification/docs/en.md
+        - '07 - Text To Speech': ai-engineering-from-scratch/phases/06-speech-and-audio/07-text-to-speech/docs/en.md
+        - '08 - Voice Cloning Conversion': ai-engineering-from-scratch/phases/06-speech-and-audio/08-voice-cloning-conversion/docs/en.md
+        - '09 - Music Generation': ai-engineering-from-scratch/phases/06-speech-and-audio/09-music-generation/docs/en.md
+        - '10 - Audio Language Models': ai-engineering-from-scratch/phases/06-speech-and-audio/10-audio-language-models/docs/en.md
+        - '11 - Real Time Audio Processing': ai-engineering-from-scratch/phases/06-speech-and-audio/11-real-time-audio-processing/docs/en.md
+        - '12 - Voice Assistant Pipeline': ai-engineering-from-scratch/phases/06-speech-and-audio/12-voice-assistant-pipeline/docs/en.md
+        - '13 - Neural Audio Codecs': ai-engineering-from-scratch/phases/06-speech-and-audio/13-neural-audio-codecs/docs/en.md
+        - '14 - Voice Activity Detection Turn Taking': ai-engineering-from-scratch/phases/06-speech-and-audio/14-voice-activity-detection-turn-taking/docs/en.md
+        - '15 - Streaming Speech To Speech Moshi Hibiki': ai-engineering-from-scratch/phases/06-speech-and-audio/15-streaming-speech-to-speech-moshi-hibiki/docs/en.md
+        - '16 - Anti Spoofing Audio Watermarking': ai-engineering-from-scratch/phases/06-speech-and-audio/16-anti-spoofing-audio-watermarking/docs/en.md
+        - '17 - Audio Evaluation Metrics': ai-engineering-from-scratch/phases/06-speech-and-audio/17-audio-evaluation-metrics/docs/en.md
+
+    - 'Phase 7 - Transformers Deep Dive':
+        - Overview: ai-engineering-from-scratch/phases/07-transformers-deep-dive/README.md
+        - '01 - Why Transformers': ai-engineering-from-scratch/phases/07-transformers-deep-dive/01-why-transformers/docs/en.md
+        - '02 - Self Attention From Scratch': ai-engineering-from-scratch/phases/07-transformers-deep-dive/02-self-attention-from-scratch/docs/en.md
+        - '03 - Multi Head Attention': ai-engineering-from-scratch/phases/07-transformers-deep-dive/03-multi-head-attention/docs/en.md
+        - '04 - Positional Encoding': ai-engineering-from-scratch/phases/07-transformers-deep-dive/04-positional-encoding/docs/en.md
+        - '05 - Full Transformer': ai-engineering-from-scratch/phases/07-transformers-deep-dive/05-full-transformer/docs/en.md
+        - '06 - Bert Masked Language Modeling': ai-engineering-from-scratch/phases/07-transformers-deep-dive/06-bert-masked-language-modeling/docs/en.md
+        - '07 - Gpt Causal Language Modeling': ai-engineering-from-scratch/phases/07-transformers-deep-dive/07-gpt-causal-language-modeling/docs/en.md
+        - '08 - T5 Bart Encoder Decoder': ai-engineering-from-scratch/phases/07-transformers-deep-dive/08-t5-bart-encoder-decoder/docs/en.md
+        - '09 - Vision Transformers': ai-engineering-from-scratch/phases/07-transformers-deep-dive/09-vision-transformers/docs/en.md
+        - '10 - Audio Transformers Whisper': ai-engineering-from-scratch/phases/07-transformers-deep-dive/10-audio-transformers-whisper/docs/en.md
+        - '11 - Mixture Of Experts': ai-engineering-from-scratch/phases/07-transformers-deep-dive/11-mixture-of-experts/docs/en.md
+        - '12 - Kv Cache Flash Attention': ai-engineering-from-scratch/phases/07-transformers-deep-dive/12-kv-cache-flash-attention/docs/en.md
+        - '13 - Scaling Laws': ai-engineering-from-scratch/phases/07-transformers-deep-dive/13-scaling-laws/docs/en.md
+        - '14 - Build A Transformer Capstone': ai-engineering-from-scratch/phases/07-transformers-deep-dive/14-build-a-transformer-capstone/docs/en.md
+        - '15 - Attention Variants': ai-engineering-from-scratch/phases/07-transformers-deep-dive/15-attention-variants/docs/en.md
+        - '16 - Speculative Decoding': ai-engineering-from-scratch/phases/07-transformers-deep-dive/16-speculative-decoding/docs/en.md
+
+    - 'Phase 8 - Generative Ai':
+        - Overview: ai-engineering-from-scratch/phases/08-generative-ai/README.md
+        - '01 - Generative Models Taxonomy History': ai-engineering-from-scratch/phases/08-generative-ai/01-generative-models-taxonomy-history/docs/en.md
+        - '02 - Autoencoders Vae': ai-engineering-from-scratch/phases/08-generative-ai/02-autoencoders-vae/docs/en.md
+        - '03 - Gans Generator Discriminator': ai-engineering-from-scratch/phases/08-generative-ai/03-gans-generator-discriminator/docs/en.md
+        - '04 - Conditional Gans Pix2pix': ai-engineering-from-scratch/phases/08-generative-ai/04-conditional-gans-pix2pix/docs/en.md
+        - '05 - Stylegan': ai-engineering-from-scratch/phases/08-generative-ai/05-stylegan/docs/en.md
+        - '06 - Diffusion Ddpm From Scratch': ai-engineering-from-scratch/phases/08-generative-ai/06-diffusion-ddpm-from-scratch/docs/en.md
+        - '07 - Latent Diffusion Stable Diffusion': ai-engineering-from-scratch/phases/08-generative-ai/07-latent-diffusion-stable-diffusion/docs/en.md
+        - '08 - Controlnet Lora Conditioning': ai-engineering-from-scratch/phases/08-generative-ai/08-controlnet-lora-conditioning/docs/en.md
+        - '09 - Inpainting Outpainting Editing': ai-engineering-from-scratch/phases/08-generative-ai/09-inpainting-outpainting-editing/docs/en.md
+        - '10 - Video Generation': ai-engineering-from-scratch/phases/08-generative-ai/10-video-generation/docs/en.md
+        - '11 - Audio Generation': ai-engineering-from-scratch/phases/08-generative-ai/11-audio-generation/docs/en.md
+        - '12 - 3D Generation': ai-engineering-from-scratch/phases/08-generative-ai/12-3d-generation/docs/en.md
+        - '13 - Flow Matching Rectified Flows': ai-engineering-from-scratch/phases/08-generative-ai/13-flow-matching-rectified-flows/docs/en.md
+        - '14 - Evaluation Fid Clip Score': ai-engineering-from-scratch/phases/08-generative-ai/14-evaluation-fid-clip-score/docs/en.md
+        - '15 - Consistency Models Lcm Turbo': ai-engineering-from-scratch/phases/08-generative-ai/15-consistency-models-lcm-turbo/docs/en.md
+        - '16 - Personalization Dreambooth Lora': ai-engineering-from-scratch/phases/08-generative-ai/16-personalization-dreambooth-lora/docs/en.md
+        - '17 - Video Generation Deep Dive': ai-engineering-from-scratch/phases/08-generative-ai/17-video-generation-deep-dive/docs/en.md
+        - '18 - Generative Ai Deployment': ai-engineering-from-scratch/phases/08-generative-ai/18-generative-ai-deployment/docs/en.md
+        - '19 - Visual Autoregressive Var': ai-engineering-from-scratch/phases/08-generative-ai/19-visual-autoregressive-var/docs/en.md
+
+    - 'Phase 9 - Reinforcement Learning':
+        - Overview: ai-engineering-from-scratch/phases/09-reinforcement-learning/README.md
+        - '01 - Mdps States Actions Rewards': ai-engineering-from-scratch/phases/09-reinforcement-learning/01-mdps-states-actions-rewards/docs/en.md
+        - '02 - Dynamic Programming': ai-engineering-from-scratch/phases/09-reinforcement-learning/02-dynamic-programming/docs/en.md
+        - '03 - Monte Carlo Methods': ai-engineering-from-scratch/phases/09-reinforcement-learning/03-monte-carlo-methods/docs/en.md
+        - '04 - Q Learning Sarsa': ai-engineering-from-scratch/phases/09-reinforcement-learning/04-q-learning-sarsa/docs/en.md
+        - '05 - Dqn': ai-engineering-from-scratch/phases/09-reinforcement-learning/05-dqn/docs/en.md
+        - '06 - Policy Gradients Reinforce': ai-engineering-from-scratch/phases/09-reinforcement-learning/06-policy-gradients-reinforce/docs/en.md
+        - '07 - Actor Critic A2c A3c': ai-engineering-from-scratch/phases/09-reinforcement-learning/07-actor-critic-a2c-a3c/docs/en.md
+        - '08 - Ppo': ai-engineering-from-scratch/phases/09-reinforcement-learning/08-ppo/docs/en.md
+        - '09 - Reward Modeling Rlhf': ai-engineering-from-scratch/phases/09-reinforcement-learning/09-reward-modeling-rlhf/docs/en.md
+        - '10 - Multi Agent Rl': ai-engineering-from-scratch/phases/09-reinforcement-learning/10-multi-agent-rl/docs/en.md
+        - '11 - Sim To Real Transfer': ai-engineering-from-scratch/phases/09-reinforcement-learning/11-sim-to-real-transfer/docs/en.md
+        - '12 - Rl For Games': ai-engineering-from-scratch/phases/09-reinforcement-learning/12-rl-for-games/docs/en.md
+
+    - 'Phase 10 - Llms From Scratch':
+        - Overview: ai-engineering-from-scratch/phases/10-llms-from-scratch/README.md
+        - '01 - Tokenizers': ai-engineering-from-scratch/phases/10-llms-from-scratch/01-tokenizers/docs/en.md
+        - '02 - Building A Tokenizer': ai-engineering-from-scratch/phases/10-llms-from-scratch/02-building-a-tokenizer/docs/en.md
+        - '03 - Data Pipelines': ai-engineering-from-scratch/phases/10-llms-from-scratch/03-data-pipelines/docs/en.md
+        - '04 - Pre Training Mini Gpt': ai-engineering-from-scratch/phases/10-llms-from-scratch/04-pre-training-mini-gpt/docs/en.md
+        - '05 - Scaling Distributed': ai-engineering-from-scratch/phases/10-llms-from-scratch/05-scaling-distributed/docs/en.md
+        - '06 - Instruction Tuning Sft': ai-engineering-from-scratch/phases/10-llms-from-scratch/06-instruction-tuning-sft/docs/en.md
+        - '07 - Rlhf': ai-engineering-from-scratch/phases/10-llms-from-scratch/07-rlhf/docs/en.md
+        - '08 - Dpo': ai-engineering-from-scratch/phases/10-llms-from-scratch/08-dpo/docs/en.md
+        - '09 - Constitutional Ai Self Improvement': ai-engineering-from-scratch/phases/10-llms-from-scratch/09-constitutional-ai-self-improvement/docs/en.md
+        - '10 - Evaluation': ai-engineering-from-scratch/phases/10-llms-from-scratch/10-evaluation/docs/en.md
+        - '11 - Quantization': ai-engineering-from-scratch/phases/10-llms-from-scratch/11-quantization/docs/en.md
+        - '12 - Inference Optimization': ai-engineering-from-scratch/phases/10-llms-from-scratch/12-inference-optimization/docs/en.md
+        - '13 - Building Complete Llm Pipeline': ai-engineering-from-scratch/phases/10-llms-from-scratch/13-building-complete-llm-pipeline/docs/en.md
+        - '14 - Open Models Architecture Walkthroughs': ai-engineering-from-scratch/phases/10-llms-from-scratch/14-open-models-architecture-walkthroughs/docs/en.md
+        - '15 - Speculative Decoding Eagle3': ai-engineering-from-scratch/phases/10-llms-from-scratch/15-speculative-decoding-eagle3/docs/en.md
+        - '16 - Differential Attention V2': ai-engineering-from-scratch/phases/10-llms-from-scratch/16-differential-attention-v2/docs/en.md
+        - '17 - Native Sparse Attention': ai-engineering-from-scratch/phases/10-llms-from-scratch/17-native-sparse-attention/docs/en.md
+        - '18 - Multi Token Prediction': ai-engineering-from-scratch/phases/10-llms-from-scratch/18-multi-token-prediction/docs/en.md
+        - '19 - Dualpipe Parallelism': ai-engineering-from-scratch/phases/10-llms-from-scratch/19-dualpipe-parallelism/docs/en.md
+        - '20 - Deepseek V3 Walkthrough': ai-engineering-from-scratch/phases/10-llms-from-scratch/20-deepseek-v3-walkthrough/docs/en.md
+        - '21 - Jamba Hybrid Ssm Transformer': ai-engineering-from-scratch/phases/10-llms-from-scratch/21-jamba-hybrid-ssm-transformer/docs/en.md
+        - '22 - Async Hogwild Inference': ai-engineering-from-scratch/phases/10-llms-from-scratch/22-async-hogwild-inference/docs/en.md
+        - '23 - Prefix Caching Radix Attention': ai-engineering-from-scratch/phases/10-llms-from-scratch/23-prefix-caching-radix-attention/docs/en.md
+        - '24 - Structured Outputs Constrained Decoding': ai-engineering-from-scratch/phases/10-llms-from-scratch/24-structured-outputs-constrained-decoding/docs/en.md
+        - '25 - Speculative Decoding': ai-engineering-from-scratch/phases/10-llms-from-scratch/25-speculative-decoding/docs/en.md
+        - '26 - Kv Cache Quantization': ai-engineering-from-scratch/phases/10-llms-from-scratch/26-kv-cache-quantization/docs/en.md
+        - '27 - Tensor Parallelism': ai-engineering-from-scratch/phases/10-llms-from-scratch/27-tensor-parallelism/docs/en.md
+        - '28 - Pipeline Parallelism': ai-engineering-from-scratch/phases/10-llms-from-scratch/28-pipeline-parallelism/docs/en.md
+        - '29 - Expert Parallelism Moe': ai-engineering-from-scratch/phases/10-llms-from-scratch/29-expert-parallelism-moe/docs/en.md
+        - '30 - Flash Attention Deep Dive': ai-engineering-from-scratch/phases/10-llms-from-scratch/30-flash-attention-deep-dive/docs/en.md
+        - '31 - Continuous Batching': ai-engineering-from-scratch/phases/10-llms-from-scratch/31-continuous-batching/docs/en.md
+        - '32 - Quantization Aware Training': ai-engineering-from-scratch/phases/10-llms-from-scratch/32-quantization-aware-training/docs/en.md
+        - '33 - Inference Serving': ai-engineering-from-scratch/phases/10-llms-from-scratch/33-inference-serving/docs/en.md
+        - '34 - Gradient Checkpointing': ai-engineering-from-scratch/phases/10-llms-from-scratch/34-gradient-checkpointing/docs/en.md
+
+    - 'Phase 11 - Llm Engineering':
+        - Overview: ai-engineering-from-scratch/phases/11-llm-engineering/README.md
+        - '01 - Prompt Engineering': ai-engineering-from-scratch/phases/11-llm-engineering/01-prompt-engineering/docs/en.md
+        - '02 - Few Shot Cot': ai-engineering-from-scratch/phases/11-llm-engineering/02-few-shot-cot/docs/en.md
+        - '03 - Structured Outputs': ai-engineering-from-scratch/phases/11-llm-engineering/03-structured-outputs/docs/en.md
+        - '04 - Embeddings': ai-engineering-from-scratch/phases/11-llm-engineering/04-embeddings/docs/en.md
+        - '05 - Context Engineering': ai-engineering-from-scratch/phases/11-llm-engineering/05-context-engineering/docs/en.md
+        - '06 - Rag': ai-engineering-from-scratch/phases/11-llm-engineering/06-rag/docs/en.md
+        - '07 - Advanced Rag': ai-engineering-from-scratch/phases/11-llm-engineering/07-advanced-rag/docs/en.md
+        - '08 - Fine Tuning Lora': ai-engineering-from-scratch/phases/11-llm-engineering/08-fine-tuning-lora/docs/en.md
+        - '09 - Function Calling': ai-engineering-from-scratch/phases/11-llm-engineering/09-function-calling/docs/en.md
+        - '10 - Evaluation': ai-engineering-from-scratch/phases/11-llm-engineering/10-evaluation/docs/en.md
+        - '11 - Caching Cost': ai-engineering-from-scratch/phases/11-llm-engineering/11-caching-cost/docs/en.md
+        - '12 - Guardrails': ai-engineering-from-scratch/phases/11-llm-engineering/12-guardrails/docs/en.md
     - 💻 Coding Problems:
       - Overview: courses/coding-problems/index.md
       - Arrays: courses/coding-problems/01-arrays.md
@@ -1573,5 +1779,123 @@ nav:
     - "📓 अभ्यास डायरी — 112 दिन": courses/vigyan-bhairav-tantra/abhyas-diary.md
     - "📜 श्लोक सूची — संस्कृत मूल": courses/vigyan-bhairav-tantra/shloka-index.md
     - "❓ सामान्य गलतियाँ — FAQ": courses/vigyan-bhairav-tantra/common-mistakes-faq.md
-
+  - "📋 Government Exams":
+    - Overview: courses/government-exams/index.md
+    - 📘 English Language:
+      - Overview: courses/english-language/index.md
+      - Reading Comprehension: courses/english-language/01-reading-comprehension.md
+      - Grammar Essentials: courses/english-language/02-grammar-essentials.md
+      - Vocabulary & Word Usage: courses/english-language/03-vocabulary-word-usage.md
+      - Verbal Ability: courses/english-language/04-verbal-ability.md
+      - Descriptive English: courses/english-language/05-descriptive-english.md
+    - 🧩 Reasoning Ability:
+      - Overview: courses/reasoning-ability/index.md
+      - Puzzles: courses/reasoning-ability/01-puzzles.md
+      - Seating Arrangements: courses/reasoning-ability/02-seating-arrangements.md
+      - Syllogism & Coding-Decoding: courses/reasoning-ability/03-syllogism-coding-decoding.md
+      - Inequalities & Data Sufficiency: courses/reasoning-ability/04-inequalities-data-sufficiency.md
+      - Blood Relations & Direction Sense: courses/reasoning-ability/05-blood-relations-direction-sense.md
+      - Logical Reasoning & Input-Output: courses/reasoning-ability/06-logical-reasoning-input-output.md
+    - 🔢 Quantitative Aptitude:
+      - Overview: courses/quantitative-aptitude/index.md
+      - Arithmetic Foundation: courses/quantitative-aptitude/01-arithmetic-foundation.md
+      - Advanced Arithmetic: courses/quantitative-aptitude/02-advanced-arithmetic.md
+      - Data Interpretation: courses/quantitative-aptitude/03-data-interpretation.md
+      - Number Series: courses/quantitative-aptitude/04-number-series.md
+      - Quadratic Equations & Simplification: courses/quantitative-aptitude/05-quadratic-equations-simplification.md
+      - Permutation, Combination & Probability: courses/quantitative-aptitude/06-permutation-combination-probability.md
+    - 💾 Professional Knowledge Recap:
+      - Overview: courses/professional-knowledge/index.md
+      - DBMS: courses/professional-knowledge/01-dbms.md
+      - Computer Networks: courses/professional-knowledge/02-computer-networks.md
+      - Operating Systems: courses/professional-knowledge/03-operating-systems.md
+      - Data Structures: courses/professional-knowledge/04-data-structures.md
+      - OOPs Concepts: courses/professional-knowledge/05-oops-concepts.md
+      - Software Engineering: courses/professional-knowledge/06-software-engineering.md
+      - Web Technologies: courses/professional-knowledge/07-web-technologies.md
+      - Cloud Computing: courses/professional-knowledge/08-cloud-computing.md
+      - Information Security: courses/professional-knowledge/09-information-security.md
+      - Computer Architecture: courses/professional-knowledge/10-computer-architecture.md
+    - 🏦 Banking Technology:
+      - Overview: courses/banking-technology/index.md
+      - Core Banking Solutions: courses/banking-technology/01-core-banking-solutions.md
+      - Digital Payment Systems: courses/banking-technology/02-digital-payment-systems.md
+      - Banking Security & RBI Guidelines: courses/banking-technology/03-banking-security-guidelines.md
+      - Fintech & Emerging Trends: courses/banking-technology/04-fintech-emerging-trends.md
+    - 🔐 Information Security:
+      - Cryptography Fundamentals: courses/information-security/01-cryptography-fundamentals.md
+      - Network Security: courses/information-security/02-network-security.md
+      - Cyber Threats & Attacks: courses/information-security/03-cyber-threats-attacks.md
+      - Digital Signatures & PKI: courses/information-security/04-digital-signatures-pki.md
+      - Banking & Payment Security: courses/information-security/05-banking-payment-security.md
+    - ⚙️ Computer Architecture:
+      - Number Systems & Boolean Algebra: courses/computer-architecture/01-number-systems.md
+      - CPU Organization: courses/computer-architecture/02-cpu-organization.md
+      - Memory Hierarchy & Cache: courses/computer-architecture/03-memory-hierarchy.md
+      - Pipelining & Hazards: courses/computer-architecture/04-pipelining-hazards.md
+      - IO Organization & DMA: courses/computer-architecture/05-io-organization.md
+    - 🎤 Interview Preparation:
+      - Overview: courses/interview-preparation/index.md
+      - Technical Interview Core CS: courses/interview-preparation/01-technical-interview-core-cs.md
+      - Coding Problem Solving: courses/interview-preparation/02-coding-problem-solving.md
+      - System Design Interview: courses/interview-preparation/03-system-design-interview.md
+      - Database & SQL Interview: courses/interview-preparation/04-database-sql-interview.md
+      - Behavioral & HR Interview: courses/interview-preparation/05-behavioral-hr-interview.md
+      - Govt Exam Interview: courses/interview-preparation/06-govt-exam-interview.md
+      - Resume, LinkedIn & Portfolio: courses/interview-preparation/07-resume-linkedin-portfolio.md
+      - Mock Interview Scenarios: courses/interview-preparation/08-mock-interview-scenarios.md
+      - Company-Wise Preparation: courses/interview-preparation/09-company-wise-preparation.md
+      - Aptitude, Logical & Speed: courses/interview-preparation/10-aptitude-logical-reasoning-speed.md
+      - TCS NQT: courses/interview-preparation/11-company-tcs-nqt.md
+      - Infosys SP: courses/interview-preparation/12-company-infosys-sp.md
+      - Amazon SDE: courses/interview-preparation/13-company-amazon-sde.md
+      - Google SWE: courses/interview-preparation/14-company-google-swe.md
+      - Microsoft SDE: courses/interview-preparation/15-company-microsoft-sde.md
+      - Wipro/HCL/TechM: courses/interview-preparation/16-company-wipro-hcl-techm.md
+      - PSUs & Govt: courses/interview-preparation/17-company-psus-govt.md
+    - 💼 Job Preparation:
+      - Overview: courses/job-preparation/index.md
+      - Resume & Cover Letter: courses/job-preparation/01-resume-cover-letter.md
+      - Job Search Strategy: courses/job-preparation/02-job-search-strategy.md
+      - Aptitude Test Preparation: courses/job-preparation/03-aptitude-test-preparation.md
+      - Group Discussion & Case Study: courses/job-preparation/04-group-discussion-case-study.md
+      - Offer Negotiation & Career Growth: courses/job-preparation/05-offer-negotiation-career-growth.md
+      - Govt Job Portal & Notification Tracker: courses/job-preparation/06-govt-job-portal-notification-tracker.md
+    - 🌍 General Awareness & Current Affairs:
+      - Overview: courses/general-awareness/index.md
+      - Indian Polity & Constitution: courses/general-awareness/01-indian-polity.md
+      - Indian Geography & Environment: courses/general-awareness/02-indian-geography.md
+      - Indian History & Culture: courses/general-awareness/03-indian-history.md
+      - Indian Economy & Planning: courses/general-awareness/04-indian-economy.md
+      - General Science & Technology: courses/general-awareness/05-general-science.md
+      - Current Affairs 2024: courses/general-awareness/06-current-affairs-2024.md
+      - Current Affairs 2025–2026: courses/general-awareness/07-current-affairs-2025-2026.md
+      - Sports, Awards & International Organizations: courses/general-awareness/08-sports-awards-international.md
+    - 🏦 Banking & Financial Awareness:
+      - Overview: courses/banking-financial-awareness/index.md
+      - RBI & Monetary Policy: courses/banking-financial-awareness/01-rbi-monetary-policy.md
+      - Banking System & Regulations: courses/banking-financial-awareness/02-banking-system-regulations.md
+      - Financial Markets & Instruments: courses/banking-financial-awareness/03-financial-markets-instruments.md
+      - Govt Schemes & Budget: courses/banking-financial-awareness/04-government-schemes-budget.md
+      - Banking Terminology & Acts: courses/banking-financial-awareness/05-banking-terminology-acts.md
+    - 🔤 Hindi Language:
+      - Overview: courses/hindi-language/index.md
+      - हिंदी व्याकरण (Grammar): courses/hindi-language/01-hindi-grammar.md
+      - अपठित गद्यांश (Comprehension): courses/hindi-language/02-hindi-comprehension.md
+      - शब्दावली (Vocabulary): courses/hindi-language/03-hindi-vocabulary.md
+      - लेखन कौशल (Writing): courses/hindi-language/04-hindi-writing.md
+      - अनुवाद (Translation): courses/hindi-language/05-hindi-translation.md
+    - 📊 Marketing Aptitude:
+      - Overview: courses/marketing-aptitude/index.md
+      - Marketing Concepts: courses/marketing-aptitude/01-marketing-concepts.md
+      - Sales & Distribution: courses/marketing-aptitude/02-sales-distribution.md
+      - Brand Management & Digital Marketing: courses/marketing-aptitude/03-brand-management-digital.md
+      - Banking Marketing: courses/marketing-aptitude/04-banking-marketing.md
+    - 📈 Data Analysis & Interpretation:
+      - Overview: courses/data-analysis-interpretation/index.md
+      - Advanced Data Interpretation: courses/data-analysis-interpretation/01-advanced-data-interpretation.md
+      - Missing Data & Caselet DI: courses/data-analysis-interpretation/02-missing-data-caselet-di.md
+      - Data Sufficiency: courses/data-analysis-interpretation/03-data-sufficiency.md
+      - Graph & Chart Analysis: courses/data-analysis-interpretation/04-graph-chart-analysis.md
+      - Mixed Data Interpretation: courses/data-analysis-interpretation/05-mixed-data-interpretation.md
 

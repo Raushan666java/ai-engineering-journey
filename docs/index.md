@@ -7,30 +7,30 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 <div class="home-hero">
 
-<p class="hero-kicker">BUILDING IN PUBLIC · 2026</p>
+<p class="hero-kicker">FREE CODING CURRICULUM · 2026</p>
 
 # AI Engineering Journey
 
-<p class="hero-tagline">From Laravel developer to AI Automation Engineer — a practical, project-led roadmap for building real systems.</p>
+<p class="hero-tagline">From zero to production AI — 1,900+ lessons covering ML, LLMs, agents, full-stack dev, CS fundamentals, and exam prep. Built in public by a Laravel dev turned AI engineer.</p>
 
 <div class="hero-stats">
-  <span class="hero-stat"><strong>46+</strong> Courses</span>
-  <span class="hero-stat"><strong>900+</strong> Lessons</span>
+  <span class="hero-stat"><strong>52+</strong> Courses</span>
+  <span class="hero-stat"><strong>1,900+</strong> Lessons</span>
   <span class="hero-stat"><strong>170K+</strong> Lines</span>
-  <span class="hero-stat"><strong>220</strong> Coding Problems</span>
+  <span class="hero-stat"><strong>700+</strong> Problems</span>
 </div>
 
 <div class="hero-ctas">
   <a href="#course-catalog" class="hero-btn hero-btn-primary">Browse Courses</a>
-  <a href="ai-engineering-from-scratch/phases/00-setup-and-tooling/" class="hero-btn hero-btn-secondary">Start Learning</a>
+  <a href="courses/modern-ai-engineering/" class="hero-btn hero-btn-secondary">Start with AI</a>
   <a href="about/" class="hero-btn hero-btn-ghost">About Me</a>
 </div>
 
 </div>
 
-<div class="current-focus-banner">
+<div class="hero-subsection">
 
-<span class="focus-label">NOW BUILDING</span> <strong>Phase 10:</strong> LLMs From Scratch (Tokenizers → Pretraining → SFT → DPO) <span class="focus-divider">·</span> <strong>Phase 14:</strong> Agent Engineering (LangGraph, MCP, multi-agent)
+Looking for something specific? <a href="?q=" onclick="document.querySelector('.md-search__input').focus();return false;">Search all courses</a> · <a href="roadmap/">View roadmap</a> · <a href="trending/">Trending topics</a>
 
 </div>
 
@@ -84,7 +84,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ### Languages & Frameworks
 
-<div class="course-grid" markdown>
+<div class="course-grid" data-category="languages" markdown>
 
 -   <span class="course-icon">⚙️</span> __[C Programming](courses/c-programming/)__ <span class="course-chaps">18 ch</span>
 -   <span class="course-icon">🧩</span> __[OOP C++](courses/oop-cpp/)__ <span class="course-chaps">16 ch</span>
@@ -97,7 +97,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ### Computer Science Core
 
-<div class="course-grid" markdown>
+<div class="course-grid" data-category="cs-core" markdown>
 
 -   <span class="course-icon">∑</span> __[Discrete Mathematics](courses/discrete-mathematics/)__ <span class="course-chaps">15 ch</span>
 -   <span class="course-icon">🔲</span> __[Digital Logic](courses/digital-logic/)__ <span class="course-chaps">15 ch</span>
@@ -114,7 +114,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ### AI & Machine Learning
 
-<div class="course-grid" markdown>
+<div class="course-grid" data-category="ai-ml" markdown>
 
 -   <span class="course-icon">⚡</span> __[Modern AI Engineering](courses/modern-ai-engineering/)__ <span class="course-chaps">12 ch</span>
 -   <span class="course-icon">🤖</span> __[Artificial Intelligence](courses/artificial-intelligence/)__ <span class="course-chaps">18 ch</span>
@@ -127,7 +127,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ### Infrastructure & Security
 
-<div class="course-grid" markdown>
+<div class="course-grid" data-category="infra" markdown>
 
 -   <span class="course-icon">☁️</span> __[Cloud Computing](courses/cloud-computing/)__ <span class="course-chaps">10 ch</span>
 -   <span class="course-icon">🔧</span> __[DevOps](courses/devops/)__ <span class="course-chaps">27 ch</span>
@@ -139,7 +139,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ### Practice & Drills
 
-<div class="course-grid" markdown>
+<div class="course-grid" data-category="practice" markdown>
 
 -   <span class="course-icon">💻</span> __[Coding Problems Bank](courses/coding-problems/)__ <span class="course-chaps">220 Problems</span>
 -   <span class="course-icon">📋</span> __[Mock Tests](courses/mock-tests/)__ <span class="course-chaps">6 Exams</span>
@@ -150,7 +150,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ### Philosophy & Spirituality
 
-<div class="course-grid" markdown>
+<div class="course-grid" data-category="practice" markdown>
 
 -   <span class="course-icon">🕉️</span> __[Vigyan Bhairav Tantra (Osho)](courses/vigyan-bhairav-tantra/)__ <span class="course-chaps">18 Ch</span>
 
@@ -158,7 +158,7 @@ description: "Raushan Kumar — AI Engineering Journey. Laravel developer transi
 
 ### Career & Exam Prep
 
-<div class="course-grid" markdown>
+<div class="course-grid" data-category="career" markdown>
 
 -   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">32 Ch</span>
 -   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 Ch</span>
